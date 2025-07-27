@@ -120,10 +120,10 @@ const ContactSection = () => {
                   get in touch
                 </h3>
                 <p className="text-sm text-[#626262] leading-relaxed">
-                  We're always excited to explore new opportunities and
-                  challenges. Whether you're a startup or an established
-                  enterprise, we'd love to hear from you. Contact us to discuss
-                  how we can help you achieve your digital goals.
+                  We&apos;re always excited to explore new opportunities and
+                  challenges. Whether you&apos;re a startup or an established
+                  enterprise, we&apos;d love to hear from you. Contact us to
+                  discuss how we can help you achieve your digital goals.
                 </p>
               </div>
 

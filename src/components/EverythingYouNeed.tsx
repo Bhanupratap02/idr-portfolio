@@ -29,8 +29,9 @@ const EverythingYouNeed = () => {
                 Fast, Local Response Times
               </h4>
               <p className="text-lg text-[#2E2E2E] leading-relaxed max-w-lg">
-                When issues arise, you won't wait days. Our team is responsive,
-                efficient, and based near you — no red tape, no delays.
+                When issues arise, you won&apos;t wait days. Our team is
+                responsive, efficient, and based near you — no red tape, no
+                delays.
               </p>
             </div>
           </div>
