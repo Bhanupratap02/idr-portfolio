@@ -15,9 +15,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-[#F7F6F2] leading-relaxed max-w-72">
-              Whether you're launching a new facility or refreshing legacy
-              systems, we'll help you build a data center you can trust — from
-              day one.
+              Whether you&apos;re launching a new facility or refreshing legacy
+              systems, we&apos;ll help you build a data center you can trust —
+              from day one.
             </p>
           </div>
 
