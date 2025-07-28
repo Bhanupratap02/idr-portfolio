@@ -7,10 +7,10 @@ const EverythingYouNeed = () => {
     <section className="relative px-4 sm:px-6 lg:px-32 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-4xl lg:text-7xl lg:max-w-[60%] font-bold leading-tight mb-8 text-left">
-          <span className="text-[#3D3D3D] max-sm:block">
+          <span className="text-[#3D3D3D] ">
             Everything You Need in{" "}
           </span>
-          <span className="text-[#052557] max-sm:block">One Place</span>
+          <span className="text-[#052557] ">One Place</span>
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* First Image */}
