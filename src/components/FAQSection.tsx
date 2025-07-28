@@ -6,9 +6,9 @@ const FAQSection = () => {
       setOpenFaq(openFaq === index ? null : index);
     };
   return (
-    <section className="bg-white px-6 lg:px-20 py-20">
+    <section className="bg-white px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-6xl lg:text-7xl font-medium text-[#3D3D3D] text-center mb-24">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
           Frequently Asked Questions
         </h2>
 

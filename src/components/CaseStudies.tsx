@@ -2,9 +2,9 @@
 
 const CaseStudies = () => {
   return (
-    <section className="px-6 lg:px-20 py-20">
+    <section className="px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12">
           Case Studies
         </h2>
 

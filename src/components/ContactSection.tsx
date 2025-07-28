@@ -2,7 +2,7 @@
 
 const ContactSection = () => {
   return (
-    <section className="px-6 lg:px-20 py-20">
+    <section className="px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
           <h2 className="text-4xl lg:text-5xl font-medium text-[#333] mb-4">

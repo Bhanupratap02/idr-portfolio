@@ -2,9 +2,9 @@
 
 const Testimonials = () => {
   return (
-    <section className="bg-white px-6 lg:px-20 py-20">
+    <section className="bg-white px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
           What They Say About Us
         </h2>
 
@@ -16,9 +16,11 @@ const Testimonials = () => {
           <div className="absolute bottom-12 left-12 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
           <div className="absolute bottom-80 right-80 w-72 h-72 rounded-full bg-white/8 bg-opacity-8"></div> */}
 
-          <div className="relative z-10 flex lg:flex-row flex-col items-center p-20 gap-20">
+          {/* Responsive flex layout */}
+          <div className="relative z-10 flex flex-col-reverse lg:flex-row  items-center p-6 sm:p-12 lg:p-20 gap-12 lg:gap-20 min-h-96">
+            {/* Left: Testimonial Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
-              <p className="text-xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
+              <p className="text-base sm:text-lg lg:text-xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
                 We have hired IDR on several occasions to pull network wiring,
                 install networking equipment, security cameras, A/V, etc. We
                 have always had a great experience with them and I would highly
@@ -29,7 +31,7 @@ const Testimonials = () => {
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-8 h-8 text-[#F8CA0A]"
+                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-[#F8CA0A]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -39,28 +41,28 @@ const Testimonials = () => {
               </div>
 
               {/* Quote icon */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="w-16 h-16 bg-[#052557] flex items-center justify-center">
+              {/* <div className="flex justify-center lg:justify-start">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-[#052557] flex items-center justify-center">
                   <svg
-                    className="w-8 h-8 text-white"
+                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
             </div>
-
+            {/* Right: Profile */}
             <div className="lg:w-1/2 flex flex-col items-center">
-              <div className="relative mb-8">
-                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-white">
+              <div className="relative mb-6 sm:mb-8">
+                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-white">
                   <div className="w-full h-full bg-gray-400 flex items-center justify-center">
                     <span className="text-gray-600 text-sm">Profile Image</span>
                   </div>
                 </div>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-[#F7F6F2] text-center capitalize">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#F7F6F2] text-center capitalize">
                 Chris Koble
               </h3>
             </div>
