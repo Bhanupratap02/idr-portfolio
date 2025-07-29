@@ -1,5 +1,5 @@
-
-
+import Image from "next/image";
+import chrisKoble from "@/assets/testimonial_2.png";
 const Testimonials = () => {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
@@ -10,16 +10,18 @@ const Testimonials = () => {
 
         <div className="relative bg-[#052557] rounded-none p-0 min-h-96">
           {/* Decorative circles */}
-          {/* <div className="absolute -top-32 -right-32 w-72 h-72 rounded-full 
-          bg-white/25 bg-opacity-25 transform rotate-[-26deg]"></div>
+          <div
+            className="absolute -top-32 -right-32 w-72 h-72 rounded-full 
+          bg-white/8 bg-opacity-25 transform rotate-[-26deg]"
+          ></div>
           <div className="absolute -top-6 -left-8 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
           <div className="absolute bottom-12 left-12 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
-          <div className="absolute bottom-80 right-80 w-72 h-72 rounded-full bg-white/8 bg-opacity-8"></div> */}
+          <div className="absolute -bottom-35 right-80 w-72 h-72 rounded-full bg-white/8 bg-opacity-8"></div>
 
           {/* Responsive flex layout */}
           <div className="relative z-10 flex flex-col-reverse lg:flex-row  items-center p-6 sm:p-12 lg:p-20 gap-12 lg:gap-20 min-h-96">
             {/* Left: Testimonial Content */}
-            <div className="lg:w-1/2 text-center lg:text-left">
+            <div className="lg:w-1/2 text-center ">
               <p className="text-base sm:text-lg lg:text-xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
                 We have hired IDR on several occasions to pull network wiring,
                 install networking equipment, security cameras, A/V, etc. We
@@ -27,7 +29,7 @@ const Testimonials = () => {
                 recommend IDR without
               </p>
 
-              <div className="flex justify-center lg:justify-start mb-6">
+              <div className="flex justify-center  mb-6">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
@@ -56,10 +58,14 @@ const Testimonials = () => {
             {/* Right: Profile */}
             <div className="lg:w-1/2 flex flex-col items-center">
               <div className="relative mb-6 sm:mb-8">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-white">
-                  <div className="w-full h-full bg-gray-400 flex items-center justify-center">
-                    <span className="text-gray-600 text-sm">Profile Image</span>
-                  </div>
+                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden border-10 border-white">
+                  <Image
+                    src={chrisKoble}
+                    alt="Chris Koble"
+                    quality={100}
+      
+                    className="object-contain"
+                  />
                 </div>
               </div>
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#F7F6F2] text-center capitalize">
