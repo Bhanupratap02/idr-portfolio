@@ -105,17 +105,6 @@ export default function Hero() {
     </div>
   );
 }
-// Note: Ensure that the video files are correctly placed in the public/videos directory
-// and that the paths match the src attributes in the slides array.
+
 // Also, consider adding error handling for video loading issues.
-// This component is designed to be used in a Next.js application with Tailwind CSS for styling.
-// Adjust the styles as needed to fit your design requirements.
-// The video autoplay feature is muted to comply with browser policies.
-// The component uses React hooks for state management and side effects.
-// The video will automatically advance to the next slide when it ends, and the countdown will reset
-// for each new video. The text overlay is only shown for the 3rd and 4th slides.
-// The countdown is displayed in the slider dots for the active slide, showing the remaining seconds
-// until the next slide starts. The component is responsive and adapts to different screen sizes using Tailwind CSS classes.
-// The buttons in the text overlay can be linked to product pages or additional information as needed.
-// The component is designed to be reusable and can be easily integrated into other parts of the application.
-// Make sure to test the component across different browsers and devices to ensure compatibility and performance
+
