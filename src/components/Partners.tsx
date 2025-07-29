@@ -13,7 +13,7 @@ const Partners = () => {
     <div className="w-full bg-[#052557] py-4 overflow-hidden">
       <div className="flex animate-scroll space-x-6 sm:space-x-10 lg:space-x-14">
         {/* First set of logos */}
-        <div className="flex items-center space-x-6 sm:space-x-10 md:space-x-14  flex-shrink-0 px-4 sm:px-10">
+        <div className="flex items-center space-x-6 sm:space-x-10 md:space-x-14  flex-shrink-0 px-4 sm:px-4">
           {logos.map((logo, i) => (
             <Image
               key={`logo-a-${i}`}
@@ -24,16 +24,16 @@ const Partners = () => {
           ))}
         </div>
         {/* Duplicate set for seamless loop */}
-        {/* <div className="flex items-center space-x-14 flex-shrink-0">
+        <div className="flex items-center space-x-6 sm:space-x-10 md:space-x-14  flex-shrink-0 px-4 sm:px-6">
           {logos.map((logo, i) => (
             <Image
-              key={`logo-b-${i}`}
+              key={`logo-a-${i}`}
               src={logo}
               alt={`Partner Logo ${i + 1}`}
-              className="h-10 w-auto"
+              className="h-6 sm:h-8 md:h-10 w-auto object-contain"
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
