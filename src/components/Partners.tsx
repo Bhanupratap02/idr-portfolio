@@ -7,7 +7,16 @@ import partner3 from "@/assets/partners/partner_3.png";
 import partner4 from "@/assets/partners/partner_4.png";
 import partner5 from "@/assets/partners/partner_5.png";
 import partner6 from "@/assets/partners/partner_6.png";
-const logos = [partner1, partner2, partner3, partner4, partner5, partner6];
+import partner7 from "@/assets/partners/partner_7.png";
+const logos = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  // partner7,
+];
 const Partners = () => {
   return (
     <div className="w-full bg-[#052557] py-4 overflow-hidden">
@@ -19,7 +28,7 @@ const Partners = () => {
               key={`logo-a-${i}`}
               src={logo}
               alt={`Partner Logo ${i + 1}`}
-              className="h-6 sm:h-8 md:h-10 w-auto object-contain"
+              className="h-6 sm:h-8 md:h-10 w-auto object-cover"
             />
           ))}
         </div>
@@ -30,7 +39,7 @@ const Partners = () => {
               key={`logo-a-${i}`}
               src={logo}
               alt={`Partner Logo ${i + 1}`}
-              className="h-6 sm:h-8 md:h-10 w-auto object-contain"
+              className="h-6 sm:h-8 md:h-10 w-auto object-cover"
             />
           ))}
         </div>

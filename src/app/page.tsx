@@ -1,8 +1,6 @@
 /** @format */
 
-"use client";
-import Link from "next/link";
-import { useState } from "react";
+
 import Navbar from "@/components/Navbar2";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
@@ -13,7 +11,39 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import PartnerLogos  from "@/components/PartnerLogos";
 import Footer from "@/components/Footer";
+import partner1 from "@/assets/partners/partner_1.png";
+import partner2 from "@/assets/partners/partner_2.png";
+import partner3 from "@/assets/partners/partner_3.png";
+import partner4 from "@/assets/partners/partner_4.png";
+import partner5 from "@/assets/partners/partner_5.png";
+import partner6 from "@/assets/partners/partner_6.png";
+import partner7 from "@/assets/partners/partner_7.png";
+import partner8 from "@/assets/partners/partner_8.png";
+import partner9 from "@/assets/partners/partner_9.png";
+import partner10 from "@/assets/partners/partner_10.png";
+import partner11 from "@/assets/partners/partner_11.png";
+import partner12 from "@/assets/partners/partner_12.png";
+import partner13 from "@/assets/partners/partner_13.png";
+
+const footerPartnerImages = [
+  partner8,
+  partner9,
+  partner10,
+  partner11,
+  partner12,
+  // partner13,
+];
+const topPartnerImages = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+];
 export default function Index() {
 
   return (
@@ -25,11 +55,10 @@ export default function Index() {
       <Hero />
 
       {/* Partner Logos Strip */}
-      <Partners />
-
-
+      {/* <Partners /> */}
+      <PartnerLogos logos={topPartnerImages} />
       {/* Everything You Need Section */}
-      <EverythingYouNeed /> 
+      <EverythingYouNeed />
 
       {/* What We Do Section */}
       <WhatWeDo />
@@ -44,7 +73,7 @@ export default function Index() {
       <CaseStudies />
 
       {/* FAQ Section */}
-      <FAQSection/>
+      <FAQSection />
 
       {/* Contact Section */}
       <ContactSection />
@@ -52,127 +81,10 @@ export default function Index() {
       {/* Footer */}
 
       {/* Partner Logos Bars Before Footer */}
-      {/* <div className="w-full bg-[#052557] py-4 overflow-hidden">
-        <div className="flex animate-scroll space-x-14">
-          First logo bar
-          <div className="flex items-center space-x-14 flex-shrink-0">
-            <div className="text-white text-sm whitespace-nowrap">
-              HMA Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Fairstead Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Aslan Partners Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Context7 Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Notion Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Rhombus Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Lencore Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Verkada Partner Logo
-            </div>
-          </div>
-          Duplicate set for seamless loop
-          <div className="flex items-center space-x-14 flex-shrink-0">
-            <div className="text-white text-sm whitespace-nowrap">
-              HMA Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Fairstead Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Aslan Partners Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Context7 Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Notion Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Rhombus Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Lencore Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Verkada Partner Logo
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="w-full bg-[#052557] py-4 overflow-hidden">
-        <div className="flex animate-scroll space-x-14">
-          Second logo bar
-          <div className="flex items-center space-x-14 flex-shrink-0">
-            <div className="text-white text-sm whitespace-nowrap">
-              Lencore Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Verkada Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              HMA Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Fairstead Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Aslan Partners Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Context7 Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Notion Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Rhombus Partner Logo
-            </div>
-          </div>
-          Duplicate set for seamless loop
-          <div className="flex items-center space-x-14 flex-shrink-0">
-            <div className="text-white text-sm whitespace-nowrap">
-              Lencore Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Verkada Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              HMA Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Fairstead Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Aslan Partners Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Context7 Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Notion Partner Logo
-            </div>
-            <div className="text-white text-sm whitespace-nowrap">
-              Rhombus Partner Logo
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+      <PartnerLogos logos={footerPartnerImages} />
+      <PartnerLogos logos={footerPartnerImages} />
       {/* Footer */}
       <Footer />
-    
     </div>
   );
 }

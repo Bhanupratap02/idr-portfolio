@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         {/* <Navbar /> */}
-        <main className="pt-4">{children}</main>
+        <main className="pt-4 overflow-x-hidden">{children}</main>
       </body>
     </html>
   );
