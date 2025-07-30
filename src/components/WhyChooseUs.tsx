@@ -72,8 +72,8 @@ const features = [
     description:
       "A secure dashboard for every client — view service records, documentation, tickets, licensing, and more.",
   },
-];
-
+] as const;
+type FeatureTitle = (typeof features)[number]["title"];
 const WhyChooseUs = () => {
   return (
     <section className="bg-[#EFF5FF] px-4 sm:px-6 lg:px-32 py-16 sm:py-20">
@@ -83,11 +83,11 @@ const WhyChooseUs = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {features.map((feature, i) => {
-            const IconComponent = iconMap[feature.title];
+          {features.map((feature) => {
+             const IconComponent = iconMap[feature.title as FeatureTitle];
             return (
               <div
-                key={i}
+                key={feature.title}
                 className="bg-white rounded-xl p-6 shadow-sm flex flex-col"
               >
                 <div className="w-10 h-10 text-[#052557] mb-4">
