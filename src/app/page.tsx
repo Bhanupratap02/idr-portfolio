@@ -47,7 +47,7 @@ const topPartnerImages = [
 export default function Index() {
 
   return (
-    <div className="min-h-screen bg-[#F7F6F2]">
+    <div className="min-h-screen bg-[#FFFFF]">
       {/* Navigation */}
       <Navbar />
 
