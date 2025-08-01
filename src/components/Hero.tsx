@@ -17,7 +17,7 @@ const slides = [
   },
 ];
 export default function Hero() {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
