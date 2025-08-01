@@ -49,8 +49,8 @@ export default function Hero() {
   }, [activeIndex]); // Trigger on video change
   const currentSlide = slides[activeIndex];
   return (
-    <div className="px-4 sm:px-6 lg:px-8 my-4 md:my-6">
-      <section className="relative h-[450px] sm:h-[450px] md:h-[500px] lg:h-[590px] bg-[#202020] rounded-xl overflow-hidden ">
+    // <div className="px-4 sm:px-6 lg:px-8 my-4 md:my-6">
+      <section className="relative h-[550px] sm:h-[550px] md:h-[580px] lg:h-[620px] bg-[#202020]  overflow-hidden ">
         <div className="w-full h-full relative z-10">
           {/* Carousel of 4 videos */}
           <video
@@ -60,11 +60,11 @@ export default function Hero() {
             muted
             playsInline
             autoPlay
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover "
           />
           {/* Text Overlay for 3rd and 4th slides */}
           {(activeIndex === 2 || activeIndex === 3) && (
-            <div className="absolute top-2/5 md:top-1/2 left-4 sm:left-10 -translate-y-2/5 md:-translate-y-1/2 text-white p-4 sm:p-6 rounded-xl max-w-xs sm:max-w-lg lg:max-w-xl">
+            <div className="absolute top-1/3 md:top-1/2 left-4 sm:left-10 -translate-y-2/5 md:-translate-y-1/2 text-white p-4 sm:p-6 rounded-xl max-w-md sm:max-w-lg lg:max-w-xl">
               <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-snug">
                 {currentSlide.title}
               </h2>
@@ -102,7 +102,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-    </div>
+    // </div>
   );
 }
 
