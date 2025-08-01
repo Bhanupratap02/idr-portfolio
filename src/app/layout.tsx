@@ -7,7 +7,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="overflow-x-hidden">
         {/* <Navbar /> */}
-        <main className="pt-4 w-screen">{children}</main>
+        <main className=" w-screen">{children}</main>
       </body>
     </html>
   );

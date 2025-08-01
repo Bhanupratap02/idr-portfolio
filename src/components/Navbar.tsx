@@ -13,7 +13,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetClose,
-  SheetFooter
+  SheetFooter,
 } from "@/components/ui/sheet";
 import accessControl from "@/assets/icons/acces_control.png";
 import audioVisual from "@/assets/icons/audio_visual.png";
@@ -38,52 +38,94 @@ const serviceIcons = [
 // Menu data
 const menuData = {
   services: [
-    "Access Control Systems",
-    "Audio / Visual Systems",
-    "Conference Room Solutions",
-    "Data Center Infrastructure",
-    "Networks & IT Infrastructure",
-    "Multifamily Intercom Systems",
-    "Security Alarm Systems",
-    "Structured Cabling",
-    "Surveillance Camera Systems",
+    { name: "Access Control Systems", url: "/services/access-control" },
+    { name: "Audio / Visual Systems", url: "/services/audio-visual" },
+    { name: "Conference Room Solutions", url: "/services/conference-room" },
+    { name: "Data Center Infrastructure", url: "/services/data-center" },
+    { name: "Networks & IT Infrastructure", url: "/services/networks-it" },
+    { name: "Multifamily Intercom Systems", url: "/services/intercom" },
+    { name: "Security Alarm Systems", url: "/services/security-alarm" },
+    { name: "Structured Cabling", url: "/services/structured-cabling" },
+    {
+      name: "Surveillance Camera Systems",
+      url: "/services/surveillance-camera",
+    },
   ],
   caseStudies: [
-    "Burns - A Lasting Partnership",
-    "Cloud + 4-Wire Intercoms",
-    "Custom Audio Deterrent",
-    "Eliminated Unauthorized Access",
-    "Enterprise Cabling Cleanup",
-    "Fixing Failed Installs",
-    "Kisi Elevator Access",
-    "Phased Wi-Fi Upgrade",
-    "PPA - A Lasting Partnership",
-    "Scaling Security w/ Fairstead",
-    "Securing Lauderhill Point",
-    "Smarter Training Room",
-    "Unified Intercom Access",
+    {
+      name: "Burns - A Lasting Partnership",
+      url: "/case-studies/burns-partnership",
+    },
+    {
+      name: "Cloud + 4-Wire Intercoms",
+      url: "/case-studies/cloud-4-wire-intercoms",
+    },
+    {
+      name: "Custom Audio Deterrent",
+      url: "/case-studies/custom-audio-deterrent",
+    },
+    {
+      name: "Eliminated Unauthorized Access",
+      url: "/case-studies/eliminated-unauthorized-access",
+    },
+    {
+      name: "Enterprise Cabling Cleanup",
+      url: "/case-studies/enterprise-cabling-cleanup",
+    },
+    {
+      name: "Fixing Failed Installs",
+      url: "/case-studies/fixing-failed-installs",
+    },
+    { name: "Kisi Elevator Access", url: "/case-studies/kisi-elevator-access" },
+    { name: "Phased Wi-Fi Upgrade", url: "/case-studies/phased-wifi-upgrade" },
+    {
+      name: "PPA - A Lasting Partnership",
+      url: "/case-studies/ppa-partnership",
+    },
+    {
+      name: "Scaling Security w/ Fairstead",
+      url: "/case-studies/scaling-security-fairstead",
+    },
+    {
+      name: "Securing Lauderhill Point",
+      url: "/case-studies/securing-lauderhill-point",
+    },
+    {
+      name: "Smarter Training Room",
+      url: "/case-studies/smarter-training-room",
+    },
+    {
+      name: "Unified Intercom Access",
+      url: "/case-studies/unified-intercom-access",
+    },
   ],
   partners: [
-    "Akuvox",
-    "Alphatouch",
-    "ButterflyMX",
-    "Cisco / Meraki",
-    "Eagle Eye",
-    "Kisi",
-    "Lencore",
-    "MVI",
-    "Rhombus",
-    "Speco Technologies",
-    "Teleportivity",
-    "Verkada",
-    "Vicon",
-    "Vivotek / Vortex",
-    "ZK Teco",
+    { name: "Akuvox", url: "/partners/akuvox" },
+    { name: "Alphatouch", url: "/partners/alphatouch" },
+    { name: "ButterflyMX", url: "/partners/butterflymx" },
+    { name: "Cisco / Meraki", url: "/partners/cisco-meraki" },
+    { name: "Eagle Eye", url: "/partners/eagle-eye" },
+    { name: "Kisi", url: "/partners/kisi" },
+    { name: "Lencore", url: "/partners/lencore" },
+    { name: "MVI", url: "/partners/mvi" },
+    { name: "Rhombus", url: "/partners/rhombus" },
+    { name: "Speco Technologies", url: "/partners/speco-technologies" },
+    { name: "Teleportivity", url: "/partners/teleportivity" },
+    { name: "Verkada", url: "/partners/verkada" },
+    { name: "Vicon", url: "/partners/vicon" },
+    { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
+    { name: "ZK Teco", url: "/partners/zk-teco" },
   ],
 };
 
 // Desktop Mega Menu Grid
-const MenuGrid = ({ items, title }: { items: string[]; title: string }) => (
+const MenuGrid = ({
+  items,
+  title,
+}: {
+  items: Array<{ name: string; url: string }>;
+  title: string;
+}) => (
   <div className="absolute top-full left-0 right-0 z-[70] bg-white mt-0.5 hidden lg:block">
     <div className="max-w-7xl h-full  px-4 md:px-6 lg:px-8 py-10 flex ">
       {/* Title aligned left */}
@@ -96,19 +138,19 @@ const MenuGrid = ({ items, title }: { items: string[]; title: string }) => (
         {items.filter(Boolean).map((item, index) => (
           <Link
             key={index}
-            href="#"
+            href={item.url}
             className="flex items-center space-x-3 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium py-4 px-4 rounded transition-colors"
           >
             {title === "Services" && (
               <Image
                 src={serviceIcons[index]}
-                alt={item}
+                alt={item.name}
                 width={24}
                 height={24}
                 className="object-contain"
               />
             )}
-            <span>{item}</span>
+            <span>{item.name}</span>
           </Link>
         ))}
       </div>
@@ -124,7 +166,7 @@ const MobileMenuSheet = ({
   onOpenChange,
   icons = [],
 }: {
-  items: string[];
+  items: Array<{ name: string; url: string }>;
   title: string;
   isOpen: boolean;
   onOpenChange: (open: boolean) => void;
@@ -145,20 +187,20 @@ const MobileMenuSheet = ({
         {items.filter(Boolean).map((item, index) => (
           <Link
             key={index}
-            href="#"
+            href={item.url}
             className="py-5 px-5 mx-5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer transition-colors border-b border-gray-100 last:border-b-0 flex items-center  space-x-3 text-sm text-gray-700 
             "
           >
             {title === "Services" && icons[index] && (
               <Image
                 src={icons[index]}
-                alt={item}
+                alt={item.name}
                 width={24}
                 height={24}
                 className="object-contain"
               />
             )}
-            <span>{item}</span>
+            <span>{item.name}</span>
           </Link>
         ))}
       </div>
@@ -181,7 +223,7 @@ export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string>("");
-const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const handleMobileMenuClick = (menuType: string) => {
     setActiveMobileMenu(menuType);
     setMobileMenuOpen(true);
@@ -190,26 +232,23 @@ const menuRef = useRef<HTMLDivElement>(null);
   const handleMenuToggle = (menuType: string) => {
     setActiveMenu((prev) => (prev === menuType ? null : menuType));
   };
-  // const handleMenuToggle = (menuType: string) => {
-  //   setActiveMenu(menuType);
-  // };
   // 👇 Close on outside click
-useEffect(() => {
-  const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-      setActiveMenu(null);
-    }
-  };
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setActiveMenu(null);
+      }
+    };
 
-  document.addEventListener("mousedown", handleClickOutside);
-  return () => document.removeEventListener("mousedown", handleClickOutside);
-}, [activeMenu]);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [activeMenu]);
 
   return (
-    <nav className="sticky top-1 bg-[#202020] rounded-xl px-6 lg:px-8 py-6 mx-4 md:mx-6 lg:mx-8 overflow-visible z-[60] ">
+    <nav className="sticky top-0 bg-[#202020]  px-6 lg:px-8 py-6  overflow-visible z-[60] ">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="relative w-48 lg:w-52 h-7">
+        <Link href="/" className="relative w-48 lg:w-52 h-7">
           <Image
             src={logo}
             alt="IDR Technology Solutions"
@@ -217,12 +256,12 @@ useEffect(() => {
             className="object-contain"
             priority
           />
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8  cursor-pointer">
           <Link
-            href="#"
+            href="/about"
             className="text-[#F7F6F2] text-sm hover:text-white transition-colors"
           >
             About Us
@@ -260,7 +299,7 @@ useEffect(() => {
           ))}
 
           <Link
-            href="#"
+            href="/portfolio"
             className="text-[#F7F6F2] text-sm hover:text-white transition-colors cursor-pointer"
           >
             Portfolio
@@ -269,12 +308,18 @@ useEffect(() => {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <button className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors">
+          <Link
+            href="#"
+            className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors"
+          >
             Login
-          </button>
-          <button className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase hover:bg-white transition-colors">
+          </Link>
+          <Link
+            href="/contact"
+            className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase hover:bg-white transition-colors"
+          >
             Contact US
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -314,7 +359,7 @@ useEffect(() => {
       {isMenuOpen && (
         <div className="lg:hidden mt-4 pb-4">
           <div className="flex flex-col space-y-4">
-            <Link href="#" className="text-[#F7F6F2] text-sm">
+            <Link href="/about" className="text-[#F7F6F2] text-sm">
               About Us
             </Link>
             {["services", "caseStudies", "partners"].map((key) => (
@@ -331,16 +376,22 @@ useEffect(() => {
                 <ChevronDown className="w-4 h-4" />
               </button>
             ))}
-            <Link href="#" className="text-[#F7F6F2] text-sm">
+            <Link href="/portfolio" className="text-[#F7F6F2] text-sm">
               Portfolio
             </Link>
             <div className="flex flex-col space-y-2 pt-4">
-              <button className="px-4 py-3 border border-white text-white text-xs uppercase">
+              <Link
+                href="/login"
+                className="px-4 py-3 border border-white text-white text-xs uppercase text-center"
+              >
                 Login
-              </button>
-              <button className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase">
+              </Link>
+              <Link
+                href="/contact"
+                className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase text-center"
+              >
                 Contact US
-              </button>
+              </Link>
             </div>
           </div>
         </div>
