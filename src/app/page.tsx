@@ -1,9 +1,8 @@
 /** @format */
 
 
-import Navbar from "@/components/Navbar2";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Partners from "@/components/Partners";
 import EverythingYouNeed from "@/components/EverythingYouNeed";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -47,7 +46,7 @@ const topPartnerImages = [
 export default function Index() {
 
   return (
-    <div className="min-h-screen bg-[#F7F6F2]">
+    <div className="min-h-screen bg-[#FFFFF] ">
       {/* Navigation */}
       <Navbar />
 
@@ -55,7 +54,7 @@ export default function Index() {
       <Hero />
 
       {/* Partner Logos Strip */}
-      {/* <Partners /> */}
+
       <PartnerLogos logos={topPartnerImages} />
       {/* Everything You Need Section */}
       <EverythingYouNeed />
@@ -85,6 +84,7 @@ export default function Index() {
       <PartnerLogos logos={footerPartnerImages} />
       {/* Footer */}
       <Footer />
+      
     </div>
   );
 }
