@@ -17,7 +17,7 @@ const slides = [
   },
 ];
 export default function Hero() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(2);
   const [secondsLeft, setSecondsLeft] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function Hero() {
           />
           {/* Text Overlay for 3rd and 4th slides */}
           {(activeIndex === 2 || activeIndex === 3) && (
-            <div className="absolute top-2/5 md:top-1/2 left-4 sm:left-10 -translate-y-2/5 md:-translate-y-1/2 text-white p-4 sm:p-6 rounded-xl max-w-xs sm:max-w-lg lg:max-w-xl">
+            <div className="absolute top-1/3 md:top-1/2 left-4 sm:left-10 -translate-y-2/5 md:-translate-y-1/2 text-white p-4 sm:p-6 rounded-xl max-w-md sm:max-w-lg lg:max-w-xl">
               <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-snug">
                 {currentSlide.title}
               </h2>
