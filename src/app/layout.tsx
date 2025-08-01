@@ -1,14 +1,13 @@
 // app/layout.tsx
 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className="overflow-x-hidden">
         {/* <Navbar /> */}
-        <main className="pt-4 overflow-x-hidden">{children}</main>
+        <main className="pt-4 w-screen">{children}</main>
       </body>
     </html>
   );

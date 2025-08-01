@@ -8,7 +8,7 @@ const Testimonials = () => {
           What They Say About Us
         </h2>
 
-        <div className="relative bg-[#052557] rounded-none p-0 min-h-96">
+        <div className="relative bg-[#052557] rounded-none p-0 min-h-96 overflow-hidden">
           {/* Decorative circles */}
           <div
             className="absolute -top-32 -right-32 w-72 h-72 rounded-full 
@@ -41,19 +41,6 @@ const Testimonials = () => {
                   </svg>
                 ))}
               </div>
-
-              {/* Quote icon */}
-              {/* <div className="flex justify-center lg:justify-start">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-[#052557] flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
-                  </svg>
-                </div>
-              </div> */}
             </div>
             {/* Right: Profile */}
             <div className="lg:w-1/2 flex flex-col items-center">
@@ -63,7 +50,6 @@ const Testimonials = () => {
                     src={chrisKoble}
                     alt="Chris Koble"
                     quality={100}
-      
                     className="object-contain"
                   />
                 </div>
