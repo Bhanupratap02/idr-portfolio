@@ -1,3 +1,5 @@
+/** @format */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -44,6 +46,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* ✅ NEW — Custom breakpoints */
+  --breakpoint-3xl: 150rem; /* 2400px */
+  /* ✅ NEW — Custom primary palette (example shades) */
+  --color-primary: #052557;
+  --color-secondary: ##202020;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,12 +136,48 @@
   body {
     @apply bg-background text-foreground;
   }
+  @media (min-width: 2400px) {
+    .hero-container {
+      min-height: 80vh;
+      max-height: 88vh;
+    }
+  }
 }
 @layer utilities {
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
-
+  @keyframes scroll-left-ultrawide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.33%);
+    }
+  }
+  .animate-scroll {
+    animation: scroll-left 30s linear infinite;
+  }
+  @media (min-width: 1536px) {
+    .animate-scroll {
+      animation: scroll-left-ultrawide 45s linear infinite;
+    }
+  }
+  @media (min-width: 1920px) {
+    .animate-scroll {
+      animation: scroll-left-ultrawide 60s linear infinite;
+    }
+  }
+  @media (min-width: 2560px) {
+    .animate-scroll {
+      animation: scroll-left-ultrawide 75s linear infinite;
+    }
+  }
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -144,16 +187,43 @@
     }
   }
   @keyframes marquee {
-  0% {
-    transform: translateX(0%);
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
-  100% {
-    transform: translateX(-100%);
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
   }
 }
 
-.animate-marquee {
-  animation: marquee 25s linear infinite;
-}
+@layer components {
+  .container {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
 
+    max-width: 1280px;
+
+    /* @screen lg {
+      max-width: 1440px;
+    } */
+
+    @media (min-width: 1600px) {
+      max-width: 1600px;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1720px;
+    }
+
+    @media (min-width: 2400px) {
+      max-width: 1920px;
+    }
+
+    @media (min-width: 3000px) {
+      max-width: 2100px;
+    }
+  }
 }

@@ -74,20 +74,20 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-white px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 lg:mb-24">
+    <section className="bg-white px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
+      <div className="mx-auto max-w-4xl 2xl:max-w-5xl 3xl:max-w-7xl">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 lg:mb-20 2xl:mb-24">
           Frequently Asked Questions
         </h2>
 
-        <div className="space-y-7">
+        <div className="space-y-7 2xl:space-y-9 3xl:space-y-12">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className={`rounded-3xl transition-all duration-300 ${
                 openFaq === index
-                  ? "bg-[#F7F6F2] p-6 sm:p-8"
-                  : "bg-[#F7F6F2] shadow-sm p-6 sm:p-8"
+                  ? "bg-[#F7F6F2] p-6 sm:p-8 2xl:p-10 3xl:p-12"
+                  : "bg-[#F7F6F2] shadow-sm p-6 sm:p-8 2xl:p-10 3xl:p-12"
               }`}
             >
               <button
@@ -96,18 +96,18 @@ const FAQSection = () => {
                 aria-expanded={openFaq === index}
                 aria-controls={`faq-${index}`}
               >
-                <span className="text-base sm:text-lg font-medium text-[#333333] pr-4">
+                <span className="text-base sm:text-lg 2xl:text-2xl 3xl:text-3xl font-medium text-[#333333] pr-4">
                   {faq.question}
                 </span>
                 <div
-                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-colors ${
+                  className={`w-10 h-10 sm:w-12 sm:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 rounded-full flex items-center justify-center transition-colors ${
                     openFaq === index
                       ? "bg-[#052557]"
                       : "bg-[#F7F6F2] shadow-lg"
                   }`}
                 >
                   <svg
-                    className={`w-5 h-5 transition-transform duration-300 ${
+                    className={`w-5 h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 transition-transform duration-300 ${
                       openFaq === index
                         ? "rotate-180 text-[#F7F6F2]"
                         : "text-[#052557]"
@@ -129,7 +129,7 @@ const FAQSection = () => {
               {openFaq === index && (
                 <div
                   id={`faq-${index}`}
-                  className="mt-6 text-sm sm:text-base text-[#626262] leading-relaxed"
+                  className="mt-6 text-sm sm:text-base  2xl:text-xl 3xl:text-2xl text-[#626262] leading-relaxed"
                 >
                   {faq.answer.split("\n").map((line, i) => (
                     <p key={i} className="mb-3">
