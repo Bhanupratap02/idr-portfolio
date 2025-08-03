@@ -19,7 +19,7 @@ const slides = [
   },
 ];
 
-export default function Hero() {
+export default function Hero2() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
@@ -93,16 +93,7 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-[#202020] overflow-hidden">
       {/* Use aspect ratio container for consistent video display with increased height for ultrawide */}
-      <div className="relative w-full min-h-[400px] h-[70vh] sm:h-[75vh] lg:h-[78vh] 2xl:min-h-[600px] 2xl:h-[83vh] hero-container">
-        {/* Custom breakpoint for ultrawide screens */}
-        <style jsx>{`
-          @media (min-width: 2400px) {
-            .hero-container {
-              min-height: 80vh;
-              height: 88vh;
-            }
-          }
-        `}</style>
+      <div className="relative w-full aspect-[9/16] sm:aspect-[16/9] overflow-hidden">
         {/* Video Container */}
         <div className="absolute inset-0 w-full h-full">
           <video
@@ -134,7 +125,7 @@ export default function Hero() {
 
         {/* Text Overlay for 3rd and 4th slides */}
         {(activeIndex === 2 || activeIndex === 3) && (
-          <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start">
+          <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center  justify-start">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
               {/* Left-aligned container with max width to prevent centering */}
               <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
@@ -160,7 +151,7 @@ export default function Hero() {
         )}
 
         {/* Slider Dots with Countdown - Responsive positioning */}
-        <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 xl:bottom-10 left-4 sm:left-6 lg:left-8 xl:left-10 sm:right-4  lg:right-8 xl:right-10 z-20">
+        <div className="absolute bottom-4 sm:bottom-6 lg:bottom-[15%] xl:bottom-[15%] 2xl:bottom-[40%] left-4 sm:left-6 lg:left-8 xl:left-10 sm:right-4  lg:right-8 xl:right-10 z-20">
           <div className="flex sm:hidden items-center justify-start space-x-4">
             {/* Mobile: Horizontal dots at bottom left */}
             {[0, 1, 2, 3].map((i) =>
@@ -181,7 +172,7 @@ export default function Hero() {
             )}
           </div>
 
-          <div className="hidden sm:flex sm:absolute sm:bottom-0 sm:right-0 flex-col items-center space-y-4 lg:space-y-6">
+          <div className="hidden sm:flex sm:absolute sm:bottom-0  sm:right-0 flex-col items-center space-y-4 lg:space-y-6">
             {/* Desktop: Vertical dots at bottom right */}
             {[0, 1, 2, 3].map((i) =>
               i === activeIndex ? (

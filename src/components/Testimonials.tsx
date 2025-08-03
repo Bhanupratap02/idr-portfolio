@@ -1,39 +1,110 @@
+/** @format */
+
+// import Image from "next/image";
+// import chrisKoble from "@/assets/testimonial_2.png";
+// const Testimonials = () => {
+//   return (
+//     <section className="bg-white px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
+//       <div className="max-w-6xl mx-auto">
+//         <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
+//           What They Say About Us
+//         </h2>
+
+//         <div className="relative bg-[#052557] rounded-none p-0 min-h-96 overflow-hidden">
+//           {/* Decorative circles */}
+//           <div
+//             className="absolute -top-32 -right-32 w-72 h-72 rounded-full
+//           bg-white/8 bg-opacity-25 transform rotate-[-26deg]"
+//           ></div>
+//           <div className="absolute -top-6 -left-8 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
+//           <div className="absolute bottom-12 left-12 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
+//           <div className="absolute -bottom-35 right-80 w-72 h-72 rounded-full bg-white/8 bg-opacity-8"></div>
+
+//           {/* Responsive flex layout */}
+//           <div className="relative z-10 flex flex-col-reverse lg:flex-row  items-center p-6 sm:p-12 lg:p-20 gap-12 lg:gap-20 min-h-96">
+//             {/* Left: Testimonial Content */}
+//             <div className="lg:w-1/2 text-center ">
+//               <p className="text-base sm:text-lg lg:text-xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
+//                 We have hired IDR on several occasions to pull network wiring,
+//                 install networking equipment, security cameras, A/V, etc. We
+//                 have always had a great experience with them and I would highly
+//                 recommend IDR without
+//               </p>
+
+//               <div className="flex justify-center  mb-6">
+//                 {[...Array(5)].map((_, i) => (
+//                   <svg
+//                     key={i}
+//                     className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-[#F8CA0A]"
+//                     fill="currentColor"
+//                     viewBox="0 0 20 20"
+//                   >
+//                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+//                   </svg>
+//                 ))}
+//               </div>
+//             </div>
+//             {/* Right: Profile */}
+//             <div className="lg:w-1/2 flex flex-col items-center">
+//               <div className="relative mb-6 sm:mb-8">
+//                 <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden border-10 border-white">
+//                   <Image
+//                     src={chrisKoble}
+//                     alt="Chris Koble"
+//                     quality={100}
+//                     className="object-contain"
+//                   />
+//                 </div>
+//               </div>
+//               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#F7F6F2] text-center capitalize">
+//                 Chris Koble
+//               </h3>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Testimonials
+
+/** @format */
 import Image from "next/image";
 import chrisKoble from "@/assets/testimonial_2.png";
+
 const Testimonials = () => {
   return (
-    <section className="bg-white px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
+    <section className="bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 3xl:py-28">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[110rem] mx-auto">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl 3xl:text-7xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
           What They Say About Us
         </h2>
 
         <div className="relative bg-[#052557] rounded-none p-0 min-h-96 overflow-hidden">
           {/* Decorative circles */}
-          <div
-            className="absolute -top-32 -right-32 w-72 h-72 rounded-full 
-          bg-white/8 bg-opacity-25 transform rotate-[-26deg]"
-          ></div>
-          <div className="absolute -top-6 -left-8 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
-          <div className="absolute bottom-12 left-12 w-28 h-28 rounded-full bg-white/8 bg-opacity-8"></div>
-          <div className="absolute -bottom-35 right-80 w-72 h-72 rounded-full bg-white/8 bg-opacity-8"></div>
+          <div className="absolute -top-32 -right-32 w-72 h-72 3xl:w-[25rem] 3xl:h-[25rem] rounded-full bg-white/8 bg-opacity-25 transform rotate-[-26deg]" />
+          <div className="absolute -top-6 -left-8 w-28 h-28 3xl:w-[15rem] 3xl:h-[15rem]  rounded-full bg-white/8 bg-opacity-8" />
+          <div className="absolute bottom-12 left-14 w-28 h-28 3xl:w-[15rem] 3xl:h-[15rem] rounded-full bg-white/8 bg-opacity-8" />
+          <div className="absolute -bottom-35 right-80 w-72 h-72 3xl:w-[25rem] 3xl:h-[25rem]  rounded-full bg-white/8 bg-opacity-8" />
 
-          {/* Responsive flex layout */}
-          <div className="relative z-10 flex flex-col-reverse lg:flex-row  items-center p-6 sm:p-12 lg:p-20 gap-12 lg:gap-20 min-h-96">
-            {/* Left: Testimonial Content */}
-            <div className="lg:w-1/2 text-center ">
-              <p className="text-base sm:text-lg lg:text-xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
+          {/* Testimonial content */}
+          <div className="relative z-10 flex flex-col-reverse lg:flex-row items-center p-6 sm:p-12 lg:p-20 3xl:p-28 gap-12 lg:gap-20">
+            {/* Left: Testimonial Text */}
+            <div className="lg:w-1/2 3xl:w-7/10 text-center">
+              <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
                 We have hired IDR on several occasions to pull network wiring,
                 install networking equipment, security cameras, A/V, etc. We
                 have always had a great experience with them and I would highly
                 recommend IDR without
               </p>
 
-              <div className="flex justify-center  mb-6">
+              {/* Star Ratings */}
+              <div className="flex justify-center mb-6">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-[#F8CA0A]"
+                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-9 2xl:h-9 3xl:h-11 3xl:w-11 text-[#F8CA0A]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -42,10 +113,11 @@ const Testimonials = () => {
                 ))}
               </div>
             </div>
-            {/* Right: Profile */}
-            <div className="lg:w-1/2 flex flex-col items-center">
+
+            {/* Right: Profile Image + Name */}
+            <div className="lg:w-1/2  flex flex-col items-center   ">
               <div className="relative mb-6 sm:mb-8">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden border-10 border-white">
+                <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52 2xl:w-60 2xl:h-60 3xl:w-70 3xl:h-70 rounded-full overflow-hidden border-[10px] border-white">
                   <Image
                     src={chrisKoble}
                     alt="Chris Koble"
@@ -54,7 +126,7 @@ const Testimonials = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#F7F6F2] text-center capitalize">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl font-semibold text-[#F7F6F2] text-center capitalize">
                 Chris Koble
               </h3>
             </div>
@@ -63,6 +135,6 @@ const Testimonials = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Testimonials
+export default Testimonials;

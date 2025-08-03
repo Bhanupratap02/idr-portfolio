@@ -1,17 +1,82 @@
 /** @format */
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import img from "@/assets/image2.png"; // Replace with actual image
+import img from "@/assets/image2.png"; // Default image
+import img_1 from "@/assets/what_we_do/image_1.png";
+import img_2 from "@/assets/what_we_do/image_2.png";
+import img_3 from "@/assets/what_we_do/image_3.png";
+import img_4 from "@/assets/what_we_do/image_4.png";
+import img_5 from "@/assets/what_we_do/image_5.png";
+import img_6 from "@/assets/what_we_do/image_6.png";
+import img_7 from "@/assets/what_we_do/image_7.png";
+import img_8 from "@/assets/what_we_do/image_8.png";
 
 const WhatWeDo = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number|null>(null);
+
+  const services = [
+    {
+      title: "Access Control & Intercom Systems",
+      image: img_1,
+    },
+    {
+      title: "Surveillance Cameras & Security Alarms",
+      image: img_2,
+    },
+    {
+      title: "Audio/Visual Systems for Commercial & Education",
+      image: img_3,
+    },
+    {
+      title: "Structured Cabling & Fiber Optics",
+      image: img_4,
+    },
+    {
+      title: "IT Infrastructure & Wi-Fi",
+      image: img_5,
+    },
+    {
+      title: "Data Center Builds",
+      image: img_6,
+    },
+    {
+      title: "Smart Conference Rooms",
+      image: img_7,
+    },
+    {
+      title: "Sound Masking & Speaker Systems",
+      image: img_1, // You can replace with img_8 if you have it
+    },
+  ];
+
+  const currentImage =
+    hoveredIndex !== null ? services[hoveredIndex].image : img;
+
+  // Calculate scroll indicator position based on hovered item
+  const getIndicatorPosition = () => {
+    if (hoveredIndex === null) return 0;
+
+    // Calculate position based on the number of items and current hovered index
+    const totalHeight = services.length * 6; // 6 is roughly the height of each item in rem
+    const itemHeight = 5.5; // Height per item in rem
+    const indicatorHeight = 3; // Height of indicator in rem
+
+    // Position indicator at the center of the hovered item
+    const position =
+      hoveredIndex * itemHeight + itemHeight / 2 - indicatorHeight / 2;
+    return Math.max(0, Math.min(position, totalHeight - indicatorHeight));
+  };
+
   return (
-    <section className="px-4 sm:px-6 lg:px-48 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto">
+    <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="container">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#3D3D3D] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-[#3D3D3D] mb-4">
             What We Do
           </h2>
-          <p className="text-base sm:text-lg text-[#333] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl text-[#333] leading-relaxed max-w-3xl mx-auto">
             We provide complete low-voltage design and installation services.
             Whether you need a single install or a full-building deployment, our
             team handles every detail — design, installation, documentation, and
@@ -20,43 +85,60 @@ const WhatWeDo = () => {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-32 items-center">
-          {/* Image with Shadow Removed but Responsive */}
-          <div className="relative mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-none lg:w-[330px] lg:h-[350px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 xl:gap-32 items-center">
+          {/* Image */}
+          <div className="relative mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-none lg:w-[330px] lg:h-[350px] xl:w-[400px] xl:h-[420px] 2xl:w-[460px] 2xl:h-[480px] 3xl:w-[520px] 3xl:h-[540px]">
             <div className="relative w-full h-0 pb-[100%] lg:pb-0 lg:h-full rounded-xl overflow-hidden">
               <Image
-                src={img}
-                alt="Security Camera"
+                src={currentImage}
+                alt="Service Image"
                 fill
-                className="object-cover rounded-xl"
+                className="object-cover rounded-xl transition-all duration-500 ease-in-out"
                 priority
+              />
+              {/* Overlay effect during transition */}
+              <div
+                className={`absolute inset-0 bg-black transition-opacity duration-300 ${
+                  hoveredIndex !== null ? "opacity-0" : "opacity-0"
+                }`}
               />
             </div>
           </div>
 
           {/* Services List */}
           <div className="relative">
-            {/* Scroll indicator */}
+            {/* Scroll Indicator */}
             <div className="absolute -left-4 sm:left-0 top-0 w-2 h-full hidden md:block">
-              <div className="w-full h-full bg-[#DEDEDE]" />
-              <div className="w-2 h-12 bg-[#052557] rounded-full absolute top-0" />
+              <div className="w-full h-full bg-[#DEDEDE] rounded-full" />
+              <div
+                className="w-2 h-12 bg-[#052557] rounded-full absolute transition-all duration-300 ease-in-out"
+                style={{
+                  top: `${getIndicatorPosition()}rem`,
+                }}
+              />
             </div>
 
-            <div className="ml-6 sm:ml-8 space-y-5">
-              {[
-                "Access Control & Intercom Systems",
-                "Surveillance Cameras & Security Alarms",
-                "Audio/Visual Systems for Commercial & Education",
-                "Structured Cabling & Fiber Optics",
-                "IT Infrastructure & Wi-Fi",
-                "Data Center Builds",
-                "Smart Conference Rooms",
-                "Sound Masking & Speaker Systems",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start space-x-4">
-                  <div className="w-10 h-10 sm:w-8 sm:h-8 bg-[#052557] rounded-full flex items-center justify-center shrink-0">
+            <div className="ml-6 sm:ml-8 space-y-6">
+              {services.map((service, i) => (
+                <div
+                  key={i}
+                  className={`flex items-center space-x-4 cursor-pointer transition-all duration-300 p-2 rounded-lg ${
+                    hoveredIndex === i
+                      ? "bg-[#052557]/5 transform translate-x-2"
+                      : "hover:bg-[#052557]/5"
+                  }`}
+                  onMouseEnter={() => setHoveredIndex(i)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  <div
+                    className={`w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
+                      hoveredIndex === i
+                        ? "bg-[#052557] scale-110 shadow-lg"
+                        : "bg-[#052557]"
+                    }`}
+                  >
                     <svg
-                      className="w-4 h-4 sm:w-5 sm:h-5 text-white"
+                      className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -67,8 +149,14 @@ const WhatWeDo = () => {
                       />
                     </svg>
                   </div>
-                  <span className="text-base sm:text-lg text-[#151515] capitalize">
-                    {item}
+                  <span
+                    className={`text-base sm:text-lg lg:text-xl 2xl:text-2xl capitalize transition-all duration-300 ${
+                      hoveredIndex === i
+                        ? "text-[#052557] font-semibold"
+                        : "text-[#151515]"
+                    }`}
+                  >
+                    {service.title}
                   </span>
                 </div>
               ))}
@@ -81,197 +169,3 @@ const WhatWeDo = () => {
 };
 
 export default WhatWeDo;
-
-//  <section className="px-6 lg:px-48 py-20">
-//     <div className="max-w-7xl mx-auto">
-//       <div className="text-center mb-12">
-//         <h2 className="text-5xl lg:text-6xl font-medium text-[#3D3D3D] mb-4">
-//           What We Do
-//         </h2>
-//         <p className="text-xl text-[#333] leading-relaxed max-w-4xl mx-auto">
-//           We provide complete low-voltage design and installation services,
-//           including: Whether you need a single install or a full-building
-//           deployment, our team handles every detail — design, installation,
-//           documentation, and support.
-//         </p>
-//       </div>
-
-//       <div className="grid lg:grid-cols-2 gap-32 items-center">
-//         <div className="relative">
-//           {/* Smaller shadow behind the image */}
-//           <div className="w-72 h-72 rounded-xl bg-[#052557] bg-opacity-15 transform rotate-[-8deg] absolute top-3 left-8"></div>
-//           <div className="w-80 h-80 bg-gray-300 rounded-xl relative z-10">
-//             {/* Placeholder for security camera image */}
-//             <div className="w-full h-full bg-gray-400 rounded-xl flex items-center justify-center">
-//               <span className="text-gray-600 text-sm">
-//                 Security Camera Image
-//               </span>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="relative">
-//           {/* Vertical scroll indicator line */}
-//           <div className="absolute left-0 top-0 w-2 h-full flex flex-col">
-//             <div className="w-full h-full bg-[#DEDEDE]"></div>
-//             <div className="w-2 h-12 bg-[#052557] rounded-full absolute top-0"></div>
-//           </div>
-
-//           {/* Services list with left margin for the scroll indicator */}
-//           <div className="ml-12 space-y-4">
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Access Control & Intercom Systems
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Surveillance Cameras & Security Alarms
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Audio/Visual Systems for Commercial & Education
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Structured Cabling & Fiber Optics
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 IT Infrastructure & Wi-Fi
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Data Center Builds
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Smart Conference Rooms
-//               </span>
-//             </div>
-
-//             <div className="flex items-center space-x-4">
-//               <div className="w-12 h-12 bg-[#052557] rounded-full flex items-center justify-center">
-//                 <svg
-//                   className="w-5 h-5 text-white"
-//                   fill="currentColor"
-//                   viewBox="0 0 20 20"
-//                 >
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-//                     clipRule="evenodd"
-//                   />
-//                 </svg>
-//               </div>
-//               <span className="text-xl text-[#151515] capitalize">
-//                 Sound Masking & Speaker Systems
-//               </span>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   </section>

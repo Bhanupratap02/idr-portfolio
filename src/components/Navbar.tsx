@@ -38,17 +38,50 @@ const serviceIcons = [
 // Menu data
 const menuData = {
   services: [
-    { name: "Access Control Systems", url: "/services/access-control" },
-    { name: "Audio / Visual Systems", url: "/services/audio-visual" },
-    { name: "Conference Room Solutions", url: "/services/conference-room" },
-    { name: "Data Center Infrastructure", url: "/services/data-center" },
-    { name: "Networks & IT Infrastructure", url: "/services/networks-it" },
-    { name: "Multifamily Intercom Systems", url: "/services/intercom" },
-    { name: "Security Alarm Systems", url: "/services/security-alarm" },
-    { name: "Structured Cabling", url: "/services/structured-cabling" },
+    {
+      name: "Access Control Systems",
+      url: "/services/access-control",
+      icon: accessControl,
+    },
+    {
+      name: "Audio / Visual Systems",
+      url: "/services/audio-visual",
+      icon: audioVisual,
+    },
+    {
+      name: "Conference Room Solutions",
+      url: "/services/conference-room",
+      icon: conferenceRoom,
+    },
+    {
+      name: "Data Center Infrastructure",
+      url: "/services/data-center",
+      icon: dataCenter,
+    },
+    {
+      name: "Networks & IT Infrastructure",
+      url: "/services/networks-it",
+      icon: networks,
+    },
+    {
+      name: "Multifamily Intercom Systems",
+      url: "/services/intercom",
+      icon: intercom,
+    },
+    {
+      name: "Security Alarm Systems",
+      url: "/services/security-alarm",
+      icon: securityAlarm,
+    },
+    {
+      name: "Structured Cabling",
+      url: "/services/structured-cabling",
+      icon: structuredCabling,
+    },
     {
       name: "Surveillance Camera Systems",
       url: "/services/surveillance-camera",
+      icon: surveillanceCamera,
     },
   ],
   caseStudies: [
@@ -123,11 +156,11 @@ const MenuGrid = ({
   items,
   title,
 }: {
-  items: Array<{ name: string; url: string }>;
+  items: Array<{ name: string; url: string; icon?: StaticImageData }>;
   title: string;
 }) => (
-  <div className="absolute top-full left-0 right-0 z-[70] bg-white mt-0.5 hidden lg:block">
-    <div className="max-w-7xl h-full  px-4 md:px-6 lg:px-8 py-10 flex ">
+  <div className="absolute top-full left-0 right-0 z-[70]  bg-white mt-0.5 hidden lg:block">
+    <div className="max-w-7xl mx-auto h-full  px-4 md:px-6 lg:px-8 py-10 flex ">
       {/* Title aligned left */}
       <h3 className=" flex-1   text-left  text-[#052557] text-lg mb-4 font-medium ">
         {title}
@@ -141,9 +174,9 @@ const MenuGrid = ({
             href={item.url}
             className="flex items-center space-x-3 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium py-4 px-4 rounded transition-colors"
           >
-            {title === "Services" && (
+            {item.icon && (
               <Image
-                src={serviceIcons[index]}
+                src={item.icon}
                 alt={item.name}
                 width={24}
                 height={24}
@@ -164,13 +197,11 @@ const MobileMenuSheet = ({
   title,
   isOpen,
   onOpenChange,
-  icons = [],
 }: {
-  items: Array<{ name: string; url: string }>;
+  items: Array<{ name: string; url: string; icon?: StaticImageData }>;
   title: string;
   isOpen: boolean;
   onOpenChange: (open: boolean) => void;
-  icons?: StaticImageData[];
 }) => (
   <Sheet open={isOpen} onOpenChange={onOpenChange}>
     <SheetContent
@@ -191,9 +222,9 @@ const MobileMenuSheet = ({
             className="py-5 px-5 mx-5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer transition-colors border-b border-gray-100 last:border-b-0 flex items-center  space-x-3 text-sm text-gray-700 
             "
           >
-            {title === "Services" && icons[index] && (
+            {item.icon && (
               <Image
-                src={icons[index]}
+                src={item.icon}
                 alt={item.name}
                 width={24}
                 height={24}
@@ -253,7 +284,7 @@ export default function Navbar() {
             src={logo}
             alt="IDR Technology Solutions"
             fill
-            className="object-contain"
+            className="object-contain "
             priority
           />
         </Link>
@@ -406,7 +437,6 @@ export default function Navbar() {
           setMobileMenuOpen(open);
           if (!open) setActiveMobileMenu("");
         }}
-        icons={serviceIcons}
       />
       <MobileMenuSheet
         items={menuData.caseStudies}

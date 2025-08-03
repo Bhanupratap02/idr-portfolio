@@ -25,6 +25,7 @@ import partner10 from "@/assets/partners/partner_10.png";
 import partner11 from "@/assets/partners/partner_11.png";
 import partner12 from "@/assets/partners/partner_12.png";
 import partner13 from "@/assets/partners/partner_13.png";
+import Hero2 from "@/components/Hero2";
 
 const footerPartnerImages = [
   partner8,
@@ -51,7 +52,7 @@ export default function Index() {
       <Navbar />
 
       {/* Hero Section */}
-      <Hero />
+      <Hero2 />
 
       {/* Partner Logos Strip */}
 
