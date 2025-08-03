@@ -4,15 +4,35 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
+import Link from "next/link";
+// import instagramIcon from "@/assets/Instagram.png";
+// import tiktokIcon from "@/assets/tiktok.png";
 const ContactSection = () => {
+  const socialLinks = [
+    {
+      href: "https://www.youtube.com/@Idrtechnologysolutions",
+      icon: youtubeIcon,
+      alt: "YouTube",
+    },
+    {
+      href: "https://www.linkedin.com/company/idr-technology-solutions",
+      icon: linkedinIcon,
+      alt: "LinkedIn",
+    },
+    {
+      href: "https://www.facebook.com/profile.php?id=100057472869428",
+      icon: facebookIcon,
+      alt: "Facebook",
+    },
+  ];
   return (
-    <section className="px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-4xl lg:text-5xl font-medium text-[#333] mb-4">
+    <section className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1700px]">
+        <div className="mb-8 2xl:mb-12">
+          <h2 className="text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium text-[#333] mb-4">
             Contact us
           </h2>
-          <p className="text-lg text-[#333] font-light max-w-4xl">
+          <p className="text-lg 2xl:text-xl 3xl:text-2xl text-[#333] font-light max-w-4xl">
             Leave an inquiry or contact us via email and phone. We will contact
             you within 24 hours during work days
           </p>
@@ -21,21 +41,21 @@ const ContactSection = () => {
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-2">
             {/* Contact Info */}
-            <div className="bg-gradient-to-br from-[#144187] to-[#052557] p-8 lg:p-12 text-white relative">
+            <div className="bg-gradient-to-br from-[#144187] to-[#052557] p-8 lg:p-12 2xl:p-16 text-white relative">
               {/* Decorative circles */}
               <div className="absolute bottom-0 right-0 w-48 h-48 rounded-full bg-[#052557] bg-opacity-76 z-10"></div>
               <div className="absolute bottom-25 right-28 w-28 h-28 rounded-full bg-[#052557]/58 "></div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-medium mb-12 text-left">
+                <h3 className="text-2xl 2xl:text-3xl font-medium mb-12 text-left">
                   Contact Information
                 </h3>
 
-                <div className="space-y-8">
+                <div className="space-y-8 text-base 2xl:text-lg 3xl:text-xl leading-relaxed">
                   {/* Phone */}
                   <div className="flex items-start space-x-4">
                     <Phone className="w-6 h-6" />
-                    <div className="text-base leading-relaxed">
+                    <div>
                       NY: 718-594-7865
                       <br />
                       NJ: 732-217-3550
@@ -47,7 +67,7 @@ const ContactSection = () => {
                   {/* Email */}
                   <div className="flex items-start space-x-4">
                     <Mail className="w-6 h-6" />
-                    <div className="text-base leading-relaxed">
+                    <div>
                       Sales:
                       <br />
                       sales@idrtechnologysolutions.com
@@ -59,50 +79,39 @@ const ContactSection = () => {
                   {/* Address */}
                   <div className="flex items-start space-x-4">
                     <MapPin className="w-6 h-6" />
-                    <div className="text-base">
-                      Office Address: 91 Bay 31 St, Brooklyn, NY 11214
-                    </div>
+                    <div>Office Address: 91 Bay 31 St, Brooklyn, NY 11214</div>
                   </div>
                 </div>
 
                 {/* Social Media */}
                 <div className="mt-16 flex justify-start space-x-4">
-                  <div className="w-8 h-8 [#052557] bg-opacity-20 rounded flex items-center justify-center hover:bg-opacity-30 transition cursor-pointer">
-                    <Image
-                      src={youtubeIcon}
-                      alt="YouTube"
-                      width={20}
-                      className=""
-                      height={20}
-                    />
-                  </div>
-                  <div className="w-8 h-8 [#052557] bg-opacity-20 rounded flex items-center justify-center hover:bg-opacity-30 transition cursor-pointer">
-                    <Image
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="w-8 h-8 [#052557] bg-opacity-20 rounded flex items-center justify-center hover:bg-opacity-30 transition cursor-pointer">
-                    <Image
-                      src={facebookIcon}
-                      alt="Facebook"
-                      width={20}
-                      height={20}
-                    />
-                  </div>
+                  {socialLinks?.map((item, i) => (
+                    <Link
+                      key={i}
+                      href={item?.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-white/20 rounded flex items-center justify-center hover:bg-white/30 transition cursor-pointer"
+                    >
+                      <Image
+                        src={item?.icon}
+                        alt="icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="p-8 lg:p-12">
+            <div className="p-8 lg:p-12 2xl:p-16">
               <div className="mb-8">
-                <h3 className="text-3xl font-normal text-[#333] capitalize mb-2">
+                <h3 className="text-3xl 2xl:text-4xl 3xl:text-5xl font-normal text-[#333] capitalize mb-4">
                   get in touch
                 </h3>
-                <p className="text-sm text-[#626262] leading-relaxed">
+                <p className="text-sm sm:text-base 2xl:text-lg text-[#626262] leading-relaxed">
                   We&apos;re always excited to explore new opportunities and
                   challenges. Whether you&apos;re a startup or an established
                   enterprise, we&apos;d love to hear from you. Contact us to
@@ -110,32 +119,27 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              <form className="space-y-5">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Name *"
-                    className="w-full px-5 py-3 border border-[#E0E0E0] text-sm placeholder-[#828282] focus:outline-none focus:border-[#052557]"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-5 py-3 border border-[#E0E0E0] text-sm placeholder-[#828282] focus:outline-none focus:border-[#052557]"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    placeholder="Phone number *"
-                    className="w-full px-5 py-3 border border-[#E0E0E0] text-sm placeholder-[#828282] focus:outline-none focus:border-[#052557]"
-                    required
-                  />
-                </div>
+              <form className="space-y-5 2xl:space-y-6 3xl:space-y-8">
+                {[
+                  { type: "text", placeholder: "Name *", required: true },
+                  { type: "email", placeholder: "Email" },
+                  {
+                    type: "tel",
+                    placeholder: "Phone number *",
+                    required: true,
+                  },
+                ].map((input, idx) => (
+                  <div key={idx}>
+                    <input
+                      {...input}
+                      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+                    />
+                  </div>
+                ))}
+
+                {/* Dropdown */}
                 <div className="relative">
-                  <select className="w-full px-5 py-3 border border-[#E0E0E0] text-sm text-black appearance-none focus:outline-none focus:border-[#052557] bg-white">
+                  <select className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base appearance-none focus:outline-none focus:border-[#052557] bg-white text-black">
                     <option value="">How did you find us?</option>
                     <option value="google">Google Search</option>
                     <option value="referral">Referral</option>
@@ -156,7 +160,7 @@ const ContactSection = () => {
                 <div className="pt-10 flex justify-center">
                   <button
                     type="submit"
-                    className="bg-[#052557] text-white px-6 py-3 text-sm capitalize hover:bg-[#041f42] transition-colors rounded"
+                    className="bg-[#052557] text-white px-6 py-3 2xl:px-8 2xl:py-4 3xl:px-10 3xl:py-5 text-sm 2xl:text-base capitalize hover:bg-[#041f42] transition-colors rounded"
                   >
                     send message
                   </button>
