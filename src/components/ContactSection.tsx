@@ -4,8 +4,27 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
-
+import Link from "next/link";
+// import instagramIcon from "@/assets/Instagram.png";
+// import tiktokIcon from "@/assets/tiktok.png";
 const ContactSection = () => {
+  const socialLinks = [
+    {
+      href: "https://www.youtube.com/@Idrtechnologysolutions",
+      icon: youtubeIcon,
+      alt: "YouTube",
+    },
+    {
+      href: "https://www.linkedin.com/company/idr-technology-solutions",
+      icon: linkedinIcon,
+      alt: "LinkedIn",
+    },
+    {
+      href: "https://www.facebook.com/profile.php?id=100057472869428",
+      icon: facebookIcon,
+      alt: "Facebook",
+    },
+  ];
   return (
     <section className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
       <div className="mx-auto max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1700px]">
@@ -66,13 +85,21 @@ const ContactSection = () => {
 
                 {/* Social Media */}
                 <div className="mt-16 flex justify-start space-x-4">
-                  {[youtubeIcon, linkedinIcon, facebookIcon].map((icon, i) => (
-                    <div
+                  {socialLinks?.map((item, i) => (
+                    <Link
                       key={i}
+                      href={item?.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 bg-white/20 rounded flex items-center justify-center hover:bg-white/30 transition cursor-pointer"
                     >
-                      <Image src={icon} alt="icon" width={20} height={20} />
-                    </div>
+                      <Image
+                        src={item?.icon}
+                        alt="icon"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   ))}
                 </div>
               </div>

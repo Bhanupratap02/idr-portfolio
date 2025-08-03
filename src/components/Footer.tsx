@@ -9,6 +9,24 @@ import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      href: "https://www.youtube.com/@Idrtechnologysolutions",
+      icon: youtubeIcon,
+      alt: "YouTube",
+    },
+    {
+      href: "https://www.linkedin.com/company/idr-technology-solutions",
+      icon: linkedinIcon,
+      alt: "LinkedIn",
+    },
+    {
+      href: "https://www.facebook.com/profile.php?id=100057472869428",
+      icon: facebookIcon,
+      alt: "Facebook",
+    },
+  ];
+
   return (
     <footer className="bg-[#111827] px-6 lg:px-16 2xl:px-32 3xl:px-48 py-12 2xl:py-16 3xl:py-20">
       <div className="max-w-7xl 3xl:max-w-[1600px] mx-auto">
@@ -96,19 +114,22 @@ const Footer = () => {
               Connect
             </h3>
             <div className="flex space-x-4">
-              {[youtubeIcon, linkedinIcon, facebookIcon].map((icon, index) => (
-                <div
+              {socialLinks.map((social, index) => (
+                <Link
                   key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 2xl:w-10 2xl:h-10 bg-white/20 rounded flex items-center justify-center hover:bg-white/30 transition cursor-pointer"
                 >
                   <Image
-                    src={icon}
-                    alt={`Social Icon ${index}`}
+                    src={social.icon}
+                    alt={social.alt}
                     width={22}
                     height={22}
                     className="object-contain"
                   />
-                </div>
+                </Link>
               ))}
             </div>
           </div>
