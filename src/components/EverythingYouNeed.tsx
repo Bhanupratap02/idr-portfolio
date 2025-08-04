@@ -2,29 +2,41 @@
 import Image from "next/image";
 import img1 from "@/assets/security_camera.png";
 import img2 from "@/assets/security_camera_2.png";
+import img3 from "@/assets/camera_focus1.png";
+import img4 from "@/assets/camera_focus.png";
 
 const EverythingYouNeed = () => {
   return (
     <section className="relative py-12 sm:py-16 lg:py-20">
       <div className="container">
-        <h1 className="text-4xl sm:text-4xl lg:text-7xl 3xl:text-[6rem]  lg:max-w-[60%] 3xl:max-w-[50%] font-bold leading-tight mb-8 text-left">
+        <h1 className="text-4xl sm:text-4xl lg:text-7xl 3xl:text-[6rem] lg:max-w-[60%] 3xl:max-w-[50%] font-bold leading-tight mb-8 text-left">
           <span className="text-[#3D3D3D]">Everything You Need in </span>
           <span className="text-[#052557]">One Place</span>
         </h1>
 
-        <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 2xl:gap-14 
-        3xl:gap-[4rem] items-start"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 2xl:gap-14 3xl:gap-[4rem] items-start">
           {/* First Image & Text */}
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group cursor-pointer">
+              {/* Default Image - Always visible background */}
               <Image
                 src={img1}
                 alt="Security Camera"
                 className="w-full h-full object-cover"
                 priority
               />
+              
+              {/* Hover Overlay - Only the camera object */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                  <Image
+                    src={img3}
+                    alt="Security Camera Focus"
+                    className="w-full h-full object-contain"
+                    fill
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 sm:mt-8">
@@ -52,13 +64,26 @@ const EverythingYouNeed = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group cursor-pointer">
+              {/* Default Image - Always visible background */}
               <Image
                 src={img2}
                 alt="Security Camera 2"
                 className="w-full h-full object-cover"
                 priority
               />
+              
+              {/* Hover Overlay - Only the camera object */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                  <Image
+                    src={img4}
+                    alt="Security Camera Focus 2"
+                    className="w-full h-full object-contain"
+                    fill
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
