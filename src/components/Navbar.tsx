@@ -340,7 +340,7 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <Link
-            href="#"
+            href="https://portal.idrtechnologysolutions.com/"
             className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors"
           >
             Login
