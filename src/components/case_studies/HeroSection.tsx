@@ -11,7 +11,7 @@ export default function HeroSection({
     <section
       className="relative min-h-[517px] bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `${backgroundImage}`,
+          backgroundImage: `url(${backgroundImage})`,
       }}
     >
       {/* Background overlay */}
