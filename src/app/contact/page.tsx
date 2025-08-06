@@ -1,6 +1,6 @@
 import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
-import groupImg from "@/assets/group.png";
+import groupImg from "@/assets/Group.png";
 
 export default function ContactPage() {
   return (
