@@ -140,37 +140,38 @@ const workSections = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">
-      {/* Hero Section */}
-      <section className="relative">
-        {/* Hero Section with Background */}
-        <div
-          className="min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] xl:min-h-[800px] 2xl:min-h-[900px] 3xl:min-h-[1000px] bg-gray-900 bg-cover bg-center relative"
-          style={{
-            backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/2550e5a318e81a82bc5289863c36cf57d528ab64?width=2896')`,
-          }}
-        >
-          {/* Centered Text Section */}
-          <div className="text-center max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 pt-12 sm:pt-16 lg:pt-20 xl:pt-24 2xl:pt-32 3xl:pt-40 pb-24 sm:pb-32 lg:pb-40 xl:pb-48 2xl:pb-56 3xl:pb-64">
-            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium mb-3 sm:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
-              Our Work
-            </h1>
-            <p className="text-[#B4B4B4] text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl xl:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto px-2 sm:px-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+{/* Hero Section */}
+<section className="relative">
+  {/* Hero Section with Background */}
+  <div
+    className="min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] xl:min-h-[650px] 2xl:min-h-[700px] 3xl:min-h-[750px] bg-gray-900 bg-cover bg-center relative"
+    style={{
+      backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/2550e5a318e81a82bc5289863c36cf57d528ab64?width=2896')`,
+    }}
+  >
+    {/* Centered Text Section */}
+    <div className="text-center max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 pt-8 sm:pt-10 lg:pt-12 xl:pt-16 2xl:pt-20 3xl:pt-24 pb-12 sm:pb-16 lg:pb-20 xl:pb-24 2xl:pb-28 3xl:pb-32">
+      <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium mb-2 sm:mb-3 lg:mb-4 xl:mb-5 2xl:mb-6">
+        Our Work
+      </h1>
+      <p className="text-[#B4B4B4] text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl xl:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto px-2 sm:px-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
 
-          {/* Carousel anchored to the bottom of the background (full-width, over the same background) */}
-          <div className="absolute w-full bottom-4 sm:bottom-6 lg:bottom-8 xl:bottom-10 2xl:bottom-12 3xl:bottom-16 left-0 right-0 px-2 sm:px-4 lg:px-6 xl:px-8 2xl:px-12 pb-4 sm:pb-6 lg:pb-8 xl:pb-10 2xl:pb-12">
-            <ServicePillCarousel />
-          </div>
-        </div>
-      </section>
+    {/* Carousel anchored to the bottom */}
+    <div className="absolute w-full bottom-3 sm:bottom-4 lg:bottom-6 xl:bottom-8 2xl:bottom-10 3xl:bottom-12 left-0 right-0 px-2 sm:px-4 lg:px-6 xl:px-8 2xl:px-12 pb-2 sm:pb-4 lg:pb-6 xl:pb-8 2xl:pb-10">
+      <ServicePillCarousel />
+    </div>
+  </div>
+</section>
+
 
       {/* Work Sections */}
       <section className="py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 3xl:py-32 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32">
