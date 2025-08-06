@@ -61,7 +61,7 @@ const features = [
   {
     title: "Code-Compliant, Standards",
     description:
-      "We build to NEC, NFPA, IEEE, TIA, and BICSI standards across all installations.",
+      "Based Work - We build to NEC, NFPA, IEEE, TIA, and BICSI standards across all installations.",
   },
   {
     title: "Professional Project Management",
@@ -113,10 +113,10 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={feature.title}
-                className="group relative bg-white rounded-xl overflow-hidden shadow-sm p-6 2xl:p-8 flex flex-col transition duration-300"
+                className="group relative bg-white rounded-xl overflow-hidden shadow-sm transition duration-300 cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[280px] 2xl:min-h-[320px] "
               >
-                {/* Hover Image */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                {/*  Image */}
+                <div className="absolute inset-0 transition-opacity  group-hover:opacity-0  duration-500 z-10">
                   <Image
                     src={HoverImage}
                     alt={feature.title}
@@ -125,8 +125,8 @@ const WhyChooseUs = () => {
                   />
                 </div>
 
-                {/* Content */}
-                <div className="relative z-20 transition-opacity duration-300 group-hover:opacity-0">
+                {/* Hover Content */}
+                <div className="relative z-20 opacity-0 transition-opacity duration-300 group-hover:opacity-100  p-6 2xl:p-8 flex flex-col justify-center">
                   <div className="w-10 h-10 2xl:w-12 2xl:h-12 text-[#052557] mb-4">
                     {IconComponent && (
                       <IconComponent className="w-full h-full" />
