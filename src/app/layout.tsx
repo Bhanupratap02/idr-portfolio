@@ -1,13 +1,38 @@
 // app/layout.tsx
 
+import PartnerLogos from "@/components/PartnerLogos";
 import "./globals.css";
+import partner8 from "@/assets/partners/partner_8.png";
+import partner9 from "@/assets/partners/partner_9.png";
+import partner10 from "@/assets/partners/partner_10.png";
+import partner11 from "@/assets/partners/partner_11.png";
+import partner12 from "@/assets/partners/partner_12.png";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const footerPartnerImages = [
+  partner8,
+  partner9,
+  partner10,
+  partner11,
+  partner12,
+];
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="overflow-x-hidden">
-        {/* <Navbar /> */}
-        <main className=" w-screen">{children}</main>
+        <div className="min-h-screen bg-[#FFFFF]">
+          <Navbar />
+          <main className=" w-screen">{children}</main>
+          {/* Partner Logos Bars Before Footer */}
+          <PartnerLogos logos={footerPartnerImages} />
+          <PartnerLogos logos={footerPartnerImages} />
+          <Footer />
+        </div>
       </body>
     </html>
   );

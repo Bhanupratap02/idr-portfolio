@@ -47,12 +47,11 @@ const topPartnerImages = [
 export default function Index() {
 
   return (
-    <div className="min-h-screen bg-[#FFFFF] ">
-      {/* Navigation */}
-      <Navbar />
+    <div className="">
+
 
       {/* Hero Section */}
-      <Hero2 />
+      <Hero />
 
       {/* Partner Logos Strip */}
 
@@ -78,13 +77,7 @@ export default function Index() {
       {/* Contact Section */}
       <ContactSection />
 
-      {/* Footer */}
 
-      {/* Partner Logos Bars Before Footer */}
-      <PartnerLogos logos={footerPartnerImages} />
-      <PartnerLogos logos={footerPartnerImages} />
-      {/* Footer */}
-      <Footer />
       
     </div>
   );

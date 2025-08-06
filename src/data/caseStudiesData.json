@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "eliminated-unauthorized-access",
+    "hero": {
+      "backgroundImage": "https://api.builder.io/api/v1/image/assets/TEMP/ab10950e41ead24bff21209ad5685642d20cd80d?width=2896",
+      "heading": "How IDR Eliminated Unauthorized Building Access for Fairstead.",
+      "paragraph": "Fairstead, a leading national property management firm, partnered with IDR to address a\nwidespread security concern across 42 buildings in their Sunset Park portfolio. Residents were\nduplicating their proximity fobs at retail stores and handing them off to unauthorized\nindividuals — leading to serious safety and liability concerns for the property owner."
+    },
+  "galleryImages": [
+    {
+      "src": "/case/image1.jpg",
+      "alt": "Access control system 1"
+    },
+    {
+      "src": "/case/image2.jpg",
+      "alt": "Access control system 2"
+    },
+    {
+      "src": "/case/image3.jpg",
+      "alt": "Access control system 3"
+    }
+  ],
+    "content": {
+      "title": "Challenge",
+      "description": "Residents were duplicating fobs at retail stores..."
+    },
+    "cards": [
+      {
+        "title": "42 Buildings",
+        "description": "Secured across the Sunset Park portfolio."
+      },
+      {
+        "title": "Zero Breaches",
+        "description": "Since implementing IDR systems."
+      }
+    ]
+  },
+  {
+    "slug": "cloud-4-wire-intercoms",
+    "hero": {
+      "backgroundImage": "https://example.com/bg2.jpg",
+      "heading": "Cloud + 4-Wire Intercoms Integration at Scale",
+      "paragraph": "We enabled seamless communication across 10,000+ units..."
+    },
+    "galleryImages": [
+    {
+      "src": "/case/image1.jpg",
+      "alt": "Access control system 1"
+    },
+    {
+      "src": "/case/image2.jpg",
+      "alt": "Access control system 2"
+    },
+    {
+      "src": "/case/image3.jpg",
+      "alt": "Access control system 3"
+    }
+  ],
+    "content": {
+      "title": "Challenge",
+      "description": "Residents were duplicating fobs at retail stores..."
+    },
+    "cards": [
+      {
+        "title": "42 Buildings",
+        "description": "Secured across the Sunset Park portfolio."
+      },
+      {
+        "title": "Zero Breaches",
+        "description": "Since implementing IDR systems."
+      }
+    ]
+ 
+  }
+]
