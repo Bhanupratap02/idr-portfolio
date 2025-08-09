@@ -102,17 +102,17 @@ const workSections = [
     ),
     images: [intercom1, intercom2, intercom3]
   },
-  {
-    id: "security-alarm",
-    title: "Security Alarm Systems",
-    icon: (
-      <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 text-blue-600" viewBox="0 0 32 32" fill="none">
-        <path d="M32 32H0V0H32V32Z" stroke="#E5E7EB"/>
-        <path d="M16 0C16.2875 0 16.575 0.0625 16.8375 0.18125L28.6063 5.175C29.9813 5.75625 31.0063 7.1125 31 8.75C30.9688 14.95 28.4188 26.2938 17.65 31.45C16.6063 31.95 15.3938 31.95 14.35 31.45C3.58128 26.2938 1.03128 14.95 1.00003 8.75C0.993778 7.1125 2.01878 5.75625 3.39378 5.175L15.1688 0.18125C15.425 0.0625 15.7125 0 16 0ZM16 4.175V27.8C24.625 23.625 26.9438 14.3813 27 8.8375L16 4.175Z" fill="currentColor"/>
-      </svg>
-    ),
-    images: [security1, security2, security3]
-  },
+  // {
+  //   id: "security-alarm",
+  //   title: "Security Alarm Systems",
+  //   icon: (
+  //     <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 text-blue-600" viewBox="0 0 32 32" fill="none">
+  //       <path d="M32 32H0V0H32V32Z" stroke="#E5E7EB"/>
+  //       <path d="M16 0C16.2875 0 16.575 0.0625 16.8375 0.18125L28.6063 5.175C29.9813 5.75625 31.0063 7.1125 31 8.75C30.9688 14.95 28.4188 26.2938 17.65 31.45C16.6063 31.95 15.3938 31.95 14.35 31.45C3.58128 26.2938 1.03128 14.95 1.00003 8.75C0.993778 7.1125 2.01878 5.75625 3.39378 5.175L15.1688 0.18125C15.425 0.0625 15.7125 0 16 0ZM16 4.175V27.8C24.625 23.625 26.9438 14.3813 27 8.8375L16 4.175Z" fill="currentColor"/>
+  //     </svg>
+  //   ),
+  //   images: [security1, security2, security3]
+  // },
   {
     id: "structured-cabling",
     title: "Structured Cabling",
