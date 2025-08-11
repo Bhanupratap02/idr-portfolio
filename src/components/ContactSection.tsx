@@ -5,8 +5,8 @@ import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
 import Link from "next/link";
-// import instagramIcon from "@/assets/Instagram.png";
-// import tiktokIcon from "@/assets/tiktok.png";
+import instagramIcon from "@/assets/instagram_2.png";
+import tiktokIcon from "@/assets/tiktok_3.png";
 const ContactSection = () => {
   const socialLinks = [
     {
@@ -23,6 +23,16 @@ const ContactSection = () => {
       href: "https://www.facebook.com/profile.php?id=100057472869428",
       icon: facebookIcon,
       alt: "Facebook",
+    },
+    {
+      href: "https://www.tiktok.com/@idrtechnologysolu?_t=ZP-8y9yjPO8tvL&_r=1",
+      icon: tiktokIcon,
+      alt: "TikTok",
+    },
+    {
+      href: "https://www.instagram.com/idrtechnologysolutions?igsh=MTNzcHBuanc3ZWM5ag%3D%3D&utm_source=qr",
+      icon: instagramIcon,
+      alt: "Instagram",
     },
   ];
   return (

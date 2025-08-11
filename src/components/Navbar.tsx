@@ -343,7 +343,7 @@ export default function Navbar() {
             href="https://portal.idrtechnologysolutions.com/"
             className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors"
           >
-            Login
+            IDR Portal
           </Link>
           <Link
             href="/contact"
@@ -412,10 +412,10 @@ export default function Navbar() {
             </Link>
             <div className="flex flex-col space-y-2 pt-4">
               <Link
-                href="/login"
+                href="https://portal.idrtechnologysolutions.com/"
                 className="px-4 py-3 border border-white text-white text-xs uppercase text-center"
               >
-                Login
+                IDR Portal
               </Link>
               <Link
                 href="/contact"
