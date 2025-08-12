@@ -7,7 +7,8 @@ import logo from "@/assets/logo_2.png";
 import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
-
+import tiktokIcon from "@/assets/tiktok_3.png";
+import instagramIcon from "@/assets/instagram_2.png";
 const Footer = () => {
   const socialLinks = [
     {
@@ -21,9 +22,19 @@ const Footer = () => {
       alt: "LinkedIn",
     },
     {
-      href: "https://www.facebook.com/profile.php?id=100057472869428",
+      href: "https://www.tiktok.com/profile.php?id=100057472869428",
       icon: facebookIcon,
       alt: "Facebook",
+    },
+    {
+      href: "https://www.tiktok.com/@idrtechnologysolu?_t=ZP-8y9yjPO8tvL&_r=1",
+      icon: tiktokIcon,
+      alt: "TikTok",
+    },
+    {
+      href: "https://www.instagram.com/idrtechnologysolutions?igsh=MTNzcHBuanc3ZWM5ag%3D%3D&utm_source=qr",
+      icon: instagramIcon,
+      alt: "Instagram",
     },
   ];
 
@@ -44,9 +55,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-sm 2xl:text-base 3xl:text-lg text-[#F7F6F2] leading-relaxed max-w-72 2xl:max-w-80">
-              Whether you&apos;re launching a new facility or refreshing legacy
-              systems, we&apos;ll help you build a data center you can trust —
-              from day one.
+              Quality from start to finish. From design through installation, IDR is the name you can depend on.
             </p>
           </div>
 

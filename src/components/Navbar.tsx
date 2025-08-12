@@ -306,8 +306,10 @@ export default function Navbar() {
               >
                 <span>
                   {key === "caseStudies"
-                    ? "Case Studies"
-                    : key.charAt(0).toUpperCase() + key.slice(1)}
+    ? "Case Studies"
+    : key === "spotlightManfacturers"
+    ? "Spotlight Manufacturers"
+    : key.charAt(0).toUpperCase() + key.slice(1)}
                 </span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
@@ -319,11 +321,11 @@ export default function Navbar() {
               {activeMenu === key && (
                 <MenuGrid
                   items={menuData[key as keyof typeof menuData]}
-                  title={
-                    key === "caseStudies"
-                      ? "Case Studies"
-                      : key.charAt(0).toUpperCase() + key.slice(1)
-                  }
+                  title={key === "caseStudies"
+    ? "Case Studies"
+    : key === "spotlightManfacturers"
+    ? "Spotlight Manufacturers"
+    : key.charAt(0).toUpperCase() + key.slice(1)}
                 />
               )}
             </div>
@@ -343,7 +345,7 @@ export default function Navbar() {
             href="https://portal.idrtechnologysolutions.com/"
             className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors"
           >
-            Login
+            IDR Portal
           </Link>
           <Link
             href="/contact"
@@ -393,7 +395,7 @@ export default function Navbar() {
             <Link href="/about" className="text-[#F7F6F2] text-sm">
               About Us
             </Link>
-            {["services", "caseStudies", "partners"].map((key) => (
+            {["services", "caseStudies", "spotlightManfacturers"].map((key) => (
               <button
                 key={key}
                 onClick={() => handleMobileMenuClick(key)}
@@ -401,8 +403,10 @@ export default function Navbar() {
               >
                 <span>
                   {key === "caseStudies"
-                    ? "Case Studies"
-                    : key.charAt(0).toUpperCase() + key.slice(1)}
+    ? "Case Studies"
+    : key === "spotlightManfacturers"
+    ? "Spotlight Manufacturers"
+    : key.charAt(0).toUpperCase() + key.slice(1)}
                 </span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -412,10 +416,10 @@ export default function Navbar() {
             </Link>
             <div className="flex flex-col space-y-2 pt-4">
               <Link
-                href="/login"
+                href="https://portal.idrtechnologysolutions.com/"
                 className="px-4 py-3 border border-white text-white text-xs uppercase text-center"
               >
-                Login
+                IDR Portal
               </Link>
               <Link
                 href="/contact"
