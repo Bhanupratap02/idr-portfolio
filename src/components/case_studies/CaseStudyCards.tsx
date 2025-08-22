@@ -16,7 +16,7 @@ export default function CaseStudyCards({ cards }: CaseStudyCardsProps) {
     {
       title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
       description: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and.......",
-      link: "/case-studies/fixing-surveillance-installs"
+      link: "/case-studies/fixing-failed-installs"
     },
     {
       title: "Modern Meets Legacy: How IDR Unified Cloud and 4....",
@@ -26,22 +26,22 @@ export default function CaseStudyCards({ cards }: CaseStudyCardsProps) {
     {
       title: "No Reader, No Problem: Elevator Access Solved with....",
       description: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint. The building's elevator policy....",
-      link: "/case-studies/elevator-access-solution"
+      link: "/case-studies/kisi-elevator-access"
     },
     {
       title: "One System, Many Doors: How IDR Unified Intercom.....",
       description: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points...",
-      link: "/case-studies/unified-intercom-system"
+      link: "/case-studies/unified-intercom-access"
     },
     {
       title: "When Technology Moved Forward, So Did We: A Phased .....",
       description: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with......",
-      link: "/case-studies/phased-technology-upgrade"
+      link: "/case-studies/phased-wifi-upgrade"
     },
     {
       title: "Upway Upgrading Loitering Deterrence with a Custom.....",
       description: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag.....",
-      link: "/case-studies/custom-loitering-deterrence"
+      link: "/case-studies/custom-audio-deterrent"
     }
   ];
 
