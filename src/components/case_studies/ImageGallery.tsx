@@ -10,7 +10,8 @@ interface ImageType {
 interface ImageGalleryProps {
   images: ImageType[];
 }
-const ImageGallery = ({  }: ImageGalleryProps) => {
+//{ images }: ImageGalleryProps, images={study.galleryImages || []}
+const ImageGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // // Sample images matching your Figma design
