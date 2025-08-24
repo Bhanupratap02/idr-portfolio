@@ -155,16 +155,19 @@ const menuData = {
 const MenuGrid = ({
   items,
   title,
+  rootLink = "", // Optional root link for services
 }: {
   items: Array<{ name: string; url: string; icon?: StaticImageData }>;
   title: string;
+  rootLink?: string; // Optional root link for services
 }) => (
   <div className="absolute top-full left-0 right-0 z-[70]  bg-white mt-0.5 hidden lg:block">
     <div className="max-w-7xl mx-auto h-full  px-4 md:px-6 lg:px-8 py-10 flex ">
       {/* Title aligned left */}
-      <h3 className=" flex-1   text-left  text-[#052557] text-lg mb-4 font-medium ">
+
+      <Link href={rootLink} className=" flex-1   text-left  text-[#052557] text-lg mb-4 font-medium ">
         {title}
-      </h3>
+      </Link>
 
       {/* Grid of buttons */}
       <div className="flex-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 border-l p-2 pl-6">
@@ -298,14 +301,14 @@ export default function Navbar() {
             About Us
           </Link>
 
-          {["services", "caseStudies", "partners"].map((key) => (
+          {["services", "case_studies", "partners"].map((key) => (
             <div key={key} ref={activeMenu === key ? menuRef : null}>
               <button
                 onClick={() => handleMenuToggle(key)}
                 className="flex items-center space-x-2 text-[#F7F6F2] text-sm hover:text-white transition-colors cursor-pointer"
               >
                 <span>
-                  {key === "caseStudies"
+                  {key === "case_studies"
                     ? "Case Studies"
                     : key.charAt(0).toUpperCase() + key.slice(1)}
                 </span>
@@ -319,8 +322,9 @@ export default function Navbar() {
               {activeMenu === key && (
                 <MenuGrid
                   items={menuData[key as keyof typeof menuData]}
+                  rootLink={key}
                   title={
-                    key === "caseStudies"
+                    key === "case_studies"
                       ? "Case Studies"
                       : key.charAt(0).toUpperCase() + key.slice(1)
                   }

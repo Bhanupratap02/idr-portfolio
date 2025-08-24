@@ -1,23 +1,24 @@
 /** @format */
 
-import AVServicesGrid from "@/components/services/audio-visual/AVServicesGrid";
-import ClearSoundSection from "@/components/services/audio-visual/ClearSoundSection";
-import CommercialGradeSection from "@/components/services/audio-visual/CommercialGradeSection";
-import HeroSection from "@/components/services/audio-visual/HeroSection";
-import MeetingsSection from "@/components/services/audio-visual/MeetingsSection";
-import TransformSpaceSection from "@/components/services/audio-visual/TransformSpaceSection";
-import WhyChooseAVSection from "@/components/services/audio-visual/WhyChooseAVSection";
+import ServicesGrid from "@/components/services/ServicesGrid";
+import ClearSoundSection from "./_components/ClearSoundSection";
+import CommercialGradeSection from "./_components/CommercialGradeSection";
+import HeroSection from "./_components/HeroSection";
+import MeetingsSection from "./_components/MeetingsSection";
+import TransformSpaceSection from "./_components/TransformSpaceSection";
+import WhyChooseAVSection from "./_components/WhyChooseAVSection";
+
 
 export default function AudioVisual() {
   return (
     <div className="min-h-screen bg-idr-cream">
-      {/* <HeroSection />
+      <HeroSection />
       <ClearSoundSection />
       <MeetingsSection />
       <CommercialGradeSection />
       <WhyChooseAVSection />
       <TransformSpaceSection />
-      <AVServicesGrid /> */}
+      <ServicesGrid />
     </div>
   );
 }

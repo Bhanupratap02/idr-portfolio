@@ -1,3 +1,15 @@
+/** @format */
+
+import AVServicesGrid from "@/components/services/ServicesGrid";
+import ServiceHeroSection from "./_components/ServiceHeroSection";
+import HowIDRWorksSection from "./_components/HowIDRWorksSection";
+
 export default function ServicePage() {
-  return <div className="p-4">About IDR Technology Solutions</div>;
+  return (
+    <div className="min-h-screen bg-white">
+      <ServiceHeroSection />
+      <AVServicesGrid />
+      <HowIDRWorksSection />
+    </div>
+  );
 }
