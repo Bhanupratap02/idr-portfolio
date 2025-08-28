@@ -1,5 +1,7 @@
 /** @format */
 
+import Image from "next/image";
+
 export default function ServicesGrid() {
   const services = [
     {
@@ -82,59 +84,60 @@ export default function ServicesGrid() {
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-[#9D9D9D] hover:fill-white transition-colors"
+      className="fill-current"
     >
-      <path
-        d="M13.8717 12.0727C13.8783 12.5824 14.2968 13.0009 14.8065 13.0075C15.3161 13.0141 15.7239 12.6063 15.7173 12.0967L15.6269 5.13663C15.6203 4.62699 15.2017 4.20847 14.6921 4.20186L7.73203 4.11147C7.22238 4.10485 6.8146 4.51263 6.82122 5.02227C6.82784 5.53191 7.24635 5.95042 7.75599 5.95704L12.4883 6.0185L4.16793 14.3388C3.81224 14.6945 3.81982 15.2788 4.18487 15.6439C4.54993 16.0089 5.1342 16.0165 5.48989 15.6608L13.8102 7.34046L13.8717 12.0727Z"
-        fill=""
-      />
+      <path d="M13.87 12.07c.01.51.43.93.94.94.51.01.92-.4.91-.91l-.09-6.96a.92.92 0 0 0-.93-.93l-6.96-.09a.92.92 0 0 0-.93.93c.01.51.43.92.94.93l4.73.06-8.32 8.32a.92.92 0 1 0 1.3 1.3l8.32-8.32.06 4.73Z" />
     </svg>
   );
 
   return (
-    <section className="py-20 bg-idr-cream">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16">
+    <section className="py-16 sm:py-20 bg-white">
+      <div className="mx-auto max-w-6xl lg:max-w-7xl 2xl:max-w-[90rem] px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 sm:mb-16">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-4xl md:text-5xl font-medium text-gray-900 mb-6">
-              Explore More services
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 sm:mb-6">
+              Explore More Services
             </h2>
           </div>
           <div className="lg:w-1/3">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+            <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-3">
               Services
             </h3>
-            <p className="text-gray-600 text-lg">
-              While we can customize your cleaning plan to suit your needs, most
-              clients schedule regular cleaning services:
+            <p className="text-gray-600 text-base sm:text-lg">
+              While we can customize your plan to suit your needs, most clients
+              schedule regular services:
             </p>
           </div>
         </div>
 
-        <hr className="border-gray-800 mb-12" />
+        <hr className="border-gray-300 mb-10 sm:mb-12" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.slice(0, 6).map((service, index) => (
-            <div key={index} className="group">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="group bg-white rounded-3xl  hover:shadow-md transition p-4 flex flex-col"
+            >
               <div className="mb-4">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-64 object-cover rounded-3xl"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-2xl"
                 />
               </div>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-                <button
-                  className={`inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium transition-colors border border-gray-400 text-gray-900 hover:border-0 hover:bg-gray-800 hover:text-white $`}
-                >
+
+                <button className="inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white">
                   Book Now <ArrowIcon />
                 </button>
               </div>
@@ -142,38 +145,9 @@ export default function ServicesGrid() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.slice(6).map((service, index) => (
-            <div key={index + 6} className="group">
-              <div className="mb-4">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-64 object-cover rounded-3xl"
-                />
-              </div>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-                <button
-                  className={`inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium transition-colors border border-gray-400 text-gray-900 hover:border-0 hover:bg-gray-800 hover:text-white $`}
-                >
-                  Book Now
-                  <ArrowIcon />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
+        {/* CTA Button */}
         <div className="text-center">
-          <button className="px-12 py-6 border border-gray-800 rounded-3xl text-xl font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
+          <button className="px-8 sm:px-12 py-4 sm:py-6 border border-gray-800 rounded-2xl sm:rounded-3xl text-lg sm:text-xl font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
             Contact us now
           </button>
         </div>

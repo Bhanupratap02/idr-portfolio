@@ -1,75 +1,89 @@
 /** @format */
 import Image from "next/image";
-import handshake from "@/assets/services/handshake.png"
+import handshake from "@/assets/services/handshake.png";
+
 export default function HowIDRWorksSection() {
   return (
     <section className="bg-white">
-      <div className="flex min-h-[676px]">
-        {/* Left Image */}
-        <div className="w-[577px] h-[565px] mt-[55px]">
+      <div className="flex flex-col lg:flex-row  min-h-[500px]">
+        {/* Left Image - flush left */}
+        <div
+          className="
+    w-full                 /* mobile: full width */
+    sm:w-[80%]             /* small screens: 80% width */
+    md:w-[60%]             /* medium screens: 60% */
+    lg:w-[45%]             /* large screens: 45% */
+    xl:w-[40%]             /* XL screens: 40% */
+    2xl:w-[35%]            /* 2XL: 35% */
+    h-[300px] sm:h-[400px] md:h-[500px] lg:h-[565px]
+    mt-0 lg:mt-[55px]
+    mb-5
+  "
+        >
           <Image
             src={handshake}
             alt="IDR Team Working"
-            className="w-full h-full object-cover rounded-tr-[100px]"
+            className="w-full h-full object-cover rounded-tr-[40px] lg:rounded-tr-[100px]"
+            priority
           />
         </div>
 
         {/* Right Content */}
-        <div className="flex-1 px-[72px] py-[125px]">
-          <div className="w-[671px]">
+        <div className="flex-1 px-6 sm:px-10 lg:px-16 xl:px-24 py-10 lg:py-20 flex items-center">
+          <div className="max-w-3xl">
             {/* Main Title */}
-            <h2 className="text-[#2E2E2E] text-[48px] font-medium leading-[64px] mb-8">
+            <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-5xl font-medium leading-snug lg:leading-[64px] mb-8">
               How IDR works?
             </h2>
 
             {/* Steps */}
-            <div className="space-y-7">
+            <div className="space-y-10">
               {/* Step 1 */}
-              <div className="flex items-start gap-9">
-                <div className="flex items-start gap-6">
-                  <div className="text-[#9EA3B5] text-[56px] font-bold leading-[64px]">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
+                <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
+                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl font-bold">
                     1.
                   </div>
-                  <div className="w-[164px] text-[#2E2E2E] text-[24px] font-medium leading-[32px]">
+                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl font-medium leading-snug">
                     Call us anytime 24/7
                   </div>
                 </div>
-                <div className="w-[420px] text-[#545971] text-[18px] font-normal leading-[28px]">
+                <div className="text-[#545971] text-base sm:text-lg leading-relaxed flex-2">
                   You can contact us directly, we will quickly put you in touch
-                  with our home care professionals who are ready anytime
+                  with our home care professionals who are ready anytime.
                 </div>
               </div>
 
               {/* Step 2 */}
-              <div className="flex items-start gap-9">
-                <div className="flex items-start gap-[14px]">
-                  <div className="text-[#9EA3B5] text-[56px] font-bold leading-[64px]">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
+                <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
+                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl font-bold">
                     2.
                   </div>
-                  <div className="w-[164px] text-[#2E2E2E] text-[24px] font-medium leading-[32px]">
+                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl font-medium leading-snug">
                     Schedule Service
                   </div>
                 </div>
-                <div className="w-[420px] text-[#545971] text-[18px] font-normal leading-[28px]">
+                <div className="text-[#545971] text-base sm:text-lg leading-relaxed flex-2">
                   After connecting your call, our home care experts will answer
-                  your questions and provide flexible appointment times
+                  your questions and provide flexible appointment times.
                 </div>
               </div>
 
               {/* Step 3 */}
-              <div className="flex items-start gap-9">
-                <div className="flex items-start gap-[14px]">
-                  <div className="text-[#9EA3B5] text-[56px] font-bold leading-[64px]">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
+                <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
+                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl font-bold">
                     3.
                   </div>
-                  <div className="w-[164px] text-[#2E2E2E] text-[24px] font-medium leading-[32px]">
-                    Your request is complated
+                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl font-medium leading-snug">
+                    Your request is completed
                   </div>
                 </div>
-                <div className="w-[420px] text-[#545971] text-[18px] font-normal leading-[28px]">
-                  Once your technician arrives, he will diagnose the problem and
-                  provide an estimate. If you decide to continue, the technician
-                  will get to work
+                <div className="text-[#545971] text-base sm:text-lg leading-relaxed flex-2">
+                  Once your technician arrives, they will diagnose the problem
+                  and provide an estimate. If you decide to continue, the
+                  technician will get to work.
                 </div>
               </div>
             </div>

@@ -1,27 +1,27 @@
 /** @format */
-
+import Image from "next/image";
+import before_after from "@/assets/services/access-control/before_after.png";
 export default function TrustedTechnology() {
-  
   return (
-    <section className="bg-[#F9FAFB] px-4 lg:px-28 py-16">
+    <section className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-[#2E2E2E] text-4xl font-medium mb-6">
+        {/* Heading */}
+        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl font-medium mb-4 sm:mb-6">
           Built on Trusted Technology
         </h2>
-        <p className="text-[#626262] text-lg mb-16 max-w-3xl mx-auto">
+        <p className="text-[#626262] text-base sm:text-lg mb-10 sm:mb-16 max-w-3xl mx-auto">
           We deploy systems from top manufacturers like Kisi, Brivo, Rhombus,
           Verkada, Vicon, and ZKTeco.
         </p>
-
         {/* Partner Logos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {["Kisi", "Brivo", "Rhombus", "Verkada", "Vicon", "ZKTeco"].map(
             (partner) => (
               <div
                 key={partner}
-                className="bg-white rounded-lg shadow-sm p-4 text-center"
+                className="bg-white rounded-lg shadow-sm p-3 sm:p-4 text-center flex items-center justify-center"
               >
-                <span className="text-[#626262] text-base font-medium">
+                <span className="text-[#626262] text-sm sm:text-base font-medium">
                   {partner}
                 </span>
               </div>
@@ -30,10 +30,11 @@ export default function TrustedTechnology() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Feature Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Door Control */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex justify-center mb-4">
                 <div className="w-7 h-6 bg-[#FFD700] rounded flex items-center justify-center">
                   <svg width="28" height="24" viewBox="0 0 28 24" fill="none">
@@ -44,14 +45,11 @@ export default function TrustedTechnology() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-[#2E2E2E] text-lg font-medium mb-3">
-                Door, Gate, Turnstile,
-                <br />
-                Elevator Control
+              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
+                Door, Gate, Turnstile, Elevator Control
               </h3>
-              <p className="text-[#626262] text-base">
-                Control all entry points from a<br />
-                single interface.
+              <p className="text-[#626262] text-sm sm:text-base">
+                Control all entry points from a single interface.
               </p>
             </div>
 
@@ -67,13 +65,11 @@ export default function TrustedTechnology() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-[#2E2E2E] text-lg font-medium mb-3">
+              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
                 Multiple Credential Types
               </h3>
-              <p className="text-[#626262] text-base">
-                Card, Fob, Mobile, Biometric
-                <br />
-                credentials.
+              <p className="text-[#626262] text-sm sm:text-base">
+                Card, Fob, Mobile, Biometric credentials.
               </p>
             </div>
 
@@ -89,13 +85,11 @@ export default function TrustedTechnology() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-[#2E2E2E] text-lg font-medium mb-3">
+              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
                 Remote Management
               </h3>
-              <p className="text-[#626262] text-base">
-                Control your system from
-                <br />
-                anywhere, anytime.
+              <p className="text-[#626262] text-sm sm:text-base">
+                Control your system from anywhere, anytime.
               </p>
             </div>
 
@@ -111,15 +105,11 @@ export default function TrustedTechnology() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-[#2E2E2E] text-lg font-medium mb-3">
-                Time & Role-based
-                <br />
-                Permissions
+              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
+                Time & Role-based Permissions
               </h3>
-              <p className="text-[#626262] text-base">
-                Customize access by person,
-                <br />
-                time, and location.
+              <p className="text-[#626262] text-sm sm:text-base">
+                Customize access by person, time, and location.
               </p>
             </div>
 
@@ -135,21 +125,20 @@ export default function TrustedTechnology() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-[#2E2E2E] text-lg font-medium mb-3">
+              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
                 Real-time Alerts & Logs
               </h3>
-              <p className="text-[#626262] text-base">
-                Stay informed with instant notifications and detailed access
-                logs.
+              <p className="text-[#626262] text-sm sm:text-base">
+                Stay informed with instant notifications and detailed logs.
               </p>
             </div>
           </div>
-
-          <div>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f9d9baacef0dc4b8e33937191d5929b7609f35cb?width=1168"
+          {/* Right Image */}
+          <div className="w-full h-full">
+            <Image
+              src={before_after}
               alt="Technology Interface"
-              className="w-full h-full rounded-lg"
+              className="w-full h-full rounded-lg object-cover shadow-md"
             />
           </div>
         </div>

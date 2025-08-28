@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import meetings from "@/assets/services/audio-visual/meeting.png"
 export default function MeetingsSection() {
   const features = [
     {
@@ -153,8 +154,8 @@ export default function MeetingsSection() {
         {/* Main Image with Callouts */}
         <div className="relative mb-16">
           <div className="relative rounded-xl overflow-hidden shadow-2xl">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/fecfedf718196ed88c9cb07fd751e3e3b08c6652?width=2496"
+            <Image
+              src={meetings}
               alt="Conference Room"
               className="w-full h-[400px] object-cover"
             />
@@ -162,7 +163,7 @@ export default function MeetingsSection() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="absolute bg-white rounded-lg shadow-lg p-4 flex items-center gap-3"
+                className="absolute bg-white rounded-lg shadow-lg p-3 flex items-center gap-2 text-xs sm:text-sm"
                 style={{
                   top: feature.position.top,
                   left: feature.position.left,
@@ -178,13 +179,16 @@ export default function MeetingsSection() {
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
           {featureCards.map((card, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6">
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition"
+            >
               <div className="flex items-center justify-center w-12 h-12 mb-4">
                 {card.icon}
               </div>
-              <h3 className="text-xl font-medium text-gray-900 mb-3">
+              <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-3">
                 {card.title}
               </h3>
               <p className="text-gray-600">{card.description}</p>

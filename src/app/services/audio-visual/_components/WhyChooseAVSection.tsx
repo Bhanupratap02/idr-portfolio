@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import dashboard from "@/assets/services/audio-visual/dashboard.png"
 export default function WhyChooseAVSection() {
   const features = [
     {
@@ -148,8 +149,8 @@ export default function WhyChooseAVSection() {
               Access Your Systems Anywhere
             </h3>
             <div className="mb-6">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/7496c6dbac25b27075d84d74df6c9170fbf534cc?width=800"
+              <Image
+                src={dashboard}
                 alt="Client Portal"
                 className="w-full h-60 object-cover rounded-lg"
               />

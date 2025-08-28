@@ -1,28 +1,32 @@
 /** @format */
+import Image from "next/image";
+import heroImage from "@/assets/services/audio-visual/hero.png";
 
-export  default function  HeroSection() {
+export default function HeroSection() {
   return (
-    <section className="relative h-[600px] bg-gradient-to-r from-gray-800 to-transparent overflow-hidden">
+    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px]  2xl:min-h-[900px] 3xl:min-h-[1000px] bg-gradient-to-r from-gray-800 to-transparent overflow-hidden ">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F0704fb8039254e6881ebea6562f7bc69%2Fc44c9c8aed8441aea7006aa2f79d05ad?format=webp&width=800"
+        <Image
+          src={heroImage}
           alt="Technology Meets Experience"
           className="w-full h-full object-cover"
+          priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-800/70 to-transparent"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-800/50 to-transparent"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 h-full flex flex-col justify-center">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight mb-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-start lg:py-16">
+        <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl mt-32 sm:mt-40 lg:mt-48">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium text-white leading-tight mb-6">
             Where Technology Meets Experience
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-lg">
-            Modern Surveillance & A/V Solutions for Every Space
+          <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-200 mb-8 max-w-md sm:max-w-lg lg:max-w-xl">
+            Modern Surveillance &amp; A/V Solutions for Every Space
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium transition-colors">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg 2xl:text-xl font-medium transition-colors">
             Schedule a Free Site Visit
           </button>
         </div>

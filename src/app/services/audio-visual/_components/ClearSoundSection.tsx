@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import clear_sound from "@/assets/services/audio-visual/clear_sound.png"
 export default function ClearSoundSection() {
   const features = [
     {
@@ -87,13 +88,13 @@ export default function ClearSoundSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="py-16 md:py-20 bg-gray-50">
+      <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">
             Clear Sound, Smarter Spaces
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Commercial A/V solutions that work (and sound) better for your
             business
           </p>
@@ -101,17 +102,19 @@ export default function ClearSoundSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Features List */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-white rounded-lg shadow-md flex items-center justify-center">
                   {feature.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-2">
+                  <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="text-sm md:text-base text-gray-600">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -120,17 +123,11 @@ export default function ClearSoundSection() {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/50e794038f619245816a54179016eb7fc735ec54?width=1200"
+              <Image
+                src={clear_sound}
                 alt="A/V Control Room"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-64 sm:h-80 md:h-[450px] lg:h-[500px] object-cover"
               />
-              {/* Carousel indicators */}
-              <div className="absolute bottom-6 left-6 flex space-x-2">
-                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-white/50 rounded-full"></div>
-                <div className="w-3 h-3 bg-white/50 rounded-full"></div>
-              </div>
             </div>
           </div>
         </div>

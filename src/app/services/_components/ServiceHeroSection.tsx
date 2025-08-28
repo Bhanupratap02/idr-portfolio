@@ -6,9 +6,9 @@ import heroCamera2 from "@/assets/services/hero_camera_2.png";
 import heroCamera3 from "@/assets/services/hero_camera_3.png";
 export default function ServiceHeroSection() {
   return (
-    <section className="relative min-h-[731px] bg-gray-900 overflow-hidden">
+    <section className="relative  min-h-[600px] sm:min-h-[700px] lg:min-h-[850px] 2xl:min-h-[950px] 3xl:min-h-[1100px] bg-gray-900 overflow-hidden">
       {/* Hero Background Image */}
-      <div className="absolute inset-0 top-[-15%]">
+      <div className="absolute inset-0 top-[-15%] ">
         <Image
           src={hero}
           alt="Security Background"
@@ -18,57 +18,71 @@ export default function ServiceHeroSection() {
       </div>
 
       {/* Floating Security Camera Images */}
-      <div className="absolute top-[289px] left-[807px] w-[212px] h-[212px] rounded-[16.591px] overflow-hidden z-10">
+      {/* Camera 1 */}
+      <div
+        className="absolute w-[120px] sm:w-[160px] lg:w-[200px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
+      top-[50%] left-[55%] sm:top-[45%] sm:left-[60%] lg:top-[48%] lg:left-[58%] 2xl:top-[46%] 2xl:left-[60%] 3xl:top-[44%] 3xl:left-[62%]"
+      >
         <Image
           src={heroCamera1}
-          alt="Security Camera 1"
-          className="w-full h-full object-cover"
+          alt="Camera 1"
+          className="w-full h-full object-contain"
         />
       </div>
 
-      <div className="absolute top-[333px] left-[1105px] w-[212px] h-[212px] rounded-[16.278px] overflow-hidden z-10">
-        <Image
-          src={heroCamera3}
-          alt="Security Camera 2"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      <div className="absolute top-[208px] left-[936px] w-[253px] h-[253px] rounded-[19.8px] overflow-visible z-16 ">
+      {/* Camera 2 */}
+      <div
+        className="absolute w-[140px] sm:w-[180px] lg:w-[220px] 2xl:w-[250px] 3xl:w-[280px] aspect-square rounded-xl overflow-visible z-20 
+      top-[35%] left-[65%] sm:top-[30%] sm:left-[67%] lg:top-[32%] lg:left-[66%] 2xl:top-[30%] 2xl:left-[68%] 3xl:top-[28%] 3xl:left-[70%]"
+      >
         <Image
           src={heroCamera2}
-          alt="Security Camera 3"
-          className="w-full h-full object-cover "
+          alt="Camera 2"
+          className="w-full h-full object-contain"
+        />
+      </div>
+
+      {/* Camera 3 */}
+      <div
+        className="absolute w-[120px] sm:w-[160px] lg:w-[200px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
+      top-[55%] left-[72%] sm:top-[50%] sm:left-[74%] lg:top-[52%] lg:left-[73%] 2xl:top-[50%] 2xl:left-[75%] 3xl:top-[48%] 3xl:left-[77%]"
+      >
+        <Image
+          src={heroCamera3}
+          alt="Camera 3"
+          className="w-full h-full object-contain"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-[112px] py-16">
-        <div className="max-w-[497px] mt-[192px]">
+      <div className="relative z-20 container mx-auto px-6 sm:px-10 lg:px-16 2xl:px-28 3xl:px-40 py-16">
+        <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl mt-32 sm:mt-40 lg:mt-48">
           {/* Subtitle */}
-          <div className="text-white text-[20px] font-light leading-[120%] mb-3">
+          <p className="text-white text-lg sm:text-xl font-light mb-4">
             Quality Service at a fair price.
-          </div>
+          </p>
 
           {/* Main Title */}
-          <h1 className="text-white text-[40px] font-medium leading-[115%] mb-6 w-[497px]">
-            Specialized, efficient, and thorough security 
-            <br/>
+          <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium leading-tight mb-6 ">
+            Specialized, efficient,
+            <br />
+            and thorough security
+            <br />
             services
           </h1>
 
           {/* Description */}
-          <p className="text-[#B4B4B4] text-[18px] font-normal leading-[30px] mb-12 w-[497px]">
+          <p className="text-[#B4B4B4] text-base sm:text-lg lg:text-xl 2xl:text-2xl mb-10 max-w-xl">
             We provide best Performing security cameras using the least amount
             of time, energy, and money.
           </p>
 
           {/* Buttons */}
-          <div className="flex items-start gap-[25px]">
-            <button className="flex items-center justify-center px-8 py-[17px] bg-[#191919] text-white text-[16px] font-normal rounded-[6px] hover:bg-gray-800 transition-colors">
+          <div className="flex flex-wrap gap-4">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-[#191919] text-white text-sm sm:text-base rounded-md hover:bg-gray-800 transition">
               Get Start Now
             </button>
-            <button className="flex items-center justify-center px-8 py-[17px] border border-[#666] text-white text-[16px] font-normal rounded-[6px] hover:bg-white hover:text-gray-900 transition-colors">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 border border-[#666] text-white text-sm sm:text-base rounded-md hover:bg-white hover:text-gray-900 transition">
               View all Services
             </button>
           </div>
