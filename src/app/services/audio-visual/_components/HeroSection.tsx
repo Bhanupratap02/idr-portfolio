@@ -4,7 +4,7 @@ import heroImage from "@/assets/services/audio-visual/hero.png";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px]  2xl:min-h-[900px] 3xl:min-h-[1000px] bg-gradient-to-r from-gray-800 to-transparent overflow-hidden ">
+    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px]  2xl:min-h-[900px] 3xl:min-h-[1100px] bg-gradient-to-r from-gray-800 to-transparent overflow-hidden ">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

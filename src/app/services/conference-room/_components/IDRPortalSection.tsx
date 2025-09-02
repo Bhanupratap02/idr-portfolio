@@ -1,6 +1,4 @@
 /** @format */
-
-export default function IDRPortalSection() {
   const portalFeatures = [
     {
       icon: (
@@ -9,7 +7,6 @@ export default function IDRPortalSection() {
           fill="currentColor"
           viewBox="0 0 20 20"
         >
-          <path d="M18 16H0V0h18v16z" stroke="#E5E7EB" />
           <path d="M2.77 6.99L0 11.74V3c0-1.1.9-2 2-2h3.67c.53 0 1.04.21 1.41.59L8 2.41c.37.38.88.59 1.41.59H13c1.1 0 2 .9 2 2v1h-10.5c-.71 0-1.37.38-1.73 1v.4zm.86.51c.18-.31.51-.5.86-.5H17c.36 0 .69.19.87.5s.19.69.01 1l-3.5 6c-.18.31-.51.5-.86.5H1c-.36 0-.69-.19-.87-.5s-.19-.69-.01-1l3.51-6z" />
         </svg>
       ),
@@ -59,36 +56,40 @@ export default function IDRPortalSection() {
         "Monitor warranty status and manage equipment returns effortlessly.",
     },
   ];
+export default function IDRPortalSection() {
+
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section className="py-16 md:py-20 2xl:py-28 3xl:py-32 bg-gray-50">
+      <div className="mx-auto max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-center">
           {/* Left side - Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-medium text-gray-900 mb-4">
                 Keep Control with the IDR Portal
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-lg md:text-xl 2xl:text-2xl text-gray-600">
                 Your private dashboard — organized, clutter-free, and always
                 accessible.
               </p>
             </div>
 
             <div className="space-y-6">
-              {portalFeatures.map((feature, index) => (
+              {portalFeatures?.map((feature, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-11 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 md:w-12 md:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 bg-blue-600 rounded-lg flex items-center justify-center">
                       {feature.icon}
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                    <h3 className="text-base md:text-lg 2xl:text-xl font-medium text-gray-900 mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600">{feature.description}</p>
+                    <p className="text-gray-600 text-sm md:text-base 2xl:text-lg">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -97,7 +98,7 @@ export default function IDRPortalSection() {
 
           {/* Right side - Portal Dashboard Mockup */}
           <div className="flex justify-center">
-            <div className="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden">
+            <div className="w-full max-w-lg md:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl bg-white rounded-lg shadow-xl overflow-hidden">
               {/* Header */}
               <div className="bg-blue-600 px-4 py-4 flex items-center gap-2">
                 <div className="bg-white rounded px-2 py-1">

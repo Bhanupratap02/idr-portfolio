@@ -20,7 +20,7 @@ export default function Index() {
       <IDRPortal />
       <WhyChooseIDR />
       <CTASection />
-      <ServicesGrid />
+      <ServicesGrid exclude={1}/>
     </div>
   );
 }

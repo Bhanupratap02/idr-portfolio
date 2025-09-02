@@ -2,15 +2,14 @@
 
 export default function TransformSpaceSection() {
   return (
-    <section className="py-20 bg-gray-800">
-      <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-medium text-white mb-6">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-gray-800">
+      <div className="mx-auto max-w-3xl md:max-w-4xl lg:max-w-5xl 2xl:max-w-6xl 3xl:max-w-[80rem] px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-white mb-4 sm:mb-6 lg:mb-8">
           Ready to Transform Your Space?
         </h2>
-        <p className="text-xl text-gray-300 mb-12">
+        <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-300 mb-8 sm:mb-12 lg:mb-16">
           Schedule a free consultation and site visit with our A/V experts
         </p>
-
         {/* Contact Form */}
         <form className="space-y-6 mb-8">
           <div className="grid md:grid-cols-2 gap-4">
@@ -32,7 +31,7 @@ export default function TransformSpaceSection() {
           />
           <div className="relative">
             <select className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none">
-              <option>I'm interested in...</option>
+              <option>I&apos;m interested in...</option>
               <option>Conference Room Solutions</option>
               <option>Audio/Visual Systems</option>
               <option>Sound Masking</option>

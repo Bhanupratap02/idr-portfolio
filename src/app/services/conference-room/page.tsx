@@ -18,7 +18,7 @@ export default function ConferenceRoom() {
       <IDRPortalSection />
       <TrustedIndustriesSection />
       <CTASection />
-      <ServicesGrid />
+      <ServicesGrid exclude={3} />
     </div>
   );
 }

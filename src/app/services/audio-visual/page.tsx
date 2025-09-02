@@ -18,7 +18,7 @@ export default function AudioVisual() {
       <CommercialGradeSection />
       <WhyChooseAVSection />
       <TransformSpaceSection />
-      <ServicesGrid />
+      <ServicesGrid exclude={2}/>
     </div>
   );
 }

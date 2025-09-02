@@ -10,7 +10,7 @@ export default function ClearSoundSection() {
           fill="currentColor"
           viewBox="0 0 21 24"
         >
-          <path d="M21 24H0V0H21V24Z" stroke="#E5E7EB" />
+          {/* <path d="M21 24H0V0H21V24Z" stroke="#E5E7EB" /> */}
           <path
             d="M14.1141 1.63133C14.6531 1.87508 15 2.40945 15 3.00008V21.0001C15 21.5907 14.6531 22.1251 14.1141 22.3688C13.575 22.6126 12.9422 22.5141 12.5016 22.1204L6.17813 16.5001H3C1.34531 16.5001 0 15.1548 0 13.5001V10.5001C0 8.84539 1.34531 7.50008 3 7.50008H6.17813L12.5016 1.87977C12.9422 1.48602 13.575 1.39227 14.1141 1.63133ZM19.3406 8.50789C20.3484 9.33289 21 10.5891 21 12.0001C21 13.411 20.3484 14.6673 19.3406 15.4923C18.8578 15.886 18.15 15.811 17.7562 15.3282C17.3625 14.8454 17.4375 14.1376 17.9203 13.7438C18.4266 13.3313 18.75 12.7032 18.75 12.0001C18.75 11.297 18.4266 10.6688 17.9203 10.2516C17.4375 9.85789 17.3672 9.15008 17.7562 8.66727C18.1453 8.18445 18.8578 8.11414 19.3406 8.5032V8.50789Z"
             fill="#0099FF"
@@ -91,10 +91,10 @@ export default function ClearSoundSection() {
     <section className="py-16 md:py-20 bg-gray-50">
       <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-gray-900 mb-4">
             Clear Sound, Smarter Spaces
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-600 max-w-3xl mx-auto">
             Commercial A/V solutions that work (and sound) better for your
             business
           </p>

@@ -20,8 +20,8 @@ export default function ServiceHeroSection() {
       {/* Floating Security Camera Images */}
       {/* Camera 1 */}
       <div
-        className="absolute w-[120px] sm:w-[160px] lg:w-[200px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
-      top-[50%] left-[55%] sm:top-[45%] sm:left-[60%] lg:top-[48%] lg:left-[58%] 2xl:top-[46%] 2xl:left-[60%] 3xl:top-[44%] 3xl:left-[62%]"
+        className="absolute hidden lg:block w-[120px] sm:w-[130px] lg:w-[180px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
+      top-[50%] left-[55%] sm:top-[45%] sm:left-[60%] lg:top-[48%] lg:left-[58%] 2xl:top-[48%] 2xl:left-[60%] 3xl:top-[44%] 3xl:left-[62%]"
       >
         <Image
           src={heroCamera1}
@@ -32,8 +32,8 @@ export default function ServiceHeroSection() {
 
       {/* Camera 2 */}
       <div
-        className="absolute w-[140px] sm:w-[180px] lg:w-[220px] 2xl:w-[250px] 3xl:w-[280px] aspect-square rounded-xl overflow-visible z-20 
-      top-[35%] left-[65%] sm:top-[30%] sm:left-[67%] lg:top-[32%] lg:left-[66%] 2xl:top-[30%] 2xl:left-[68%] 3xl:top-[28%] 3xl:left-[70%]"
+        className="absolute hidden lg:block w-[140px] sm:w-[180px] lg:w-[280px] 2xl:w-[350px] 3xl:w-[400px] aspect-square rounded-xl overflow-visible z-20 
+      top-[35%] left-[65%] sm:top-[30%] sm:left-[67%] lg:top-[32%] lg:left-[63%] 2xl:top-[30%] 2xl:left-[65%] 3xl:top-[28%] 3xl:left-[66%]"
       >
         <Image
           src={heroCamera2}
@@ -44,8 +44,8 @@ export default function ServiceHeroSection() {
 
       {/* Camera 3 */}
       <div
-        className="absolute w-[120px] sm:w-[160px] lg:w-[200px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
-      top-[55%] left-[72%] sm:top-[50%] sm:left-[74%] lg:top-[52%] lg:left-[73%] 2xl:top-[50%] 2xl:left-[75%] 3xl:top-[48%] 3xl:left-[77%]"
+        className="absolute hidden lg:block w-[120px] sm:w-[130px] lg:w-[180px] 2xl:w-[230px] 3xl:w-[260px] aspect-square rounded-xl overflow-visible z-10 
+      top-[55%] left-[72%] sm:top-[50%] sm:left-[74%] lg:top-[48%] lg:left-[73%] 2xl:top-[48%] 2xl:left-[75%] 3xl:top-[44%] 3xl:left-[75%]"
       >
         <Image
           src={heroCamera3}

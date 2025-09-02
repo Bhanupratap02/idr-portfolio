@@ -1,15 +1,21 @@
 /** @format */
 import Image from "next/image";
 import before_after from "@/assets/services/access-control/before_after.png";
+import entry_control from "@/assets/services/access-control/icons/entry_control.png";
+import credential_types from "@/assets/services/access-control/icons/credential_types.png";
+import remote_management from "@/assets/services/access-control/icons/remote_management.png";
+import time from "@/assets/services/access-control/icons/time.png";
+import bell from "@/assets/services/access-control/icons/bell.png";
 export default function TrustedTechnology() {
   return (
     <section className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl font-medium mb-4 sm:mb-6">
+        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium mb-4 sm:mb-6">
           Built on Trusted Technology
         </h2>
-        <p className="text-[#626262] text-base sm:text-lg mb-10 sm:mb-16 max-w-3xl mx-auto">
+
+        <p className="text-[#626262] text-base sm:text-lg 2xl:text-xl 3xl:text-2xl mb-10 sm:mb-16 max-w-3xl mx-auto">
           We deploy systems from top manufacturers like Kisi, Brivo, Rhombus,
           Verkada, Vicon, and ZKTeco.
         </p>
@@ -28,117 +34,72 @@ export default function TrustedTechnology() {
             )
           )}
         </div>
-
         {/* Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Feature Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Door Control */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <div className="flex justify-center mb-4">
-                <div className="w-7 h-6 bg-[#FFD700] rounded flex items-center justify-center">
-                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none">
-                    <path
-                      d="M15.5 1.49979C15.5 1.03573 15.2891 0.599789 14.9234 0.318539C14.5578 0.0372894 14.0844 -0.0658357 13.6344 0.0466643L5.20156 2.15604C4.20313 2.40448 3.5 3.30448 3.5 4.33573V20.9998H2C1.17031 20.9998 0.5 21.6701 0.5 22.4998C0.5 23.3295 1.17031 23.9998 2 23.9998H5H14H15.5V22.4998V1.49979Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
+            {[
+              {
+                img: entry_control,
+                alt: "Entry Control",
+                title: "Door, Gate, Turnstile, Elevator Control",
+                desc: "Control all entry points from a single interface.",
+              },
+              {
+                img: credential_types,
+                alt: "Multiple Credentials",
+                title: "Multiple Credential Types",
+                desc: "Card, Fob, Mobile, Biometric credentials.",
+              },
+              {
+                img: remote_management,
+                alt: "Remote Management",
+                title: "Remote Management",
+                desc: "Control your system from anywhere, anytime.",
+              },
+              {
+                img: time,
+                alt: "Time & Role-based",
+                title: "Time & Role-based Permissions",
+                desc: "Customize access by person, time, and location.",
+              },
+              {
+                img: bell,
+                alt: "Real-time Alerts",
+                title: "Real-time Alerts & Logs",
+                desc: "Stay informed with instant notifications and detailed logs.",
+                span: "md:col-span-2",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className={`bg-white rounded-lg shadow-md hover:shadow-lg transition p-4 2xl:p-8 3xl:p-14 ${
+                  item.span || ""
+                }`}
+              >
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src={item.img}
+                    alt={item.alt}
+                    className="w-10 h-10 object-contain"
+                  />
                 </div>
+                <h3 className="text-[#2E2E2E] text-base sm:text-lg 3xl:text-2xl font-medium mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#626262] text-sm sm:text-base xl:text-lg 
+                 3xl:text-xl leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
-                Door, Gate, Turnstile, Elevator Control
-              </h3>
-              <p className="text-[#626262] text-sm sm:text-base">
-                Control all entry points from a single interface.
-              </p>
-            </div>
-
-            {/* Multiple Credentials */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex justify-center mb-4">
-                <div className="w-7 h-6 bg-[#FFD700] rounded flex items-center justify-center">
-                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none">
-                    <path
-                      d="M0.5 4.5H27.5C27.5 2.84531 26.1547 1.5 24.5 1.5H3.5C1.84531 1.5 0.5 2.84531 0.5 4.5ZM0.5 6V19.5C0.5 21.1547 1.84531 22.5 3.5 22.5H24.5C26.1547 22.5 27.5 21.1547 27.5 19.5V6H0.5Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
-                Multiple Credential Types
-              </h3>
-              <p className="text-[#626262] text-sm sm:text-base">
-                Card, Fob, Mobile, Biometric credentials.
-              </p>
-            </div>
-
-            {/* Remote Management */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex justify-center mb-4">
-                <div className="w-6 h-6 bg-[#FFD700] rounded flex items-center justify-center">
-                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path
-                      d="M17 12C17 13.0406 16.9438 14.0437 16.8453 15H8.15469C8.05156 14.0437 8 13.0406 8 12C8 10.9594 8.05625 9.95625 8.15469 9H16.8453C16.9484 9.95625 17 10.9594 17 12Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
-                Remote Management
-              </h3>
-              <p className="text-[#626262] text-sm sm:text-base">
-                Control your system from anywhere, anytime.
-              </p>
-            </div>
-
-            {/* Time & Role-based */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex justify-center mb-4">
-                <div className="w-6 h-6 bg-[#FFD700] rounded flex items-center justify-center">
-                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path
-                      d="M12.5 0C15.6826 0 18.7348 1.26428 20.9853 3.51472C23.2357 5.76516 24.5 8.8174 24.5 12C24.5 15.1826 23.2357 18.2348 20.9853 20.4853C18.7348 22.7357 15.6826 24 12.5 24C9.3174 24 6.26516 22.7357 4.01472 20.4853C1.76428 18.2348 0.5 15.1826 0.5 12C0.5 8.8174 1.76428 5.76516 4.01472 3.51472C6.26516 1.26428 9.3174 0 12.5 0Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
-                Time & Role-based Permissions
-              </h3>
-              <p className="text-[#626262] text-sm sm:text-base">
-                Customize access by person, time, and location.
-              </p>
-            </div>
-
-            {/* Real-time Alerts */}
-            <div className="bg-white rounded-lg shadow-lg p-6 md:col-span-2">
-              <div className="flex justify-center mb-4">
-                <div className="w-5 h-6 bg-[#FFD700] rounded flex items-center justify-center">
-                  <svg width="22" height="24" viewBox="0 0 22 24" fill="none">
-                    <path
-                      d="M10.9991 0C10.1694 0 9.4991 0.670312 9.4991 1.5V2.4C6.07723 3.09375 3.4991 6.12187 3.4991 9.75V10.6313C3.4991 12.8344 2.68817 14.9625 1.22567 16.6125L0.87879 17.0016C0.48504 17.4422 0.39129 18.075 0.630353 18.6141C0.869415 19.1531 1.40848 19.5 1.9991 19.5H19.9991C20.5897 19.5 21.1241 19.1531 21.3679 18.6141C21.6116 18.075 21.5132 17.4422 21.1194 17.0016L20.7725 16.6125C19.31 14.9625 18.4991 12.8391 18.4991 10.6313V9.75C18.4991 6.12187 15.921 3.09375 12.4991 2.4V1.5C12.4991 0.670312 11.8288 0 10.9991 0Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
-                Real-time Alerts & Logs
-              </h3>
-              <p className="text-[#626262] text-sm sm:text-base">
-                Stay informed with instant notifications and detailed logs.
-              </p>
-            </div>
+            ))}
           </div>
           {/* Right Image */}
-          <div className="w-full h-full">
+          <div className="w-full self-center">
             <Image
               src={before_after}
               alt="Technology Interface"
-              className="w-full h-full rounded-lg object-cover shadow-md"
+              className="w-full h-auto rounded-lg object-cover"
             />
           </div>
         </div>

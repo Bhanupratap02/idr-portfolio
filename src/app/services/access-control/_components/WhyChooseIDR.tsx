@@ -1,34 +1,41 @@
 /** @format */
-
+import cloud from "@/assets/services/access-control/icons/cloud.png";
+import certified from "@/assets/services/access-control/icons/certified.png";
+import records from "@/assets/services/access-control/icons/records.png";
+import multi_tenants from "@/assets/services/access-control/icons/multi_tenants.png";
+import support from "@/assets/services/access-control/icons/support.png";
+import portal_access from "@/assets/services/access-control/icons/portal_access.png";
+import trust from "@/assets/services/access-control/icons/trust.png";
+import Image from "next/image";
 export default function WhyChooseIDR() {
   const features = [
     {
-      icon: "☁️",
+      icon: cloud,
       title: "Cloud + On-Prem Support",
       desc: "Flexible deployment options to fit your infrastructure",
     },
     {
-      icon: "⭐",
+      icon: certified,
       title: "Certified Techs",
       desc: "Factory-trained experts who know their systems",
     },
     {
-      icon: "📋",
+      icon: records,
       title: "Full Documentation",
       desc: "Complete records of your installation",
     },
     {
-      icon: "🏢",
+      icon: multi_tenants,
       title: "Multi-Tenant Ready",
       desc: "Solutions designed for complex properties",
     },
     {
-      icon: "📞",
+      icon: support,
       title: "In-House Support",
       desc: "Direct access to our expert team",
     },
     {
-      icon: "📊",
+      icon: portal_access,
       title: "Portal Access for All",
       desc: "Transparent system management",
     },
@@ -49,9 +56,11 @@ export default function WhyChooseIDR() {
               className="bg-white rounded-lg shadow-md sm:shadow-lg p-6 sm:p-8 text-center"
             >
               <div className="flex justify-center mb-3 sm:mb-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FFD700] rounded flex items-center justify-center text-lg sm:text-xl">
-                  {feature.icon}
-                </div>
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                />
               </div>
               <h3 className="text-[#2E2E2E] text-lg sm:text-xl font-medium mb-2 sm:mb-4">
                 {feature.title}
@@ -65,9 +74,12 @@ export default function WhyChooseIDR() {
 
         {/* Trust Badge */}
         <div className="bg-white rounded-lg shadow-md sm:shadow-lg px-4 sm:px-6 py-4 sm:py-6 inline-flex items-center gap-3 sm:gap-4">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 bg-[#FFD700] rounded flex items-center justify-center text-lg">
-            🛡️
-          </div>
+          <Image
+            src={trust}
+            alt="Trusted by 500+ Properties"
+            className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+          />
+
           <span className="text-[#2E2E2E] text-base sm:text-lg lg:text-xl font-medium">
             Trusted by 500+ Properties
           </span>

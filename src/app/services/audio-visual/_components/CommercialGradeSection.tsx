@@ -41,10 +41,10 @@ export default function CommercialGradeSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-gray-900 mb-4">
             Commercial-Grade Performance for the Home
           </h2>
-          <p className="text-lg md:text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-600">
             Style meets sound. Designed for how you live.
           </p>
         </div>

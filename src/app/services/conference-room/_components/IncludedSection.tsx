@@ -1,50 +1,50 @@
-
-
+/** @format */
+import included from "@/assets/services/conference-room/included.png";
+import Image from "next/image";
+const includedServices = [
+  {
+    title: "Expert consulting and site walkthroughs",
+    description:
+      "We analyze your space and needs before recommending solutions.",
+  },
+  {
+    title: "Custom room design and system selection",
+    description:
+      "Tailored solutions that match your specific requirements and budget.",
+  },
+  {
+    title: "Installation by certified A/V technicians",
+    description: "Expert installation that ensures everything works perfectly.",
+  },
+  {
+    title: "DSP programming & audio tuning",
+    description:
+      "Precisely calibrated audio for perfect sound in your unique space.",
+  },
+  {
+    title: "Staff training & walkthrough",
+    description:
+      "We ensure your team knows how to use all features effectively.",
+  },
+];
 export default function IncludedSection() {
-  const includedServices = [
-    {
-      title: "Expert consulting and site walkthroughs",
-      description:
-        "We analyze your space and needs before recommending solutions.",
-    },
-    {
-      title: "Custom room design and system selection",
-      description:
-        "Tailored solutions that match your specific requirements and budget.",
-    },
-    {
-      title: "Installation by certified A/V technicians",
-      description:
-        "Expert installation that ensures everything works perfectly.",
-    },
-    {
-      title: "DSP programming & audio tuning",
-      description:
-        "Precisely calibrated audio for perfect sound in your unique space.",
-    },
-    {
-      title: "Staff training & walkthrough",
-      description:
-        "We ensure your team knows how to use all features effectively.",
-    },
-  ];
-
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-medium text-gray-900">
-            What's Included in Every IDR Conference Room
+    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 3xl:py-32 bg-gray-50">
+      <div className="mx-auto max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] px-6 lg:px-8">
+        {/* Heading */}
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl  font-medium text-gray-900">
+            What&apos;s Included in Every IDR Conference Room
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Conference Room Image */}
-          <div className="order-2 lg:order-1">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d07c8d91d447038ea1e5028c480946df4b0835b6?width=864"
+          <div className="order-2 lg:order-1 flex justify-center">
+            <Image
+              src={included}
               alt="Modern Conference Room Setup"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto rounded-lg"
             />
           </div>
 
@@ -68,10 +68,10 @@ export default function IncludedSection() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  <h3 className="text-lg sm:text-xl xl:text-2xl font-medium text-gray-900 mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-base xl:text-lg">
                     {service.description}
                   </p>
                 </div>

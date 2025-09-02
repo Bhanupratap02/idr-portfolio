@@ -1,26 +1,29 @@
 /** @format */
 import Image from "next/image";
 import portal from "@/assets/services/access-control/portal.png";
-
+import photos from "@/assets/services/access-control/icons/photos.png";
+import folder from "@/assets/services/access-control/icons/folder.png";
+import warning from "@/assets/services/access-control/icons/warning.png";
+import track from "@/assets/services/access-control/icons/track.png";
 export default function IDRPortal() {
   const portalFeatures = [
     {
-      icon: "📷",
+      icon: photos,
       title: "Photos/Videos of Work",
       desc: "Visual documentation of installations",
     },
     {
-      icon: "📁",
+      icon: folder,
       title: "Equipment Docs",
       desc: "Manuals and specifications",
     },
     {
-      icon: "❓",
+      icon: warning,
       title: "Warranty Tracking",
       desc: "Monitor coverage status",
     },
     {
-      icon: "🎫",
+      icon: track,
       title: "Submit & Track Requests",
       desc: "Manage support tickets",
     },
@@ -49,9 +52,11 @@ export default function IDRPortal() {
                   className="bg-white rounded-lg shadow-md p-4 sm:p-6 text-center"
                 >
                   <div className="flex justify-center mb-3 sm:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FFD700] rounded flex items-center justify-center text-lg sm:text-xl">
-                      {feature.icon}
-                    </div>
+                    <Image
+                      src={feature.icon}
+                      alt={feature.title}
+                      className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                    />
                   </div>
                   <h3 className="text-[#2E2E2E] text-base sm:text-lg font-medium mb-2">
                     {feature.title}
