@@ -15,22 +15,28 @@ export default function TransformSpaceSection() {
           <div className="grid md:grid-cols-2 gap-4">
             <input
               type="text"
+              aria-label="Full Name"
               placeholder="Full Name"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              aria-label="Email Address"
               placeholder="Email Address"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <input
             type="tel"
+            aria-label="Phone Number"
             placeholder="Phone Number"
             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <div className="relative">
-            <select className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none">
+            <select
+              className="w-full px-4 pr-10 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
+              aria-label="Service Interest"
+            >
               <option>I&apos;m interested in...</option>
               <option>Conference Room Solutions</option>
               <option>Audio/Visual Systems</option>
@@ -56,7 +62,7 @@ export default function TransformSpaceSection() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-md font-medium transition-colors"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6  rounded-md font-medium transition-colors"
           >
             Schedule My Free Consultation
           </button>
@@ -75,6 +81,9 @@ export default function TransformSpaceSection() {
                 fill="#0099FF"
               />
             </svg>
+            {/* <span className="text-sm sm:text-base lg:text-lg 2xl:text-xl">
+              (555) 123-4567
+            </span> */}
             <span>(555) 123-4567</span>
           </div>
           <div className="flex items-center gap-2">

@@ -7,9 +7,9 @@ export default function HeroSection() {
     <section
       className="relative bg-gray-900 text-white flex items-center 
       min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] 
-      2xl:min-h-[900px] 3xl:min-h-[1200px]"
+      2xl:min-h-[970px] 3xl:min-h-[1300px]"
     >
-      <div className="absolute inset-0  2xl:top-[-4%] 3xl:top-[-25%]">
+      <div className="absolute inset-0  2xl:top-[-2%] 2xl:left-[-8%] 3xl:left-[-12%] 3xl:top-[-20%]">
         <Image
           src={heroBGImage}
           alt="Security Background"

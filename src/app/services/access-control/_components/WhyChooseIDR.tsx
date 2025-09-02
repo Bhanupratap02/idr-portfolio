@@ -42,14 +42,20 @@ export default function WhyChooseIDR() {
   ];
 
   return (
-    <section className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl font-medium mb-10 sm:mb-14 lg:mb-16">
+    <section
+      className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28  py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28
+"
+    >
+      <div
+        className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem]
+        mx-auto text-center"
+      >
+        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium mb-10 sm:mb-14 lg:mb-16">
           Why Teams Choose IDR
         </h2>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 lg:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 mb-12 lg:mb-16">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -59,13 +65,13 @@ export default function WhyChooseIDR() {
                 <Image
                   src={feature.icon}
                   alt={feature.title}
-                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 object-contain"
                 />
               </div>
-              <h3 className="text-[#2E2E2E] text-lg sm:text-xl font-medium mb-2 sm:mb-4">
+              <h3 className="text-[#2E2E2E] text-lg sm:text-xl 2xl:text-2xl 3xl:text-3xl font-medium mb-2 sm:mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[#626262] text-sm sm:text-base leading-relaxed">
+              <p className="text-[#626262] text-sm sm:text-base 2xl:text-lg 3xl:text-xl leading-relaxed">
                 {feature.desc}
               </p>
             </div>
@@ -77,10 +83,10 @@ export default function WhyChooseIDR() {
           <Image
             src={trust}
             alt="Trusted by 500+ Properties"
-            className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+            className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 object-contain"
           />
 
-          <span className="text-[#2E2E2E] text-base sm:text-lg lg:text-xl font-medium">
+          <span className="text-[#2E2E2E] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl font-medium">
             Trusted by 500+ Properties
           </span>
         </div>

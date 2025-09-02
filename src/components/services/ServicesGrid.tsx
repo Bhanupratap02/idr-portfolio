@@ -146,7 +146,7 @@ export default function ServicesGrid({ exclude }: ServicesGridProps) {
                 <Image
                   src={service.image}
                   alt={service.title || "Service Image"}
-                  className="w-full h-56 sm:h-64 lg:h-72 2xl:h-80 3xl:h-96 object-cover rounded-2xl"
+                  className="w-full h-56 sm:h-64 lg:h-72 2xl:h-80 3xl:h-96 object-fill rounded-2xl"
                 />
               </div>
               <div className="space-y-6">

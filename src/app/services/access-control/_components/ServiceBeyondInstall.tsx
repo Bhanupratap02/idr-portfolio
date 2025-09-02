@@ -7,7 +7,6 @@ import docs from "@/assets/services/access-control/icons/docs.png";
 import assistance from "@/assets/services/access-control/icons/assistance.png";
 import certified from "@/assets/services/access-control/icons/certified.png";
 import Image from "next/image";
-export default function ServiceBeyondInstall() {
   const serviceSteps = [
     {
       icon: expert,
@@ -46,6 +45,8 @@ export default function ServiceBeyondInstall() {
       desc: "Ongoing assistance when you need it",
     },
   ];
+export default function ServiceBeyondInstall() {
+
 
   return (
     <section className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16 lg:py-20">
