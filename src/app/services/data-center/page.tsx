@@ -23,7 +23,7 @@ export default function DataCenter() {
       <DCPortalSection />
       <DCWhyTeamsSection />
       <DCReadySection />
-      <ServicesGrid />
+      <ServicesGrid exclude={4}/>
     </div>
   );
 }

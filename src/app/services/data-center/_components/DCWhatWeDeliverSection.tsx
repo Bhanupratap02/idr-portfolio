@@ -10,37 +10,37 @@ import Image from "next/image";
 export  default function DCWhatWeDeliverSection() {
   const features = [
     {
-      icon: "🔧",
+      icon: deliver1,
       title: "Fiber and Copper Installs",
       description:
         "OM3/OM4 fiber and Cat6a/Cat7 copper installations with precision testing",
     },
     {
-      icon: "⚡",
+      icon: deliver2,
       title: "Patch Panel + Switch Setup",
       description:
         "Organized, labeled, and future-ready panel installations with switch coordination.",
     },
     {
-      icon: "🛡️",
+      icon: deliver3,
       title: "PDUs, Power & UPS",
       description:
         "Redundant power distribution and backup systems for critical environments.",
     },
     {
-      icon: "📊",
+      icon: deliver4,
       title: "Cold/Hot Aisle Containment",
       description:
         "Optimized airflow management for thermal efficiency and equipment longevity.",
     },
     {
-      icon: "💰",
+      icon: deliver5,
       title: "Cable Tray & Ladder Racks",
       description:
         "Structured cable management systems for overhead and under-floor routing.",
     },
     {
-      icon: "🔄",
+      icon: deliver6,
       title: "Labeling & Rack Elevations",
       description:
         "Detailed documentation and labeling for simplified management and troubleshooting.",
@@ -48,31 +48,41 @@ export  default function DCWhatWeDeliverSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-4">
             What We Deliver
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive infrastructure solutions designed for reliability,
             scalability, and performance.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 2xl:gap-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="text-center p-6 sm:p-8 2xl:p-10 3xl:p-14 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                {feature.icon}
+              {/* Icon */}
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              {/* Title */}
+              <h3 className="text-lg sm:text-xl 2xl:text-2xl font-semibold text-gray-900 mb-2 sm:mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">{feature.description}</p>
+
+              {/* Description */}
+              <p className="text-sm sm:text-base xl:text-lg text-gray-600 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
