@@ -1,6 +1,6 @@
 /** @format */
-
-export default function NITEducationSection() {
+import Image from "next/image";
+import education from "@/assets/services/networks-it/education.png";
   const educationFeatures = [
     {
       icon: (
@@ -79,43 +79,47 @@ export default function NITEducationSection() {
         "Support for digital displays, projectors, and interactive learning tools.",
     },
   ];
+export default function NITEducationSection() {
+
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 lg:px-8">
+    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-white">
+      {/* <div className="container mx-auto px-6 lg:px-8"> */}
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Empowering Education Through Seamless IT
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
-          <div className="relative">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3a175f679b8eb526f6cbe29799be88be41180ce5?width=1200"
+          <div className="relative ">
+            <Image
+              src={education}
               alt="Education Technology Classroom"
-              className="w-full h-auto rounded-lg shadow-xl"
+              // className="w-full h-auto rounded-lg object-cover"
+              className="w-full md:h-[20rem] lg:h-[28rem] 2xl:h-[32rem]   rounded-lg"
             />
           </div>
 
           {/* Right Content */}
           <div className="bg-blue-50 rounded-2xl p-8">
-            <h3 className="text-xl font-medium text-gray-900 mb-6">
+            <h3 className="text-xl xl:text-2xl 2xl:text-[1.6rem] 3xl:text-4xl font-medium text-gray-900 mb-6">
               Specialized Solutions for Educational Institutions
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-6 3xl:space-y-8">
               {educationFeatures.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     {feature.icon}
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-normal text-gray-900 mb-2">
+                    <h4 className="text-base md:text-lg 3xl:text-xl font-medium text-gray-900 mb-2 3xl:mb-3">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm xl:text-base 2xl:text-lg text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -124,7 +128,7 @@ export default function NITEducationSection() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors text-sm md:text-base 3xl:text-base">
                 Explore Education Solutions
               </button>
             </div>

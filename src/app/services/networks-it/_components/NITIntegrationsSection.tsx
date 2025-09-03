@@ -1,6 +1,4 @@
 /** @format */
-
-export default function NITIntegrationsSection() {
   const integrations = [
     {
       icon: (
@@ -111,203 +109,155 @@ export default function NITIntegrationsSection() {
       description: "Security and emergency alerts",
     },
   ];
-
+/** @format */
+export default function NITIntegrationsSection() {
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Designed for Integration
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our infrastructure solutions seamlessly integrate with all your
             building systems for unified management and operation.
           </p>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
-          {/* Network diagram with connecting lines */}
-          <div className="relative">
-            {/* SVG for connecting lines */}
-            <svg
-              className="absolute inset-0 w-full h-full"
-              viewBox="0 0 812 608"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M203.336 101.334L406.003 304.001"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-              <path
-                d="M608.667 101.334L406 304.001"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-              <path
-                d="M203.336 304H406.003"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-              <path
-                d="M608.667 304H406"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-              <path
-                d="M203.336 506.667L406.003 304"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-              <path
-                d="M608.667 506.667L406 304"
-                stroke="#0057B8"
-                strokeWidth="2.02667"
-                strokeDasharray="5.07 5.07"
-              />
-            </svg>
+        <div className="relative">
+          {/* Connection lines visible only on lg+ */}
+          <svg
+            className="hidden lg:block absolute inset-0 w-full h-full"
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 800"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Top Left to Center */}
+            <path
+              d="M300 133L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
+            {/* Top Right to Center */}
+            <path
+              d="M900 133L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
+            {/* Middle Left to Center */}
+            <path
+              d="M200 400L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
+            {/* Middle Right to Center */}
+            <path
+              d="M1000 400L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
+            {/* Bottom Left to Center */}
+            <path
+              d="M280 667L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
 
-            {/* Grid layout for integration cards */}
-            <div className="grid grid-cols-3 gap-8 h-[600px] relative">
-              {/* Top row */}
-              <div className="flex items-start justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-48">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[0].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[0].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[0].description}
-                    </p>
-                  </div>
-                </div>
-              </div>
+            {/* Bottom Right to Center */}
+            <path
+              d="M900 667L600 400"
+              stroke="#0057B8"
+              strokeWidth="2"
+              strokeDasharray="5 5"
+              vectorEffect="non-scaling-stroke"
+            />
+          </svg>
 
-              <div className="flex items-start justify-center">
-                {/* Empty space for diagram center */}
-              </div>
+          {/* Grid layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative min-h-[500px] lg:min-h-[600px]">
+            {/* Top Left */}
+            <IntegrationCard {...integrations[0]} />
 
-              <div className="flex items-start justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-48">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[1].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[1].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[1].description}
-                    </p>
-                  </div>
-                </div>
-              </div>
+            {/* Spacer (for hub alignment on lg+) */}
+            <div className="hidden lg:block" />
 
-              {/* Middle row */}
-              <div className="flex items-center justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-44">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[2].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[2].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[2].description}
-                    </p>
-                  </div>
-                </div>
-              </div>
+            {/* Top Right */}
+            <IntegrationCard {...integrations[1]} />
 
-              {/* Central hub */}
-              <div className="flex items-center justify-center">
-                <div className="w-40 h-40 bg-blue-600 rounded-full flex items-center justify-center">
-                  <div className="text-center">
-                    <svg
-                      width="46"
-                      height="37"
-                      viewBox="0 0 46 37"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5 5H27.5V9.5H18.5V5ZM17.375 0.5C15.5117 0.5 14 2.01172 14 3.875V10.625C14 12.4883 15.5117 14 17.375 14H20.75V16.25H2.75C1.50547 16.25 0.5 17.2555 0.5 18.5C0.5 19.7445 1.50547 20.75 2.75 20.75H9.5V23H6.125C4.26172 23 2.75 24.5117 2.75 26.375V33.125C2.75 34.9883 4.26172 36.5 6.125 36.5H17.375C19.2383 36.5 20.75 34.9883 20.75 33.125V26.375C20.75 24.5117 19.2383 23 17.375 23H14V20.75H32V23H28.625C26.7617 23 25.25 24.5117 25.25 26.375V33.125C25.25 34.9883 26.7617 36.5 28.625 36.5H39.875C41.7383 36.5 43.25 34.9883 43.25 33.125V26.375C43.25 24.5117 41.7383 23 39.875 23H36.5V20.75H43.25C44.4945 20.75 45.5 19.7445 45.5 18.5C45.5 17.2555 44.4945 16.25 43.25 16.25H25.25V14H28.625C30.4883 14 32 12.4883 32 10.625V3.875C32 2.01172 30.4883 0.5 28.625 0.5H17.375ZM7.25 32V27.5H16.25V32H7.25ZM29.75 27.5H38.75V32H29.75V27.5Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <div className="text-white text-sm font-medium mt-2">
-                      Central Network Infrastructure
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* Middle Left */}
+            <IntegrationCard {...integrations[2]} />
 
-              <div className="flex items-center justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-44">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[3].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[3].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[3].description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bottom row */}
-              <div className="flex items-end justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-44">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[4].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[4].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[4].description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-end justify-center">
-                {/* Empty space */}
-              </div>
-
-              <div className="flex items-end justify-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 w-72 h-44">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      {integrations[5].icon}
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      {integrations[5].title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {integrations[5].description}
-                    </p>
+            {/* Central Hub */}
+            <div className="flex items-center justify-center">
+              <div className="w-32 h-32 md:w-40 md:h-40 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="text-center px-2">
+                  <svg
+                    width="40"
+                    height="34"
+                    viewBox="0 0 46 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mx-auto"
+                  >
+                    <path
+                      d="M18.5 5H27.5V9.5H18.5V5ZM17.375 0.5C15.5117 0.5 14 2.01172 14 3.875V10.625C14 12.4883 15.5117 14 17.375 14H20.75V16.25H2.75C1.50547 16.25 0.5 17.2555 0.5 18.5C0.5 19.7445 1.50547 20.75 2.75 20.75H9.5V23H6.125C4.26172 23 2.75 24.5117 2.75 26.375V33.125C2.75 34.9883 4.26172 36.5 6.125 36.5H17.375C19.2383 36.5 20.75 34.9883 20.75 33.125V26.375C20.75 24.5117 19.2383 23 17.375 23H14V20.75H32V23H28.625C26.7617 23 25.25 24.5117 25.25 26.375V33.125C25.25 34.9883 26.7617 36.5 28.625 36.5H39.875C41.7383 36.5 43.25 34.9883 43.25 33.125V26.375C43.25 24.5117 41.7383 23 39.875 23H36.5V20.75H43.25C44.4945 20.75 45.5 19.7445 45.5 18.5C45.5 17.2555 44.4945 16.25 43.25 16.25H25.25V14H28.625C30.4883 14 32 12.4883 32 10.625V3.875C32 2.01172 30.4883 0.5 28.625 0.5H17.375ZM7.25 32V27.5H16.25V32H7.25ZM29.75 27.5H38.75V32H29.75V27.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <div className="text-white text-xs md:text-sm font-medium mt-2">
+                    Central Network Infrastructure
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Middle Right */}
+            <IntegrationCard {...integrations[3]} />
+
+            {/* Bottom Left */}
+            <IntegrationCard {...integrations[4]} />
+
+            {/* Spacer */}
+            <div className="hidden lg:block" />
+
+            {/* Bottom Right */}
+            <IntegrationCard {...integrations[5]} />
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+/* Reusable Card Component */
+function IntegrationCard({ icon, title, description }: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="flex items-center justify-center">
+      <div className="bg-white rounded-lg p-6 2xl:p-8 3xl:p-10 shadow-sm border border-gray-200 w-full max-w-[18rem] 2xl:max-w-[20rem] 3xl:max-w-[22rem] min-h-[11rem] 2xl:min-h-[13rem] 3xl:min-h-[15rem] flex flex-col items-center text-center">
+        <div className="w-14 h-14 md:w-16 md:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+          {icon}
+        </div>
+        <h3 className="text-base md:text-lg xl:text-xl 2xl:text-2xl font-medium text-gray-900 mb-2">
+          {title}
+        </h3>
+        <p className="text-sm md:text-base xl:text-lg 2xl:text-xl text-gray-600">{description}</p>
+      </div>
+    </div>
+  );
+}
+

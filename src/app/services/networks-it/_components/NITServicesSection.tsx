@@ -113,8 +113,9 @@ const services = [
 ];
 export default function NITServicesSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-white">
+    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-gray-50">
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* <div className="container mx-auto px-6 lg:px-8"> */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800">
             From the Rack to the Rooftop

@@ -1,12 +1,13 @@
 /** @format */
-
-export default function NITCertifiedSection() {
+import Image from "next/image";
+import warning from "@/assets/services/conference-room/icons/warning.png";
+import certified from "@/assets/services/networks-it/certified.png";
   const certifications = [
-    { name: "CompTIA", icon: "🎯" },
-    { name: "Meraki", icon: "🌐" },
-    { name: "Ubiquiti", icon: "📡" },
-    { name: "Fortinet", icon: "🛡️" },
-    { name: "Yealink", icon: "📞" },
+    { icon: warning },
+    { name: "Meraki" },
+    { name: "Ubiquiti" },
+    { name: "Fortinet" },
+    { name: "Yealink" },
   ];
 
   const features = [
@@ -65,15 +66,16 @@ export default function NITCertifiedSection() {
       description: "Dedicated to implementing secure infrastructure",
     },
   ];
-
+export default function NITCertifiedSection() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6 lg:px-8">
+    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-gray-50">
+      {/* <div className="container mx-auto px-6 lg:px-8"> */}
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Certified. Experienced. Ready for Scale.
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg xl:text-xl 3xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our team holds industry-leading certifications and partnerships to
             deliver enterprise-grade solutions for businesses of all sizes.
           </p>
@@ -81,49 +83,60 @@ export default function NITCertifiedSection() {
 
         {/* Certification badges */}
         <div className="flex justify-center mb-12">
-          <div className="flex flex-wrap justify-center gap-8 max-w-4xl">
+          <div className="flex flex-wrap justify-center xl:justify-between gap-8 max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl">
             {certifications.map((cert, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex items-center justify-center min-w-[144px] h-24"
               >
                 <div className="text-center">
-                  <div className="text-2xl mb-2">{cert.icon}</div>
-                  <span className="font-medium text-gray-700 text-lg">
-                    {cert.name}
-                  </span>
+                  {cert?.icon && (
+                    <Image
+                      src={cert.icon}
+                      alt={cert.name || "Certification Badge"}
+                      width={48}
+                      height={48}
+                      className="mx-auto mb-2"
+                    />
+                  )}
+                  {cert?.name && (
+                    <span className="font-medium text-gray-700 text-base md:text-lg 2xl:text-xl">
+                      {cert.name}
+                    </span>
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch h-full">
           {/* Left Image */}
-          <div className="relative">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/27c3909dc097b7974a7c5111a920c49be9ab94c0?width=1208"
+          <div className="relative h-full">
+            <Image
+              src={certified}
               alt="Certified Network Engineers"
-              className="w-full h-auto rounded-lg shadow-xl"
+              // className="w-full h-auto rounded-lg  object-cover"
+              className="w-full md:h-[20rem] lg:h-[25rem]  3xl:h-[32rem] rounded-lg"
             />
           </div>
 
           {/* Right Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 h-full flex flex-col 3xl:justify-evenly">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-blue-600"
+                className="bg-white rounded-lg p-6  shadow-sm border-l-4 border-blue-600 "
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                     {feature.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                    <h3 className="text-lg 2xl:text-xl 3xl:text-2xl font-medium text-gray-900 mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm 2xl:text-base 3xl:text-lg text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
