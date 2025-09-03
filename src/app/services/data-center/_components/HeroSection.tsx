@@ -3,11 +3,11 @@ import hero from "@/assets/services/data-center/hero.png";
 import Image from "next/image";
 export default function DCHeroSection() {
   return (
-    <section className="relative h-[88vh] 3xl:h-[89vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-12 sm:py-16 2xl:py-24 3xl:py-32 flex  items-center justify-center">
+    <section className="relative lg:h-[88vh] 3xl:h-[89vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-12 sm:py-16 2xl:py-24 3xl:py-32 flex  items-center justify-center">
       <div className="max-w-7xl 2xl:max-w-[97rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-8 lg:px-16 w-full">
         <div className="grid lg:grid-cols-2 gap-12 2xl:gap-20 3xl:gap-32  items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <h1 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-[3.5rem] 3xl:text-7xl font-medium leading-tight text-gray-800">
               Data Center Infrastructure
             </h1>

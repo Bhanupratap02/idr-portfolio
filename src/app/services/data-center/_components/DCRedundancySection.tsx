@@ -8,16 +8,16 @@ export default function DCRedundancySection() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-normal mb-6 text-gray-800">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold lg:font-normal mb-6 text-gray-800 text-center lg:text-left">
               Built with Redundancy in Mind
             </h2>
-            <p className="text-gray-600 text-base  2xl:text-xl 3xl:text-2xl 2xl:leading-relaxed mb-4 xl:mb-5 2xl:mb-6 3x:mb-8">
+            <p className="text-gray-600 text-base  2xl:text-xl 3xl:text-2xl 2xl:leading-relaxed mb-4 xl:mb-5 2xl:mb-6 3x:mb-8 text-center lg:text-left">
               Our infrastructure designs prioritize uptime through multiple
               layers of redundancy, ensuring your critical systems remain
               operational even during component failures.
             </p>
 
-            <h3 className="text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl font-normal text-gray-800 mb-6 3xl:mb-8">
+            <h3 className="text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl font-normal text-gray-800 mb-6 3xl:mb-8 ">
               Designed with Resilience Across All Layers
             </h3>
 
@@ -40,8 +40,11 @@ export default function DCRedundancySection() {
                   desc: "Physical separation of critical infrastructure pathways",
                 },
               ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-green-500 flex items-center justify-center mt-1 flex-shrink-0">
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 "
+                >
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-green-500 flex items-center justify-center mt-1 flex-shrink-0 ">
                     <svg
                       className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white"
                       fill="none"

@@ -11,33 +11,42 @@ export default function DCIntegratedSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 3xl:py-32 bg-white">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 2xl:gap-16 items-center">
           {/* Left Side - Cables Image */}
-          <div>
+          <div className="flex justify-center">
             <Image
               src={integrated}
               alt="Colorful data center cables"
-              className="w-full h-auto aspect-[4/3]"
+              className="w-full h-auto max-w-[750px] aspect-[4/3] rounded-lg shadow-lg"
             />
           </div>
+          {/* <div className="lg:justify-self-start">
+            <div className="relative">
+              <Image
+                src={integrated}
+                alt="Colorful data center cables"
+                className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[700px] 3xl:max-w-[800px] h-auto rounded-lg"
+              />
+            </div>
+          </div> */}
 
           {/* Right Content */}
           <div>
-            <h2 className="text-4xl font-normal text-gray-800 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-[2.9rem] 3xl:text-6xl font-bold lg:font-normal text-gray-800 mb-6">
               Integrated with Your Environment
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base  2xl:text-xl 3xl:text-2xl 2xl:leading-relaxed text-gray-600 mb-4 xl:mb-5 2xl:mb-6 3x:mb-8 leading-relaxed">
               Our infrastructure solutions are designed to work harmoniously
               with your existing environment while optimizing for performance,
               efficiency, and scalability.
             </p>
 
-            <div className="space-y-5">
+            <div className="space-y-4 md:space-y-5 3xl:space-y-7">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
                     <svg
                       width="14"
                       height="16"
@@ -51,7 +60,7 @@ export default function DCIntegratedSection() {
                       />
                     </svg>
                   </div>
-                  <span className="text-base font-normal text-gray-800">
+                  <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-normal text-gray-800">
                     {feature}
                   </span>
                 </div>
