@@ -1,49 +1,49 @@
 /** @format */
-
+ const leftFeatures = [
+   {
+     title: "Enterprise-grade performance",
+     description:
+       "We build infrastructure that scales with your organization and delivers reliable performance.",
+   },
+   {
+     title: "Cloud + On-Premise Support",
+     description:
+       "Flexible solutions that work with your existing infrastructure and future needs.",
+   },
+   {
+     title: "Education IT Contracts",
+     description:
+       "Specialized experience working with K-12 and higher education institutions.",
+   },
+   {
+     title: "CCNA-Certified Engineers",
+     description:
+       "Our team holds industry-leading certifications and ongoing training.",
+   },
+   {
+     title: "Full Documentation",
+     description:
+       "Comprehensive documentation of all work performed and system configurations.",
+   },
+   {
+     title: "IDR Portal Access",
+     description:
+       "Secure access to your network information and support resources.",
+   },
+ ];
 export default function NITWhyChooseSection() {
-  const leftFeatures = [
-    {
-      title: "Enterprise-grade performance",
-      description:
-        "We build infrastructure that scales with your organization and delivers reliable performance.",
-    },
-    {
-      title: "Cloud + On-Premise Support",
-      description:
-        "Flexible solutions that work with your existing infrastructure and future needs.",
-    },
-    {
-      title: "Education IT Contracts",
-      description:
-        "Specialized experience working with K-12 and higher education institutions.",
-    },
-    {
-      title: "CCNA-Certified Engineers",
-      description:
-        "Our team holds industry-leading certifications and ongoing training.",
-    },
-    {
-      title: "Full Documentation",
-      description:
-        "Comprehensive documentation of all work performed and system configurations.",
-    },
-    {
-      title: "IDR Portal Access",
-      description:
-        "Secure access to your network information and support resources.",
-    },
-  ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+      {/* <div className="container mx-auto px-6 lg:px-8"> */}
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl  font-medium text-gray-800 mb-4">
             Why Choose IDR?
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Column - Features List */}
           <div className="space-y-6">
             {leftFeatures.map((feature, index) => (
@@ -63,10 +63,10 @@ export default function NITWhyChooseSection() {
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  <h3 className="text-base xl:text-lg 3xl:text-xl font-medium text-gray-900 mb-1">
                     {feature.title}
                   </h3>
-                  <p className="text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm xl:text-base 3xl:text-lg text-gray-600 ">
                     {feature.description}
                   </p>
                 </div>
@@ -75,25 +75,28 @@ export default function NITWhyChooseSection() {
           </div>
 
           {/* Right Column - Call to Action */}
-          <div className="bg-blue-50 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl font-medium text-gray-900 mb-4">
+          <div className="bg-blue-50 rounded-2xl p-8 3xl:p-10 shadow-lg">
+            <h3 className="text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-gray-900 mb-4">
               Ready to Get Started?
             </h3>
-            <p className="text-base text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm xl:text-base 3xl:text-lg  text-gray-600 mb-8 leading-relaxed">
               Contact us today to discuss your infrastructure needs and how IDR
               Technology Solutions can help your organization.
             </p>
 
             <div className="space-y-4">
-              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors">
+              <button
+                className="w-full bg-blue-600 text-white px-6 py-3
+              3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors"
+              >
                 Request Consultation
               </button>
-              <button className="w-full border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-normal hover:bg-blue-50 transition-colors">
+              <button className="w-full border border-blue-600 text-blue-600 px-6 py-3 3xl:px-8 3xl:py-4 3xl:text-lg rounded-lg font-normal hover:bg-blue-50 transition-colors">
                 Download Brochure
               </button>
             </div>
 
-            <div className="flex justify-center space-x-6 mt-8 text-sm text-gray-600">
+            <div className="flex justify-center space-x-6 mt-8 text-sm 3xl:text-base text-gray-600">
               <div className="flex items-center space-x-2">
                 <svg
                   width="17"

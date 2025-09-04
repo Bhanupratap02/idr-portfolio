@@ -1,7 +1,7 @@
 /** @format */
-
-export default function NITPortalSection() {
-  const portalFeatures = [
+import Image from "next/image";
+import portal from "@/assets/services/networks-it/portal.png";  
+const portalFeatures = [
     {
       icon: (
         <svg
@@ -78,33 +78,38 @@ export default function NITPortalSection() {
         "Receive notifications about firmware updates and security alerts.",
     },
   ];
+export default function NITPortalSection() {
+
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+    <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+      {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-20"> */}
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-gray-800 mb-4">
             The IDR Portal: Network Insight, Simplified
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Access your network information, documentation, and support
             resources through our secure client portal.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Image */}
           <div className="relative">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b8479a739409ca1b137c097381a36d24098a983e?width=1440"
-              alt="IDR Portal Dashboard"
-              className="w-full h-auto rounded-lg shadow-xl"
+            <Image
+              src={portal}
+              alt="IDR Portal Dashboard interface showing analytics and service logs"
+              // className="w-full h-auto rounded-lg"
+              className="w-full h-auto md:h-[22rem] lg:h-[26rem] xl:h-[28rem] 2xl:h-[31rem] 3xl:h-[34rem] rounded-lg  "
             />
           </div>
 
           {/* Right Content */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl font-medium text-gray-900 mb-8">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 xl:p-10 shadow-lg flex flex-col justify-between">
+            <h3 className="text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-gray-900 mb-8">
               Portal Features
             </h3>
 
@@ -115,10 +120,10 @@ export default function NITPortalSection() {
                     {feature.icon}
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-base font-medium text-gray-900 mb-1">
+                    <h4 className="text-base xl:text-lg 3xl:text-xl font-medium text-gray-900 mb-1">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm 2xl:text-base 3xl:text-lg text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -127,7 +132,7 @@ export default function NITPortalSection() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors">
+              <button className="bg-blue-600 text-white px-6 py-3 3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors">
                 Request Portal Demo
               </button>
             </div>

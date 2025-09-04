@@ -75,7 +75,7 @@ export default function NITCertifiedSection() {
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Certified. Experienced. Ready for Scale.
           </h2>
-          <p className="text-lg xl:text-xl 3xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our team holds industry-leading certifications and partnerships to
             deliver enterprise-grade solutions for businesses of all sizes.
           </p>

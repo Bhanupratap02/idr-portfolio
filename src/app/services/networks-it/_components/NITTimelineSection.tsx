@@ -1,6 +1,6 @@
 /** @format */
-
-export default function NITTimelineSection() {
+import Image from "next/image";
+import service from "@/assets/services/networks-it/service.png";
   const timelineSteps = [
     {
       step: "1",
@@ -39,57 +39,60 @@ export default function NITTimelineSection() {
         "Ongoing maintenance, monitoring, and support to keep your infrastructure running smoothly.",
     },
   ];
+export default function NITTimelineSection() {
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-medium text-gray-800 mb-4">
+    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="container mx-auto px-6 lg:px-8"> */}
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Full-Service from Start to Finish
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our comprehensive approach ensures your infrastructure project is
             handled professionally at every stage.
           </p>
         </div>
 
         <div className="flex justify-center">
-          <div className="max-w-5xl w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Image */}
-              <div className="relative">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/6b75b8a7cc8b434f198a20d71da6e485079766e2?width=587"
-                  alt="Network Installation Process"
-                  className="w-full h-auto rounded-lg shadow-xl"
-                />
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left side - Image */}
+            <div className="relative">
+              <Image
+                src={service}
+                alt="Network Installation Process"
+                className="w-full h-auto rounded-lg 3xl:w-[80%]  mx-auto"
+              />
+            </div>
 
-              {/* Right side - Timeline */}
-              <div className="relative">
-                {/* Timeline Line */}
-                <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-600 transform -translate-x-6"></div>
+            {/* Right side - Timeline */}
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="hidden lg:block absolute left-2 top-0 bottom-0 w-0.5 bg-blue-600 transform -translate-x-6 3xl:-translate-x-7"></div>
 
-                <div className="space-y-8">
-                  {timelineSteps.map((item, index) => (
-                    <div key={index} className="relative">
-                      {/* Timeline Dot */}
-                      <div className="absolute -left-8 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm z-10">
-                        {item.step}
-                      </div>
-
-                      {/* Content */}
-                      <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-                        <h3 className="text-lg font-medium text-gray-900 mb-3">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-gray-600 leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 2xl:gap-12 ">
+                {timelineSteps.map((item, index) => (
+                  <div
+                    key={index}
+                    className="relative flex flex-col lg:flex-row  items-center lg:items-start "
+                  >
+                    {/* Timeline Dot */}
+                    <div className=" lg:absolute -left-8 3xl:-left-10 w-8 h-10 lg:h-8 3xl:w-10 3xl:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm z-10">
+                      {item.step}
                     </div>
-                  ))}
-                </div>
+
+                    {/* Content */}
+                    <div className="bg-gray-50 rounded-lg p-5 sm:p-6 2xl:p-8 3xl:p-10 shadow-sm w-full h-full ml-2 mt-2 lg:mt-0 ">
+                      <h3 className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium text-gray-900 mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm lg:text-base  text-gray-600 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
