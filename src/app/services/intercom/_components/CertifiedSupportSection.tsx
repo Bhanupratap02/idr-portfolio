@@ -135,7 +135,7 @@ export function CertifiedSupportSection() {
           <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold leading-tight sm:leading-tight lg:leading-snug mb-4">
             Certified, Supported, and Staffed
           </h2>
-          <p className="text-[#626262] ext-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl mx-auto">
+          <p className="text-[#626262] text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl mx-auto">
             Every system we install is backed by comprehensive support
           </p>
         </div>
