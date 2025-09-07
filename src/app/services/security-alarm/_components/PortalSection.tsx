@@ -1,6 +1,4 @@
 /** @format */
-
-export default function PortalSection() {
   const portalFeatures = [
     {
       icon: (
@@ -59,63 +57,67 @@ export default function PortalSection() {
         "Access all system documentation, user manuals, and configuration details.",
     },
   ];
+export default function PortalSection() {
+
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-white py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 3xl:py-36">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-22">
+        <div className="grid lg:grid-cols-2 gap-16 3xl:gap-18 items-stretch">
           {/* Left Content */}
-          <div className="space-y-8">
-            <h2 className="text-[#2E2E2E] text-3xl lg:text-4xl font-medium">
-              The IDR Portal: Total Visibility
-            </h2>
+          <div className="flex flex-col justify-between h-full">
+            <div className=" space-y-4 md:space-y-6 2xl:space-y-8 3xl:space-y-10">
+              <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-4xl 3xl:text-5xl  font-semibold">
+                The IDR Portal: Total Visibility
+              </h2>
 
-            <p className="text-[#626262] text-xl leading-relaxed">
-              Manage everything with real-time insights and full documentation
-              access.
-            </p>
+              <p className="text-[#626262] text-base md:text-lg lg:text-xl 3x:text-2xl leading-relaxed">
+                Manage everything with real-time insights and full documentation
+                access.
+              </p>
 
-            {/* Portal Features */}
-            <div className="space-y-6">
-              {portalFeatures.map((feature, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#DBEAFE] rounded-full flex items-center justify-center">
-                    {feature.icon}
+              {/* Portal Features */}
+              <div className="space-y-4 md:space-y-5 3xl:space-y-8">
+                {portalFeatures.map((feature, index) => (
+                  <div key={index} className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-[#DBEAFE] rounded-full flex items-center justify-center">
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-[#2E2E2E] text-lg md:text-xl 3xl:text-2xl  font-medium mb-1 3xl:mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-[#626262] text-sm md:text-base 2xl:text-lg 3xl:text-xl">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-[#2E2E2E] text-base font-medium mb-1">
-                      {feature.title}
-                    </h3>
-                    <p className="text-[#626262] text-base leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
+                ))}
+              </div>
+
+              {/* Testimonial Quote */}
+              <div className="bg-[#F3F4F6] border-l-4 border-[#0056B3] p-6 rounded-lg">
+                <div className="space-y-4 3xl:space-y-6">
+                  <p className="text-[#626262] text-sm md:text-base 2xl:text-lg 3xl:text-xl leading-relaxed 3xl:leading-loose">
+                    The IDR Portal gives us complete visibility into our
+                    security systems across multiple locations. It&apos;s become
+                    an essential management tool for our security team.
+                  </p>
+                  <p className="text-[#2E2E2E] text-sm md:text-base 2xl:text-lg 3xl:text-xl font-medium">
+                    — John Davis, Security Director at Meridian Properties
+                  </p>
                 </div>
-              ))}
-            </div>
-
-            {/* Testimonial Quote */}
-            <div className="bg-[#F3F4F6] border-l-4 border-[#0056B3] p-6 rounded-lg">
-              <div className="space-y-4">
-                <p className="text-[#626262] text-base leading-relaxed">
-                  "The IDR Portal gives us complete visibility into our security
-                  systems across multiple locations. It's become an essential
-                  management tool for our security team."
-                </p>
-                <p className="text-[#2E2E2E] text-base font-medium">
-                  — John Davis, Security Director at Meridian Properties
-                </p>
               </div>
             </div>
           </div>
 
           {/* Right Content - Portal Image */}
-          <div className="flex justify-center">
-            <div className="relative bg-white rounded-lg shadow-2xl overflow-hidden">
+          <div className="flex justify-center  h-full">
+            <div className="relative  rounded-lg  overflow-hidden w-full   h-full 3xl:h-[92%] shadow-lg">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b02234a35610504b720b79ba652f3b43826dc160?width=1184"
                 alt="IDR Portal Dashboard"
-                className="w-full h-auto max-w-lg"
+                className="w-full h-full"
               />
             </div>
           </div>

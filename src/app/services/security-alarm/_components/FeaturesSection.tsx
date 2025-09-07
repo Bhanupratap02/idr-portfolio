@@ -1,8 +1,6 @@
 /** @format */
-
+// prev 
 import FeatureCard from "./FeatureCard";
-
-export default function FeaturesSection() {
   const features = [
     {
       icon: (
@@ -89,23 +87,48 @@ export default function FeaturesSection() {
         "Security cameras that automatically record when alarms are triggered for visual verification.",
     },
   ];
+    const additionalFeatures = [
+      {
+        image:
+          "https://api.builder.io/api/v1/image/assets/TEMP/c06e7df1546911724056f963d8221b4a1e6850c3?width=725",
+        title: "Mobile Control",
+        desc1: "Arm/disarm your system from anywhere with our",
+        desc2: "intuitive mobile application.",
+      },
+      {
+        image:
+          "https://api.builder.io/api/v1/image/assets/TEMP/55fb777a793c1c0673058178c4f37ff645f6bdf8?width=725",
+        title: "Motion Triggers",
+        desc1: "Cameras automatically record when motion is",
+        desc2: "detected or alarms are triggered.",
+      },
+      {
+        image:
+          "https://api.builder.io/api/v1/image/assets/TEMP/cb4f601643649773cce397e02f7b1dd4e7701487?width=725",
+        title: "24/7 Monitoring",
+        desc1: "Professional monitoring stations ready to",
+        desc2: "respond to alarms at any time.",
+      },
+    ];
+export default function FeaturesSection() {
+
 
   return (
-    <section className="bg-[#F8F8F8] py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#F8F8F8] py-16 sm:py-20 lg:py-24">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-[#2E2E2E] text-3xl lg:text-4xl font-medium mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-[#2E2E2E] text-3xl sm:text-4xl  lg:text-4xl 2xl:text-5xl 3xl:text-6xl  font-semibold  mb-4">
             From Simple Alerts to Smart Integrations
           </h2>
-          <p className="text-[#626262] text-xl lg:text-2xl max-w-4xl mx-auto">
+          <p className="text-[#626262] text-lg xl:text-xl 2xl:text-2xl max-w-4xl mx-auto leading-relaxed">
             Whether cloud-based or on-premises, we tailor the perfect system for
             your needs.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -117,69 +140,33 @@ export default function FeaturesSection() {
         </div>
 
         {/* Additional Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-            <div className="bg-[#F3F4F6] h-48 flex items-center justify-center">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c06e7df1546911724056f963d8221b4a1e6850c3?width=725"
-                alt="Mobile Control"
-                className="w-full h-full object-cover"
-              />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+          {additionalFeatures.map((feature, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              <div className="bg-[#F3F4F6] h-48 sm:h-60 md:h-64 lg:h-72 flex items-center justify-center">
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-4 sm:p-6 xl:p-8">
+                <h4 className="text-[#2E2E2E] text-lg lg:text-xl 3xl:text-2xl font-medium mb-2">
+                  {feature.title}
+                </h4>
+                <p className="text-[#626262] text-sm lg:text-base 3xl:text-xl mb-2">
+                  {feature.desc1}
+                </p>
+                <p className="text-[#626262] text-sm lg:text-base 3xl:text-xl">
+                  {feature.desc2}
+                </p>
+              </div>
             </div>
-            <div className="p-4">
-              <h4 className="text-[#2E2E2E] text-xl font-medium mb-2">
-                Mobile Control
-              </h4>
-              <p className="text-[#626262] text-base mb-2">
-                Arm/disarm your system from anywhere with our
-              </p>
-              <p className="text-[#626262] text-base">
-                intuitive mobile application.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-            <div className="bg-[#F3F4F6] h-48 flex items-center justify-center">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/55fb777a793c1c0673058178c4f37ff645f6bdf8?width=725"
-                alt="Motion Triggers"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <h4 className="text-[#2E2E2E] text-xl font-medium mb-2">
-                Motion Triggers
-              </h4>
-              <p className="text-[#626262] text-base mb-2">
-                Cameras automatically record when motion is
-              </p>
-              <p className="text-[#626262] text-base">
-                detected or alarms are triggered.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-            <div className="bg-[#F3F4F6] h-48 flex items-center justify-center">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/cb4f601643649773cce397e02f7b1dd4e7701487?width=725"
-                alt="24/7 Monitoring"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <h4 className="text-[#2E2E2E] text-xl font-medium mb-2">
-                24/7 Monitoring
-              </h4>
-              <p className="text-[#626262] text-base mb-2">
-                Professional monitoring stations ready to
-              </p>
-              <p className="text-[#626262] text-base">
-                respond to alarms at any time.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

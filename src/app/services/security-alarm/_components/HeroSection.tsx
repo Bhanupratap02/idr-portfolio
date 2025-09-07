@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[600px] bg-gradient-to-r from-[#111827] to-[#1F2937] flex items-center">
+    <section className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] xl:min-h-[85vh] 2xl:min-h-[88vh]  bg-gradient-to-r from-[#111827] to-[#1F2937] flex items-center">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-20 lg:opacity-30"
         style={{
           backgroundImage:
             "url('https://api.builder.io/api/v1/image/assets/TEMP/092c482ad683f6bfdeecfa6f21eaf4a52aed6003?width=2880')",
@@ -17,27 +17,27 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-24 py-32 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[120rem] mx-auto px-6 sm:px-6 lg:px-8 2xl:px-16 3xl:px-24 py-16 sm:py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 2xl:gap-16 3xl:gap-42 items-center ">
         {/* Left Content */}
-        <div className="space-y-8">
-          <h1 className="text-white text-4xl lg:text-5xl font-medium leading-tight">
+        <div className="space-y-6 sm:space-y-8 lg:space-y-10 2xl:space-y-12">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold leading-tight sm:leading-tight lg:leading-snug xl:leading-tight 2xl:leading-tight 3xl:leading-tight text-center md:text-left">
             Security Alarm Systems
           </h1>
 
-          <h2 className="text-white text-xl lg:text-3xl font-medium leading-relaxed">
+          <h2 className="text-white text-xl lg:text-3xl 3xl:text-4xl font-medium leading-relaxed text-center md:text-left">
             Proactive Protection, Professionally Managed
           </h2>
 
-          <p className="text-[#E5E7EB] text-lg lg:text-xl leading-relaxed max-w-2xl">
+          <p className="text-white text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-2xl 3xl:leading-loose text-center  md:text-left">
             At IDR Technology Solutions, we design, install, and support
             reliable intrusion alarm systems to protect your building, staff,
             and assets.
           </p>
 
-          <Button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-8 py-6 text-base flex items-center gap-3">
+          <button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl flex items-center gap-3 rounded-lg max-sm:mx-auto">
             Get a Free Site Assessment
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+            <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6" />
+          </button>
         </div>
 
         {/* Right Content - Security Device Image */}
@@ -45,7 +45,8 @@ export default function HeroSection() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/6f301a21f891abad7ebc64499c2b5e4e01bd2214?width=982"
             alt="Security alarm system device"
-            className="max-w-full h-auto"
+            // className="max-w-full h-auto"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-5xl  h-auto object-cover   transition-transform duration-500"
           />
         </div>
       </div>
