@@ -4,115 +4,83 @@ import LegacySystems from "@/assets/services/surveillance-camera/legacy_systems.
 import camera_2 from "@/assets/services/surveillance-camera/camera_2.png";
 import layers from "@/assets/services/surveillance-camera/layers.png";
 import settings from "@/assets/services/surveillance-camera/settings.png";
+const features = [
+  {
+    id: 1,
+    icon: camera_2,
+    title: "TVI and Analog Systems",
+    desc: "Complete support for traditional surveillance infrastructure",
+  },
+  {
+    id: 2,
+    icon: settings,
+    title: "Video Encoders & Converters",
+    desc: "Media baluns and conversion equipment maintenance",
+  },
+  {
+    id: 3,
+    icon: layers,
+    title: "Hybrid Environments",
+    desc: "Seamlessly mixing old and new technology",
+  },
+];
 export default function LegacySystemsSection() {
   return (
-    <section className="w-full bg-white py-16">
-      <div className="max-w-7xl mx-auto px-8 lg:px-28">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="w-full bg-white py-12 sm:py-14 lg:py-16 xl:py-20 2xl:py-24 3xl:py-32">
+      <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 2xl:px-28 3xl:px-32">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-stretch">
           {/* Left Content - Image */}
-          <div className="flex justify-center">
-            <div className="w-[576px] h-[384px] rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.1),0_10px_15px_rgba(0,0,0,0.1)] overflow-hidden">
+          <div className="order-2 lg:order-1 flex justify-center h-full ">
+            {/* <Image
+              src={LegacySystems}
+              alt="Legacy Camera Systems"
+              className="w-full h-full object-cover"
+            /> */}
+            <div className="w-full  rounded-xl overflow-hidden ">
               <Image
                 src={LegacySystems}
-                alt="Legacy Camera Systems"
-                className="w-full h-full object-cover"
+                alt="Legacy Camera Systems - Traditional surveillance infrastructure support"
+                className="w-full h-full"
+                priority
               />
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="space-y-8">
-            <h2 className="text-4xl font-medium text-[#2E2E2E] leading-[150%]">
-              Legacy Systems? We've Got You Covered
+          <div className=" order-1 lg:order-2 space-y-4 sm:space-y-5 md:space-y-6 2xl:space-y-7 3xl:space-y-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E] leading-tight">
+              Legacy Systems? We&apos;ve Got You Covered
             </h2>
-            <p className="text-xl text-[#626262] leading-[150%]">
-              While we love cutting-edge tech, we're also fully equipped to
+            <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed">
+              While we love cutting-edge tech, we&apos;re also fully equipped to
               support traditional on-premises camera systems.
             </p>
 
             {/* Feature List */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#DBEAFE] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg
-                    width="18"
-                    height="16"
-                    viewBox="0 0 18 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 4C0 2.89688 0.896875 2 2 2H10C11.1031 2 12 2.89688 12 4V12C12 13.1031 11.1031 14 10 14H2C0.896875 14 0 13.1031 0 12V4ZM17.4719 3.11875C17.7969 3.29375 18 3.63125 18 4V12C18 12.3687 17.7969 12.7063 17.4719 12.8813C17.1469 13.0563 16.7531 13.0375 16.4438 12.8313L13.4438 10.8313L13 10.5344V10V6V5.46562L13.4438 5.16875L16.4438 3.16875C16.75 2.96563 17.1437 2.94375 17.4719 3.11875Z"
-                      fill="#2563EB"
+            <div className="space-y-4  md:space-y-5 2xl:space-y-6 3xl:space-y-8">
+              {features.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex items-start gap-3 sm:gap-4 md:gap-5 2xl:gap-6 3xl:gap-7 rounded-lg hover:bg-gray-50 transition-colors duration-300 group"
+                >
+                  <div className="flex-shrink-0 mt-1 sm:mt-1.5 md:mt-2">
+                    <Image
+                      src={item.icon}
+                      alt={`${item.title} icon`}
+                      className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 group-hover:scale-110 transition-transform duration-300"
                     />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-base font-medium text-[#2E2E2E] leading-[150%] mb-2">
-                    TVI and Analog Systems
-                  </h3>
-                  <p className="text-base text-[#626262] leading-[150%]">
-                    Complete support for traditional surveillance infrastructure
-                  </p>
-                </div>
-              </div>
+                  </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#DCFCE7] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg
-                    width="20"
-                    height="16"
-                    viewBox="0 0 20 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1_11805)">
-                      <path
-                        d="M9.64131 4.22813C9.86318 4.03125 9.95069 3.72188 9.83506 3.44688C9.76319 3.28125 9.68506 3.11875 9.59756 2.9625L9.50068 2.79375C9.40693 2.6375 9.30381 2.48438 9.19444 2.3375C9.01631 2.1 8.70381 2.02187 8.42256 2.11562L7.54131 2.40625C7.20693 2.13125 6.82256 1.90625 6.41006 1.75312L6.21943 0.846875C6.16006 0.55625 5.93506 0.325 5.64131 0.290625C5.43506 0.2625 5.22568 0.25 5.01318 0.25H4.99131C4.77881 0.25 4.56943 0.2625 4.36318 0.2875C4.06943 0.321875 3.84443 0.55625 3.78506 0.84375L3.59443 1.75312C3.17881 1.90937 2.79756 2.13125 2.46318 2.40625L1.57881 2.11875C1.29756 2.025 0.985059 2.10313 0.806934 2.34063C0.697559 2.4875 0.594434 2.64062 0.497559 2.79688L0.403809 2.9625C0.316309 3.11875 0.238184 3.28125 0.166309 3.45C0.0506844 3.72187 0.138184 4.03125 0.360059 4.23125L1.05381 4.85C1.01943 5.05937 1.00068 5.27812 1.00068 5.5C1.00068 5.72188 1.01943 5.94062 1.05381 6.15312L0.360059 6.77187C0.138184 6.96875 0.0506844 7.27812 0.166309 7.55312C0.238184 7.71875 0.316309 7.88125 0.403809 8.04062L0.497559 8.20312C0.591309 8.3625 0.694434 8.5125 0.806934 8.65938C0.985059 8.89688 1.29756 8.975 1.57881 8.88125L2.46006 8.59062C2.79443 8.86562 3.17881 9.09062 3.59131 9.24375L3.78193 10.1531C3.84131 10.4437 4.06631 10.675 4.36006 10.7094C4.56943 10.7344 4.78193 10.7469 4.99756 10.7469C5.21318 10.7469 5.42568 10.7344 5.63506 10.7094C5.92881 10.675 6.15381 10.4406 6.21318 10.1531L6.40381 9.24375C6.81943 9.0875 7.20068 8.86562 7.53506 8.59062L8.41631 8.88125C8.69756 8.975 9.01006 8.89688 9.18818 8.65938C9.29756 8.5125 9.40068 8.3625 9.49443 8.20312L9.59131 8.03438C9.67881 7.87813 9.75694 7.71563 9.82881 7.55C9.94444 7.27813 9.85693 6.96875 9.63506 6.76875L8.94131 6.15C8.97569 5.9375 8.99443 5.71875 8.99443 5.49687C8.99443 5.275 8.97569 5.05625 8.94131 4.84375L9.63506 4.225L9.64131 4.22813ZM3.50068 5.5C3.50068 5.10218 3.65872 4.72064 3.94002 4.43934C4.22133 4.15804 4.60286 4 5.00068 4C5.39851 4 5.78004 4.15804 6.06134 4.43934C6.34265 4.72064 6.50068 5.10218 6.50068 5.5C6.50068 5.89782 6.34265 6.27936 6.06134 6.56066C5.78004 6.84196 5.39851 7 5.00068 7C4.60286 7 4.22133 6.84196 3.94002 6.56066C3.65872 6.27936 3.50068 5.89782 3.50068 5.5ZM15.7726 15.6406C15.9694 15.8625 16.2788 15.95 16.5538 15.8344C16.7194 15.7625 16.8819 15.6844 17.0382 15.5969L17.2069 15.5C17.3632 15.4062 17.5163 15.3031 17.6632 15.1938C17.9007 15.0156 17.9788 14.7031 17.8851 14.4219L17.5944 13.5406C17.8694 13.2062 18.0944 12.8219 18.2476 12.4094L19.1569 12.2188C19.4476 12.1594 19.6788 11.9344 19.7132 11.6406C19.7382 11.4312 19.7507 11.2188 19.7507 11.0031C19.7507 10.7875 19.7382 10.575 19.7132 10.3656C19.6788 10.0719 19.4444 9.84688 19.1569 9.7875L18.2476 9.59375C18.0913 9.17813 17.8694 8.79688 17.5944 8.4625L17.8851 7.58125C17.9788 7.3 17.9007 6.9875 17.6632 6.80937C17.5163 6.7 17.3632 6.59688 17.2069 6.5L17.0413 6.40625C16.8851 6.31875 16.7226 6.24062 16.5538 6.16875C16.2819 6.05312 15.9726 6.14062 15.7726 6.3625L15.1538 7.05625C14.9413 7.02187 14.7226 7.00313 14.5007 7.00313C14.2788 7.00313 14.0601 7.02187 13.8476 7.05625L13.2288 6.3625C13.0319 6.14062 12.7226 6.05312 12.4476 6.16875C12.2819 6.24062 12.1194 6.31875 11.9601 6.40625L11.7976 6.5C11.6382 6.59375 11.4882 6.69687 11.3413 6.80937C11.1038 6.9875 11.0257 7.3 11.1194 7.58125L11.4101 8.4625C11.1351 8.79688 10.9101 9.18125 10.7569 9.59375L9.84756 9.78125C9.55694 9.84062 9.32568 10.0656 9.29131 10.3594C9.26631 10.5688 9.25381 10.7812 9.25381 10.9969C9.25381 11.2125 9.26631 11.425 9.29131 11.6344C9.32568 11.9281 9.56006 12.1531 9.84756 12.2125L10.7569 12.4031C10.9132 12.8187 11.1351 13.2 11.4101 13.5344L11.1194 14.4156C11.0257 14.6969 11.1038 15.0094 11.3413 15.1875C11.4882 15.2969 11.6382 15.4 11.7976 15.4937L11.9663 15.5906C12.1226 15.6781 12.2851 15.7563 12.4507 15.8281C12.7226 15.9438 13.0319 15.8562 13.2319 15.6344L13.8507 14.9406C14.0632 14.975 14.2819 14.9937 14.5038 14.9937C14.7257 14.9937 14.9444 14.975 15.1569 14.9406L15.7757 15.6344L15.7726 15.6406ZM14.5007 9.5C14.6977 9.5 14.8927 9.5388 15.0747 9.61418C15.2567 9.68956 15.4221 9.80005 15.5613 9.93934C15.7006 10.0786 15.8111 10.244 15.8865 10.426C15.9619 10.608 16.0007 10.803 16.0007 11C16.0007 11.197 15.9619 11.392 15.8865 11.574C15.8111 11.756 15.7006 11.9214 15.5613 12.0607C15.4221 12.1999 15.2567 12.3104 15.0747 12.3858C14.8927 12.4612 14.6977 12.5 14.5007 12.5C14.3037 12.5 14.1086 12.4612 13.9267 12.3858C13.7447 12.3104 13.5793 12.1999 13.44 12.0607C13.3007 11.9214 13.1902 11.756 13.1149 11.574C13.0395 11.392 13.0007 11.197 13.0007 11C13.0007 10.803 13.0395 10.608 13.1149 10.426C13.1902 10.244 13.3007 10.0786 13.44 9.93934C13.5793 9.80005 13.7447 9.68956 13.9267 9.61418C14.1086 9.5388 14.3037 9.5 14.5007 9.5Z"
-                        fill="#16A34A"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1_11805">
-                        <path d="M0 0H20V16H0V0Z" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-[#2E2E2E]  mb-1 3xl:mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl text-[#626262] leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-base font-medium text-[#2E2E2E] leading-[150%] mb-2">
-                    Video Encoders & Converters
-                  </h3>
-                  <p className="text-base text-[#626262] leading-[150%]">
-                    Media baluns and conversion equipment maintenance
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#F3E8FF] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg
-                    width="18"
-                    height="16"
-                    viewBox="0 0 18 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.26562 0.162695C8.73125 -0.0529297 9.26875 -0.0529297 9.73438 0.162695L16.5656 3.31895C16.8312 3.44082 17 3.70645 17 4.0002C17 4.29395 16.8312 4.55957 16.5656 4.68145L9.73438 7.8377C9.26875 8.05332 8.73125 8.05332 8.26562 7.8377L1.43438 4.68145C1.16875 4.55645 1 4.29082 1 4.0002C1 3.70957 1.16875 3.44082 1.43438 3.31895L8.26562 0.162695ZM14.9031 6.5502L16.5656 7.31895C16.8312 7.44082 17 7.70645 17 8.0002C17 8.29395 16.8312 8.55957 16.5656 8.68145L9.73438 11.8377C9.26875 12.0533 8.73125 12.0533 8.26562 11.8377L1.43438 8.68145C1.16875 8.55645 1 8.29082 1 8.0002C1 7.70957 1.16875 7.44082 1.43438 7.31895L3.09687 6.5502L7.84688 8.74395C8.57812 9.08144 9.42188 9.08144 10.1531 8.74395L14.9031 6.5502ZM10.1531 12.7439L14.9031 10.5502L16.5656 11.3189C16.8312 11.4408 17 11.7064 17 12.0002C17 12.2939 16.8312 12.5596 16.5656 12.6814L9.73438 15.8377C9.26875 16.0533 8.73125 16.0533 8.26562 15.8377L1.43438 12.6814C1.16875 12.5564 1 12.2908 1 12.0002C1 11.7096 1.16875 11.4408 1.43438 11.3189L3.09687 10.5502L7.84688 12.7439C8.57812 13.0814 9.42188 13.0814 10.1531 12.7439Z"
-                      fill="#9333EA"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-base font-medium text-[#2E2E2E] leading-[150%] mb-2">
-                    Hybrid Environments
-                  </h3>
-                  <p className="text-base text-[#626262] leading-[150%]">
-                    Seamlessly mixing old and new technology
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
