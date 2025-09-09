@@ -49,7 +49,7 @@ export default function DCHeroSection() {
               <Image
                 src={hero}
                 alt="Data Center Server Rack"
-                className="w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[500px] 2xl:max-w-[650px] 3xl:max-w-[900px] h-auto rounded-lg"
+                className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[650px] 3xl:max-w-[900px] h-auto rounded-lg"
               />
             </div>
           </div>

@@ -46,7 +46,7 @@ export default function HeroSection() {
             src="https://api.builder.io/api/v1/image/assets/TEMP/6f301a21f891abad7ebc64499c2b5e4e01bd2214?width=982"
             alt="Security alarm system device"
             // className="max-w-full h-auto"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-5xl  h-auto object-cover   transition-transform duration-500"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-5xl  h-auto object-cover   transition-transform duration-500"
           />
         </div>
       </div>

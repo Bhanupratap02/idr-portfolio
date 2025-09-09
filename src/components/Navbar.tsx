@@ -83,6 +83,11 @@ const menuData = {
       url: "/services/surveillance-camera",
       icon: surveillanceCamera,
     },
+      {
+      name: "E-Rate Program",
+      url: "/services/e-rate-program",
+
+    },
   ],
   caseStudies: [
     {

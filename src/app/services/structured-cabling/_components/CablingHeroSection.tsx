@@ -31,12 +31,7 @@ export default function CablingHeroSection() {
 
           {/* Right Content - Image */}
           <div className="flex justify-center lg:justify-end items-center h-full">
-            {/* <Image
-              src={hero}
-              alt="Structured Cabling Infrastructure"
-              className="w-full max-w-[567px] h-[362px] rounded-xl object-cover"
-            /> */}
-            <div className="relative w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[750px] 3xl:max-w-[850px] aspect-[530/365] 3xl:aspect-[560/362]">
+            <div className="relative w-full  lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[750px] 3xl:max-w-[850px] aspect-[530/365] 3xl:aspect-[560/362]">
               <Image
                 src={hero}
                 alt="Structured Cabling Infrastructure"

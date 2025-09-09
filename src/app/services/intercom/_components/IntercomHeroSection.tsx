@@ -77,7 +77,7 @@ export function IntercomHeroSection() {
           </div>
 
           {/* Right Image */}
-          <div className="relative flex justify-center lg:justify-end order-first lg:order-last w-full">
+          <div className="relative flex justify-center lg:justify-end  w-full">
             <div className="relative group w-full h-full">
               {/* Floating elements */}
               <div className="absolute -top-4 -left-4 w-16 h-16 sm:w-20 sm:h-20 bg-green-400 rounded-full opacity-20 blur-xl animate-pulse"></div>
@@ -87,7 +87,7 @@ export function IntercomHeroSection() {
                 <Image
                   src={hero}
                   alt="Modern multifamily building with smart intercom system"
-                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl  h-auto object-cover   transition-transform duration-500"
+                  className="w-full max-w-full  lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl  h-auto object-cover   transition-transform duration-500"
                 />
 
                 {/* Overlay gradient */}
@@ -99,7 +99,7 @@ export function IntercomHeroSection() {
       </div>
 
       {/* Bottom wave decoration */}
-      <div className="absolute bottom-0 left-0 right-0">
+      {/* <div className="absolute bottom-0 left-0 right-0">
         <svg
           className="w-full h-16 sm:h-20 lg:h-24"
           preserveAspectRatio="none"
@@ -111,7 +111,7 @@ export function IntercomHeroSection() {
             d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0V96Z"
           />
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 }
