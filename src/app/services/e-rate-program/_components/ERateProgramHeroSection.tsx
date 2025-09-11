@@ -44,7 +44,7 @@ export default function ERateProgramHeroSection() {
 
             <Button
               size="lg"
-              className="inline-flex items-center justify-between gap-3 sm:gap-4 md:gap-6 px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-5 lg:py-6 2xl:py-8 3xl:py-10 bg-[#17254E] text-white rounded-full hover:bg-[#1F3061] hover:shadow-lg transform hover:scale-105 transition-all duration-300 group min-w-[170px] sm:min-w-[180px] md:min-w-[200px] 2xl:min-w-[240px] 3xl:min-w-[280px] relative mx-auto"
+              className="inline-flex items-center justify-between gap-3 sm:gap-4 md:gap-6 px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-5 lg:py-6 2xl:py-8 3xl:py-10 bg-[#17254E] text-white rounded-full hover:bg-[#1F3061] hover:shadow-lg transform hover:scale-105 transition-all duration-300 group min-w-[170px] sm:min-w-[180px] md:min-w-[200px] 2xl:min-w-[240px] 3xl:min-w-[280px] relative mx-auto cursor-pointer"
             >
               <span className="text-sm sm:text-base  2xl:text-lg    ">
                 Contact Us

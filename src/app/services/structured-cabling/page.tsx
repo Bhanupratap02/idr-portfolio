@@ -22,7 +22,7 @@ export default function StructuredCabling() {
         <IDRPortalSection />
         <WhyChooseIDRSection />
         <CallToActionSection />
-        <ServicesGrid />
+        <ServicesGrid exclude={8} />
       </main>
     </div>
   );

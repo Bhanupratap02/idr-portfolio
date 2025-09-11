@@ -21,7 +21,7 @@ export default function NetworksIT() {
       <NITTimelineSection />
       <NITPortalSection />
       <NITWhyChooseSection />
-      <AVServicesGrid exclude={5} />
+      <AVServicesGrid exclude={6} />
     </div>
   );
 }

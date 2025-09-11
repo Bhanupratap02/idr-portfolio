@@ -92,7 +92,7 @@ export default function ClearSoundSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl leading-snug 2xl:leading-tight font-medium text-gray-900 mb-4">
             Clear Sound, Smarter Spaces
           </h2>
-          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl  2xl:text-2xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
             Commercial A/V solutions that work (and sound) better for your
             business
           </p>

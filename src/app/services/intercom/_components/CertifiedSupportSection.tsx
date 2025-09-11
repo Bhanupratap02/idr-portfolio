@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import certifiedSupportImg from "@/assets/services/intercom/certified_support.png"
 const features = [
   {
     title: "Certified Technicians",
@@ -162,8 +163,8 @@ export function CertifiedSupportSection() {
 
         {/* Team Photo */}
         <div className="flex justify-center">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/0cb932a36b8f182ca4145290687f7dc4ff1f2ad1?width=1792"
+          <Image
+            src={certifiedSupportImg}
             alt="IDR Technology Solutions team"
             className="w-full max-w-5xl h-auto object-cover rounded-xl"
           />

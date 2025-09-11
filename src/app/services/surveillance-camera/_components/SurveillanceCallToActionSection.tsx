@@ -16,14 +16,14 @@ export default function SurveillanceCallToActionSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            className="bg-white text-[#2563EB] hover:bg-gray-100 px-8 py-6 2xl:px-10 2xl:py-7 3xl:px-12 3xl:py-8 text-base 2xl:text-lg rounded-lg  w-full sm:w-auto"
+            className="bg-white text-[#2563EB] hover:bg-gray-100 px-8 py-6 2xl:px-10 2xl:py-7 3xl:px-12 3xl:py-8 text-base 2xl:text-lg rounded-lg  w-full sm:w-auto cursor-pointer"
           >
             Schedule Consultation
           </Button>
           <Button
             variant="outline"
             size="lg"
-            className="border-2 border-white text-white bg-transparent hover:bg-white/10 px-8 py-6 2xl:px-10 2xl:py-7 3xl:px-12 3xl:py-8 text-base 2xl:text-lg rounded-lg  w-full sm:w-auto"
+            className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#2563EB] px-8 py-6 2xl:px-10 2xl:py-7 3xl:px-12 3xl:py-8 text-base 2xl:text-lg rounded-lg  w-full sm:w-auto cursor-pointer"
           >
             Get Quote
           </Button>

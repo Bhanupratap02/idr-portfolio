@@ -58,7 +58,7 @@ export default function WhyChooseCRSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 2xl:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8 sm:gap-12 lg:gap-16 2xl:gap-20">
           {features.map((feature, index) => (
             <div key={index} className="flex gap-6">
               <div className="flex-shrink-0">
@@ -66,7 +66,7 @@ export default function WhyChooseCRSection() {
                   <Image
                     src={feature.icon}
                     alt={feature.title}
-                    className="w-7 h-8 sm:w-9 sm:h-10 2xl:w-11 2xl:h-12"
+                    className="w-7 h-8 sm:w-7 sm:h-10 2xl:w-10 2xl:h-12"
                   />
                 </div>
               </div>

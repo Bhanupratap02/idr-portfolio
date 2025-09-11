@@ -114,10 +114,10 @@ const services = [
 export default function NITServicesSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-gray-50">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* <div className="container mx-auto px-6 lg:px-8"> */}
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+    
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800">
             From the Rack to the Rooftop
           </h2>
         </div>
@@ -128,13 +128,9 @@ export default function NITServicesSection() {
               {/* Left side - Large card */}
               <div className="w-full h-full">
                 <div className="bg-blue-50 rounded-2xl p-6 sm:p-8 shadow-lg h-full flex flex-col">
-                  {/* <img
-                    src={cables.src}
-                    alt="Enterprise Infrastructure"
-                    className="w-full h-full object-cover rounded-xl mb-6"
-                  /> */}
-                  <img
-                    src={cables.src}
+            
+                  <Image
+                    src={cables}
                     alt="Enterprise Infrastructure"
                     className="w-full h-64 md:h-88 lg:h-[32rem] 2xl:h-[34rem] 
                     3xl:h-[44rem] object-cover rounded-xl mb-6"

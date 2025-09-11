@@ -31,6 +31,7 @@ import image9 from "@/assets/services/img_9.png";
      id: 3,
      image:
        image3,
+       title:"Conference Room Solutions",
      description:
        "A great meeting room isn't just about the table and chairs — it's about how well people can see, hear, and connect. At IDR Technology Solutions, we design, install, and support......",
    },
@@ -118,7 +119,7 @@ export default function ServicesGrid({ exclude }: ServicesGridProps) {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 sm:mb-16">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-3xl sm:text-4xl md:text-5x 2xl:text-6xl font-semibold text-gray-900 mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-[2.8rem] 2xl:text-[3.5rem] font-medium text-gray-900 mb-4 sm:mb-6">
               Explore More Services
             </h2>
           </div>
@@ -151,7 +152,7 @@ export default function ServicesGrid({ exclude }: ServicesGridProps) {
               </div>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-lg lg:text-xl 3xl:text-2xl font-semibold text-gray-900 mb-2">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 text-sm sm:text-base 2xl:text-lg leading-relaxed">
@@ -159,7 +160,7 @@ export default function ServicesGrid({ exclude }: ServicesGridProps) {
                   </p>
                 </div>
 
-                <button className="inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm 2xl:text-lg 3xl:text-xl font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white">
+                <button className="inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm 2xl:text-lg 3xl:text-xl font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white cursor-pointer">
                   Book Now <ArrowIcon />
                 </button>
               </div>

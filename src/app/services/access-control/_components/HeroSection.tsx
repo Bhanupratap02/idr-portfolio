@@ -72,7 +72,7 @@ export default function HeroSection() {
               </div>
 
               {/* CTA Button */}
-              <button className="bg-[#FFD700] text-[#2E2E2E] rounded-md px-6 py-3 text-base sm:text-lg 2xl:px-10 2xl:py-5 2xl:text-xl 3xl:px-12 3xl:py-6 3xl:text-2xl font-medium shadow-md hover:bg-yellow-500 transition-colors">
+              <button className="bg-[#FFD700] text-[#2E2E2E] rounded-md px-6 py-3 text-base sm:text-lg 2xl:px-10 2xl:py-5 2xl:text-xl 3xl:px-12 3xl:py-6 3xl:text-2xl font-medium shadow-md hover:bg-yellow-500 transition-colors cursor-pointer">
                 Get a Free Consultation
               </button>
             </div>
@@ -82,7 +82,7 @@ export default function HeroSection() {
               <Image
                 src={hero_image}
                 alt="Access Control System Interface"
-                // className="w-full h-auto rounded-lg "
+                // className="w-full h-auto rounded-lg"
                 className="w-full h-auto rounded-lg max-w-[500px] sm:max-w-[550px] lg:max-w-[700px] 2xl:max-w-[800px] 3xl:max-w-[950px]"
                 priority
               />

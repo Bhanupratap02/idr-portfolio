@@ -98,10 +98,10 @@ export default function WhyIDRSection() {
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-24">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-[#2E2E2E] text-3xl sm:text-4xl  lg:text-4xl 2xl:text-5xl 3xl:text-6xl  font-semibold  mb-4">
+          <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold  mb-4">
             Why IDR?
           </h2>
-          <p className="text-[#626262] text-lg xl:text-xl 2xl:text-2xl  mx-auto leading-relaxed">
+          <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl  mx-auto leading-relaxed">
             Industry-leading expertise with a customer-first approach.
           </p>
         </div>
@@ -128,7 +128,7 @@ export default function WhyIDRSection() {
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl flex items-center justify-center gap-3 rounded-lg mx-auto ">
+          <button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl flex items-center justify-center gap-3 rounded-lg mx-auto cursor-pointer">
             Schedule a Consultation
             <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6" />
           </button>

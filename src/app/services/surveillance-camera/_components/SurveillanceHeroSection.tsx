@@ -12,7 +12,7 @@ export default function SurveillanceHeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-4  2xl:gap-20 items-center h-full pb-8 sm:pb-12">
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8 xl:space-y-10 2xl:space-y-12 flex flex-col justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-white leading-tight sm:leading-tight lg:leading-snug xl:leading-relaxed text-center lg:text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-white leading-tight sm:leading-tight lg:leading-snug xl:leading-relaxed text-center lg:text-left">
               Surveillance
               <br />
               Camera Systems
@@ -21,10 +21,10 @@ export default function SurveillanceHeroSection() {
               Smarter Security, Built for Real-World Sites
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6">
-              <button className="bg-white text-[#1E3A8A] hover:bg-gray-100 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold rounded-lg shadow-xl transition-all duration-200 group w-full sm:w-auto">
+              <button className="bg-white text-[#1E3A8A] hover:bg-gray-100 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold rounded-lg shadow-xl transition-all duration-200 group w-full sm:w-auto cursor-pointer">
                 Get Started
               </button>
-              <button className="border-2 border-white text-white bg-transparent hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4 lg:py-5 2xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold hover:bg-white/90 hover:text-[#1E3A8A] rounded-lg backdrop-blur-sm transition-all duration-200 group w-full sm:w-auto">
+              <button className="border-2 border-white text-white bg-transparent hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4 lg:py-5 2xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold hover:bg-white/90 hover:text-[#1E3A8A] rounded-lg backdrop-blur-sm transition-all duration-200 group w-full sm:w-auto cursor-pointer">
                 Learn More
               </button>
             </div>
@@ -36,8 +36,7 @@ export default function SurveillanceHeroSection() {
             <div className="absolute -top-4 -left-4 w-16 h-16 sm:w-20 sm:h-20 bg-green-400 rounded-full opacity-20 blur-xl animate-pulse"></div>
             <div className="absolute -bottom-4 -right-4 w-12 h-12 sm:w-16 sm:h-16 bg-blue-400 rounded-full opacity-30 blur-lg animate-pulse delay-1000"></div>
 
-            
-            <div className=" relative w-full  lg:max-w-[550px] xl:max-w-[550px] 2xl:max-w-[700px] 3xl:max-w-[750px]  h-full lg:h-[384px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[590px]  rounded-xl  overflow-hidden">
+            <div className=" relative w-full  lg:max-w-[550px] xl:max-w-[550px] 2xl:max-w-[700px] 3xl:max-w-[750px]  h-[300px] md:h-[384px] xl:h-[450px] 2xl:h-[500px] 3xl:h-[590px]  rounded-xl  overflow-hidden">
               <Image
                 src={hero}
                 alt="Surveillance Camera Systems"

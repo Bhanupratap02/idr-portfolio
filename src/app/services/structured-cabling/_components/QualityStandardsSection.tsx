@@ -13,7 +13,7 @@ function QualityItem({ title, description }: QualityItemProps) {
   return (
     <div className="flex items-start space-x-4 sm:space-x-5">
       <div className="bg-[#DCFCE7] rounded-full p-2 sm:p-2.5 lg:p-3 xl:p-3.5 2xl:p-4 flex-shrink-0">
-        <CheckIcon className="w-3 h-3 sm:w-3.5 sm:h-4 lg:w-4 lg:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6" />
+        <CheckIcon className="w-3 h-3 sm:w-3.5 sm:h-4 lg:w-4 lg:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 text-green-700" />
       </div>
       <div className="space-y-1 sm:space-y-2 min-w-0 flex-1">
         <h3 className="text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-[#2E2E2E] leading-tight">
@@ -70,7 +70,7 @@ export default function QualityStandardsSection() {
               <h2 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E] leading-tight">
                 Done Right — Not Just Done
               </h2>
-              <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed 3xl:leading-loose">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed 3xl:leading-loose">
                 At IDR, we believe in doing the job right the first time. Our
                 installations meet the highest industry standards and are built
                 to last.

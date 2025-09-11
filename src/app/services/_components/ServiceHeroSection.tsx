@@ -6,7 +6,7 @@ import heroCamera2 from "@/assets/services/hero_camera_2.png";
 import heroCamera3 from "@/assets/services/hero_camera_3.png";
 export default function ServiceHeroSection() {
   return (
-    <section className="relative  min-h-[600px] sm:min-h-[700px] lg:min-h-[850px] 2xl:min-h-[950px] 3xl:min-h-[1100px] bg-gray-900 overflow-hidden">
+    <section className="relative  min-h-[600px] sm:min-h-[700px] lg:min-h-[850px] 2xl:min-h-[950px] 3xl:min-h-[90vh] bg-gray-900 overflow-hidden">
       {/* Hero Background Image */}
       <div className="absolute inset-0 top-[-15%] ">
         <Image
@@ -56,14 +56,14 @@ export default function ServiceHeroSection() {
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 sm:px-10 lg:px-16 2xl:px-28 3xl:px-40 py-16">
-        <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl mt-32 sm:mt-40 lg:mt-48">
+        <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl mt-32 sm:mt-40 lg:mt-48 3xl:mt-58">
           {/* Subtitle */}
-          <p className="text-white text-lg sm:text-xl font-light mb-4">
+          <p className="text-white text-base sm:text-lg lg:text-xl 2xl:text-2xl font-light mb-4">
             Quality Service at a fair price.
           </p>
 
           {/* Main Title */}
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium leading-tight mb-6 ">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium leading-tight mb-6 ">
             Specialized, efficient,
             <br />
             and thorough security
@@ -79,10 +79,10 @@ export default function ServiceHeroSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-[#191919] text-white text-sm sm:text-base rounded-md hover:bg-gray-800 transition">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-[#191919] text-white text-sm sm:text-base 2xl:text-lg rounded-md hover:bg-gray-800 transition cursor-pointer">
               Get Start Now
             </button>
-            <button className="px-6 sm:px-8 py-3 sm:py-4 border border-[#666] text-white text-sm sm:text-base rounded-md hover:bg-white hover:text-gray-900 transition">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 border border-[#666] text-white text-sm sm:text-base 2xl:text-lg rounded-md hover:bg-white hover:text-gray-900 transition cursor-pointer">
               View all Services
             </button>
           </div>

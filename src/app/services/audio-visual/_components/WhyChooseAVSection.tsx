@@ -123,7 +123,7 @@ export default function WhyChooseAVSection() {
           >
             Why Work with IDR for A/V?
           </h2>
-          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-600">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl  2xl:text-2xl text-gray-600">
             Experience the difference working with certified professionals
           </p>
         </div>
@@ -141,7 +141,7 @@ export default function WhyChooseAVSection() {
                 </span>
               </div>
 
-              <h3 className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-medium text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl 2xl:text-2xl font-medium text-gray-900 mb-4">
                 {feature.title}
               </h3>
               <p className="text-sm sm:text-base lg:text-lg 2xl:text-xl text-gray-600">

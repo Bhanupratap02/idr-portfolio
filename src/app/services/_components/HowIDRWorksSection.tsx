@@ -43,10 +43,10 @@ export default function HowIDRWorksSection() {
               {/* Step 1 */}
               <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
                 <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
-                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
+                  <div className="text-[#9EA3B5] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
                     1.
                   </div>
-                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
+                  <div className="text-[#2E2E2E] text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
                     Call us anytime 24/7
                   </div>
                 </div>
@@ -59,10 +59,10 @@ export default function HowIDRWorksSection() {
               {/* Step 2 */}
               <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
                 <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
-                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
+                  <div className="text-[#9EA3B5] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
                     2.
                   </div>
-                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
+                  <div className="text-[#2E2E2E] text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
                     Schedule Service
                   </div>
                 </div>
@@ -75,10 +75,10 @@ export default function HowIDRWorksSection() {
               {/* Step 3 */}
               <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
                 <div className=" flex-1 flex items-center gap-4 min-w-[50px]">
-                  <div className="text-[#9EA3B5] text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
+                  <div className="text-[#9EA3B5] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
                     3.
                   </div>
-                  <div className="text-[#2E2E2E] text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
+                  <div className="text-[#2E2E2E] text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-medium leading-snug">
                     Your request is completed
                   </div>
                 </div>

@@ -94,13 +94,13 @@ const processSteps = [
 export default function ServiceProcessSection() {
   return (
     <section className="bg-[#F8F8F8] py-16 sm:py-20 lg:py-24 xl:26 2xl:28 3xl:36">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-[#2E2E2E] text-3xl sm:text-4xl  lg:text-4xl 2xl:text-5xl 3xl:text-6xl  font-semibold  mb-4">
+          <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-6xl  font-semibold  mb-4">
             Full-Service from Start to Finish
           </h2>
-          <p className="text-[#626262] text-lg xl:text-xl 2xl:text-2xl mx-auto leading-relaxed">
+          <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl mx-auto leading-relaxed">
             We guide your alarm journey with expert project delivery.
           </p>
         </div>
@@ -126,16 +126,16 @@ export default function ServiceProcessSection() {
                 <div
                   className={`mt-14 md:mt-0 w-full md:w-1/2 ${
                     step.position === "left"
-                      ? "md:text-right md:pr-16"
+                      ? "md:text-right md:pr-16 "
                       : "md:text-left md:pl-16 md:ml-auto"
-                  } text-center md:text-inherit`}
+                  } text-center md:text-inherit `}
                 >
                   <>
-                    <div>
+                    <div className="">
                       <h3 className="text-[#2E2E2E] text-lg sm:text-xl 3xl:text-2xl font-medium mb-2">
                         {step.title}
                       </h3>
-                      <p className="text-sm sm:text-base md:text-lg 3xl:text-xl text-[#626262] leading-relaxed">
+                      <p className="text-sm sm:text-base md:text-lg 3xl:text-xl  text-[#626262] leading-relaxed">
                         {step.description}
                       </p>
                     </div>

@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function DCRedundancySection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12   ">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold lg:font-normal mb-6 text-gray-800 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium  mb-6 text-gray-800 text-center lg:text-left">
               Built with Redundancy in Mind
             </h2>
-            <p className="text-gray-600 text-base  2xl:text-xl 3xl:text-2xl 2xl:leading-relaxed mb-4 xl:mb-5 2xl:mb-6 3x:mb-8 text-center lg:text-left">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg  2xl:text-xl 3xl:text-2xl 2xl:leading-relaxed mb-4 xl:mb-5 2xl:mb-6 3x:mb-8 text-center lg:text-left">
               Our infrastructure designs prioritize uptime through multiple
               layers of redundancy, ensuring your critical systems remain
               operational even during component failures.
@@ -40,10 +40,7 @@ export default function DCRedundancySection() {
                   desc: "Physical separation of critical infrastructure pathways",
                 },
               ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-start gap-3 "
-                >
+                <div key={idx} className="flex items-start gap-3 ">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-green-500 flex items-center justify-center mt-1 flex-shrink-0 ">
                     <svg
                       className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white"
@@ -81,19 +78,17 @@ export default function DCRedundancySection() {
           </div>
 
           {/* Right Side - Network Diagram */}
-          <div className="lg:justify-self-end">
-            <div className="relative">
-              {/* <Image
+          <div className="lg:justify-self-end h-full">
+            {/* <Image
                 src={redundancy}
                 alt="Network Redundancy Diagram"
-                className="w-full h-auto rounded-lg "
+                className="w-full h-full rounded-lg "
               /> */}
-              <Image
-                src={redundancy}
-                alt="Network Redundancy Diagram"
-                className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[700px] 3xl:max-w-[800px] h-auto rounded-lg"
-              />
-            </div>
+            <Image
+              src={redundancy}
+              alt="Network Redundancy Diagram"
+              className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[730px] 3xl:max-w-[800px] h-full rounded-lg"
+            />
           </div>
         </div>
       </div>

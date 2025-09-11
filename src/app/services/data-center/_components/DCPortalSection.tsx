@@ -60,14 +60,14 @@ const features = [
 export default function DCPortalSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 3xl:py-32 bg-white">
-      <div className="max-w-7xl 2xl:max-w-[91rem] 3xl:max-w-[120rem] mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[120rem] mx-auto px-6 md:px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 2xl:gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-[2.88rem] 3xl:text-6xl font-bold lg:font-normal text-gray-800 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium  text-gray-800 mb-6">
               The IDR Portal: Control and Clarity
             </h2>
-            <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-gray-600 mb-8 leading-relaxed">
               See everything, anytime. Track every test, change, and diagram
               through your personalized IDR Portal.
             </p>
@@ -94,7 +94,7 @@ export default function DCPortalSection() {
               }
             </div>
 
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 2xl:px-8 py-3 2xl:py-4 rounded-md font-normal transition-colors inline-flex items-center space-x-3 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 2xl:px-8 py-3 2xl:py-4 rounded-md font-normal transition-colors inline-flex items-center space-x-3 text-sm sm:text-base 2xl:text-lg 3xl:text-xl cursor-pointer">
               <span>See the Portal in Action</span>
               <svg
                 width="14"

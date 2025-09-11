@@ -1,5 +1,8 @@
 /** @format */
-// prev 
+import Image from "next/image";
+import mobile_control from "@/assets/services/security-alarm/mobile_control.png";
+import motion_triggers from "@/assets/services/security-alarm/motion_triggers.png";
+import monitoring from "@/assets/services/security-alarm/monitoring.png";
 import FeatureCard from "./FeatureCard";
   const features = [
     {
@@ -89,25 +92,25 @@ import FeatureCard from "./FeatureCard";
   ];
     const additionalFeatures = [
       {
-        image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/c06e7df1546911724056f963d8221b4a1e6850c3?width=725",
+        image: mobile_control,
         title: "Mobile Control",
-        desc1: "Arm/disarm your system from anywhere with our",
-        desc2: "intuitive mobile application.",
+        desc:
+          "Arm/disarm your system from anywhere with our intuitive mobile application.",
+    
       },
       {
-        image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/55fb777a793c1c0673058178c4f37ff645f6bdf8?width=725",
+        image: motion_triggers,
         title: "Motion Triggers",
-        desc1: "Cameras automatically record when motion is",
-        desc2: "detected or alarms are triggered.",
+        desc:
+          "Cameras automatically record when motion is detected or alarms are triggered.",
+       
       },
       {
-        image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/cb4f601643649773cce397e02f7b1dd4e7701487?width=725",
+        image: monitoring,
         title: "24/7 Monitoring",
-        desc1: "Professional monitoring stations ready to",
-        desc2: "respond to alarms at any time.",
+        desc:
+          "Professional monitoring stations ready to respond to alarms at any time.",
+ 
       },
     ];
 export default function FeaturesSection() {
@@ -118,10 +121,10 @@ export default function FeaturesSection() {
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-[#2E2E2E] text-3xl sm:text-4xl  lg:text-4xl 2xl:text-5xl 3xl:text-6xl  font-semibold  mb-4">
+          <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-6xl  font-semibold  mb-4">
             From Simple Alerts to Smart Integrations
           </h2>
-          <p className="text-[#626262] text-lg xl:text-xl 2xl:text-2xl max-w-4xl mx-auto leading-relaxed">
+          <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl max-w-4xl mx-auto leading-relaxed">
             Whether cloud-based or on-premises, we tailor the perfect system for
             your needs.
           </p>
@@ -147,7 +150,7 @@ export default function FeaturesSection() {
               className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="bg-[#F3F4F6] h-48 sm:h-60 md:h-64 lg:h-72 flex items-center justify-center">
-                <img
+                <Image
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -159,11 +162,9 @@ export default function FeaturesSection() {
                   {feature.title}
                 </h4>
                 <p className="text-[#626262] text-sm lg:text-base 3xl:text-xl mb-2">
-                  {feature.desc1}
+                  {feature.desc}
                 </p>
-                <p className="text-[#626262] text-sm lg:text-base 3xl:text-xl">
-                  {feature.desc2}
-                </p>
+           
               </div>
             </div>
           ))}

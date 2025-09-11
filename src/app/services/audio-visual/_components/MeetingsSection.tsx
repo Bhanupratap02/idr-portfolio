@@ -144,7 +144,7 @@ export default function MeetingsSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl leading-snug 2xl:leading-tight font-medium text-gray-900 mb-4">
             Meetings Without Friction
           </h2>
-          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-600 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl  2xl:text-2xl text-gray-600 leading-relaxed">
             Conference room solutions designed for seamless collaboration
           </p>
         </div>

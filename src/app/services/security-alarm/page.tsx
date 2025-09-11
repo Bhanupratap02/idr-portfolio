@@ -17,7 +17,7 @@ export default function Index() {
       <ServiceProcessSection />
       <PortalSection />
       <WhyIDRSection />
-      <ServicesSection />
+      <ServicesSection exclude={7}/>
     </div>
   );
 }

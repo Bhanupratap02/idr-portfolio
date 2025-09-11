@@ -53,7 +53,7 @@ export default function ERateProgramInfoSection() {
                 <Image
                   src={E_Rate_Meeting}
                   alt="E-Rate Program"
-                  className="w-full h-full object-cover rounded-lg shadow-xl"
+                  className="w-full h-full object-cover rounded-lg "
                 />
                 {/* Info Card */}
                 <div className="absolute -top-8 sm:-top-12 md:-top-16 lg:-top-14 xl:-top-16 2xl:-top-20 3xl:-top-24 -right-2 sm:-right-4 md:-right-6 lg:-right-2 xl:-right-4 2xl:-right-6 3xl:-right-8 bg-white rounded-lg p-2 sm:p-3 md:p-4 lg:p-3 xl:p-4 2xl:p-5 3xl:p-6 shadow-lg border border-gray-100 w-24 sm:w-28 md:w-32 lg:w-28 xl:w-36 2xl:w-38 3xl:w-40 z-10">

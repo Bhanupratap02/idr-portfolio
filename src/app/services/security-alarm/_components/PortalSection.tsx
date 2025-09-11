@@ -1,4 +1,6 @@
 /** @format */
+import Image from "next/image";
+import portal from "@/assets/services/security-alarm/portal.png";
   const portalFeatures = [
     {
       icon: (
@@ -62,16 +64,16 @@ export default function PortalSection() {
 
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 3xl:py-36">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-22">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-22">
         <div className="grid lg:grid-cols-2 gap-16 3xl:gap-18 items-stretch">
           {/* Left Content */}
           <div className="flex flex-col justify-between h-full">
             <div className=" space-y-4 md:space-y-6 2xl:space-y-8 3xl:space-y-10">
-              <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-4xl 3xl:text-5xl  font-semibold">
+              <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[2.75rem] 3xl:text-[3.4rem]  font-semibold">
                 The IDR Portal: Total Visibility
               </h2>
 
-              <p className="text-[#626262] text-base md:text-lg lg:text-xl 3x:text-2xl leading-relaxed">
+              <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed">
                 Manage everything with real-time insights and full documentation
                 access.
               </p>
@@ -114,8 +116,8 @@ export default function PortalSection() {
           {/* Right Content - Portal Image */}
           <div className="flex justify-center  h-full">
             <div className="relative  rounded-lg  overflow-hidden w-full   h-full 3xl:h-[92%] shadow-lg">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/b02234a35610504b720b79ba652f3b43826dc160?width=1184"
+              <Image
+                src={portal}
                 alt="IDR Portal Dashboard"
                 className="w-full h-full"
               />

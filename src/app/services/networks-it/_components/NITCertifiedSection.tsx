@@ -70,12 +70,12 @@ export default function NITCertifiedSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-gray-50">
       {/* <div className="container mx-auto px-6 lg:px-8"> */}
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 mb-4">
             Certified. Experienced. Ready for Scale.
           </h2>
-          <p className="text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our team holds industry-leading certifications and partnerships to
             deliver enterprise-grade solutions for businesses of all sizes.
           </p>
@@ -116,7 +116,6 @@ export default function NITCertifiedSection() {
             <Image
               src={certified}
               alt="Certified Network Engineers"
-              // className="w-full h-auto rounded-lg  object-cover"
               className="w-full md:h-[20rem] lg:h-[25rem]  3xl:h-[32rem] rounded-lg"
             />
           </div>

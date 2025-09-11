@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import integratedIntelligenceImg from "@/assets/services/intercom/integrated_intelligence.png";
 const features = [
   {
     title: "Access Control",
@@ -112,10 +113,11 @@ export function IntegratedIntelligenceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 3xl:gap-32 items-start">
           {/* Left Image */}
           <div className="flex justify-center lg:justify-start w-full h-full">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2d847a1965b1ff48fce81d531c14775833e0628a?width=1168"
+            <Image
+              src={integratedIntelligenceImg}
               alt="Integrated system dashboard"
               className="w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl  h-auto object-cover rounded-xl"
+             
             />
           </div>
 

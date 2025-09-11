@@ -1,22 +1,18 @@
 /** @format */
-
-import {
-  UserIcon,
-  RouteIcon,
-  UsersIcon,
-  WrenchIcon,
-  TestTubeIcon,
-  FileTextIcon,
-  HandshakeIcon,
-} from "lucide-react";
-
+import p1 from "@/assets/services/structured-cabling/icons/p_1.png";
+import p2 from "@/assets/services/structured-cabling/icons/p_2.png";
+import p3 from "@/assets/services/structured-cabling/icons/p_3.png";
+import p4 from "@/assets/services/structured-cabling/icons/p_4.png";
+import p5 from "@/assets/services/structured-cabling/icons/p_5.png";
+import p6 from "@/assets/services/structured-cabling/icons/p_6.png";
+import p7 from "@/assets/services/structured-cabling/icons/p_7.png";
+import Image from "next/image";
 interface ProcessStepProps {
   icon: React.ReactNode;
   title: string;
   step: number;
   isLast?: boolean;
 }
-//prev
 function ProcessStep({ icon, title, step, isLast = false }: ProcessStepProps) {
   return (
     <div className="flex flex-col items-center space-y-3 sm:space-y-4 lg:space-y-4 xl:space-y-5 2xl:space-y-6 relative group">
@@ -43,43 +39,71 @@ export default function ProcessSection() {
   const processSteps = [
     {
       icon: (
-        <UserIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p1}
+          alt="Site Walk & Assessment"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Site Walk & Assessment",
     },
     {
       icon: (
-        <RouteIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p2}
+          alt="Cable Path Planning"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Cable Path Planning",
     },
     {
       icon: (
-        <UsersIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p3}
+          alt="Dedicated Project Manager"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Dedicated Project Manager",
     },
     {
       icon: (
-        <WrenchIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p4}
+          alt="Professional Installation"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Professional Installation",
     },
     {
       icon: (
-        <TestTubeIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p5}
+          alt="Testing & Firestopping"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Testing & Firestopping",
     },
     {
       icon: (
-        <FileTextIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p6}
+          alt="Full Documentation"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Full Documentation",
     },
     {
       icon: (
-        <HandshakeIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white" />
+        <Image
+          src={p7}
+          alt="Ongoing Service Agreements"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+        />
       ),
       title: "Ongoing Service Agreements",
     },
@@ -92,7 +116,7 @@ export default function ProcessSection() {
           <h2 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E] leading-tight">
             Our Process
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#4B5563] max-w-2xl sm:max-w-3xl lg:max-w-4xl xl:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#4B5563] max-w-2xl sm:max-w-3xl lg:max-w-4xl xl:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto leading-relaxed">
             We follow a systematic approach to ensure your cabling project is
             completed efficiently and to the highest standards.
           </p>

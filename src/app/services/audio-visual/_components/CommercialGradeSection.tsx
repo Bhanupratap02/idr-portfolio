@@ -43,7 +43,7 @@ export default function CommercialGradeSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-gray-900 mb-4">
             Commercial-Grade Performance for the Home
           </h2>
-          <p className="text-base sm:text-lg md:text-xl  2xl:text-2xl text-gray-600">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl  2xl:text-2xl text-gray-600">
             Style meets sound. Designed for how you live.
           </p>
         </div>
@@ -59,20 +59,11 @@ export default function CommercialGradeSection() {
                   fill
                   className="object-cover"
                 />
-                {/* Overlay */}
-                {/* <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-transparent" /> */}
+
                 <div
                   className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/40 to-transparent
                   "
                 />
-
-                {/* Content */}
-                {/* <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className={`${product.titleSize} font-medium mb-2`}>
-                    {product.title}
-                  </h3>
-                  <p className="text-gray-200">{product.description}</p>
-                </div> */}
               </div>
             </div>
           ))}

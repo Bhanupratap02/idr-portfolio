@@ -49,12 +49,12 @@ export default function DCWhyTeamsSection() {
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-gray-900 mb-4">
             Why Teams Choose IDR
           </h2>
-          <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-3xl mx-auto">
             Our comprehensive approach to infrastructure delivers reliability,
             efficiency, and peace of mind.
           </p>
@@ -73,7 +73,7 @@ export default function DCWhyTeamsSection() {
                   className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
                 />
               </div>
-              <h3 className="text-lg md:text-xl 2xl:text-2xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg md:text-xl 2xl:text-2xl font-medium text-gray-900 mb-3">
                 {feature.title}
               </h3>
               <p className="text-gray-600 text-sm md:text-base xl:text-lg 2xl:text-xl">

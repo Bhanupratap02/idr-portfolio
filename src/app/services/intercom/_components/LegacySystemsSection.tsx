@@ -1,5 +1,6 @@
 /** @format */
-
+import Image from "next/image";
+import legacySystemImg from "@/assets/services/intercom/legacy_systems.png"
 const benefits = [
   "Repair and expand traditional systems",
   "No disruption to building infrastructure",
@@ -12,10 +13,11 @@ export function LegacySystemsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 3xl:gap-32 items-center">
           {/* Left Image */}
           <div className="flex justify-center lg:justify-start">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/a1910166e2177b53b2e20a86cd7550348505a416?width=1168"
+            <Image
+              src={legacySystemImg}
               alt="Legacy intercom system maintenance"
               className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl 2xl:max-w-4xl  h-auto object-cover rounded-xl"
+              priority
             />
           </div>
 

@@ -84,19 +84,19 @@ export default function NITPortalSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
       {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-20"> */}
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[85rem] 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-gray-800 mb-4">
             The IDR Portal: Network Insight, Simplified
           </h2>
-          <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Access your network information, documentation, and support
             resources through our secure client portal.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 2xl:gap-12 3xl:gap-16 items-center">
           {/* Left Image */}
           <div className="relative">
             <Image
@@ -132,7 +132,7 @@ export default function NITPortalSection() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-blue-600 text-white px-6 py-3 3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors">
+              <button className="bg-blue-600 text-white px-6 py-3 3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors cursor-pointer">
                 Request Portal Demo
               </button>
             </div>

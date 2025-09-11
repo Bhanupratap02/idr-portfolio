@@ -79,7 +79,7 @@ export default function IDRPortalSection() {
               {portalFeatures?.map((feature, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 md:w-12 md:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 md:w-12 md:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 bg-dark-blue rounded-lg flex items-center justify-center">
                       {feature.icon}
                     </div>
                   </div>
@@ -100,9 +100,9 @@ export default function IDRPortalSection() {
           <div className="flex justify-center">
             <div className="w-full max-w-lg md:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl bg-white rounded-lg shadow-xl overflow-hidden">
               {/* Header */}
-              <div className="bg-blue-600 px-4 py-4 flex items-center gap-2">
+              <div className="bg-dark-blue px-4 py-4 flex items-center gap-2">
                 <div className="bg-white rounded px-2 py-1">
-                  <span className="text-blue-600 font-bold text-sm">IDR</span>
+                  <span className="text-dark-blue font-bold text-sm">IDR</span>
                 </div>
                 <span className="text-white font-medium">Portal Dashboard</span>
               </div>
@@ -114,7 +114,7 @@ export default function IDRPortalSection() {
                   <h3 className="text-gray-600 font-medium">
                     Conference Room Systems
                   </h3>
-                  <button className="bg-blue-600 text-white px-3 py-1 rounded text-sm">
+                  <button className="bg-dark-blue text-white px-3 py-1 rounded text-sm">
                     Add New
                   </button>
                 </div>

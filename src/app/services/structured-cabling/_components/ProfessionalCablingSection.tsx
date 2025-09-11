@@ -1,14 +1,11 @@
 /** @format */
-
-import {
-  NetworkIcon,
-  CableIcon,
-  HardDriveIcon,
-  BuildingIcon,
-  ZapIcon,
-  MonitorIcon,
-} from "lucide-react";
-
+import cabling from "@/assets/services/structured-cabling/icons/cabling.png";
+import fiber from "@/assets/services/structured-cabling/icons/fiber.png";
+import panel from "@/assets/services/structured-cabling/icons/panel.png";
+import buildings from "@/assets/services/structured-cabling/icons/buildings.png";
+import poe from "@/assets/services/structured-cabling/icons/poe.png";
+import av from "@/assets/services/structured-cabling/icons/av.png";
+import Image from "next/image";
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
@@ -28,7 +25,7 @@ function ServiceCard({
         <div className={`${iconBgColor} rounded-full p-3.5 flex-shrink-0`}>
           {icon}
         </div>
-        <h3 className="text-lg sm:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-[#2E2E2E] leading-7">
+        <h3 className="text-base sm:text-lg xl:text-xl  2xl:text-2xl 3xl:text-3xl font-medium text-[#2E2E2E] leading-7">
           {title}
         </h3>
       </div>
@@ -43,14 +40,26 @@ function ServiceCard({
 export default function ProfessionalCablingSection() {
   const services = [
     {
-      icon: <NetworkIcon className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#3B82F6]" />,
+      icon: (
+        <Image
+          src={cabling}
+          alt="Cat5e / Cat6 / Cat6a Cabling"
+          className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#3B82F6]"
+        />
+      ),
       title: "Cat5e / Cat6 / Cat6a Cabling",
       description:
         "High-speed network cabling solutions supporting bandwidths from 1Gbps to 10Gbps for your critical infrastructure.",
       iconBgColor: "bg-[#DBEAFE]",
     },
     {
-      icon: <CableIcon className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#8B5CF6]" />,
+      icon: (
+        <Image
+          src={fiber}
+          alt="Fiber Optic Backbone"
+          className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#8B5CF6]"
+        />
+      ),
       title: "Fiber Optic Backbone",
       description:
         "Future-proof your network with high-capacity fiber optic cabling for long-distance, high-bandwidth applications.",
@@ -58,7 +67,11 @@ export default function ProfessionalCablingSection() {
     },
     {
       icon: (
-        <HardDriveIcon className="w-5 h-5 2xl:w-8 2xl:h-7 text-[#16A34A]" />
+        <Image
+          src={panel}
+          alt="Patch Panels & Faceplates"
+          className="w-5 h-5 2xl:w-8 2xl:h-7 text-[#16A34A]"
+        />
       ),
       title: "Patch Panels & Faceplates",
       description:
@@ -66,21 +79,39 @@ export default function ProfessionalCablingSection() {
       iconBgColor: "bg-[#DCFCE7]",
     },
     {
-      icon: <BuildingIcon className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#DC2626]" />,
+      icon: (
+        <Image
+          src={buildings}
+          alt="MDF/IDF Builds"
+          className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#DC2626]"
+        />
+      ),
       title: "MDF/IDF Builds",
       description:
         "Custom-designed telecommunications rooms with proper racking, cooling, and power to support your network infrastructure.",
       iconBgColor: "bg-[#FEE2E2]",
     },
     {
-      icon: <ZapIcon className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#CA8A04]" />,
+      icon: (
+        <Image
+          src={poe}
+          alt="POE for Devices"
+          className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#CA8A04]"
+        />
+      ),
       title: "POE for Devices",
       description:
         "Power over Ethernet solutions for phones, wireless access points, cameras, and other network devices.",
       iconBgColor: "bg-[#FEF9C3]",
     },
     {
-      icon: <MonitorIcon className="w-6 h-5 2xl:w-8 2xl:h-7 text-[#4F46E5]" />,
+      icon: (
+        <Image
+          src={av}
+          alt="A/V & Automation Cabling"
+          className="w-6 h-5 2xl:w-8 2xl:h-7 text-[#4F46E5]"
+        />
+      ),
       title: "A/V & Automation Cabling",
       description:
         "Specialized cabling solutions for audio/visual systems and smart building automation technologies.",
@@ -95,7 +126,7 @@ export default function ProfessionalCablingSection() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E]">
             Professional Cabling We Offer
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] max-w-4xl 3xl:max-w-5xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] max-w-4xl 3xl:max-w-5xl mx-auto leading-relaxed">
             Our comprehensive cabling solutions support all your networking
             needs with the highest standards of quality and compliance.
           </p>

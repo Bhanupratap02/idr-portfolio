@@ -22,7 +22,7 @@ export default function SurveillanceCamera() {
         <SurveillancePortalSection />
         <WhyChooseSurveillanceSection />
         <SurveillanceCallToActionSection />
-        <ServicesGrid />
+        <ServicesGrid exclude={9}/>
       </main>
     </div>
   );

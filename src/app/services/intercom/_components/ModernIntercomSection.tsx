@@ -1,4 +1,6 @@
 /** @format */
+import Image from "next/image";
+import modernIntercom from "@/assets/services/intercom/modern_intercom.png"
 const features = [
   {
     title: "Video Calling",
@@ -112,10 +114,11 @@ export function ModernIntercomSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 3xl:gap-32 items-start">
           {/* Left Image */}
           <div className="flex justify-center lg:justify-start w-full h-full">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2ba584fed406b61f6aa37f56447c9bf9d327a06b?width=1168"
+            <Image
+              src={modernIntercom}
               alt="Modern intercom system interface"
               className="w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl 3xl:max-w-4xl h-auto object-cover rounded-xl"
+              priority
             />
           </div>
 

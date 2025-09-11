@@ -4,17 +4,20 @@ import Image from "next/image";
 export default function DCHeroSection() {
   return (
     <section className="relative lg:h-[88vh] 3xl:h-[89vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-12 sm:py-16 2xl:py-24 3xl:py-32 flex  items-center justify-center">
-      <div className="max-w-7xl 2xl:max-w-[97rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-8 lg:px-16 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 2xl:gap-20 3xl:gap-32  items-center">
+      <div className="relative mx-auto w-full 2xl:max-w-[110rem] 3xl:max-w-[125rem] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24  2xl:px-28 3xl:px-18">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20  3xl:gap-32 items-center">
           {/* Left Content */}
           <div className="space-y-6 ">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-[3.5rem] 3xl:text-7xl font-medium leading-tight text-gray-800">
+            <h1
+              className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl
+              3xl:text-7xl font-medium leading-tight text-gray-800"
+            >
               Data Center Infrastructure
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl 2xl:text-3xl 3xl:text-4xl font-normal text-gray-800 leading-relaxed">
               Precision Infrastructure for High-Density Environments
             </h2>
-            <p className="text-base sm:text-lg 2xl:text-xl 3xl:text-3xl text-gray-600 leading-relaxed 2xl:leading-loose ">
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-gray-600 leading-relaxed 2xl:leading-loose ">
               At IDR Technology Solutions, we design and build data center
               infrastructure that delivers power, performance, and uptime.
               Whether it&apos;s a dedicated server room, enterprise data hall,
@@ -26,7 +29,7 @@ export default function DCHeroSection() {
               — and that&apos;s where we thrive.
             </p>
 
-            <button className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-base sm:text-lg 2xl:text-xl font-medium transition-colors">
+            <button className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
               Explore Our Infrastructure
               <svg
                 width="14"
@@ -49,7 +52,7 @@ export default function DCHeroSection() {
               <Image
                 src={hero}
                 alt="Data Center Server Rack"
-                className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[650px] 3xl:max-w-[900px] h-auto rounded-lg"
+                className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[600px] 3xl:max-w-[800px] h-auto rounded-lg"
               />
             </div>
           </div>

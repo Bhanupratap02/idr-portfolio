@@ -1,13 +1,11 @@
 /** @format */
-
-import {
-  WifiIcon,
-  NetworkIcon,
-  KeyIcon,
-  VideoIcon,
-  BellIcon,
-  SettingsIcon,
-} from "lucide-react";
+import wifi from "@/assets/services/structured-cabling/icons/wifi.png";
+import it from "@/assets/services/structured-cabling/icons/it.png";
+import access from "@/assets/services/structured-cabling/icons/access.png";
+import camera from "@/assets/services/structured-cabling/icons/camera.png";
+import intercoms from "@/assets/services/structured-cabling/icons/intercoms.png";
+import bms from "@/assets/services/structured-cabling/icons/bms.png";
+import Image from "next/image";
 
 interface IntegrationItemProps {
   icon: React.ReactNode;
@@ -23,7 +21,7 @@ function IntegrationItem({ icon, title, iconBgColor }: IntegrationItemProps) {
       >
         {icon}
       </div>
-      <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-medium text-[#2E2E2E] text-center leading-tight max-w-[120px] sm:max-w-none">
+      <h3 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-medium text-[#2E2E2E] text-center leading-tight max-w-[120px] sm:max-w-none">
         {title}
       </h3>
     </div>
@@ -34,42 +32,66 @@ export default function IntegrationSection() {
   const integrations = [
     {
       icon: (
-        <WifiIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#3B82F6]" />
+        <Image
+          src={wifi}
+          alt="Wi-Fi"
+          className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 "
+        />
       ),
       title: "Wi-Fi",
       iconBgColor: "bg-[#EFF6FF]",
     },
     {
       icon: (
-        <NetworkIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#A855F7]" />
+        <Image
+          src={it}
+          alt="IT"
+          className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#A855F7]"
+        />
       ),
       title: "IT Networking",
       iconBgColor: "bg-[#FAF5FF]",
     },
     {
       icon: (
-        <KeyIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#22C55E]" />
+        <Image
+          src={access}
+          alt="Access Control"
+          className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#22C55E]"
+        />
       ),
       title: "Access Control",
       iconBgColor: "bg-[#F0FDF4]",
     },
     {
       icon: (
-        <VideoIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#EF4444]" />
+        <Image
+          src={camera}
+          alt="Surveillance"
+          className="w-7 h-6 sm:w-8 sm:h-7 lg:w-9 lg:h-8 xl:w-10 xl:h-9 2xl:w-12 2xl:h-11 text-[#EF4444]"
+        />
       ),
       title: "Surveillance",
       iconBgColor: "bg-[#FEF2F2]",
     },
     {
       icon: (
-        <BellIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#EAB308]" />
+        <Image
+          src={intercoms}
+          alt="Intercoms & Alarms"
+          className="w-6 h-7 sm:w-7 sm:h-8 lg:w-8 lg:h-9 xl:w-9 xl:h-10 2xl:w-11 2xl:h-12 text-[#EAB308]"
+        />
       ),
       title: "Intercoms & Alarms",
       iconBgColor: "bg-[#FEFCE8]",
     },
     {
       icon: (
-        <SettingsIcon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#6366F1]" />
+        <Image
+          src={bms}
+          alt="A/V & BMS Systems"
+          className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#6366F1]"
+        />
       ),
       title: "A/V & BMS Systems",
       iconBgColor: "bg-[#EEF2FF]",
@@ -83,7 +105,7 @@ export default function IntegrationSection() {
           <h2 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E] leading-tight">
             Designed for Integration
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] max-w-2xl sm:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] max-w-2xl sm:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto leading-relaxed">
             Our structured cabling systems serve as the foundation for all your
             technology needs, ensuring seamless integration across platforms.
           </p>
@@ -100,16 +122,6 @@ export default function IntegrationSection() {
           ))}
         </div>
 
-        {/* <div className="mt-16 bg-[#F9FAFB] rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-medium text-[#2E2E2E] mb-4">
-            Future-proof your tech stack
-          </h3>
-          <p className="text-base text-[#626262] max-w-4xl mx-auto leading-relaxed">
-            Our structured cabling solutions are designed to accommodate your
-            current needs while providing the flexibility to adapt to future
-            technological advancements.
-          </p>
-        </div> */}
         {/* Future-proof Section */}
         <div className="mt-12 sm:mt-14 lg:mt-16 xl:mt-18 2xl:mt-20">
           <div className="bg-[#F9FAFB] rounded-xl p-6 sm:p-7 lg:p-8 xl:p-10 2xl:p-12 text-center border border-gray-100">

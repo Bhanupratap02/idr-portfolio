@@ -2,6 +2,10 @@
 
 import { MapIcon, TrendingUpIcon, ImageIcon, TicketIcon } from "lucide-react";
 import portal from "@/assets/services/structured-cabling/portal.png"
+import maps from "@/assets/services/structured-cabling/icons/maps.png";
+import results from "@/assets/services/structured-cabling/icons/results.png";
+import photos from "@/assets/services/structured-cabling/icons/photos.png";
+import ticket from "@/assets/services/structured-cabling/icons/ticket.png";
 import Image from "next/image";
 interface PortalFeatureProps {
   icon: React.ReactNode;
@@ -39,16 +43,24 @@ export default function IDRPortalSection() {
   const portalFeatures = [
     {
       icon: (
-        <MapIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#2563EB]" />
+        <Image
+          src={maps}
+          alt="Drop Maps & Port Labels"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#2563EB]"
+        />
       ),
-      title: "Drop Maps & Port Labels",
+      title:"Drop Maps & Port Labels",
       description:
         "Interactive maps of your entire cabling infrastructure with detailed port information.",
       iconBgColor: "bg-[#DBEAFE]",
     },
     {
       icon: (
-        <TrendingUpIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#16A34A]" />
+        <Image
+          src={results}
+          alt="Cable Test Results"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#16A34A]"
+        />
       ),
       title: "Cable Test Results",
       description:
@@ -57,7 +69,11 @@ export default function IDRPortalSection() {
     },
     {
       icon: (
-        <ImageIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#9333EA]" />
+        <Image
+          src={photos}
+          alt="Rack & Tray Photos"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#9333EA]"
+        />
       ),
       title: "Rack & Tray Photos",
       description:
@@ -66,7 +82,11 @@ export default function IDRPortalSection() {
     },
     {
       icon: (
-        <TicketIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#DC2626]" />
+        <Image
+          src={ticket}
+          alt="Real-time Ticket Updates"
+          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#DC2626]"
+        />
       ),
       title: "Real-time Ticket Updates",
       description:
@@ -96,7 +116,7 @@ export default function IDRPortalSection() {
               <h2 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-medium text-[#2E2E2E] leading-tight">
                 The IDR Portal — Everything in One Place
               </h2>
-              <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl max-w-3xl text-[#626262] leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl max-w-3xl text-[#626262] leading-relaxed">
                 Access all your cabling documentation, testing results, and
                 support tickets through our intuitive client portal.
               </p>
@@ -114,7 +134,7 @@ export default function IDRPortalSection() {
               ))}
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#2E2E2E] font-normal">
+            <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#2E2E2E] font-normal">
               No paperwork. Just clarity.
             </p>
           </div>

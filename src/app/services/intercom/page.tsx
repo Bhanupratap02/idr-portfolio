@@ -19,7 +19,7 @@ export default function Intercom() {
       <CertifiedSupportSection />
       <IntegratedIntelligenceSection />
       <IntercomCTASection />
-      <ServicesGrid exclude={6}/>
+      <ServicesGrid exclude={5}/>
     </div>
   );
 }

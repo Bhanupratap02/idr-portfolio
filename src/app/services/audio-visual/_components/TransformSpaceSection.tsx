@@ -62,7 +62,7 @@ export default function TransformSpaceSection() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6  rounded-md font-medium transition-colors"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6  rounded-md font-medium transition-colors cursor-pointer"
           >
             Schedule My Free Consultation
           </button>

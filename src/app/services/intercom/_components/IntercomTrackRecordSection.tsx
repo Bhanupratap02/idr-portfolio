@@ -1,5 +1,6 @@
 /** @format */
-// previously 
+import Image from "next/image";
+import trackRecord from "@/assets/services/intercom/track_record.png"
 export function IntercomTrackRecordSection() {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24 xl:py-28 2xl:py-32 3xl:py-40">
@@ -55,10 +56,11 @@ export function IntercomTrackRecordSection() {
 
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f0f1f92beca43fe605bb02bc3b44eae8b2492b5d?width=1168"
+            <Image
+              src={trackRecord}
               alt="IDR team working on intercom system"
               className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl h-auto object-cover rounded-xl "
+              priority
             />
           </div>
         </div>

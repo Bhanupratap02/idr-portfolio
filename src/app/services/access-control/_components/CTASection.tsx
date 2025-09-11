@@ -15,7 +15,7 @@ export default function CTASection() {
               px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14
               py-3 sm:py-4 2xl:py-5 3xl:py-6
               text-base sm:text-lg 2xl:text-xl 3xl:text-2xl 
-              font-medium shadow-lg hover:bg-yellow-500 transition-colors"
+              font-medium shadow-lg hover:bg-yellow-500 transition-colors cursor-pointer"
             aria-label="Get a Free Site Audit"
           >
             Get a Free Site Audit
@@ -26,7 +26,7 @@ export default function CTASection() {
               px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14
               py-3 sm:py-4 2xl:py-5 3xl:py-6
               text-base sm:text-lg 2xl:text-xl 3xl:text-2xl 
-              font-medium shadow-lg hover:bg-gray-100 transition-colors"
+              font-medium shadow-lg hover:bg-gray-100 transition-colors cursor-pointer"
           >
             Talk to an Expert
           </button>
