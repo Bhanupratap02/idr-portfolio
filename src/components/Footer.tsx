@@ -55,9 +55,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-sm 2xl:text-base 3xl:text-lg text-[#F7F6F2] leading-relaxed max-w-72 2xl:max-w-80">
-              Whether you&apos;re launching a new facility or refreshing legacy
-              systems, we&apos;ll help you build a data center you can trust —
-              from day one.
+              Quality from start to finish. From design through installation, IDR is the name you can depend on.
             </p>
           </div>
 

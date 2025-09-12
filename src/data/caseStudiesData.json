@@ -8,15 +8,15 @@
     },
     "galleryImages": [
       {
-        "src": "/case_study/case-study-1.png",
+        "src": "/assets/case_study/case-study-1.png",
         "alt": "Access control system 1"
       },
       {
-        "src": "/case_study/case-study-2.png",
+        "src": "/assets/case_study/case-study-2.png",
         "alt": "Access control system 2"
       },
       {
-        "src": "/case_study/case-study-3.png",
+        "src": "/assets/case_study/case-study-3.png",
         "alt": "Access control system 3"
       }
     ],

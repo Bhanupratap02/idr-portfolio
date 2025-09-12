@@ -6,7 +6,7 @@ const services = [
   'Surveillance Camera Systems',
   'Multifamily Intercom Systems',
   'Access Control Systems',
-  'Security Alarm Systems',
+  // 'Security Alarm Systems',
   'Networks & IT Infrastructure',
   'Audio / Visual Systems',
   'Conference Room Solutions',

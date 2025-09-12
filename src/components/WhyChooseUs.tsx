@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
     <section className="bg-[#EFF5FF] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[100rem] mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-6xl 3xl:text-7xl font-semibold text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
-          Why Choose Us
+          The IDR Advantage
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 3xl:gap-14">

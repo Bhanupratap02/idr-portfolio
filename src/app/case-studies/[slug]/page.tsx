@@ -1,14 +1,15 @@
 // File: app/case-studies/[slug]/page.tsx
-import data from "@/data/caseStudiesData.json";
+import { caseStudiesData } from "@/data/caseStudiesData";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/case_studies/HeroSection";
 import ImageGallery from "@/components/case_studies/ImageGallery";
 import CaseStudyContent from "@/components/case_studies/CaseStudyContent";
 import CaseStudyCards from "@/components/case_studies/CaseStudyCards";
+import type { CaseStudy } from "@/types/case-studies";
 
 // Generate static params for build optimization
 export async function generateStaticParams() {
-  return data.map((item) => ({
+  return caseStudiesData.map((item) => ({
     slug: item.slug,
   }));
 }
@@ -16,7 +17,7 @@ export async function generateStaticParams() {
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const study = data.find((item) => item.slug === slug);
+  const study = caseStudiesData.find((item) => item.slug === slug);
   
   if (!study) {
     return {
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function CaseStudy({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const study = data.find((item) => item.slug === slug);
+  const study = caseStudiesData.find((item) => item.slug === slug);
   
   if (!study) {
     notFound();
@@ -41,15 +42,8 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
   return (
     <div className="min-h-screen bg-cream font-inter">
       <HeroSection {...study.hero} />
-      <ImageGallery images={study.galleryImages} />
-      <CaseStudyContent 
-        title={study.hero.heading}
-        description={study.hero.paragraph}
-        client={study.content?.client}
-        property={study.content?.property}
-        challenge={study.content?.challenge}
-        solution={study.content?.solution}
-      />
+      <ImageGallery  />
+      <CaseStudyContent slug={slug} />
       <CaseStudyCards />
     </div>
   );

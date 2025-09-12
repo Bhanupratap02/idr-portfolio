@@ -75,14 +75,18 @@ const ContactSection = () => {
                   </div>
 
                   {/* Email */}
-                  <div className="flex items-start space-x-4">
+                  <div className="flex flex-col items-start space-x-4">
                     <Mail className="w-6 h-6" />
                     <div>
                       Sales:
                       <br />
                       sales@idrtechnologysolutions.com
+                    </div>
+                    <br />
+                    <div>
+                      Support:
                       <br />
-                      Support: support@idrtechnologysolutions.com
+                      support@idrtechnologysolutions.com
                     </div>
                   </div>
 

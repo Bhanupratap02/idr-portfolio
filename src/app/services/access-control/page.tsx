@@ -9,7 +9,6 @@ import ServiceBeyondInstall from "./_components/ServiceBeyondInstall";
 import TrustedTechnology from "./_components/TrustedTechnology";
 import WhyChooseIDR from "./_components/WhyChooseIDR";
 
-
 export default function Index() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">
@@ -20,7 +19,7 @@ export default function Index() {
       <IDRPortal />
       <WhyChooseIDR />
       <CTASection />
-      <ServicesGrid exclude={1}/>
+      <ServicesGrid exclude={1} />
     </div>
   );
 }

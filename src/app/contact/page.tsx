@@ -1,6 +1,8 @@
 import ContactSection from "@/components/ContactSection";
-import Image from "next/image";
-import groupImg from "@/assets/Group.png";
+
+// import Image from "next/image";
+// import groupImg from "@/assets/Group.png";
+import Map from "@/components/Map";
 
 export default function ContactPage() {
   return (
@@ -22,12 +24,13 @@ export default function ContactPage() {
           {/* Map Image */}
           <div className="w-full mx-auto">
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <Image
+              {/* <Image
                 src={groupImg}
                 alt="IDR Service Coverage Map - States shaded in blue"
                 className="w-full h-auto object-contain"
                 priority
-              />
+              /> */}
+              <Map />
             </div>
           </div>
         </div>
