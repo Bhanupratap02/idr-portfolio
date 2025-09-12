@@ -24,6 +24,8 @@ import client11 from "@/assets/clients/client_11.png";
 import client12 from "@/assets/partners/partner_14.png";
 import client13 from "@/assets/clients/client_13.png";
 import client14 from "@/assets/partners/partner_15.png";
+import Finance from "@/components/Finance";
+import IdrAdvantage from "@/components/IdrAdvantages";
 
 
 const topPartnerImages = [
@@ -71,7 +73,9 @@ export default function Index() {
 
       <PartnerLogos logos={topPartnerImages} whiteTextLogos={whiteTextLogos} direction="left" />
       {/* Everything You Need Section */}
-      <EverythingYouNeed />
+      {/* <EverythingYouNeed /> */}
+
+      <IdrAdvantage />
 
       {/* What We Do Section */}
       <WhatWeDo />
@@ -86,10 +90,12 @@ export default function Index() {
       <CaseStudies />
 
       {/* FAQ Section */}
-      <FAQSection />
+      {/* <FAQSection /> */}
 
       {/* Contact Section */}
       <ContactSection />
+      {/* Finance Section */}
+      <Finance />
 
 
       

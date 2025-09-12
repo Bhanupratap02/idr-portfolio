@@ -22,6 +22,7 @@ import whyUs6 from "@/assets/why_us/why_us_6.png";
 import whyUs7 from "@/assets/why_us/why_us_7.png";
 import whyUs8 from "@/assets/why_us/why_us_8.png";
 import whyUs9 from "@/assets/why_us/why_us_9.png";
+import Link from "next/link";
 
 const iconMap = {
   "Certified & Trusted Teams": BadgeCheck,
@@ -102,7 +103,7 @@ const WhyChooseUs = () => {
     <section className="bg-[#EFF5FF] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[100rem] mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-6xl 3xl:text-7xl font-semibold text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
-          The IDR Advantage
+          Why Choose Us
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 3xl:gap-14">
@@ -143,6 +144,14 @@ const WhyChooseUs = () => {
             );
           })}
         </div>
+<div className="flex justify-center mt-6">
+  <Link href="/contact">
+    <button className="bg-primary text-white px-8 py-4 rounded-full font-normal text-lg md:text-xl hover:bg-primary/90 transition-colors whitespace-nowrap">
+      Schedule A Free Consultation
+    </button>
+  </Link>
+</div>
+
       </div>
     </section>
   );

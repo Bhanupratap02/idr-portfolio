@@ -108,6 +108,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/faqs"
+                  className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="#"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >

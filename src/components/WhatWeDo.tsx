@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import img from "@/assets/image2.png"; // Default image
-import img_1 from "@/assets/what_we_do/image_1.png";
+import img_1 from "@/assets/what_we_do/image_11.png";
 import img_2 from "@/assets/what_we_do/image_2.png";
 import img_3 from "@/assets/what_we_do/image_3.png";
 import img_4 from "@/assets/what_we_do/image_4.png";
@@ -46,12 +46,12 @@ const WhatWeDo = () => {
     },
     {
       title: "Sound Masking & Speaker Systems",
-      image: img_1, // You can replace with img_8 if you have it
+      image: img_8, // You can replace with img_8 if you have it
     },
   ];
 
   const currentImage =
-    hoveredIndex !== null ? services[hoveredIndex].image : img;
+    hoveredIndex !== null ? services[hoveredIndex].image : img_1;
 
   // Calculate scroll indicator position based on hovered item
   const getIndicatorPosition = () => {
