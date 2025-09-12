@@ -83,10 +83,9 @@ const menuData = {
       url: "/services/surveillance-camera",
       icon: surveillanceCamera,
     },
-      {
+    {
       name: "E-Rate Program",
       url: "/services/e-rate-program",
-
     },
   ],
   caseStudies: [
@@ -137,7 +136,7 @@ const menuData = {
       url: "/case-studies/unified-intercom-access",
     },
   ],
-  partners: [
+  spotlightManfacturers: [
     { name: "Akuvox", url: "/partners/akuvox" },
     { name: "Alphatouch", url: "/partners/alphatouch" },
     { name: "ButterflyMX", url: "/partners/butterflymx" },
@@ -170,13 +169,16 @@ const MenuGrid = ({
     <div className="max-w-7xl mx-auto h-full  px-4 md:px-6 lg:px-8 py-10 flex ">
       {/* Title aligned left */}
 
-      <Link href={rootLink} className=" flex-1   text-left  text-[#052557] text-lg mb-4 font-medium ">
+      <Link
+        href={rootLink}
+        className=" flex-1   text-left  text-[#052557] text-lg mb-4 font-medium "
+      >
         {title}
       </Link>
 
       {/* Grid of buttons */}
       <div className="flex-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 border-l p-2 pl-6">
-        {items.filter(Boolean).map((item, index) => (
+        {items?.filter(Boolean).map((item, index) => (
           <Link
             key={index}
             href={item.url}
@@ -306,7 +308,7 @@ export default function Navbar() {
             About Us
           </Link>
 
-          {["services", "case_studies", "partners"].map((key) => (
+          {["services", "caseStudies", "spotlightManfacturers"].map((key) => (
             <div key={key} ref={activeMenu === key ? menuRef : null}>
               <button
                 onClick={() => handleMenuToggle(key)}
@@ -314,10 +316,10 @@ export default function Navbar() {
               >
                 <span>
                   {key === "caseStudies"
-    ? "Case Studies"
-    : key === "spotlightManfacturers"
-    ? "Spotlight Manufacturers"
-    : key.charAt(0).toUpperCase() + key.slice(1)}
+                    ? "Case Studies"
+                    : key === "spotlightManfacturers"
+                    ? "Spotlight Manufacturers"
+                    : key.charAt(0).toUpperCase() + key.slice(1)}
                 </span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
@@ -329,11 +331,14 @@ export default function Navbar() {
               {activeMenu === key && (
                 <MenuGrid
                   items={menuData[key as keyof typeof menuData]}
-                  title={key === "caseStudies"
-    ? "Case Studies"
-    : key === "spotlightManfacturers"
-    ? "Spotlight Manufacturers"
-    : key.charAt(0).toUpperCase() + key.slice(1)}
+                  rootLink={`/${key}`}
+                  title={
+                    key === "caseStudies"
+                      ? "Case Studies"
+                      : key === "spotlightManfacturers"
+                      ? "Spotlight Manufacturers"
+                      : key.charAt(0).toUpperCase() + key.slice(1)
+                  }
                 />
               )}
             </div>
@@ -411,10 +416,10 @@ export default function Navbar() {
               >
                 <span>
                   {key === "caseStudies"
-    ? "Case Studies"
-    : key === "spotlightManfacturers"
-    ? "Spotlight Manufacturers"
-    : key.charAt(0).toUpperCase() + key.slice(1)}
+                    ? "Case Studies"
+                    : key === "spotlightManfacturers"
+                    ? "Spotlight Manufacturers"
+                    : key.charAt(0).toUpperCase() + key.slice(1)}
                 </span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -460,9 +465,9 @@ export default function Navbar() {
         }}
       />
       <MobileMenuSheet
-        items={menuData.partners}
+        items={menuData.spotlightManfacturers}
         title="Partners"
-        isOpen={mobileMenuOpen && activeMobileMenu === "partners"}
+        isOpen={mobileMenuOpen && activeMobileMenu === "spotlightManfacturers"}
         onOpenChange={(open) => {
           setMobileMenuOpen(open);
           if (!open) setActiveMobileMenu("");
