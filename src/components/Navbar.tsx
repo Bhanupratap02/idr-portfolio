@@ -154,7 +154,15 @@ const menuData = {
     { name: "ZK Teco", url: "/partners/zk-teco" },
   ],
 };
-
+// Function to convert camelCase keys to kebab-case URLs
+const getRouteUrl = (key: string) => {
+  const routeMap: { [key: string]: string } = {
+    services: "/services",
+    caseStudies: "/case-studies",
+    spotlightManfacturers: "/partners"
+  };
+  return routeMap[key] || `/${key}`;
+};
 // Desktop Mega Menu Grid
 const MenuGrid = ({
   items,
@@ -207,11 +215,13 @@ const MobileMenuSheet = ({
   title,
   isOpen,
   onOpenChange,
+  rootLink = "",
 }: {
   items: Array<{ name: string; url: string; icon?: StaticImageData }>;
   title: string;
   isOpen: boolean;
   onOpenChange: (open: boolean) => void;
+  rootLink?: string; // Optional root link for services
 }) => (
   <Sheet open={isOpen} onOpenChange={onOpenChange}>
     <SheetContent
@@ -220,8 +230,8 @@ const MobileMenuSheet = ({
       className="w-full h-full sm:w-80  z-[70]  pt-2"
     >
       <SheetHeader>
-        <SheetTitle className="text-center  text-[#052557] text-lg  ">
-          {title}
+        <SheetTitle className="text-center  text-[#052557] text-lg">
+          <Link href={rootLink}>{title}</Link>
         </SheetTitle>
       </SheetHeader>
       <div className="grid grid-cols-1 gap-3 overflow-y-auto">
@@ -331,7 +341,7 @@ export default function Navbar() {
               {activeMenu === key && (
                 <MenuGrid
                   items={menuData[key as keyof typeof menuData]}
-                  rootLink={`/${key}`}
+                  rootLink={getRouteUrl(key)}
                   title={
                     key === "caseStudies"
                       ? "Case Studies"
@@ -449,6 +459,7 @@ export default function Navbar() {
       <MobileMenuSheet
         items={menuData.services}
         title="Services"
+        rootLink={getRouteUrl("services")}
         isOpen={mobileMenuOpen && activeMobileMenu === "services"}
         onOpenChange={(open) => {
           setMobileMenuOpen(open);
@@ -458,6 +469,7 @@ export default function Navbar() {
       <MobileMenuSheet
         items={menuData.caseStudies}
         title="Case Studies"
+        rootLink={getRouteUrl("caseStudies")}
         isOpen={mobileMenuOpen && activeMobileMenu === "caseStudies"}
         onOpenChange={(open) => {
           setMobileMenuOpen(open);
@@ -467,6 +479,7 @@ export default function Navbar() {
       <MobileMenuSheet
         items={menuData.spotlightManfacturers}
         title="Partners"
+        rootLink={getRouteUrl("spotlightManfacturers")}
         isOpen={mobileMenuOpen && activeMobileMenu === "spotlightManfacturers"}
         onOpenChange={(open) => {
           setMobileMenuOpen(open);
