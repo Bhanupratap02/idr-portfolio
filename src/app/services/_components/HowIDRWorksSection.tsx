@@ -14,12 +14,12 @@ export default function HowIDRWorksSection() {
     md:w-[60%]             /* medium screens: 60% */
     lg:w-[45%]             /* large screens: 45% */
     xl:w-[40%]             /* XL screens: 40% */
-    2xl:w-[45%]            /* 2XL: 35% */
-    3xl:w-[40%]            /* 3XL: 30% */
+    2xl:w-[40%]            /* 2XL: 35% */
+    3xl:w-[30%]            /* 3XL: 30% */
     h-[300px] sm:h-[400px] md:h-[500px] lg:h-[565px] 2xl:h-[585px]
      3xl:h-[700px] 
     mt-0 lg:mt-[55px]
-    mb-5
+    mb-2 md:mb-4 lg:mb-6 xl:mb-10 2xl:mb-14
   "
         >
           <Image

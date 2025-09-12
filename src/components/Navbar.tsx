@@ -327,7 +327,7 @@ export default function Navbar() {
               {activeMenu === key && (
                 <MenuGrid
                   items={menuData[key as keyof typeof menuData]}
-                  rootLink={key}
+                  rootLink={`/${key}`}
                   title={
                     key === "case_studies"
                       ? "Case Studies"
