@@ -51,6 +51,7 @@
   /* ✅ NEW — Custom primary palette (example shades) */
   --color-primary: #052557;
   --color-secondary: ##202020;
+  --color-dark-blue:#0061a8;
 }
 
 @media (prefers-color-scheme: dark) {

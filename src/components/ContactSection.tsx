@@ -170,7 +170,15 @@ const ContactSection = () => {
                     </svg>
                   </div>
                 </div>
-
+                 <div>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Query *"
+                      required
+                      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+                      rows={3}></textarea>
+                  </div>
                 <div className="pt-10 flex justify-center">
                   <button
                     type="submit"

@@ -1,25 +1,24 @@
-/** @format */
+import ServicesGrid from "@/components/services/ServicesGrid";
+import CTASection from "./_components/CTASection";
+import HeroSection from "./_components/HeroSection";
+import IDRPortalSection from "./_components/IDRPortalSection";
+import IncludedSection from "./_components/IncludedSection";
+import TrustedIndustriesSection from "./_components/TrustedIndustriesSection";
+import TrustedProductsSection from "./_components/TrustedProductsSection";
+import WhyChooseCRSection from "./_components/WhyChooseCRSection";
 
-// import AVServicesGrid from "@/components/services/audio-visual/AVServicesGrid";
-// import CTASection from "@/components/services/conference-room/CTASection";
-// import HeroSection from "@/components/services/conference-room/HeroSection";
-// import IDRPortalSection from "@/components/services/conference-room/IDRPortalSection";
-// import IncludedSection from "@/components/services/conference-room/IncludedSection";
-// import TrustedIndustriesSection from "@/components/services/conference-room/TrustedIndustriesSection";
-// import TrustedProductsSection from "@/components/services/conference-room/TrustedProductsSection";
-// import WhyChooseCRSection from "@/components/services/conference-room/WhyChooseCRSection";
 
 export default function ConferenceRoom() {
   return (
     <div className="min-h-screen bg-idr-cream">
-      {/* <HeroSection />
+      <HeroSection />
       <WhyChooseCRSection />
       <IncludedSection />
       <TrustedProductsSection />
       <IDRPortalSection />
       <TrustedIndustriesSection />
       <CTASection />
-      <AVServicesGrid /> */}
+      <ServicesGrid exclude={3} />
     </div>
   );
 }

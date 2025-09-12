@@ -10,7 +10,7 @@ const EverythingYouNeed = () => {
     <section className="relative py-12 sm:py-16 lg:py-20">
       <div className="container">
         <h1 className="text-4xl sm:text-4xl lg:text-7xl 3xl:text-[6rem] lg:max-w-[60%] 3xl:max-w-[50%] font-bold leading-tight mb-8 text-left">
-          <span className="text-[#3D3D3D]">Everything You Need in </span>
+          {/* <span className="text-[#3D3D3D]">Everything You Need in </span> The IDR Advantage */}
           <span className="text-[#052557]">One Place</span>
         </h1>
 
