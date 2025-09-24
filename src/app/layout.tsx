@@ -67,9 +67,9 @@ export default function RootLayout({
           <Navbar2 />
           <main className=" w-screen">{children}</main>
           {/* Partner Logos Bars Before Footer */}
-           <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#052557] text-center mb-12 sm:mb-12 lg:mb-16 2xl:mb-18 mt-12">
-          Our Clients
-        </h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#052557] text-center mb-12 sm:mb-12 lg:mb-16 2xl:mb-18 mt-12">
+            Our Clients
+          </h2>
           <ClientLogos
             logos={clientLogos}
             whiteTextLogos={clientLogos}

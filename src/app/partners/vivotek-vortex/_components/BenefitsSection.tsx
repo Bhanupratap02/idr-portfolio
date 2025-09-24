@@ -54,7 +54,7 @@ export default function BenefitsSection() {
       <div className="max-w-[2120px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 3xl:px-32">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16  xl:mb-18 2xl:mb-22 3xl:mb-24">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-white leadingtight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-white leading-tight">
             Why Choose Vivotek / Vortex with IDR?
           </h2>
         </div>
