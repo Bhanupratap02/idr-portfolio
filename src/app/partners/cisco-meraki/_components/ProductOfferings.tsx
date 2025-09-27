@@ -10,8 +10,7 @@ export default function ProductOfferings() {
       feature: "VLANs, PoE, port security & more.",
       icon: (
         <svg
-          width="60"
-          height="48"
+          className="w-12 h-10 sm:w-14 sm:h-12 md:w-16 md:h-13 xl:w-18 xl:h-15 2xl:w-20 2xl:h-16"
           viewBox="0 0 61 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +36,7 @@ export default function ProductOfferings() {
       feature: "Designed for warehouses, offices, apartments.",
       icon: (
         <svg
-          width="60"
-          height="48"
+          className="w-12 h-10 sm:w-14 sm:h-12 md:w-16 md:h-13 xl:w-18 xl:h-15 2xl:w-20 2xl:h-16"
           viewBox="0 0 61 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +62,7 @@ export default function ProductOfferings() {
       feature: "Point-to-point & multipoint Cisco bridges.",
       icon: (
         <svg
-          width="54"
-          height="48"
+          className="w-11 h-10 sm:w-13 sm:h-12 md:w-14 md:h-13 xl:w-16 xl:h-15 2xl:w-18 2xl:h-16"
           viewBox="0 0 55 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +88,7 @@ export default function ProductOfferings() {
       feature: "Threat protection, automated VPNs, secure control.",
       icon: (
         <svg
-          width="48"
-          height="48"
+          className="w-10 h-10 sm:w-12 sm:h-12 md:w-13 md:h-13 xl:w-15 xl:h-15 2xl:w-16 2xl:h-16"
           viewBox="0 0 49 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -112,8 +108,7 @@ export default function ProductOfferings() {
       feature: "Motion search, cloud recording, remote access.",
       icon: (
         <svg
-          width="54"
-          height="48"
+          className="w-11 h-10 sm:w-13 sm:h-12 md:w-14 md:h-13 xl:w-16 xl:h-15 2xl:w-18 2xl:h-16"
           viewBox="0 0 55 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -139,8 +134,7 @@ export default function ProductOfferings() {
       feature: "Credential use + camera footage = full audit trail.",
       icon: (
         <svg
-          width="48"
-          height="48"
+          className="w-10 h-10 sm:w-12 sm:h-12 md:w-13 md:h-13 xl:w-15 xl:h-15 2xl:w-16 2xl:h-16"
           viewBox="0 0 49 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -163,8 +157,7 @@ export default function ProductOfferings() {
 
   const checkIcon = (
     <svg
-      width="16"
-      height="16"
+      className="w-4 h-4 flex-shrink-0"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -184,42 +177,42 @@ export default function ProductOfferings() {
   );
 
   return (
-    <section className="bg-white px-4 lg:px-20 py-16">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         {/* Title */}
-        <h2 className="text-[#2E2E2E] text-4xl font-medium text-center mb-14">
+        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-center mb-10 sm:mb-12 md:mb-14  2xl:mb-18">
           Our Product Offerings
         </h2>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-7 md:gap-8 xl:gap-10 2xl:gap-12">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-xl shadow-[0_2px_4px_0_rgba(0,0,0,0.10),0_4px_6px_0_rgba(0,0,0,0.10)] overflow-hidden"
+              className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               {/* Header with Icon */}
-              <div className="bg-[#EFF6FF] p-6 flex justify-center items-center h-24">
+              <div className="bg-[#EFF6FF] p-4 sm:p-5 md:p-6 xl:p-7 2xl:p-8 flex justify-center items-center h-20 sm:h-22 md:h-24 xl:h-32 2xl:h-34">
                 <div className="flex justify-center items-center">
                   {product.icon}
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-[#2E2E2E] text-xl font-medium mb-4">
+              <div className="p-4 sm:p-5 md:p-6 xl:p-6 2xl:p-8">
+                <h3 className="text-[#2E2E2E] text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl  mb-2 mb:mb-2.5 xl:mb-3 2xl:mb-4 font-normal">
                   {product.title}
                 </h3>
-                <p className="text-[#626262] text-base leading-6 mb-4">
+                <p className="text-[#626262] text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl leading-relaxed mb-2 mb:mb-2.5 xl:mb-3 2xl:mb-4 font-light">
                   {product.description}
                 </p>
 
                 {/* Feature with check mark */}
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 sm:gap-3 xl:gap-4 2xl:gap-5">
                   <div className="flex justify-center items-center mt-1">
                     {checkIcon}
                   </div>
-                  <p className="text-[#4A90E2] text-base leading-6">
+                  <p className="text-[#4A90E2] text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl leading-relaxed font-light">
                     {product.feature}
                   </p>
                 </div>

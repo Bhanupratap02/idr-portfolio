@@ -9,8 +9,7 @@ export default function WhyCiscoMeraki() {
         "Manage your entire network from a single, intuitive interface.",
       icon: (
         <svg
-          width="30"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 30 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +28,7 @@ export default function WhyCiscoMeraki() {
       description: "Configure and troubleshoot from anywhere in the world.",
       icon: (
         <svg
-          width="27"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 27 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +53,7 @@ export default function WhyCiscoMeraki() {
       description: "Advanced threat protection and intrusion prevention.",
       icon: (
         <svg
-          width="21"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 21 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -81,8 +78,7 @@ export default function WhyCiscoMeraki() {
       description: "Simple, secure guest access with customizable portals.",
       icon: (
         <svg
-          width="30"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 30 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +104,7 @@ export default function WhyCiscoMeraki() {
         "Connect with building systems and third-party applications.",
       icon: (
         <svg
-          width="30"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 30 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -134,8 +129,7 @@ export default function WhyCiscoMeraki() {
       description: "Easily expand your network as your business needs grow.",
       icon: (
         <svg
-          width="27"
-          height="24"
+          className="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
           viewBox="0 0 27 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -157,28 +151,28 @@ export default function WhyCiscoMeraki() {
   ];
 
   return (
-    <section className="bg-[#F8F9FA] px-4 lg:px-20 py-16">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-[#F8F9FA] py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
+      <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         {/* Title */}
-        <h2 className="text-[#2E2E2E] text-4xl font-medium text-center mb-14">
+        <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-center  mb-10 sm:mb-12 md:mb-14  2xl:mb-18">
           Why Cisco / Meraki?
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6 md:gap-y-8 justify-center">
           {features.map((feature) => (
             <div key={feature.id} className="flex gap-4">
               {/* Icon */}
-              <div className="flex justify-center items-center mt-2">
+              <div className="flex justify-center items-start mt-2">
                 {feature.icon}
               </div>
 
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-[#2E2E2E] text-xl font-medium mb-2">
+                <h3 className="text-[#2E2E2E] text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl  mb-1.5 mb:mb-2 xl:mb-2.5 2xl:mb-3.5 font-normal">
                   {feature.title}
                 </h3>
-                <p className="text-[#626262] text-base leading-6">
+                <p className="text-[#626262] text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl leading-relaxed  font-light">
                   {feature.description}
                 </p>
               </div>

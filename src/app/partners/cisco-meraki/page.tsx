@@ -2,6 +2,7 @@
 
 import CertificationCards from "./_components/CertificationCards";
 import CiscoHero from "./_components/CiscoHero";
+import CTASection from "./_components/CTASection";
 import ProductOfferings from "./_components/ProductOfferings";
 import WhyCiscoMeraki from "./_components/WhyCiscoMeraki";
 
@@ -17,7 +18,7 @@ export default function VivotekVortex() {
       <CertificationCards />
       <ProductOfferings />
       <WhyCiscoMeraki />
-      {/* <CTASection /> */}
+      <CTASection />
       
   
     </div>

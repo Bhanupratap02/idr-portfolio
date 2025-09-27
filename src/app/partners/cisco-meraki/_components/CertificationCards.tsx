@@ -2,17 +2,16 @@
 
 export default function CertificationCards() {
   return (
-    <section className="bg-[#F8F9FA] px-4 lg:px-20 py-16">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="bg-[#F8F9FA] py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 xl:gap-12 2xl:gap-16">
           {/* Cisco Select Certified Partner Card */}
-          <div className="bg-white rounded-xl shadow-[0_2px_4px_0_rgba(0,0,0,0.10),0_4px_6px_0_rgba(0,0,0,0.10)] p-8">
+          <div className="bg-white rounded-xl shadow-xl p-6 sm:p-7 md:p-8 xl:p-9 2xl:p-10 hover:shadow-2xl transition-shadow duration-300">
             {/* Header with Icon */}
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex justify-center items-center">
+            <div className="flex items-center gap-3 sm:gap-4 xl:gap-5 2xl:gap-6 mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
+              <div className="flex justify-center items-center flex-shrink-0">
                 <svg
-                  width="30"
-                  height="30"
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10"
                   viewBox="0 0 30 31"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,39 +29,40 @@ export default function CertificationCards() {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-[#2E2E2E] text-2xl font-medium">
+              <h3 className="text-[#2E2E2E] text-lg sm:text-xl md:text-2xl xl:text-2xl 2xl:text-3xl font-medium">
                 Cisco Select Certified Partner
               </h3>
             </div>
 
             {/* Description */}
-            <div className="mb-6">
-              <p className="text-[#626262] text-lg leading-normal mb-1">
-                We meet Cisco's rigorous standards in service and support.
+            <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
+              <p className="text-[#626262] text-base sm:text-lg md:text-xl xl:text-xl lg:text-lg 2xl:text-2xl leading-relaxed mb-1 sm:mb-2 font-light">
+                We meet Cisco&apos;s rigorous standards in service and support.
               </p>
-              <p className="text-[#626262] text-lg leading-normal">
+              <p className="text-[#626262] text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed font-light">
                 Your network is in expert hands.
               </p>
             </div>
 
             {/* Cisco Logo */}
             <div className="flex justify-center">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2475810318877bb8ba7d23e67bf8b8eab6b23b9a?width=256"
-                alt="Cisco Partner Logo"
-                className="w-32 h-32 object-contain"
-              />
+              <div className="w-26 h-26 sm:w-28 sm:h-28 md:w-38 md:h-38 xl:w-46 xl:h-46 2xl:w-50 2xl:h-50 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/2475810318877bb8ba7d23e67bf8b8eab6b23b9a?width=256"
+                  alt="Cisco Logo"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
             </div>
           </div>
 
           {/* Full-Stack Solutions Card */}
-          <div className="bg-white rounded-xl shadow-[0_2px_4px_0_rgba(0,0,0,0.10),0_4px_6px_0_rgba(0,0,0,0.10)] p-8">
+          <div className="bg-white rounded-xl shadow-xl p-6 sm:p-7 md:p-8 xl:p-9 2xl:p-10 hover:shadow-2xl transition-shadow duration-300">
             {/* Header with Icon */}
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex justify-center items-center">
+            <div className="flex items-center gap-3 sm:gap-4 xl:gap-5 2xl:gap-6 mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
+              <div className="flex justify-center items-center flex-shrink-0">
                 <svg
-                  width="30"
-                  height="30"
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10"
                   viewBox="0 0 30 31"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,29 +74,27 @@ export default function CertificationCards() {
                   />
                 </svg>
               </div>
-              <h3 className="text-[#2E2E2E] text-2xl font-medium">
+              <h3 className="text-[#2E2E2E] text-lg sm:text-xl md:text-2xl xl:text-2xl 2xl:text-3xl font-medium">
                 Full-Stack Solutions
               </h3>
             </div>
 
             {/* Description */}
-            <div className="mb-6">
-              <p className="text-[#626262] text-lg leading-normal mb-1">
+            <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-6 2xl:mb-7">
+              <p className="text-[#626262] text-base sm:text-lg md:text-xl xl:text-xl lg:text-lg 2xl:text-2xl leading-relaxed mb-1 sm:mb-2 font-light">
                 We sell, design, install, and configure full-stack Cisco and
-              </p>
-              <p className="text-[#626262] text-lg leading-normal">
                 Meraki solutions across:
               </p>
+   
             </div>
 
             {/* Feature Pills */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 sm:gap-4 xl:gap-5 2xl:gap-6 mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
               {/* Commercial */}
-              <div className="border border-[#E5E7EB] rounded-lg p-5 flex flex-col items-center gap-1">
-                <div className="flex justify-center items-center h-6">
+              <div className="border border-[#E5E7EB] rounded-lg p-3 sm:p-4 md:p-5 xl:p-6 2xl:p-7 flex flex-col items-center gap-1 sm:gap-2 xl:gap-3 2xl:gap-4 hover:bg-gray-50 transition-colors duration-300">
+                <div className="flex justify-center items-center h-5 sm:h-6 xl:h-7 2xl:h-8">
                   <svg
-                    width="18"
-                    height="24"
+                    className="w-4 h-5 sm:w-5 sm:h-6 xl:w-6 xl:h-7 2xl:w-7 2xl:h-8"
                     viewBox="0 0 19 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,17 +115,16 @@ export default function CertificationCards() {
                     </defs>
                   </svg>
                 </div>
-                <span className="text-[#2E2E2E] text-base text-center font-normal">
+                <span className="text-[#2E2E2E] text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl text-center font-normal">
                   Commercial
                 </span>
               </div>
 
               {/* Residential */}
-              <div className="border border-[#E5E7EB] rounded-lg p-5 flex flex-col items-center gap-1">
-                <div className="flex justify-center items-center h-6">
+              <div className="border border-[#E5E7EB] rounded-lg p-3 sm:p-4 md:p-5 xl:p-6 2xl:p-7 flex flex-col items-center gap-1 sm:gap-2 xl:gap-3 2xl:gap-4 hover:bg-gray-50 transition-colors duration-300">
+                <div className="flex justify-center items-center h-5 sm:h-6 xl:h-7 2xl:h-8">
                   <svg
-                    width="27"
-                    height="24"
+                    className="w-6 h-5 sm:w-7 sm:h-6 xl:w-8 xl:h-7 2xl:w-9 2xl:h-8"
                     viewBox="0 0 28 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -148,17 +145,16 @@ export default function CertificationCards() {
                     </defs>
                   </svg>
                 </div>
-                <span className="text-[#2E2E2E] text-base text-center font-normal">
+                <span className="text-[#2E2E2E] text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl text-center font-normal">
                   Residential
                 </span>
               </div>
 
               {/* Multi-site */}
-              <div className="border border-[#E5E7EB] rounded-lg p-5 flex flex-col items-center gap-1">
-                <div className="flex justify-center items-center h-6">
+              <div className="border border-[#E5E7EB] rounded-lg p-3 sm:p-4 md:p-5 xl:p-6 2xl:p-7 flex flex-col items-center gap-1 sm:gap-2 xl:gap-3 2xl:gap-4 hover:bg-gray-50 transition-colors duration-300">
+                <div className="flex justify-center items-center h-5 sm:h-6 xl:h-7 2xl:h-8">
                   <svg
-                    width="30"
-                    height="24"
+                    className="w-6 h-5 sm:w-7 sm:h-6 xl:w-8 xl:h-7 2xl:w-9 2xl:h-8"
                     viewBox="0 0 31 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -179,18 +175,17 @@ export default function CertificationCards() {
                     </defs>
                   </svg>
                 </div>
-                <span className="text-[#2E2E2E] text-base text-center font-normal">
+                <span className="text-[#2E2E2E] text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl text-center font-normal">
                   Multi-site
                 </span>
               </div>
             </div>
 
             {/* Check mark with text */}
-            <div className="flex items-start gap-6">
-              <div className="flex justify-center items-center mt-1">
+            <div className="flex items-start gap-4 sm:gap-5 md:gap-6 xl:gap-7 2xl:gap-8">
+              <div className="flex justify-center items-center mt-1 flex-shrink-0">
                 <svg
-                  width="16"
-                  height="18"
+                  className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7"
                   viewBox="0 0 16 19"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -209,10 +204,8 @@ export default function CertificationCards() {
                 </svg>
               </div>
               <div>
-                <p className="text-[#626262] text-lg leading-normal mb-1">
-                  Whether it's a new secure network or upgrading legacy
-                </p>
-                <p className="text-[#626262] text-lg leading-normal">
+                <p className="text-[#626262] text-base sm:text-lg md:text-xl xl:text-xl lg:text-lg 2xl:text-2xl leading-relaxed mb-1 sm:mb-2 font-light">
+                  Whether it&apos;s a new secure network or upgrading legacy
                   systems — we ensure smooth delivery.
                 </p>
               </div>
