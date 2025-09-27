@@ -15,7 +15,7 @@ export default function AkuvoxHeroSection() {
             </h1>
 
             <div className="flex flex-col gap-2 sm:gap-3 2xl:gap-4 3xl:gap-5">
-              <p className=" text-base sm:text-lg md:text-xl lg:text-lg  xl:text-xl 2xl:text-2xl text-gray-600 font-light leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-lg  xl:text-xl 2xl:text-2xl text-gray-600 font-light leading-relaxed">
                 Smart Video Intercoms, Touchless Entry, and Cloud Connectivity |
                 Installed by IDR Technology Solutions
               </p>

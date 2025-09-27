@@ -31,6 +31,7 @@ const partnersData = [
     title: "Alphatouch",
     description:
       "AlphaTouch offers sleek, intuitive IP video intercom systems built for multi-family, commercial, and mixed-use properties. But what really sets them apart?........",
+    url: "/partners/alphatouch",
   },
   {
     id: "akuvox",
@@ -44,6 +45,7 @@ const partnersData = [
     title: "Akuvox",
     description:
       "Akuvox is a global leader in SIP-based intercom and access control solutions, offering beautifully designed devices powered by advanced features like facial recognition, QR entry, voice.......",
+    url: "/partners/akuvox",
   },
   {
     id: "butterflymx",
@@ -57,6 +59,7 @@ const partnersData = [
     title: "ButterflyMX",
     description:
       "ButterflyMX is the leading cloud-based video intercom system for apartment buildings, gated communities, and commercial properties. It offers secure, app-based entry for residents, staff.....",
+    url: "/partners/butterflymx",
   },
   {
     id: "cisco",
@@ -70,6 +73,7 @@ const partnersData = [
     title: "Cisco / Meraki",
     description:
       "At IDR, we're proud to be your trusted partner for Cisco and Meraki systems — delivering powerful cloud-managed infrastructure and reliable hardware you can count on.........",
+    url: "/partners/cisco-meraki",
   },
   {
     id: "eagle-eye",
@@ -83,6 +87,7 @@ const partnersData = [
     title: "Eagle Eye",
     description:
       "At IDR, we love Eagle Eye Networks because they make video surveillance smarter without locking you into proprietary hardware. Their system is truly camera agnostic — meaning......",
+    url: "/partners/eagle-eye",
   },
   {
     id: "kisi",
@@ -90,6 +95,7 @@ const partnersData = [
     title: "Kisi",
     description:
       "IDR is a Platinum Kisi Partner and one of Kisi's preferred installation partners in New York State. Trusted by Kisi to handle complex and high-value deployments, we've earned our........",
+    url: "/partners/kisi",
   },
   {
     id: "lencore",
@@ -103,6 +109,7 @@ const partnersData = [
     title: "Lencore",
     description:
       "At IDR Technology Solutions, we specialize in deploying Lencore's cutting-edge sound masking and audio solutions for offices, healthcare, education, and secure government.......",
+    url: "/partners/lencore",
   },
   {
     id: "mvi",
@@ -112,6 +119,7 @@ const partnersData = [
     title: "MVI",
     description:
       "At IDR Technology Solutions, we specialize in deploying Lencore's cutting-edge sound masking and audio solutions for offices, healthcare, education, and secure government.......",
+    url: "/partners/mvi",
   },
   {
     id: "rhombus",
@@ -125,6 +133,7 @@ const partnersData = [
     title: "Rhombus",
     description:
       "Rhombus provides smarter physical security on a truly open cloud-managed platform to help you streamline operations and maximize safety at scale.......",
+    url: "/partners/rhombus",
   },
   {
     id: "speco",
@@ -138,6 +147,7 @@ const partnersData = [
     title: "Speco Technologies",
     description:
       "Speco Technologies is committed to improving surveillance, access control, and audio technology through innovation, exceptional customer service, and high-quality products.......",
+    url: "/partners/speco-technologies",
   },
   {
     id: "teleportivity",
@@ -151,20 +161,31 @@ const partnersData = [
     title: "Teleportivity",
     description:
       "Teleportivity lets you modernize your building's entry experience with cloud-connected touchscreens, QR codes, live video assistance, and smart integrations — all without needing.......",
+    url: "/partners/teleportivity",
   },
   {
     id: "verkada",
-    logo: <Image src={verkada} alt="Verkada" className="w-full h-full object-contain" />,
+    logo: (
+      <Image
+        src={verkada}
+        alt="Verkada"
+        className="w-full h-full object-contain"
+      />
+    ),
     title: "Verkada",
     description:
       "Verkada is changing the game in physical security with a cloud-first approach that combines video surveillance, access control, environmental sensors, intercoms.......",
+    url: "/partners/verkada",
   },
   {
     id: "vicon",
-    logo: <Image src={vicon} alt="Vicon" className="w-full h-full object-contain" />,
+    logo: (
+      <Image src={vicon} alt="Vicon" className="w-full h-full object-contain" />
+    ),
     title: "Vicon",
     description:
       "IDR is a certified installer of both Vicon and VAX, delivering fully integrated video surveillance and access control systems for commercial buildings, schools, and residential.......",
+    url: "/partners/vicon",
   },
   {
     id: "vivotek",
@@ -178,38 +199,44 @@ const partnersData = [
     title: "Vivotek / Vortex",
     description:
       "Sustainability is all about keeping an eye on our world. At VIVOTEK, it means continuous attention and care. By paying attention all the time, we can detect problems early and activate.......",
+    url: "/partners/vivotek-vortex",
   },
   {
     id: "zkteco",
-    logo: <Image src={zkteco} alt="ZKTeco" className="w-full h-full object-contain" />,
+    logo: (
+      <Image
+        src={zkteco}
+        alt="ZKTeco"
+        className="w-full h-full object-contain"
+      />
+    ),
     title: "ZKTeco",
     description:
       "ZKTeco delivers high-performance access control systems with an emphasis on biometric security, mobile access, and versatile reader configurations. From standalone........",
+    url: "/partners/zk-teco",
   },
 ];
 
 export default function PartnersGrid() {
   return (
-    <section className="py-16 sm:py-20 lg:py-32 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 lg:mb-24">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 leading-[56px]">
+    <section className="py-12 sm:py-14 md:py-16 xl:py-20 2xl:py-22 3xl:py-26 bg-white">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 md:px-16 lg:px-12 xl:px-20 2xl:px-28 ">
+        <div className="text-center mb-8 sm:mb-10 md:mb-14 xl:mb-16 2xl:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-900 leading-tight">
             Our best tech is for you
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 lg:gap-12 xl:gap-14 2xl:gap-16">
           {partnersData.map((partner) => (
-            <div key={partner.id}>
-              <PartnerCard
-                logo={partner.logo}
-                title={partner.title}
-                description={partner.description}
-                onReadMore={() =>
-                  console.log(`Read more about ${partner.title}`)
-                }
-              />
-            </div>
+            <PartnerCard
+              key={partner.id}
+              logo={partner.logo}
+              title={partner.title}
+              description={partner.description}
+              url={partner.url}
+            />
           ))}
         </div>
       </div>
