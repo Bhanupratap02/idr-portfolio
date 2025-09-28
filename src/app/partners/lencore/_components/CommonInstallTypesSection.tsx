@@ -1,61 +1,62 @@
 /** @format */
-
+import Image from "next/image";
+import install1 from "@/assets/partners/lencore/install1.png";
+import install2 from "@/assets/partners/lencore/install2.png";
+import install3 from "@/assets/partners/lencore/install3.png";
+import install4 from "@/assets/partners/lencore/install4.png";
+import install5 from "@/assets/partners/lencore/install5.png";
 export default function CommonInstallTypesSection() {
   const installTypes = [
     {
       title: "Law Offices & Financial Institutions",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/8d08f0e044fff15ea554a471314944b4c6f37922?width=683",
+      image: install1,
     },
     {
       title: "Hospitals & Healthcare Facilities",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/23d1ac585958d7a573890898219dfbc99a2fce1a?width=683",
+      image: install2,
     },
     {
       title: "Call Centers & Tech Hubs",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/8a7ddf5790e3530b60f1ef5cc9f957600a10075c?width=683",
+      image: install3,
     },
     {
       title: "Government & Military Sites",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/e95967de850a947df7ea037b864e7ab724f39600?width=683",
+      image: install4,
     },
     {
       title: "Education & Testing Centers",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/56f0d3bde41997de6c701f0db3a617ecbc391492?width=683",
+      image: install5,
     },
   ];
 
   return (
-    <section className="w-full py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-7">
+    <section className="w-full py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28 bg-gray-50">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         {/* Section Title */}
-        <h2 className="text-4xl font-medium text-center text-gray-800 mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-center text-gray-800 mb-10 sm:mb-12 md:mb-16 xl:mb-20 2xl:mb-24">
           Common Install Types
         </h2>
 
         {/* Install Types Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8 xl:gap-10 2xl:gap-12">
           {installTypes.map((type, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 p-4 sm:p-5 md:p-6 xl:p-7 2xl:p-8 group hover:transform hover:scale-105"
             >
               {/* Image */}
-              <div className="aspect-video overflow-hidden">
-                <img
+              <div className="aspect-video overflow-hidden mb-3 sm:mb-4 md:mb-5 xl:mb-6 2xl:mb-7 rounded-lg">
+                <Image
                   src={type.image}
-                  alt={type.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  alt={`${type.title} - Lencore sound masking installation example`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  quality={90}
                 />
               </div>
 
               {/* Title */}
-              <div className="p-6">
-                <h3 className="text-lg font-medium text-gray-800 text-center">
+              <div className="px-1 sm:px-2">
+                <h3 className="text-base  md:text-lg xl:text-xl 2xl:text-2xl font-medium text-gray-800 text-left leading-tight">
                   {type.title}
                 </h3>
               </div>

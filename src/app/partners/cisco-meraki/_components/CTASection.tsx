@@ -16,10 +16,10 @@ export default function CTASection() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+        <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
           <Link
             href="tel:"
-            className="flex items-center gap-2 bg-white text-blue-600  px-6 sm:px-8 py-3 rounded-lg shadow hover:bg-blue-50 transition-colors duration-200 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light "
+            className="flex items-center gap-2 bg-white text-blue-600  px-6 sm:px-8 py-3 rounded-lg shadow hover:bg-blue-50 transition-colors duration-200 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light w-full sm:w-auto justify-center"
           >
             <Phone className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 fill-blue-600 text-white" />
             Call Now
@@ -27,7 +27,7 @@ export default function CTASection() {
 
           <Link
             href="/contact"
-            className="flex items-center gap-2 border border-white px-6 sm:px-8 py-3 rounded-lg  hover:bg-white hover:text-blue-600 transition-colors duration-200 font-light text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl"
+            className="flex items-center gap-2 border border-white px-6 sm:px-8 py-3 rounded-lg  hover:bg-white hover:text-blue-600 transition-colors duration-200 font-light text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl w-full sm:w-auto justify-center"
           >
             <ClipboardList className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 text-blue-600  fill-white" />
             Submit a Quick Form
