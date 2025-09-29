@@ -82,7 +82,7 @@ export default function WhyChooseLencoreSection() {
             return (
               <div
                 key={index}
-                className="bg-gray-50 rounded-xl p-6 sm:p-7 md:p-8 xl:p-9 2xl:p-10 hover:bg-gray-100 hover:shadow-md transition-all duration-300 group"
+                className="bg-gray-50 rounded-xl p-6 sm:p-7 md:p-8 xl:p-9 2xl:p-12 hover:bg-gray-100 hover:shadow-md transition-all duration-300 group"
               >
                 {/* Icon */}
                 <div
@@ -99,7 +99,7 @@ export default function WhyChooseLencoreSection() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm  md:text-base xl:text-lg 2xl:text-2xl text-gray-600 leading-relaxed font-light">
+                <p className="text-sm  md:text-base xl:text-lg 2xl:text-xl text-gray-600 leading-relaxed font-light">
                   {feature.description}
                 </p>
               </div>
