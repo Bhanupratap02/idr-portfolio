@@ -11,7 +11,7 @@ import TeleportivityUseCases from "./_components/TeleportivityUseCases";
 
 export default function TeleportivityPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white [font-family:'Inter',Helvetica]">
       <TeleportivityHero />
       <TeleportivityFeatures />
       <TeleportivityCapabilities />
