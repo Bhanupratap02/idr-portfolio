@@ -142,6 +142,7 @@ const menuData = {
     { name: "Vicon", url: "/partners/vicon" },
     { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
     { name: "ZK Teco", url: "/partners/zk-teco" },
+    { name: "Brivo", url: "/partners/brivo" },
   ],
 };
 // Function to convert camelCase keys to kebab-case URLs

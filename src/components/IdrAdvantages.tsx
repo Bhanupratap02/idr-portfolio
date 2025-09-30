@@ -2,7 +2,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CheckCircle, Shield, ClipboardList, Users } from "lucide-react";
-import img1 from "@/assets/case_study_1.png";
+import img1 from "@/assets/idr-advantage/Consultation.jpeg";
+import img2 from "@/assets/idr-advantage/Certified.jpeg";
+import img3 from "@/assets/idr-advantage/camera.jpeg";
+import logo from "@/assets/idr-advantage/High Res IDR Logo w Swoosh only red.png";
 
 export default function IdrAdvantage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +29,7 @@ export default function IdrAdvantage() {
   const advantages = [
     {
       title: "Consultation & Design",
-      description: "Solutions tailored to your unique environment and goals.",
+      description: "Tailored security and technology plans built for your environment, goals, and budget.",
       image: img1,
       icon: CheckCircle,
       button: true,
@@ -35,16 +38,16 @@ export default function IdrAdvantage() {
     {
       title: "Certified Installation",
       description:
-        "Clean, documented installs by manufacturer-certified technicians.",
-      image: img1,
+        "Clean, documented installs by manufacturer-certified technicians with no shortcuts.",
+      image: img2,
       icon: Shield,
       button: true,
       delay: 100,
     },
     {
-      title: "Project Management",
-      description: "Dedicated PM ensures smooth, on-time, and stress-free delivery.",
-      image: img1,
+      title: "Camera Monitoring",
+      description: "24/7 proactive monitoring with human review, system alerts, and rapid response when it matters most.",
+      image: img3,
       icon: ClipboardList,
       button: true,
       delay: 200,
@@ -52,7 +55,7 @@ export default function IdrAdvantage() {
     {
       title: "Ongoing Partnership",
       description:
-        "Proactive service, system health checks, and optional 24/7 camera monitoring with human review.",
+        "Dedicated support, annual system health checks, and a long-term partner you can count on.",
       image: img1,
       icon: Users,
       button: true,
@@ -72,9 +75,18 @@ export default function IdrAdvantage() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-center bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-            The <span className="text-red-700">IDR</span> Advantage
-          </h2>
+<h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-center bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+  The{/* ← NO space here */}
+  <Image
+    src={logo}
+    alt="IDR Logo"
+    height={80}
+    className="h-[1.2em] w-auto align-middle inline-block"
+  />{/* ← NO space here */}
+  Advantage
+</h2>
+
+
           <p className="mt-4 md:mt-6 text-slate-300 text-base md:text-xl leading-relaxed text-center max-w-4xl mx-auto">
             Premium service isn&apos;t just about technology — it&apos;s about the
             partnership, process, and protection that only IDR delivers.
