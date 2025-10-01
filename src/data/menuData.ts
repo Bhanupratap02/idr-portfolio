@@ -264,6 +264,7 @@ export const MENU_SECTIONS: MenuSection[] = [
       { name: "Vicon", url: "/partners/vicon" },
       { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
       { name: "ZK Teco", url: "/partners/zk-teco" },
+      { name: "Brivo", url: "/partners/brivo" },
     ],
   },
 ];
