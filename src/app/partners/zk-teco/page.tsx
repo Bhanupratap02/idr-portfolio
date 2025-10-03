@@ -216,7 +216,7 @@ export default function Index() {
 
           <div className="text-center">
             <p className="text-lg sm:text-xl lg:text-2xl italic font-medium text-white leading-[150%] max-w-[1118px] mx-auto px-4">
-              "We design ZKTeco systems to do more than unlock doors — they simplify operations and improve security."
+              &quot;We design ZKTeco systems to do more than unlock doors — they simplify operations and improve security.&quot;
             </p>
           </div>
         </div>
@@ -441,13 +441,13 @@ export default function Index() {
           <div className="text-center max-w-[896px] mx-auto">
             <div className="mb-12">
               <h2 className="text-4xl font-semibold text-zkteco-text-dark mb-3 leading-[111%]">
-                Let's Talk Access Control
+                Let&apos;s Talk Access Control
               </h2>
               <p className="text-xl text-zkteco-text-gray mb-4 leading-[140%]">
                 Ready to upgrade your entry experience?
               </p>
               <p className="text-lg text-zkteco-text-gray leading-[150%]">
-                Need fingerprint or facial recognition-based entry? We'll build the right system for your space, workflow, and budget.
+                Need fingerprint or facial recognition-based entry? We&apos;ll build the right system for your space, workflow, and budget.
               </p>
             </div>
 

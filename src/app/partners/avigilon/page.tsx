@@ -1,0 +1,26 @@
+import { HeroSection } from "./_components/HeroSection";
+import { TrustSection } from "./_components/TrustSection";
+import { WhyChooseSection } from "./_components/WhyChooseSection";
+import { ScenesSection } from "./_components/ScenesSection";
+import { SecurityFeaturesSection } from "./_components/SecurityFeaturesSection";
+import { ApplicationsSection } from "./_components/ApplicationsSection";
+import { PricingSection } from "./_components/PricingSection";
+import { IntegrationsSection } from "./_components/IntegrationsSection";
+import { CTASection } from "./_components/CTASection";
+// import { PartnersCarousel } from "./components/PartnersCarousel";
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-white">
+      <HeroSection />
+      <TrustSection />
+      <WhyChooseSection />
+      <ScenesSection />
+      <SecurityFeaturesSection />
+      <ApplicationsSection />
+      <PricingSection />
+      <IntegrationsSection />
+      <CTASection />
+    </div>
+  );
+}

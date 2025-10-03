@@ -221,7 +221,7 @@ export default function Index() {
               </div>
               <div className="bg-gray-100 rounded-lg p-6 border-l-4 border-blue-600">
                 <blockquote className="text-lg text-rhombus-text-dark mb-4">
-                  "We don't just install Rhombus — we help you unlock its full potential."
+                  &quot;We don&apos;t just install Rhombus — we help you unlock its full potential.&quot;
                 </blockquote>
                 <cite className="text-base font-medium text-rhombus-text-dark">— IDR Technology Solutions Team</cite>
               </div>
@@ -497,7 +497,7 @@ export default function Index() {
                   Smarter Surveillance Starts Here
                 </h2>
                 <p className="text-xl leading-7 mb-8">
-                  Upgrade to a cloud-native solution that's scalable, intelligent, and secure. Let IDR help you design a system tailored to your space and team.
+                  Upgrade to a cloud-native solution that&apos;s scalable, intelligent, and secure. Let IDR help you design a system tailored to your space and team.
                 </p>
                 <div className="flex gap-4">
                   <button className="bg-white text-blue-600 font-medium px-6 py-3 rounded-md hover:bg-gray-100 transition-colors">

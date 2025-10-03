@@ -259,11 +259,12 @@ export const MENU_SECTIONS: MenuSection[] = [
       { name: "MVI", url: "/partners/mvi" },
       { name: "Rhombus", url: "/partners/rhombus" },
       { name: "Speco Technologies", url: "/partners/speco-technologies" },
-      { name: "Teleportivity", url: "/partners/teleportivity" },
+      { name: "Avigilon", url: "/partners/avigilon" },
       { name: "Verkada", url: "/partners/verkada" },
       { name: "Vicon", url: "/partners/vicon" },
       { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
       { name: "ZK Teco", url: "/partners/zk-teco" },
+       { name: "Brivo", url: "/partners/brivo" },
     ],
   },
 ];

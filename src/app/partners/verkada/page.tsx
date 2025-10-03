@@ -399,7 +399,7 @@ export default function Index() {
               No IT Headaches, Just Peace of Mind
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 font-light">
-              Verkada's cloud-first approach eliminates traditional security system complexity.
+              Verkada&apos;s cloud-first approach eliminates traditional security system complexity.
             </p>
           </div>
 
