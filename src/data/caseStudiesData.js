@@ -6,6 +6,133 @@ import case_study_5 from "../assets/case_study/case-study-5.png";
 import case_study_6 from "../assets/case_study/case-study-6.png";
 import case_study from "../assets/case_study/case-study.png";
 
+import Cloud_case_study_1 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-117.jpg";
+import Cloud_case_study_2 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-124.jpg";
+import Cloud_case_study_3 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-135.jpg";
+
+import Audio_case_study_1 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-51.jpg";
+import Audio_case_study_2 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-64.jpg";
+import Audio_case_study_3 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-71.jpg";
+import Audio_case_study_4 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-75.jpg";
+import Audio_case_study_5 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-88.jpg";
+import Audio_case_study_6 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-92.jpg";
+import Audio_case_study_7 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-96.jpg";
+
+import wifi_case_study_1 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-173.jpg";
+import wifi_case_study_2 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-185.jpg";
+import wifi_case_study_3 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-194.jpg";
+import wifi_case_study_4 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-196.jpg";
+import wifi_case_study_5 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-197.jpg";
+import wifi_case_study_6 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-201.jpg";
+import wifi_case_study_7 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-205.jpg";
+import wifi_case_study_8 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-208.jpg";
+import wifi_case_study_9 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-239.jpg";
+import wifi_case_study_10 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-247.jpg";
+
+
+import intercom_case_study_1 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-101.jpg";
+import intercom_case_study_2 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-116.jpg";
+import intercom_case_study_3 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-117.jpg";
+import intercom_case_study_4 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-124.jpg";
+import intercom_case_study_5 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-136.jpg";
+import intercom_case_study_6 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-140.jpg";
+import intercom_case_study_7 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-151.jpg";
+
+
+//security 
+import Eliminating_case_study_1 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-173.jpg";
+import Eliminating_case_study_2 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-185.jpg";
+import Eliminating_case_study_3 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-187.jpg";  
+import Eliminating_case_study_4 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-196.jpg";
+import Eliminating_case_study_5 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-198.jpg";
+import Eliminating_case_study_6 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-199.jpg";
+import Eliminating_case_study_7 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-201.jpg";
+import Eliminating_case_study_8 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-210.jpg";
+import Eliminating_case_study_9 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-212.jpg";
+import Eliminating_case_study_10 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-218.jpg";
+import Eliminating_case_study_11 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-218.jpg";
+import Eliminating_case_study_12 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-229.jpg";
+import Eliminating_case_study_13 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-238.jpg";
+
+//scaling
+import Scaling_case_study_1 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00812.jpg";
+import Scaling_case_study_2 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00862.jpg";
+import Scaling_case_study_3 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00924.jpg";
+import Scaling_case_study_4 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00954.jpg";
+import Scaling_case_study_5 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00977.jpg";
+import Scaling_case_study_6 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00993.jpg";
+import Scaling_case_study_7 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01043.jpg";
+import Scaling_case_study_8 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01055.jpg";
+import Scaling_case_study_9 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01063.jpg";
+import Scaling_case_study_10 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01127.jpg";
+import Scaling_case_study_11 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01177.jpg";
+import Scaling_case_study_12 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01202.jpg";
+import Scaling_case_study_13 from "../assets/case_study/Scaling Security with Fairstead Photos/Sable Palms LPR camera.jpg";
+import Scaling_case_study_14 from "../assets/case_study/Scaling Security with Fairstead Photos/Sable Palms Multi Sensor Camera.jpg";
+
+//training
+import Training_case_study_1 from "../assets/case_study/Smarter Training Room/MTF Monitors.png";
+import Training_case_study_2 from "../assets/case_study/Smarter Training Room/MTF Podium.png";
+import Training_case_study_3 from "../assets/case_study/Smarter Training Room/MTF Training Room  2 TVs left.jpeg";
+import Training_case_study_4 from "../assets/case_study/Smarter Training Room/MTF Training Room - 2 TVs right.jpg";
+import Training_case_study_5 from "../assets/case_study/Smarter Training Room/MTF Training Room - AV Rack.png";
+import Training_case_study_6 from "../assets/case_study/Smarter Training Room/MTF Training Room - A_V Rack 2.jpg";
+import Training_case_study_7 from "../assets/case_study/Smarter Training Room/MTF Training Room - Ceiling Mic.jpeg";
+import Training_case_study_8 from "../assets/case_study/Smarter Training Room/MTF Training Room 1.jpeg";
+import Training_case_study_9 from "../assets/case_study/Smarter Training Room/MTF Training Room Canera.jpeg";
+import Training_case_study_10 from "../assets/case_study/Smarter Training Room/MTF Training Room Fanning Kit after carpet.jpeg";
+import Training_case_study_11 from "../assets/case_study/Smarter Training Room/MTF Training Room Fanning Kit before carpet.jpeg";
+
+
+//Enterprise
+import Enterprise_case_study_1 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/B7_Rear_Wires_Managed_Right_Side.jpg";
+import Enterprise_case_study_2 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Nutanix.jpg";
+import Enterprise_case_study_3 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Palo Racks.png";
+import Enterprise_case_study_4 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Rack_Overall_2.jpg";
+
+//failed 
+import Failed_case_study_1 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7906.jpeg";
+import Failed_case_study_2 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7907.jpeg";
+import Failed_case_study_3 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7940.jpeg";
+import Failed_case_study_4 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7941.jpeg";
+import Failed_case_study_5 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7942.jpeg";
+import Failed_case_study_6 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7946.jpeg";
+
+//PPA
+import PPA_case_study_1 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-51.jpg";
+import PPA_case_study_2 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-56.jpg";
+import PPA_case_study_3 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-67.jpg";
+import PPA_case_study_4 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-69.jpg";
+import PPA_case_study_5 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-73.jpg";
+import PPA_case_study_6 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-77.jpg";
+import PPA_case_study_7 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-81.jpg";
+import PPA_case_study_8 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-89.jpg";
+import PPA_case_study_9 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-90.jpg";
+import PPA_case_study_10 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-92.jpg";
+
+
+//Louderhill
+import Louderhill_case_study_1 from "../assets/case_study/Securing Lauderhill Point/180-degree camera.jpg";
+import Louderhill_case_study_2 from "../assets/case_study/Securing Lauderhill Point/Bridge 2.jpg";
+import Louderhill_case_study_3 from "../assets/case_study/Securing Lauderhill Point/Camera and Speaker 2.jpg";
+import Louderhill_case_study_4 from "../assets/case_study/Securing Lauderhill Point/Cameras and Bridge.jpg";
+import Louderhill_case_study_5 from "../assets/case_study/Securing Lauderhill Point/Defigo Intercom for Vehicle Gate.jpg";
+import Louderhill_case_study_6 from "../assets/case_study/Securing Lauderhill Point/LPR on pole different angle.jpg";
+import Louderhill_case_study_7 from "../assets/case_study/Securing Lauderhill Point/LPR2 on Pole 2.jpg";
+import Louderhill_case_study_8 from "../assets/case_study/Securing Lauderhill Point/Lauderhill Bridges 6.jpg";
+import Louderhill_case_study_9 from "../assets/case_study/Securing Lauderhill Point/Lauderhill Wireless Bridge.jpg";
+import Louderhill_case_study_10 from "../assets/case_study/Securing Lauderhill Point/Lauderhill_Bridges 4.jpg";
+import Louderhill_case_study_11 from "../assets/case_study/Securing Lauderhill Point/Long Range Reader and LPR for Vehicle Gate.jpg";
+import Louderhill_case_study_12 from "../assets/case_study/Securing Lauderhill Point/Vicon Long Range Reader for Vehicle Gate.jpg";
+import Louderhill_case_study_13 from "../assets/case_study/Securing Lauderhill Point/Vicon Reader for Pedestrian Gate.jpg";
+  
+
+
+//Kisi Elevator 
+
+
+
+
 export const caseStudiesData = [
   {
     slug: "burns-partnership",

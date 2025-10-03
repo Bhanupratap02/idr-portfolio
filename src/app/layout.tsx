@@ -44,6 +44,7 @@ import settlementhe_lovett_group from "@/assets/client_logos/the-lovett-group-1.
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
 
 const footerPartnerImages = [
   partner8,
@@ -63,12 +64,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="overflow-x-hidden">
         <div className="min-h-screen bg-[#FFFFF]">
-          <Navbar />
+          <Navbar2 />
           <main className=" w-screen">{children}</main>
           {/* Partner Logos Bars Before Footer */}
-           <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#052557] text-center mb-12 sm:mb-12 lg:mb-16 2xl:mb-18 mt-12">
-          Our Clients
-        </h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#052557] text-center mb-12 sm:mb-12 lg:mb-16 2xl:mb-18 mt-12">
+            Our Clients
+          </h2>
           <ClientLogos
             logos={clientLogos}
             whiteTextLogos={clientLogos}

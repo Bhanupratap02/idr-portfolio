@@ -174,7 +174,7 @@ const ContactSection = () => {
                     <textarea
                       name="message"
                       id="message"
-                      placeholder="Query *"
+                      placeholder="How can we help? *"
                       required
                       className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
                       rows={3}></textarea>

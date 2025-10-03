@@ -2,12 +2,10 @@
 
 
 import Hero from "@/components/Hero";
-import EverythingYouNeed from "@/components/EverythingYouNeed";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
-import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import PartnerLogos  from "@/components/PartnerLogos";
 import partner1 from "@/assets/partners/partner_1.png";
@@ -26,6 +24,7 @@ import client13 from "@/assets/clients/client_13.png";
 import client14 from "@/assets/partners/partner_15.png";
 import Finance from "@/components/Finance";
 import IdrAdvantage from "@/components/IdrAdvantages";
+
 
 
 const topPartnerImages = [
@@ -76,6 +75,7 @@ export default function Index() {
       {/* <EverythingYouNeed /> */}
 
       <IdrAdvantage />
+
 
       {/* What We Do Section */}
       <WhatWeDo />

@@ -24,17 +24,7 @@ import intercom from "@/assets/icons/intercom.png";
 import securityAlarm from "@/assets/icons/security_alarm.png";
 import structuredCabling from "@/assets/icons/structured_cabling.png";
 import surveillanceCamera from "@/assets/icons/surveillance_camera.png";
-const serviceIcons = [
-  accessControl,
-  audioVisual,
-  conferenceRoom,
-  dataCenter,
-  networks,
-  intercom,
-  securityAlarm,
-  structuredCabling,
-  surveillanceCamera,
-];
+
 // Menu data
 const menuData = {
   services: [
@@ -152,6 +142,7 @@ const menuData = {
     { name: "Vicon", url: "/partners/vicon" },
     { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
     { name: "ZK Teco", url: "/partners/zk-teco" },
+    { name: "Brivo", url: "/partners/brivo" },
   ],
 };
 // Function to convert camelCase keys to kebab-case URLs
@@ -275,6 +266,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMobileMenu, setActiveMobileMenu] = useState<string>("");
   const menuRef = useRef<HTMLDivElement>(null);
+  
   const handleMobileMenuClick = (menuType: string) => {
     setActiveMobileMenu(menuType);
     setMobileMenuOpen(true);
