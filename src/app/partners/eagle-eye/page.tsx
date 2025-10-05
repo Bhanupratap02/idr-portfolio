@@ -73,12 +73,13 @@ export default function Index() {
             <p>
               As a certified Eagle Eye partner and experienced integrator, IDR is here to help you take full advantage of this flexible, cloud-first platform.
             </p>
+            <p>Eagle Eye integrates with many access control panels including Brivo</p>
           </div>
         </div>
       </section>
 
       {/* Why Eagle Eye Networks? - Feature Cards */}
-      <section className="px-4 py-16 lg:px-16 xl:px-28 bg-eagle-gray-50">
+      <section className="px-4 py-16 lg:px-16 xl:px-28 bg-[#F9FAFB]">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-medium text-eagle-gray-800 text-center mb-16">
             Why Eagle Eye Networks?
@@ -239,7 +240,7 @@ export default function Index() {
       </section>
 
       {/* Where Eagle Eye Excels */}
-      <section className="px-4 py-16 lg:px-16 xl:px-28 bg-eagle-gray-50">
+      <section className="px-4 py-16 lg:px-16 xl:px-28 bg-[#F9FAFB]">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-medium text-eagle-gray-800 text-center mb-16">
             Where Eagle Eye Excels

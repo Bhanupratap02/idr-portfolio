@@ -21,7 +21,7 @@ const integrations = [
   },
   {
     icon: <Building className="w-8 h-6 text-green-600" />,
-    title: "Building Automation",
+    title: "Visitor management systems such as Envoy, Eden and others",
     description:
       "Integrate with lighting, HVAC, and other building systems for smart facilities",
     bgColor: "bg-green-100"

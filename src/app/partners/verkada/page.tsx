@@ -1,4 +1,7 @@
 import { Video, Cloud, Smartphone, Users, Lock, Bell, CheckCircle2, Truck, HandHeart, Headphones, Zap, Globe, Monitor, GraduationCap, Building2, ShoppingBag, Landmark, Utensils } from "lucide-react";
+import lockImg from "@/assets/partners/verkada/verkada-lock.png";
+import airImg from "@/assets/partners/verkada/verkada-air.png";
+import alaramImg from "@/assets/partners/verkada/varkada-alaram.png";
 
 export default function Index() {
   return (
@@ -147,7 +150,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/179f467c165398713326ff5d3464e332daf25160?width=789" 
+                  src={lockImg.src} 
                   alt="Access Control" 
                   className="w-full h-full object-cover"
                 />
@@ -188,7 +191,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/ec04eb4d14e9ec0d0c900b4524f0038fff7d844e?width=789" 
+                  src={airImg.src} 
                   alt="Environmental Sensors" 
                   className="w-full h-full object-cover"
                 />
@@ -210,7 +213,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/53fb7ca33c6fbea420d60fe97e43620c6dc2ef3c?width=789" 
+                  src={alaramImg.src} 
                   alt="Alarms" 
                   className="w-full h-full object-cover"
                 />

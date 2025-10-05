@@ -42,7 +42,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
   return (
     <div className="min-h-screen bg-cream font-inter">
       <HeroSection {...study.hero} />
-      <ImageGallery  />
+      <ImageGallery images={study.galleryImages || []} />
       <CaseStudyContent slug={slug} />
       <CaseStudyCards />
     </div>

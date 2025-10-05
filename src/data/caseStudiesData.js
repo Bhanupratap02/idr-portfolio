@@ -138,7 +138,7 @@ export const caseStudiesData = [
     slug: "burns-partnership",
     hero: {
       backgroundImage: case_study.src,
-      heading: "Burns Engineering",
+      heading: "Burns Engineering a Lasting Relationship",
       paragraph: "In 2022, Burns Engineering reached out to IDR to install a Kisi access control system at their NYC office. What started as a single-project relationship quickly evolved into something more: a national partnership built on trust, consistency, and execution."
     },
     galleryImages: [
@@ -212,8 +212,8 @@ export const caseStudiesData = [
         }
       ],
       result: "A hybrid intercom system that offers modern cloud convenience while supporting residents who prefer — or rely on — legacy intercom units.",
-      feedback: "I would highly recommend IDR, their dedication to excellence and innovation makes them a standout in the industry",
-      feedbackBy: "-Anthony D'Alessio, V.P. of Security, Fairstead"
+      feedback: "Mike and his team are an integral part of our team when we work on establishing new offices or moving offices. The folks at IDR work hand in hand with the Burns team for everything access management, low voltage wiring, rack installations and WAP placement. Mike’s team of professionals has helped us nationwide with all of our locations for the past 4 years. We value IDR’s partnership and recommend them highly.",
+      feedbackBy: "Matthew McCloskey, Director, Information Technology"
     },
     cards: [
       {
@@ -235,15 +235,15 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_4,
+        src: Cloud_case_study_1,
         alt: "Intercom Integration 1"
       },
       {
-        src: case_study_5,
+        src: Cloud_case_study_2,
         alt: "Intercom Integration 2"
       },
       {
-        src: case_study_6,
+        src: Cloud_case_study_3,
         alt: "Intercom Integration 3"
       }
     ],
@@ -314,16 +314,32 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: Audio_case_study_1,
         alt: "Audio System 1"
       },
       {
-        src: case_study_2,
+        src: Audio_case_study_2,
         alt: "Audio System 2"
       },
       {
-        src: case_study_3,
+        src: Audio_case_study_3,
         alt: "Audio System 3"
+      },
+        {
+        src: Audio_case_study_4,
+        alt: "Audio System 4"
+      },
+      {
+        src: Audio_case_study_5,
+        alt: "Audio System 5"
+      },
+      {
+        src: Audio_case_study_6,
+        alt: "Audio System 6"
+      },
+      {
+        src: Audio_case_study_7,
+        alt: "Audio System 7"
       }
     ],
     content: {
@@ -386,16 +402,56 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: Eliminating_case_study_1,
         alt: "Access Control System 1"
       },
       {
-        src: case_study_2,
+        src: Eliminating_case_study_2,
         alt: "Access Control System 2"
       },
       {
-        src: case_study_3,
+        src: Eliminating_case_study_3,
         alt: "Access Control System 3"
+      },
+          {
+        src: Eliminating_case_study_4,
+        alt: "Access Control System 4"
+      },
+      {
+        src: Eliminating_case_study_5,
+        alt: "Access Control System 5"
+      },
+      {
+        src: Eliminating_case_study_6,
+        alt: "Access Control System 6"
+      },
+          {
+        src: Eliminating_case_study_7,
+        alt: "Access Control System 7"
+      },
+      {
+        src: Eliminating_case_study_8,
+        alt: "Access Control System 8"
+      },
+      {
+        src: Eliminating_case_study_9,
+        alt: "Access Control System 9"
+      },
+          {
+        src: Eliminating_case_study_10,
+        alt: "Access Control System 10"
+      },
+      {
+        src: Eliminating_case_study_11,
+        alt: "Access Control System 11"
+      },
+      {
+        src: Eliminating_case_study_12,
+        alt: "Access Control System 12"
+      },
+        {
+        src: Eliminating_case_study_13,
+        alt: "Access Control System 13"
       }
     ],
     content: {
@@ -462,16 +518,20 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_4,
+        src: Enterprise_case_study_1,
         alt: "Cabling Before"
       },
       {
-        src: case_study_5,
+        src: Enterprise_case_study_2,
         alt: "Cabling Process"
       },
       {
-        src: case_study_6,
+        src: Enterprise_case_study_3,
         alt: "Cabling After"
+      },
+            {
+        src: Enterprise_case_study_4,
+        alt: "Cabling After 2"
       }
     ],
     content: {
@@ -570,16 +630,28 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: Failed_case_study_1,
         alt: "Failed Installation 1"
       },
       {
-        src: case_study_2,
+        src: Failed_case_study_2,
         alt: "Repair Process"
       },
       {
-        src: case_study_3,
+        src: Failed_case_study_3,
         alt: "Final Result"
+      },
+        {
+        src: Failed_case_study_4,
+        alt: "Failed Installation 4"
+      },
+      {
+        src: Failed_case_study_5,
+        alt: "Repair Process 5"
+      },
+      {
+        src: Failed_case_study_6,
+        alt: "Final Result 6"
       }
     ],
     content: {
@@ -725,16 +797,44 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_4,
+        src: wifi_case_study_1,
         alt: "WiFi Implementation 1"
       },
       {
-        src: case_study_5,
+        src: wifi_case_study_2,
         alt: "WiFi Implementation 2"
       },
       {
-        src: case_study_6,
+        src: wifi_case_study_4,
+        alt: "WiFi Implementation 4"
+      },
+         {
+        src: wifi_case_study_5,
+        alt: "WiFi Implementation 5"
+      },
+      {
+        src: wifi_case_study_6,
+        alt: "WiFi Implementation 6"
+      },
+      {
+        src: wifi_case_study_7,
+        alt: "WiFi Implementation 7"
+      },
+         {
+        src: wifi_case_study_8,
+        alt: "WiFi Implementation 8"
+      },
+      {
+        src: wifi_case_study_9,
+        alt: "WiFi Implementation 2"
+      },
+      {
+        src: wifi_case_study_3,
         alt: "WiFi Implementation 3"
+      },
+            {
+        src: wifi_case_study_10,
+        alt: "WiFi Implementation 10"
       }
     ],
     content: {
@@ -800,17 +900,46 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: PPA_case_study_1,
         alt: "PPA Project 1"
       },
       {
-        src: case_study_2,
+        src: PPA_case_study_2,
         alt: "PPA Project 2"
       },
       {
-        src: case_study_3,
+        src: PPA_case_study_3,
         alt: "PPA Project 3"
-      }
+      },
+         {
+        src: PPA_case_study_4,
+        alt: "PPA Project 4"
+      },
+      {
+        src: PPA_case_study_5,
+        alt: "PPA Project 5"
+      },
+      {
+        src: PPA_case_study_6,
+        alt: "PPA Project 6"
+      },
+         {
+        src: PPA_case_study_7,
+        alt: "PPA Project 7"
+      },
+      {
+        src: PPA_case_study_8,
+        alt: "PPA Project 8"
+      },
+      {
+        src: PPA_case_study_9,
+        alt: "PPA Project 9"
+      },
+         {
+        src: PPA_case_study_10,
+        alt: "PPA Project 10"
+      },
+
     ],
     content: {
       title: "Peninsula Preparatory Academy",
@@ -891,17 +1020,62 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: Scaling_case_study_1,
         alt: "Security Scale 1"
       },
       {
-        src: case_study_2,
+        src: Scaling_case_study_2,
         alt: "Security Scale 2"
       },
       {
-        src: case_study_3,
+        src: Scaling_case_study_3,
         alt: "Security Scale 3"
-      }
+      },
+            {
+        src: Scaling_case_study_4,
+        alt: "Security Scale 4"
+      },
+      {
+        src: Scaling_case_study_5,
+        alt: "Security Scale 5"
+      },
+      {
+        src: Scaling_case_study_6,
+        alt: "Security Scale 6"
+      },
+            {
+        src: Scaling_case_study_7,
+        alt: "Security Scale 7"
+      },
+      {
+        src: Scaling_case_study_8,
+        alt: "Security Scale 8"
+      },
+      {
+        src: Scaling_case_study_9,
+        alt: "Security Scale 9"
+      },
+            {
+        src: Scaling_case_study_10,
+        alt: "Security Scale 10"
+      },
+      {
+        src: Scaling_case_study_11,
+        alt: "Security Scale 11"
+      },
+      {
+        src: Scaling_case_study_12,
+        alt: "Security Scale 12"
+      },
+            {
+        src: Scaling_case_study_13,
+        alt: "Security Scale 13"
+      },
+      {
+        src: Scaling_case_study_14,
+        alt: "Security Scale 14"
+      },
+
     ],
     content: {
       title: "Scaling Security with Fairstead",
@@ -1041,17 +1215,57 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_4,
+        src: Louderhill_case_study_1,
         alt: "Lauderhill Security 1"
       },
       {
-        src: case_study_5,
+        src: Louderhill_case_study_2,
         alt: "Lauderhill Security 2"
       },
       {
-        src: case_study_6,
+        src: Louderhill_case_study_3,
         alt: "Lauderhill Security 3"
-      }
+      },
+           {
+        src: Louderhill_case_study_4,
+        alt: "Lauderhill Security 4"
+      },
+      {
+        src: Louderhill_case_study_5,
+        alt: "Lauderhill Security 5"
+      },
+      {
+        src: Louderhill_case_study_6,
+        alt: "Lauderhill Security 6"
+      },
+           {
+        src: Louderhill_case_study_7,
+        alt: "Lauderhill Security 7"
+      },
+      {
+        src: Louderhill_case_study_8,
+        alt: "Lauderhill Security 8"
+      },
+      {
+        src: Louderhill_case_study_9,
+        alt: "Lauderhill Security 9"
+      },
+           {
+        src: Louderhill_case_study_10,
+        alt: "Lauderhill Security 10"
+      },
+      {
+        src: Louderhill_case_study_11,
+        alt: "Lauderhill Security 11"
+      },
+      {
+        src: Louderhill_case_study_12,
+        alt: "Lauderhill Security 12"
+      },
+            {
+        src: Louderhill_case_study_13,
+        alt: "Lauderhill Security 13"
+      },
     ],
     content: {
       title: "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
@@ -1130,17 +1344,50 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: Training_case_study_1,
         alt: "Training Room 1"
       },
       {
-        src: case_study_2,
+        src: Training_case_study_2,
         alt: "Training Room 2"
       },
       {
-        src: case_study_3,
+        src: Training_case_study_3,
         alt: "Training Room 3"
-      }
+      },
+          {
+        src: Training_case_study_4,
+        alt: "Training Room 4"
+      },
+      {
+        src: Training_case_study_5,
+        alt: "Training Room 5"
+      },
+      {
+        src: Training_case_study_6,
+        alt: "Training Room 6"
+      },
+          {
+        src: Training_case_study_7,
+        alt: "Training Room 7"
+      },
+      {
+        src: Training_case_study_8,
+        alt: "Training Room 8"
+      },
+      {
+        src: Training_case_study_9,
+        alt: "Training Room 9"
+      },
+          {
+        src: Training_case_study_10,
+        alt: "Training Room 10"
+      },
+      {
+        src: Training_case_study_11,
+        alt: "Training Room 11"
+      },
+
     ],
     content: {
       title: "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
@@ -1232,16 +1479,32 @@ export const caseStudiesData = [
     },
     galleryImages: [
       {
-        src: case_study_1,
+        src: intercom_case_study_1,
         alt: "Unified System 1"
       },
       {
-        src: case_study_2,
+        src: intercom_case_study_2,
         alt: "Unified System 2"
       },
       {
-        src: case_study_3,
+        src: intercom_case_study_3,
         alt: "Unified System 3"
+      },
+            {
+        src: intercom_case_study_4,
+        alt: "Unified System 4"
+      },
+      {
+        src: intercom_case_study_5,
+        alt: "Unified System 5"
+      },
+      {
+        src: intercom_case_study_6,
+        alt: "Unified System 6"
+      },
+      {
+        src: intercom_case_study_7,
+        alt: "Unified System 7"
       }
     ],
     content: {

@@ -6,12 +6,12 @@ import { useState, useEffect, useRef } from "react";
 
 const slides = [
   { src: "/videos/video_1.mov", title: "", text: "" },
-  { src: "/videos/video_2.mp4", title: "", text: "" },
-  {
-    src: "/videos/video_3.mp4",
-    title: "Design. Installation.Support. One Trusted Partner.",
-    text: "Founded in 2007, IDR Technology Solutions is a full-service systems integrator specializing in A/V, security, networking, and IT infrastructure. Our mission is simple: deliver high-quality technology solutions with expert execution, total transparency, and unmatched customer support — every step of the way.",
-  },
+  { src: "/videos/Hero Banner Video Camera Monitoring.mp4", title: "", text: "" },
+  // {
+  //   src: "/videos/Hero Banner Video Camera Monitoring.mp4",
+  //   title: "Design. Installation.Support. One Trusted Partner.",
+  //   text: "Founded in 2007, IDR Technology Solutions is a full-service systems integrator specializing in A/V, security, networking, and IT infrastructure. Our mission is simple: deliver high-quality technology solutions with expert execution, total transparency, and unmatched customer support — every step of the way.",
+  // },
   {
     src: "/videos/video_4.mp4",
     title: "Design. Installation.Support. One Trusted Partner.",

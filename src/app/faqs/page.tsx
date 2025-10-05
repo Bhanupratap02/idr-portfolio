@@ -2,23 +2,42 @@
 
 "use client";
 import { useState } from "react";
-
+// IDR provides a one-year warranty on all newly installed cabling and hardware. For some of cabling projects we can offer up to a 25 year warranty through the manufacturer if we use their solution from end to end. Warranty covers parts and labor. Warranty Exclusions include: Defects and damages caused by improper use, tampering, theft, fire, water or natural disaster.
+//All configuration services are covered by our 30 day warranty. During which time you may request minor configuration changes that do not require a complete system redesign.
 const faqs = [
   {
     question: "What is your warranty?",
-    answer: `IDR provides a one-year warranty on all newly installed cabling and hardware. For some of cabling projects we can offer up to a 25 year warranty through the manufacturer if we use their solution from end to end. Warranty covers parts and labor. Warranty Exclusions include: Defects and damages caused by improper use, tampering, theft, fire, water or natural disaster.
+    answer: `
+Our Standard Warranty:
+Labor & Configuration Services: 60 days from completion of work.
+Newly Installed Data Cabling Systems: 15 years (manufacturer-backed).
+Equipment & Hardware: Covered by the original manufacturer’s warranty.
 
-All configuration services are covered by our 30 day warranty. During which time you may request minor configuration changes that do not require a complete system redesign.`,
+Exclusions
+This warranty does not cover:
+Vandalism, theft, negligence, or misuse.
+Water damage, flooding, humidity, mold, or condensation.
+Fire, smoke, lightning, power surges, or Acts of God.
+Normal wear and tear, cosmetic damage, or consumables (like UPS and camera batteries).
+Work or modifications performed by third parties.
+Software, firmware, or cloud services (covered by manufacturer/provider terms).
+
+Limitations
+Warranty service is provided during normal business hours.
+Liability is limited to repair or replacement of defective work/materials.
+Extended protection is available through IDR Service Agreements.
+
+`,
   },
   {
     question: "Do you offer financing?",
     answer:
-      "Yes, IDR works with third party finance vendors who can help to provide you with financing offers for deals of at least $1,000 in value.",
+      "Yes, IDR works with third party finance vendors who can help to provide you with financing offers for deals of at least $3,000 in value.",
   },
   {
     question: "What are your normal hours of service:",
     answer:
-      "IDR typically operates on a schedule of Monday through Friday between 7:00 a.m. to 6:00 p.m. We do schedule service during off hours but typically need advanced notice to schedule outside of our normal operating hours.",
+      "Our standard operating hours are Monday through Friday, 7:00 a.m. – 6:00 p.m. After-hours service is available with advance notice. Just let us know your needs and we’ll work with you to schedule accordingly.",
   },
   {
     question:
@@ -29,7 +48,12 @@ All configuration services are covered by our 30 day warranty. During which time
   {
     question: "Do you offer security alarm monitoring services?",
     answer:
-      "Yes IDR is partnered with MetroDial to offer these services. We are able to provide affordable and reliable monitoring through our partnership with MetroDial. MetroDial also has two central stations established on two completely separate power grids, which allows them to stay up at all times for all customers even during a power outage event.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu tortor sed justo interdum consectetur.",
+      "Yes. IDR partners with MetroDial to deliver affordable, reliable monitoring services. Through this partnership, we provide 24/7 coverage with industry-leading uptime. MetroDial operates two fully independent central stations on separate power grids, ensuring continuous service for our customers even during widespread power outages.",
+  },
+  {
+question: "Does IDR provide camera monitoring services?",
+    answer:
+      "Yes. IDR offers professional in-house camera monitoring — we never outsource. Our own trained technicians review footage, respond to alerts, and are skilled in pulling and preserving video evidence. We regularly work with law enforcement across the country to support investigations.When an incident occurs, our team can dispatch emergency services directly based on their review of the footage and keep you updated in real time. This ensures you get fast, accurate responses from people who know your systems and your site.",
   },
   {
     question: "Do you sell hardware?",
@@ -39,12 +63,16 @@ All configuration services are covered by our 30 day warranty. During which time
   {
     question: "How do I place an order / schedule service?",
     answer:
-      "You can call an order in by calling either our NYC or NJ office, or e-mail us at sales@idrtechnologysolutions.com. Existing clients can also contact their dedicated project manager or sales associate.",
+      "You can call an order in by calling either our NYC or NJ office -: NY: 718-594-7865,NJ 732-2147-3550, or e-mail us at sales@idrtechnologysolutions.com. Existing clients can also contact their dedicated project manager or sales associate.",
   },
   {
-    question: "What is your response time for a serious event?",
+    question: "What is IDR’s service response time?",
     answer:
-      "For most responses we will schedule a technician within a 5 business days. In some instances if you have an emergency such as a door not being locked we will respond within 24-hours.",
+      `Response times depend on your level of coverage. Clients with an active Service Level Agreement (SLA) receive priority scheduling and guaranteed rapid response.
+
+SLA Clients: Emergency issues (such as a door not locking) are typically addressed within 24 hours or sooner, depending on the SLA tier.
+
+Non-SLA Clients: Standard response time is within 5 business days, with emergency requests handled on a best-effort basis.`,
   },
   {
     question: "Do you offer service agreements?",
@@ -61,8 +89,8 @@ While IDR only operates on a M-F schedule, we have technicians on call for weeke
 IDR handles everything
 With a service agreement, if the parts are covered by the manufacturer, w handle the entire RMA process down to shipping and receiving, and reinstallation and programming.
 
-Free Support
-While IDR supports all of our clients for a limited amount of time post installation, those who have service agreements receive free support including configuration changes and pulling surveillance footage etc.`,
+Support Included
+While IDR supports all of our clients for a limited amount of time post installation, those who have service agreements receive support including configuration changes and pulling surveillance footage etc.`,
   },
 ];
 
