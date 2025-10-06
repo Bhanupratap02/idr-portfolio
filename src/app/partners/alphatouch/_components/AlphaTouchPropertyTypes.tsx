@@ -1,14 +1,12 @@
 /** @format */
 
-
-import type1Img from "@/assets/partners/alphatouch/type1.png"
+import type1Img from "@/assets/partners/alphatouch/type1.png";
 import type2Img from "@/assets/partners/alphatouch/type2.png";
 import type3Img from "@/assets/partners/alphatouch/type3.png";
 import type4Img from "@/assets/partners/alphatouch/type4.png";
 import type5Img from "@/assets/partners/alphatouch/type5.png";
 import type6Img from "@/assets/partners/alphatouch/type6.png";
 import Image from "next/image";
-
 
 const propertyTypes = [
   {
@@ -51,40 +49,41 @@ const propertyTypes = [
 
 export default function AlphaTouchPropertyTypes() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24 ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
+    <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 2xl:py-32 ">
+      <div className="max-w-[2120px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 3xl:px-32">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-14 2xl:mb-18 max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-gray-900 leading-tight mb-4  md:mb-5 lg:mb-5 xl:mb-5 2xl:mb-7">
             Ideal Property Types
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-gray-600 leading-relaxed px-2 sm:px-0 font-light">
             AlphaTouch systems work perfectly across various building types
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-10 2xl:gap-12 3xl:gap-16">
           {propertyTypes.map((property) => (
             <div
               key={property.title}
-              className={`relative group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-6 ${property.bgColor}`}
+              className={`relative group rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-5  md:p-6 lg:p-6 xl:px-8  2xl:p-8.5 hover:-translate-y-2 ${property.bgColor}`}
             >
               {/* Image positioned like in Figma */}
-              <div className="rounded-xl overflow-hidden mb-4  h-56">
+              <div className="rounded-xl overflow-hidden mb-2  md:mb-4   2xl:mb-5.5 transition-all duration-300 group-hover:scale-105">
                 <Image
                   src={property.image}
                   alt={property.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-2">
-                <h3 className="text-xl font-medium text-white mb-2 leading-tight">
+              <div className="py-1 md:py-2 flex-1 flex flex-col">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl   text-white mb-2 sm:mb-3 md:mb-4 lg:mb-3 xl:mb-3.5 2xl:mb-4 leading-tight">
                   {property.title}
                 </h3>
-                <p className={`text-white leading-relaxed`}>
+                <p
+                  className={`text-white leading-relaxed text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-extralight `}
+                >
                   {property.description}
                 </p>
               </div>
-              {/* Text positioned absolutely at bottom like Figma */}
             </div>
           ))}
         </div>

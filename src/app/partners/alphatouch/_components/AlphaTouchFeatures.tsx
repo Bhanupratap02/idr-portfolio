@@ -17,6 +17,7 @@ const features = [
       "Video calling & directories with intuitive touchscreen interface",
     bgColor: "bg-blue-600",
     hoverColor: "group-hover:bg-blue-700",
+    gradient: "from-blue-50 to-blue-100",
   },
   {
     icon: Smartphone,
@@ -25,6 +26,7 @@ const features = [
       "Answer calls, unlock doors, and review activity from anywhere",
     bgColor: "bg-purple-600",
     hoverColor: "group-hover:bg-purple-700",
+    gradient: "from-purple-50 to-purple-100",
   },
   {
     icon: Cloud,
@@ -32,6 +34,7 @@ const features = [
     description: "Complete control portal for property management teams",
     bgColor: "bg-green-600",
     hoverColor: "group-hover:bg-green-700",
+    gradient: "from-green-50 to-green-100",
   },
   {
     icon: Settings,
@@ -39,6 +42,7 @@ const features = [
     description: "Works with existing 3-wire or 4-wire intercom cabling",
     bgColor: "bg-orange-600",
     hoverColor: "group-hover:bg-orange-700",
+    gradient: "from-orange-50 to-orange-100",
   },
   {
     icon: Zap,
@@ -46,6 +50,7 @@ const features = [
     description: "No need to open walls or rewire the building",
     bgColor: "bg-red-600",
     hoverColor: "group-hover:bg-red-700",
+    gradient: "from-red-50 to-red-100",
   },
   {
     icon: Shield,
@@ -53,6 +58,7 @@ const features = [
     description: "Reliable, encrypted SIP communication protocols",
     bgColor: "bg-indigo-600",
     hoverColor: "group-hover:bg-indigo-700",
+    gradient: "from-indigo-50 to-indigo-100",
   },
 ];
 
@@ -64,19 +70,19 @@ export default function AlphaTouchFeatures() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl  font-medium text-gray-900 leading-tight mb-4  md:mb-5 lg:mb-5 xl:mb-5 2xl:mb-7 ">
             Why AlphaTouch with IDR
           </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl  text-gray-600 leading-relaxed px-2 sm:px-0 font-light">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl  text-gray-600 leading-relaxed px-2 sm:px-0 font-light max-w-3xl 2xl:max-w-4xl mx-auto">
             We&apos;ve successfully deployed AlphaTouch systems in dozens of
             retrofits and new developments across NY, NJ, and FL
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-10 2xl:gap-12 3xl:gap-16">
-          {features.map((feature, index) => {
+          {features.map((feature) => {
               const IconComponent = feature.icon;
             return (
               <div
                 key={feature.title}
-                className="group bg-white rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:-translate-y-2 p-5 sm:p-6 md:p-7 lg:p-6 xl:p-8 2xl:p-10  h-full flex flex-col"
+                className={`group bg-gradient-to-br ${feature.gradient} hover:from-white hover:to-gray-50 rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:-translate-y-2 p-5 sm:p-6 md:p-7 lg:p-6 xl:p-8 2xl:p-10  h-full flex flex-col`}
               >
                 {/* Icon Container */}
                 <div

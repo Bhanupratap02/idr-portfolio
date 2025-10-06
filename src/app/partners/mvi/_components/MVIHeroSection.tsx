@@ -6,9 +6,8 @@ import { Button } from "@/components/ui/button";
 export default function MVIHeroSection() {
   return (
     <section className="w-full bg-gray-50 py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-[1600px]">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 items-center">
-          
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8 xl:space-y-9">
             <div className="space-y-4 sm:space-y-5 lg:space-y-6">
@@ -37,7 +36,7 @@ export default function MVIHeroSection() {
 
           {/* Right Image */}
           <div className="relative w-full">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <div className="rounded-2xl overflow-hidden">
               <Image
                 src={heroImg}
                 alt="MVI Systems IP Video Intercom Device - Modern building access control solution"
@@ -48,7 +47,6 @@ export default function MVIHeroSection() {
               />
             </div>
           </div>
-
         </div>
       </div>
     </section>
