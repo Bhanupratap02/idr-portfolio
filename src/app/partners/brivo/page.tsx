@@ -29,33 +29,33 @@ import imgImg1 from "@/assets/brivo2.png"; // img2 (kept)
 
 function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <section className="relative w-full bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div className="relative z-10 w-full max-w-7xl mx-auto">
-        <div className="text-center mb-8 lg:mb-12">
+        <div className="text-center">
           {/* Top Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#e6f3ff] text-[#0066cc] px-4 py-2 rounded-full text-sm font-medium mb-6 lg:mb-8">
+          <div className="inline-flex items-center gap-2 bg-[#e6f3ff] text-[#0066cc] px-4 py-2 rounded-full text-sm font-medium mb-4 lg:mb-6">
             <BadgeCheck className="w-4 h-4 text-[#0066cc]" aria-hidden />
             Next-Gen Access & Visitor Management
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[48px] font-semibold text-gray-900 leading-tight max-w-4xl mx-auto mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight max-w-4xl mx-auto mb-4 lg:mb-6">
             Access Your Corporate Spaces{" "}
             <span className="text-[#0066cc]">Smarter</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl lg:text-[20px] text-gray-600 leading-relaxed max-w-4xl mx-auto mb-8 lg:mb-12">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6 lg:mb-8">
             Employee Badge in Apple Wallet — Now Available from Brivo. Eliminate the need for physical badges with seamless workplace access using just your iPhone or Apple Watch.
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#0066cc] text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-3">
+            <button className="bg-[#0066cc] text-white px-6 py-3 rounded-lg font-semibold text-base flex items-center justify-center gap-2">
               <Wallet className="w-5 h-5" aria-hidden />
               Add to Apple Wallet
             </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-3">
+            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold text-base flex items-center justify-center gap-2">
               <PlayCircle className="w-5 h-5" aria-hidden />
               Watch Demo
             </button>
@@ -68,24 +68,24 @@ function HeroSection() {
 
 function FeaturesSection() {
   return (
-    <section className="w-full bg-white py-16 lg:py-20 xl:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Content */}
-          <div className="flex-1 space-y-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#2e2e2e] leading-tight">
+          <div className="flex-1 space-y-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#2e2e2e] leading-tight">
               Get In Faster, Stay Secure
             </h2>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               {/* Instant Access */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Key className="w-5 h-5 text-green-600" aria-hidden />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-medium text-[#2e2e2e] mb-2">Instant Access</h3>
-                  <p className="text-lg text-[#626262] leading-relaxed">
+                  <h3 className="text-xl font-medium text-[#2e2e2e] mb-2">Instant Access</h3>
+                  <p className="text-base text-[#626262] leading-relaxed">
                     Unlock doors, elevators, turnstiles, and more by simply holding your device near a reader.
                   </p>
                 </div>
@@ -97,8 +97,8 @@ function FeaturesSection() {
                   <BatteryCharging className="w-6 h-5 text-blue-600" aria-hidden />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-medium text-[#2e2e2e] mb-2">Power Reserve</h3>
-                  <p className="text-lg text-[#626262] leading-relaxed">
+                  <h3 className="text-xl font-medium text-[#2e2e2e] mb-2">Power Reserve</h3>
+                  <p className="text-base text-[#626262] leading-relaxed">
                     Even if your iPhone needs a charge, access continues for up to 5 hours.
                   </p>
                 </div>
@@ -110,8 +110,8 @@ function FeaturesSection() {
                   <Zap className="w-6 h-5 text-purple-600" aria-hidden />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-medium text-[#2e2e2e] mb-2">Express Mode</h3>
-                  <p className="text-lg text-[#626262] leading-relaxed">
+                  <h3 className="text-xl font-medium text-[#2e2e2e] mb-2">Express Mode</h3>
+                  <p className="text-base text-[#626262] leading-relaxed">
                     No need to wake or unlock your device—just tap and go.
                   </p>
                 </div>
@@ -119,20 +119,20 @@ function FeaturesSection() {
             </div>
           </div>
 
-          {/* Right Image Card (keep imgImg) */}
+          {/* Right Image Card */}
           <div className="flex-1 max-w-lg lg:max-w-none">
-            <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 lg:p-12">
+            <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 lg:p-8">
               <div className="relative">
                 <img
                   src={imgImg.src}
                   alt="iPhone showing Apple Wallet badge"
-                  className="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg mb-6"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-lg mb-4"
                 />
                 <div className="text-center space-y-2">
-                  <h4 className="text-xl font-medium text-white">
+                  <h4 className="text-lg font-medium text-white">
                     Your Badge Works Even When Phone Battery is Low
                   </h4>
-                  <p className="text-blue-100">Safe, secure, and always available</p>
+                  <p className="text-sm text-blue-100">Safe, secure, and always available</p>
                 </div>
               </div>
             </div>

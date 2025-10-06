@@ -120,7 +120,7 @@ export default function IdrAdvantage() {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition duration-500"></div>
 
                 {/* Content */}
                 <div
