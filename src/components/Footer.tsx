@@ -55,7 +55,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-sm 2xl:text-base 3xl:text-lg text-[#F7F6F2] leading-relaxed max-w-72 2xl:max-w-80">
-              Quality from start to finish. From design through installation, IDR is the name you can depend on.
+              Quality from start to finish. From design through installation,
+              IDR is the name you can depend on.
             </p>
           </div>
 
@@ -67,7 +68,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/portfolio"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >
                   Features
@@ -75,7 +76,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >
                   Request Demo
@@ -92,7 +93,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >
                   About
@@ -100,7 +101,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >
                   Contact
@@ -155,7 +156,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm 2xl:text-base text-[#F7F6F2]">
-            © 2025 IDR Technology Solutions. All rights reserved.
+            © 2025  IDR Technology Solutions. All rights reserved.
           </p>
         </div>
       </div>

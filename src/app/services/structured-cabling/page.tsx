@@ -9,6 +9,7 @@ import ProcessSection from "./_components/ProcessSection";
 import ProfessionalCablingSection from "./_components/ProfessionalCablingSection";
 import QualityStandardsSection from "./_components/QualityStandardsSection";
 import WhyChooseIDRSection from "./_components/WhyChooseIDRSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function StructuredCabling() {
   return (
@@ -21,6 +22,7 @@ export default function StructuredCabling() {
         <ProcessSection />
         <IDRPortalSection />
         <WhyChooseIDRSection />
+        <TrustedIndustriesSection/>
         <CallToActionSection />
         <ServicesGrid exclude={8} />
       </main>

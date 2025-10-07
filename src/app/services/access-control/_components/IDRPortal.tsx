@@ -71,7 +71,8 @@ export default function IDRPortal() {
             </div>
 
             <p className="text-[#626262] text-base sm:text-lg lg:text-xl italic">
-              Manage 1 site or 50 — you stay informed and in control.
+              From a single location to countless sites, you’re always in
+              command.
             </p>
           </div>
 

@@ -50,7 +50,8 @@ import dashboard from "@/assets/services/audio-visual/dashboard.png"
        </svg>
      ),
      title: "Certified Professionals",
-     description: "Certified with Biamp, Kramer, QSC, Sonos, and Sennheiser",
+     description:
+       "Certified with Biamp, Kramer, QSC, Sonos,  Sennheiser , Bose and Dante",
    },
    {
      icon: (
@@ -109,7 +110,7 @@ export default function WhyChooseAVSection() {
     "QSC",
     "Sonos",
     "Sennheiser",
-    "Crestron",
+    "RTI",
   ];
 
   return (

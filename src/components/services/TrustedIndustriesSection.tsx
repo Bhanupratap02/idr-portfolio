@@ -24,7 +24,7 @@ export default function TrustedIndustriesSection() {
       icon: centers,
     },
     {
-      name: "Commercial Clubhouses",
+      name: "Fund Managers",
       icon: house,
     },
   ];

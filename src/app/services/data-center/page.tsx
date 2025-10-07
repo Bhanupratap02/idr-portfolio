@@ -10,6 +10,7 @@ import DCPortalSection from "./_components/DCPortalSection";
 import DCWhyTeamsSection from "./_components/DCWhyTeamsSection";
 import DCReadySection from "./_components/DCReadySection";
 import ServicesGrid from "@/components/services/ServicesGrid";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function DataCenter() {
   return (
@@ -22,6 +23,7 @@ export default function DataCenter() {
       <DCProcessSection />
       <DCPortalSection />
       <DCWhyTeamsSection />
+      <TrustedIndustriesSection/>
       <DCReadySection />
       <ServicesGrid exclude={4}/>
     </div>

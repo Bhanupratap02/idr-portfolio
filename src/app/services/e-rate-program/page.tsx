@@ -7,6 +7,7 @@ import QuickAccessResourcesSection from "./_components/QuickAccessResourcesSecti
 import TrainingResourcesSection from "./_components/TrainingResourcesSection";
 import CallToActionSection from "./_components/CallToActionSection";
 import ServicesGrid from "@/components/services/ServicesGrid";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 
 export default function ERateProgram() {
@@ -18,6 +19,7 @@ export default function ERateProgram() {
         <ERateProgramInfoSection />
         <QuickAccessResourcesSection />
         <TrainingResourcesSection />
+        <TrustedIndustriesSection/>
         <CallToActionSection />
         <ServicesGrid/>
 

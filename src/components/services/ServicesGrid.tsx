@@ -10,8 +10,8 @@ import image6 from "@/assets/services/img_6.png";
 import image7 from "@/assets/services/img_7.png";
 import image8 from "@/assets/services/img_8.png";
 import image9 from "@/assets/services/img_9.png";
-import { ArrowUpRight } from "lucide-react";
-// prev
+import Link from "next/link";
+
 const services = [
   {
     id: 1,
@@ -19,6 +19,7 @@ const services = [
     title: "Access Control Systems",
     description:
       "At IDR Technology Solutions, we design, install, and support access control systems that secure your space without slowing you down. Whether you're managing a single door or hundreds.......",
+    url: "/services/access-control",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const services = [
     title: "Audio / Visual Systems",
     description:
       "At IDR Technology Solutions, A/V isn't just another service — it's the part of the job we genuinely love. From smart meeting and conference rooms to immersive speaker.......",
+    url: "/services/audio-visual",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ const services = [
     title: "Conference Room Solutions",
     description:
       "A great meeting room isn't just about the table and chairs — it's about how well people can see, hear, and connect. At IDR Technology Solutions, we design, install, and support......",
+    url: "/services/conference-room",
   },
 
   {
@@ -41,6 +44,7 @@ const services = [
     title: "Data Center Infrastructure",
     description:
       "At IDR Technology Solutions, we design and build data center infrastructure that delivers power, performance, and uptime. Whether it's a dedicated server room, enterprise data hall.........",
+    url: "/services/data-center",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const services = [
     title: "Multifamily Dwelling Intercoms",
     description:
       "IDR Technology Solutions designs, installs, and supports smart intercom systems for multifamily properties, condos, and mixed-use buildings. Whether it's a new development or a retrofit.......",
+    url: "/services/intercom",
   },
   {
     id: 6,
@@ -55,6 +60,7 @@ const services = [
     title: "Networks & IT Infrastructure",
     description:
       "Modern buildings demand modern infrastructure — and that starts with a rock-solid network. At IDR Technology Solutions, we design, install, and support IT networks that......",
+    url: "/services/networks-it",
   },
   {
     id: 7,
@@ -62,6 +68,7 @@ const services = [
     title: "Security Alarm Systems",
     description:
       "At IDR Technology Solutions, we design, install, and support reliable intrusion alarm systems to protect your building, staff, and assets. Whether you're securing a retail space.........",
+    url: "/services/security-alarm",
   },
 
   {
@@ -70,6 +77,7 @@ const services = [
     title: "Structured Cabling",
     description:
       "Your network is only as strong as the cables behind the walls. At IDR Technology Solutions, we design and install structured cabling systems that deliver reliability, flexibilityt......",
+    url: "/services/structured-cabling",
   },
   {
     id: 9,
@@ -77,6 +85,7 @@ const services = [
     title: "Surveillance Camera Systems",
     description:
       "At IDR Technology Solutions, we design, install, support, and service modern surveillance camera systems for commercial, multifamily, and industrial spaces.",
+    url: "/services/surveillance-camera",
   },
 ];
 
@@ -125,8 +134,8 @@ export default function ServicesGrid({
               Services
             </h3>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg  xl:text-xl 3xl:text-2xl leading-relaxed">
-              While we can customize your plan to suit your needs, most clients
-              schedule regular services: 
+              Our Service Agreements deliver unmatched quality, reliability, and
+              peace of mind.
             </p>
           </div>
         </div>
@@ -167,9 +176,12 @@ export default function ServicesGrid({
                   </p>
                 </div>
 
-                <button className="inline-flex items-center gap-2 px-4 sm:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-3 xl:py-3.5 2xl:py-4 rounded-md text-sm  sm:text-base xl:text-lg 2xl:text-xl font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white cursor-pointer">
+                <Link
+                  href={service?.url}
+                  className="inline-flex items-center gap-2 px-4 sm:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-3 xl:py-3.5 2xl:py-4 rounded-md text-sm  sm:text-base xl:text-lg 2xl:text-xl font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white cursor-pointer"
+                >
                   Book Now <ArrowIcon />
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -177,9 +189,12 @@ export default function ServicesGrid({
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="px-8 sm:px-12 2xl:px-16 3xl:px-20 py-4 sm:py-6 2xl:py-8 border border-gray-800 rounded-2xl sm:rounded-3xl text-base sm:text-lg  lg:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-colors cursor-pointer">
+          <Link
+            href={"/contact"}
+            className="px-8 sm:px-12 2xl:px-16 3xl:px-20 py-4 sm:py-6 2xl:py-8 border border-gray-800 rounded-2xl sm:rounded-3xl text-base sm:text-lg  lg:text-xl 2xl:text-2xl 3xl:text-3xl font-medium text-gray-800 hover:bg-gray-800 hover:text-white transition-colors cursor-pointer"
+          >
             Contact Us Now
-          </button>
+          </Link>
         </div>
       </div>
     </section>

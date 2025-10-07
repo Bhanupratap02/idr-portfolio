@@ -3,6 +3,7 @@
 import heroBg from "@/assets/services/conference-room/hero_bg.png";
 import conferenceRoomImg from "@/assets/services/conference-room/conference_room.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -44,9 +45,11 @@ export default function HeroSection() {
                 work — from huddle rooms to executive boardrooms.
               </p>
             </div>
-            <button
-              className="bg-dark-blue hover:bg-blue-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-xl px-6 sm:px-8 py-3 sm:py-4 rounded 
-              text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium  flex items-center gap-3 cursor-pointer"
+
+            <Link
+              href={"/contact"}
+              className="inline-flex w-auto bg-dark-blue hover:bg-blue-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-xl px-6 sm:px-8 py-3 sm:py-4 rounded 
+              text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium   items-center gap-3 cursor-pointer group"
             >
               Book a Free Walkthrough
               <svg
@@ -62,7 +65,7 @@ export default function HeroSection() {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
 
           {/* Right Image */}

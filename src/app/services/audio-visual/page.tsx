@@ -7,6 +7,7 @@ import HeroSection from "./_components/HeroSection";
 import MeetingsSection from "./_components/MeetingsSection";
 import TransformSpaceSection from "./_components/TransformSpaceSection";
 import WhyChooseAVSection from "./_components/WhyChooseAVSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 
 export default function AudioVisual() {
@@ -17,6 +18,7 @@ export default function AudioVisual() {
       <MeetingsSection />
       <CommercialGradeSection />
       <WhyChooseAVSection />
+      <TrustedIndustriesSection/>
       <TransformSpaceSection />
       <ServicesGrid exclude={2}/>
     </div>

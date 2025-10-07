@@ -1,6 +1,7 @@
 /** @format */
 import Image from "next/image";
 import portal from "@/assets/services/networks-it/portal.png";  
+import Link from "next/link";
 const portalFeatures = [
     {
       icon: (
@@ -132,9 +133,9 @@ export default function NITPortalSection() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-blue-600 text-white px-6 py-3 3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors cursor-pointer">
+              <Link href={"/contact"} className="bg-blue-600 text-white px-6 py-3 3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors cursor-pointer">
                 Request Portal Demo
-              </button>
+              </Link>
             </div>
           </div>
         </div>
