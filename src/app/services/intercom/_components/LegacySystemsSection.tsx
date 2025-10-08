@@ -29,8 +29,8 @@ export function LegacySystemsSection() {
             <p className="text-gray-600 text-base 2xl:text-lg 3xl:text-xl font-normal  mb-4 2xl:mb-6 3xl:mb-8 3xl:leading-relaxed">
               Not every building is ready for a full cloud migration — and
               that&apos;s okay. We also install, maintain, and service 2-wire
-              and analog intercom systems from trusted brands like ABB and
-              AiPhone.
+              and analog intercom systems from trusted brands like ABB, AiPhone
+              and Comelit.
             </p>
 
             {/* Benefits List */}

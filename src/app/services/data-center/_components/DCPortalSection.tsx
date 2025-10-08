@@ -1,5 +1,5 @@
 /** @format */
-import portal from "@/assets/services/data-center/portal.png";
+import portal from "@/assets/idr_portal.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 const features = [

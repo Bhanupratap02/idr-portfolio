@@ -3,6 +3,7 @@ import React from "react";
 
 import hero from "@/assets/services/intercom/hero.png";
 import Image from "next/image";
+import Link from "next/link";
 export function IntercomHeroSection() {
   return (
     <section className="relative min-h-[83vh] sm:min-h-[85vh] lg:min-h-[90vh] xl:min-h-[88vh] 2xl:min-h-[90vh] 3xl:min-h-[88vh] bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 overflow-hidden flex  items-start md:items-center">
@@ -33,41 +34,16 @@ export function IntercomHeroSection() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 justify-center lg:justify-start">
-                <button className="group bg-white text-blue-600 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 rounded-xl text-sm sm:text-base lg:text-lg  3xl:text-2xl  hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center cursor-pointer">
+                <Link href={"/contact"} className="group bg-white text-blue-600 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 rounded-xl text-sm sm:text-base lg:text-lg  3xl:text-2xl  hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center cursor-pointer">
                   Schedule Consultation
-                  {/* <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg> */}
-                </button>
+                </Link>
 
-                <button
-                  className="group border-2 border-white text-white 
+                <Link href={"/portfolio"}
+                className="group border-2 border-white text-white 
                 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4 lg:py-5 2xl:py-6 rounded-xl text-sm sm:text-base lg:text-lg  3xl:text-2xl  hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center backdrop-blur-sm cursor-pointer"
                 >
-                  {/* <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                    <path
-                      fillRule="evenodd"
-                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg> */}
                   View Portfolio
-                </button>
+                </Link>
               </div>
             </div>
           </div>

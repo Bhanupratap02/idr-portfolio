@@ -82,7 +82,7 @@ export default function ProcessSection() {
         <Image
           src={p5}
           alt="Testing & Firestopping"
-          className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
+          className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 text-white"
         />
       ),
       title: "Testing & Firestopping",

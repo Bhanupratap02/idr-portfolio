@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import portal from "@/assets/services/security-alarm/portal.png";
+import portal from "@/assets/idr_portal.jpeg";
   const portalFeatures = [
     {
       icon: (
@@ -64,7 +64,7 @@ export default function PortalSection() {
 
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 3xl:py-36">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-22">
+      <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-22">
         <div className="grid lg:grid-cols-2 gap-16 3xl:gap-18 items-stretch">
           {/* Left Content */}
           <div className="flex flex-col justify-between h-full">
@@ -114,12 +114,23 @@ export default function PortalSection() {
           </div>
 
           {/* Right Content - Portal Image */}
-          <div className="flex justify-center  h-full">
+          {/* <div className="flex justify-center  h-full">
             <div className="relative  rounded-lg  overflow-hidden w-full   h-full 3xl:h-[92%] shadow-lg">
               <Image
                 src={portal}
                 alt="IDR Portal Dashboard"
                 className="w-full h-full"
+              />
+            </div>
+          </div> */}
+          {/* Right Content - Portal Image */}
+          <div className="flex justify-center items-center">
+            <div className="relative w-full max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl aspect-[4/3] rounded-lg overflow-hidden shadow-lg bg-gray-50 border border-gray-200">
+              <Image
+                src={portal}
+                alt="IDR Portal Dashboard"
+                className="object-contain w-full h-full"
+                priority
               />
             </div>
           </div>

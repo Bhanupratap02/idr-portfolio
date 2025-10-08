@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import dashboard from "@/assets/services/audio-visual/dashboard.png"
+import portal from "@/assets/idr_portal.jpeg"
  const features = [
    {
      icon: (
@@ -161,9 +161,9 @@ export default function WhyChooseAVSection() {
             </h3>
             <div className="mb-6">
               <Image
-                src={dashboard}
+                src={portal}
                 alt="Client Portal"
-                className="w-full h-52 sm:h-60 md:h-72 lg:h-80 2xl:h-96 object-cover rounded-lg"
+                className="w-full h-52 sm:h-60 md:h-72 lg:h-80 2xl:h-96 object-contain rounded-lg"
               />
             </div>
             <p className="text-sm sm:text-base lg:text-lg 2xl:text-xl text-gray-600">

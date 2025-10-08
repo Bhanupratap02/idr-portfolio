@@ -1,10 +1,10 @@
 /** @format */
 import Image from "next/image";
-import portal from "@/assets/services/access-control/portal.png";
 import photos from "@/assets/services/access-control/icons/photos.png";
 import folder from "@/assets/services/access-control/icons/folder.png";
 import warning from "@/assets/services/access-control/icons/warning.png";
 import track from "@/assets/services/access-control/icons/track.png";
+import idrPortalImg from "@/assets/idr_portal.jpeg";
 const portalFeatures = [
   {
     icon: photos,
@@ -37,10 +37,10 @@ export default function IDRPortal() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium mb-4 sm:mb-6">
+            <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-[2.4rem] 2xl:text-[2.8rem] 3xl:text-6xl font-medium mb-4 sm:mb-6">
               The IDR Portal: Total Transparency
             </h2>
-            <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed mb-8 sm:mb-12">
+            <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-[1.35rem] 3xl:text-3xl leading-relaxed mb-8 sm:mb-12">
               Access everything about your system in one secure location. From
               installation documentation to support requests, everything is at
               your fingertips.
@@ -77,11 +77,13 @@ export default function IDRPortal() {
           </div>
 
           {/* Right Image */}
-          <div className="order-first lg:order-last">
+          <div className="order-first lg:order-last aspect-[4/2.8] relative ">
             <Image
-              src={portal}
+              src={idrPortalImg}
               alt="IDR Portal Interface"
-              className="w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl h-auto rounded-lg  mx-auto"
+              // className="w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl h-auto rounded-lg  mx-auto"
+              fill
+              className="object-fill rounded-lg"
               priority
             />
           </div>

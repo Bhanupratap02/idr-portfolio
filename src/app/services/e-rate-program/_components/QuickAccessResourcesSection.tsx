@@ -12,7 +12,7 @@ export default function QuickAccessResourcesSection() {
         <Image src={list} alt={"Eligible Services List"} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
       ),
       title: "Eligible Services List",
-      desc: "Comprehensive list of services eligible for E-Rate program funding, including Category One and Category Two services for FY 2025.",
+      desc: "Comprehensive list of services eligible for E-Rate program funding, including Category One and Category Two.",
     },
     {
       icon: (

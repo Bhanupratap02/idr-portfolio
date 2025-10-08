@@ -38,7 +38,7 @@ export default function ERateProgramInfoSection() {
       icon: (
         <Users className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-white" />
       ),
-      desc: "Our team provides comprehensive guidance on the E-Rate program, including bidding, application process, and post-approval support to ensure you maximize your funding opportunities.",
+      desc: "Our team delivers end-to-end E-Rate solutions — from designing, installing, and supporting the technology your school depends on.",
     },
   ];
   return (

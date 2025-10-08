@@ -18,7 +18,7 @@ export default function ERateProgram() {
         <ERateProgramHeroSection />
         <ERateProgramInfoSection />
         <QuickAccessResourcesSection />
-        <TrainingResourcesSection />
+        {/* <TrainingResourcesSection /> */}
         <TrustedIndustriesSection/>
         <CallToActionSection />
         <ServicesGrid/>

@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import portal from "@/assets/services/surveillance-camera/portal.png";
+import portal from "@/assets/idr_portal.jpeg";
 const features = [
   {
     id: 1,
@@ -102,22 +102,27 @@ export default function SurveillancePortalSection() {
                 </div>
               ))}
             </div>
-
-            <Button
-              size="lg"
-              className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-8 py-6 2xl:px-9 3xl:px-12 2xl:py-7 3xl:py-8 text-base rounded-lg h-12 3xl:text-lg cursor-pointer"
+            <a
+              href="https://portal.idrtechnologysolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Access Portal
-            </Button>
+              <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-8 py-6 2xl:px-9 3xl:px-12 2xl:py-7 3xl:py-8 text-base rounded-lg h-12 3xl:text-lg cursor-pointer">
+                Access Portal
+              </Button>
+            </a>
           </div>
 
           {/* Right Content - Image */}
-          <div className="flex justify-center h-full rounded-xl shadow-xl overflow-hidden">
-            <Image
-              src={portal}
-              alt="IDR Portal Dashboard"
-              className="w-full h-full object-cover"
-            />
+          <div className="flex justify-center items-center">
+            <div className="relative w-full max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl aspect-[4/3] rounded-lg overflow-hidden shadow-lg bg-gray-50 border border-gray-200">
+              <Image
+                src={portal}
+                alt="IDR Portal Dashboard"
+                className="object-contain w-full h-full"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

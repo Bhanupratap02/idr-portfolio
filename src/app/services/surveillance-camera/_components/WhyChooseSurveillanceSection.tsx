@@ -24,7 +24,7 @@ const features = [
       </svg>
     ),
     title: "Full Design + Install + Support",
-    desc: "Complete service from day one through ongoing maintenance",
+    desc: "Complete service from day one through ongoing maintenance.",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const features = [
       </svg>
     ),
     title: "Dedicated Project Managers",
-    desc: "Every job gets a dedicated manager to see it through completion",
+    desc: "Every job gets a dedicated manager to see it through completion.",
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const features = [
       </svg>
     ),
     title: "Certified Technicians",
-    desc: "Our techs, not subcontractors, handle your installation",
+    desc: "Our techs, not subcontractors, handle your installation.",
   },
   {
     id: 4,
@@ -99,7 +99,7 @@ const features = [
       </svg>
     ),
     title: "In-House Support",
-    desc: "Direct access to our support team for any needs",
+    desc: "Immediate access to our support team for fast, reliable help.",
   },
   {
     id: 5,
@@ -117,7 +117,7 @@ const features = [
       </svg>
     ),
     title: "Service Agreements",
-    desc: "Long-term support contracts available for peace of mind",
+    desc: "Long-term support contracts available for peace of mind.",
   },
   {
     id: 6,
@@ -142,7 +142,7 @@ const features = [
       </svg>
     ),
     title: "IDR Portal Access",
-    desc: "Easy service tracking and complete documentation",
+    desc: "Easy service tracking and complete documentation.",
   },
 ];
 export default function WhyChooseSurveillanceSection() {
