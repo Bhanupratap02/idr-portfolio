@@ -892,7 +892,7 @@ export const caseStudiesData = [
     ]
   },
   {
-    slug: "ppa-partnership",
+    slug: "ppa-screen-sharing",
     hero: {
       backgroundImage: case_study.src,
       heading: "Peninsula Preparatory Academy",
@@ -1568,5 +1568,335 @@ export const caseStudiesData = [
         description: "Remote access"
       }
     ]
-  }
+  },
+    {
+    slug: "advance-local",
+    hero: {
+      backgroundImage: case_study.src,
+      heading: "Building a Long-Term Technology Partnership with Advance Local",
+      paragraph: "Advance Local is one of the largest media groups in the U.S., with newsrooms and offices across the country. Their Staten Island location needed a modern, secure, and connected workplace — and the right partner to make it happen."
+    },
+    galleryImages: [
+      {
+        src: intercom_case_study_1,
+        alt: "Unified System 1"
+      },
+      {
+        src: intercom_case_study_2,
+        alt: "Unified System 2"
+      },
+      {
+        src: intercom_case_study_3,
+        alt: "Unified System 3"
+      },
+            {
+        src: intercom_case_study_4,
+        alt: "Unified System 4"
+      },
+      {
+        src: intercom_case_study_5,
+        alt: "Unified System 5"
+      },
+      {
+        src: intercom_case_study_6,
+        alt: "Unified System 6"
+      },
+      {
+        src: intercom_case_study_7,
+        alt: "Unified System 7"
+      }
+    ],
+    content: {
+      title: "Building a Long-Term Technology Partnership with Advance Local",
+      description: "",
+      client: "",
+      property: "",
+      challenge: "",
+      solution: "",
+      additionalInfo: [
+        {
+          heading: "",
+          subheading: "",
+          description: "What began as a referral from Kisi to install an access control system at Advance Local’s Staten Island office quickly evolved. Once on-site, it became clear they needed much more than just card readers — they needed a reliable team to build out their low-voltage infrastructure from the ground up.",
+          items: [
+
+          ],
+          note: "",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+        {
+          heading: "",
+          subheading: "",
+          description: "IDR stepped in for the initial Kisi install — but our scope grew fast. Thanks to strong project management and clean, high-quality installations, we were trusted to deliver an expanded solution that included:",
+          items: [
+            "Structured low-voltage cabling throughout the office",
+            "Network rack, patch panels, and switches",
+            "WiFi access points for full coverage",
+            "CCTV camera system",
+            "Card access + video intercom integration",
+            "Mounted TVs and AV wiring for conference rooms"
+          ],
+          note: "",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+        {
+          heading: "",
+          subheading: "",
+          description: "We handled everything from cable pulls to AV setup — no handoffs, no gaps.",
+          items: [
+          ],
+          note: "",
+          idrNote: "",
+          idrNoteBy: ""
+        }
+      ],
+      result: "With a single trusted partner for everything from connectivity to security, Advance Local’s Staten Island office now runs on a solid, future-ready infrastructure. Since that project, IDR has completed multiple installs across other Advance Local locations, building a lasting relationship based on performance, trust, and responsiveness.",
+      feedback: "Amazing service from start to finish. Great project management. IDR installed low voltage cabling, rack, patch panels, switches, WIFI access points, CCTV cameras, card access, video intercom, mounted TVs and connected AV as needed. Highly recommend. Very very responsive, clean, on-time. Great communication.",
+      feedbackBy: "- Peter Barash, Senior Manager, Advance Local"
+    },
+    cards: [
+      {
+        title: "One System",
+        description: "Complete control"
+      },
+      {
+        title: "Mobile Ready",
+        description: "Remote access"
+      }
+    ]
+  },
+      {
+    slug: "phipps-houses",
+    hero: {
+      backgroundImage: case_study.src,
+      heading: "Stopping Break-Ins with Smarter Entry Design",
+      paragraph: "Phipps Houses is one of New York City’s largest and oldest not-for-profit housing developers, known for providing quality affordable housing across the five boroughs. When a high-traffic residential building began experiencing repeat security breaches at its main entrance, the Phipps team called in IDR for a serious assessment — and a stronger solution."
+    },
+    galleryImages: [
+      {
+        src: intercom_case_study_1,
+        alt: "Unified System 1"
+      },
+      {
+        src: intercom_case_study_2,
+        alt: "Unified System 2"
+      },
+      {
+        src: intercom_case_study_3,
+        alt: "Unified System 3"
+      },
+            {
+        src: intercom_case_study_4,
+        alt: "Unified System 4"
+      },
+      {
+        src: intercom_case_study_5,
+        alt: "Unified System 5"
+      },
+      {
+        src: intercom_case_study_6,
+        alt: "Unified System 6"
+      },
+      {
+        src: intercom_case_study_7,
+        alt: "Unified System 7"
+      }
+    ],
+    content: {
+      title: "Stopping Break-Ins with Smarter Entry Design",
+      description: "",
+      client: "Phipps Houses",
+      property: "NYC Property",
+      challenge: "",
+      solution: "",
+      additionalInfo: [
+        {
+          heading: "The Challenge",
+          subheading: "",
+          description: "Teenagers had been breaking into the building repeatedly, gaining entry through the front door despite the presence of a maglock-based access control system. During our initial site assessment, IDR uncovered several technical issues:",
+          items: [
+"The door used a 600 lb maglock — insufficient for high-risk locations",
+"The power supply was unstable, delivering only 6V instead of the expected 12V, suggesting a cabling issue",
+"The system lacked redundancy and coverage — only the main entrance had security controls, leaving the vestibule vulnerable"
+          ],
+          note: "Together, these flaws created a scenario where the door could be forced open with minimal effort.",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+        {
+          heading: "The IDR Solution",
+          subheading: "",
+          description: "IDR developed and deployed a hardened, access-controlled vestibule entry system designed to physically prevent unauthorized entry — even under targeted force.Key system components included:",
+          items: [
+         " Replacement of the existing maglock with an 1800 lb holding-force maglock, providing industrial-grade resistance against forced entry",
+"Installation of an electronic mortise lock at the centerline of the exterior door for additional structural integrity",
+"Addition of a second electronic mortise lock at the vestibule door",
+"Implementation of a relay-driven timing sequence, ensuring:", 
+"Only one door can be unlocked at a time",
+"Entry is sequenced in a mantrap-style configuration to prevent tailgating or piggybacking"
+          ],
+          note: "This system transformed a single point of failure into a multi-stage secure access zone — one designed not just to delay intruders, but to deter them entirely.",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+        {
+          heading: "The Results",
+          subheading: "",
+          description: "",
+          items: [
+            "Zero break-ins at the primary entrance since implementation — over one year running",
+"The system has performed with full stability, even under cold weather and high foot traffic",
+"In one isolated incident, the intruder bypassed the hardened door and attempted entry elsewhere, confirming the effectiveness of the upgrade"
+          ],
+          note: "",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+                {
+          heading: "Why It Matters",
+          subheading: "",
+          description: "This wasn’t just about replacing hardware — it was about identifying a hidden vulnerability and designing a mechanically sound, electrically stable, and behavior-aware solution. IDR didn’t just secure a door — we redefined how that entrance functions under pressure.",
+          items: [
+          ],
+          note: "",
+          idrNote: "",
+          idrNoteBy: ""
+        }
+      ],
+      result: "",
+      feedback: "",
+      feedbackBy: ""
+    },
+    cards: [
+      {
+        title: "One System",
+        description: "Complete control"
+      },
+      {
+        title: "Mobile Ready",
+        description: "Remote access"
+      }
+    ]
+  },
+    {
+    slug: "ppa-partnership",
+    hero: {
+      backgroundImage: case_study.src,
+      heading: "Peninsula Preparatory Academy",
+      paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
+    },
+    galleryImages: [
+      {
+        src: PPA_case_study_1,
+        alt: "PPA Project 1"
+      },
+      {
+        src: PPA_case_study_2,
+        alt: "PPA Project 2"
+      },
+      {
+        src: PPA_case_study_3,
+        alt: "PPA Project 3"
+      },
+         {
+        src: PPA_case_study_4,
+        alt: "PPA Project 4"
+      },
+      {
+        src: PPA_case_study_5,
+        alt: "PPA Project 5"
+      },
+      {
+        src: PPA_case_study_6,
+        alt: "PPA Project 6"
+      },
+         {
+        src: PPA_case_study_7,
+        alt: "PPA Project 7"
+      },
+      {
+        src: PPA_case_study_8,
+        alt: "PPA Project 8"
+      },
+      {
+        src: PPA_case_study_9,
+        alt: "PPA Project 9"
+      },
+         {
+        src: PPA_case_study_10,
+        alt: "PPA Project 10"
+      },
+
+    ],
+    content: {
+      title: "Built to Last: A 15-Year Technology Journey with Peninsula Prep",
+      description: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades.",
+      client: "",
+      property: "",
+      challenge: "",
+      solution: "",
+      additionalInfo: [
+        {
+          heading: "How It Started",
+          subheading: "",
+          description: "Peninsula Prep was IDR’s very first school client — a partnership that began in 2009 with the installation of classroom projectors and structured cabling. We quickly became their go-to source for reliable hardware at accessible pricing.When the school relocated in 2010, they brought IDR back to lead the entire low-voltage infrastructure build for their new campus. This included:",
+          items: [
+            "Backbone cabling: 6-strand multimode fiber from MDF to IDFs",
+"Building out the MDF and two IDFs from scratch",
+"Installing access control, IP cameras, WAPs, and office cabling",
+"Equipping all classrooms with smart boards",
+"Routing all cabling using EMT and Wiremold, due to the building’s older construction",
+"And then—one week before the school year started—their IT provider backed out. The network wasn’t configured. PPA turned to IDR and asked: Can you take over?",
+"We stepped up."
+
+          ],
+          note: "Within five days, IDR configured the entire network, wireless system, and servers — getting the school online and ready for day one. That project became our first-ever full network deployment and eventually, our first managed IT support contract.",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+        {
+          heading: "How It’s Going",
+          subheading: "",
+          description: "When PPA moved again in 2012, they didn’t hesitate to bring IDR with them. We once again built out their low-voltage foundation, with:",
+          items: [
+      "Updated cabling infrastructure",
+"A new MDF and multiple IDFs",
+"Server installations",
+"Access control, IP cameras, and full wireless network setup",
+"Since then, IDR has become a long-term technology partner to PPA, delivering:",
+"Wireless network upgrades",
+"Switching infrastructure and fiber backbone upgrades",
+"CCTV upgrades to a cloud-based system",
+"Access control migrations to cloud platforms",
+"Ongoing IT support and helpdesk for staff",
+"One standout project was a custom-designed Media Room, featuring:",
+"Dolby Atmos speakers and amplifier",
+"Projector system with timed automation",
+"Light dimming and motorized shades",
+"A single `Watch Movie` button that controlled the entire experience",
+
+          ],
+          note: "From hands-on installations to ongoing strategic guidance, IDR continues to be PPA’s trusted technology partner.",
+          idrNote: "",
+          idrNoteBy: ""
+        },
+      ],
+      whyItMatters: "",
+      result: "",
+      feedback: "",
+      feedbackBy: ""
+    },
+    cards: [
+      {
+        title: "5+ Years",
+        description: "Of partnership"
+      },
+      {
+        title: "24/7 Support",
+        description: "Response time"
+      }
+    ]
+  },
 ];

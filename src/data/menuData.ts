@@ -223,8 +223,8 @@ export const MENU_SECTIONS: MenuSection[] = [
         url: "/case-studies/phased-wifi-upgrade",
       },
       {
-        name: "PPA - A Lasting Partnership",
-        url: "/case-studies/ppa-partnership",
+        name: "PPA - Screen Sharing",
+        url: "/case-studies/ppa-screen-sharing",
       },
       {
         name: "Scaling Security w/ Fairstead",
@@ -241,6 +241,18 @@ export const MENU_SECTIONS: MenuSection[] = [
       {
         name: "Unified Intercom Access",
         url: "/case-studies/unified-intercom-access",
+      },
+         {
+        name: "PPA - A Lasting Partnership",
+        url: "/case-studies/ppa-partnership",
+      },
+         {
+        name: "Phipps Houses",
+        url: "/case-studies/phipps-houses",
+      },
+         {
+        name: "Advance Local",
+        url: "/case-studies/advance-local",
       },
     ],
   },
