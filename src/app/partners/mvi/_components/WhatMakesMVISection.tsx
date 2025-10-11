@@ -63,12 +63,13 @@ export default function WhatMakesMVISection() {
               key={index}
               className="group bg-white rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl shadow-md border border-gray-100 hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-2 overflow-hidden h-full flex flex-col"
             >
-              <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-56 xl:h-64 2xl:h-72 3xl:h-80 overflow-hidden">
+              {/* <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-56 xl:h-65 2xl:h-72 3xl:h-80 overflow-hidden bg-white border border-gray-50"> */}
+              <div className="relative w-full aspect-video overflow-hidden bg-white border border-gray-50">
                 <Image
                   src={product.image}
                   alt={`${product.title} - Professional MVI access control solution`}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="object-fill  group-hover:scale-110 transition-transform duration-700"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 33vw, (max-width: 1536px) 33vw, 33vw"
                 />
               </div>

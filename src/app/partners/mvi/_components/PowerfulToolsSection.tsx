@@ -41,7 +41,7 @@ export default function PowerfulToolsSection() {
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 xl:gap-14 2xl:gap-2 items-center">
-          <div className="flex justify-center">
+          <div className="flex justify-center aspect-auto lg:aspect-square xl:aspect-[4/3.5] 2xl:aspect-[4/2.8] ">
             <Image
               src={DashboardImg}
               alt="MVI Systems Management Dashboard interface showing intercom monitoring"

@@ -1,6 +1,7 @@
 /** @format */
 
 import AkuvoxHeroSection from "./_components/AkuvoxHeroSection";
+import GreenSecure from "./_components/GreenSecure";
 import ServiceAreasSection from "./_components/ServiceAreasSection";
 import UpgradeIntercomCTASection from "./_components/UpgradeIntercomCTASection";
 import WhereAkuvoxShinesSection from "./_components/WhereAkuvoxShinesSection";
@@ -16,6 +17,7 @@ export default function VivotekVortex() {
       <AkuvoxHeroSection />
    
         <WhyAkuvoxSection />
+        <GreenSecure/>
         <WhyWorkWithIDRSection />
         <WhereAkuvoxShinesSection />
         <ServiceAreasSection/>

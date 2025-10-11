@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function AkuvoxHeroSection() {
   return (
     <section className="w-full overflow-hidden min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[87vh] 2xl:min-h-[94vh]  py-12 sm:py-16 md:py-18 lg:py-10 2xl:py-18 3xl:py-20 bg-gradient-to-r from-blue-50 to-indigo-100 flex items-center">
-      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[110rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 xl:gap-14 2xl:gap-18 items-center">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[110rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-14 2xl:px-20 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 xl:gap-10 2xl:gap-18 items-center">
         {/* Content */}
         <div className="flex flex-col items-start gap-6 sm:gap-7 md:gap-8 xl:gap-10 2xl:gap-12  max-w-none lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
           <div className="flex flex-col items-start gap-4 sm:gap-5 md:gap-6 xl:gap-7 2xl:gap-8 w-full">
@@ -53,16 +53,18 @@ export default function AkuvoxHeroSection() {
           </div>
         </div>
 
-        {/* Hero Image */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[604px] xl:max-w-2xl 2xl:max-w-3xl ">
-            <Image
-              src={heroImg}
-              alt="Akuvox Intercom and Access Control Solutions"
-              className="w-full h-auto rounded-lg"
-              priority
-              quality={90}
-            />
+        <div className="flex justify-center lg:justify-end items-stretch ">
+          <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[604px] xl:max-w-3xl 2xl:max-w-3xl h-full flex items-center rounded-2xl">
+            <div className="relative w-full h-full min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[550px] xl:min-h-[600px] 2xl:min-h-[650px]">
+              <Image
+                src={heroImg}
+                alt="Akuvox Intercom and Access Control Solutions"
+                fill
+                className="object-cover  rounded-2xl"
+                priority
+                quality={90}
+              />
+            </div>
           </div>
         </div>
       </div>

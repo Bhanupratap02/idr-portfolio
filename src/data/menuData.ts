@@ -251,6 +251,8 @@ export const MENU_SECTIONS: MenuSection[] = [
     items: [
       { name: "Akuvox", url: "/partners/akuvox" },
       { name: "Alphatouch", url: "/partners/alphatouch" },
+      { name: "Avigilon", url: "/partners/avigilon" },
+      { name: "Brivo", url: "/partners/brivo" },
       { name: "ButterflyMX", url: "/partners/butterflymx" },
       { name: "Cisco / Meraki", url: "/partners/cisco-meraki" },
       { name: "Eagle Eye", url: "/partners/eagle-eye" },
@@ -259,15 +261,17 @@ export const MENU_SECTIONS: MenuSection[] = [
       { name: "MVI", url: "/partners/mvi" },
       { name: "Rhombus", url: "/partners/rhombus" },
       { name: "Speco Technologies", url: "/partners/speco-technologies" },
-      { name: "Avigilon", url: "/partners/avigilon" },
+
       { name: "Verkada", url: "/partners/verkada" },
       { name: "Vicon", url: "/partners/vicon" },
       { name: "Vivotek / Vortex", url: "/partners/vivotek-vortex" },
       { name: "ZK Teco", url: "/partners/zk-teco" },
-       { name: "Brivo", url: "/partners/brivo" },
     ],
   },
-];
+].map((section) => ({
+  ...section,
+  items: section.items.sort((a, b) => a.name.localeCompare(b.name)),
+}));
 // Function to convert camelCase keys to kebab-case URLs
 export const getRouteUrl = (key: string) => {
   const routeMap: { [key: string]: string } = {

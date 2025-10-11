@@ -10,7 +10,7 @@ export default function Index() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full py-12 lg:py-16">
       {/* Left Content */}
       <div className="max-w-full lg:max-w-[601px] flex flex-col gap-3 sm:gap-4 order-2 lg:order-1">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-[150%] text-rhombus-text-dark">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl  font-semibold leading-[150%] text-rhombus-text-dark">
           Rhombus Systems: Smart Video Surveillance in the Cloud
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-rhombus-text-medium">

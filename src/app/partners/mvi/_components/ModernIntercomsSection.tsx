@@ -32,12 +32,13 @@ export default function ModernIntercomsSection() {
           </div>
           <div className="flex flex-col gap-3 sm:gap-4 xl:gap-5 2xl:gap-6">
             <div className="w-full">
-              <div className="relative w-full h-48 sm:h-56 md:h-60 xl:h-65 2xl:h-75 rounded-lg overflow-hidden ">
+              {/* <div className="relative w-full h-48 sm:h-56 md:h-60 xl:h-65 2xl:h-75 rounded-lg overflow-hidden bg-gray-50 border border-gray-100"> */}
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
                 <Image
                   src={building1Img}
                   alt="Modern building with MVI intercom system - Professional IP video intercom installation"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority
                   quality={90}
                 />
@@ -49,7 +50,7 @@ export default function ModernIntercomsSection() {
                   src={building2Img}
                   alt="Residential building entrance with MVI intercom - Secure access control solution"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   quality={90}
                 />
               </div>
