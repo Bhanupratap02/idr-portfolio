@@ -11,7 +11,7 @@ export default function AvigilonGallery() {
   return (
     <section className="bg-white  py-12  md:py-16  lg:py-20  2xl:py-24">
       <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 2xl:px-26">
-        {/* Modern Grid Layout */}
+        {/* Modern Grid Layout updated */}
         <div className="grid gap-6 md:gap-8 lg:grid-cols-3 lg:gap-10">
           {images.map((image, index) => (
             <div
