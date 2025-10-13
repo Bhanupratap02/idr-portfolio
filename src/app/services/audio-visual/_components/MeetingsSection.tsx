@@ -84,7 +84,8 @@ const featureCards = [
       </svg>
     ),
     title: "One-Touch Control",
-    description: "Kramer control panels for simplified meeting management",
+    description:
+      "Touch Screen control panels for simplified meeting management",
   },
   {
     icon: (
@@ -115,7 +116,7 @@ const featureCards = [
         />
       </svg>
     ),
-    title: "Hidden Cabling",
+    title: "Professional Cabling",
     description: "Clean installation with professional cable management",
   },
   {

@@ -6,6 +6,7 @@ import credential_types from "@/assets/services/access-control/icons/credential_
 import remote_management from "@/assets/services/access-control/icons/remote_management.png";
 import time from "@/assets/services/access-control/icons/time.png";
 import bell from "@/assets/services/access-control/icons/bell.png";
+import Link from "next/link";
 export default function TrustedTechnology() {
   return (
     <section className="bg-[#F9FAFB] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16">
@@ -21,18 +22,24 @@ export default function TrustedTechnology() {
         </p>
         {/* Partner Logos */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mb-12 sm:mb-16">
-          {["Kisi", "Brivo", "Rhombus", "Verkada", "Vicon", "ZKTeco"].map(
-            (partner) => (
-              <div
-                key={partner}
-                className="bg-white rounded-lg shadow-sm p-3 sm:p-4 text-center flex items-center justify-center"
-              >
-                <span className="text-[#626262] text-sm sm:text-base font-medium">
-                  {partner}
-                </span>
-              </div>
-            )
-          )}
+          {[
+            { name: "Kisi", url: "/partners/kisi" },
+            { name: "Brivo", url: "/partners/brivo" },
+            { name: "Rhombus", url: "/partners/rhombus" },
+            { name: "Verkada", url: "/partners/verkada" },
+            { name: "Vicon", url: "/partners/vicon" },
+            { name: "ZKTeco", url: "/partners/zk-teco" },
+          ].map((partner) => (
+            <Link
+              key={partner.name}
+              href={partner.url}
+              className="bg-white rounded-lg shadow-sm p-3 sm:p-4 text-center flex items-center justify-center"
+            >
+              <span className="text-[#626262] text-sm sm:text-base font-medium">
+                {partner.name}
+              </span>
+            </Link>
+          ))}
         </div>
         {/* Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -87,8 +94,10 @@ export default function TrustedTechnology() {
                 <h3 className="text-[#2E2E2E] text-base sm:text-lg 3xl:text-2xl font-medium mb-2">
                   {item.title}
                 </h3>
-                <p className="text-[#626262] text-sm sm:text-base xl:text-lg 
-                 3xl:text-xl leading-relaxed">
+                <p
+                  className="text-[#626262] text-sm sm:text-base xl:text-lg 
+                 3xl:text-xl leading-relaxed"
+                >
                   {item.desc}
                 </p>
               </div>

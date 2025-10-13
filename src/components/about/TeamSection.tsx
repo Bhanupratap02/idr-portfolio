@@ -5,11 +5,11 @@ export default function TeamSection() {
       title: "Director of Operations",
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f8dc506627faf84f27edc24494e4b8a7e6d83f92?width=436"
     },
-    {
-      name: "Alfonso Douriet",
-      title: "Client Success & Sales Coordinator",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/99b5e555dc1104c67f03ca76865bfb5461a2dfb6?width=436"
-    },
+    // {
+    //   name: "Alfonso Douriet",
+    //   title: "Client Success & Sales Coordinator",
+    //   image: "https://api.builder.io/api/v1/image/assets/TEMP/99b5e555dc1104c67f03ca76865bfb5461a2dfb6?width=436"
+    // },
     {
       name: "Klaus Isufaj",
       title: "Project Manager, Security & Infrastructure",

@@ -1,5 +1,7 @@
 /** @format */
 
+import Link from "next/link";
+
 export default function DCReadySection() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 2xl:py-28 bg-gray-800 text-white">
@@ -20,12 +22,12 @@ export default function DCReadySection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 lg:mb-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold transition-colors cursor-pointer">
+          <Link href={"/contact"} className="bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold transition-colors cursor-pointer">
             Get a Quote
-          </button>
-          <button className="border border-white text-white hover:bg-white hover:text-gray-900 px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold transition-colors cursor-pointer">
+          </Link>
+          <Link href={"/contact"} className="border border-white text-white hover:bg-white hover:text-gray-900 px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold transition-colors cursor-pointer">
             Book Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import hero from "@/assets/services/surveillance-camera/hero.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function SurveillanceHeroSection() {
   return (
     <section className="w-full min-h-[85vh] sm:min-h-[90vh] lg:min-h-[90vh] xl:min-h-[85vh] 2xl:min-h-[90vh] 3xl:min-h-[88vh] bg-gradient-to-r from-[#1E3A8A] via-[#1E40AF] to-[#1D4ED8] relative overflow-hidden flex  items-center">
@@ -13,20 +14,27 @@ export default function SurveillanceHeroSection() {
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8 xl:space-y-10 2xl:space-y-12 flex flex-col justify-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-white leading-tight sm:leading-tight lg:leading-snug xl:leading-relaxed text-center lg:text-left">
-              Surveillance
+              Next-Generation
               <br />
               Camera Systems
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl 3xl:leading-relaxed w-full lg:max-w-2xl  text-[#DBEAFE] text-center lg:text-left">
-              Smarter Security, Built for Real-World Sites
+            <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl 3xl:leading-relaxed w-full max-w-none md:max-w-md 2xl:max-w-lg 3xl:max-w-2xl  text-[#DBEAFE] text-center lg:text-left max-md:mx-auto">
+              AI-driven analytics, real-time alerting, and enterprise-grade
+              scalability for unmatched protection.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6">
-              <button className="bg-white text-[#1E3A8A] hover:bg-gray-100 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold rounded-lg shadow-xl transition-all duration-200 group w-full sm:w-auto cursor-pointer">
+              <Link
+                href={"/contact"}
+                className="bg-white text-[#1E3A8A] hover:bg-gray-100 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4  3xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold rounded-lg shadow-xl transition-all duration-200 group w-full sm:w-auto cursor-pointer text-center my-auto"
+              >
                 Get Started
-              </button>
-              <button className="border-2 border-white text-white bg-transparent hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4 lg:py-5 2xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold hover:bg-white/90 hover:text-[#1E3A8A] rounded-lg backdrop-blur-sm transition-all duration-200 group w-full sm:w-auto cursor-pointer">
+              </Link>
+              <Link
+                href={"/portfolio"}
+                className="border-2 border-white text-white bg-transparent hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 py-3 sm:py-4 lg:py-5 2xl:py-6 text-sm sm:text-base lg:text-lg  3xl:text-2xl font-semibold hover:bg-white/90 hover:text-[#1E3A8A] rounded-lg backdrop-blur-sm transition-all duration-200 group w-full sm:w-auto cursor-pointer text-center my-auto"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
 

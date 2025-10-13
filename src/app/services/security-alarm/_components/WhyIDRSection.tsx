@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 const benefits = [
   {
     icon: (
@@ -128,10 +129,10 @@ export default function WhyIDRSection() {
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl flex items-center justify-center gap-3 rounded-lg mx-auto cursor-pointer">
+          <Link href={"/contact"} className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl inline-flex items-center justify-center gap-3 rounded-lg mx-auto cursor-pointer hover:scale-105 transition-all duration-300 group">
             Schedule a Consultation
-            <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6" />
-          </button>
+            <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6 group-hover:scale-110 transition-transform duration-300" />
+          </Link>
         </div>
       </div>
     </section>

@@ -7,6 +7,7 @@ import LegacySystemsSection from "./_components/LegacySystemsSection";
 import ServiceProcessSection from "./_components/ServiceProcessSection";
 import PortalSection from "./_components/PortalSection";
 import WhyIDRSection from "./_components/WhyIDRSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function Index() {
   return (
@@ -17,7 +18,8 @@ export default function Index() {
       <ServiceProcessSection />
       <PortalSection />
       <WhyIDRSection />
-      <ServicesSection exclude={7}/>
+      <TrustedIndustriesSection />
+      <ServicesSection exclude={7} />
     </div>
   );
 }

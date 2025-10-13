@@ -6,6 +6,7 @@ import background from "@/assets/services/e-rate-program/Background.png";
 import hero from "@/assets/services/e-rate-program/hero.png";
 import arrow from "@/assets/services/e-rate-program/arrow.png";
 import group from "@/assets/services/e-rate-program/group.png"
+import Link from "next/link";
 export default function ERateProgramHeroSection() {
   return (
     <section className="w-full min-h-[90vh] sm:min-h-[95vh] md:min-h-[90vh] lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh] relative py-16 md:py-20 lg:py-24 2xl:py-28 flex md:items-center ">
@@ -36,26 +37,26 @@ export default function ERateProgramHeroSection() {
               </h1>
 
               <p className="text-[#626262] text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl font-normal leading-relaxed max-w-2xl">
-                The Funding Year (FY) 2025 application filing window will open
-                on Wednesday, January 15, 2025, at 12:00 noon ET and will close
-                on Wednesday, March 26, 2025, at 11:59 p.m. ET.
+                From the opening of the funding window to the closing deadline,
+                IDR has you covered.
               </p>
             </div>
+            <Link href={"/contact"}>
+              <Button
+                size="lg"
+                className="inline-flex items-center justify-between gap-3 sm:gap-4 md:gap-6 px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-5 lg:py-6 2xl:py-8 3xl:py-10 bg-[#17254E] text-white rounded-full hover:bg-[#1F3061] hover:shadow-lg transform hover:scale-105 transition-all duration-300 group min-w-[170px] sm:min-w-[180px] md:min-w-[200px] 2xl:min-w-[240px] 3xl:min-w-[280px] relative mx-auto cursor-pointer"
+              >
+                <span className="text-sm sm:text-base  2xl:text-lg    ">
+                  Contact Us
+                </span>
 
-            <Button
-              size="lg"
-              className="inline-flex items-center justify-between gap-3 sm:gap-4 md:gap-6 px-6 sm:px-8 md:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-5 lg:py-6 2xl:py-8 3xl:py-10 bg-[#17254E] text-white rounded-full hover:bg-[#1F3061] hover:shadow-lg transform hover:scale-105 transition-all duration-300 group min-w-[170px] sm:min-w-[180px] md:min-w-[200px] 2xl:min-w-[240px] 3xl:min-w-[280px] relative mx-auto cursor-pointer"
-            >
-              <span className="text-sm sm:text-base  2xl:text-lg    ">
-                Contact Us
-              </span>
-
-              <Image
-                src={arrow}
-                alt="icon"
-                className=" absolute right-0 w-10 h-10     xl:w-12 xl:h-12 2xl:w-15 2xl:h-15 3xl:w-18 3xl:h-17  text-white group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0"
-              />
-            </Button>
+                <Image
+                  src={arrow}
+                  alt="icon"
+                  className=" absolute right-0 w-10 h-10     xl:w-12 xl:h-12 2xl:w-15 2xl:h-15 3xl:w-18 3xl:h-17  text-white group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0"
+                />
+              </Button>
+            </Link>
           </div>
 
           {/* Right Content */}

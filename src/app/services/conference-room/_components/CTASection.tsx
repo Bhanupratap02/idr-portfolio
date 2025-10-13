@@ -1,5 +1,7 @@
 /** @format */
 
+import Link from "next/link";
+
 export default function CTASection() {
   return (
     <section className="py-16 md:py-20 2xl:py-24 3xl:py-32 bg-dark-blue">
@@ -16,12 +18,18 @@ export default function CTASection() {
           </p>
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <button className="bg-white text-dark-blue px-8 py-4 2xl:px-10 2xl:py-5 rounded-md text-lg 2xl:text-xl font-medium hover:bg-gray-50  focus:outline-none focus:ring-2 focus:ring-white cursor-pointer hover:shadow-2xl hover:scale-105 transition-all">
+            <Link
+              href={"/contact"}
+              className="bg-white text-dark-blue px-8 py-4 2xl:px-10 2xl:py-5 rounded-md text-lg 2xl:text-xl font-medium hover:bg-gray-50  focus:outline-none focus:ring-2 focus:ring-white cursor-pointer hover:shadow-2xl hover:scale-105 transition-all"
+            >
               Request a Consultation
-            </button>
-            <button className="border border-white text-white px-8 py-4 2xl:px-10 2xl:py-5 rounded-md text-lg 2xl:text-xl font-medium hover:bg-white hover:text-dark-blue transition-colors focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+            </Link>
+            <Link
+              href={"/portfolio"}
+              className="border border-white text-white px-8 py-4 2xl:px-10 2xl:py-5 rounded-md text-lg 2xl:text-xl font-medium hover:bg-white hover:text-dark-blue transition-colors focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+            >
               See Our Work Portfolio
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CallToActionSection() {
   return (
@@ -15,9 +16,9 @@ export default function CallToActionSection() {
             technology.
           </p>
           <div className="pt-2 sm:pt-4 lg:pt-6">
-            <button className="bg-white text-[#8B5CF6] hover:bg-gray-50 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14 py-3 sm:py-4 lg:py-5 2xl:py-5.5 3xl:py-6.5 text-base sm:text-lg lg:text-lg xl:text-xl 3xl:text-2xl font-medium shadow-xl hover:shadow-2xl transition-all duration-200 rounded-lg group w-full sm:w-auto cursor-pointer">
+            <Link href={"/contact"} className="bg-white text-[#8B5CF6] hover:bg-gray-50 hover:scale-105 px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14 py-3 sm:py-4 lg:py-5 2xl:py-5.5 3xl:py-6.5 text-base sm:text-lg lg:text-lg xl:text-xl 3xl:text-2xl font-medium shadow-xl hover:shadow-2xl transition-all duration-200 rounded-lg group w-full sm:w-auto cursor-pointer">
               Get a Free Site Walk & Quote
-            </button>
+            </Link>
           </div>
         </div>
       </div>

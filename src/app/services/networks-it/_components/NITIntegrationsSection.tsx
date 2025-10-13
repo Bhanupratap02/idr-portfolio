@@ -87,7 +87,7 @@
           />
         </svg>
       ),
-      title: "BMS",
+      title: "WiFi",
       description: "Building management systems",
     },
     {

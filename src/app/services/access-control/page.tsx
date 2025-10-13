@@ -8,6 +8,7 @@ import IntegrationSection from "./_components/IntegrationSection";
 import ServiceBeyondInstall from "./_components/ServiceBeyondInstall";
 import TrustedTechnology from "./_components/TrustedTechnology";
 import WhyChooseIDR from "./_components/WhyChooseIDR";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function Index() {
   return (
@@ -18,6 +19,7 @@ export default function Index() {
       <ServiceBeyondInstall />
       <IDRPortal />
       <WhyChooseIDR />
+      <TrustedIndustriesSection/>
       <CTASection />
       <ServicesGrid exclude={1} />
     </div>

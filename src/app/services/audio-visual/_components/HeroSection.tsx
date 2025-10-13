@@ -1,6 +1,7 @@
 /** @format */
 import Image from "next/image";
 import heroImage from "@/assets/services/audio-visual/hero.png";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -25,13 +26,14 @@ export default function HeroSection() {
             {/* <br/> */}
           </h1>
           <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl text-gray-200 mb-8 ">
-            Modern Surveillance &amp; A/V Solutions for Every Space
+            Expertly Engineered A/V Solutions for Any Setting
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 3xl:py-6  rounded-md text-base sm:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
+          <Link href={"/contact"} className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 3xl:py-6  rounded-md text-base sm:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
             Schedule a Free Site Visit
-          </button>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
+// "Modern Surveillance & A/V Solutions for Every Space" replace this sentence with "Expertly Engineered A/V Solutions for Any Setting"

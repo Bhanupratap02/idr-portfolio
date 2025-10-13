@@ -1,4 +1,8 @@
 /** @format */
+
+import Link from "next/link";
+
+/** @format */
 export function IntercomCTASection() {
   return (
     <section className="bg-gradient-to-r from-blue-600 to-indigo-700 py-16 sm:py-20 lg:py-24 xl:py-28 2xl:py-32 3xl:py-40">
@@ -12,15 +16,23 @@ export function IntercomCTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
+          <Link
+            href={"/contact"}
             className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4
            2xl:px-10 2x:py-5 3x:px-12 3xl:py-6  rounded-lg text-sm sm:text-base lg:text-lg hover:bg-gray-100 transition-colors cursor-pointer"
           >
             Schedule Consultation
-          </button>
-          <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 2xl:px-10 2x:py-5 3x:px-12 3xl:py-6 rounded-lg text-sm sm:text-base lg:text-lg  hover:bg-white hover:text-blue-600 transition-colors cursor-pointer">
-            Call (555) 123-4567
-          </button>
+          </Link>
+
+          {/* Click-to-call link */}
+          <a
+            href="tel:+17185947865"
+            className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 
+  2xl:px-10 2x:py-5 3x:px-12 3xl:py-6 rounded-lg text-sm sm:text-base lg:text-lg 
+  hover:bg-white hover:text-blue-600 transition-colors cursor-pointer"
+          >
+            Call (718) 594-7865
+          </a>
         </div>
       </div>
     </section>

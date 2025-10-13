@@ -24,13 +24,13 @@ const features = [
     icon: tv,
     title: "Stunning Visuals",
     description:
-      "Transform presentations with large-format displays, interactive panels, or dual monitors that deliver crystal-clear images and videos.",
+      "Transform presentations with large-format displays, interactive panels, or multiple displays that deliver crystal-clear images and videos.",
   },
   {
     icon: display,
     title: "One-Touch Controls",
     description:
-      "Start meetings with a single tap using intuitive Kramer control panels or tablet interfaces that simplify complex technology.",
+      "Start meetings with a single tap using intuitive Touch-Screen control panels or tablet interfaces that simplify complex technology.",
   },
   {
     icon: camera,

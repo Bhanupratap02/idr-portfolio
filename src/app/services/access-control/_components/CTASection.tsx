@@ -1,5 +1,7 @@
 /** @format */
 
+import Link from "next/link";
+
 export default function CTASection() {
   return (
     <section className="bg-[#2E2E2E] px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
@@ -10,7 +12,7 @@ export default function CTASection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 2xl:gap-8 3xl:gap-10 justify-center">
-          <button
+          <Link href={"/contact"}
             className="bg-[#FFD700] text-[#2E2E2E] rounded-md 
               px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14
               py-3 sm:py-4 2xl:py-5 3xl:py-6
@@ -19,8 +21,8 @@ export default function CTASection() {
             aria-label="Get a Free Site Audit"
           >
             Get a Free Site Audit
-          </button>
-          <button
+          </Link>
+          <Link href={"/contact"}
             aria-label="Talk to an Expert"
             className="bg-white text-[#2E2E2E] rounded-md 
               px-6 sm:px-8 lg:px-10 2xl:px-12 3xl:px-14
@@ -29,7 +31,7 @@ export default function CTASection() {
               font-medium shadow-lg hover:bg-gray-100 transition-colors cursor-pointer"
           >
             Talk to an Expert
-          </button>
+          </Link>
         </div>
       </div>
     </section>

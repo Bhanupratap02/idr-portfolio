@@ -84,7 +84,7 @@ export default function TransformSpaceSection() {
             {/* <span className="text-sm sm:text-base lg:text-lg 2xl:text-xl">
               (555) 123-4567
             </span> */}
-            <span>(555) 123-4567</span>
+            <span>718-594-7865</span>
           </div>
           <div className="flex items-center gap-2">
             <svg
@@ -97,7 +97,7 @@ export default function TransformSpaceSection() {
                 fill="#0099FF"
               />
             </svg>
-            <span>info@idrtechsolutions.com</span>
+            <span>support@idrtechnologysolutions.com</span>
           </div>
         </div>
       </div>

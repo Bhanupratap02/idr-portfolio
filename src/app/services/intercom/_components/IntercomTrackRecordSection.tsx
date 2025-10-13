@@ -25,12 +25,12 @@ export function IntercomTrackRecordSection() {
                     100+
                   </div>
                   <div className="text-[#4B5563] text-base sm:text-lg lg:text-xl">
-                    Buildings Served
+                    Properties Served
                   </div>
                 </div>
                 <div className="text-center sm:text-left">
                   <div className="text-blue-600 text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">
-                    3
+                    22
                   </div>
                   <div className="text-[#4B5563] text-base sm:text-lg lg:text-xl">
                     States Covered

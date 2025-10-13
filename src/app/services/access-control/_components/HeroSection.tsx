@@ -5,6 +5,7 @@ import hero_image from "@/assets/services/access-control/hero_img.png";
 import cloud from "@/assets/services/access-control/icons/cloud.png";
 import door_control from "@/assets/services/access-control/icons/door_control.png";
 import mobile_first from "@/assets/services/access-control/icons/mobile_support.png";
+import Link from "next/link";
 export default function HeroSection() {
   const features = [
     {
@@ -72,9 +73,9 @@ export default function HeroSection() {
               </div>
 
               {/* CTA Button */}
-              <button className="bg-[#FFD700] text-[#2E2E2E] rounded-md px-6 py-3 text-base sm:text-lg 2xl:px-10 2xl:py-5 2xl:text-xl 3xl:px-12 3xl:py-6 3xl:text-2xl font-medium shadow-md hover:bg-yellow-500 transition-colors cursor-pointer">
+              <Link href={"/contact"} className="bg-[#FFD700] text-[#2E2E2E] rounded-md px-6 py-3 text-base sm:text-lg 2xl:px-10 2xl:py-5 2xl:text-xl 3xl:px-12 3xl:py-6 3xl:text-2xl font-medium shadow-md hover:bg-yellow-500 transition-colors cursor-pointer">
                 Get a Free Consultation
-              </button>
+              </Link>
             </div>
 
             {/* Right Hero Image */}

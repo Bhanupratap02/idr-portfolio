@@ -23,8 +23,7 @@ const includedServices = [
   },
   {
     title: "Staff training & walkthrough",
-    description:
-      "We ensure your team knows how to use all features effectively.",
+    description: "We ensure your team knows how to use all features.",
   },
 ];
 export default function IncludedSection() {

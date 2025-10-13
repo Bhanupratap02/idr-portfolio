@@ -18,7 +18,7 @@ import Image from "next/image";
       icon: designs,
       title: "Custom",
       subtitle: "Designs",
-      desc: "Blueprints for your specific space",
+      desc: "Custom systems engineered for your business",
     },
     {
       icon: manager,

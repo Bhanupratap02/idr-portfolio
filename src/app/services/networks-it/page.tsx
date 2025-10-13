@@ -9,6 +9,7 @@ import NITIntegrationsSection from "./_components/NITIntegrationsSection";
 import NITTimelineSection from "./_components/NITTimelineSection";
 import NITPortalSection from "./_components/NITPortalSection";
 import NITWhyChooseSection from "./_components/NITWhyChooseSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function NetworksIT() {
   return (
@@ -20,6 +21,7 @@ export default function NetworksIT() {
       <NITIntegrationsSection />
       <NITTimelineSection />
       <NITPortalSection />
+      <TrustedIndustriesSection/>
       <NITWhyChooseSection />
       <AVServicesGrid exclude={6} />
     </div>

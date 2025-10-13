@@ -7,6 +7,7 @@ import { ApplicationsSection } from "./_components/ApplicationsSection";
 import { PricingSection } from "./_components/PricingSection";
 import { IntegrationsSection } from "./_components/IntegrationsSection";
 import { CTASection } from "./_components/CTASection";
+import AvigilonGallery from "./_components/AvigilonGallery";
 // import { PartnersCarousel } from "./components/PartnersCarousel";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <WhyChooseSection />
       <ScenesSection />
       <SecurityFeaturesSection />
+      <AvigilonGallery/>
       <ApplicationsSection />
       <PricingSection />
       <IntegrationsSection />

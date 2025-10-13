@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import hero_bg from "@/assets/services/security-alarm/hero_bg.png"
 import hero_main from "@/assets/services/security-alarm/hero_main.png";
+import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] xl:min-h-[88vh] 2xl:min-h-[90vh]  bg-gradient-to-r from-[#111827] to-[#1F2937] flex items-start md:items-center">
@@ -11,8 +12,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20 lg:opacity-30"
         style={{
-          backgroundImage:
-            `url(${hero_bg.src})`,
+          backgroundImage: `url(${hero_bg.src})`,
         }}
       />
 
@@ -34,10 +34,13 @@ export default function HeroSection() {
             and assets.
           </p>
 
-          <button className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl flex items-center gap-3 rounded-lg max-lg:mx-auto cursor-pointer">
+          <Link
+            href={"/contact"}
+            className="bg-[#0056B3] hover:bg-[#0056B3]/90 text-white px-12 md:px-8 py-4 md:py-5 lg:px-12 3xl:px-12 2xl:py-6  text-base md:text-lg 3xl:text-xl inline-flex items-center gap-3 rounded-lg max-lg:mx-auto cursor-pointer hover:scale-105 transition-all duration-300 group"
+          >
             Get a Free Site Assessment
-            <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6" />
-          </button>
+            <ArrowRight className="w-4 h-4 xl:w-5 xl:h-5 3xl:w-6 3xl:h-6 group-hover:scale-110 transition-transform duration-300" />
+          </Link>
         </div>
 
         {/* Right Content - Security Device Image */}

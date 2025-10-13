@@ -40,9 +40,9 @@ export default function SmarterSurveillanceSection() {
             Smarter Surveillance, Built Around You
           </h2>
           <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl 2xl:max-w-[5xl]  3xl:max-w-6xl mx-auto">
-            We specialize in cloud-first, AI-enabled camera systems from
-            top-tier manufacturers like Vivotek, Rhombus, Verkada, Speco, and
-            Eagle Eye Networks.
+            We specialize in cloud-driven, AI-enabled camera systems from
+            top-tier manufacturers like Avigilon, Eagle Eye Networks, Rhombus,
+            Verkada, and Vivotek.
           </p>
         </div>
 

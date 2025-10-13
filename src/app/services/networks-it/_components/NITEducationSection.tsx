@@ -1,6 +1,7 @@
 /** @format */
 import Image from "next/image";
 import education from "@/assets/services/networks-it/education.png";
+import Link from "next/link";
 const educationFeatures = [
   {
     icon: (
@@ -124,9 +125,12 @@ export default function NITEducationSection() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors text-sm md:text-base 3xl:text-base cursor-pointer">
+              <Link
+                href={"/services/e-rate-program"}
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-normal hover:bg-blue-700 transition-colors text-sm md:text-base 3xl:text-base cursor-pointer"
+              >
                 Explore Education Solutions
-              </button>
+              </Link>
             </div>
           </div>
         </div>

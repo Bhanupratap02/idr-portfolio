@@ -1,5 +1,6 @@
 /** @format */
 
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 import { CertifiedSupportSection } from "./_components/CertifiedSupportSection";
 import { IntegratedIntelligenceSection } from "./_components/IntegratedIntelligenceSection";
 import { IntercomCTASection } from "./_components/IntercomCTASection";
@@ -18,6 +19,7 @@ export default function Intercom() {
       <LegacySystemsSection />
       <CertifiedSupportSection />
       <IntegratedIntelligenceSection />
+      <TrustedIndustriesSection/>
       <IntercomCTASection />
       <ServicesGrid exclude={5}/>
     </div>

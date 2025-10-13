@@ -155,13 +155,7 @@ export default function Index() {
         Our Work
       </h1>
       <p className="text-[#B4B4B4] text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl xl:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto px-2 sm:px-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+      From classrooms to high-rises, IDR designs and installs systems that power safety, connectivity, and communication. Every project reflects our commitment to expert engineering, white-glove service, and lasting results. Browse our portfolio to see how we bring innovation to life across industries.
       </p>
     </div>
 

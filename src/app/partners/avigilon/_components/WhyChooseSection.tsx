@@ -23,30 +23,36 @@ export function WhyChooseSection() {
   ];
 
   return (
-    <section className="w-full bg-gray-50 px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-gray-50  py-12  md:py-16  lg:py-20  2xl:py-24">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 2xl:px-26">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl mb-4 text-[#2e2e2e]">
+        <div className="mb-10 text-center md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-18">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl  xl:text-5xl 2xl:text-6xl  mb-4 md:mb-6 text-[#2e2e2e]">
             Why Choose Avigilon Unity + Alta
           </h2>
-          <p className="text-xl sm:text-2xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-light text-gray-600 leading-relaxed">
             Three core advantages that set us apart
           </p>
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 xl:gap-8 2xl:gap-10">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow"
+              className="bg-white rounded-xl shadow-lg p-4 sm:p-5 md:p-6 xl:p-8 2xl:p-10 hover:shadow-xl transition-shadow"
             >
-              <div className={`${feature.color} w-16 h-16 rounded-xl flex items-center justify-center mb-6`}>
-                <feature.icon className="w-8 h-8 text-white" />
+              <div
+                className={`${feature.color} size-14 md:size-16 2xl:size-18 rounded-xl flex items-center justify-center mb-6`}
+              >
+                <feature.icon className=" text-white size-6 md:size-7 2xl:size-8" />
               </div>
-              <h3 className="text-xl mb-3 text-[#2e2e2e]">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-lg  md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl mb-3 text-[#2e2e2e] font-[450]">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

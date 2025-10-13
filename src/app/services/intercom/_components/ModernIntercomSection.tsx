@@ -148,7 +148,7 @@ export function ModernIntercomSection() {
             Our Technology Partners
           </h3>
           <div className="flex justify-between gap-4 sm:gap-6 lg:gap-8 flex-wrap">
-            {["Akuvox", "ButterflyMX", "AlphaTouch", "Teleportivity", "2N"].map(
+            {["Akuvox", "ButterflyMX", "AlphaTouch", "MVI", "Comelit"].map(
               (partner) => (
                 <div
                   key={partner}

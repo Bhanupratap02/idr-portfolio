@@ -13,7 +13,7 @@ export  default function DCWhatWeDeliverSection() {
       icon: deliver1,
       title: "Fiber and Copper Installs",
       description:
-        "OM3/OM4 fiber and Cat6a/Cat7 copper installations with precision testing",
+        "Multimode / Single mode fiber and Cat6a/Cat7 copper installations with precision testing",
     },
     {
       icon: deliver2,

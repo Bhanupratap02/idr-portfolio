@@ -2,6 +2,7 @@
 
 import hero from "@/assets/services/structured-cabling/hero.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CablingHeroSection() {
   return (
@@ -23,9 +24,9 @@ export default function CablingHeroSection() {
                 infrastructure.
               </p>
             </div>
-            <button className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white px-6 py-3 sm:px-7 sm:py-3.5 lg:px-8 lg:py-3.5 xl:px-12 xl:py-4.5 2xl:px-14 2xl:py-5 3xl:px-16 3xl:py-6 text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl rounded-md transition-colors duration-200 w-fit max-lg:mx-auto cursor-pointer">
+            <Link href={"/contact"} className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white px-6 py-3 sm:px-7 sm:py-3.5 lg:px-8 lg:py-3.5 xl:px-12 xl:py-4.5 2xl:px-14 2xl:py-5 3xl:px-16 3xl:py-6 text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl rounded-md  w-fit max-lg:mx-auto cursor-pointer hover:scale-105 transition-all duration-300">
               Schedule a Site Walk
-            </button>
+            </Link>
           </div>
 
           {/* Right Content - Image */}

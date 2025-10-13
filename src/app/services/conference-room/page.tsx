@@ -3,9 +3,9 @@ import CTASection from "./_components/CTASection";
 import HeroSection from "./_components/HeroSection";
 import IDRPortalSection from "./_components/IDRPortalSection";
 import IncludedSection from "./_components/IncludedSection";
-import TrustedIndustriesSection from "./_components/TrustedIndustriesSection";
 import TrustedProductsSection from "./_components/TrustedProductsSection";
 import WhyChooseCRSection from "./_components/WhyChooseCRSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 
 export default function ConferenceRoom() {

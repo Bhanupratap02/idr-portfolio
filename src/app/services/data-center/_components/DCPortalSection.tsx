@@ -1,6 +1,7 @@
 /** @format */
-import portal from "@/assets/services/data-center/portal.png";
+import portal from "@/assets/idr_portal.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 const features = [
   {
     title: "Test Results Database",
@@ -94,7 +95,10 @@ export default function DCPortalSection() {
               }
             </div>
 
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 2xl:px-8 py-3 2xl:py-4 rounded-md font-normal transition-colors inline-flex items-center space-x-3 text-sm sm:text-base 2xl:text-lg 3xl:text-xl cursor-pointer">
+            <Link
+              href="https://portal.idrtechnologysolutions.com/"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 2xl:px-8 py-3 2xl:py-4 rounded-md font-normal transition-colors inline-flex items-center space-x-3 text-sm sm:text-base 2xl:text-lg 3xl:text-xl cursor-pointer"
+            >
               <span>See the Portal in Action</span>
               <svg
                 width="14"
@@ -108,7 +112,7 @@ export default function DCPortalSection() {
                   fill="white"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
 
           {/* Right Side - Portal Dashboard Image */}

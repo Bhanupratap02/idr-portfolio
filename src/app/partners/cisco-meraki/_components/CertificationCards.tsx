@@ -37,10 +37,9 @@ export default function CertificationCards() {
             {/* Description */}
             <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
               <p className="text-[#626262] text-base sm:text-lg md:text-xl xl:text-xl lg:text-lg 2xl:text-2xl leading-relaxed mb-1 sm:mb-2 font-light">
-                We meet Cisco&apos;s rigorous standards in service and support.
-              </p>
-              <p className="text-[#626262] text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed font-light">
-                Your network is in expert hands.
+                We meet Cisco’s rigorous standards in service and support — with
+                certified CCNA professionals ensuring your network is in expert
+                hands.
               </p>
             </div>
 
@@ -85,7 +84,6 @@ export default function CertificationCards() {
                 We sell, design, install, and configure full-stack Cisco and
                 Meraki solutions across:
               </p>
-   
             </div>
 
             {/* Feature Pills */}

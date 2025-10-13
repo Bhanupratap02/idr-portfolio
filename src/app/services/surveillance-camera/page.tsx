@@ -9,6 +9,7 @@ import SurveillanceCallToActionSection from "./_components/SurveillanceCallToAct
 import SurveillanceHeroSection from "./_components/SurveillanceHeroSection";
 import SurveillancePortalSection from "./_components/SurveillancePortalSection";
 import WhyChooseSurveillanceSection from "./_components/WhyChooseSurveillanceSection";
+import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export default function SurveillanceCamera() {
   return (
@@ -21,6 +22,7 @@ export default function SurveillanceCamera() {
         <CertifiedSupportSection />
         <SurveillancePortalSection />
         <WhyChooseSurveillanceSection />
+        <TrustedIndustriesSection/>
         <SurveillanceCallToActionSection />
         <ServicesGrid exclude={9}/>
       </main>
