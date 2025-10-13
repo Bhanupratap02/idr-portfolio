@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 interface ImageType {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
 }
 
@@ -76,19 +77,20 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                   key={`${img.originalIndex}-${i}`}
                   className="relative overflow-hidden shadow-xl transition-all duration-500"
                   style={{
-                    width: '350px', // Increased width for better desktop coverage
-                    height: i === 1 ? '255px' : '280px', // Middle image matches inner height of rotated sides
-                    transform: i === 0 
-                      ? 'perspective(800px) rotateY(25deg) translateX(30px)' // Left - rotated inward
-                      : i === 2 
-                      ? 'perspective(800px) rotateY(-25deg) translateX(-30px)' // Right - rotated inward
-                      : 'translateZ(20px)', // Center - slightly forward, reduced from 30px
-                    borderRadius: '0px',
-                    zIndex: i === 1 ? 20 : 10
+                    width: "350px", // Increased width for better desktop coverage
+                    height: i === 1 ? "255px" : "280px", // Middle image matches inner height of rotated sides
+                    transform:
+                      i === 0
+                        ? "perspective(800px) rotateY(25deg) translateX(30px)" // Left - rotated inward
+                        : i === 2
+                        ? "perspective(800px) rotateY(-25deg) translateX(-30px)" // Right - rotated inward
+                        : "translateZ(20px)", // Center - slightly forward, reduced from 30px
+                    borderRadius: "0px",
+                    zIndex: i === 1 ? 20 : 10,
                   }}
                 >
-                  <img
-                    src={img.src.src}
+                  <Image
+                    src={typeof img.src === "string" ? img.src : img.src}
                     alt={img.alt}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -142,18 +144,19 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 <div
                   key={`${img.originalIndex}-${i}`}
                   className={`relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 ${
-                    i === 1 ? 'w-64 h-64' : 'w-56 h-52'
+                    i === 1 ? "w-64 h-64" : "w-56 h-52"
                   }`}
                   style={{
-                    transform: i === 0 
-                      ? 'translateY(40px)' 
-                      : i === 2 
-                      ? 'translateY(40px)' 
-                      : 'translateY(0px)',
+                    transform:
+                      i === 0
+                        ? "translateY(40px)"
+                        : i === 2
+                        ? "translateY(40px)"
+                        : "translateY(0px)",
                   }}
                 >
                   <img
-                    src={img.src}
+                    src={typeof img.src === "string" ? img.src : img.src.src}
                     alt={img.alt}
                     className="w-full h-full object-cover"
                   />
@@ -198,7 +201,11 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           <div className="relative">
             <div className="w-full h-72 overflow-hidden rounded-2xl shadow-xl bg-white">
               <img
-                src={images[currentSlide].src}
+                src={
+                  typeof images[currentSlide].src === "string"
+                    ? images[currentSlide].src
+                    : images[currentSlide].src.src
+                }
                 alt={images[currentSlide].alt}
                 className="w-full h-full object-cover"
               />
