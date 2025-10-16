@@ -180,7 +180,7 @@ export default function ServicesGrid({
                   href={service?.url}
                   className="inline-flex items-center gap-2 px-4 sm:px-5 xl:px-6 2xl:px-8 py-2.5 sm:py-3 xl:py-3.5 2xl:py-4 rounded-md text-sm  sm:text-base xl:text-lg 2xl:text-xl font-medium transition-colors border border-gray-400 text-gray-900 hover:bg-gray-800 hover:text-white cursor-pointer"
                 >
-                  Book Now <ArrowIcon />
+                  Learn More <ArrowIcon />
                 </Link>
               </div>
             </div>
