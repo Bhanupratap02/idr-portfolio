@@ -43,7 +43,7 @@ export default function Finance() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12">
             {/* Access Control */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="27"
                   height="27"
@@ -75,7 +75,7 @@ export default function Finance() {
 
             {/* Surveillance */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="31"
                   height="27"
@@ -107,7 +107,7 @@ export default function Finance() {
 
             {/* Network Cabling */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="33"
                   height="27"
@@ -139,7 +139,7 @@ export default function Finance() {
 
             {/* Intercom */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="27"
                   height="27"
@@ -171,7 +171,7 @@ export default function Finance() {
 
             {/* AV */}
             <div className="flex flex-col items-center text-center gap-3 col-span-2 md:col-span-1 md:col-start-auto">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="33"
                   height="27"
