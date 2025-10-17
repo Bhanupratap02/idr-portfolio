@@ -163,7 +163,7 @@ export default function WhyChooseUs() {
   return (
     <section className="w-full bg-white text-gray-900 py-10 sm:pt-12 sm:pb-8 md:pt-16 md:pb-12 lg:pt-20 lg:pb-12 xl:pt-24 xl:pb-16 2xl:pt-28 2xl:pb-16 3xl:pb-18 px-4 md:px-10 xl:px-12 2xl:px-20 3xl:px-32 overflow-hidden">
       <div className="w-full max-w-[200rem] mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-10 md:mb-12 xl:mb-14 ">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-10 md:mb-12 xl:mb-14 text-primary">
           Why Choose Us
         </h2>
 
@@ -246,7 +246,7 @@ export default function WhyChooseUs() {
                   muted={isMuted}
                   playsInline
                   loop={false}
-                  className="w-full h-full object-fill"
+                  className="w-full h-full object-fill overflow-hidden scale-112"
                 />
                 {index === activeTab && (
                   <button

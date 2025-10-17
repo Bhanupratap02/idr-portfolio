@@ -54,7 +54,7 @@ const CaseStudies = () => {
 
     >
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[110rem] mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl text-gray-900 font-bold text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl text-primary font-bold text-center mb-12">
           Case Studies
         </h2>
 

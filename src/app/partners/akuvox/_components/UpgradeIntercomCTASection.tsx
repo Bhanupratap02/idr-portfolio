@@ -1,6 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function UpgradeIntercomCTASection() {
   return (
@@ -20,16 +21,19 @@ export default function UpgradeIntercomCTASection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row w-full  gap-4 xl:gap-5 2xl:gap-6 justify-center items-center">
-          <Button className="bg-white text-blue-600 hover:bg-gray-100 px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5.5 2xl:py-6.5 text-sm sm:text-base  xl:text-lg 3xl:text-xl font-light h-auto cursor-pointer">
-            Book a Site Walk
-          </Button>
-
-          <Button
-            variant="outline"
-            className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-blue-600 px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base  xl:text-lg 3xl:text-xl font-light h-auto cursor-pointer"
-          >
-            Request Design Consultation
-          </Button>
+          <Link href={"/contact"}>
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5.5 2xl:py-6.5 text-sm sm:text-base  xl:text-lg 3xl:text-xl font-light h-auto cursor-pointer">
+              Book a Site Walk
+            </Button>
+          </Link>
+          <Link href={"/contact"}>
+            <Button
+              variant="outline"
+              className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-blue-600 px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base  xl:text-lg 3xl:text-xl font-light h-auto cursor-pointer"
+            >
+              Request Design Consultation
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 3xl:py-24">
       <div className="max-w-6xl 2xl:max-w-[80rem] 3xl:max-w-[100rem] mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-gray-900 font-bold text-center mb-12 sm:mb-16 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-primary font-bold text-center mb-12 sm:mb-16 leading-tight">
           What They Say About Us
         </h2>
 

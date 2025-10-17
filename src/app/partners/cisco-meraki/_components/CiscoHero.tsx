@@ -1,6 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CiscoHero() {
   return (
@@ -28,15 +29,20 @@ export default function CiscoHero() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 xl:gap-5 2xl:gap-6">
-              <Button className="bg-[#4A90E2] text-white hover:bg-[#3A80D2] px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3  md:py-3.5  xl:py-4.5 2xl:py-5 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light rounded-lg shadow-sm border-0 hover:shadow-lg transform hover:scale-105 transition-all duration-300 h-auto cursor-pointer">
-                Let&apos;s Talk →
-              </Button>
-              <Button
-                variant="outline"
-                className="border border-[#4A90E2] text-[#4A90E2] hover:bg-[#4A90E2] hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3  md:py-3.5  xl:py-4.5 2xl:py-5 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light rounded-lg bg-transparent hover:shadow-lg transform hover:scale-105 transition-all duration-300 h-auto cursor-pointer"
-              >
-                View Products
-              </Button>
+              <Link href={"/contact"}>
+                <Button className="bg-[#4A90E2] text-white hover:bg-[#3A80D2] px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3  md:py-3.5  xl:py-4.5 2xl:py-5 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light rounded-lg shadow-sm border-0 hover:shadow-lg transform hover:scale-105 transition-all duration-300 h-auto cursor-pointer">
+                  Let&apos;s Talk →
+                </Button>
+              </Link>
+              <Link href={"/portfolio"}>
+         
+                <Button
+                  variant="outline"
+                  className="border border-[#4A90E2] text-[#4A90E2] hover:bg-[#4A90E2] hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3  md:py-3.5  xl:py-4.5 2xl:py-5 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light rounded-lg bg-transparent hover:shadow-lg transform hover:scale-105 transition-all duration-300 h-auto cursor-pointer"
+                >
+                  View Products
+                </Button>
+              </Link>
             </div>
           </div>
 

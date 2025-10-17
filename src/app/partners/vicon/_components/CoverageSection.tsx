@@ -3,6 +3,7 @@
 import { Users, CheckCircle, Building } from "lucide-react";
 import CoverageImg from "@/assets/partners/vicon/coverage.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const partnerFeatures = [
   {
@@ -85,9 +86,9 @@ export default function CoverageSection() {
               <p className="text-[#006cca]  mb-3 text-sm sm:text-base md:text-lg 2xl:text-xl font-light">
                 Contact us about multi-location deployments →
               </p>
-              <button className="bg-[#006cca] text-white px-4 py-2 md:px-6 md:py-3 text-sm  md:text-base 2xl:text-lg rounded-md font-light hover:bg-[#0056a3] transition-colors duration-200">
+              <Link href={"/contact"} className="bg-[#006cca] text-white px-4 py-2 md:px-6 md:py-3 text-sm  md:text-base 2xl:text-lg rounded-md font-light hover:bg-[#0056a3] transition-colors duration-200">
                 Contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>

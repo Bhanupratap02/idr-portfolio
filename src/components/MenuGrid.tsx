@@ -20,7 +20,7 @@ const MenuGrid = ({ items, title, rootUrl, onLinkClick, isVisible }:MenuGridProp
      };
   return (
     <div className="absolute top-full left-0 right-0 z-[70]  bg-white mt-0.5 hidden lg:block">
-      <div className="max-w-7xl mx-auto h-full  px-4 md:px-6 lg:px-8 py-10 flex">
+      <div className="max-w-7xl mx-auto h-full  px-4 md:px-6 lg:px-8 py-10 2xl:py-20 flex">
         {/* Title */}
 
         <Link

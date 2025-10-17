@@ -3,8 +3,8 @@
 
 import ERateProgramHeroSection from "./_components/ERateProgramHeroSection";
 import ERateProgramInfoSection from "./_components/ERateProgramInfoSection";
-import QuickAccessResourcesSection from "./_components/QuickAccessResourcesSection";
-import TrainingResourcesSection from "./_components/TrainingResourcesSection";
+// import QuickAccessResourcesSection from "./_components/QuickAccessResourcesSection";
+
 import CallToActionSection from "./_components/CallToActionSection";
 import ServicesGrid from "@/components/services/ServicesGrid";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
@@ -17,8 +17,7 @@ export default function ERateProgram() {
      
         <ERateProgramHeroSection />
         <ERateProgramInfoSection />
-        <QuickAccessResourcesSection />
-        {/* <TrainingResourcesSection /> */}
+        {/* <QuickAccessResourcesSection /> */}
         <TrustedIndustriesSection/>
         <CallToActionSection />
         <ServicesGrid/>

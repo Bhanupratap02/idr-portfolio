@@ -1,4 +1,5 @@
-import { CheckCircle, Cloud, Shield, Smartphone, Search, Users, Key, Speaker, Link, MapPin, Globe, Headphones } from "lucide-react";
+import { CheckCircle, Cloud, Shield, Smartphone, Search, Users, Key, Speaker, Link as LinkIcon, MapPin, Globe, Headphones } from "lucide-react";
+import Link from "next/link";
 
 export default function Index() {
   return (
@@ -17,12 +18,12 @@ export default function Index() {
           Certified by Rhombus. Designed, Installed, and Supported by IDR Technology Solutions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4 sm:mt-6 lg:mt-8">
-          <button className="bg-[#052557] text-white px-5 sm:px-6 py-3 sm:py-4 rounded-md hover:opacity-90 transition-opacity">
+          <Link href={"/contact"} className="bg-[#052557] text-white px-5 sm:px-6 py-3 sm:py-4 rounded-md hover:opacity-90 transition-opacity">
             Get a Free Demo
-          </button>
-          <button className="border border-rhombus-dark-blue text-rhombus-dark-blue px-5 sm:px-7 py-3 sm:py-4 rounded-md hover:bg-gray-50 transition-colors">
+          </Link>
+          <Link href="/contact" className="border border-rhombus-dark-blue text-rhombus-dark-blue px-5 sm:px-7 py-3 sm:py-4 rounded-md hover:bg-gray-50 transition-colors">
             Design My System
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -151,7 +152,7 @@ export default function Index() {
       {/* Easy Integration */}
       <div className="bg-white rounded-lg p-6 sm:p-8 shadow-md">
         <div className="w-6 h-8 sm:w-7 sm:h-9 mb-4 sm:mb-6">
-          <Link className="w-full h-full text-blue-600" />
+          <LinkIcon className="w-full h-full text-blue-600" />
         </div>
         <h3 className="text-lg sm:text-xl font-medium text-rhombus-text-dark mb-3 sm:mb-4">Easy Integration</h3>
         <p className="text-sm sm:text-base text-gray-600 leading-6">
@@ -216,7 +217,7 @@ export default function Index() {
               </div>
             </div>
             <div className="flex items-start gap-3 sm:gap-4">
-              <Link className="w-6 h-5 sm:w-8 sm:h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <LinkIcon className="w-6 h-5 sm:w-8 sm:h-6 text-blue-600 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="text-base sm:text-lg font-medium text-rhombus-text-dark mb-2">Integration Specialists</h4>
                 <p className="text-sm sm:text-base text-gray-600">Connecting Rhombus to Kisi, intercoms, and more</p>
@@ -343,9 +344,9 @@ export default function Index() {
         </div>
         <h3 className="text-lg sm:text-xl font-medium mb-3 sm:mb-4">Have a Unique Space?</h3>
         <p className="text-sm sm:text-base mb-4 sm:mb-6">We design custom solutions for any environment.</p>
-        <button className="bg-white text-blue-600 px-5 sm:px-6 py-2 rounded-md hover:bg-gray-100 transition-colors text-sm sm:text-base">
+        <Link href={"/contact"} className="bg-white text-blue-600 px-5 sm:px-6 py-2 rounded-md hover:bg-gray-100 transition-colors text-sm sm:text-base">
           Contact Us
-        </button>
+        </Link>
       </div>
     </div>
   </div>
@@ -365,7 +366,7 @@ export default function Index() {
         <div className="flex-1">
           <h3 className="text-lg sm:text-xl font-medium text-rhombus-text-dark mb-3 sm:mb-4">Rhombus + Kisi</h3>
           <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-6">
-            Link access events to video footage automatically. See who actually used each badge for enhanced security.
+            LinkIcon access events to video footage automatically. See who actually used each badge for enhanced security.
           </p>
           <div className="flex items-center gap-2 text-blue-600 text-xs sm:text-sm">
             <svg className="w-3 h-3.5 flex-shrink-0" viewBox="0 0 13 15" fill="currentColor">
@@ -391,7 +392,7 @@ export default function Index() {
               <svg className="w-3 h-3.5 flex-shrink-0" viewBox="0 0 13 15" fill="currentColor">
                 <path d="M11.993 8.36807C12.3348 8.02627 12.3348 7.47119 11.993 7.1294L7.61797 2.75439C7.27617 2.4126 6.72109 2.4126 6.3793 2.75439C6.0375 3.09619 6.0375 3.65127 6.3793 3.99307L9.26406 6.8751H0.875C0.391016 6.8751 0 7.26611 0 7.7501C0 8.23408 0.391016 8.6251 0.875 8.6251H9.26133L6.38203 11.5071C6.04023 11.8489 6.04023 12.404 6.38203 12.7458C6.72383 13.0876 7.27891 13.0876 7.6207 12.7458L11.9957 8.3708L11.993 8.36807Z"/>
               </svg>
-              <span>Door events linked to video logs</span>
+              <span>Door events LinkIconed to video logs</span>
             </div>
             <div className="flex items-start gap-2 text-blue-600 text-xs sm:text-sm">
               <svg className="w-3 h-3.5 flex-shrink-0 mt-0.5" viewBox="0 0 13 15" fill="currentColor">
@@ -511,12 +512,12 @@ export default function Index() {
                   Upgrade to a cloud-native solution that&apos;s scalable, intelligent, and secure. Let IDR help you design a system tailored to your space and team.
                 </p>
                 <div className="flex gap-4">
-                  <button className="bg-white text-blue-600 font-medium px-6 py-3 rounded-md hover:bg-gray-100 transition-colors">
+                  <Link href={"/contact"} className="bg-white text-blue-600 font-medium px-6 py-3 rounded-md hover:bg-gray-100 transition-colors">
                     Request a Demo
-                  </button>
-                  <button className="border border-white text-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors">
+                  </Link>
+                  <Link href={"/contact"} className="border border-white text-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors">
                     Talk to an Expert
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="bg-white rounded-lg p-8 shadow-lg w-[553px]">

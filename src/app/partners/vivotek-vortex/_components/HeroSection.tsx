@@ -1,6 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -56,19 +57,24 @@ export default function HeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-5 xl:gap-6 2xl:gap-8 3xl:gap-10 items-center pt-4 sm:pt-6 md:pt-8 lg:pt-8 xl:pt-10 2xl:pt-12 3xl:pt-16 max-sm:w-[90%]">
-            <Button
-              size={"lg"}
-              className="group bg-[#2563EB] hover:bg-[#1d4ed8] active:bg-[#1e40af] text-white transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-medium   px-6 sm:px-7 md:px-8 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 md:py-5 lg:py-5 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[200px] sm:min-w-[220px] md:min-w-[250px] lg:min-w-[240px] xl:min-w-[260px] 2xl:min-w-[280px] 3xl:min-w-[320px] cursor-pointer h-12 sm:h-14 md:h-16 2xl:h-18 3xl:h-20"
-            >
-              Get Free Consultation
-            </Button>
-            <Button
-              size={"lg"}
-              variant="outline"
-              className="group border-2 border-white/80 hover:border-white text-white bg-white/10 hover:bg-white hover:text-[#2563EB] backdrop-blur-sm active:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl  font-medium px-6 sm:px-7 md:px-8 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 md:py-5 lg:py-5 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[200px] sm:min-w-[220px] md:min-w-[250px] lg:min-w-[240px] xl:min-w-[260px] 2xl:min-w-[280px] 3xl:min-w-[320px] cursor-pointer  h-12 sm:h-14 md:h-16 2xl:h-18 3xl:h-20"
-            >
-              View Solutions
-            </Button>
+            <Link href={"/contact"}>
+              <Button
+                size={"lg"}
+                className="group bg-[#2563EB] hover:bg-[#1d4ed8] active:bg-[#1e40af] text-white transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-medium   px-6 sm:px-7 md:px-8 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 md:py-5 lg:py-5 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[200px] sm:min-w-[220px] md:min-w-[250px] lg:min-w-[240px] xl:min-w-[260px] 2xl:min-w-[280px] 3xl:min-w-[320px] cursor-pointer h-12 sm:h-14 md:h-16 2xl:h-18 3xl:h-20"
+              >
+                Get Free Consultation
+              </Button>
+            </Link>
+            <Link href={"/contact"}>
+     
+              <Button
+                size={"lg"}
+                variant="outline"
+                className="group border-2 border-white/80 hover:border-white text-white bg-white/10 hover:bg-white hover:text-[#2563EB] backdrop-blur-sm active:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl  font-medium px-6 sm:px-7 md:px-8 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 md:py-5 lg:py-5 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[200px] sm:min-w-[220px] md:min-w-[250px] lg:min-w-[240px] xl:min-w-[260px] 2xl:min-w-[280px] 3xl:min-w-[320px] cursor-pointer  h-12 sm:h-14 md:h-16 2xl:h-18 3xl:h-20"
+              >
+                View Solutions
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

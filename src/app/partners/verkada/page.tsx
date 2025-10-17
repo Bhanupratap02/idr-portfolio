@@ -2,12 +2,13 @@ import { Video, Cloud, Smartphone, Users, Lock, Bell, CheckCircle2, Truck, HandH
 import lockImg from "@/assets/partners/verkada/verkada-lock.png";
 import airImg from "@/assets/partners/verkada/verkada-air.png";
 import alaramImg from "@/assets/partners/verkada/varkada-alaram.png";
+import Link from "next/link";
 
 export default function Index() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#0059A0] to-[#0071C5] text-white  py-16 lg:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#0059A0] to-[#0071C5] text-white  py-16 lg:py-24 xl:py-32 2xl:py-38 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -17,10 +18,10 @@ export default function Index() {
               <p className="text-lg md:text-xl font-light leading-relaxed opacity-90">
                 All-in-one platform with cameras, access control, sensors, alarms & more — controlled from a single cloud dashboard.
               </p>
-              <button className="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+              <Link href={"/contact"} className="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors">
                 <Video className="w-5 h-5" />
                 Get a Free Demo
-              </button>
+              </Link>
             </div>
             <div className="relative">
               <img 

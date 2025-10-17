@@ -224,7 +224,7 @@ const WhatWeDo = () => {
       <div className="container mx-auto max-w-[82rem] 2xlmax-w-[90rem] 3xl:max-w-[100rem]">
         {/* Heading */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 xl:mb-14 2xl:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl  text-gray-900 font-bold mb-2 md:mb-6 xl:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl  text-primary font-bold mb-2 md:mb-6 xl:mb-8">
             What We Do
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl  leading-relaxed text-[#333333]  max-w-4xl 2xl:max-w-5xl  mx-auto font-light">

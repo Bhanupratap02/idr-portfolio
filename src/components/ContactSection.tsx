@@ -39,7 +39,7 @@ const ContactSection = () => {
     <section className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
       <div className="mx-auto max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1700px]">
         <div className="mb-8 2xl:mb-12">
-          <h2 className="text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium text-[#333] mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl  text-primary mb-4 font-bold">
             Contact us
           </h2>
           <p className="text-lg 2xl:text-xl 3xl:text-2xl text-[#333] font-light max-w-4xl">

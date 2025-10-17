@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import heroImg from "@/assets/partners/lencore/hero.png";
+import Link from "next/link";
 export default function LencoreHeroSection() {
   return (
     <section className="w-full min-h-[75vh]  md:min-h-[80vh] lg:min-h-0 xl:min-h-[87vh] 2xl:min-h-[94vh] py-12 sm:py-16 md:py-18 lg:py-18 2xl:py-18 3xl:py-20 bg-gradient-to-r from-blue-50 to-indigo-100 flex items-center">
@@ -30,16 +31,20 @@ export default function LencoreHeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 xl:gap-5 2xl:gap-6 w-full">
-            <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 2xl:py-5 text-sm sm:text-base md:text-lg  2xl:text-xl font-light h-auto hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
-              Schedule Consultation
-            </Button>
-
-            <Button
-              variant="outline"
-              className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4  2xl:py-5 text-sm sm:text-base md:text-lg  2xl:text-xl  font-light h-auto hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
-              View Projects
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 2xl:py-5 text-sm sm:text-base md:text-lg  2xl:text-xl font-light h-auto hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                Schedule Consultation
+              </Button>
+            </Link>
+            <Link href={"/portfolio"}>
+  
+              <Button
+                variant="outline"
+                className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4  2xl:py-5 text-sm sm:text-base md:text-lg  2xl:text-xl  font-light h-auto hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                View Projects
+              </Button>
+            </Link>
           </div>
         </div>
 

@@ -40,9 +40,9 @@ export function HeroSection() {
                 Request a Demo
               </Link>
 
-              <button className="group flex items-center justify-center gap-2 sm:gap-3 md:gap-3 lg:gap-2 xl:gap-3 2xl:gap-4  px-6 sm:px-7 md:px-8 lg:px-7 xl:px-8 2xl:px-10  py-3 sm:py-4 md:py-5 lg:py-4 xl:py-5 2xl:py-6  border-2 border-slate-800 hover:border-slate-900 text-slate-800 hover:text-slate-900 rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-lg xl:rounded-xl 2xl:rounded-xl  hover:bg-slate-50 active:bg-slate-100 transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl  font-medium w-full sm:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[220px] lg:min-w-[200px] xl:min-w-[220px] 2xl:min-w-[240px] font-light">
+              {/* <button className="group flex items-center justify-center gap-2 sm:gap-3 md:gap-3 lg:gap-2 xl:gap-3 2xl:gap-4  px-6 sm:px-7 md:px-8 lg:px-7 xl:px-8 2xl:px-10  py-3 sm:py-4 md:py-5 lg:py-4 xl:py-5 2xl:py-6  border-2 border-slate-800 hover:border-slate-900 text-slate-800 hover:text-slate-900 rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-lg xl:rounded-xl 2xl:rounded-xl  hover:bg-slate-50 active:bg-slate-100 transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl   w-full sm:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[220px] lg:min-w-[200px] xl:min-w-[220px] 2xl:min-w-[240px] font-light">
                 Compare Editions
-              </button>
+              </button> */}
             </div>
 
             {/* Info Text */}

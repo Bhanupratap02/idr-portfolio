@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
-import logo from "@/assets/logo_2.png";
+import logo from "@/assets/logo.png";
 import { ChevronDown } from "lucide-react";
 import { X } from "lucide-react";
 import {
