@@ -88,7 +88,7 @@ export default function QualityStandardsSection() {
             </div>
 
             {/* Partner Logos */}
-            <div className="flex items-center space-x-6  2xl:pt-2 3xl:pt-8">
+            {/* <div className="flex items-center space-x-6  2xl:pt-2 3xl:pt-8">
               {Array(3)
                 .fill(0)
                 .map((_, index) => (
@@ -99,7 +99,7 @@ export default function QualityStandardsSection() {
                     className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 opacity-70 hover:opacity-100 transition-opacity duration-200"
                   />
                 ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

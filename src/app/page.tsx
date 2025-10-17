@@ -25,6 +25,7 @@ import client14 from "@/assets/partners/partner_15.png";
 import Finance from "@/components/Finance";
 import IdrAdvantage from "@/components/IdrAdvantages";
 import WhyChoose from "@/components/WhyChoose";
+import CaseStudies1 from "@/components/CaseStudies";
 
 
 
@@ -82,7 +83,7 @@ export default function Index() {
       <WhatWeDo />
 
       {/* Why Choose Us Section */}
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <WhyChoose/>
 
       {/* Testimonials Section */}
@@ -90,6 +91,7 @@ export default function Index() {
 
       {/* Case Studies Section */}
       <CaseStudies />
+
 
       {/* FAQ Section */}
       {/* <FAQSection /> */}

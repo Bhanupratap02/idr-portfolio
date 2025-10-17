@@ -23,7 +23,7 @@ const integrations = [
     icon: <Building className="w-8 h-6 text-green-600" />,
     title: "Visitor management systems such as Envoy, Eden and others",
     description:
-      "Integrate with lighting, HVAC, and other building systems for smart facilities",
+      "Kisi seemlessly integrates with visitor management systems",
     bgColor: "bg-green-100"
   }
 ];

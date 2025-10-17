@@ -159,11 +159,25 @@ const FAQSection = () => {
                   id={`faq-${index}`}
                   className="mt-6 text-sm sm:text-base  2xl:text-xl 3xl:text-2xl text-[#626262] leading-relaxed"
                 >
-                  {faq.answer.split("\n").map((line, i) => (
-                    <p key={i} className="mb-3">
+                 {faq.answer.split("\n").map((line, i) => {
+                  // Bold specific section headers dynamically
+                  const boldKeywords = ["Our Standard Warranty:", "Exclusions", "Limitations","Weekend Emergency Service","IDR handles everything","Support Included"];
+                  const isBoldLine = boldKeywords.some((kw) =>
+                    line.trim().startsWith(kw)
+                  );
+
+                  return (
+                    <p
+                      key={i}
+                      className={`mb-3 ${
+                        isBoldLine ? "font-semibold text-[#222]" : ""
+                      }`}
+                    >
                       {line}
                     </p>
-                  ))}
+                  );
+                })}
+
                 </div>
               )}
             </div>

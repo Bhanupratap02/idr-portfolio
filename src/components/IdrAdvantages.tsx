@@ -7,6 +7,7 @@ import { CheckCircle, Shield, ClipboardList, Users } from "lucide-react";
 import img1 from "@/assets/idr-advantage/Consultation.jpeg";
 import img2 from "@/assets/idr-advantage/Certified.jpeg";
 import img3 from "@/assets/idr-advantage/camera.jpeg";
+import img4 from "@/assets/idr-advantage/partnership.png";
 import logo from "@/assets/idr-advantage/High Res IDR Logo w Swoosh only red.png";
 
 export default function IdrAdvantage() {
@@ -60,7 +61,7 @@ export default function IdrAdvantage() {
       title: "Ongoing Partnership",
       description:
         "Dedicated support, annual system health checks, and a long-term partner you can count on.",
-      image: img1,
+      image: img4,
       icon: Users,
       button: true,
       delay: 300,
@@ -72,14 +73,14 @@ export default function IdrAdvantage() {
       id="idr-advantage"
       className="bg-[#0B1218] text-white py-12 sm:py-16 md:py-20  xl:py-24 2xl:py-28 overflow-hidden"
     >
-      <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-28">
+      <div className="max-w-7xl 2xl:max-w-[1600px] 3xl:max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-28">
         {/* Header */}
         <div
           className={`transition-all duration-1000  mb-6 sm:mb-8 md:mb-10 xl:mb-14 2xl:mb-16 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-center bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold tracking-tight text-center bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
             The{/* ← NO space here */}
             <Image
               src={logo}
@@ -91,7 +92,7 @@ export default function IdrAdvantage() {
             Advantage
           </h2>
 
-          <p className="mt-2 md:mt-4 2xl:mt-6 text-slate-300 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed text-center max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto px-2 sm:px-0">
+          <p className="mt-2 md:mt-4 2xl:mt-6 text-slate-300 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed  font-light text-center max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl  mx-auto px-2 sm:px-0">
             Premium service isn&apos;t just about technology — it&apos;s about
             the partnership, process, and protection that only IDR delivers.
           </p>
@@ -137,17 +138,23 @@ export default function IdrAdvantage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 25vw, (max-width: 1280px) 25vw, (max-width: 1536px) 25vw, 25vw"
                 />
 
-                {/* Overlay
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition duration-500"></div> */}
-                {/* Overlay - Enhanced gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/30 transition-all duration-500"></div>
-
+    
+                   {/* ✅ Updated Overlay: Only bottom part is dark */}
+                <div
+                  className="
+                    absolute inset-0 
+                    bg-gradient-to-t 
+                    from-black/80 via-black/20 to-transparent 
+                    group-hover:from-black/90 group-hover:via-black/20 group-hover:to-transparent
+                    transition-all duration-500
+                  "
+                ></div>
                 {/* Content */}
                 <div
                   className={`
                     absolute inset-0 flex flex-col items-center text-center px-4 sm:px-5 md:px-4 lg:px-6 xl:px-8 2xl:px-10
                     transition-all duration-500
-                    group-hover:justify-center
+                    group-hover:justify-end
                    justify-end pb-6 sm:pb-7 md:pb-6 lg:pb-8 xl:pb-10 2xl:pb-12
                   `}
                 >
@@ -161,7 +168,7 @@ export default function IdrAdvantage() {
 
                   {/* Description + Button (only on hover) */}
                   {adv.description && (
-                    <p className="text-xs sm:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-lg text-gray-200 mt-3 sm:mt-4 md:mt-3 lg:mt-4  2xl:mt-5 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-xs lg:text-sm xl:text-lg 2xl:text-xl  font-light text-gray-200 mt-3 sm:mt-4 md:mt-3 lg:mt-4  2xl:mt-5 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 leading-relaxed max-w-xl">
                       {adv.description}
                     </p>
                   )}

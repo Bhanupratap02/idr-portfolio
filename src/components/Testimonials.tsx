@@ -4,13 +4,13 @@ import chrisKoble from "@/assets/testimonial_2.png";
 
 const Testimonials = () => {
   return (
-    <section className="bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 3xl:py-28">
-      <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[110rem] mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-6xl 3xl:text-7xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 leading-tight">
+    <section className="bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 3xl:py-24">
+      <div className="max-w-6xl 2xl:max-w-[80rem] 3xl:max-w-[100rem] mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-gray-900 font-bold text-center mb-12 sm:mb-16 leading-tight">
           What They Say About Us
         </h2>
 
-        <div className="relative bg-[#052557] rounded-none p-0 min-h-96 overflow-hidden">
+        <div className="relative bg-[#052557]  p-0 min-h-96 overflow-hidden rounded-3xl">
           {/* Decorative circles */}
           <div className="absolute -top-32 -right-32 w-72 h-72 3xl:w-[25rem] 3xl:h-[25rem] rounded-full bg-white/8 bg-opacity-25 transform rotate-[-26deg]" />
           <div className="absolute -top-6 -left-8 w-28 h-28 3xl:w-[15rem] 3xl:h-[15rem]  rounded-full bg-white/8 bg-opacity-8" />
@@ -21,7 +21,7 @@ const Testimonials = () => {
           <div className="relative z-10 flex flex-col-reverse lg:flex-row items-center p-6 sm:p-12 lg:p-20 3xl:p-28 gap-12 lg:gap-20">
             {/* Left: Testimonial Text */}
             <div className="lg:w-1/2 3xl:w-7/10 text-center">
-              <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#F7F6F2] leading-relaxed mb-6 capitalize">
+              <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light text-[#F7F6F2] leading-relaxed mb-6 capitalize">
                 We have hired IDR on several occasions to pull network wiring,
                 install networking equipment, security cameras, A/V, etc. We
                 have always had a great experience with them and I would highly
@@ -55,7 +55,7 @@ const Testimonials = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl font-semibold text-[#F7F6F2] text-center capitalize">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl 3xl:text-4xl  font-semibold text-[#F7F6F2] text-center capitalize">
                 Chris Koble
               </h3>
             </div>

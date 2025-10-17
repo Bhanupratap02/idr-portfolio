@@ -1,5 +1,5 @@
 /** @format */
-import { AlertTriangle, Briefcase, Server, ShieldCheck } from "lucide-react";
+import {  Briefcase, Link2, Server, ShieldCheck } from "lucide-react";
 
 const advantages = [
   {
@@ -25,10 +25,10 @@ const advantages = [
     textColor: "text-purple-600",
   },
   {
-    icon: AlertTriangle,
-    title: "Lost Device?",
+    icon: Link2,
+    title: "Integrations",
     description:
-      "Use Find My to lock, locate, or erase your device and badge instantly.",
+      "Cameras, Visitor Management Systems, SSO.",
     bgColor: "bg-red-100",
     textColor: "text-red-600",
   },

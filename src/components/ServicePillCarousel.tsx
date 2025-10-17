@@ -39,7 +39,7 @@ export default function ServicesCarousel() {
       {/* Scrollable Pills */}
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto gap-4 scrollbar-hide px-12"
+        className="flex overflow-x-auto gap-4 scrollbar-hide px-12 no-scrollbar"
       >
         {services.map((service, index) => (
           <div

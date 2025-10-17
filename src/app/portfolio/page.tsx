@@ -19,9 +19,6 @@ import data3 from "@/assets/portfolio/data3.png"
 import intercom1 from "@/assets/portfolio/intercom1.png"
 import intercom2 from "@/assets/portfolio/intercom2.png"
 import intercom3 from "@/assets/portfolio/intercom3.png"
-import security1 from "@/assets/portfolio/security1.png"
-import security2 from "@/assets/portfolio/security2.png"
-import security3 from "@/assets/portfolio/security3.png"
 import room1 from "@/assets/portfolio/room1.png"
 import room2 from "@/assets/portfolio/room2.png"
 import room3 from "@/assets/portfolio/room3.png"
@@ -30,10 +27,12 @@ import network2 from "@/assets/portfolio/network2.png"
 import network3 from "@/assets/portfolio/network3.png"
 
 import Image from "next/image";
+import Link from "next/link";
 
 const workSections = [
   {
     id: "access-control",
+    url: "/services/access-control",
     title: "Access Control Systems",
     icon: (
       <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 text-blue-600" viewBox="0 0 32 32" fill="none">
@@ -46,6 +45,7 @@ const workSections = [
   },
   {
     id: "audio-visual",
+    url: "/services/audio-visual",
     title: "Audio / Visual Systems",
     icon: (
       <svg className="w-8 h-6 sm:w-9 sm:h-7 lg:w-10 lg:h-8 xl:w-11 xl:h-9 2xl:w-12 2xl:h-10 text-blue-600" viewBox="0 0 40 32" fill="none">
@@ -57,6 +57,7 @@ const workSections = [
   },
   {
     id: "conference-room",
+    url: "/services/conference-room",
     title: "Conference Room Solutions",
     icon: (
       <svg className="w-8 h-6 sm:w-9 sm:h-7 lg:w-10 lg:h-8 xl:w-11 xl:h-9 2xl:w-12 2xl:h-10 text-blue-600" viewBox="0 0 40 32" fill="none">
@@ -69,6 +70,7 @@ const workSections = [
   },
   {
     id: "data-center",
+    url: "/services/data-center",
     title: "Data Center Infrastructure",
     icon: (
       <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-10 2xl:h-10 text-blue-600" viewBox="0 0 32 32" fill="none">
@@ -80,6 +82,7 @@ const workSections = [
   },
   {
     id: "networks-it",
+    url: "/services/networks-it",
     title: "Networks & IT Infrastructure",
     icon: (
       <svg className="w-8 h-6 sm:w-9 sm:h-7 lg:w-10 lg:h-8 xl:w-11 xl:h-9 2xl:w-12 2xl:h-10 text-blue-600" viewBox="0 0 40 32" fill="none">
@@ -92,6 +95,7 @@ const workSections = [
   },
   {
     id: "multifamily",
+    url: "/services/intercom",
     title: "Multifamily Intercom Systems",
     icon: (
       <svg className="w-5 h-6 sm:w-6 sm:h-7 lg:w-6 lg:h-8 xl:w-7 xl:h-9 2xl:w-8 2xl:h-10 text-blue-600" viewBox="0 0 24 32" fill="none">
@@ -115,6 +119,7 @@ const workSections = [
   // },
   {
     id: "structured-cabling",
+    url: "/services/structured-cabling",
     title: "Structured Cabling",
     icon: (
       <svg className="w-7 h-6 sm:w-8 sm:h-7 lg:w-9 lg:h-8 xl:w-10 xl:h-9 2xl:w-11 2xl:h-10 text-blue-600" viewBox="0 0 36 32" fill="none">
@@ -126,6 +131,7 @@ const workSections = [
   },
   {
     id: "surveillance",
+    url: "/services/surveillance-camera",
     title: "Surveillance Camera Systems",
     icon: (
       <svg className="w-7 h-6 sm:w-8 sm:h-7 lg:w-9 lg:h-8 xl:w-10 xl:h-9 2xl:w-11 2xl:h-10 text-blue-600" viewBox="0 0 36 32" fill="none">
@@ -180,13 +186,15 @@ export default function Index() {
                     {section.title}
                   </h2>
                 </div>
-                <Button
+                <Link href={section.url}>
+                  <Button
                   variant="outline"
-                  className="border-[#2E2E2E] text-[#2E2E2E] hover:bg-[#2E2E2E] hover:text-white text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-16 py-2 sm:py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-8 whitespace-nowrap"
+                  className="border-[#2E2E2E] text-[#2E2E2E] hover:bg-[#2E2E2E] hover:text-white text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-16 py-2 sm:py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-8 whitespace-nowrap cursor-pointer"
                 >
                   Know More
                   <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 3xl:w-10 3xl:h-10 ml-2 sm:ml-3 lg:ml-4" />
-                </Button>
+                </Button></Link>
+              
               </div>
 
               {/* Images Grid */}

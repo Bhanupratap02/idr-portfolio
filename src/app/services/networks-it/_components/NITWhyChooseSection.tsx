@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /** @format */
  const leftFeatures = [
    {
@@ -85,15 +87,15 @@ export default function NITWhyChooseSection() {
             </p>
 
             <div className="space-y-4">
-              <button
+              <Link href="/contact"
                 className="w-full bg-blue-600 text-white px-6 py-3
               3xl:px-8 3xl:py-4 rounded-lg font-normal hover:bg-blue-700 transition-colors cursor-pointer"
               >
                 Request Consultation
-              </button>
-              <button className="w-full border border-blue-600 text-blue-600 px-6 py-3 3xl:px-8 3xl:py-4 3xl:text-lg rounded-lg font-normal hover:bg-blue-50 transition-colors cursor-pointer">
+              </Link>
+              {/* <button className="w-full border border-blue-600 text-blue-600 px-6 py-3 3xl:px-8 3xl:py-4 3xl:text-lg rounded-lg font-normal hover:bg-blue-50 transition-colors cursor-pointer">
                 Download Brochure
-              </button>
+              </button> */}
             </div>
 
             <div className="flex justify-center space-x-6 mt-8 text-sm 3xl:text-base text-gray-600">

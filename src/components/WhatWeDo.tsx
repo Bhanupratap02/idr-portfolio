@@ -220,14 +220,14 @@ const WhatWeDo = () => {
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-      <div className="container mx-auto max-w-7xl">
+    <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 2xl:py-24 bg-gray-50">
+      <div className="container mx-auto max-w-[82rem] 2xlmax-w-[90rem] 3xl:max-w-[100rem]">
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold text-[#3D3D3D] mb-4">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 xl:mb-14 2xl:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl  text-gray-900 font-bold mb-2 md:mb-6 xl:mb-8">
             What We Do
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed text-[#333]  max-w-3xl 2xl:max-w-4xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl  leading-relaxed text-[#333333]  max-w-4xl 2xl:max-w-5xl  mx-auto font-light">
             We provide complete low-voltage design and installation services.
             Whether you need a single install or a full-building deployment, our
             team handles every detail — design, installation, documentation, and
@@ -236,9 +236,9 @@ const WhatWeDo = () => {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-[38%_62%] 2xl:grid-cols-[40%_60%] gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[38%_62%]  2xl:grid-cols-[40%_60%] gap-12 xl:gap-16 items-center">
           {/* Left Image */}
-          <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] xl:h-[430px] 2xl:h-[460px] rounded-2xl overflow-hidden">
+          <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[400px] xl:h-[420px] 2xl:h-[460px] 3xl:h-[500px] rounded-2xl overflow-hidden">
             <Image
               src={services[activeIndex].image}
               alt={services[activeIndex].title}
@@ -262,11 +262,11 @@ const WhatWeDo = () => {
             </div>
 
             {/* Text List */}
-            <div className="flex flex-col justify-between space-y-2 sm:space-y-2.5 md:space-y-3 md:ml-8 w-full">
+            <div className="flex flex-col justify-between space-y-2 sm:space-y-2 2xl:space-y-3  md:ml-12 w-full">
               {services.map((service, i) => (
                 <div
                   key={i}
-                  className={`flex items-center space-x-4 cursor-pointer transition-all duration-300 p-2 rounded-md ${
+                  className={`flex items-center space-x-4 cursor-pointer transition-all duration-300 p-2 3xl:p-2.5 rounded-md ${
                     activeIndex === i
                       ? "bg-[#052557]/10 translate-x-2"
                       : "hover:bg-[#052557]/5"
@@ -274,7 +274,7 @@ const WhatWeDo = () => {
                   onMouseEnter={() => setActiveIndex(i)}
                 >
                   <div
-                    className={`w-9 h-9 sm:w-10 sm:h-10 lg:w-11 lg:h-11 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    className={`w-9 h-9 sm:w-10 sm:h-10 2xl:w-11 2xl:h-11 rounded-full flex items-center justify-center transition-all duration-300 ${
                       activeIndex === i ? "bg-[#052557]" : "bg-[#052557]"
                     }`}
                   >
@@ -291,8 +291,8 @@ const WhatWeDo = () => {
                     </svg>
                   </div>
                   <span
-                    className={`text-base sm:text-lg md:text-xl xl:text-2xl text-[#052557] transition-all duration-300 ${
-                      activeIndex === i ? "font-semibold" : "font-[350]"
+                    className={`text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[28px] 3xl:text-3xl text-[#052557] transition-all duration-300 ${
+                      activeIndex === i ? "font-semibold text-gray-900" : "font-light text-[#151515]"
                     }`}
                   >
                     {service.title}

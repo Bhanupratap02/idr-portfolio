@@ -195,7 +195,7 @@ export default function Index() {
       <Card className="bg-zkteco-card-blue border-0 p-5 sm:p-6 text-white">
         <CardContent className="p-0">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-zkteco-orange rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-            <Star className="w-4 h-4 text-white" />
+            <Star className="w-4 h-4 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Certified ZKTeco Installer</h3>
           <p className="text-sm sm:text-base text-white">
@@ -207,7 +207,7 @@ export default function Index() {
       <Card className="bg-zkteco-card-blue border-0 p-5 sm:p-6 text-white">
         <CardContent className="p-0">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-zkteco-orange rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-            <Shield className="w-4 h-4 text-white" />
+            <Shield className="w-4 h-4 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Licensed & Insured</h3>
           <p className="text-sm sm:text-base text-white">
@@ -219,7 +219,7 @@ export default function Index() {
       <Card className="bg-zkteco-card-blue border-0 p-5 sm:p-6 text-white sm:col-span-2 lg:col-span-1">
         <CardContent className="p-0">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-zkteco-orange rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-            <Wrench className="w-4 h-4 text-white" />
+            <Wrench className="w-4 h-4 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Expert Integration</h3>
           <p className="text-sm sm:text-base text-white">
@@ -400,7 +400,7 @@ export default function Index() {
       <Card className="bg-[#1E40AF] border-0 p-5 sm:p-6 text-center">
         <CardContent className="p-0">
           <div className="w-14 h-14 sm:w-16 sm:h-16 bg-zkteco-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-            <Building className="w-7 h-5 sm:w-8 sm:h-6 text-white" />
+            <Building className="w-7 h-5 sm:w-8 sm:h-6 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">New York City</h3>
           <p className="text-sm sm:text-base text-white">All five boroughs covered</p>
@@ -410,7 +410,7 @@ export default function Index() {
       <Card className="bg-[#1E40AF] border-0 p-5 sm:p-6 text-center">
         <CardContent className="p-0">
           <div className="w-14 h-14 sm:w-16 sm:h-16 bg-zkteco-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-            <MapPin className="w-4 h-5 sm:w-5 sm:h-6 text-white" />
+            <MapPin className="w-4 h-5 sm:w-5 sm:h-6 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">New Jersey</h3>
           <p className="text-sm sm:text-base text-white">North & Central regions</p>
@@ -420,7 +420,7 @@ export default function Index() {
       <Card className="bg-[#1E40AF] border-0 p-5 sm:p-6 text-center">
         <CardContent className="p-0">
           <div className="w-14 h-14 sm:w-16 sm:h-16 bg-zkteco-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-            <Star className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <Star className="w-5 h-5 sm:w-6 sm:h-6 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">South Florida</h3>
           <p className="text-sm sm:text-base text-white">
@@ -432,7 +432,7 @@ export default function Index() {
       <Card className="bg-[#1E40AF] border-0 p-5 sm:p-6 text-center">
         <CardContent className="p-0">
           <div className="w-14 h-14 sm:w-16 sm:h-16 bg-zkteco-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-            <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <Globe className="w-5 h-5 sm:w-6 sm:h-6 md:w-12 md:h-12 2xl:w-14 2xl:h-14 text-white" />
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Nationwide</h3>
           <p className="text-sm sm:text-base text-white">
