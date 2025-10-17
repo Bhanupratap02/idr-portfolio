@@ -1,8 +1,17 @@
+/** @format */
+
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX } from "lucide-react";
-
-const tabs = [
+interface Tab {
+  id: number;
+  title: string;
+  heading: string;
+  description: string;
+  points: string[];
+  video: string;
+}
+const tabs: Tab[] = [
   {
     id: 1,
     title: "01 – Integrated Security Expertise",
@@ -46,20 +55,23 @@ const tabs = [
 ];
 
 export default function WhyChooseUs() {
-  const [activeTab, setActiveTab] = useState(0);
-  const [isMuted, setIsMuted] = useState(true);
-  const [progress, setProgress] = useState(0);
-  const videoRefs = useRef([]);
-  const containerRef = useRef(null);
+  const [activeTab, setActiveTab] = useState<number>(0);
+  const [isMuted, setIsMuted] = useState<boolean>(true);
+  const [progress, setProgress] = useState<number>(0);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   // Play/pause only active video
   useEffect(() => {
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
       if (index === activeTab) {
-        // try/catch for autoplay policies in some browsers
-        const p = video.play();
-        if (p && typeof p.then === "function") p.catch(() => {});
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            // Autoplay was prevented
+          });
+        }
       } else {
         video.pause();
         video.currentTime = 0;
@@ -96,42 +108,45 @@ export default function WhyChooseUs() {
   useEffect(() => {
     const timer = setTimeout(() => {
       const container = containerRef.current;
-      const activeCard = container?.children[activeTab];
-      if (!container || !activeCard) return;
+      if (!container || !container.children[activeTab]) return;
 
+      const activeCard = container.children[activeTab] as HTMLElement;
       const containerRect = container.getBoundingClientRect();
       const cardRect = activeCard.getBoundingClientRect();
 
-      // distance from container left edge to the card's left edge (relative to scroll)
       const cardLeftRelativeToScroll =
         cardRect.left - containerRect.left + container.scrollLeft;
       const targetScroll =
         cardLeftRelativeToScroll - containerRect.width / 2 + cardRect.width / 2;
 
-      // clamp
       const maxScroll = container.scrollWidth - containerRect.width;
-      let offset = Math.max(0, Math.min(targetScroll, maxScroll));
+      const offset = Math.max(0, Math.min(targetScroll, maxScroll));
 
       container.scrollTo({ left: offset, behavior: "smooth" });
-    }, 80); // slight delay to let layout/styling settle
+    }, 80);
 
     return () => clearTimeout(timer);
   }, [activeTab]);
 
   // Ensure first card is centered on initial load (in case it renders before layout)
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const container = containerRef.current;
-      const firstCard = container?.children[0];
-      if (!container || !firstCard) return;
+      if (!container || !container.children[0]) return;
+
+      const firstCard = container.children[0] as HTMLElement;
       const containerRect = container.getBoundingClientRect();
       const cardRect = firstCard.getBoundingClientRect();
-      const leftRelative = cardRect.left - containerRect.left + container.scrollLeft;
-      const target = leftRelative - containerRect.width / 2 + cardRect.width / 2;
+      const leftRelative =
+        cardRect.left - containerRect.left + container.scrollLeft;
+      const target =
+        leftRelative - containerRect.width / 2 + cardRect.width / 2;
       const maxScroll = container.scrollWidth - containerRect.width;
       const offset = Math.max(0, Math.min(target, maxScroll));
       container.scrollTo({ left: offset, behavior: "auto" });
     }, 120);
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -144,14 +159,14 @@ export default function WhyChooseUs() {
   }, [isMuted]);
 
   return (
-    <section className="w-full bg-white text-gray-900 py-16 px-4 md:px-10 xl:px-12 2xl:px-20 3xl:px-32 overflow-hidden">
+    <section className="w-full bg-white text-gray-900 py-10 sm:pt-12 sm:pb-8 md:pt-16 md:pb-12 lg:pt-20 lg:pb-12 xl:pt-24 xl:pb-16 2xl:pt-28 2xl:pb-16 3xl:pb-18 px-4 md:px-10 xl:px-12 2xl:px-20 3xl:px-32 overflow-hidden">
       <div className="w-full">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-10 md:mb-12 xl:mb-14 ">
           Why Choose Us
         </h2>
 
         {/* Tabs Navigation */}
-        <div className="flex flex-wrap justify-center md:justify-between gap-4 pb-4 mb-10 relative border-b border-gray-200 max-w-7xl mx-auto">
+        <div className="flex flex-wrap justify-center md:justify-between gap-3 sm:gap-4 md:gap-6 lg:gap-8 pb-3 sm:pb-4 md:pb-4 lg:pb-5 mb-8  md:mb-10   2xl:mb-14 relative border-b border-gray-200 max-w-7xl mx-auto">
           {tabs.map((tab, index) => (
             <button
               key={tab.id}
@@ -159,7 +174,7 @@ export default function WhyChooseUs() {
                 setActiveTab(index);
                 setProgress(0);
               }}
-              className={`relative text-sm md:text-base font-medium pb-2 transition-all duration-300 ${
+              className={`relative text-sm md:text-base 2xl:text-lg font-medium pb-2  md:pb-2.5 2xl:pb-3 transition-all duration-300 ${
                 activeTab === index
                   ? "text-blue-600"
                   : "text-gray-500 hover:text-gray-800"
@@ -187,20 +202,32 @@ export default function WhyChooseUs() {
             <div
               key={tab.id}
               className={`snap-center flex-shrink-0 transition-all duration-700 ${
-                index === activeTab ? "scale-100 opacity-100" : "scale-95 opacity-50"
+                index === activeTab
+                  ? "scale-100 opacity-100"
+                  : "scale-95 opacity-50"
               }
               w-[95%] md:w-[85%] xl:w-[90%] 2xl:w-[75%] 3xl:w-[60%]
               bg-gray-50 rounded-2xl shadow-md flex flex-col lg:flex-row items-stretch overflow-hidden`}
             >
               {/* Text Section */}
-              <div className="flex-[45%] order-2 lg:order-1 flex flex-col justify-center px-6 md:px-8 py-8 space-y-4">
-                <div className="mx-auto max-w-[95%] md:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[70%] 3xl:max-w-[60%]">
-                  <h3 className="text-xl md:text-3xl font-semibold">{tab.heading}</h3>
-                  <p className="text-gray-600 text-sm md:text-base mt-2">{tab.description}</p>
-                  <ul className="mt-4 space-y-2">
+              <div className="flex-[45%] order-2 lg:order-1 flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 2xl:px-12  py-6 sm:py-8 md:py-10 lg:py-10 xl:py-12 2xl:py-14 space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-5 xl:space-y-6 2xl:space-y-8">
+                <div className="mx-auto max-w-full md:max-w-full xl:max-w-[95%] 2xl:max-w-[90%] 3xl:max-w-[70%]">
+                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold leading-tight text-gray-900">
+                    {tab.heading}
+                  </h3>
+                  <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-xl leading-relaxed mt-2 sm:mt-3 md:mt-4 lg:mt-4 xl:mt-5 2xl:mt-6">
+                    {tab.description}
+                  </p>
+                  <ul className="mt-3 sm:mt-4 md:mt-5 lg:mt-5 xl:mt-6 2xl:mt-8 space-y-2 sm:space-y-2.5 md:space-y-3 lg:space-y-3 xl:space-y-4 2xl:space-y-4.5">
                     {tab.points.map((point, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-700 text-sm md:text-base">
-                        <span className="text-blue-600 font-semibold">•</span> {point}
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 sm:gap-2.5 md:gap-3 lg:gap-3 xl:gap-3 2xl:gap-4 text-gray-700 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-xl leading-relaxed"
+                      >
+                        <span className="text-blue-600 font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl flex-shrink-0 -mt-0.5">
+                          •
+                        </span>{" "}
+                        {point}
                       </li>
                     ))}
                   </ul>
@@ -210,7 +237,9 @@ export default function WhyChooseUs() {
               {/* Video Section */}
               <div className="relative flex-[55%] order-1 lg:order-2 w-full h-[500px] md:h-[550px] xl:h-[600px] 2xl:h-[650px] 3xl:h-[700px]">
                 <video
-                  ref={(el) => (videoRefs.current[index] = el)}
+                  ref={(el) => {
+                    videoRefs.current[index] = el;
+                  }}
                   src={tab.video}
                   muted={isMuted}
                   playsInline
@@ -220,11 +249,15 @@ export default function WhyChooseUs() {
                 {index === activeTab && (
                   <button
                     onClick={toggleMute}
-                    className="absolute top-4 right-4 flex items-center gap-1 bg-black/50 text-white text-xs md:text-sm px-3 py-1.5 rounded-full hover:bg-black/70 backdrop-blur-sm"
+                    className="absolute top-4 right-4 flex items-center gap-1 bg-black/50 text-white text-xs md:text-sm  px-2 sm:px-3 md:px-3 lg:px-4 xl:px-5 2xl:px-6 py-1 sm:py-1.5 md:py-2 lg:py-2.5 2xl:py-3  rounded-full hover:bg-black/70 backdrop-blur-sm"
                   >
                     {isMuted ? (
                       <>
-                        <VolumeX size={16} /> <span>Click for sound</span>
+                        <VolumeX
+                          size={16}
+                          className="sm:w-2 sm:h-2 md:w-4.5 md:h-4.5  2xl:w-5 2xl:h-5"
+                        />{" "}
+                        <span>Click for sound</span>
                       </>
                     ) : (
                       <>
