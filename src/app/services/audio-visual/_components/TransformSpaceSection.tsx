@@ -1,6 +1,27 @@
 /** @format */
-
+"use client";
+import { submitToSheet } from "@/utils/submitToSheet";
 export default function TransformSpaceSection() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const formData = {
+      name: form.name?.value || "",
+      email: form.email?.value || "",
+      phone: form.phone?.value || "",
+      interest: form.interest?.value || "",
+      source: "AudioVisual Page",
+    };
+
+    const result = await submitToSheet(formData);
+    if (result.success) {
+      form.reset();
+      alert("✅ Your A/V consultation request was submitted!");
+    } else {
+      alert("❌ Something went wrong. Please try again.");
+    }
+  };
   return (
     <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-gray-800">
       <div className="mx-auto max-w-3xl md:max-w-4xl lg:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
@@ -11,16 +32,18 @@ export default function TransformSpaceSection() {
           Schedule a free consultation and site visit with our A/V experts
         </p>
         {/* Contact Form */}
-        <form className="space-y-6 mb-8">
+        <form  onSubmit={handleSubmit} className="space-y-6 mb-8">
           <div className="grid md:grid-cols-2 gap-4">
             <input
               type="text"
+              name="name"
               aria-label="Full Name"
               placeholder="Full Name"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="email"
               aria-label="Email Address"
               placeholder="Email Address"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -28,12 +51,14 @@ export default function TransformSpaceSection() {
           </div>
           <input
             type="tel"
+            name="phone"
             aria-label="Phone Number"
             placeholder="Phone Number"
             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <div className="relative">
             <select
+             name="interest"
               className="w-full px-4 pr-10 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
               aria-label="Service Interest"
             >

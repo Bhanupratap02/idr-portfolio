@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Finance() {
   return (
     <div className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full max-w-7xl 2xl:max-w-[85rem] 3xl:max-w-[105rem] mx-auto">
         <div className="bg-white border border-gray-200 rounded-xl shadow-lg p-8 md:p-14">
           {/* Main Heading */}
           <h1 className="text-2xl md:text-4xl font-bold text-primary text-center mb-8 leading-tight">

@@ -1,4 +1,5 @@
 /** @format */
+"use client";
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 import youtubeIcon from "@/assets/youtube.png";
@@ -7,6 +8,8 @@ import facebookIcon from "@/assets/facebook.png";
 import Link from "next/link";
 import instagramIcon from "@/assets/instagram_2.png";
 import tiktokIcon from "@/assets/tiktok_3.png";
+import { submitToSheet } from "@/utils/submitToSheet";
+
 const ContactSection = () => {
   const socialLinks = [
     {
@@ -35,6 +38,34 @@ const ContactSection = () => {
       alt: "Instagram",
     },
   ];
+
+    const handleSubmit = async (e: { preventDefault: () => void; target: any; }) => {
+    e.preventDefault();
+
+    // Use named inputs to avoid index mistakes
+    const form = e.target;
+    const formData = {
+      name: form.name?.value || "",
+      email: form.email?.value || "",
+      phone: form.phone?.value || "",
+      foundBy: form.foundBy?.value || "",
+      message: form.message?.value || "",
+      source: "Contact Page" // change per page/form
+    };
+
+    const result = await submitToSheet(formData);
+
+    if (result.success) {
+      // show a nicer toast or thank you UI instead of alert
+      form.reset();
+      // simple success UI:
+      alert("Thanks! Your message has been sent.");
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
+
   return (
     <section className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
       <div className="mx-auto max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1700px]">
@@ -133,61 +164,80 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              <form className="space-y-5 2xl:space-y-6 3xl:space-y-8">
-                {[
-                  { type: "text", placeholder: "Name *", required: true },
-                  { type: "email", placeholder: "Email" },
-                  {
-                    type: "tel",
-                    placeholder: "Phone number *",
-                    required: true,
-                  },
-                ].map((input, idx) => (
-                  <div key={idx}>
-                    <input
-                      {...input}
-                      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
-                    />
-                  </div>
-                ))}
+              <form onSubmit={handleSubmit} className="space-y-5 2xl:space-y-6 3xl:space-y-8">
+  <div>
+    <input
+      name="name"
+      type="text"
+      placeholder="Name *"
+      required
+      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+    />
+  </div>
 
-                {/* Dropdown */}
-                <div className="relative">
-                  <select className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base appearance-none focus:outline-none focus:border-[#052557] bg-white text-black">
-                    <option value="">How did you find us?</option>
-                    <option value="google">Google Search</option>
-                    <option value="referral">Referral</option>
-                    <option value="social">Social Media</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                    <svg
-                      className="w-3 h-3 text-[#CBCBCB] rotate-90"
-                      fill="currentColor"
-                      viewBox="0 0 12 12"
-                    >
-                      <path d="M6 9L10.5 3L1.5 3L6 9Z" />
-                    </svg>
-                  </div>
-                </div>
-                 <div>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="How can we help? *"
-                      required
-                      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
-                      rows={3}></textarea>
-                  </div>
-                <div className="pt-10 flex justify-center">
-                  <button
-                    type="submit"
-                    className="bg-[#052557] text-white px-6 py-3 2xl:px-8 2xl:py-4 3xl:px-10 3xl:py-5 text-sm 2xl:text-base capitalize hover:bg-[#041f42] transition-colors rounded"
-                  >
-                    send message
-                  </button>
-                </div>
-              </form>
+  <div>
+    <input
+      name="email"
+      type="email"
+      placeholder="Email"
+      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+    />
+  </div>
+
+  <div>
+    <input
+      name="phone"
+      type="tel"
+      placeholder="Phone number *"
+      required
+      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+    />
+  </div>
+
+  {/* Dropdown */}
+  <div className="relative">
+    <select
+      name="foundBy"
+      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base appearance-none focus:outline-none focus:border-[#052557] bg-white text-black"
+    >
+      <option value="">How did you find us?</option>
+      <option value="google">Google Search</option>
+      <option value="referral">Referral</option>
+      <option value="social">Social Media</option>
+      <option value="other">Other</option>
+    </select>
+    <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+      <svg
+        className="w-3 h-3 text-[#CBCBCB] rotate-90"
+        fill="currentColor"
+        viewBox="0 0 12 12"
+      >
+        <path d="M6 9L10.5 3L1.5 3L6 9Z" />
+      </svg>
+    </div>
+  </div>
+
+  <div>
+    <textarea
+      name="message"
+      id="message"
+      placeholder="How can we help? *"
+      required
+      className="w-full px-5 py-3 2xl:py-4 3xl:py-5 border border-[#E0E0E0] text-sm 2xl:text-base placeholder-[#828282] focus:outline-none focus:border-[#052557]"
+      rows={3}
+    ></textarea>
+  </div>
+
+  <div className="pt-10 flex justify-center">
+    <button
+      type="submit"
+      className="bg-[#052557] text-white px-6 py-3 2xl:px-8 2xl:py-4 3xl:px-10 3xl:py-5 text-sm 2xl:text-base capitalize hover:bg-[#041f42] transition-colors rounded"
+    >
+      send message
+    </button>
+  </div>
+</form>
+
             </div>
           </div>
         </div>

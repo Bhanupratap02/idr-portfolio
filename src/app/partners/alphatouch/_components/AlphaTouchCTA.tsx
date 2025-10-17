@@ -1,8 +1,33 @@
 /** @format */
-
+"use client";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { submitToSheet } from "@/utils/submitToSheet";
+
 
 export default function AlphaTouchCTA() {
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = {
+    name: form.property?.value || "", // property name as 'name' field in sheet
+    email: form.email?.value || "",
+    phone: form.phone?.value || "",
+    foundBy: form.propertyType?.value || "",
+    message: "AlphaTouch Quote Request",
+    source: "AlphaTouch Page",
+  };
+
+  const result = await submitToSheet(formData);
+
+  if (result.success) {
+    form.reset();
+    alert("Thank you! Your request has been submitted.");
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+};
+
   return (
     <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 2xl:py-32 overflow-hidden bg-gradient-to-tr from-[#667EEA] to-[#764BA2]">
       <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
@@ -24,37 +49,52 @@ export default function AlphaTouchCTA() {
               Get Your Free Quote
             </h3>
 
-            <form className="space-y-3 sm:space-y-4 xl:space-y-5 2xl:space-y-6">
-              <input
-                type="text"
-                placeholder="Property Name"
-                className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base  2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-              />
-              <select className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white">
-                <option>Property Type</option>
-                <option>Residential</option>
-                <option>Commercial</option>
-                <option>Mixed-Use</option>
-                <option>Healthcare</option>
-                <option>Senior Living</option>
-              </select>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base xl:text-lg 2xl:text-xl rounded-lg hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-medium"
-              >
-                Get Free Quote
-              </button>
-            </form>
+           <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 xl:space-y-5 2xl:space-y-6">
+  <input
+    name="property"
+    type="text"
+    placeholder="Property Name"
+    required
+    className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base  2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+  />
+
+  <input
+    name="email"
+    type="email"
+    placeholder="Email Address"
+    required
+    className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+  />
+
+  <input
+    name="phone"
+    type="tel"
+    placeholder="Phone Number"
+    required
+    className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+  />
+
+  <select
+    name="propertyType"
+    required
+    className="w-full px-3 sm:px-4 xl:px-5 2xl:px-6 py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base 2xl:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white"
+  >
+    <option value="">Property Type</option>
+    <option value="Residential">Residential</option>
+    <option value="Commercial">Commercial</option>
+    <option value="Mixed-Use">Mixed-Use</option>
+    <option value="Healthcare">Healthcare</option>
+    <option value="Senior Living">Senior Living</option>
+  </select>
+
+  <button
+    type="submit"
+    className="w-full bg-blue-600 text-white py-2.5 sm:py-3 xl:py-4 2xl:py-5 text-sm sm:text-base xl:text-lg 2xl:text-xl rounded-lg hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-medium"
+  >
+    Get Free Quote
+  </button>
+</form>
+
           </div>
 
           {/* Contact Information */}

@@ -29,7 +29,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="w-full min-h-[500px] lg:min-h-[600px] xl:min-h-[699px] bg-zkteco-hero-bg flex items-center py-12 lg:py-16">
+      <section className="w-full min-h-[500px] lg:min-h-[600px] xl:min-h-[85vh] 2xl:min-h-[75vh] 3xl:min-h-[65vh]  bg-blue-50 flex items-center py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 max-w-[1920px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 items-center">
             {/* Left Content */}
@@ -74,10 +74,10 @@ export default function Index() {
       </section>
 
       {/* Fast, Flexible Access Section */}
-      <section className="w-full py-10 sm:py-12 lg:py-14 bg-[#F9FAFB]">
+      <section className="w-full py-10 sm:py-12 lg:py-14 ]">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 max-w-[1920px]">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16 max-w-full sm:max-w-2xl lg:max-w-[861px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4 leading-[111%]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4 leading-[111%]">
               Fast, Flexible Access with Biometrics at the Core
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-zkteco-text-gray leading-[150%]">
@@ -89,45 +89,45 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-white">
+            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-transparent">
               <CardContent className="p-0 space-y-3 sm:space-y-4">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
                   <Fingerprint className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-zkteco-text-dark">
+                <h3 className="text-lg sm:text-xl font-semibold ">
                   Biometric Security
                 </h3>
-                <p className="text-base sm:text-lg lg:text-xl text-zkteco-text-gray leading-[150%]">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-[150%]">
                   Advanced fingerprint and facial recognition technology for
                   secure, contactless access control.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-white">
+            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-transparent">
               <CardContent className="p-0 space-y-3 sm:space-y-4">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
                   <Smartphone className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-zkteco-text-dark">
+                <h3 className="text-lg sm:text-xl font-semibold ">
                   Mobile Ready
                 </h3>
-                <p className="text-base sm:text-lg lg:text-xl text-zkteco-text-gray leading-[150%]">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-600  leading-[150%]">
                   Mobile credential support for modern, smartphone-based access
                   management.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-white sm:col-span-2 lg:col-span-1">
+            <Card className="p-5 sm:p-6 text-center border-0 shadow-none bg-transparent sm:col-span-2 lg:col-span-1">
               <CardContent className="p-0 space-y-3 sm:space-y-4">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
                   <Network className="w-7 h-5 sm:w-8 sm:h-6 text-purple-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-zkteco-text-dark">
+                <h3 className="text-lg sm:text-xl font-semibold ">
                   Flexible Systems
                 </h3>
-                <p className="text-base sm:text-lg lg:text-xl text-zkteco-text-gray leading-[150%]">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-600  leading-[150%]">
                   Standalone or networked configurations ideal for single doors
                   to full building deployments.
                 </p>
@@ -138,8 +138,8 @@ export default function Index() {
       </section>
 
       {/* Why ZKTeco Section */}
-      <section className="w-full py-10 sm:py-12 lg:py-16 bg-zkteco-section-gray">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 max-w-[1920px]">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-[#F9FAFB">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 max-w-[1920px]">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Left Content */}
             <div className="flex-1 space-y-5 sm:space-y-6 order-2 lg:order-1">
@@ -225,7 +225,7 @@ export default function Index() {
 
       {/* Why Work with IDR Section */}
       <section className="w-full py-10 sm:py-12 lg:py-16 bg-[#052557]">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 max-w-[1920px]">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 max-w-[1920px]">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16 max-w-full sm:max-w-xl lg:max-w-[630px] mx-auto">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-3 sm:mb-4 leading-[111%]">
               Why Work with IDR?
@@ -284,7 +284,7 @@ export default function Index() {
           </div>
 
           <div className="text-center">
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl italic font-medium text-white leading-[150%] max-w-full sm:max-w-2xl lg:max-w-[1118px] mx-auto px-4">
+            <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl italic font-medium text-white leading-[150%] max-w-full sm:max-w-2xl lg:max-w-[1118px] mx-auto px-4">
               &quot;We design ZKTeco systems to do more than unlock doors — they
               simplify operations and improve security.&quot;
             </p>
@@ -305,10 +305,10 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
-            <Card className="bg-zkteco-section-gray border-0 p-4 sm:p-5 lg:p-6">
+            <Card className="bg-gray-100 border-0 p-4 sm:p-5 lg:p-6">
               <CardContent className="p-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <Building className="w-3 h-4 text-blue-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                  <Building className="size-3 md:size-5 2xl:size-6 text-blue-600" />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4">
                   Corporate Offices
@@ -319,10 +319,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="bg-zkteco-section-gray border-0 p-4 sm:p-5 lg:p-6">
+            <Card className="bg-gray-100 border-0 p-4 sm:p-5 lg:p-6">
               <CardContent className="p-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <Home className="w-5 h-4 text-green-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 bg-green-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                  <Home className="size-3 md:size-5 2xl:size-6 text-green-600" />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4">
                   Apartments & Condos
@@ -333,10 +333,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="bg-zkteco-section-gray border-0 p-4 sm:p-5 lg:p-6">
+            <Card className="bg-gray-100 border-0 p-4 sm:p-5 lg:p-6">
               <CardContent className="p-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <Dumbbell className="w-5 h-4 text-purple-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                  <Dumbbell className="size-3 md:size-5 2xl:size-6 text-purple-600" />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4">
                   Gyms & Wellness
@@ -347,10 +347,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="bg-zkteco-section-gray border-0 p-4 sm:p-5 lg:p-6">
+            <Card className="bg-gray-100 border-0 p-4 sm:p-5 lg:p-6">
               <CardContent className="p-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <GraduationCap className="w-5 h-4 text-orange-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                  <GraduationCap className="size-3 md:size-5 2xl:size-6 text-orange-600" />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4">
                   Schools & Campus
@@ -361,10 +361,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="bg-zkteco-section-gray border-0 p-4 sm:p-5 lg:p-6 sm:col-span-2 lg:col-span-1">
+            <Card className="bg-gray-100 border-0 p-4 sm:p-5 lg:p-6 sm:col-span-2 lg:col-span-1">
               <CardContent className="p-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <Factory className="w-5 h-4 text-red-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 bg-red-100 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                  <Factory className="size-3 md:size-5 2xl:size-6 text-red-600" />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zkteco-text-dark mb-3 sm:mb-4">
                   Industrial Sites
@@ -550,11 +550,16 @@ export default function Index() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              
-                <Button className="bg-[#052557]  text-white px-6 sm:px-8 md:px-10 xl:px-14 py-4 sm:py-5 h-auto sm:h-[62px] text-base sm:text-lg flex items-center justify-center gap-2 sm:gap-3  w-auto cursor-pointer">
+            <a
+            href="tel:+17185947865"
+            aria-label="Call IDR Technology Solutions at 718-594-7865">
+              <Button className="bg-[#052557]  text-white px-6 sm:px-8 md:px-10 xl:px-14 py-4 sm:py-5 h-auto sm:h-[62px] text-base sm:text-lg flex items-center justify-center gap-2 sm:gap-3  w-auto cursor-pointer">
                   <Phone className="w-4 h-4 sm:w-[18px] sm:h-[18px] " />
                   Call Now
                 </Button>
+            </a>
+
+                
  
               <Link href={"/contact"}>
                 <Button

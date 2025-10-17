@@ -17,13 +17,14 @@ export default function CTASection() {
 
         {/* CTA Buttons */}
         <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
-          <Link
-            href="tel:"
+         <a
+            href="tel:+17185947865"
+            aria-label="Call IDR Technology Solutions at 718-594-7865"
             className="flex items-center gap-2 bg-white text-blue-600  px-6 sm:px-8 py-3 rounded-lg shadow hover:bg-blue-50 transition-colors duration-200 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-light w-full sm:w-auto justify-center"
           >
             <Phone className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 fill-blue-600 text-white" />
             Call Now
-          </Link>
+          </a>
 
           <Link
             href="/contact"

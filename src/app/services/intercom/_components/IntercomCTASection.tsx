@@ -27,6 +27,7 @@ export function IntercomCTASection() {
           {/* Click-to-call link */}
           <a
             href="tel:+17185947865"
+            aria-label="Call IDR Technology Solutions at 718-594-7865"
             className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 
   2xl:px-10 2x:py-5 3x:px-12 3xl:py-6 rounded-lg text-sm sm:text-base lg:text-lg 
   hover:bg-white hover:text-blue-600 transition-colors cursor-pointer"

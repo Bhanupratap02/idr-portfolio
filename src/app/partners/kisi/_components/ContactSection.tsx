@@ -1,4 +1,27 @@
+"use client";
+import { submitToSheet } from "@/utils/submitToSheet";
 export function ContactSection() {
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const formData = {
+      name: form.name?.value || "",
+      email: form.email?.value || "",
+      phone: form.phone?.value || "",
+      message: form.message?.value || "",
+      source: "Kisi Page",
+    };
+
+    const result = await submitToSheet(formData);
+    if (result.success) {
+      form.reset();
+      alert("✅ Kisi request submitted successfully!");
+    } else {
+      alert("❌ Submission failed. Try again.");
+    }
+  };
+
   return (
     <section className="bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
@@ -11,10 +34,11 @@ export function ContactSection() {
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-xl">
             <h3 className="text-2xl text-[#2e2e2e] text-center mb-8">Schedule a Free Consultation</h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -22,6 +46,7 @@ export function ContactSection() {
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -29,6 +54,7 @@ export function ContactSection() {
               <div>
                 <input
                   type="tel"
+                  name="phone" 
                   placeholder="Phone Number"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -36,6 +62,7 @@ export function ContactSection() {
               <div>
                 <textarea
                   placeholder="Tell us about your project"
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none"
                 ></textarea>

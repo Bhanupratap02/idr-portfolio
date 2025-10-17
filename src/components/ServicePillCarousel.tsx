@@ -27,7 +27,7 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <div className="relative mt-8 w-full max-w-7xl mx-auto px-4">
+    <div className="relative mt-8 w-full max-w-7xl 2xl:max-w-[90rem] mx-auto px-4">
       {/* Scroll Left Button */}
       <button
         className="absolute left-0 z-10 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 md:p-3"
@@ -53,7 +53,7 @@ export default function ServicesCarousel() {
 
       {/* Scroll Right Button */}
       <button
-        className="absolute right-0 z-10 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 md:p-3"
+        className="absolute right-0 xl:-right-10 z-10 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 md:p-3"
         onClick={() => scroll('right')}
       >
         <ChevronRight size={24} />

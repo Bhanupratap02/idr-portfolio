@@ -175,14 +175,14 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import img_1 from "@/assets/what_we_do/image_11.png";
+import img_1 from "@/assets/what_we_do/image_1.png";
 import img_2 from "@/assets/what_we_do/image_2.png";
 import img_3 from "@/assets/what_we_do/image_3.png";
 import img_4 from "@/assets/what_we_do/image_4.png";
 import img_5 from "@/assets/what_we_do/image_5.png";
 import img_6 from "@/assets/what_we_do/image_6.png";
 import img_7 from "@/assets/what_we_do/image_7.png";
-import img_8 from "@/assets/what_we_do/image_8.png";
+import img_8 from "@/assets/what_we_do/image_11.png";
 
 const WhatWeDo = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -202,7 +202,7 @@ const WhatWeDo = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % services.length);
-    }, 4000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [services.length]);
 
