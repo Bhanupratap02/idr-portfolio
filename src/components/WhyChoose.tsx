@@ -176,7 +176,7 @@ export default function WhyChooseUs() {
                 setActiveTab(index);
                 setProgress(0);
               }}
-              className={`relative text-sm md:text-base 2xl:text-lg font-medium pb-2  md:pb-2.5 2xl:pb-3 transition-all duration-300 ${
+              className={`relative cursor-pointer text-sm md:text-base 2xl:text-lg font-medium pb-2  md:pb-2.5 2xl:pb-3 transition-all duration-300 ${
                 activeTab === index
                   ? "text-blue-600"
                   : "text-gray-500 hover:text-gray-800"

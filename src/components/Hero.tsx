@@ -2,6 +2,7 @@
 /** @format */
 // components/Hero.tsx
 "use client";
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const slides = [
@@ -146,12 +147,12 @@ export default function Hero() {
                     {currentSlide.text}
                   </p>
                   <div className="flex flex-row gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
-                    <button className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
+                    <Link href="/services/" className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors cursor-pointer">
                       Our Products
-                    </button>
-                    <button className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
+                    </Link>
+                    <Link href={"/portfolio"} className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
                       Learn More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -105,7 +105,7 @@ const ContactSection = () => {
 
                 <div className="space-y-8 text-base leading-relaxed">
                   <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-5 h-5" />
                     <div>
                       NY: 718-594-7865
                       <br />
@@ -116,22 +116,28 @@ const ContactSection = () => {
                   </div>
 
                   <div className="flex flex-col items-start space-x-4">
-                    <Mail className="w-6 h-6" />
-                    <div>
-                      Sales:
+                    
+                    <div className="flex items-start space-x-4">
+                      <Mail className="w-5 h-5" />
+                      <div>Sales:
                       <br />
                       sales@idrtechnologysolutions.com
+                      </div>
                     </div>
                     <br />
-                    <div>
-                      Support:
+                    <div className="flex items-start space-x-4">
+                      <Mail className="w-5 h-5" />
+                      <div>  
+                        Support:
                       <br />
                       support@idrtechnologysolutions.com
+                      </div>
+                    
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6" />
+                    <MapPin className="w-5 h-5" />
                     <div>Office Address: 91 Bay 31 St, Brooklyn, NY 11214</div>
                   </div>
                 </div>
