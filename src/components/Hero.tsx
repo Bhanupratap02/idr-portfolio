@@ -112,7 +112,7 @@ export default function Hero() {
             muted
             playsInline
             autoPlay
-            className="w-full h-full object-cover xl:object-fill"
+            className="w-full h-full object-cover xl:object-fill scale-113"
           />
 
           {/* Loading State - only show when actually loading */}
