@@ -1,7 +1,44 @@
-import { CheckCircle, Cloud, Shield, Smartphone, Search, Users, Key, Speaker, Link as LinkIcon, MapPin, Globe, Headphones } from "lucide-react";
+"use client";
+import { CheckCircle,XCircle, Cloud, Shield, Smartphone, Search, Users, Key, Speaker, Link as LinkIcon, MapPin, Globe, Headphones } from "lucide-react";
 import Link from "next/link";
-
+import { submitToSheet } from "@/utils/submitToSheet";
+import { useEffect, useState } from "react";
 export default function Index() {
+const [loading, setLoading] = useState(false);
+const [status, setStatus] = useState<"success" | "error" | null>(null);
+
+useEffect(() => {
+  if (status) {
+    const timer = setTimeout(() => setStatus(null), 3000);
+    return () => clearTimeout(timer);
+  }
+}, [status]);
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
+  setStatus(null);
+
+  const form = e.currentTarget;
+  const formData = {
+    name: (form.elements.namedItem("name") as HTMLInputElement)?.value || "",
+    company: (form.elements.namedItem("company") as HTMLInputElement)?.value || "",
+    email: (form.elements.namedItem("email") as HTMLInputElement)?.value || "",
+    requestType: (form.elements.namedItem("requestType") as HTMLSelectElement)?.value || "",
+    source: "Rhombus Page",
+  };
+
+  const result = await submitToSheet(formData);
+  setLoading(false);
+
+  if (result.success) {
+    form.reset();
+    setStatus("success");
+  } else {
+    setStatus("error");
+  }
+};
+
   return (
     <div className="min-h-screen bg-white">
 
@@ -520,13 +557,14 @@ export default function Index() {
                   </Link>
                 </div>
               </div>
-              <div className="bg-white rounded-lg p-8 shadow-lg w-[553px]">
+              <div className="bg-white rounded-lg p-8 shadow-lg w-[553px] relative">
                 <h3 className="text-2xl font-medium text-rhombus-text-dark mb-6">Get in Touch</h3>
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="block text-base text-gray-600 mb-2">Name</label>
                     <input 
-                      type="text" 
+                      type="text"
+                      name="name"
                       placeholder="Your name" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     />
@@ -535,6 +573,7 @@ export default function Index() {
                     <label className="block text-base text-gray-600 mb-2">Company</label>
                     <input 
                       type="text" 
+                      name="company"
                       placeholder="Your company" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     />
@@ -543,25 +582,53 @@ export default function Index() {
                     <label className="block text-base text-gray-600 mb-2">Email</label>
                     <input 
                       type="email" 
+                      name="email"
                       placeholder="Your email" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     />
                   </div>
                   <div>
                     <label className="block text-base text-gray-600 mb-2">Request Type</label>
-                    <select className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <select name="requestType"  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                       <option>Request a Demo</option>
                       <option>Design Consultation</option>
                       <option>Support Question</option>
                       <option>Partnership Inquiry</option>
                     </select>
                   </div>
-                  <button 
-                    type="submit" 
-                    className="w-full bg-blue-600 text-white font-medium py-3 rounded-md hover:bg-blue-700 transition-colors"
-                  >
-                    Submit Request
-                  </button>
+                 <button
+  type="submit"
+  disabled={loading}
+  className={`w-full font-medium py-3 rounded-md transition-colors ${
+    loading
+      ? "bg-blue-400 cursor-not-allowed"
+      : "bg-blue-600 hover:bg-blue-700 text-white"
+  }`}
+>
+  {loading ? "Sending..." : "Submit Request"}
+</button>
+
+{/* Toast Notification */}
+{status && (
+  <div
+    className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-3 rounded-lg shadow-lg text-white flex items-center gap-2 text-sm sm:text-base transition-all duration-300 ${
+      status === "success" ? "bg-green-600" : "bg-red-600"
+    }`}
+  >
+    {status === "success" ? (
+      <>
+        <CheckCircle className="w-5 h-5" />
+        <span>Request submitted successfully!</span>
+      </>
+    ) : (
+      <>
+        <XCircle className="w-5 h-5" />
+        <span>Something went wrong. Please try again.</span>
+      </>
+    )}
+  </div>
+)}
+
                 </form>
               </div>
             </div>
