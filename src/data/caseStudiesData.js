@@ -1900,3 +1900,103 @@ export const caseStudiesData = [
     ]
   },
 ];
+export const caseStudiesHomePage = [
+    {
+      id: 1,
+      title: "How IDR Eliminated Unauthorized Building Access for Fairstead.",
+      desc: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across.......",
+      image: Eliminating_case_study_1,
+      url:"/case-studies/eliminated-unauthorized-access"
+    },
+    {
+      id: 2,
+      title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
+      desc: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida..",
+      image: Failed_case_study_1,
+       url:"/case-studies/fixing-failed-installs"
+    },
+    {
+      id: 3,
+      title:
+        "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The........",
+      desc: "Fairstead approached IDR with a unique challenge at their Chocolate Factory property in Brooklyn......",
+      image: Cloud_case_study_1,
+       url:"/case-studies/cloud-4-wire-intercoms"
+    },
+    {
+      id: 4,
+      title:
+        "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
+      desc: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint......",
+      image: case_study_1,
+       url:"/case-studies/kisi-elevator-access"
+    },
+    {
+      id: 5,
+      title:
+        "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
+      desc: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points.......",
+      image: intercom_case_study_1,
+       url:"/case-studies/unified-intercom-access"
+    },
+    {
+      id: 6,
+      title: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
+      desc: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with....",
+      image: wifi_case_study_1,
+       url:"/case-studies/phased-wifi-upgrade"
+    },
+    {
+      id: 7,
+      title:
+        "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
+      desc: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag........",
+      image: Audio_case_study_1,
+       url:"/case-studies/custom-audio-deterrent"
+    },
+    {
+      id: 8,
+      title:
+        "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
+      desc: "Create a seamless Microsoft Teams-based hybrid training room with distributed AV, zone-based audio, and advanced control — all.....",
+      image: Training_case_study_1,
+       url:"/case-studies/smarter-training-room"
+    },
+    {
+      id: 9,
+      title:
+        "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
+      desc: "Full infrastructure overhaul with ongoing overnight cutovers and enterprise-grade upgrades Oppenheimer Funds approached IDR...",
+      image: Enterprise_case_study_1,
+       url:"/case-studies/enterprise-cabling-cleanup"
+    },
+    {
+      id: 10,
+      title: "Burns Engineering",
+      desc: "Relationship Scope: Nationwide low voltage partnership across 7+ locations Services: Kisi access control, structured cabling, technical.......",
+      image: case_study_1,
+       url:"/case-studies/burns-partnership"
+    },
+    {
+      id: 11,
+      title: "Scaling Security with Fairstead",
+      desc: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida....",
+      image: Scaling_case_study_1,
+       url:"/case-studies/scaling-security-fairstead"
+    },
+    {
+      id: 12,
+      title: "Peninsula Preparatory Academy",
+      desc: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......",
+      image: PPA_case_study_1,
+       url:"/case-studies/ppa-screen-sharing"
+    },
+    {
+      id: 13,
+      title:
+        "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
+      desc: "Fairstead is a national real estate developer and operator with a focus on sustainability, safety, and community-driven housing.......",
+      image: Louderhill_case_study_1,
+       url:"/case-studies/securing-lauderhill-point"
+    },
+  ];

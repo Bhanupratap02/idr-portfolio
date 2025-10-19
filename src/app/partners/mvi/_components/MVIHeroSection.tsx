@@ -2,6 +2,7 @@
 import Image from "next/image";
 import heroImg from "@/assets/partners/mvi/hero-main.png";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function MVIHeroSection() {
   return (
@@ -22,15 +23,21 @@ export default function MVIHeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-7 lg:px-8 xl:px-10 py-3 sm:py-3.5 lg:py-4 xl:py-5 text-sm sm:text-base lg:text-lg font-semibold h-auto hover:shadow-lg transition-all duration-200">
-                Request a Quote
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100 px-6 sm:px-7 lg:px-8 xl:px-10 py-3 sm:py-3.5 lg:py-4 xl:py-5 text-sm sm:text-base lg:text-lg font-semibold h-auto hover:shadow-lg transition-all duration-200"
-              >
-                See a Demo
-              </Button>
+              <Link href={"/contact"}>
+                {" "}
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-7 lg:px-8 xl:px-10 py-3 sm:py-3.5 lg:py-4 xl:py-5 text-sm sm:text-base lg:text-lg font-semibold h-auto hover:shadow-lg transition-all duration-200 cursor-pointer">
+                  Request a Quote
+                </Button>
+              </Link>
+              <Link href={"/contact"}>
+                {" "}
+                <Button
+                  variant="outline"
+                  className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100 px-6 sm:px-7 lg:px-8 xl:px-10 py-3 sm:py-3.5 lg:py-4 xl:py-5 text-sm sm:text-base lg:text-lg font-semibold h-auto hover:shadow-lg transition-all duration-200 cursor-pointer"
+                >
+                  See a Demo
+                </Button>
+              </Link>
             </div>
           </div>
 

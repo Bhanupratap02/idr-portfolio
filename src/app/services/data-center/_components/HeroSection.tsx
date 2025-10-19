@@ -1,6 +1,7 @@
 /** @format */
 import hero from "@/assets/services/data-center/hero.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function DCHeroSection() {
   return (
     <section className="relative lg:h-[88vh] 3xl:h-[89vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-12 sm:py-16 2xl:py-24 3xl:py-32 flex  items-center justify-center">
@@ -29,8 +30,8 @@ export default function DCHeroSection() {
               — and that&apos;s where we thrive.
             </p>
 
-            <button className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
-              Explore Our Infrastructure
+            <Link href={'/contact'} className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
+              Request a Consultation
               <svg
                 width="14"
                 height="16"
@@ -43,7 +44,7 @@ export default function DCHeroSection() {
                   fill="white"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
 
           {/* Right Side - Server Rack Image */}

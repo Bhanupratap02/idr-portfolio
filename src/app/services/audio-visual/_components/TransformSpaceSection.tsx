@@ -1,6 +1,53 @@
 /** @format */
+"use client";
+import { useState, useEffect } from "react";
+import { CheckCircle2, XCircle } from "lucide-react";
 
+import { submitToSheet } from "@/utils/submitToSheet";
 export default function TransformSpaceSection() {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const formData = {
+      name: (form.elements.namedItem("name") as HTMLInputElement)?.value || "",
+      email:
+        (form.elements.namedItem("email") as HTMLInputElement)?.value || "",
+      phone:
+        (form.elements.namedItem("phone") as HTMLInputElement)?.value || "",
+      interest:
+        (form.elements.namedItem("interest") as HTMLSelectElement)?.value || "",
+      source: "AudioVisual Page",
+    };
+
+    try {
+      const result = await submitToSheet(formData);
+      if (result.success) {
+        form.reset();
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-gray-800">
       <div className="mx-auto max-w-3xl md:max-w-4xl lg:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
@@ -11,16 +58,18 @@ export default function TransformSpaceSection() {
           Schedule a free consultation and site visit with our A/V experts
         </p>
         {/* Contact Form */}
-        <form className="space-y-6 mb-8">
+        <form onSubmit={handleSubmit} className="space-y-6 mb-8 relative pb-10">
           <div className="grid md:grid-cols-2 gap-4">
             <input
               type="text"
+              name="name"
               aria-label="Full Name"
               placeholder="Full Name"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="email"
               aria-label="Email Address"
               placeholder="Email Address"
               className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -28,12 +77,14 @@ export default function TransformSpaceSection() {
           </div>
           <input
             type="tel"
+            name="phone"
             aria-label="Phone Number"
             placeholder="Phone Number"
             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <div className="relative">
             <select
+              name="interest"
               className="w-full px-4 pr-10 py-3 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
               aria-label="Service Interest"
             >
@@ -62,10 +113,34 @@ export default function TransformSpaceSection() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6  rounded-md font-medium transition-colors cursor-pointer"
+            disabled={loading}
+            className={`w-full py-3 px-6 rounded-md font-medium transition-colors cursor-pointer ${
+              loading
+                ? "bg-blue-400 text-white cursor-not-allowed"
+                : "bg-blue-500 hover:bg-blue-600 text-white"
+            }`}
           >
-            Schedule My Free Consultation
+            {loading ? "Sending..." : "Schedule My Free Consultation"}
           </button>
+          {status && (
+            <div
+              className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-3 rounded-lg shadow-lg text-white flex items-center gap-2 text-sm sm:text-base transition-all duration-300 ${
+                status === "success" ? "bg-green-600" : "bg-red-600"
+              }`}
+            >
+              {status === "success" ? (
+                <>
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span>Request submitted successfully!</span>
+                </>
+              ) : (
+                <>
+                  <XCircle className="w-5 h-5" />
+                  <span>Something went wrong. Please try again.</span>
+                </>
+              )}
+            </div>
+          )}
         </form>
 
         {/* Contact Info */}

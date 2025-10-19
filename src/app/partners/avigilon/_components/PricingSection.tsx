@@ -140,11 +140,11 @@ export function PricingSection() {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-orange-500 text-white text-sm md:text-base xl:text-lg  rounded-xl hover:bg-orange-600 transition-colors duration-300 font-medium">
             Find Recommended Edition
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import certifiedSupportImg from "@/assets/services/intercom/certified_support.png"
+import IDR_TEAM from "@/assets/aboutus/team-photo.png";
 const features = [
   {
     title: "Certified Technicians",
@@ -164,9 +164,9 @@ export function CertifiedSupportSection() {
         {/* Team Photo */}
         <div className="flex justify-center">
           <Image
-            src={certifiedSupportImg}
+            src={IDR_TEAM}
             alt="IDR Technology Solutions team"
-            className="w-full max-w-5xl h-auto object-cover rounded-xl"
+            className="w-full max-w-5xl h-auto object-cover rounded-xl aspect-video"
           />
         </div>
       </div>

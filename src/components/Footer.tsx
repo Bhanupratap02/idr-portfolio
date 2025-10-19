@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "@/assets/logo_2.png";
+import logo from "@/assets/logo.png";
 import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
@@ -43,14 +43,14 @@ const Footer = () => {
       <div className="max-w-7xl 3xl:max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 2xl:gap-16 3xl:gap-20 mb-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="relative w-full max-w-72 2xl:max-w-80 h-10 2xl:h-12">
+          <div className="space-y-1">
+            <div className="relative w-full max-w-70 2xl:max-w-80 h-10 2xl:h-12">
               <Image
                 src={logo}
                 alt="IDR Logo"
                 fill
                 quality={100}
-                className="object-contain"
+                className="object-cover"
                 priority
               />
             </div>
@@ -117,7 +117,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/privacy-policy"
                   className="text-sm 2xl:text-base text-[#F7F6F2] hover:text-white transition"
                 >
                   Privacy Policy

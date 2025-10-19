@@ -1,20 +1,70 @@
+"use client";
+import { useState, useEffect } from "react";
+import { CheckCircle, XCircle } from "lucide-react";
+
+import { submitToSheet } from "@/utils/submitToSheet";
 export function ContactSection() {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const formData = {
+      name: (form.elements.namedItem("name") as HTMLInputElement)?.value || "",
+      email:
+        (form.elements.namedItem("email") as HTMLInputElement)?.value || "",
+      phone:
+        (form.elements.namedItem("phone") as HTMLInputElement)?.value || "",
+      message:
+        (form.elements.namedItem("message") as HTMLTextAreaElement)?.value ||
+        "",
+      source: "Kisi Page",
+    };
+
+    const result = await submitToSheet(formData);
+    setLoading(false);
+
+    if (result.success) {
+      form.reset();
+      setStatus("success");
+    } else {
+      setStatus("error");
+    }
+  };
+
   return (
     <section className="bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <div className="text-white mb-8">
-            <h2 className="text-3xl lg:text-4xl mb-6">Let&apos;s Build Your Kisi System</h2>
+            <h2 className="text-3xl lg:text-4xl mb-6">
+              Let&apos;s Build Your Kisi System
+            </h2>
             <p className="text-lg lg:text-xl text-blue-100 leading-relaxed">
-              Whether you&apos;re outfitting a new space or upgrading legacy access control, IDR is your trusted Kisi partner.
+              Whether you&apos;re outfitting a new space or upgrading legacy
+              access control, IDR is your trusted Kisi partner.
             </p>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl text-[#2e2e2e] text-center mb-8">Schedule a Free Consultation</h3>
-            <form className="space-y-6">
+           <div className="bg-white rounded-2xl p-8 shadow-xl relative">
+            <h3 className="text-2xl text-[#2e2e2e] text-center mb-8">
+              Schedule a Free Consultation
+            </h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -22,6 +72,7 @@ export function ContactSection() {
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -29,6 +80,7 @@ export function ContactSection() {
               <div>
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Phone Number"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
                 />
@@ -36,16 +88,41 @@ export function ContactSection() {
               <div>
                 <textarea
                   placeholder="Tell us about your project"
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors text-center"
+                disabled={loading}
+                className={`w-full py-3 rounded-lg transition-colors text-center ${
+                  loading
+                    ? "bg-blue-400 cursor-not-allowed text-white"
+                    : "bg-blue-500 hover:bg-blue-600 text-white"
+                }`}
               >
-                Get Started Today
+                {loading ? "Sending..." : "Get Started Today"}
               </button>
+              {status && (
+                <div
+                  className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-3 rounded-lg shadow-lg text-white flex items-center gap-2 text-sm sm:text-base transition-all duration-300 ${
+                    status === "success" ? "bg-green-600" : "bg-red-600"
+                  }`}
+                >
+                  {status === "success" ? (
+                    <>
+                      <CheckCircle className="w-5 h-5" />
+                      <span>Request submitted successfully!</span>
+                    </>
+                  ) : (
+                    <>
+                      <XCircle className="w-5 h-5" />
+                      <span>Something went wrong. Please try again.</span>
+                    </>
+                  )}
+                </div>
+              )}
             </form>
           </div>
         </div>

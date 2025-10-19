@@ -2,6 +2,7 @@
 import Image from "next/image";
 import heroMainImg from "@/assets/partners/vicon/hero-main.png";
 import heroBgImg from "@/assets/partners/vicon/hero-bg.png";
+import Link from "next/link";
 export default function ViconHeroSection() {
   return (
     <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[90vh] lg:min-h-[85vh] xl:min-h-[89vh] 2xl:min-h-[94vh] 3xl:min-h-[95vh] flex items-center justify-center w-full overflow-hidden">
@@ -36,12 +37,12 @@ export default function ViconHeroSection() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 xl:gap-6 2xl:gap-7">
-                <button className="bg-white text-[#0055a4] px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-3.5 md:py-4 xl:py-5 2xl:py-6 rounded-md text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-semibold hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                <Link href={"/contact"} className="bg-white text-[#0055a4] px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-3.5 md:py-4 xl:py-5 2xl:py-6 rounded-md text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-semibold hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
                   Request a Free Demo
-                </button>
-                <button className="bg-[#006cca] text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-3.5 md:py-4 xl:py-5 2xl:py-6 rounded-md text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-semibold hover:bg-[#0056a3] hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                </Link>
+                <Link href="/contact" className="bg-[#006cca] text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-3.5 md:py-4 xl:py-5 2xl:py-6 rounded-md text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-semibold hover:bg-[#0056a3] hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer">
                   Contact Sales
-                </button>
+                </Link>
               </div>
             </div>
 

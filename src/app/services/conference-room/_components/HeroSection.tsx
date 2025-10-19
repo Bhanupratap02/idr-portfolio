@@ -23,7 +23,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto w-full max-w-[125rem] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 3xl:px-32">
+      <div className="relative mx-auto w-full max-w-[120rem] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 3xl:px-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 3xl:gap-32 items-center">
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 md:space-y-8 lg:space-y-8 xl:space-y-10 3xl:space-y-12  max-w-full lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl ">

@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import lights from "@/assets/partners/speco/lights.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function WhereWeWork() {
   return (
     <section className="w-full bg-gray-900 py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28 3xl:py-36">
@@ -47,10 +48,11 @@ export default function WhereWeWork() {
                     tailored to your security needs.
                   </p>
                 </div>
-
-                <Button className="w-full bg-[#3b4fd1] hover:bg-[#3b4fd1]/90 text-white font-light text-sm sm:text-base md:text-lg   2xl:text-xl h-10 sm:h-12 xl:h-14 2xl:h-16 rounded-md transition-all duration-300 hover:shadow-lg cursor-pointer ">
-                  Get Started Today
-                </Button>
+                <Link href={"/contact"}>
+                  <Button className="w-full bg-[#3b4fd1] hover:bg-[#3b4fd1]/90 text-white font-light text-sm sm:text-base md:text-lg   2xl:text-xl h-10 sm:h-12 xl:h-14 2xl:h-16 rounded-md transition-all duration-300 hover:shadow-lg cursor-pointer ">
+                    Get Started Today
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

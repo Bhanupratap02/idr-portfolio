@@ -2,7 +2,7 @@
 
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
-import team from "@/assets/services/structured-cabling/teams.png"
+import IDR_TEAM from "@/assets/aboutus/team-photo.png";
 interface BenefitItemProps {
   title: string;
 }
@@ -51,7 +51,7 @@ export default function WhyChooseIDRSection() {
             {/* Right Content - Team Image */}
             <div className="flex justify-center lg:col-span-2 order-1 lg:order-2">
               <Image
-                src={team}
+                src={IDR_TEAM}
                 alt="IDR Team"
                 className="w-full max-w-full h-auto rounded-xl"
               />

@@ -1,18 +1,17 @@
 /** @format */
   
-import mic1 from "@/assets/services/conference-room/icons/mic_1.png";
+import sonos from "@/assets/services/conference-room/icons/Sonos.png";
 import mic2 from "@/assets/services/conference-room/icons/mic_2.png";
-import sound from "@/assets/services/conference-room/icons/sound.png";
+import dsp from "@/assets/services/conference-room/icons/DSP.png";
 import amplifier from "@/assets/services/conference-room/icons/amplifier.png";
 import panels from "@/assets/services/conference-room/icons/panels.png";
 import tv from "@/assets/services/conference-room/icons/tv_2.png";
-import warning from "@/assets/services/conference-room/icons/warning.png";
 import Image from "next/image";
 const products = [
   {
     name: "Biamp & Bose DSP",
-    icon: mic1,
-    classNames:"w-10 h-10 md:w-10 md:h-12 2xl:w-12 2xl:h-14 3xl:w-14 3xl:h-16",
+    icon: dsp,
+    classNames:"w-10 h-10 md:w-10 md:h-12 2xl:w-12 2xl:h-14 3xl:w-18 3xl:h-18 scale-x-195 scale-y-145 mix-blend-multiply",
   },
   {
     name: "Sennheiser",
@@ -36,8 +35,8 @@ const products = [
   },
   {
     name: "Sonos",
-    icon: warning,
-    classNames: "w-10 h-10 md:w-10 md:h-12 2xl:w-12 2xl:h-14 3xl:w-14 3xl:h-16",
+    icon: sonos,
+    classNames: "w-10 h-10 md:w-10 md:h-12 2xl:w-12 2xl:h-14 3xl:w-18 3xl:h-18 scale-x-185 scale-y-155 mix-blend-multiply",
   },
 ];
 export default function TrustedProductsSection() {

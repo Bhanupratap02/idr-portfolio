@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { BadgeCheck, PlayCircle, Wallet } from "lucide-react";
 import heroImg from "@/assets/partners/brivo/brivo.png";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -36,16 +37,16 @@ export default function HeroSection() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 justify-center lg:justify-start">
               {/* Primary CTA */}
-              <button className="bg-[#0066cc] text-white font-medium text-sm sm:text-base md:text-lg rounded-lg px-5 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 flex items-center justify-center gap-2 hover:bg-[#0055aa] transition-all duration-300 hover:shadow-md">
+              {/* <button className="bg-[#0066cc] text-white font-medium text-sm sm:text-base md:text-lg rounded-lg px-5 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 flex items-center justify-center gap-2 hover:bg-[#0055aa] transition-all duration-300 hover:shadow-md">
                 <Wallet className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden />
                 Add to Apple Wallet
-              </button>
+              </button> */}
 
               {/* Secondary CTA */}
-              <button className="border-2 border-gray-300 text-gray-700 font-medium text-sm sm:text-base md:text-lg rounded-lg px-5 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 flex items-center justify-center gap-2 hover:border-[#0066cc] hover:text-[#0066cc] transition-all duration-300">
+              <Link href={"/contact"} className="border-2 border-gray-300 text-gray-700 font-medium text-sm sm:text-base md:text-lg rounded-lg px-5 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 flex items-center justify-center gap-2 hover:border-[#0066cc] hover:text-[#0066cc] transition-all duration-300">
                 <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden />
                 Watch Demo
-              </button>
+              </Link>
             </div>
           </div>
           {/* Right Image */}

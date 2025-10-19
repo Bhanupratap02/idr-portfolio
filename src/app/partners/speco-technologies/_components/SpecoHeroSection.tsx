@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/partners/speco/hero-bg.png";
 import heroMain from "@/assets/partners/speco/hero-main.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function SpecoHeroSection() {
   return (
     <section className="relative overflow-hidden min-h-[75vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[89vh] 2xl:min-h-[94vh] 3xl:min-h-[95vh]  py-12 md:py-20 lg:py-24 2xl:py-28  flex md:items-center justify-center bg-gray-100">
@@ -49,13 +50,17 @@ export default function SpecoHeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 xl:gap-5 2xl:gap-6 3xl:gap-8">
-            <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer ">
-              Get a Free Consultation
-            </Button>
-
-            <Button className=" bg-[#F1F1F1] text-[#2E2E2E] hover:bg-blue-900 hover:border-none hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer">
-              Explore Features
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer ">
+                Get a Free Consultation
+              </Button>
+            </Link>
+            <Link href={"/portfolio"}>
+         
+              <Button className=" bg-[#F1F1F1] text-[#2E2E2E] hover:bg-blue-900 hover:border-none hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer">
+                Explore Features
+              </Button>
+            </Link>
           </div>
         </div>
 

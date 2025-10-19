@@ -124,11 +124,11 @@ export default function SecuritySuiteSection() {
               </ul>
 
               {/* Button */}
-              <button
+              {/* <button
                 className={`w-full py-2.5 sm:py-3 rounded-lg font-medium text-sm sm:text-base ${edition.button.style} flex items-center justify-center`}
               >
                 {edition.button.label}
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

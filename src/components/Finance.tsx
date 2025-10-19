@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Finance() {
   return (
     <div className="px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full max-w-7xl 2xl:max-w-[85rem] 3xl:max-w-[105rem] mx-auto">
         <div className="bg-white border border-gray-200 rounded-xl shadow-lg p-8 md:p-14">
           {/* Main Heading */}
           <h1 className="text-2xl md:text-4xl font-bold text-primary text-center mb-8 leading-tight">
@@ -43,7 +43,7 @@ export default function Finance() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12">
             {/* Access Control */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="27"
                   height="27"
@@ -75,7 +75,7 @@ export default function Finance() {
 
             {/* Surveillance */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="31"
                   height="27"
@@ -107,7 +107,7 @@ export default function Finance() {
 
             {/* Network Cabling */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="33"
                   height="27"
@@ -139,7 +139,7 @@ export default function Finance() {
 
             {/* Intercom */}
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="27"
                   height="27"
@@ -171,7 +171,7 @@ export default function Finance() {
 
             {/* AV */}
             <div className="flex flex-col items-center text-center gap-3 col-span-2 md:col-span-1 md:col-start-auto">
-              <div className="w-16 h-16 md:w-18 md:h-18 bg-secondary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-gray-100 rounded-full flex items-center justify-center">
                 <svg
                   width="33"
                   height="27"

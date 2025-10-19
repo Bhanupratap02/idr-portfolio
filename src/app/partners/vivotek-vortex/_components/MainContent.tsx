@@ -1,6 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function MainContent() {
   return (
@@ -29,9 +30,11 @@ export default function MainContent() {
             </div>
 
             {/* CTA Button */}
-            <Button className="group bg-[#2E2E2E] hover:bg-[#1a1a1a] active:bg-black text-white transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-semibold px-6 sm:px-8 md:px-12 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20 py-3 sm:py-4 md:py-5 lg:py-4 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[220px] lg:min-w-[200px] xl:min-w-[220px] 2xl:min-w-[240px] 3xl:min-w-[280px] h-12 2xl:h-18 3xl:h-20">
-              Get now
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="group bg-[#2E2E2E] hover:bg-[#1a1a1a] active:bg-black text-white transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-lg sm:rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl 2xl:rounded-2xl 3xl:rounded-2xl text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-semibold px-6 sm:px-8 md:px-12 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20 py-3 sm:py-4 md:py-5 lg:py-4 xl:py-5 2xl:py-6 3xl:py-8 w-full sm:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[220px] lg:min-w-[200px] xl:min-w-[220px] 2xl:min-w-[240px] 3xl:min-w-[280px] h-12 2xl:h-18 3xl:h-20 cursor-pointer">
+                Get now
+              </Button>
+            </Link>
           </div>
           {/* Right Visual Element */}
 

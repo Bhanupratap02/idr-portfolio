@@ -51,7 +51,7 @@ import portal from "@/assets/idr_portal.jpeg"
      ),
      title: "Certified Professionals",
      description:
-       "Certified with Biamp, Kramer, QSC, Sonos,  Sennheiser , Bose and Dante",
+       "Certified with Biamp, Kramer, QSC, Sonos,  Sennheiser, RTI, Bose and Dante",
    },
    {
      icon: (

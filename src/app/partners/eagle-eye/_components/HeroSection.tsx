@@ -1,9 +1,9 @@
+/** @format */
+
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/partners/eagleeye/heroImg.png"
+import heroImg from "@/assets/partners/eagleeye/heroImg.png";
 import Image from "next/image";
-
-
-
+import Link from "next/link";
 
 const EagleEyeHeroSection = () => {
   return (
@@ -22,20 +22,23 @@ const EagleEyeHeroSection = () => {
               own.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6">
-              
-              <Button
-                size="lg"
-                className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-normal rounded-lg transition-all duration-300 hover:scale-105 shadow-md h-auto cursor-pointer"
-              >
-                Get Started
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-[#052557] text-[#052557] hover:bg-[#052557]/10 px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-normal rounded-lg transition-all duration-300 hover:scale-105 h-auto cursor-pointer"
-              >
-                Learn More
-              </Button>
+              <Link href={"/contact"}>
+                <Button
+                  size="lg"
+                  className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-normal rounded-lg transition-all duration-300 hover:scale-105 shadow-md h-auto cursor-pointer"
+                >
+                  Get Started
+                </Button>
+              </Link>
+              <Link href={"/contact"}>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-[#052557] text-[#052557] hover:bg-[#052557]/10 px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-normal rounded-lg transition-all duration-300 hover:scale-105 h-auto cursor-pointer"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
 

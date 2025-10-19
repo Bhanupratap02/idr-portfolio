@@ -9,7 +9,7 @@ export default function ServicePage() {
     <div className="min-h-screen bg-white">
       <ServiceHeroSection />
       <AVServicesGrid title="We Always Provide The Best Service" />
-      <HowIDRWorksSection />
+      {/* <HowIDRWorksSection /> */}
     </div>
   );
 }

@@ -1,7 +1,6 @@
 /** @format */
 
 "use client";
-import { useRef } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { MenuSection } from "@/types/navbar";
@@ -21,10 +20,10 @@ export default function DesktopMenu({
   menuRef,
 }: DesktopMenuProps) {
   return (
-    <div className="hidden lg:flex items-center space-x-8">
+    <div className="hidden xl:flex items-center space-x-8">
       <Link
         href="/about"
-        className="text-[#F7F6F2] text-sm hover:text-white transition-colors"
+        className="text-[#F7F6F2] text-sm 2xl:text-base hover:text-white transition-colors"
       >
         About Us
       </Link>
@@ -36,7 +35,7 @@ export default function DesktopMenu({
         >
           <button
             onClick={() => onMenuToggle(section.key)}
-            className="flex items-center space-x-2 text-[#F7F6F2] text-sm hover:text-white transition-colors cursor-pointer"
+            className="flex items-center space-x-2 text-[#F7F6F2] text-sm 2xl:text-base hover:text-white transition-colors cursor-pointer"
           >
             <span>{section.title}</span>
             <ChevronDown
@@ -58,7 +57,7 @@ export default function DesktopMenu({
 
       <Link
         href="/portfolio"
-        className="text-[#F7F6F2] text-sm hover:text-white transition-colors"
+        className="text-[#F7F6F2] text-sm 2xl:text-base hover:text-white transition-colors"
       >
         Portfolio
       </Link>

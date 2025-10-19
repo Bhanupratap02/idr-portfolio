@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useNavbar } from "@/hooks/useNavbar";
 import { MENU_SECTIONS } from "@/data/menuData";
-import logo from "@/assets/logo_2.png";
+import logo from "@/assets/logo.png";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 import MobileMenuSheet from "./MobileMenuSheet";
@@ -28,12 +28,13 @@ function Navbar2() {
     <nav className="sticky top-0 bg-[#202020]  px-6 lg:px-8 py-6  overflow-visible z-[60] ">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="relative w-48 lg:w-52 h-7">
+
+        <Link href="/" className="relative w-40 sm:w-48 lg:w-56 xl:w-64 2xl:w-72 h-8">
           <Image
             src={logo}
             alt="IDR Technology Solutions"
             fill
-            className="object-contain "
+            className="object-cover "
             priority
           />
         </Link>
@@ -46,7 +47,7 @@ function Navbar2() {
           menuRef={menuRef}
         />
         {/* CTA Buttons */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden xl:flex items-center space-x-4">
           <Link
             href="https://portal.idrtechnologysolutions.com/"
             className="px-4 py-3 border border-white text-white text-xs uppercase hover:bg-white hover:text-black transition-colors"

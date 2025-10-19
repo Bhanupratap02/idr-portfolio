@@ -4,7 +4,7 @@ import hero from "@/assets/services/networks-it/hero.png";
 import Link from "next/link";
 export default function NITHeroSection() {
   return (
-    <section className="relative min-h-[80vh] lg:h-[88vh] 2xl:h-[90vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-16 sm:py-20 lg:py-24 2xl:py-28 flex items-center">
+    <section className="relative min-h-[80vh] lg:h-[88vh] 2xl:h-[90vh] 3xl:h-[80vh]  bg-gradient-to-r from-blue-900/10 to-purple-900/10 py-16 sm:py-20 lg:py-24 2xl:py-28 flex items-center">
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[125rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

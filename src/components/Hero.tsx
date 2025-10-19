@@ -2,6 +2,7 @@
 /** @format */
 // components/Hero.tsx
 "use client";
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const slides = [
@@ -104,7 +105,7 @@ export default function Hero() {
           }
         `}</style>
         {/* Video Container */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full ">
           <video
             key={currentSlide.src} // force reload on slide change
             ref={videoRef}
@@ -112,7 +113,7 @@ export default function Hero() {
             muted
             playsInline
             autoPlay
-            className="w-full h-full object-cover xl:object-fill "
+            className="w-full h-full object-cover xl:object-fill scale-113"
           />
 
           {/* Loading State - only show when actually loading */}
@@ -134,8 +135,8 @@ export default function Hero() {
 
         {/* Text Overlay for 3rd and 4th slides */}
         {(activeIndex === 2 || activeIndex === 3) && (
-          <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start">
-            <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+          <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start ">
+            <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
               {/* Left-aligned container with max width to prevent centering */}
               <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
                 <div className="rounded-xl p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 text-white">
@@ -146,12 +147,12 @@ export default function Hero() {
                     {currentSlide.text}
                   </p>
                   <div className="flex flex-row gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
-                    <button className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
+                    <Link href="/services/" className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors cursor-pointer">
                       Our Products
-                    </button>
-                    <button className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
+                    </Link>
+                    <Link href={"/portfolio"} className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
                       Learn More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -183,7 +184,7 @@ export default function Hero() {
 
           <div className="hidden sm:flex sm:absolute sm:bottom-0 sm:right-0 flex-col items-center space-y-4 lg:space-y-6">
             {/* Desktop: Vertical dots at bottom right */}
-            {[0, 1, 2, 3].map((i) =>
+            {[0, 1, 2].map((i) =>
               i === activeIndex ? (
                 <div
                   key={i}
@@ -194,7 +195,7 @@ export default function Hero() {
               ) : (
                 <div
                   key={i}
-                  className="w-2 h-2 lg:w-3 lg:h-3 rounded-full bg-white/60 hover:bg-white/80 transition-colors cursor-pointer"
+                  className="w-2 h-2 2xl:w-3 2xl:h-3 rounded-full bg-white/60 hover:bg-white/80 transition-colors cursor-pointer"
                   onClick={() => setActiveIndex(i)}
                 ></div>
               )

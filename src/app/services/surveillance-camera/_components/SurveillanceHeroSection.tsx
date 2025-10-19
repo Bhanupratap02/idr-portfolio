@@ -1,15 +1,15 @@
 /** @format */
 
-import { Button } from "@/components/ui/button";
+
 import hero from "@/assets/services/surveillance-camera/hero.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function SurveillanceHeroSection() {
   return (
-    <section className="w-full min-h-[85vh] sm:min-h-[90vh] lg:min-h-[90vh] xl:min-h-[85vh] 2xl:min-h-[90vh] 3xl:min-h-[88vh] bg-gradient-to-r from-[#1E3A8A] via-[#1E40AF] to-[#1D4ED8] relative overflow-hidden flex  items-center">
+    <section className="w-full min-h-[85vh] sm:min-h-[90vh] lg:min-h-[90vh] xl:min-h-[80vh] 2xl:min-h-[85vh] 3xl:min-h-[78vh] bg-gradient-to-r from-[#1E3A8A] via-[#1E40AF] to-[#1D4ED8] relative overflow-hidden flex  items-center">
       <div className="absolute inset-0 bg-black/30 sm:bg-black/25 lg:bg-black/20"></div>
 
-      <div className="relative  max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-24  h-full">
+      <div className="relative  max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 3xl:px-20  h-full">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-4  2xl:gap-20 items-center h-full pb-8 sm:pb-12">
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8 xl:space-y-10 2xl:space-y-12 flex flex-col justify-center">

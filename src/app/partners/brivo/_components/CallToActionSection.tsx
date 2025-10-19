@@ -28,10 +28,12 @@ export default function CallToActionSection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 xl:gap-14 2xl:gap-18">
           {/* Primary Button */}
-          <button className="bg-white text-[#0066cc] px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg font-medium text-sm sm:text-base md:text-lg flex items-center justify-center gap-2 sm:gap-3 hover:bg-blue-50 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer">
-            <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden />
-            Start Free Trial
-          </button>
+          <Link href={"/contact"}>
+            <button className="bg-white text-[#0066cc] px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg font-medium text-sm sm:text-base md:text-lg flex items-center justify-center gap-2 sm:gap-3 hover:bg-blue-50 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer">
+              <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden />
+              Start Free Trial
+            </button>
+          </Link>
 
           {/* Secondary Button */}
           <Link href={"/contact"}>

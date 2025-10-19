@@ -28,7 +28,7 @@ export default function MobileMenu({
   return (
     <>
       {/* Hamburger Button */}
-      <button className="lg:hidden text-[#F7F6F2]" onClick={onMenuToggle}>
+      <button className="xl:hidden text-[#F7F6F2]" onClick={onMenuToggle}>
         {isMenuOpen ? (
           <X className="w-6 h-6" />
         ) : (
@@ -49,9 +49,9 @@ export default function MobileMenu({
       </button>
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#202020] px-6 py-4 z-50">
+        <div className="xl:hidden absolute top-full left-0 right-0 bg-[#202020] px-6 py-4 z-50">
           <div className="flex flex-col space-y-4">
-            <Link href="/about" className="text-[#F7F6F2] text-sm">
+            <Link href="/about" className="text-[#F7F6F2] text-sm ">
               About Us
             </Link>
             {menuSections.map((section) => (
@@ -71,10 +71,10 @@ export default function MobileMenu({
             >
               Portfolio
             </Link>
-            <div className="flex flex-col space-y-2 pt-4">
+            <div className="flex flex-col lg:flex-row lg:gap-5 space-y-2 pt-4">
               <Link
                 href="https://portal.idrtechnologysolutions.com/"
-                className="px-4 py-3 border border-white text-white text-xs uppercase text-center"
+                className="px-4 py-3 border border-white text-white text-xs uppercase text-center flex-1 inline-flex items-center justify-center max-h-[45px]"
                 onClick={handleLinkClick}
               >
                 IDR Portal
@@ -82,7 +82,7 @@ export default function MobileMenu({
               <Link
                 href="/contact"
                 onClick={handleLinkClick}
-                className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase text-center"
+                className="px-4 py-3 bg-[#F7F6F2] text-[#151622] text-xs font-bold uppercase text-center flex-1 inline-flex items-center justify-center max-h-[42px]"
               >
                 Contact US
               </Link>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/partners/akuvox/hero.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function AkuvoxHeroSection() {
   return (
     <section className="w-full overflow-hidden min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[87vh] 2xl:min-h-[94vh]  py-12 sm:py-16 md:py-18 lg:py-10 2xl:py-18 3xl:py-20 bg-gradient-to-r from-blue-50 to-indigo-100 flex items-center">
@@ -40,16 +41,19 @@ export default function AkuvoxHeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 xl:gap-5 2xl:gap-6">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer ">
-              Schedule a Demo
-            </Button>
-
-            <Button
-              variant="outline"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer"
-            >
-              Get a Quote
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer ">
+                Schedule a Demo
+              </Button>
+            </Link>
+            <Link href={"/contact"}>
+              <Button
+                variant="outline"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4 xl:py-5 2xl:py-6 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl font-medium h-auto cursor-pointer"
+              >
+                Get a Quote
+              </Button>
+            </Link>
           </div>
         </div>
 
