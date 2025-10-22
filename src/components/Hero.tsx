@@ -21,75 +21,214 @@ const slides = [
 ];
 
 export default function Hero() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [secondsLeft, setSecondsLeft] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [secondsLeft, setSecondsLeft] = useState<number>(0);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [hasError, setHasError] = useState<boolean>(false);
+  const [isVideoReady, setIsVideoReady] = useState<boolean>(false);
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+ const currentSlide = slides[activeIndex];
+
+
+  // Utility: detect Safari (WebKit but not Chrome)
+  const isSafari = (() => {
+    if (typeof navigator === "undefined") return false;
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  })();
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
+    let mounted = true;
 
-    // Reset loading state for new video
+    // If no ref video element yet, bail out.
+    const initialVideo = videoRef.current;
+    if (!initialVideo) return;
+
+    // Reset UI state
     setIsLoading(true);
     setHasError(false);
+    setIsVideoReady(false);
 
-    const onTimeUpdate = () => {
-      const remainingTime = Math.ceil(video.duration - video.currentTime);
-      setSecondsLeft(remainingTime > 0 ? remainingTime : 0);
-    };
+    // Handlers use videoRef.current each time to satisfy TS null checks.
+    function onLoadedData() {
+      if (!mounted) return;
+      const v = videoRef.current;
+      if (!v) return;
 
-    const onEnded = () => {
-      setActiveIndex((prev) => (prev + 1) % slides.length);
-    };
-
-    const onLoadedData = () => {
+      setIsVideoReady(true);
       setIsLoading(false);
-    };
 
-    const onCanPlay = () => {
-      setIsLoading(false);
-    };
+      // Safari tiny seek to trigger frame paint if necessary
+      if (isSafari) {
+        try {
+          if (v.currentTime === 0) v.currentTime = 0.001;
+        } catch (err) {
+          // ignore
+        }
+      }
 
-    const onError = () => {
-      setIsLoading(false);
-      setHasError(true);
-      console.error('Video failed to load:', currentSlide.src);
-    };
-
-    // Attach listeners
-    video.addEventListener("timeupdate", onTimeUpdate);
-    video.addEventListener("ended", onEnded);
-    video.addEventListener("loadeddata", onLoadedData);
-    video.addEventListener("canplay", onCanPlay);
-    video.addEventListener("error", onError);
-
-    // Play video when loaded
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          console.error('Video play failed:', error);
-          setIsLoading(false);
-          setHasError(true);
-        });
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          v.play().catch(() => {
+            // attach gesture-based resume if autoplay blocked
+            const resumePlayback = () => {
+              const vv = videoRef.current;
+              if (vv) vv.play().catch(() => {});
+              window.removeEventListener("click", resumePlayback);
+              window.removeEventListener("touchstart", resumePlayback);
+            };
+            window.addEventListener("click", resumePlayback, { once: true });
+            window.addEventListener("touchstart", resumePlayback, { once: true });
+          });
+        }, 60);
+      });
     }
 
-    return () => {
-      // Clean listeners
-      video.removeEventListener("timeupdate", onTimeUpdate);
-      video.removeEventListener("ended", onEnded);
-      video.removeEventListener("loadeddata", onLoadedData);
-      video.removeEventListener("canplay", onCanPlay);
-      video.removeEventListener("error", onError);
-    };
-  }, [activeIndex]);
+    function onCanPlay() {
+      if (!mounted) return;
+      if (!isSafari) {
+        setIsVideoReady(true);
+        setIsLoading(false);
+      }
+    }
 
-  const currentSlide = slides[activeIndex];
+    function onTimeUpdate() {
+      if (!mounted) return;
+      const v = videoRef.current;
+      if (!v) return;
+      if (v.duration) {
+        const remaining = Math.ceil(v.duration - v.currentTime);
+        setSecondsLeft(remaining > 0 ? remaining : 0);
+      }
+    }
+
+    function onEnded() {
+      if (!mounted) return;
+      setActiveIndex((prev) => (prev + 1) % slides.length);
+    }
+
+    // Event parameter typed as Event (no any)
+    function onError(e: Event) {
+      if (!mounted) return;
+      console.error("Hero video error:", e);
+      setHasError(true);
+      setIsLoading(false);
+
+      // Try a gentle reload attempt to recover
+      setTimeout(() => {
+        const v = videoRef.current;
+        if (!v) return;
+        try {
+          v.pause();
+        } catch (err) {
+          /*ignore*/
+        }
+        try {
+          // force reload by clearing src and reassigning it
+          v.removeAttribute("src");
+          v.load();
+        } catch (err) {
+          /*ignore*/
+        }
+        try {
+          v.src = currentSlide.src;
+          v.preload = "auto";
+          v.load();
+          v.play().catch(() => {});
+        } catch (err) {
+          /*ignore*/
+        }
+      }, 700);
+    }
+
+    // Attach listeners safely
+    const v = initialVideo;
+    v.addEventListener("loadeddata", onLoadedData);
+    v.addEventListener("canplay", onCanPlay);
+    v.addEventListener("timeupdate", onTimeUpdate);
+    v.addEventListener("ended", onEnded);
+    v.addEventListener("error", onError as EventListener);
+
+    // Force a robust reload sequence to avoid Safari cached/decoded glitches:
+    (async () => {
+      try {
+        const vv = videoRef.current;
+        if (!vv) return;
+
+        // Pause and clear src to reset decoder/cache
+        try {
+          vv.pause();
+        } catch (err) {
+          /*ignore*/
+        }
+
+        try {
+          vv.removeAttribute("src");
+          vv.load();
+        } catch (err) {
+          /*ignore*/
+        }
+
+        // Allow the removal to propagate
+        await new Promise((r) => setTimeout(r, 40));
+
+        // Assign new src and load
+        try {
+          vv.src = currentSlide.src;
+          vv.preload = "auto";
+          vv.load();
+        } catch (err) {
+          /*ignore*/
+        }
+
+        if (isSafari) {
+          await new Promise((r) => setTimeout(r, 70));
+          try {
+            if (vv.currentTime === 0) vv.currentTime = 0.001;
+          } catch (err) {
+            /*ignore*/
+          }
+        }
+
+        // Attempt to play; swallow rejection (handlers will recover)
+        try {
+          const p = vv.play();
+          if (p !== undefined) p.catch(() => {});
+        } catch (err) {
+          /*ignore*/
+        }
+      } catch (err) {
+        /*ignore*/
+      }
+    })();
+
+    // Cleanup
+    return () => {
+      mounted = false;
+      const vv = videoRef.current ?? initialVideo;
+      try {
+        vv.removeEventListener("loadeddata", onLoadedData);
+        vv.removeEventListener("canplay", onCanPlay);
+        vv.removeEventListener("timeupdate", onTimeUpdate);
+        vv.removeEventListener("ended", onEnded);
+        vv.removeEventListener("error", onError as EventListener);
+      } catch (err) {
+        /*ignore*/
+      }
+    };
+  }, [activeIndex, currentSlide.src, isSafari]);
+
+  // Preload next video
+  useEffect(() => {
+    const nextIndex = (activeIndex + 1) % slides.length;
+    try {
+      const nextVideo = document.createElement("video");
+      nextVideo.src = slides[nextIndex].src;
+      nextVideo.preload = "auto";
+    } catch (e) {
+      // ignore
+    }
+  }, [activeIndex]);
 
   return (
     <section className="relative w-full bg-[#202020] overflow-hidden">
@@ -107,34 +246,33 @@ export default function Hero() {
         {/* Video Container */}
         <div className="absolute inset-0 w-full h-full ">
           <video
-            key={currentSlide.src} // force reload on slide change
+     // We intentionally don't key the element by timestamp here.
+            // The effect above clears src/load to force a true re-decode on reload.
             ref={videoRef}
-            src={currentSlide.src}
+      
             muted
             playsInline
             autoPlay
+            preload="auto"
             className="w-full h-full object-cover xl:object-fill scale-113"
+           // no src attribute in JSX to avoid Next/React SSR differences — we set src programmaticall
           />
-
-          {/* Loading State - only show when actually loading */}
-          {isLoading && (
-            <div className="absolute inset-0 bg-[#202020] flex items-center justify-center">
-              {/* <div className="text-white opacity-50">Loading...</div> */}
-            </div>
+          {/* Loading Overlay */}
+                {(!isVideoReady || isLoading) && (
+            <div className="absolute inset-0 bg-[#202020] flex items-center justify-center transition-opacity duration-300" />
           )}
 
           {/* Error State - show if video fails to load */}
+     
           {hasError && (
             <div className="absolute inset-0 bg-[#202020] flex items-center justify-center">
-              <div className="text-red-400 opacity-75">
-                Failed to load video
-              </div>
+              <div className="text-red-400 opacity-75">Failed to load video</div>
             </div>
           )}
         </div>
 
         {/* Text Overlay for 3rd and 4th slides */}
-        {(activeIndex === 2 || activeIndex === 3) && (
+        {(activeIndex === 2) && (
           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start ">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
               {/* Left-aligned container with max width to prevent centering */}
@@ -164,7 +302,7 @@ export default function Hero() {
         <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 xl:bottom-10 left-4 sm:left-6 lg:left-8 xl:left-10 sm:right-4  lg:right-8 xl:right-10 z-20">
           <div className="flex sm:hidden items-center justify-start space-x-4">
             {/* Mobile: Horizontal dots at bottom left */}
-            {[0, 1, 2, 3].map((i) =>
+            {[0, 1, 2].map((i) =>
               i === activeIndex ? (
                 <div
                   key={i}
@@ -206,3 +344,6 @@ export default function Hero() {
     </section>
   );
 }
+
+
+

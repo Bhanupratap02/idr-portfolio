@@ -68,12 +68,16 @@ export default function WhyChooseUs() {
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
       if (index === activeTab) {
+     // Delay helps Safari handle play after layout is ready
+      const playTimer = setTimeout(() => {
         const playPromise = video.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            // Autoplay was prevented
+            // Autoplay prevented - do nothing silently
           });
         }
+      }, 150); // ✅ Slight delay fixes Safari timing
+      return () => clearTimeout(playTimer);
       } else {
         video.pause();
         video.currentTime = 0;
@@ -160,6 +164,23 @@ export default function WhyChooseUs() {
     });
   }, [isMuted]);
 
+useEffect(() => {
+  const handleUserInteraction = () => {
+    const video = videoRefs.current[activeTab];
+    if (video && video.paused) {
+      video.play().catch(() => {});
+    }
+  };
+
+  window.addEventListener("touchstart", handleUserInteraction, { once: true });
+  window.addEventListener("click", handleUserInteraction, { once: true });
+
+  return () => {
+    window.removeEventListener("touchstart", handleUserInteraction);
+    window.removeEventListener("click", handleUserInteraction);
+  };
+}, [activeTab]);
+
   return (
     <section className="w-full bg-white text-gray-900 py-10 sm:pt-12 sm:pb-8 md:pt-16 md:pb-12 lg:pt-20 lg:pb-12 xl:pt-24 xl:pb-16 2xl:pt-28 2xl:pb-16 3xl:pb-18 px-4 md:px-10 xl:px-12 2xl:px-20 3xl:px-32 overflow-hidden">
       <div className="w-full max-w-[200rem] mx-auto">
@@ -237,7 +258,7 @@ export default function WhyChooseUs() {
               </div>
 
               {/* Video Section */}
-              <div className="relative flex-[55%] order-1 lg:order-2 w-full h-[500px] md:h-[550px] xl:h-[600px] 2xl:h-[650px] 3xl:h-[700px]">
+              <div className="relative flex-[55%] order-1 lg:order-2 w-full h-[500px] md:h-[550px] xl:h-[600px] 2xl:h-[650px] 3xl:h-[700px] will-change-transform transform-gpu">
                 <video
                   ref={(el) => {
                     videoRefs.current[index] = el;
@@ -245,6 +266,8 @@ export default function WhyChooseUs() {
                   src={tab.video}
                   muted={isMuted}
                   playsInline
+                  autoPlay={index === activeTab}  // ✅ New line
+                  preload="auto"                  // ✅ Helps Safari preload properly
                   loop={false}
                   className="w-full h-full object-fill overflow-hidden scale-112"
                 />
