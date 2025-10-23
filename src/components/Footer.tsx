@@ -62,7 +62,7 @@ const Footer = () => {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-lg 2xl:text-xl text-[#F7F6F2] mb-6 font-semibold">
+            <h3 className="text-lg 2xl:text-xl text-[#F7F6F2] mb-4 font-semibold">
               Product
             </h3>
             <ul className="space-y-2">
@@ -87,7 +87,7 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-lg 2xl:text-xl text-[#F7F6F2] mb-6 font-semibold">
+            <h3 className="text-lg 2xl:text-xl text-[#F7F6F2] mb-4 font-semibold">
               Company
             </h3>
             <ul className="space-y-2">
