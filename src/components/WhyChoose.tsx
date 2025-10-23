@@ -68,16 +68,16 @@ export default function WhyChooseUs() {
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
       if (index === activeTab) {
-     // Delay helps Safari handle play after layout is ready
-      const playTimer = setTimeout(() => {
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(() => {
-            // Autoplay prevented - do nothing silently
-          });
-        }
-      }, 150); // ✅ Slight delay fixes Safari timing
-      return () => clearTimeout(playTimer);
+        // Delay helps Safari handle play after layout is ready
+        const playTimer = setTimeout(() => {
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(() => {
+              // Autoplay prevented - do nothing silently
+            });
+          }
+        }, 150); // ✅ Slight delay fixes Safari timing
+        return () => clearTimeout(playTimer);
       } else {
         video.pause();
         video.currentTime = 0;
@@ -106,6 +106,75 @@ export default function WhyChooseUs() {
 
     return () => {
       video.removeEventListener("timeupdate", handleTimeUpdate);
+      video.removeEventListener("ended", handleEnded);
+    };
+  }, [activeTab]);
+
+
+  // ✅ Safari fallback: Simulate progress if autoplay blocked or stuck
+  useEffect(() => {
+    const video = videoRefs.current[activeTab];
+    if (!video) return;
+
+    let simulatedProgress = 0;
+    let timer: NodeJS.Timeout | null = null;
+    let autoplayBlocked = false;
+
+    const startSimulatedProgress = () => {
+      if (timer) clearInterval(timer);
+      timer = setInterval(() => {
+        simulatedProgress += 1;
+        setProgress(simulatedProgress);
+        if (simulatedProgress >= 100) {
+          clearInterval(timer!);
+          setActiveTab((prev) => (prev + 1) % tabs.length);
+        }
+      }, 150);
+    };
+
+    const stopSimulatedProgress = () => {
+      if (timer) clearInterval(timer);
+      timer = null;
+    };
+
+    const tryPlay = async () => {
+      try {
+        await video.play();
+      } catch {
+        // Autoplay blocked right away
+        autoplayBlocked = true;
+        startSimulatedProgress();
+      }
+    };
+
+    // 🧠 Handle cases where Safari "pretends" to play but never actually does
+    const checkIfActuallyPlaying = setTimeout(() => {
+      if (video.paused || video.currentTime === 0) {
+        autoplayBlocked = true;
+        startSimulatedProgress();
+      }
+    }, 800); // if no progress within 800ms, assume autoplay blocked
+
+    const handlePlaying = () => {
+      // Real playback started → stop fake progress
+      stopSimulatedProgress();
+      setProgress(0);
+      autoplayBlocked = false;
+    };
+
+    const handleEnded = () => {
+      stopSimulatedProgress();
+    };
+
+    video.addEventListener("playing", handlePlaying);
+    video.addEventListener("ended", handleEnded);
+
+    tryPlay();
+
+    return () => {
+      clearTimeout(checkIfActuallyPlaying);
+      stopSimulatedProgress();
+      video.removeEventListener("playing", handlePlaying);
       video.removeEventListener("ended", handleEnded);
     };
   }, [activeTab]);
@@ -164,22 +233,25 @@ export default function WhyChooseUs() {
     });
   }, [isMuted]);
 
-useEffect(() => {
-  const handleUserInteraction = () => {
-    const video = videoRefs.current[activeTab];
-    if (video && video.paused) {
-      video.play().catch(() => {});
-    }
-  };
+  // Resume playback after user interaction (Safari fix)
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      const video = videoRefs.current[activeTab];
+      if (video && video.paused) {
+        video.play().catch(() => {});
+      }
+    };
 
-  window.addEventListener("touchstart", handleUserInteraction, { once: true });
-  window.addEventListener("click", handleUserInteraction, { once: true });
+    window.addEventListener("touchstart", handleUserInteraction, {
+      once: true,
+    });
+    window.addEventListener("click", handleUserInteraction, { once: true });
 
-  return () => {
-    window.removeEventListener("touchstart", handleUserInteraction);
-    window.removeEventListener("click", handleUserInteraction);
-  };
-}, [activeTab]);
+    return () => {
+      window.removeEventListener("touchstart", handleUserInteraction);
+      window.removeEventListener("click", handleUserInteraction);
+    };
+  }, [activeTab]);
 
   return (
     <section className="w-full bg-white text-gray-900 py-10 sm:pt-12 sm:pb-8 md:pt-16 md:pb-12 lg:pt-20 lg:pb-12 xl:pt-24 xl:pb-16 2xl:pt-28 2xl:pb-16 3xl:pb-18 px-4 md:px-10 xl:px-12 2xl:px-20 3xl:px-32 overflow-hidden">
@@ -266,8 +338,8 @@ useEffect(() => {
                   src={tab.video}
                   muted={isMuted}
                   playsInline
-                  autoPlay={index === activeTab}  // ✅ New line
-                  preload="auto"                  // ✅ Helps Safari preload properly
+                  autoPlay={index === activeTab} // ✅ New line
+                  preload="auto" // ✅ Helps Safari preload properly
                   loop={false}
                   className="w-full h-full object-fill overflow-hidden scale-112"
                 />

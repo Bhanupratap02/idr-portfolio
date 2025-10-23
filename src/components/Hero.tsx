@@ -7,7 +7,12 @@ import { useState, useEffect, useRef } from "react";
 
 const slides = [
   { src: "/videos/video_1.mov", title: "", text: "" },
-  { src: "/videos/Hero Banner Video Camera Monitoring.mp4", title: "", text: "" },
+  {
+    src: "/videos/Hero Banner Video Camera Monitoring.mp4",
+    title: "",
+    text: "",
+  },
+
   // {
   //   src: "/videos/Hero Banner Video Camera Monitoring.mp4",
   //   title: "Design. Installation.Support. One Trusted Partner.",
@@ -28,7 +33,7 @@ export default function Hero() {
   const [isVideoReady, setIsVideoReady] = useState<boolean>(false);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
- const currentSlide = slides[activeIndex];
+  const currentSlide = slides[activeIndex];
 
 
   // Utility: detect Safari (WebKit but not Chrome)
@@ -78,7 +83,9 @@ export default function Hero() {
               window.removeEventListener("touchstart", resumePlayback);
             };
             window.addEventListener("click", resumePlayback, { once: true });
-            window.addEventListener("touchstart", resumePlayback, { once: true });
+            window.addEventListener("touchstart", resumePlayback, {
+              once: true,
+            });
           });
         }, 60);
       });
@@ -246,33 +253,34 @@ export default function Hero() {
         {/* Video Container */}
         <div className="absolute inset-0 w-full h-full ">
           <video
-     // We intentionally don't key the element by timestamp here.
+            // We intentionally don't key the element by timestamp here.
             // The effect above clears src/load to force a true re-decode on reload.
             ref={videoRef}
-      
             muted
             playsInline
             autoPlay
             preload="auto"
             className="w-full h-full object-cover xl:object-fill scale-113"
-           // no src attribute in JSX to avoid Next/React SSR differences — we set src programmaticall
+            // no src attribute in JSX to avoid Next/React SSR differences — we set src programmaticall
           />
           {/* Loading Overlay */}
-                {(!isVideoReady || isLoading) && (
+          {(!isVideoReady || isLoading) && (
             <div className="absolute inset-0 bg-[#202020] flex items-center justify-center transition-opacity duration-300" />
           )}
 
           {/* Error State - show if video fails to load */}
-     
+
           {hasError && (
             <div className="absolute inset-0 bg-[#202020] flex items-center justify-center">
-              <div className="text-red-400 opacity-75">Failed to load video</div>
+              <div className="text-red-400 opacity-75">
+                Failed to load video
+              </div>
             </div>
           )}
         </div>
 
         {/* Text Overlay for 3rd and 4th slides */}
-        {(activeIndex === 2) && (
+        {activeIndex === 2 && (
           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start ">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
               {/* Left-aligned container with max width to prevent centering */}
@@ -285,10 +293,16 @@ export default function Hero() {
                     {currentSlide.text}
                   </p>
                   <div className="flex flex-row gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
-                    <Link href="/services/" className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors cursor-pointer">
+                    <Link
+                      href="/services/"
+                      className="bg-[#052557] hover:bg-[#052557]/90 text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors cursor-pointer"
+                    >
                       Our Products
                     </Link>
-                    <Link href={"/portfolio"} className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors">
+                    <Link
+                      href={"/portfolio"}
+                      className="border border-white hover:bg-white hover:text-black text-white px-6 lg:px-8 xl:px-8 2xl:px-12 py-2 lg:py-3 xl:py-4 2xl:py-5 rounded-lg font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl transition-colors"
+                    >
                       Learn More
                     </Link>
                   </div>
@@ -339,6 +353,7 @@ export default function Hero() {
               )
             )}
           </div>
+          <button id="myButton">click</button>
         </div>
       </div>
     </section>
