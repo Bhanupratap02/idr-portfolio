@@ -29,7 +29,7 @@ function Navbar2() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
 
-        <Link href="/" className="relative w-40 sm:w-48 lg:w-56 xl:w-64 2xl:w-72 h-8">
+        <Link href="/" className="relative w-48 sm:w-52 lg:w-56 xl:w-64 2xl:w-72 h-8">
           <Image
             src={logo}
             alt="IDR Technology Solutions"
