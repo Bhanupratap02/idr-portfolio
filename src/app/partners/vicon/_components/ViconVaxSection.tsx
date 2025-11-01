@@ -49,7 +49,7 @@ const features = [
 
 export default function ViconVaxSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 2xl:py-30 3xl:py-34 bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24  2xl:py-28 3xl:py-30 bg-gray-50">
       <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="text-center mb-8 sm:mb-9 md:mb-10 lg:mb-11 xl:mb-12 2xl:mb-16 3xl:mb-18 max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl 3xl:max-w-8xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl  font-medium text-gray-900 leading-tight mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 3xl:mb-10">

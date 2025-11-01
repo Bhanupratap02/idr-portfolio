@@ -6,15 +6,15 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-[#f9fafb] to-[#ffffff] py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28">
-      <div className="container mx-auto px-4 sm:px-12 md:px-14 lg:px-10 xl:px-20 2xl:px-24 max-w-[1600px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 items-center">
+    <section className="bg-gradient-to-r from-[#f9fafb] to-[#ffffff] min-h-[75vh]  md:min-h-[80vh] lg:min-h-0 xl:min-h-[87vh] 2xl:min-h-[85vh] 3xl:min-h-[60vh]  py-12 sm:py-16 md:py-20 xl:py-26 2xl:py-30 flex items-center">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 2xl:gap-16 items-center">
           {/* Text Content */}
-          <div className="space-y-4 sm:space-y-6 lg:space-y-7 xl:space-y-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight text-[#2e2e2e] max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-7 xl:space-y-8 ">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl  xl:text-5xl 2xl:text-6xl font-bold leading-tight text-[#2e2e2e] max-w-lg xl:max-w-xl 2xl:max-w-2xl">
               Smartest Cloud-Based Access Control – Powered by Kisi
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#626262] leading-relaxed max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+            <p className="text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-light text-[#626262] leading-relaxed max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
               Installed & Supported by IDR Technology Solutions, Platinum Kisi
               Partner in Nationally
             </p>
@@ -39,6 +39,7 @@ export function HeroSection() {
                 alt="Kisi Access Control System"
                 className="w-full h-auto object-cover rounded-lg"
                 priority
+                quality={90}
               />
             </div>
           </div>

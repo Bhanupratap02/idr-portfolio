@@ -54,28 +54,28 @@ const features = [
 
 export function WhyChooseKisiSection() {
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl lg:text-4xl text-[#2e2e2e] mb-4">
+    <section className="bg-white py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
+            <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="mb-8 sm:mb-10 md:mb-12 xl:mb-16  text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl  xl:text-5xl 2xl:text-6xl leading-tight font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6 xl:mb-8 ">
             Why Choose Kisi?
           </h2>
-          <p className="text-lg lg:text-xl text-gray-600">
+          <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-light">
             Modern access control that adapts to your needs
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-lg"
+              className="text-center p-6 rounded-lg group"
             >
-              <div className="bg-blue-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-50 rounded-full size-10 sm:size-11 md:size-12 xl:size-14 2xl:size-16 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-lg text-[#2e2e2e] mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-base font-medium text-gray-900 sm:text-lg md:text-xl 2xl:text-2xl mb-2">{feature.title}</h3>
+              <p className="text-sm leading-relaxed text-gray-600 sm:text-base xl:text-lg 2xl:text-xl font-light">
                 {feature.description}
               </p>
             </div>

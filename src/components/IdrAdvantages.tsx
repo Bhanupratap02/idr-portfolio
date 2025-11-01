@@ -198,6 +198,7 @@ import img2 from "@/assets/idr-advantage/Certified.jpeg";
 import img3 from "@/assets/idr-advantage/camera.jpeg";
 import img4 from "@/assets/idr-advantage/partnership.png";
 import logo from "@/assets/idr-advantage/High Res IDR Logo w Swoosh only red.png";
+import Link from "next/link";
 
 export default function IdrAdvantage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -228,6 +229,7 @@ export default function IdrAdvantage() {
       image: img1,
       icon: CheckCircle,
       delay: 0,
+      url: "/consultation",
     },
     {
       title: "Certified Installation",
@@ -236,6 +238,7 @@ export default function IdrAdvantage() {
       image: img2,
       icon: Shield,
       delay: 100,
+      url: "/certified-installation",
     },
     {
       title: "Camera Monitoring",
@@ -244,6 +247,7 @@ export default function IdrAdvantage() {
       image: img3,
       icon: ClipboardList,
       delay: 200,
+      url: "/camera-monitoring",
     },
     {
       title: "Ongoing Partnership",
@@ -252,6 +256,7 @@ export default function IdrAdvantage() {
       image: img4,
       icon: Users,
       delay: 300,
+      url: "/ongoing-partnership",
     },
   ];
 
@@ -352,7 +357,7 @@ export default function IdrAdvantage() {
                   </p>
 
                   {/* Button */}
-                  <button
+                  <Link href={adv.url}
                     className={`mt-4 px-6 py-2 border-2 border-white rounded-full text-white transition-all duration-500 hover:bg-white hover:text-[#0B1218] text-sm xl:text-base 2xl:text-lg font-medium
                       ${
                         // Desktop hover logic
@@ -366,7 +371,7 @@ export default function IdrAdvantage() {
                     `}
                   >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             );
