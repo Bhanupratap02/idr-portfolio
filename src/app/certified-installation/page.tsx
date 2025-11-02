@@ -1,7 +1,8 @@
 import { Award, Shield, CheckCircle, Wrench, Cable, Network, FileCheck, TrendingUp, Star, BadgeCheck, Layers, Zap } from 'lucide-react';
 import img2 from "@/assets/idr-advantage/Certified.jpeg";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/certified-installation-hero.jpg";
+// import heroImage from "@/assets/certified-installation-hero.jpg";
+import heroImage from "@/assets/certified-installation-hero1.jpeg";
 import Link from 'next/link';
 
 export default function CertifiedInstallation() {
