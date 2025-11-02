@@ -50,7 +50,7 @@ const CaseStudies = () => {
 
   return (
     <section
-      className="px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20"
+      className="px-4 sm:px-6 lg:px-20 py-12 sm:py-16 lg:py-20 bg-gray-50"
 
     >
       <div className="max-w-7xl 2xl:max-w-[90rem] 3xl:max-w-[110rem] mx-auto">
