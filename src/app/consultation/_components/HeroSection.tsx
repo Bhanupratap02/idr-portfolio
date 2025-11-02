@@ -8,7 +8,8 @@ import {
   Users,
   TrendingUp,
 } from "lucide-react";
-import heroConsultation from "@/assets/idr-advantage/hero-consultation-professional.jpg";
+// import heroConsultation from "@/assets/idr-advantage/hero-consultation-professional.jpg";
+import heroConsultation from "@/assets/idr-advantage/consultation 2.jpeg";
 import Link from "next/link";
 import Image from "next/image";
 

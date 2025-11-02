@@ -180,7 +180,7 @@ const Footer = () => {
                   <Image
                     src={app.icon}
                     alt={app.alt}
-                    width={130}
+                    width={60}
                     height={40}
                     className="object-contain"
                   />
