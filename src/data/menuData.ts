@@ -183,6 +183,10 @@ export const MENU_SECTIONS: MenuSection[] = [
         name: "E-Rate Program",
         url: "/services/e-rate-program",
       },
+      {
+        name: "Camera Monitoring",
+        url: "/camera-monitoring",
+      },
     ],
   },
   {

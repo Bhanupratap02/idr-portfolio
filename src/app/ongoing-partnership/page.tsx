@@ -25,7 +25,7 @@ export default function OngoingPartnership() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link href={'/services'} className="bg-blue-900 hover:bg-blue-850 text-gray-100 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 whitespace-nowrap">
-                  Explore Service Plans
+                  Learn More About Our Services
                 </Link>
                 <Link href={'/contact'} className="bg-white/10 hover:bg-white/20 text-gray-800 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg border-2 border-white/30 hover:border-white/50 transition-all duration-300 backdrop-blur-sm whitespace-nowrap">
                   Contact Support
