@@ -1,8 +1,6 @@
 import { caseStudiesData } from '../../data/caseStudiesData';
-import case_study_4 from "../../assets/case_study/case-study-4.png";
-import case_study_5 from "../../assets/case_study/case-study-5.png";
-import case_study_6 from "../../assets/case_study/case-study-6.png";
 import Image from 'next/image';
+
 interface CaseStudyContentProps {
   slug: string;
 }
@@ -130,7 +128,8 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               )}
             </div>
           ))}
-         {/* Project Highlights (if available) */}
+
+          {/* Project Highlights (if available) */}
           {content.projectHighlights && (
             <div className="space-y-6">
               <h2 className="text-gray-900 text-3xl font-semibold leading-tight">
@@ -170,34 +169,42 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               </div>
             </div>
           )}
-          {/* Images */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2">
-              <Image 
-                src={case_study_4.src}
-                alt="Main security installation"
-                width={1485}
-                height={990}
-                className="w-full h-auto rounded"
-              />
-            </div>
-            <div className="space-y-6">
-              <Image 
-                src={case_study_5.src}
-                alt="Security reader close-up"
-                width={708}
-                height={472}
-                className="w-full h-auto rounded"
-              />
-              <Image 
-                src={case_study_6.src}
-                alt="Access control device"
-                width={708}
-                height={472}
-                className="w-full h-auto rounded"
-              />
-            </div>
+
+          {/* Dynamic Gallery Images - Maximum 3 images */}
+          {/* Dynamic Gallery Images - Consistent Layout */}
+{caseStudy.galleryImages && caseStudy.galleryImages.length > 0 && (
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    {/* Left Large Image */}
+    {caseStudy.galleryImages[0] && (
+      <div className="lg:col-span-2">
+        <div className="relative w-full aspect-[3/2] overflow-hidden rounded-lg">
+          <Image
+            src={caseStudy.galleryImages[0].src}
+            alt={caseStudy.galleryImages[0].alt || "Security installation"}
+            fill
+            className="object-cover"
+          />
+        </div>
+      </div>
+    )}
+
+    {/* Right Two Stacked Images */}
+    {caseStudy.galleryImages.length > 1 && (
+      <div className="flex flex-col justify-between gap-6">
+        {caseStudy.galleryImages.slice(1, 3).map((image, index) => (
+          <div key={index} className="relative w-full aspect-[3/2] overflow-hidden rounded-lg">
+            <Image
+              src={image.src}
+              alt={image.alt || `Security installation ${index + 2}`}
+              fill
+              className="object-cover"
+            />
           </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
 
           {/* Results */}
           {content.result && (
@@ -226,8 +233,6 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               </blockquote>
             </div>
           )}
-
-
 
           {/* Why It Matters (if available) */}
           {content.whyItMatters && (
