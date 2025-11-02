@@ -1,3 +1,6 @@
+
+import ImtegrationImage from "@/assets/partners/kisi/kisi-integrations.png"
+import Image from "next/image";
 import {
   Camera,          // for Kisi + Rhombus (security/video)
   DoorOpen,        // for Kisi + ButterflyMX (intercom/entry)
@@ -31,16 +34,28 @@ const integrations = [
 export function IntegrationsSection() {
   return (
     <section className="bg-slate-50 py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
-        <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-     <div className="mb-8 sm:mb-10 md:mb-12 xl:mb-16  text-center">
-            <h2  className="mb-3 sm:mb-4 md:mb-6   text-2xl font-bold text-[#2e2e2e] sm:text-3xl md:text-4xl  xl:text-5xl 2xl:text-6xl leading-tight">
+      <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="mb-8 sm:mb-10 md:mb-12 xl:mb-16  text-center">
+          <h2 className="mb-3 sm:mb-4 md:mb-6   text-2xl font-bold text-[#2e2e2e] sm:text-3xl md:text-4xl  xl:text-5xl  leading-tight">
             Smart Integrations That Work Together
           </h2>
-           <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-light">
+          <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl  font-light">
             Connect your entire security ecosystem
           </p>
         </div>
 
+        {/* 🔹 Full-Width Integration Image */}
+        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] 2xl:h-[600px] mb-12 sm:mb-14 md:mb-16 overflow-hidden rounded-2xl shadow-md">
+       
+          <Image
+            src={ImtegrationImage}
+            alt="Kisi Integrations Overview"
+            fill
+            className="object-cover hover:scale-105 transition-transform duration-700"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 xl:gap-8 2xl:gap-10">
           {integrations.map((integration, index) => (
             <div

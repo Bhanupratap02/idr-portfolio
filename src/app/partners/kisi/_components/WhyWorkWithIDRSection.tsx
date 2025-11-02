@@ -30,10 +30,10 @@ export function WhyWorkWithIDRSection() {
         <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         {/* Header */}
        <div className="mb-8 sm:mb-10 md:mb-12 xl:mb-16  text-center">
-          <h2  className="mb-3 sm:mb-4 md:mb-6   text-2xl font-bold text-[#2e2e2e] sm:text-3xl md:text-4xl  xl:text-5xl 2xl:text-6xl leading-tight">
+          <h2  className="mb-3 sm:mb-4 md:mb-6   text-2xl font-bold text-[#2e2e2e] sm:text-3xl md:text-4xl  xl:text-5xl  leading-tight">
             Why Work with IDR?
           </h2>
-         <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl font-light">
+         <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl  font-light">
             Your trusted Kisi implementation partner
           </p>
         </div>

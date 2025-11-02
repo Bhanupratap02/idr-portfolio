@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-[#f9fafb] to-[#ffffff] min-h-[75vh]  md:min-h-[80vh] lg:min-h-0 xl:min-h-[87vh] 2xl:min-h-[85vh] 3xl:min-h-[60vh]  py-12 sm:py-16 md:py-20 xl:py-26 2xl:py-30 flex items-center">
+    <section className="bg-gradient-to-r from-[#f9fafb] to-[#ffffff] min-h-[75vh]  md:min-h-[80vh] lg:min-h-0 xl:min-h-[87vh] 2xl:min-h-[85vh] 3xl:min-h-[50vh]  py-12 sm:py-16 md:py-20 xl:py-26 flex items-center">
       <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 2xl:gap-16 items-center">
           {/* Text Content */}
