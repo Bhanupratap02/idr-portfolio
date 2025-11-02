@@ -199,7 +199,7 @@ export default function Index() {
                   variant="outline"
                   className="border-[#2E2E2E] text-[#2E2E2E] hover:bg-[#2E2E2E] hover:text-white text-sm sm:text-base lg:text-lg 2xl:text-xl 3xl:text-2xl  px-4 sm:px-6 lg:px-8 xl:px-14 2xl:px-16 3xl:px-18 py-2 sm:py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-8 whitespace-nowrap cursor-pointer"
                 >
-                  Know More
+                  Learn More
                   <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  ml-2  " />
                 </Button></Link>
               

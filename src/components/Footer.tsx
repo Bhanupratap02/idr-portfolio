@@ -9,6 +9,9 @@ import linkedinIcon from "@/assets/linkedin.png";
 import facebookIcon from "@/assets/facebook.png";
 import tiktokIcon from "@/assets/tiktok_3.png";
 import instagramIcon from "@/assets/instagram_2.png";
+import playstoreIcon from "@/assets/playstore.png";
+import appstoreIcon from "@/assets/apple.png";
+
 const Footer = () => {
   const socialLinks = [
     {
@@ -35,6 +38,19 @@ const Footer = () => {
       href: "https://www.instagram.com/idrtechnologysolutions?igsh=MTNzcHBuanc3ZWM5ag%3D%3D&utm_source=qr",
       icon: instagramIcon,
       alt: "Instagram",
+    },
+  ];
+
+  const appLinks = [
+    {
+      href: "https://play.google.com/store/apps/details?id=com.idrportal&hl=en_US",
+      icon: playstoreIcon,
+      alt: "Google Play Store",
+    },
+    {
+      href: "https://apps.apple.com/us/app/idr-portal/id6502960849",
+      icon: appstoreIcon,
+      alt: "Apple App Store",
     },
   ];
 
@@ -131,7 +147,7 @@ const Footer = () => {
             <h3 className="text-lg 2xl:text-xl text-[#F7F6F2] mb-6 font-semibold">
               Connect
             </h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-6">
               {socialLinks.map((social, index) => (
                 <Link
                   key={index}
@@ -150,13 +166,34 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
+
+            {/* App Store Links */}
+            <div className="flex space-x-3">
+              {appLinks.map((app, index) => (
+                <Link
+                  key={index}
+                  href={app.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition transform hover:scale-105"
+                >
+                  <Image
+                    src={app.icon}
+                    alt={app.alt}
+                    width={130}
+                    height={40}
+                    className="object-contain"
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm 2xl:text-base text-[#F7F6F2]">
-            © 2025  IDR Technology Solutions. All rights reserved.
+            © 2025 IDR Technology Solutions. All rights reserved.
           </p>
         </div>
       </div>
