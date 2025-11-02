@@ -26,34 +26,34 @@ const features = [
 
 export function WhyWorkWithIDRSection() {
   return (
-    <section className="bg-slate-50 py-16 lg:py-24">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="bg-slate-50 py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28">
+        <div className="max-w-7xl xl:max-w-[90rem] 2xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl lg:text-4xl text-[#2e2e2e] mb-4">
+       <div className="mb-8 sm:mb-10 md:mb-12 xl:mb-16  text-center">
+          <h2  className="mb-3 sm:mb-4 md:mb-6   text-2xl font-bold text-[#2e2e2e] sm:text-3xl md:text-4xl  xl:text-5xl  leading-tight">
             Why Work with IDR?
           </h2>
-          <p className="text-lg lg:text-xl text-[#626262]">
+         <p className="text-base leading-relaxed text-gray-600 sm:text-lg md:text-xl xl:text-2xl  font-light">
             Your trusted Kisi implementation partner
           </p>
         </div>
 
         {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 xl:gap-8 2xl:gap-10 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md"
+              className="bg-white rounded-lg p-6 shadow-md group hover:shadow-2xl transition-shadow duration-200"
             >
               <div
-                className={`${feature.bgColor} rounded-lg w-12 h-12 flex items-center justify-center mb-6`}
+                className={`${feature.bgColor} rounded-lg size-10 sm:size-11 md:size-12 xl:size-14 2xl:size-16 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center mb-6`}
               >
                 {feature.icon}
               </div>
-              <h3 className="text-xl text-[#2e2e2e] mb-4">
+              <h3 className="text-base font-medium text-gray-900 sm:text-lg md:text-xl 2xl:text-2xl mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[#626262] leading-relaxed">
+              <p className="text-sm leading-relaxed text-gray-600 sm:text-base xl:text-lg 2xl:text-xl font-light">
                 {feature.description}
               </p>
             </div>
@@ -62,11 +62,11 @@ export function WhyWorkWithIDRSection() {
 
         {/* Quote Box */}
         <div className="bg-white rounded-lg p-8 shadow-md text-center">
-          <blockquote className="text-xl lg:text-2xl text-[#2e2e2e] mb-4">
+          <blockquote className="text-lg md:text-xl xl:text-2xl text-[#2e2e2e] mb-4">
             &quot;We don&apos;t just install access control — we build
             secure, scalable ecosystems.&quot;
           </blockquote>
-          <p className="text-[#626262]">
+          <p className="text-sm leading-relaxed text-gray-600 sm:text-base xl:text-lg 2xl:text-xl font-light">
             End-to-End Service from Design to Support
           </p>
         </div>

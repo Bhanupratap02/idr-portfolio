@@ -1943,7 +1943,7 @@ export const caseStudiesHomePage = [
       id: 6,
       title: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
       desc: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with....",
-      image: wifi_case_study_1,
+      image: wifi_case_study_7,
        url:"/case-studies/phased-wifi-upgrade"
     },
     {
@@ -1951,7 +1951,7 @@ export const caseStudiesHomePage = [
       title:
         "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
       desc: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag........",
-      image: Audio_case_study_1,
+      image: Audio_case_study_4,
        url:"/case-studies/custom-audio-deterrent"
     },
     {
@@ -1988,7 +1988,7 @@ export const caseStudiesHomePage = [
       id: 12,
       title: "Peninsula Preparatory Academy",
       desc: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......",
-      image: PPA_case_study_1,
+      image: PPA_case_study_10,
        url:"/case-studies/ppa-screen-sharing"
     },
     {

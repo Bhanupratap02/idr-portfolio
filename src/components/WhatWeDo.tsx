@@ -175,27 +175,27 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import img_1 from "@/assets/what_we_do/image_1.png";
-import img_2 from "@/assets/what_we_do/image_2.png";
-import img_3 from "@/assets/what_we_do/image_3.png";
+import img_1 from "@/assets/what_we_do/AccessControlIntercoms.jpg";
+import img_2 from "@/assets/what_we_do/Surveillance.jpg";
+import img_3 from "@/assets/what_we_do/AudioVisual.jpeg";
 import img_4 from "@/assets/what_we_do/image_4.png";
-import img_5 from "@/assets/what_we_do/image_5.png";
+import img_5 from "@/assets/what_we_do/ITInfrastructure.jpg";
 import img_6 from "@/assets/what_we_do/image_6.png";
-import img_7 from "@/assets/what_we_do/image_7.png";
+import img_7 from "@/assets/what_we_do/SmartConferenceRooms.jpg";
 import img_8 from "@/assets/what_we_do/image_11.png";
 
 const WhatWeDo = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const services = [
-    { title: "Access Control & Intercom Systems", image: img_1 },
-    { title: "Surveillance Cameras & Security Alarms", image: img_2 },
-    { title: "Audio/Visual Systems for Commercial & Education", image: img_3 },
-    { title: "Structured Cabling & Fiber Optics", image: img_4 },
-    { title: "IT Infrastructure & Wi-Fi", image: img_5 },
-    { title: "Data Center Builds", image: img_6 },
-    { title: "Smart Conference Rooms", image: img_7 },
-    { title: "Sound Masking & Speaker Systems", image: img_8 },
+    { title: "Access Control & Intercom Systems", image: img_1 , classes:"object-cover  scale-y-85 scale-x-[0.78] -rotate-8 " },
+    { title: "Surveillance Cameras & Security Alarms", image: img_2,classes:"object-cover  scale-y-85 scale-x-[0.78] -rotate-8 "  },
+    { title: "Audio/Visual Systems for Commercial & Education", image: img_3,classes:"object-cover  scale-y-85 scale-x-[0.78] -rotate-8 " },
+    { title: "Structured Cabling & Fiber Optics", image: img_4,classes:"object-contain"},
+    { title: "IT Infrastructure & Wi-Fi", image: img_5,classes:"object-cover  scale-y-85 scale-x-[0.78] -rotate-8 " },
+    { title: "Data Center Builds", image: img_6 ,classes:"object-contain"},
+    { title: "Smart Conference Rooms", image: img_7,classes:"object-cover  scale-y-85 scale-x-[0.78] -rotate-8 " },
+    { title: "Sound Masking & Speaker Systems", image: img_8,classes:"object-contain" },
   ];
 
   // Auto-switch image every 4s
@@ -238,15 +238,17 @@ const WhatWeDo = () => {
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-[38%_62%]  2xl:grid-cols-[40%_60%] gap-12 xl:gap-16 items-center">
           {/* Left Image */}
-          <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[400px] xl:h-[420px] 2xl:h-[460px] 3xl:h-[500px] rounded-2xl overflow-hidden">
+          <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[400px] xl:h-[420px] 2xl:h-[460px] 3xl:h-[500px] rounded-2xl overflow-hidden ">
             <Image
               src={services[activeIndex].image}
               alt={services[activeIndex].title}
               fill
-              className="object-contain transition-all duration-700 ease-in-out"
+              className={` ${services[activeIndex].classes} rounded-xl transition-all duration-700 ease-in-out`}
               priority
             />
           </div>
+
+
 
           {/* Right Text List with Scroll Indicator */}
           <div className="relative flex items-start">

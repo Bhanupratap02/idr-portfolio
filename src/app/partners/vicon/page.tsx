@@ -1,3 +1,4 @@
+import AnavioReaderSection from "./_components/AnavioReaderSection";
 import BuildSpeedSection from "./_components/BuildSpeedSection";
 import CoverageSection from "./_components/CoverageSection";
 import EnvironmentsSection from "./_components/EnvironmentsSection";
@@ -13,6 +14,7 @@ export default function Vicon() {
       <ViconHeroSection />
       <BuildSpeedSection />
       <ViconVaxSection />
+      <AnavioReaderSection/>
       <TrustSection />
       <EnvironmentsSection />
       <IntegrationsSection />
