@@ -1,10 +1,10 @@
 /** @format */
-import ShieldImg from "@/assets/partners/vicon/shield.png";
-import QuestionImg from "@/assets/partners/vicon/question.png";
-import TechnicianImg from "@/assets/partners/vicon/technician.png";
-import SupportImg from "@/assets/partners/vicon/support.png";
-import IntegrationImg from "@/assets/partners/vicon/integration.png";
-import ClockImg from "@/assets/partners/vicon/clock.png";
+const ShieldImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fshield.png";
+const QuestionImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fquestion.png";
+const TechnicianImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Ftechnician.png";
+const SupportImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fsupport.png";
+const IntegrationImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fintegration.png";
+const ClockImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fclock.png";
 import Image from "next/image";
 import FeatureCard from "./FeatureCard";
 

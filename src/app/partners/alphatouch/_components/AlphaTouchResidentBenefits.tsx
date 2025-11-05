@@ -1,10 +1,10 @@
 /** @format */
 
 import { Video, Smartphone, Bell, Users } from "lucide-react";
-import benefits1Img from "@/assets/partners/alphatouch/benefits1.png";
-import benefits2Img from "@/assets/partners/alphatouch/benefits2.png";
-import benefits3Img from "@/assets/partners/alphatouch/benefits3.png";
-import benefits4Img from "@/assets/partners/alphatouch/benefits4.png";
+const benefits1Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fbenefits1.png";
+const benefits2Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fbenefits2.png";
+const benefits3Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fbenefits3.png";
+const benefits4Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fbenefits4.png";
 import Image from "next/image";
 const benefits = [
   {

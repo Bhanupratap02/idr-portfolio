@@ -1,6 +1,6 @@
 /** @format */
 
-import heroImg from "@/assets/butterfly/butterfly.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fbutterfly%2Fbutterfly.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -45,6 +45,8 @@ export function ButterflyMXHero() {
             <Image
               src={heroImg}
               alt="ButterflyMX Smart Video Intercom - Modern property access control system"
+              width={1920}
+              height={1080}
               className="h-auto w-full object-cover"
               priority
               quality={90}

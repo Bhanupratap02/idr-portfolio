@@ -1,7 +1,7 @@
 import { Video, Cloud, Smartphone, Users, Lock, Bell, CheckCircle2, Truck, HandHeart, Headphones, Zap, Globe, Monitor, GraduationCap, Building2, ShoppingBag, Landmark, Utensils } from "lucide-react";
-import lockImg from "@/assets/partners/verkada/verkada-lock.png";
-import airImg from "@/assets/partners/verkada/verkada-air.png";
-import alaramImg from "@/assets/partners/verkada/varkada-alaram.png";
+const lockImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fverkada-lock.png";
+const airImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fverkada-air.png";
+const alaramImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fvarkada-alaram.png";
 import Link from "next/link";
 
 export default function Index() {

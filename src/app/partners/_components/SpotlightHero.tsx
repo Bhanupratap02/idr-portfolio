@@ -1,6 +1,6 @@
 /** @format */
 
-import heroImg from "@/assets/services/hero.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhero.png";
 import Image from "next/image";
 
 export default function SpotlightHero() {
@@ -12,6 +12,8 @@ export default function SpotlightHero() {
           <Image
             src={heroImg}
             alt="Technology Background"
+            width={1920}
+            height={1080}
             className="absolute h-[120%] w-full object-cover -top-[10%]"
           />
         </div>

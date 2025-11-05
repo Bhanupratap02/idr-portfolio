@@ -1,10 +1,10 @@
 /** @format */
 
 import { Check } from "lucide-react";
-import VideoImg from "@/assets/partners/vicon/video.png";
-import IntercomImg from "@/assets/partners/vicon/intercom.png";
-import LoginImg from "@/assets/partners/vicon/login.png";
-import LockdownImg from "@/assets/partners/vicon/lockdown.png";
+const VideoImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fvideo.png";
+const IntercomImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fintercom.png";
+const LoginImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Flogin.png";
+const LockdownImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Flockdown.png";
 import IntegrationCard from "./IntegrationCard";
 
 const integrations = [

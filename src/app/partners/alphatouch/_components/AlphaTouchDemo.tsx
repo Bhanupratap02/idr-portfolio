@@ -1,8 +1,8 @@
 /** @format */
 
-import imgImg from "@/assets/partners/alphatouch/entry_panel.png";
-import imgImg1 from "@/assets/partners/alphatouch/mobile_app.png";
-import imgImg2 from "@/assets/partners/alphatouch/portal.png";
+const imgImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fentry_panel.png";
+const imgImg1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fmobile_app.png";
+const imgImg2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fportal.png";
 import Image from "next/image";
 
 const demos = [

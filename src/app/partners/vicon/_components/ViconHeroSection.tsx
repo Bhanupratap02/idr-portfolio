@@ -1,7 +1,7 @@
 /** @format */
 import Image from "next/image";
-import heroMainImg from "@/assets/partners/vicon/hero-main.png";
-import heroBgImg from "@/assets/partners/vicon/hero-bg.png";
+const heroMainImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-main.png";
+const heroBgImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-bg.png";
 import Link from "next/link";
 export default function ViconHeroSection() {
   return (

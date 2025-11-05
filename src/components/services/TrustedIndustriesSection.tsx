@@ -1,9 +1,9 @@
 /** @format */
-import building from "@/assets/services/conference-room/icons/building.png";
-import degree from "@/assets/services/conference-room/icons/degree.png";
-import medical from "@/assets/services/conference-room/icons/medical.png";
-import centers from "@/assets/services/conference-room/icons/centers.png";
-import house from "@/assets/services/conference-room/icons/house.png";
+const building = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fbuilding.png";
+const degree = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fdegree.png";
+const medical = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fmedical.png";
+const centers = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fcenters.png";
+const house = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fhouse.png";
 import Image from "next/image";
 export default function TrustedIndustriesSection() {
   const industries = [
@@ -53,6 +53,8 @@ export default function TrustedIndustriesSection() {
                   <Image
                     src={industry.icon}
                     alt={industry.name}
+                    width={80}
+                    height={80}
                     className="w-12 h-12 sm:w-16 sm:h-16 2xl:w-20 2xl:h-20"
                   />
 

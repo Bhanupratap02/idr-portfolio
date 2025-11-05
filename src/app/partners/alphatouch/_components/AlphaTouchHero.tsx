@@ -2,7 +2,7 @@
 
 // /** @format */
 
-import imgAlphaTouchHero from "@/assets/partners/alphatouch/HeroImg.png";
+const imgAlphaTouchHero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2FHeroImg.png";
 import Image from "next/image";
 
 // export default function AlphaTouchHero() {

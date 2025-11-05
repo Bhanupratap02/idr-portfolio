@@ -1,9 +1,9 @@
 /** @format */
 import Image from "next/image";
-import img_1 from "@/assets/services/audio-visual/commercial_1.png";
-import img_2 from "@/assets/services/audio-visual/commercial_2.png";
-import img_3 from "@/assets/services/audio-visual/commercial_3.png";
-import img_4 from "@/assets/services/audio-visual/commercial_4.png";
+const img_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fcommercial_1.png";
+const img_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fcommercial_2.png";
+const img_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fcommercial_3.png";
+const img_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fcommercial_4.png";
 const featuredProducts = [
   {
     image: img_1,
@@ -58,6 +58,7 @@ export default function CommercialGradeSection() {
                   alt={product.title}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
 
                 <div

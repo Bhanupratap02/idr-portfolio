@@ -1,7 +1,7 @@
 /** @format */
 
-import heroBg from "@/assets/services/conference-room/hero_bg.png";
-import conferenceRoomImg from "@/assets/services/conference-room/conference_room.png";
+const heroBg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Fhero_bg.png";
+const conferenceRoomImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Fconference_room.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -75,9 +75,10 @@ export default function HeroSection() {
                 <Image
                   src={conferenceRoomImg}
                   alt="Modern Conference Room"
+                  fill
                   className="h-full w-full object-cover rounded-2xl"
                   // className="object-cover rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-2xl xl:rounded-2xl 2xl:rounded-3xl 3xl:rounded-3xl shadow-2xl"
-                  // sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                 />
               </div>
             </div>

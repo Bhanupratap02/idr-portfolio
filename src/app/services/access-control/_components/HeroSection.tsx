@@ -1,10 +1,10 @@
 /** @format */
 
 import Image from "next/image";
-import hero_image from "@/assets/services/access-control/hero_img.png";
-import cloud from "@/assets/services/access-control/icons/cloud.png";
-import door_control from "@/assets/services/access-control/icons/door_control.png";
-import mobile_first from "@/assets/services/access-control/icons/mobile_support.png";
+const hero_image = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Fhero_img.png";
+const cloud = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcloud.png";
+const door_control = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fdoor_control.png";
+const mobile_first = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fmobile_support.png";
 import Link from "next/link";
 export default function HeroSection() {
   const features = [
@@ -62,6 +62,8 @@ export default function HeroSection() {
                       <Image
                         src={feature.image}
                         alt={feature.imageAlt}
+                        width={40}
+                        height={32}
                         className={feature.imageStyle}
                       />
                     </div>
@@ -83,7 +85,8 @@ export default function HeroSection() {
               <Image
                 src={hero_image}
                 alt="Access Control System Interface"
-                // className="w-full h-auto rounded-lg"
+                width={950}
+                height={700}
                 className="w-full h-auto rounded-lg max-w-[500px] sm:max-w-[550px] lg:max-w-[700px] 2xl:max-w-[800px] 3xl:max-w-[950px]"
                 priority
               />

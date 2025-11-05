@@ -1,10 +1,10 @@
-import cameraGroupImg from "@/assets/partners/speco/camera-group.png";
-import camera from "@/assets/partners/speco/camera.png";
-import record from "@/assets/partners/speco/record.png";
-import lock from "@/assets/partners/speco/lock.png";
-import audio from "@/assets/partners/speco/audio.png";
-import ndaa from "@/assets/partners/speco/ndaa.png";
-import module from "@/assets/partners/speco/module.png";
+const cameraGroupImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera-group.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera.png";
+const record = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Frecord.png";
+const lock = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Flock.png";
+const audio = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Faudio.png";
+const ndaa = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fndaa.png";
+const module = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fmodule.png";
 import Image from "next/image";
 export default function WhyChooseSpeco() {
   const features = [

@@ -2,7 +2,7 @@
 
 import { GraduationCap, Globe, Users } from "lucide-react";
 import Image from "next/image";
-import E_Rate_Meeting from "@/assets/services/e-rate-program/meeting.png";
+const E_Rate_Meeting = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Fmeeting.png";
 export default function ERateProgramInfoSection() {
   const process = [
     {
@@ -53,6 +53,7 @@ export default function ERateProgramInfoSection() {
                 <Image
                   src={E_Rate_Meeting}
                   alt="E-Rate Program"
+                  fill
                   className="w-full h-full object-cover rounded-lg "
                 />
                 {/* Info Card */}

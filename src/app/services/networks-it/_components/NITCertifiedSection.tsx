@@ -1,7 +1,7 @@
 /** @format */
 import Image from "next/image";
-import warning from "@/assets/services/conference-room/icons/warning.png";
-import certified from "@/assets/services/networks-it/certified.png";
+const warning = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fwarning.png";
+const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fnetworks-it%2Fcertified.png";
 const certifications = [
   // { icon: warning },
   { name: "HPE / Aruba" },

@@ -1,5 +1,5 @@
 /** @format */
-import integrated from "@/assets/services/data-center/integrated.png";
+const integrated = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Fintegrated.png";
 import Image from "next/image";
 export default function DCIntegratedSection() {
   const features = [

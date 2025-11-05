@@ -1,10 +1,10 @@
 /** @format */
-import mic from "@/assets/services/conference-room/icons/mic.png";
-import audio_proccessing from "@/assets/services/conference-room/icons/audio_proccessing.png";
-import tv from "@/assets/services/conference-room/icons/tv.png";
-import display from "@/assets/services/conference-room/icons/display.png";
-import camera from "@/assets/services/conference-room/icons/camera.png";
-import designs from "@/assets/services/conference-room/icons/designs.png";
+const mic = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fmic.png";
+const audio_proccessing = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Faudio_proccessing.png";
+const tv = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Ftv.png";
+const display = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fdisplay.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fcamera.png";
+const designs = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fdesigns.png";
 import Image from "next/image";
 
 const features = [
@@ -66,6 +66,8 @@ export default function WhyChooseCRSection() {
                   <Image
                     src={feature.icon}
                     alt={feature.title}
+                    width={48}
+                    height={48}
                     className="w-7 h-8 sm:w-7 sm:h-10 2xl:w-10 2xl:h-12"
                   />
                 </div>

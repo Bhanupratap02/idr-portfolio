@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import modernIntercom from "@/assets/services/intercom/modern_intercom.png"
+const modernIntercom = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Fmodern_intercom.png";
 const features = [
   {
     title: "Video Calling",

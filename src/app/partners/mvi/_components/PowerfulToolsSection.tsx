@@ -2,7 +2,7 @@
 
 import { BarChart3, Upload, Users, Building } from "lucide-react";
 import Image from "next/image";
-import DashboardImg from "@/assets/partners/mvi/dashboard.png";
+const DashboardImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fdashboard.png";
 export default function PowerfulToolsSection() {
   const tools = [
     {

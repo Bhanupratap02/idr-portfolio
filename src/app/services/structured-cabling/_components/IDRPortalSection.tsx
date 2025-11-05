@@ -1,11 +1,11 @@
 /** @format */
 
 import { MapIcon, TrendingUpIcon, ImageIcon, TicketIcon } from "lucide-react";
-import portal from "@/assets/services/structured-cabling/portal.png"
-import maps from "@/assets/services/structured-cabling/icons/maps.png";
-import results from "@/assets/services/structured-cabling/icons/results.png";
-import photos from "@/assets/services/structured-cabling/icons/photos.png";
-import ticket from "@/assets/services/structured-cabling/icons/ticket.png";
+const portal = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Fportal.png";
+const maps = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fmaps.png";
+const results = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fresults.png";
+const photos = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fphotos.png";
+const ticket = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fticket.png";
 import Image from "next/image";
 interface PortalFeatureProps {
   icon: React.ReactNode;
@@ -46,6 +46,8 @@ export default function IDRPortalSection() {
         <Image
           src={maps}
           alt="Drop Maps & Port Labels"
+          width={28}
+          height={28}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#2563EB]"
         />
       ),
@@ -59,6 +61,8 @@ export default function IDRPortalSection() {
         <Image
           src={results}
           alt="Cable Test Results"
+          width={28}
+          height={28}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#16A34A]"
         />
       ),
@@ -72,6 +76,8 @@ export default function IDRPortalSection() {
         <Image
           src={photos}
           alt="Rack & Tray Photos"
+          width={28}
+          height={28}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#9333EA]"
         />
       ),
@@ -85,6 +91,8 @@ export default function IDRPortalSection() {
         <Image
           src={ticket}
           alt="Real-time Ticket Updates"
+          width={28}
+          height={28}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 text-[#DC2626]"
         />
       ),
@@ -105,6 +113,7 @@ export default function IDRPortalSection() {
               <Image
                 src={portal}
                 alt="IDR Portal Dashboard"
+                fill
                 className="w-full  h-full rounded-lg object-fill"
               />
             </div>

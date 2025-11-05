@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import kisi from "@/assets/butterfly/kisi.png";
+const kisi = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fbutterfly%2Fkisi.png";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -37,6 +37,8 @@ export function HeroSection() {
               <Image
                 src={kisi}
                 alt="Kisi Access Control System"
+                width={1920}
+                height={1080}
                 className="w-full h-auto object-cover rounded-lg"
                 priority
                 quality={90}

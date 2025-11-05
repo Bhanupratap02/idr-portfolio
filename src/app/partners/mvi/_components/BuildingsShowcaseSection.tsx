@@ -2,10 +2,10 @@
 
 /** @format */
 import Image from "next/image";
-import Building4 from "@/assets/partners/mvi/building4.png";
-import Building5 from "@/assets/partners/mvi/building5.png";
-import Building6 from "@/assets/partners/mvi/building6.png";
-import Building7 from "@/assets/partners/mvi/building7.png";
+const Building4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding4.png";
+const Building5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding5.png";
+const Building6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding6.png";
+const Building7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding7.png";
 
 export default function BuildingsShowcaseSection() {
   const buildings = [

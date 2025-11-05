@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import clear_sound from "@/assets/services/audio-visual/clear_sound.png"
+const clear_sound = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fclear_sound.png";
  const features = [
    {
      icon: (

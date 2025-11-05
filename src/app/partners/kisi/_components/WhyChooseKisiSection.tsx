@@ -1,6 +1,6 @@
-import Kisi1Img from "@/assets/partners/kisi/kisi-1.png"
-import Kisi2Img from "@/assets/partners/kisi/kisi-2.png"
-import Kisi3Img from "@/assets/partners/kisi/kisi-3.png"
+const Kisi1Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fkisi%2Fkisi-1.png";
+const Kisi2Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fkisi%2Fkisi-2.png";
+const Kisi3Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fkisi%2Fkisi-3.png";
 import {
   Smartphone,
   Cloud,

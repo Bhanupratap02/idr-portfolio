@@ -1,11 +1,11 @@
 /** @format */
 
-import school from "@/assets/partners/speco/school.png";
-import retail from "@/assets/partners/speco/retail.png";
-import commercial from "@/assets/partners/speco/commercial.png";
-import home from "@/assets/partners/speco/home.png";
-import warehousing from "@/assets/partners/speco/warehousing.png";
-import solution from "@/assets/partners/speco/solution.png";
+const school = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fschool.png";
+const retail = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fretail.png";
+const commercial = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcommercial.png";
+const home = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fhome.png";
+const warehousing = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fwarehousing.png";
+const solution = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fsolution.png";
 import Image from "next/image";
 
 export default function BuiltForEveryEnvironmentSection() {

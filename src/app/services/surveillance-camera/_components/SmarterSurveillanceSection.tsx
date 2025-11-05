@@ -1,9 +1,9 @@
 /** @format */
 import Image from "next/image";
-import integration from "@/assets/services/surveillance-camera/integration.png";
-import cloud from "@/assets/services/surveillance-camera/cloud.png";
-import brain from "@/assets/services/surveillance-camera/brain.png";
-import bell from "@/assets/services/surveillance-camera/bell.png";
+const integration = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fintegration.png";
+const cloud = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fcloud.png";
+const brain = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fbrain.png";
+const bell = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fbell.png";
 const features = [
   {
     id: 1,
@@ -56,6 +56,8 @@ export default function SmarterSurveillanceSection() {
               <Image
                 src={item.image}
                 alt={`${item.title} icon`}
+                width={96}
+                height={96}
                 className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24  mb-6"
               />
 
@@ -117,10 +119,12 @@ export default function SmarterSurveillanceSection() {
             </div>
 
             {/* Right Content - Image */}
-            <div className="flex items-center justify-center ">
+            <div className="flex items-center justify-center relative">
               <Image
                 src={integration}
                 alt="System Integration"
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
               />
             </div>

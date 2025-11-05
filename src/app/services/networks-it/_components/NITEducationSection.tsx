@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import education from "@/assets/services/networks-it/education.png";
+const education = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fnetworks-it%2Feducation.png";
 import Link from "next/link";
 const educationFeatures = [
   {

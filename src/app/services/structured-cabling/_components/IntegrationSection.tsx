@@ -1,10 +1,10 @@
 /** @format */
-import wifi from "@/assets/services/structured-cabling/icons/wifi.png";
-import it from "@/assets/services/structured-cabling/icons/it.png";
-import access from "@/assets/services/structured-cabling/icons/access.png";
-import camera from "@/assets/services/structured-cabling/icons/camera.png";
-import intercoms from "@/assets/services/structured-cabling/icons/intercoms.png";
-import bms from "@/assets/services/structured-cabling/icons/bms.png";
+const wifi = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fwifi.png";
+const it = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fit.png";
+const access = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Faccess.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fcamera.png";
+const intercoms = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fintercoms.png";
+const bms = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fbms.png";
 import Image from "next/image";
 
 interface IntegrationItemProps {
@@ -35,6 +35,8 @@ export default function IntegrationSection() {
         <Image
           src={wifi}
           alt="Wi-Fi"
+          width={44}
+          height={44}
           className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 "
         />
       ),
@@ -46,6 +48,8 @@ export default function IntegrationSection() {
         <Image
           src={it}
           alt="IT"
+          width={44}
+          height={44}
           className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#A855F7]"
         />
       ),
@@ -57,6 +61,8 @@ export default function IntegrationSection() {
         <Image
           src={access}
           alt="Access Control"
+          width={44}
+          height={44}
           className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#22C55E]"
         />
       ),
@@ -68,6 +74,8 @@ export default function IntegrationSection() {
         <Image
           src={camera}
           alt="Surveillance"
+          width={48}
+          height={44}
           className="w-7 h-6 sm:w-8 sm:h-7 lg:w-9 lg:h-8 xl:w-10 xl:h-9 2xl:w-12 2xl:h-11 text-[#EF4444]"
         />
       ),
@@ -79,6 +87,8 @@ export default function IntegrationSection() {
         <Image
           src={intercoms}
           alt="Intercoms & Alarms"
+          width={44}
+          height={48}
           className="w-6 h-7 sm:w-7 sm:h-8 lg:w-8 lg:h-9 xl:w-9 xl:h-10 2xl:w-11 2xl:h-12 text-[#EAB308]"
         />
       ),
@@ -90,6 +100,8 @@ export default function IntegrationSection() {
         <Image
           src={bms}
           alt="A/V & BMS Systems"
+          width={44}
+          height={44}
           className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 text-[#6366F1]"
         />
       ),

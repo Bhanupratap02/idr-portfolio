@@ -1,8 +1,8 @@
 /** @format */
 
-import feature1Img from "@/assets/partners/avigilon/feature1.png";
-import feature2Img from "@/assets/partners/avigilon/feature2.png";
-import feature3Img from "@/assets/partners/avigilon/feature3.png";
+const feature1Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Ffeature1.png";
+const feature2Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Ffeature2.png";
+const feature3Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Ffeature3.png";
 import Image from "next/image";
 
 export default function AvigilonGallery() {
@@ -22,6 +22,8 @@ export default function AvigilonGallery() {
                 <Image
                   src={image}
                   alt={`Avigilon security system ${index + 1}`}
+                  width={800}
+                  height={800}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>

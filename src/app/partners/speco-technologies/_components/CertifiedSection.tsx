@@ -3,9 +3,9 @@
 import { CheckIcon } from "lucide-react";
 import React from "react";
 import Image from "next/image";
-import certifiedImage from "@/assets/partners/speco/camera-installing.png";
-import checkImage from "@/assets/partners/speco/check.png";
-import reviewImg from "@/assets/partners/speco/review-img.png";
+const certifiedImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera-installing.png";
+const checkImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcheck.png";
+const reviewImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Freview-img.png";
 export default function CertifiedSection() {
   const features = [
     "NYS Licensed & Insured",

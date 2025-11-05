@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import IDR_TEAM from "@/assets/aboutus/team-photo.png";
+const IDR_TEAM = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Faboutus%2Fteam-photo.png";
 const features = [
   {
     title: "Certified Technicians",

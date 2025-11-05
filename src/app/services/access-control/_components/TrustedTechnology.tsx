@@ -1,11 +1,11 @@
 /** @format */
 import Image from "next/image";
-import before_after from "@/assets/services/access-control/before_after.png";
-import entry_control from "@/assets/services/access-control/icons/entry_control.png";
-import credential_types from "@/assets/services/access-control/icons/credential_types.png";
-import remote_management from "@/assets/services/access-control/icons/remote_management.png";
-import time from "@/assets/services/access-control/icons/time.png";
-import bell from "@/assets/services/access-control/icons/bell.png";
+const before_after = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Fbefore_after.png";
+const entry_control = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fentry_control.png";
+const credential_types = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcredential_types.png";
+const remote_management = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fremote_management.png";
+const time = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ftime.png";
+const bell = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fbell.png";
 import Link from "next/link";
 export default function TrustedTechnology() {
   return (
@@ -88,6 +88,8 @@ export default function TrustedTechnology() {
                   <Image
                     src={item.img}
                     alt={item.alt}
+                    width={40}
+                    height={40}
                     className="w-10 h-10 object-contain"
                   />
                 </div>
@@ -108,6 +110,8 @@ export default function TrustedTechnology() {
             <Image
               src={before_after}
               alt="Technology Interface"
+              width={800}
+              height={600}
               className="w-full h-auto rounded-lg object-cover"
             />
           </div>

@@ -1,6 +1,6 @@
 /** @format */
 
-import hero from "@/assets/services/structured-cabling/hero.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Fhero.png";
 import Image from "next/image";
 import Link from "next/link";
 

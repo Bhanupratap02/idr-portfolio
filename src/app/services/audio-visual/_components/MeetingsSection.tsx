@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import meetings from "@/assets/services/audio-visual/meeting.png";
+const meetings = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fmeeting.png";
 const features = [
   {
     icon: (

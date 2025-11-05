@@ -370,24 +370,23 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const slides = [
-  { src: "/videos/video_1.mov", title: "", text: "" },
+  { 
+    src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/video_1.mov", 
+    title: "", 
+    text: "" 
+  },
   {
-    src: "/videos/Hero Banner Video Camera Monitoring.mp4",
+    src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/Hero%20Banner%20Video%20Camera%20Monitoring.mp4",
     title: "",
     text: "",
   },
-
-  // {
-  //   src: "/videos/Hero Banner Video Camera Monitoring.mp4",
-  //   title: "Design. Installation.Support. One Trusted Partner.",
-  //   text: "Founded in 2007, IDR Technology Solutions is a full-service systems integrator specializing in A/V, security, networking, and IT infrastructure. Our mission is simple: deliver high-quality technology solutions with expert execution, total transparency, and unmatched customer support — every step of the way.",
-  // },
   {
-    src: "/videos/video_4.mp4",
-    title: "Design. Installation.Support. One Trusted Partner.",
+    src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/video_4.mp4",
+    title: "Design. Installation. Support. One Trusted Partner.",
     text: "Founded in 2007, IDR Technology Solutions is a full-service systems integrator specializing in A/V, security, networking, and IT infrastructure. Our mission is simple: deliver high-quality technology solutions with expert execution, total transparency, and unmatched customer support — every step of the way.",
   },
 ];
+
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState<number>(0);

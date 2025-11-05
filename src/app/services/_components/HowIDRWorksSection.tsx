@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import handshake from "@/assets/services/handshake.png";
+const handshake = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhandshake.png";
 
 export default function HowIDRWorksSection() {
   return (
@@ -25,6 +25,8 @@ export default function HowIDRWorksSection() {
           <Image
             src={handshake}
             alt="IDR Team Working"
+            width={800}
+            height={700}
             className="w-full h-full object-cover rounded-tr-[40px] lg:rounded-tr-[100px]"
             priority
           />

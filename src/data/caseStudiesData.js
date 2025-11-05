@@ -1,130 +1,131 @@
-import case_study_1 from "../assets/case_study/case-study-1.png";
-import case_study_2 from "../assets/case_study/case-study-2.png";
-import case_study_3 from "../assets/case_study/case-study-3.png";
-import case_study_4 from "../assets/case_study/case-study-4.png";
-import case_study_5 from "../assets/case_study/case-study-5.png";
-import case_study_6 from "../assets/case_study/case-study-6.png";
-import case_study from "../assets/case_study/case-study.png";
+// S3 URLs for case study images
+const case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-1.png";
+const case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-2.png";
+const case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-3.png";
+const case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-4.png";
+const case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-5.png";
+const case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-6.png";
+const case_study = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study.png";
 
-import Cloud_case_study_1 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-117.jpg";
-import Cloud_case_study_2 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-124.jpg";
-import Cloud_case_study_3 from "../assets/case_study/Cloud + 4 Wire Intercoms/IDR_Sep18-135.jpg";
+const Cloud_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCloud%20%2B%204%20Wire%20Intercoms%2FIDR_Sep18-117.jpg";
+const Cloud_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCloud%20%2B%204%20Wire%20Intercoms%2FIDR_Sep18-124.jpg";
+const Cloud_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCloud%20%2B%204%20Wire%20Intercoms%2FIDR_Sep18-135.jpg";
 
-import Audio_case_study_1 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-51.jpg";
-import Audio_case_study_2 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-64.jpg";
-import Audio_case_study_3 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-71.jpg";
-import Audio_case_study_4 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-75.jpg";
-import Audio_case_study_5 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-88.jpg";
-import Audio_case_study_6 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-92.jpg";
-import Audio_case_study_7 from "../assets/case_study/Custom Audio Deterrent/IDR_Sep18-96.jpg";
+const Audio_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-51.jpg";
+const Audio_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-64.jpg";
+const Audio_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-71.jpg";
+const Audio_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-75.jpg";
+const Audio_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-88.jpg";
+const Audio_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-92.jpg";
+const Audio_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FCustom%20Audio%20Deterrent%2FIDR_Sep18-96.jpg";
 
-import wifi_case_study_1 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-173.jpg";
-import wifi_case_study_2 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-185.jpg";
-import wifi_case_study_3 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-194.jpg";
-import wifi_case_study_4 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-196.jpg";
-import wifi_case_study_5 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-197.jpg";
-import wifi_case_study_6 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-201.jpg";
-import wifi_case_study_7 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-205.jpg";
-import wifi_case_study_8 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-208.jpg";
-import wifi_case_study_9 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-239.jpg";
-import wifi_case_study_10 from "../assets/case_study/Phased Wi-Fi Upgrade - CQA/IDR_8-28-247.jpg";
+const wifi_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-173.jpg";
+const wifi_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-185.jpg";
+const wifi_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-194.jpg";
+const wifi_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-196.jpg";
+const wifi_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-197.jpg";
+const wifi_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-201.jpg";
+const wifi_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-205.jpg";
+const wifi_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-208.jpg";
+const wifi_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-239.jpg";
+const wifi_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPhased%20Wi-Fi%20Upgrade%20-%20CQA%2FIDR_8-28-247.jpg";
 
 
-import intercom_case_study_1 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-101.jpg";
-import intercom_case_study_2 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-116.jpg";
-import intercom_case_study_3 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-117.jpg";
-import intercom_case_study_4 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-124.jpg";
-import intercom_case_study_5 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-136.jpg";
-import intercom_case_study_6 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-140.jpg";
-import intercom_case_study_7 from "../assets/case_study/Unified Intercom System - Douglas Elliman/IDR_8-28-151.jpg";
+const intercom_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-101.jpg";
+const intercom_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-116.jpg";
+const intercom_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-117.jpg";
+const intercom_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-124.jpg";
+const intercom_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-136.jpg";
+const intercom_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-140.jpg";
+const intercom_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FUnified%20Intercom%20System%20-%20Douglas%20Elliman%2FIDR_8-28-151.jpg";
 
 
 //security 
-import Eliminating_case_study_1 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-173.jpg";
-import Eliminating_case_study_2 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-185.jpg";
-import Eliminating_case_study_3 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-187.jpg";  
-import Eliminating_case_study_4 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-196.jpg";
-import Eliminating_case_study_5 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-198.jpg";
-import Eliminating_case_study_6 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-199.jpg";
-import Eliminating_case_study_7 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-201.jpg";
-import Eliminating_case_study_8 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-210.jpg";
-import Eliminating_case_study_9 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-212.jpg";
-import Eliminating_case_study_10 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-218.jpg";
-import Eliminating_case_study_11 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-218.jpg";
-import Eliminating_case_study_12 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-229.jpg";
-import Eliminating_case_study_13 from "../assets/case_study/Eliminating Unauthorized Access/IDR_Sep18-238.jpg";
+const Eliminating_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-173.jpg";
+const Eliminating_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-185.jpg";
+const Eliminating_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-187.jpg";  
+const Eliminating_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-196.jpg";
+const Eliminating_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-198.jpg";
+const Eliminating_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-199.jpg";
+const Eliminating_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-201.jpg";
+const Eliminating_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-210.jpg";
+const Eliminating_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-212.jpg";
+const Eliminating_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-218.jpg";
+const Eliminating_case_study_11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-218.jpg";
+const Eliminating_case_study_12 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-229.jpg";
+const Eliminating_case_study_13 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-238.jpg";
 
 //scaling
-import Scaling_case_study_1 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00812.jpg";
-import Scaling_case_study_2 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00862.jpg";
-import Scaling_case_study_3 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00924.jpg";
-import Scaling_case_study_4 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00954.jpg";
-import Scaling_case_study_5 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00977.jpg";
-import Scaling_case_study_6 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC00993.jpg";
-import Scaling_case_study_7 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01043.jpg";
-import Scaling_case_study_8 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01055.jpg";
-import Scaling_case_study_9 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01063.jpg";
-import Scaling_case_study_10 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01127.jpg";
-import Scaling_case_study_11 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01177.jpg";
-import Scaling_case_study_12 from "../assets/case_study/Scaling Security with Fairstead Photos/DSC01202.jpg";
-import Scaling_case_study_13 from "../assets/case_study/Scaling Security with Fairstead Photos/Sable Palms LPR camera.jpg";
-import Scaling_case_study_14 from "../assets/case_study/Scaling Security with Fairstead Photos/Sable Palms Multi Sensor Camera.jpg";
+const Scaling_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00812.jpg";
+const Scaling_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00862.jpg";
+const Scaling_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00924.jpg";
+const Scaling_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00954.jpg";
+const Scaling_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00977.jpg";
+const Scaling_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC00993.jpg";
+const Scaling_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01043.jpg";
+const Scaling_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01055.jpg";
+const Scaling_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01063.jpg";
+const Scaling_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01127.jpg";
+const Scaling_case_study_11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01177.jpg";
+const Scaling_case_study_12 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FDSC01202.jpg";
+const Scaling_case_study_13 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FSable%20Palms%20LPR%20camera.jpg";
+const Scaling_case_study_14 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FScaling%20Security%20with%20Fairstead%20Photos%2FSable%20Palms%20Multi%20Sensor%20Camera.jpg";
 
 //training
-import Training_case_study_1 from "../assets/case_study/Smarter Training Room/MTF Monitors.png";
-import Training_case_study_2 from "../assets/case_study/Smarter Training Room/MTF Podium.png";
-import Training_case_study_3 from "../assets/case_study/Smarter Training Room/MTF Training Room  2 TVs left.jpeg";
-import Training_case_study_4 from "../assets/case_study/Smarter Training Room/MTF Training Room - 2 TVs right.jpg";
-import Training_case_study_5 from "../assets/case_study/Smarter Training Room/MTF Training Room - AV Rack.png";
-import Training_case_study_6 from "../assets/case_study/Smarter Training Room/MTF Training Room - A_V Rack 2.jpg";
-import Training_case_study_7 from "../assets/case_study/Smarter Training Room/MTF Training Room - Ceiling Mic.jpeg";
-import Training_case_study_8 from "../assets/case_study/Smarter Training Room/MTF Training Room 1.jpeg";
-import Training_case_study_9 from "../assets/case_study/Smarter Training Room/MTF Training Room Canera.jpeg";
-import Training_case_study_10 from "../assets/case_study/Smarter Training Room/MTF Training Room Fanning Kit after carpet.jpeg";
-import Training_case_study_11 from "../assets/case_study/Smarter Training Room/MTF Training Room Fanning Kit before carpet.jpeg";
+const Training_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Monitors.png";
+const Training_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Podium.png";
+const Training_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20%202%20TVs%20left.jpeg";
+const Training_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20-%202%20TVs%20right.jpg";
+const Training_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20-%20AV%20Rack.png";
+const Training_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20-%20A_V%20Rack%202.jpg";
+const Training_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20-%20Ceiling%20Mic.jpeg";
+const Training_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%201.jpeg";
+const Training_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20Canera.jpeg";
+const Training_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20Fanning%20Kit%20after%20carpet.jpeg";
+const Training_case_study_11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSmarter%20Training%20Room%2FMTF%20Training%20Room%20Fanning%20Kit%20before%20carpet.jpeg";
 
 
 //Enterprise
-import Enterprise_case_study_1 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/B7_Rear_Wires_Managed_Right_Side.jpg";
-import Enterprise_case_study_2 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Nutanix.jpg";
-import Enterprise_case_study_3 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Palo Racks.png";
-import Enterprise_case_study_4 from "../assets/case_study/Enterprise Cabling Cleanup - Oppenheimer Funds/Rack_Overall_2.jpg";
+const Enterprise_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEnterprise%20Cabling%20Cleanup%20-%20Oppenheimer%20Funds%2FB7_Rear_Wires_Managed_Right_Side.jpg";
+const Enterprise_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEnterprise%20Cabling%20Cleanup%20-%20Oppenheimer%20Funds%2FNutanix.jpg";
+const Enterprise_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEnterprise%20Cabling%20Cleanup%20-%20Oppenheimer%20Funds%2FPalo%20Racks.png";
+const Enterprise_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEnterprise%20Cabling%20Cleanup%20-%20Oppenheimer%20Funds%2FRack_Overall_2.jpg";
 
 //failed 
-import Failed_case_study_1 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7906.jpeg";
-import Failed_case_study_2 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7907.jpeg";
-import Failed_case_study_3 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7940.jpeg";
-import Failed_case_study_4 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7941.jpeg";
-import Failed_case_study_5 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7942.jpeg";
-import Failed_case_study_6 from "../assets/case_study/Fixing Failed Installs (Atlantis and Sweetwater)/IMG_7946.jpeg";
+const Failed_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7906.jpeg";
+const Failed_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7907.jpeg";
+const Failed_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7940.jpeg";
+const Failed_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7941.jpeg";
+const Failed_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7942.jpeg";
+const Failed_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FFixing%20Failed%20Installs%20(Atlantis%20and%20Sweetwater)%2FIMG_7946.jpeg";
 
 //PPA
-import PPA_case_study_1 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-51.jpg";
-import PPA_case_study_2 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-56.jpg";
-import PPA_case_study_3 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-67.jpg";
-import PPA_case_study_4 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-69.jpg";
-import PPA_case_study_5 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-73.jpg";
-import PPA_case_study_6 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-77.jpg";
-import PPA_case_study_7 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-81.jpg";
-import PPA_case_study_8 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-89.jpg";
-import PPA_case_study_9 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-90.jpg";
-import PPA_case_study_10 from "../assets/case_study/PPA - A Lasting Partnership/IDR_8-28-92.jpg";
+const PPA_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-51.jpg";
+const PPA_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-56.jpg";
+const PPA_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-67.jpg";
+const PPA_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-69.jpg";
+const PPA_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-73.jpg";
+const PPA_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-77.jpg";
+const PPA_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-81.jpg";
+const PPA_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-89.jpg";
+const PPA_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-90.jpg";
+const PPA_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FPPA%20-%20A%20Lasting%20Partnership%2FIDR_8-28-92.jpg";
 
 
 //Louderhill
-import Louderhill_case_study_1 from "../assets/case_study/Securing Lauderhill Point/180-degree camera.jpg";
-import Louderhill_case_study_2 from "../assets/case_study/Securing Lauderhill Point/Bridge 2.jpg";
-import Louderhill_case_study_3 from "../assets/case_study/Securing Lauderhill Point/Camera and Speaker 2.jpg";
-import Louderhill_case_study_4 from "../assets/case_study/Securing Lauderhill Point/Cameras and Bridge.jpg";
-import Louderhill_case_study_5 from "../assets/case_study/Securing Lauderhill Point/Defigo Intercom for Vehicle Gate.jpg";
-import Louderhill_case_study_6 from "../assets/case_study/Securing Lauderhill Point/LPR on pole different angle.jpg";
-import Louderhill_case_study_7 from "../assets/case_study/Securing Lauderhill Point/LPR2 on Pole 2.jpg";
-import Louderhill_case_study_8 from "../assets/case_study/Securing Lauderhill Point/Lauderhill Bridges 6.jpg";
-import Louderhill_case_study_9 from "../assets/case_study/Securing Lauderhill Point/Lauderhill Wireless Bridge.jpg";
-import Louderhill_case_study_10 from "../assets/case_study/Securing Lauderhill Point/Lauderhill_Bridges 4.jpg";
-import Louderhill_case_study_11 from "../assets/case_study/Securing Lauderhill Point/Long Range Reader and LPR for Vehicle Gate.jpg";
-import Louderhill_case_study_12 from "../assets/case_study/Securing Lauderhill Point/Vicon Long Range Reader for Vehicle Gate.jpg";
-import Louderhill_case_study_13 from "../assets/case_study/Securing Lauderhill Point/Vicon Reader for Pedestrian Gate.jpg";
+const Louderhill_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2F180-degree%20camera.jpg";
+const Louderhill_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FBridge%202.jpg";
+const Louderhill_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FCamera%20and%20Speaker%202.jpg";
+const Louderhill_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FCameras%20and%20Bridge.jpg";
+const Louderhill_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FDefigo%20Intercom%20for%20Vehicle%20Gate.jpg";
+const Louderhill_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLPR%20on%20pole%20different%20angle.jpg";
+const Louderhill_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLPR2%20on%20Pole%202.jpg";
+const Louderhill_case_study_8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLauderhill%20Bridges%206.jpg";
+const Louderhill_case_study_9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLauderhill%20Wireless%20Bridge.jpg";
+const Louderhill_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLauderhill_Bridges%204.jpg";
+const Louderhill_case_study_11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLong%20Range%20Reader%20and%20LPR%20for%20Vehicle%20Gate.jpg";
+const Louderhill_case_study_12 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FVicon%20Long%20Range%20Reader%20for%20Vehicle%20Gate.jpg";
+const Louderhill_case_study_13 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FVicon%20Reader%20for%20Pedestrian%20Gate.jpg";
   
 
 
@@ -137,7 +138,7 @@ export const caseStudiesData = [
   {
     slug: "burns-partnership",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Burns Engineering a Lasting Relationship",
       paragraph: "In 2022, Burns Engineering reached out to IDR to install a Kisi access control system at their NYC office. What started as a single-project relationship quickly evolved into something more: a national partnership built on trust, consistency, and execution."
     },
@@ -229,7 +230,7 @@ export const caseStudiesData = [
   {
     slug: "cloud-4-wire-intercoms",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The Chocolate Factory",
       paragraph: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across 42 buildings in their Sunset Park portfolio. Residents were duplicating their proximity fobs at retail stores and handing them off to unauthorized individuals — leading to serious safety and liability concerns for the property owner."
     },
@@ -308,7 +309,7 @@ export const caseStudiesData = [
   {
     slug: "custom-audio-deterrent",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
       paragraph: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag: the Rhombus annunciator available at the time was designed for indoor use — and simply wasn't loud enough to deter activity outdoors."
     },
@@ -396,7 +397,7 @@ export const caseStudiesData = [
   {
     slug: "eliminated-unauthorized-access",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "How IDR Eliminated Unauthorized Building Access for Fairstead.",
       paragraph: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across 42 buildings in their Sunset Park portfolio. Residents were duplicating their proximity fobs at retail stores and handing them off to unauthorized individuals — leading to serious safety and liability concerns for the property owner."
     },
@@ -512,7 +513,7 @@ export const caseStudiesData = [
   {
     slug: "enterprise-cabling-cleanup",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
       paragraph: "MTF Biologics partnered with IDR to turn a large training space into a fully integrated Microsoft Teams meeting room. The space needed to support in-room presentation, remote participation, ceiling microphones, and zone-based audio — all while keeping audio clean and fully under user control."
     },
@@ -624,7 +625,7 @@ export const caseStudiesData = [
   {
     slug: "fixing-failed-installs",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
       paragraph: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida. The systems — installed by a previous vendor — suffered from serious flaws including."
     },
@@ -714,7 +715,7 @@ export const caseStudiesData = [
   {
     slug: "kisi-elevator-access",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
       paragraph: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint. The building's elevator policy prohibited the installation of dedicated readers inside the elevator cab that only one tenant could use."
     },
@@ -791,7 +792,7 @@ export const caseStudiesData = [
   {
     slug: "phased-wifi-upgrade",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
       paragraph: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with WAPs installed every few classrooms. At the time, all school devices were Wireless N, which provided long range and stable performance — even across concrete and plaster walls."
     },
@@ -894,7 +895,7 @@ export const caseStudiesData = [
   {
     slug: "ppa-screen-sharing",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Peninsula Preparatory Academy",
       paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },
@@ -1014,7 +1015,7 @@ export const caseStudiesData = [
   {
     slug: "scaling-security-fairstead",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Scaling Security with Fairstead",
       paragraph: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida campuses — Fairstead needed a low-voltage partner that could deliver consistent, high-quality work across multiple states. They needed more than just installers."
     },
@@ -1209,7 +1210,7 @@ export const caseStudiesData = [
   {
     slug: "securing-lauderhill-point",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
       paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },
@@ -1338,7 +1339,7 @@ export const caseStudiesData = [
   {
     slug: "smarter-training-room",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
       paragraph: "MTF Biologics partnered with IDR to turn a large training space into a fully integrated Microsoft Teams meeting room. The space needed to support in-room presentation, remote participation, ceiling microphones, and zone-based audio — all while keeping audio clean and fully under user control."
     },
@@ -1473,7 +1474,7 @@ export const caseStudiesData = [
   {
     slug: "unified-intercom-access",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
       paragraph: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points:"
     },
@@ -1572,7 +1573,7 @@ export const caseStudiesData = [
     {
     slug: "advance-local",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Building a Long-Term Technology Partnership with Advance Local",
       paragraph: "Advance Local is one of the largest media groups in the U.S., with newsrooms and offices across the country. Their Staten Island location needed a modern, secure, and connected workplace — and the right partner to make it happen."
     },
@@ -1670,7 +1671,7 @@ export const caseStudiesData = [
       {
     slug: "phipps-houses",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Stopping Break-Ins with Smarter Entry Design",
       paragraph: "Phipps Houses is one of New York City’s largest and oldest not-for-profit housing developers, known for providing quality affordable housing across the five boroughs. When a high-traffic residential building began experiencing repeat security breaches at its main entrance, the Phipps team called in IDR for a serious assessment — and a stronger solution."
     },
@@ -1783,7 +1784,7 @@ export const caseStudiesData = [
     {
     slug: "ppa-partnership",
     hero: {
-      backgroundImage: case_study.src,
+      backgroundImage: case_study,
       heading: "Peninsula Preparatory Academy",
       paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },

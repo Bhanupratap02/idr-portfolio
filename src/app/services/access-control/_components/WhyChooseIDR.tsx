@@ -1,11 +1,11 @@
 /** @format */
-import cloud from "@/assets/services/access-control/icons/cloud.png";
-import certified from "@/assets/services/access-control/icons/certified.png";
-import records from "@/assets/services/access-control/icons/records.png";
-import multi_tenants from "@/assets/services/access-control/icons/multi_tenants.png";
-import support from "@/assets/services/access-control/icons/support.png";
-import portal_access from "@/assets/services/access-control/icons/portal_access.png";
-import trust from "@/assets/services/access-control/icons/trust.png";
+const cloud = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcloud.png";
+const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcertified.png";
+const records = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Frecords.png";
+const multi_tenants = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fmulti_tenants.png";
+const support = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fsupport.png";
+const portal_access = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fportal_access.png";
+const trust = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ftrust.png";
 import Image from "next/image";
 export default function WhyChooseIDR() {
   const features = [
@@ -65,6 +65,8 @@ export default function WhyChooseIDR() {
                 <Image
                   src={feature.icon}
                   alt={feature.title}
+                  width={64}
+                  height={64}
                   className="w-10 h-10 sm:w-12 sm:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 object-contain"
                 />
               </div>
@@ -83,6 +85,8 @@ export default function WhyChooseIDR() {
           <Image
             src={trust}
             alt="Trusted by 500+ Properties"
+            width={56}
+            height={56}
             className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 object-contain"
           />
 

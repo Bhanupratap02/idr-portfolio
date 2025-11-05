@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import hero from "@/assets/services/networks-it/hero.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fnetworks-it%2Fhero.png";
 import Link from "next/link";
 export default function NITHeroSection() {
   return (
@@ -42,6 +42,8 @@ export default function NITHeroSection() {
             <Image
               src={hero}
               alt="Network Infrastructure Server Room"
+              width={1200}
+              height={800}
               className="w-full max-w-xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-5xl  h-auto rounded-lg shadow-xl mx-auto lg:mx-0 3xl:aspect-[18/12]"
               priority
             />

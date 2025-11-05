@@ -2,8 +2,8 @@
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import hero_bg from "@/assets/services/security-alarm/hero_bg.png"
-import hero_main from "@/assets/services/security-alarm/hero_main.png";
+const hero_bg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Fhero_bg.png";
+const hero_main = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Fhero_main.png";
 import Link from "next/link";
 export default function HeroSection() {
   return (
@@ -48,6 +48,8 @@ export default function HeroSection() {
           <Image
             src={hero_main}
             alt="Security alarm system device"
+            width={1920}
+            height={1080}
             className="w-full max-w-sm sm:max-w-sm md:max-w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-5xl  h-auto object-cover   transition-transform duration-500"
           />
         </div>

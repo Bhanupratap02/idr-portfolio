@@ -1,10 +1,10 @@
 /** @format */
 
 import { CheckIcon } from "lucide-react";
-import feature1 from "@/assets/partners/speco/feature-1.png";
-import feature2 from "@/assets/partners/speco/feature-2.png";
-import feature3 from "@/assets/partners/speco/feature-3.png";
-import feature4 from "@/assets/partners/speco/feature-4.png";
+const feature1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Ffeature-1.png";
+const feature2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Ffeature-2.png";
+const feature3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Ffeature-3.png";
+const feature4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Ffeature-4.png";
 import Image from "next/image";
 export default function SmartFeaturesSection() {
   const features = [

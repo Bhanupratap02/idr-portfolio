@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import service from "@/assets/services/networks-it/service.png";
+const service = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fnetworks-it%2Fservice.png";
 const timelineSteps = [
   {
     step: "1",
@@ -61,6 +61,8 @@ export default function NITTimelineSection() {
               <Image
                 src={service}
                 alt="Network Installation Process"
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-lg 3xl:w-[80%]  mx-auto"
               />
             </div>

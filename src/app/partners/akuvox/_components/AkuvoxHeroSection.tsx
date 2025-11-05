@@ -1,7 +1,7 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/partners/akuvox/hero.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fakuvox%2Fhero.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function AkuvoxHeroSection() {

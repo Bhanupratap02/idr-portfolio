@@ -1,7 +1,7 @@
 /** @format */
 
 import { Check } from "lucide-react";
-import sipImg from "@/assets/partners/alphatouch/sip.png";
+const sipImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fsip.png";
 import Image from "next/image";
 
 const benefits = [

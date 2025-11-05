@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import cables from "@/assets/services/networks-it/cables.png";
+const cables = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fnetworks-it%2Fcables.png";
 const services = [
   {
     title: "Network Design & Planning",
@@ -132,6 +132,8 @@ export default function NITServicesSection() {
                   <Image
                     src={cables}
                     alt="Enterprise Infrastructure"
+                    width={1200}
+                    height={1760}
                     className="w-full h-64 md:h-88 lg:h-[32rem] 2xl:h-[34rem] 
                     3xl:h-[44rem] object-cover rounded-xl mb-6"
                   />

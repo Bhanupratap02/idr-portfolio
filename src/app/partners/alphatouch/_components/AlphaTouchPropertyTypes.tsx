@@ -1,11 +1,11 @@
 /** @format */
 
-import type1Img from "@/assets/partners/alphatouch/type1.png";
-import type2Img from "@/assets/partners/alphatouch/type2.png";
-import type3Img from "@/assets/partners/alphatouch/type3.png";
-import type4Img from "@/assets/partners/alphatouch/type4.png";
-import type5Img from "@/assets/partners/alphatouch/type5.png";
-import type6Img from "@/assets/partners/alphatouch/type6.png";
+const type1Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype1.png";
+const type2Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype2.png";
+const type3Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype3.png";
+const type4Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype4.png";
+const type5Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype5.png";
+const type6Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Ftype6.png";
 import Image from "next/image";
 
 const propertyTypes = [

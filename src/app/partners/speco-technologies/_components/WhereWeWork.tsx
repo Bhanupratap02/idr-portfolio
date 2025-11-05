@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import lights from "@/assets/partners/speco/lights.png";
+const lights = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Flights.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function WhereWeWork() {
@@ -18,6 +18,8 @@ export default function WhereWeWork() {
             <Image
               src={lights}
               alt="Service regions map showing coverage areas"
+              width={1200}
+              height={900}
               className="object-cover rounded-2xl w-full h-full"
               priority
             />

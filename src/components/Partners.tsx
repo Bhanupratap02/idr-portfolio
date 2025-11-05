@@ -1,13 +1,13 @@
 /** @format */
 
 import Image from "next/image";
-import partner1 from "@/assets/partners/partner_1.png";
-import partner2 from "@/assets/partners/partner_2.png";
-import partner3 from "@/assets/partners/partner_3.png";
-import partner4 from "@/assets/partners/partner_4.png";
-import partner5 from "@/assets/partners/partner_5.png";
-import partner6 from "@/assets/partners/partner_6.png";
-import partner7 from "@/assets/partners/partner_7.png";
+const partner1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_1.png";
+const partner2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_2.png";
+const partner3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_3.png";
+const partner4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_4.png";
+const partner5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_5.png";
+const partner6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_6.png";
+const partner7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_7.png";
 const logos = [
   partner1,
   partner2,
@@ -28,6 +28,8 @@ const Partners = () => {
               key={`logo-a-${i}`}
               src={logo}
               alt={`Partner Logo ${i + 1}`}
+              width={120}
+              height={40}
               className="h-6 sm:h-8 md:h-10 w-auto object-cover"
             />
           ))}
@@ -39,6 +41,8 @@ const Partners = () => {
               key={`logo-a-${i}`}
               src={logo}
               alt={`Partner Logo ${i + 1}`}
+              width={120}
+              height={40}
               className="h-6 sm:h-8 md:h-10 w-auto object-cover"
             />
           ))}

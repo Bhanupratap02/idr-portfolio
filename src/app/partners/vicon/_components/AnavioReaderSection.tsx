@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import anavioImg from "@/assets/partners/vicon/anavio-reader.png";
+const anavioImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fanavio-reader.png";
 
 export default function AnavioReaderSection() {
   return (

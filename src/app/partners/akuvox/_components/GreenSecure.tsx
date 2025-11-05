@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import greenSecureImg from "@/assets/partners/akuvox/green-secure.png";
+const greenSecureImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fakuvox%2Fgreen-secure.png";
 
 export default function GreenSecure() {
   return (
@@ -10,6 +10,8 @@ export default function GreenSecure() {
         <Image
           src={greenSecureImg}
           alt="Akuvox Green Secure Section"
+          width={2120}
+          height={600}
           className="w-full h-auto object-contain scale-105"
           priority
           quality={95}

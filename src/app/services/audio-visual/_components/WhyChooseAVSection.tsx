@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import portal from "@/assets/idr_portal.jpeg"
+const portal = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr_portal.jpeg";
  const features = [
    {
      icon: (

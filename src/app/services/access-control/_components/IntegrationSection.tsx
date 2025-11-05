@@ -1,10 +1,10 @@
 /** @format */
 import Image from "next/image";
-import integration from "@/assets/services/access-control/integration.png"
-import camera from "@/assets/services/access-control/icons/camera.png";
-import intercom from "@/assets/services/access-control/icons/intercom.png";
-import access from "@/assets/services/access-control/icons/access.png";
-import tenants from "@/assets/services/access-control/icons/tenants.png";
+const integration = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Fintegration.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcamera.png";
+const intercom = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fintercom.png";
+const access = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Faccess.png";
+const tenants = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ftenants.png";
 export default function IntegrationSection() {
   return (
     <section className="bg-white px-4 sm:px-8 lg:px-16 xl:px-28 py-12 sm:py-16 lg:py-24">
@@ -22,6 +22,8 @@ export default function IntegrationSection() {
           <Image
             src={integration}
             alt="Integration Diagram"
+            width={1200}
+            height={800}
             className="w-full max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto h-auto rounded-lg "
           />
         </div>
@@ -62,6 +64,8 @@ export default function IntegrationSection() {
                 <Image
                   src={item.img}
                   alt={item.alt}
+                  width={40}
+                  height={40}
                   className="w-10 h-10 object-contain"
                 />
               </div>

@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import heroImage from "@/assets/services/audio-visual/hero.png";
+const heroImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fhero.png";
 import Link from "next/link";
 
 export default function HeroSection() {

@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import trackRecord from "@/assets/services/intercom/track_record.png"
+const trackRecord = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Ftrack_record.png";
 export function IntercomTrackRecordSection() {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24 xl:py-28 2xl:py-32 3xl:py-40">
@@ -59,6 +59,8 @@ export function IntercomTrackRecordSection() {
             <Image
               src={trackRecord}
               alt="IDR team working on intercom system"
+              width={1920}
+              height={1080}
               className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl h-auto object-cover rounded-xl "
               priority
             />

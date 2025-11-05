@@ -1,10 +1,10 @@
 /** @format */
 
-import CheckImg from "@/assets/partners/vicon/check.png";
-import CertifiedImg from "@/assets/partners/vicon/certified.png";
-import SecureImg from "@/assets/partners/vicon/secure.png";
+const CheckImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcheck.png";
+const CertifiedImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcertified.png";
+const SecureImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fsecure.png";
 import Image from "next/image";
-import cameraGroupImg from "@/assets/partners/vicon/camera-group.png";
+const cameraGroupImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcamera-group.png";
 
 const features = [
   {

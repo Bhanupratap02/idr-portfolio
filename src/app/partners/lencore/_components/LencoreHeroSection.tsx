@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import heroImg from "@/assets/partners/lencore/hero.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fhero.png";
 import Link from "next/link";
 export default function LencoreHeroSection() {
   return (

@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 
-import hero from "@/assets/services/intercom/hero.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Fhero.png";
 import Image from "next/image";
 import Link from "next/link";
 export function IntercomHeroSection() {
@@ -59,6 +59,8 @@ export function IntercomHeroSection() {
                 <Image
                   src={hero}
                   alt="Modern multifamily building with smart intercom system"
+                  width={1920}
+                  height={1080}
                   className="w-full max-w-full  lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl  h-auto object-cover   transition-transform duration-500"
                   priority
                 />

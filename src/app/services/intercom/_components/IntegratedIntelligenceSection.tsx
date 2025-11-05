@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import integratedIntelligenceImg from "@/assets/services/intercom/integrated_intelligence.png";
+const integratedIntelligenceImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Fintegrated_intelligence.png";
 const features = [
   {
     title: "Access Control",

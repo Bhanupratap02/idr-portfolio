@@ -92,7 +92,8 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                   <Image
                     src={typeof img.src === "string" ? img.src : img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                 </div>

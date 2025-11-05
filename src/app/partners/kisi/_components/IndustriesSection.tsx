@@ -1,5 +1,5 @@
 import Image from "next/image";
-import kisiKitImg from "@/assets/partners/kisi/kisi.png";
+const kisiKitImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fkisi%2Fkisi.png";
 import {
   Building2,     // Offices & Coworking
   Home,          // Residential

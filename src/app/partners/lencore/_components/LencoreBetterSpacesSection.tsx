@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import betterSpace from "@/assets/partners/lencore/better_space.png";
+const betterSpace = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fbetter_space.png";
 export default function LencoreBetterSpacesSection() {
   return (
     <section className="w-full py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28 bg-blue-900">

@@ -2,28 +2,28 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import list from "@/assets/services/e-rate-program/list.png"
-import shield from "@/assets/services/e-rate-program/shield.png";
-import faqs from "@/assets/services/e-rate-program/faqs.png";
+const list = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Flist.png";
+const shield = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Fshield.png";
+const faqs = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Ffaqs.png";
 export default function QuickAccessResourcesSection() {
   const resources = [
     {
       icon: (
-        <Image src={list} alt={"Eligible Services List"} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
+        <Image src={list} alt={"Eligible Services List"} width={48} height={48} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
       ),
       title: "Eligible Services List",
       desc: "Comprehensive list of services eligible for E-Rate program funding, including Category One and Category Two.",
     },
     {
       icon: (
-        <Image src={shield} alt={"CIPA Certification"} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
+        <Image src={shield} alt={"CIPA Certification"} width={48} height={48} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
       ),
       title: "CIPA Certification",
       desc: "Children's Internet Protection Act (CIPA) compliance guidelines and certification documentation required for E-Rate funding.",
     },
     {
       icon: (
-        <Image src={faqs} alt={"E-Rate FAQs"} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
+        <Image src={faqs} alt={"E-Rate FAQs"} width={48} height={48} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 3xl:w-12 3xl:h-12 text-[#004AAD]" />
       ),
       title: "E-Rate FAQs",
       desc: "Answers to frequently asked questions about the E-Rate program, application process, and funding disbursement.",

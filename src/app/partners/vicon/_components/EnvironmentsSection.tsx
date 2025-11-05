@@ -8,12 +8,12 @@ import {
   Shield,
   ShoppingBag,
 } from "lucide-react";
-import OfficeImg from "@/assets/partners/vicon/office.png";
-import SchoolImg from "@/assets/partners/vicon/school.png";
-import ClinicImg from "@/assets/partners/vicon/clinic.png";
-import ApartmentImg from "@/assets/partners/vicon/apartment.png";
-import GateImg from "@/assets/partners/vicon/gate.png";
-import RetailImg from "@/assets/partners/vicon/retail.png";
+const OfficeImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Foffice.png";
+const SchoolImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fschool.png";
+const ClinicImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fclinic.png";
+const ApartmentImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fapartment.png";
+const GateImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fgate.png";
+const RetailImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fretail.png";
 import EnvironmentCard from "./EnvironmentCard";
 
 const environments = [

@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import imgDemo from "@/assets/partners/avigilon/avigilon.png";
+const imgDemo = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Favigilon.png";
 import Link from "next/link";
 
 export function HeroSection() {

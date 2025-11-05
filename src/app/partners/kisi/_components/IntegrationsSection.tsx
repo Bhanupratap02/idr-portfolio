@@ -1,6 +1,6 @@
 
-import ImtegrationImage from "@/assets/partners/kisi/kisi-integrations.png"
 import Image from "next/image";
+const ImtegrationImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fkisi%2Fkisi-integrations.png";
 import {
   Camera,          // for Kisi + Rhombus (security/video)
   DoorOpen,        // for Kisi + ButterflyMX (intercom/entry)

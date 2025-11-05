@@ -1,8 +1,8 @@
 /** @format */
 
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/partners/speco/hero-bg.png";
-import heroMain from "@/assets/partners/speco/hero-main.png";
+const heroBg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fhero-bg.png";
+const heroMain = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fhero-main.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function SpecoHeroSection() {
