@@ -40,6 +40,8 @@ export default function BuildingsShowcaseSection() {
                 src={building.image}
                 alt={building.alt}
                 className="w-full h-64 sm:h-72 md:h-80 lg:h-72 xl:h-80 2xl:h-96 object-cover rounded-xl"
+                width={400}
+                height={300}
                 priority={index === 0}
               />
             </div>

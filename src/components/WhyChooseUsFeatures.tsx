@@ -9,10 +9,8 @@ import {
   MonitorCog,
 } from "lucide-react";
 
-import whyUs4 from "@/assets/why_us/why_us_4.png";
-import whyUs7 from "@/assets/why_us/why_us_7.png";
-import whyUs8 from "@/assets/why_us/why_us_8.png";
-import whyUs9 from "@/assets/why_us/why_us_9.png";
+
+
 
 const featureCards = [
   {
@@ -20,28 +18,32 @@ const featureCards = [
     description:
       "Every job is managed by a dedicated project manager to ensure clear communication, smooth coordination, and flawless delivery.",
     icon: ClipboardList,
-    image: whyUs4,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fwhy_us%2Fwhy_us_4.png",
   },
   {
     title: "Regional Reach, Local Focus",
     description:
       "Serving clients across New York, New Jersey, Florida, and surrounding regions with responsive, local service.",
     icon: TargetIcon,
-    image: whyUs7,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fwhy_us%2Fwhy_us_7.png",
   },
   {
     title: "Clean Documentation & Labeling",
     description:
       "Labeled racks, drop maps, test reports, and laminated plans provided for every system.",
     icon: FileText,
-    image: whyUs8,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fwhy_us%2Fwhy_us_8.png",
   },
   {
     title: "The IDR Portal",
     description:
       "A secure dashboard for every client — view service records, documentation, tickets, licensing, and more.",
     icon: MonitorCog,
-    image: whyUs9,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fwhy_us%2Fwhy_us_9.png",
   },
 ];
 

@@ -49,6 +49,8 @@ export default function CommonInstallTypesSection() {
                 <Image
                   src={type.image}
                   alt={`${type.title} - Lencore sound masking installation example`}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   quality={90}
                 />

@@ -1,11 +1,13 @@
 import { Award, Shield, CheckCircle, Wrench, Cable, Network, FileCheck, TrendingUp, Star, BadgeCheck, Layers, Zap } from 'lucide-react';
-import img2 from "@/assets/idr-advantage/Certified.jpeg";
 import { Button } from "@/components/ui/button";
-// import heroImage from "@/assets/certified-installation-hero.jpg";
-import heroImage from "@/assets/certified-installation-hero1.jpeg";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function CertifiedInstallation() {
+  const img2 =
+    "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr-advantage%2FCertified.jpeg";
+  const heroImage =
+    "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcertified-installation-hero1.jpeg";
   const brands = [
     "Meraki", "Kisi", "Vivotek", "Vicon", "ButterflyMX", 
     "Brivo", "Eagle Eye Networks", "Verkada", "Ortronix", "Belden"
@@ -55,7 +57,7 @@ export default function CertifiedInstallation() {
             <div className="order-1 lg:order-2 flex">
               <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group w-full min-h-[400px] lg:min-h-full">
                 <img 
-                  src={heroImage.src} 
+                  src={heroImage} 
                   alt="Certified technicians installing security system" 
                   className="w-full h-full object-cover"
                 />
@@ -162,10 +164,12 @@ export default function CertifiedInstallation() {
             {/* Right - Technician Image */}
             <div className="order-1 lg:order-2 flex">
               <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group w-full">
-                <img 
-                  src={img2.src} 
+                <Image
+                  src={img2} 
                   alt="IDR Certified Technicians Installing Security System" 
                   className="w-full h-full object-cover min-h-[400px] lg:min-h-full"
+                  width={800}
+                  height={600}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
                 

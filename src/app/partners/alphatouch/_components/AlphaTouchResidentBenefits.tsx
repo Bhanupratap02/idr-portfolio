@@ -75,14 +75,22 @@ export default function AlphaTouchResidentBenefits() {
                 <Image
                   src={benefits1Img}
                   alt="Intercom interface"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
+                  priority
+                  quality={90}
                 />
               </div>
               <div className=" rounded-xl overflow-hidden aspect-video">
                 <Image
                   src={benefits3Img}
                   alt="Mobile app interface"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-fill"
+                  priority
+                  quality={90}
                 />
               </div>
             </div>
@@ -91,14 +99,22 @@ export default function AlphaTouchResidentBenefits() {
                 <Image
                   src={benefits2Img}
                   alt="Video call feature"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-fill"
+                  priority
+                  quality={90}
                 />
               </div>
               <div className=" rounded-xl overflow-hidden  aspect-[4/3]">
                 <Image
                   src={benefits4Img}
                   alt="Access control"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
+                  priority
+                  quality={90}
                 />
               </div>
             </div>

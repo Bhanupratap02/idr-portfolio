@@ -84,11 +84,20 @@ export default function DCRedundancySection() {
                 alt="Network Redundancy Diagram"
                 className="w-full h-full rounded-lg "
               /> */}
-            <Image
+            {/* <Image
               src={redundancy}
               alt="Network Redundancy Diagram"
               className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[730px] 3xl:max-w-[800px] h-full rounded-lg"
-            />
+            /> */}
+            <div className="relative w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[730px] 3xl:max-w-[800px] aspect-[4/3] mx-auto">
+              <Image
+                src={redundancy}
+                alt="Network Redundancy Diagram"
+                fill
+                className="object-contain rounded-lg"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

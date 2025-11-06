@@ -7,8 +7,8 @@ const PartnerLogos = ({
   whiteTextLogos = [],
   direction = "left",
 }: {
-  logos: StaticImageData[];
-  whiteTextLogos?: StaticImageData[];
+  logos: StaticImageData[] | string[];
+  whiteTextLogos?: StaticImageData[] | string[];
   direction?: "left" | "right";
 }) => {
   // Triple the logos array to ensure smooth infinite scroll
@@ -28,7 +28,14 @@ const PartnerLogos = ({
         }}
       >
         {extendedLogos.map((img, idx) => {
-          const isWhiteLogo = whiteTextLogos.includes(img);
+
+              const isWhiteLogo = whiteTextLogos.some(
+                (logo) =>
+                  (typeof logo === "string" && logo === img) ||
+                  (typeof logo !== "string" &&
+                    logo.src === (img as StaticImageData)?.src)
+              );
+
           return (
             <div
               key={idx}

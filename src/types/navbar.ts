@@ -6,7 +6,7 @@ import { StaticImageData } from "next/image";
 export interface MenuItem {
   name: string;
   url: string;
-  icon?: StaticImageData;
+  icon?: StaticImageData | string;
 }
 
 export interface MenuSection {

@@ -4,11 +4,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Phone, Mail, MapPin, CheckCircle2, XCircle } from "lucide-react";
-import youtubeIcon from "@/assets/youtube.png";
-import linkedinIcon from "@/assets/linkedin.png";
-import facebookIcon from "@/assets/facebook.png";
-import instagramIcon from "@/assets/instagram_2.png";
-import tiktokIcon from "@/assets/tiktok_3.png";
+
+
+
+
 import Link from "next/link";
 import { submitToSheet } from "@/utils/submitToSheet";
 
@@ -55,27 +54,27 @@ const ContactSection = () => {
   const socialLinks = [
     {
       href: "https://www.youtube.com/@Idrtechnologysolutions",
-      icon: youtubeIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fyoutube.png",
       alt: "YouTube",
     },
     {
       href: "https://www.linkedin.com/company/idr-technology-solutions",
-      icon: linkedinIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Flinkedin.png",
       alt: "LinkedIn",
     },
     {
       href: "https://www.facebook.com/profile.php?id=100057472869428",
-      icon: facebookIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ffacebook.png",
       alt: "Facebook",
     },
     {
       href: "https://www.tiktok.com/@idrtechnologysolu?_t=ZP-8y9yjPO8tvL&_r=1",
-      icon: tiktokIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ftiktok_3.png",
       alt: "TikTok",
     },
     {
       href: "https://www.instagram.com/idrtechnologysolutions?igsh=MTNzcHBuanc3ZWM5ag%3D%3D&utm_source=qr",
-      icon: instagramIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Finstagram_2.png",
       alt: "Instagram",
     },
   ];

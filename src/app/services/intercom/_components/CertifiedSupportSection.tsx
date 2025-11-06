@@ -165,6 +165,8 @@ export function CertifiedSupportSection() {
         <div className="flex justify-center">
           <Image
             src={IDR_TEAM}
+            width={1600} // ✅ add this
+            height={900} // ✅ and this (keep aspect ratio ~16:9)
             alt="IDR Technology Solutions team"
             className="w-full max-w-5xl h-auto object-cover rounded-xl aspect-video"
           />

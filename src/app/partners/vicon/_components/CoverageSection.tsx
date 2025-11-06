@@ -47,6 +47,8 @@ export default function CoverageSection() {
               src={CoverageImg}
               alt="United States Network Coverage Map"
               className="object-cover w-full h-full"
+              width={500}
+              height={400}
               priority
             />
           </div>

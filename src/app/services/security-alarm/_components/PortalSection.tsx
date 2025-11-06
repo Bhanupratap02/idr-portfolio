@@ -129,6 +129,8 @@ export default function PortalSection() {
               <Image
                 src={portal}
                 alt="IDR Portal Dashboard"
+                width={1200} // ✅ Added
+                height={900} // ✅ Added (4:3 ratio)
                 className="object-contain w-full h-full"
                 priority
               />

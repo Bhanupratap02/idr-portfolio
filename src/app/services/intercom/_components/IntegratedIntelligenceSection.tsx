@@ -115,10 +115,23 @@ export function IntegratedIntelligenceSection() {
           <div className="flex justify-center lg:justify-start w-full h-full">
             <Image
               src={integratedIntelligenceImg}
+              width={1200} // ✅ Add approximate width
+              height={800} // ✅ Add height to maintain ratio
               alt="Integrated system dashboard"
               className="w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl  h-auto object-cover rounded-xl"
-             
+              priority
+              quality={90}
             />
+            {/* <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl  h-auto overflow-hidden rounded-xl">
+              <Image
+                src={integratedIntelligenceImg}
+                alt="Integrated system dashboard"
+                fill
+                className="object-cover"
+                priority
+                quality={90}
+              />
+            </div> */}
           </div>
 
           {/* Right Features */}

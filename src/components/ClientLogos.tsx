@@ -54,15 +54,14 @@
 // export default ClientLogos;
 /** @format */
 
-import Image, { StaticImageData } from "next/image";
+import Image  from "next/image";
 
 const ClientLogos = ({
   logos,
-  whiteTextLogos = [],
   direction = "left",
 }: {
-  logos: StaticImageData[];
-  whiteTextLogos?: StaticImageData[];
+  logos: string[];
+  whiteTextLogos?: string[];
   direction?: "left" | "right";
 }) => {
   // Triple the logos array for seamless infinite scroll
@@ -79,7 +78,7 @@ const ClientLogos = ({
         }}
       >
         {extendedLogos.map((img, idx) => {
-          const isWhiteLogo = whiteTextLogos.includes(img);
+      
           return (
             <div
               key={idx}
@@ -101,9 +100,7 @@ const ClientLogos = ({
                   src={img}
                   alt={`Client Logo ${idx + 1}`}
                   fill
-                  className={`object-contain opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-105 ${
-                    isWhiteLogo ? "" : "filter brightness-0 invert"
-                  }`}
+                  className={`object-contain opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-105 `}
                   sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 180px, (max-width: 1536px) 200px, 220px"
                   quality={95}
                 />

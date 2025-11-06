@@ -52,6 +52,8 @@ export default function BuildSpeedSection() {
                       src={feature.icon}
                       alt={`${feature.title} icon`}
                       className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-9 xl:h-9  group-hover:scale-110 transition-transform duration-300"
+                      width={30}
+                      height={30}
                     />
                   </div>
                   <div>
@@ -72,7 +74,11 @@ export default function BuildSpeedSection() {
               <Image
                 src={cameraGroupImg}
                 alt="Modern Security Access Control System"
+                width={800}
+                height={600}
                 className="w-full h-auto object-cover"
+                priority
+                quality={90}
               />
             </div>
           </div>

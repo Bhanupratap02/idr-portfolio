@@ -11,15 +11,18 @@ export default function ERateProgramHeroSection() {
   return (
     <section className="w-full min-h-[90vh] sm:min-h-[95vh] md:min-h-[90vh] lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh] relative py-16 md:py-20 lg:py-24 2xl:py-28 flex md:items-center ">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={background}
-          alt="E-Rate Program Background"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+
+        <div className="relative w-full h-full">
+          <Image
+            src={background}
+            alt="E-Rate Program Background"
+            fill
+            className="object-cover"
+            priority
+            quality={90}
+          />
+        </div>
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" /> */}
       </div>
 

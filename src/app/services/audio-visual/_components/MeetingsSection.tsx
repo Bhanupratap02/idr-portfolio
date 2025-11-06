@@ -153,11 +153,17 @@ export default function MeetingsSection() {
         {/* Main Image with Callouts */}
         <div className="relative mb-16">
           <div className="relative rounded-xl overflow-hidden ">
-            <Image
-              src={meetings}
-              alt="Conference Room"
-              className="h-64 sm:h-80 md:h-[400px] lg:h-[500px] 2xl:h-[600px] 3xl:h-[700px] object-cover"
-            />
+  
+            <div className="relative w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] 2xl:h-[600px] 3xl:h-[700px]">
+              <Image
+                src={meetings}
+                alt="Conference Room"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
             {/* Feature callouts */}
             {features.map((feature, index) => (
               <div

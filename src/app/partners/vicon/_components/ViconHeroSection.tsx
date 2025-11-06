@@ -1,7 +1,8 @@
 /** @format */
 import Image from "next/image";
 const heroMainImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-main.png";
-const heroBgImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-bg.png";
+const heroBgImg =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-bg.png?width=1920&height=1080&format=webp&fit=crop";
 import Link from "next/link";
 export default function ViconHeroSection() {
   return (
@@ -53,6 +54,8 @@ export default function ViconHeroSection() {
                   src={heroMainImg}
                   alt="Vicon security camera system - Professional surveillance equipment"
                   className="w-full h-auto relative z-10 drop-shadow-2xl"
+                  width={1200}
+                  height={800}
                   priority
                   quality={90}
                 />

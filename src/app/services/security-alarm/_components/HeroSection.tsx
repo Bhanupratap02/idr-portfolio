@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20 lg:opacity-30"
         style={{
-          backgroundImage: `url(${hero_bg.src})`,
+          backgroundImage: `url(${hero_bg})`,
         }}
       />
 

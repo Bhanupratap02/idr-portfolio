@@ -33,6 +33,8 @@ export default function LencoreBetterSpacesSection() {
             <Image
               src={betterSpace}
               alt="Professional installation team working on Lencore sound masking system - Expert deployment and setup"
+              width={1200}
+              height={800}
               className="w-full h-auto rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
               priority
               quality={90}

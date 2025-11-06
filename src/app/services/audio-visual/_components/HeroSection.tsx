@@ -11,8 +11,10 @@ export default function HeroSection() {
         <Image
           src={heroImage}
           alt="Technology Meets Experience"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
           priority
+          quality={90}
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-800/50 to-transparent"></div>

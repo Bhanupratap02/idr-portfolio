@@ -96,7 +96,11 @@ export default function NITEducationSection() {
             <Image
               src={education}
               alt="Education Technology Classroom"
+              width={1200} // ✅ Added width
+              height={800} // ✅ Added height (preserves aspect ratio)
               className="w-full md:h-[20rem] lg:h-[28rem] 2xl:h-[32rem]   rounded-lg"
+              priority
+              quality={90}
             />
           </div>
 

@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 
 interface FeatureCardProps {
-  icon: StaticImageData;
+  icon: StaticImageData | string;
   title: string;
   description: string;
 }

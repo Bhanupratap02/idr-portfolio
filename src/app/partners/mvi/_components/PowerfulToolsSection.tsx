@@ -45,7 +45,11 @@ export default function PowerfulToolsSection() {
             <Image
               src={DashboardImg}
               alt="MVI Systems Management Dashboard interface showing intercom monitoring"
+
               className="w-full max-w-xl sm:max-w-2xl xl:max-w-2xl  h-auto rounded-xl  hover:-translate-y-4 transition-all duration-700"
+              width={1200}
+              height={800}
+              quality={90}
               priority
             />
           </div>

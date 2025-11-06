@@ -32,6 +32,8 @@ export default function AlphaTouchHero() {
           src={imgAlphaTouchHero}
           alt="AlphaTouch Solutions - Professional technology services and solutions"
           fill
+          // width={1920}
+          // height={1080}
           className="object-fill  object-left-top"
           priority
           quality={100}

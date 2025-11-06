@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import chrisKoble from "@/assets/testimonial_2.png";
+
 
 const Testimonials = () => {
   return (
@@ -48,8 +48,12 @@ const Testimonials = () => {
               <div className="relative mb-6 sm:mb-8">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52 2xl:w-60 2xl:h-60 3xl:w-70 3xl:h-70 rounded-full overflow-hidden border-[10px] border-white">
                   <Image
-                    src={chrisKoble}
+                    src={
+                      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ftestimonial_2.png"
+                    }
                     alt="Chris Koble"
+                    width={400}
+                    height={400}
                     quality={100}
                     className="object-contain"
                   />

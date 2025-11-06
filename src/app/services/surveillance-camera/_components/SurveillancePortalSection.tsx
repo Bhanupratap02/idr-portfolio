@@ -119,6 +119,8 @@ export default function SurveillancePortalSection() {
               <Image
                 src={portal}
                 alt="IDR Portal Dashboard"
+                width={1200} // ✅ added width
+                height={900} // ✅ added height (4:3 ratio)
                 className="object-contain w-full h-full"
                 priority
               />

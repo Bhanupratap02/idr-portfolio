@@ -16,6 +16,8 @@ export function LegacySystemsSection() {
             <Image
               src={legacySystemImg}
               alt="Legacy intercom system maintenance"
+              width={1200} // ✅ add this
+              height={800} // ✅ and this
               className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl 2xl:max-w-4xl  h-auto object-cover rounded-xl"
               priority
             />

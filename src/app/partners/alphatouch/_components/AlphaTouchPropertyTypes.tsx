@@ -67,13 +67,26 @@ export default function AlphaTouchPropertyTypes() {
               className={`relative group rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-5  md:p-6 lg:p-6 xl:px-8  2xl:p-8.5 hover:-translate-y-2 ${property.bgColor}`}
             >
               {/* Image positioned like in Figma */}
-              <div className="rounded-xl overflow-hidden mb-2  md:mb-4   2xl:mb-5.5 transition-all duration-300 group-hover:scale-105">
+              {/* <div className="rounded-xl overflow-hidden mb-2  md:mb-4   2xl:mb-5.5 transition-all duration-300 group-hover:scale-105">
                 <Image
                   src={property.image}
+                  width={400}
+                  height={300}
                   alt={property.title}
                   className="w-full h-full object-cover"
                 />
+              </div> */}
+              <div className="relative rounded-xl overflow-hidden mb-2 md:mb-4 2xl:mb-5.5 transition-all duration-300 group-hover:scale-105 aspect-[4/3]">
+                <Image
+                  src={property.image}
+                  alt={property.title}
+                  fill
+                  className="object-cover"
+                  priority={false}
+                  quality={90}
+                />
               </div>
+
               <div className="py-1 md:py-2 flex-1 flex flex-col">
                 <h3 className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl   text-white mb-2 sm:mb-3 md:mb-4 lg:mb-3 xl:mb-3.5 2xl:mb-4 leading-tight">
                   {property.title}

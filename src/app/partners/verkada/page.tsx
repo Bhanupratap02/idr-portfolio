@@ -151,7 +151,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={lockImg.src} 
+                  src={lockImg} 
                   alt="Access Control" 
                   className="w-full h-full object-cover"
                 />
@@ -192,7 +192,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={airImg.src} 
+                  src={airImg} 
                   alt="Environmental Sensors" 
                   className="w-full h-full object-cover"
                 />
@@ -214,7 +214,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={alaramImg.src} 
+                  src={alaramImg} 
                   alt="Alarms" 
                   className="w-full h-full object-cover"
                 />

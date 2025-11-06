@@ -116,6 +116,8 @@ export default function NITCertifiedSection() {
           <div className="relative h-full">
             <Image
               src={certified}
+              width={1200} // ✅ Add a width (Next.js requires this)
+              height={800} // ✅ Add a height (keeps correct aspect ratio)
               alt="Certified Network Engineers"
               className="w-full md:h-[20rem] lg:h-[25rem]  3xl:h-[32rem] rounded-lg"
             />

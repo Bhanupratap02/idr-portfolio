@@ -76,6 +76,8 @@ export default function FeaturesSection() {
               width={800}
               height={600}
               className="w-full h-56 sm:h-64 md:h-72 lg:h-80 2xl:h-86 object-cover rounded-lg mb-4"
+              quality={90}
+              priority
             />
             <div className="text-center space-y-1 sm:space-y-2">
               <h4 className="text-base sm:text-lg md:text-xl 2xl:text-2xl font-medium text-white">

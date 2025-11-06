@@ -8,11 +8,10 @@ import {
   Users,
   TrendingUp,
 } from "lucide-react";
-// import heroConsultation from "@/assets/idr-advantage/hero-consultation-professional.jpg";
-import heroConsultation from "@/assets/idr-advantage/consultation 2.jpeg";
 import Link from "next/link";
 import Image from "next/image";
-
+const heroConsultation =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr-advantage%2Fconsultation%202.jpeg";
 export default function HeroSection() {
   return (
     <div
@@ -88,6 +87,9 @@ export default function HeroSection() {
           <Image
             src={heroConsultation}
             alt="IDR Professional Consultation Team"
+            fill
+            // width={800}
+            // height={600}
             className="w-full h-full object-cover rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-700"
           />
         </div>

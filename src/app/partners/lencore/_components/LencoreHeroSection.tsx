@@ -37,7 +37,6 @@ export default function LencoreHeroSection() {
               </Button>
             </Link>
             <Link href={"/portfolio"}>
-  
               <Button
                 variant="outline"
                 className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-6 sm:px-7 md:px-8 xl:px-10 2xl:px-12 py-3 sm:py-4  2xl:py-5 text-sm sm:text-base md:text-lg  2xl:text-xl  font-light h-auto hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -54,6 +53,8 @@ export default function LencoreHeroSection() {
             <Image
               src={heroImg}
               alt="Lencore Sound Masking Solutions"
+              width={1200}
+              height={800}
               className="w-full  h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>

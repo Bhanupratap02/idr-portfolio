@@ -15,10 +15,13 @@ export default function SpotlightHero() {
             width={1920}
             height={1080}
             className="absolute h-[120%] w-full object-cover -top-[10%]"
+            priority
+            quality={90}
           />
         </div>
         <div className="absolute inset-0 bg-gray-600/10" />
       </div>
+ 
 
       {/* Hero Content */}
       <div className="relative z-10 flex  items-center justify-center px-4 sm:px-6 lg:px-8 py-20">

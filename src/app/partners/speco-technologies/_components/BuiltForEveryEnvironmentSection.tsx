@@ -84,6 +84,8 @@ export default function BuiltForEveryEnvironmentSection() {
                   <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
                     <Image
                       className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                      width={65}
+                      height={65}
                       alt={`${card.title} security solutions`}
                       src={card.icon}
                       priority={index < 3}

@@ -71,6 +71,8 @@ export default function SpecoHeroSection() {
               src={heroMain}
               alt="Akuvox Intercom and Access Control Solutions"
               className="w-full h-auto rounded-lg"
+              width={1200}
+              height={800}
               priority
               quality={90}
             />

@@ -50,6 +50,8 @@ export default function SurveillanceHeroSection() {
                 alt="Surveillance Camera Systems"
                 fill
                 className="w-full h-full object-cover"
+                priority
+                quality={90}
               />
               {/* Overlay gradient */}
               {/* <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div> */}
