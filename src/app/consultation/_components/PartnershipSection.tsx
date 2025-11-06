@@ -1,8 +1,8 @@
 /** @format */
 
 import { MessageCircle, Users } from "lucide-react";
-import ConsultImg from "@/assets/idr-advantage/Consultation.jpeg";
-
+const ConsultImg =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr-advantage%2FConsultation.jpeg";
 export default function PartnershipSection() {
   return (
     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -59,7 +59,7 @@ export default function PartnershipSection() {
       <div className="order-1 lg:order-2">
         <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
           <img
-            src={ConsultImg.src}
+            src={ConsultImg}
             alt="IDR Consultation & Design Team"
             className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-700"
           />

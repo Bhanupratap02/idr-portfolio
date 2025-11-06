@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import portal from "@/assets/idr_portal.jpeg"
+const portal = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr_portal.jpeg";
  const features = [
    {
      icon: (
@@ -160,11 +160,15 @@ export default function WhyChooseAVSection() {
               Access Your Systems Anywhere
             </h3>
             <div className="mb-6">
-              <Image
-                src={portal}
-                alt="Client Portal"
-                className="w-full h-52 sm:h-60 md:h-72 lg:h-80 2xl:h-96 object-contain rounded-lg"
-              />
+              <div className="relative w-full h-52 sm:h-60 md:h-72 lg:h-80 2xl:h-96 rounded-lg overflow-hidden">
+                <Image
+                  src={portal}
+                  alt="Client Portal"
+                  fill
+                  className="object-contain rounded-lg"
+                  priority
+                />
+              </div>
             </div>
             <p className="text-sm sm:text-base lg:text-lg 2xl:text-xl text-gray-600">
               Our client portal gives you real-time access to your systems,

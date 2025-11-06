@@ -1,7 +1,7 @@
 
-import brivo1 from "@/assets/partners/brivo/brivo_reader.png";
 import Image from "next/image";
-import brivo2 from "@/assets/partners/brivo/brivo_scanner.png";
+const brivo1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fbrivo%2Fbrivo_reader.png";
+const brivo2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fbrivo%2Fbrivo_scanner.png";
 const ImagesSection = () => {
   return (
     <div className="pb-12 pt-8 sm:pb-16 sm:pt-10 md:pb-18 md:pt-12 lg:pb-20 lg:pt-16 xl:pb-22 xl:pt-18 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-32">

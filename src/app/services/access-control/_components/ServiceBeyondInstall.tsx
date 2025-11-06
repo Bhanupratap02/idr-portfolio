@@ -1,11 +1,11 @@
 /** @format */
-import expert from "@/assets/services/access-control/icons/expert.png";
-import designs from "@/assets/services/access-control/icons/designs.png";
-import manager from "@/assets/services/access-control/icons/manager.png";
-import technicians from "@/assets/services/access-control/icons/technicians.png";
-import docs from "@/assets/services/access-control/icons/docs.png";
-import assistance from "@/assets/services/access-control/icons/assistance.png";
-import certified from "@/assets/services/access-control/icons/certified.png";
+const expert = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fexpert.png";
+const designs = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fdesigns.png";
+const manager = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fmanager.png";
+const technicians = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ftechnicians.png";
+const docs = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fdocs.png";
+const assistance = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fassistance.png";
+const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fcertified.png";
 import Image from "next/image";
   const serviceSteps = [
     {
@@ -71,6 +71,8 @@ export default function ServiceBeyondInstall() {
                 <Image
                   src={step.icon}
                   alt={step.title}
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -95,6 +97,8 @@ export default function ServiceBeyondInstall() {
           <Image
             src={certified}
             alt="Certified IDR Techs"
+            width={48}
+            height={48}
             className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12"
           />
           <span className="text-[#2E2E2E] text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium text-left">

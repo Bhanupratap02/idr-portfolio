@@ -1,11 +1,11 @@
 /** @format */
-import p1 from "@/assets/services/structured-cabling/icons/p_1.png";
-import p2 from "@/assets/services/structured-cabling/icons/p_2.png";
-import p3 from "@/assets/services/structured-cabling/icons/p_3.png";
-import p4 from "@/assets/services/structured-cabling/icons/p_4.png";
-import p5 from "@/assets/services/structured-cabling/icons/p_5.png";
-import p6 from "@/assets/services/structured-cabling/icons/p_6.png";
-import p7 from "@/assets/services/structured-cabling/icons/p_7.png";
+const p1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_1.png";
+const p2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_2.png";
+const p3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_3.png";
+const p4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_4.png";
+const p5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_5.png";
+const p6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_6.png";
+const p7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fp_7.png";
 import Image from "next/image";
 interface ProcessStepProps {
   icon: React.ReactNode;
@@ -42,6 +42,8 @@ export default function ProcessSection() {
         <Image
           src={p1}
           alt="Site Walk & Assessment"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),
@@ -52,6 +54,8 @@ export default function ProcessSection() {
         <Image
           src={p2}
           alt="Cable Path Planning"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),
@@ -62,6 +66,8 @@ export default function ProcessSection() {
         <Image
           src={p3}
           alt="Dedicated Project Manager"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),
@@ -72,6 +78,8 @@ export default function ProcessSection() {
         <Image
           src={p4}
           alt="Professional Installation"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),
@@ -82,6 +90,8 @@ export default function ProcessSection() {
         <Image
           src={p5}
           alt="Testing & Firestopping"
+          width={64}
+          height={64}
           className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 text-white"
         />
       ),
@@ -92,6 +102,8 @@ export default function ProcessSection() {
         <Image
           src={p6}
           alt="Full Documentation"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),
@@ -102,6 +114,8 @@ export default function ProcessSection() {
         <Image
           src={p7}
           alt="Ongoing Service Agreements"
+          width={32}
+          height={32}
           className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 text-white"
         />
       ),

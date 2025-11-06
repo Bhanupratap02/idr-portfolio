@@ -2,7 +2,7 @@
 
 import { BarChart3, Upload, Users, Building } from "lucide-react";
 import Image from "next/image";
-import DashboardImg from "@/assets/partners/mvi/dashboard.png";
+const DashboardImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fdashboard.png";
 export default function PowerfulToolsSection() {
   const tools = [
     {
@@ -45,7 +45,11 @@ export default function PowerfulToolsSection() {
             <Image
               src={DashboardImg}
               alt="MVI Systems Management Dashboard interface showing intercom monitoring"
+
               className="w-full max-w-xl sm:max-w-2xl xl:max-w-2xl  h-auto rounded-xl  hover:-translate-y-4 transition-all duration-700"
+              width={1200}
+              height={800}
+              quality={90}
               priority
             />
           </div>

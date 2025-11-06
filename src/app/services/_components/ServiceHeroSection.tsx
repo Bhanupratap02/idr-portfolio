@@ -1,10 +1,10 @@
 /** @format */
 "use client";
 import Image from "next/image";
-import hero from "@/assets/services/hero.png";
-import heroCamera1 from "@/assets/services/hero_camera_1.png";
-import heroCamera2 from "@/assets/services/hero_camera_2.png";
-import heroCamera3 from "@/assets/services/hero_camera_3.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhero.png";
+const heroCamera1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhero_camera_1.png";
+const heroCamera2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhero_camera_2.png";
+const heroCamera3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fhero_camera_3.png";
 import Link from "next/link";
 export default function ServiceHeroSection() {
   return (

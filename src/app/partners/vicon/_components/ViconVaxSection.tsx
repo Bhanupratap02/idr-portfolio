@@ -1,12 +1,12 @@
 /** @format */
-import CameraImg from "@/assets/partners/vicon/camera.png";
-import PhoneImg from "@/assets/partners/vicon/phone.png";
-import MonitorImg from "@/assets/partners/vicon/monitor.png";
-import CertificationImg from "@/assets/partners/vicon/certification.png";
-import CloudImg from "@/assets/partners/vicon/cloud.png";
-import SettingsImg from "@/assets/partners/vicon/settings.png";
+const CameraImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcamera.png";
+const PhoneImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fphone.png";
+const MonitorImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fmonitor.png";
+const CertificationImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcertification.png";
+const CloudImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcloud.png";
+const SettingsImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fsettings.png";
 import Image from "next/image";
-import imgViconVax from "@/assets/partners/vicon/vicon-info.png";
+const imgViconVax = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fvicon-info.png";
 import ViconVaxCard from "./ViconVaxCard";
 
 const features = [
@@ -67,6 +67,8 @@ export default function ViconVaxSection() {
             <Image
               src={imgViconVax}
               alt="Professional Security Technology and Surveillance Cameras"
+              width={1200}
+              height={800}
               className="w-full h-auto rounded-lg shadow-sm"
             />
           </div>

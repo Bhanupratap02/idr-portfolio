@@ -2,12 +2,12 @@
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import IntercomsImg from "@/assets/partners/mvi/intercoms.png";
-import DoorImg from "@/assets/partners/mvi/door.png";
-import AudioImg from "@/assets/partners/mvi/audio.png";
-import AccessImg from "@/assets/partners/mvi/access.png";
-import IntegrationImg from "@/assets/partners/mvi/integration.png";
-import LoggingImg from "@/assets/partners/mvi/logging.png";
+const IntercomsImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fintercoms.png";
+const DoorImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fdoor.png";
+const AudioImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Faudio.png";
+const AccessImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Faccess.png";
+const IntegrationImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fintegration.png";
+const LoggingImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Flogging.png";
 export default function WhatMakesMVISection() {
   const products = [
     {

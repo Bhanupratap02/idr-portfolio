@@ -1,9 +1,9 @@
 /** @format */
 import Image from "next/image";
-import LegacySystems from "@/assets/services/surveillance-camera/legacy_systems.png";
-import camera_2 from "@/assets/services/surveillance-camera/camera_2.png";
-import layers from "@/assets/services/surveillance-camera/layers.png";
-import settings from "@/assets/services/surveillance-camera/settings.png";
+const LegacySystems = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Flegacy_systems.png";
+const camera_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fcamera_2.png";
+const layers = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Flayers.png";
+const settings = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fsettings.png";
 const features = [
   {
     id: 1,
@@ -40,6 +40,8 @@ export default function LegacySystemsSection() {
               <Image
                 src={LegacySystems}
                 alt="Legacy Camera Systems - Traditional surveillance infrastructure support"
+                width={1200}
+                height={800}
                 className="w-full h-full"
                 priority
               />
@@ -67,6 +69,8 @@ export default function LegacySystemsSection() {
                     <Image
                       src={item.icon}
                       alt={`${item.title} icon`}
+                      width={64}
+                      height={64}
                       className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>

@@ -1,8 +1,8 @@
 /** @format */
 
 import { CheckIcon } from "lucide-react";
-import cables from "@/assets/services/structured-cabling/cables.png";
-import cloud from "@/assets/services/structured-cabling/cloud.png";
+const cables = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Fcables.png";
+const cloud = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Fcloud.png";
 import Image from "next/image";
 interface QualityItemProps {
   title: string;
@@ -55,10 +55,11 @@ export default function QualityStandardsSection() {
       <div className="max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[120rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 2xl:px-28">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 items-stretch h-full">
           {/* Left Content - Image */}
-          <div className="flex justify-center lg:justify-start h-full order-2 lg:order-1 border-gray-100 hover:shadow-lg transition-shadow duration-200">
+          <div className="flex justify-center lg:justify-start h-full order-2 lg:order-1 border-gray-100 hover:shadow-lg transition-shadow duration-200 relative">
             <Image
               src={cables}
               alt="Network Infrastructure Rack"
+              fill
               className="w-full h-full  rounded-lg object-cover shadow-md "
               sizes="(max-width: 640px) 400px, (max-width: 1024px) 450px, (max-width: 1280px) 500px, (max-width: 1920px) 519px, 600px"
             />
@@ -96,6 +97,8 @@ export default function QualityStandardsSection() {
                     key={index}
                     src={cloud}
                     alt="Partner Logo"
+                    width={64}
+                    height={64}
                     className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 opacity-70 hover:opacity-100 transition-opacity duration-200"
                   />
                 ))}

@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import legacySystemImg from "@/assets/services/intercom/legacy_systems.png"
+const legacySystemImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Flegacy_systems.png";
 const benefits = [
   "Repair and expand traditional systems",
   "No disruption to building infrastructure",
@@ -16,6 +16,8 @@ export function LegacySystemsSection() {
             <Image
               src={legacySystemImg}
               alt="Legacy intercom system maintenance"
+              width={1200} // ✅ add this
+              height={800} // ✅ and this
               className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl 2xl:max-w-4xl  h-auto object-cover rounded-xl"
               priority
             />

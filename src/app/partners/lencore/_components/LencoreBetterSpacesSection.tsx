@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import betterSpace from "@/assets/partners/lencore/better_space.png";
+const betterSpace = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fbetter_space.png";
 export default function LencoreBetterSpacesSection() {
   return (
     <section className="w-full py-12 sm:py-16 md:py-20 xl:py-24 2xl:py-28 bg-blue-900">
@@ -33,6 +33,8 @@ export default function LencoreBetterSpacesSection() {
             <Image
               src={betterSpace}
               alt="Professional installation team working on Lencore sound masking system - Expert deployment and setup"
+              width={1200}
+              height={800}
               className="w-full h-auto rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
               priority
               quality={90}

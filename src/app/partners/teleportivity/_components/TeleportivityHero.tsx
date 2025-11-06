@@ -1,6 +1,6 @@
 /** @format */
 
-import heroImg from "@/assets/partners/teleportivity/heroImg.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fteleportivity%2FheroImg.png";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 

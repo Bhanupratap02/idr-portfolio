@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import portal from "@/assets/idr_portal.jpeg";
+const portal = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr_portal.jpeg";
 const features = [
   {
     id: 1,
@@ -119,6 +119,8 @@ export default function SurveillancePortalSection() {
               <Image
                 src={portal}
                 alt="IDR Portal Dashboard"
+                width={1200} // ✅ added width
+                height={900} // ✅ added height (4:3 ratio)
                 className="object-contain w-full h-full"
                 priority
               />

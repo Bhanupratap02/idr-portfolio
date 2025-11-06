@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import modernIntercom from "@/assets/services/intercom/modern_intercom.png"
+const modernIntercom = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fintercom%2Fmodern_intercom.png";
 const features = [
   {
     title: "Video Calling",
@@ -114,12 +114,22 @@ export function ModernIntercomSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 3xl:gap-32 items-start">
           {/* Left Image */}
           <div className="flex justify-center lg:justify-start w-full h-full">
-            <Image
+            {/* <Image
               src={modernIntercom}
               alt="Modern intercom system interface"
               className="w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl 3xl:max-w-4xl h-auto object-cover rounded-xl"
               priority
-            />
+            /> */}
+            <div className="relative w-full max-w-4xl aspect-[4/3] overflow-hidden rounded-xl mx-auto">
+              <Image
+                src={modernIntercom}
+                alt="Modern intercom system interface"
+                fill
+                className="object-cover"
+                priority
+                quality={90}
+              />
+            </div>
           </div>
 
           {/* Right Features */}

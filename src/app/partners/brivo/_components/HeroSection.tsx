@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { BadgeCheck, PlayCircle, Wallet } from "lucide-react";
-import heroImg from "@/assets/partners/brivo/brivo.png";
+const heroImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fbrivo%2Fbrivo.png";
 import Link from "next/link";
 
 export default function HeroSection() {

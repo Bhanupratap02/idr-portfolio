@@ -1,7 +1,7 @@
 /** @format */
 import Image from "next/image";
-import legacy_before from "@/assets/services/security-alarm/legacy_before.png";
-import legacy_after from "@/assets/services/security-alarm/legacy_after.png";
+const legacy_before = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Flegacy_before.png";
+const legacy_after = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Flegacy_after.png";
 import { Check, ArrowRight } from "lucide-react";
   const features = [
     {
@@ -38,11 +38,15 @@ export default function LegacySystemsSection() {
               <Image
                 src={legacy_before}
                 alt="Legacy system before"
+                width={800}
+                height={400}
                 className="w-full h-64 sm:h-80 lg:h-96 2xl:h-[400px]  object-cover"
               />
               <Image
                 src={legacy_after}
                 alt="Modern system after"
+                width={800}
+                height={400}
                 className="w-full h-64 sm:h-80 lg:h-96 2xl:h-[400px]  object-cover"
               />
             </div>

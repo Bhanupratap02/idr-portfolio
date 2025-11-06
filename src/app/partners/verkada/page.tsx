@@ -1,7 +1,7 @@
 import { Video, Cloud, Smartphone, Users, Lock, Bell, CheckCircle2, Truck, HandHeart, Headphones, Zap, Globe, Monitor, GraduationCap, Building2, ShoppingBag, Landmark, Utensils } from "lucide-react";
-import lockImg from "@/assets/partners/verkada/verkada-lock.png";
-import airImg from "@/assets/partners/verkada/verkada-air.png";
-import alaramImg from "@/assets/partners/verkada/varkada-alaram.png";
+const lockImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fverkada-lock.png";
+const airImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fverkada-air.png";
+const alaramImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fvarkada-alaram.png";
 import Link from "next/link";
 
 export default function Index() {
@@ -151,7 +151,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={lockImg.src} 
+                  src={lockImg} 
                   alt="Access Control" 
                   className="w-full h-full object-cover"
                 />
@@ -192,7 +192,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={airImg.src} 
+                  src={airImg} 
                   alt="Environmental Sensors" 
                   className="w-full h-full object-cover"
                 />
@@ -214,7 +214,7 @@ export default function Index() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gradient-to-r from-black/70 to-transparent">
                 <img 
-                  src={alaramImg.src} 
+                  src={alaramImg} 
                   alt="Alarms" 
                   className="w-full h-full object-cover"
                 />

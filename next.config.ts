@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'idr-portfolio-storage.s3.amazonaws.com',
+        pathname: '/**',
+      },
+    ],
+  },
+  
 };
 
 export default nextConfig;

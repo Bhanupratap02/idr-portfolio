@@ -1,11 +1,11 @@
 /** @format */
   
-import sonos from "@/assets/services/conference-room/icons/Sonos.png";
-import mic2 from "@/assets/services/conference-room/icons/mic_2.png";
-import dsp from "@/assets/services/conference-room/icons/DSP.png";
-import amplifier from "@/assets/services/conference-room/icons/amplifier.png";
-import panels from "@/assets/services/conference-room/icons/panels.png";
-import tv from "@/assets/services/conference-room/icons/tv_2.png";
+const sonos = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2FSonos.png";
+const mic2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fmic_2.png";
+const dsp = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2FDSP.png";
+const amplifier = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Famplifier.png";
+const panels = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Fpanels.png";
+const tv = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Ficons%2Ftv_2.png";
 import Image from "next/image";
 const products = [
   {
@@ -68,6 +68,8 @@ export default function TrustedProductsSection() {
                 <Image
                   src={product.icon}
                   alt={product.name}
+                  width={64}
+                  height={64}
                   className={product.classNames}
                 />
               </div>

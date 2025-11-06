@@ -1,10 +1,10 @@
-import cameraGroupImg from "@/assets/partners/speco/camera-group.png";
-import camera from "@/assets/partners/speco/camera.png";
-import record from "@/assets/partners/speco/record.png";
-import lock from "@/assets/partners/speco/lock.png";
-import audio from "@/assets/partners/speco/audio.png";
-import ndaa from "@/assets/partners/speco/ndaa.png";
-import module from "@/assets/partners/speco/module.png";
+const cameraGroupImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera-group.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera.png";
+const record = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Frecord.png";
+const lock = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Flock.png";
+const audio = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Faudio.png";
+const ndaa = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fndaa.png";
+const moduleImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fmodule.png";
 import Image from "next/image";
 export default function WhyChooseSpeco() {
   const features = [
@@ -36,7 +36,7 @@ export default function WhyChooseSpeco() {
       description: "Meet government and institutional requirements",
     },
     {
-      icon: module,
+      icon: moduleImg,
       title: "Expandable, Modular Systems",
       description:
         "Start small and grow your security infrastructure as needed",
@@ -56,6 +56,8 @@ export default function WhyChooseSpeco() {
               <Image
                 className=" w-full h-full object-cover"
                 alt="Speco security camera group showcasing various camera models and options"
+                width={400}
+                height={300}
                 src={cameraGroupImg}
                 priority
                 quality={90}
@@ -73,6 +75,8 @@ export default function WhyChooseSpeco() {
                 <div className="flex-shrink-0 mt-1">
                   <Image
                     className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-9 xl:h-9 2xl:w-11 2xl:h-11 3xl:w-12 3xl:h-12 group-hover:scale-110 transition-transform duration-300"
+                    width={30}
+                    height={30}
                     alt={`${feature.title} icon`}
                     src={feature.icon}
                   />

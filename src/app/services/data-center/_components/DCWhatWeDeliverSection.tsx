@@ -1,10 +1,10 @@
 /** @format */
-import deliver1 from "@/assets/services/data-center/icons/deliver_1.png";
-import deliver2 from "@/assets/services/data-center/icons/deliver_2.png";
-import deliver3 from "@/assets/services/data-center/icons/deliver_3.png";
-import deliver4 from "@/assets/services/data-center/icons/deliver_4.png";
-import deliver5 from "@/assets/services/data-center/icons/deliver_5.png";
-import deliver6 from "@/assets/services/data-center/icons/deliver_6.png";
+const deliver1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_1.png";
+const deliver2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_2.png";
+const deliver3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_3.png";
+const deliver4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_4.png";
+const deliver5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_5.png";
+const deliver6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fdeliver_6.png";
 import Image from "next/image";
 
 export  default function DCWhatWeDeliverSection() {
@@ -71,6 +71,8 @@ export  default function DCWhatWeDeliverSection() {
                 <Image
                   src={feature.icon}
                   alt={feature.title}
+                  width={40}
+                  height={40}
                   className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
                 />
               </div>

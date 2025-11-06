@@ -1,5 +1,6 @@
 /** @format */
-import portal from "@/assets/idr_portal.jpeg";
+const portal =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr_portal.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 const features = [
@@ -117,12 +118,15 @@ export default function DCPortalSection() {
 
           {/* Right Side - Portal Dashboard Image */}
           <div className="lg:justify-self-end">
-            <Image
-              src={portal}
-              alt="IDR Portal Dashboard"
-              // className="w-full max-w-lg h-auto aspect-[3/2]"
-              className="w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl h-auto aspect-[3/2] rounded-lg shadow-md"
-            />
+            <div className="relative w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl aspect-[3/2] rounded-lg shadow-md overflow-hidden mx-auto">
+              <Image
+                src={portal}
+                alt="IDR Portal Dashboard"
+                fill
+                className="object-contain rounded-lg"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

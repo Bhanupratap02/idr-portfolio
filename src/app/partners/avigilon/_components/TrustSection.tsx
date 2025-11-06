@@ -1,10 +1,14 @@
 import { CheckCircle2, Clock, Wrench } from "lucide-react";
-import imgImg1 from "../../../../assets/partners/avigilon/img_1.png";
-import imgImg2 from "../../../../assets/partners/avigilon/img_2.png";
-import imgImg3 from "../../../../assets/partners/avigilon/img_3.png";
-import imgImg4 from "../../../../assets/partners/avigilon/img_4.png";
+const imgImg1 = 
+"https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Fimg_1.png"
+const  imgImg2 =
+"https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Fimg_2.png"
+const imgImg3 =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Fimg_3.png";
+const imgImg4 =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Fimg_4.png";
 
-export function TrustSection() {
+ export function TrustSection() {
   return (
     <section className="w-full border-b border-gray-100 bg-white px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       <div className="max-w-7xl mx-auto">
@@ -16,22 +20,22 @@ export function TrustSection() {
         {/* Logos */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60 mb-12">
           <img
-            src={imgImg4.src}
+            src={imgImg4}
             alt="Partner"
             className="h-8 md:h-12 2xl:h-16 w-auto object-contain"
           />
           <img
-            src={imgImg1.src}
+            src={imgImg1}
             alt="Partner"
             className="h-8 md:h-12 2xl:h-16 w-auto object-contain"
           />
           <img
-            src={imgImg2.src}
+            src={imgImg2}
             alt="Partner"
             className="h-8 md:h-12 2xl:h-16 w-auto object-contain"
           />
           <img
-            src={imgImg3.src}
+            src={imgImg3}
             alt="Partner"
             className="h-8 md:h-12 2xl:h-16 w-auto object-contain"
           />

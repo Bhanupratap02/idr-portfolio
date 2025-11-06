@@ -1,5 +1,6 @@
 /** @format */
-import integrated from "@/assets/services/data-center/integrated.png";
+const integrated = "https://idr-portfolio-storage.s3.amazonaws.com/assets/services/data-center/integrated.png";
+
 import Image from "next/image";
 export default function DCIntegratedSection() {
   const features = [
@@ -16,19 +17,18 @@ export default function DCIntegratedSection() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 2xl:gap-16 items-stretch 3xl:items-center">
           {/* Left Side - Cables Image */}
           <div className="flex justify-center ">
-            <Image
-              src={integrated}
-              alt="Colorful data center cables"
-              className="w-full h-auto max-w-[750px] aspect-[4/3] rounded-lg shadow-lg"
-            />
+        
+            <div className="relative w-full max-w-[750px] aspect-[4/3] rounded-lg shadow-lg">
+              <Image
+                src={integrated}
+                alt="Colorful data center cables"
+                fill
+                className="object-cover rounded-lg"
+                priority
+              />
+            </div>
           </div>
-          {/* <div className="lg:justify-self-start h-full">
-            <Image
-              src={integrated}
-              alt="Colorful data center cables"
-              className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[600px] xl:max-w-[700px] 3xl:max-w-[800px] h-full rounded-lg"
-            />
-          </div> */}
+       
 
           {/* Right Content */}
           <div>

@@ -1,10 +1,10 @@
 /** @format */
 import Image from "next/image";
-import photos from "@/assets/services/access-control/icons/photos.png";
-import folder from "@/assets/services/access-control/icons/folder.png";
-import warning from "@/assets/services/access-control/icons/warning.png";
-import track from "@/assets/services/access-control/icons/track.png";
-import idrPortalImg from "@/assets/idr_portal.jpeg";
+const photos = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fphotos.png";
+const folder = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ffolder.png";
+const warning = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Fwarning.png";
+const track = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faccess-control%2Ficons%2Ftrack.png";
+const idrPortalImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr_portal.jpeg";
 const portalFeatures = [
   {
     icon: photos,
@@ -57,6 +57,8 @@ export default function IDRPortal() {
                     <Image
                       src={feature.icon}
                       alt={feature.title}
+                      width={56}
+                      height={56}
                       className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 object-contain"
                     />
                   </div>

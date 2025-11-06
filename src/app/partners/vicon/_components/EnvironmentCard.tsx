@@ -7,7 +7,7 @@ interface EnvironmentCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
 }
 
 export default function EnvironmentCard({

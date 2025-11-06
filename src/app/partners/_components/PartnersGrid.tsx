@@ -1,21 +1,21 @@
 /** @format */
 "use client";
 import PartnerCard from "./PartnerCard";
-import alphatouch from "@/assets/partners/logos/alphatouch.png";
-import akuvox from "@/assets/partners/logos/akuvox.png";
-import butterflymx from "@/assets/partners/logos/butterflymx.png";
-import cisco from "@/assets/partners/logos/cisco.png";
-import eagleeye from "@/assets/partners/logos/eagleeye.png";
-import kisi from "@/assets/partners/logos/kisi.png";
-import lencore from "@/assets/partners/logos/lencore.png";
-import mvi from "@/assets/partners/logos/mvi.png";
-import rhombus from "@/assets/partners/logos/rhombus.png";
-import speco from "@/assets/partners/logos/speco.png";
-import teleportivity from "@/assets/partners/logos/teleportivity.png";
-import verkada from "@/assets/partners/logos/verkada.png";
-import vicon from "@/assets/partners/logos/vicon.png";
-import vivotek from "@/assets/partners/logos/vivotek.png";
-import zkteco from "@/assets/partners/logos/zkteco.png";
+const alphatouch = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Falphatouch.png";
+const akuvox = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fakuvox.png";
+const butterflymx = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fbutterflymx.png";
+const cisco = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fcisco.png";
+const eagleeye = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Feagleeye.png";
+const kisi = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fkisi.png";
+const lencore = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Flencore.png";
+const mvi = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fmvi.png";
+const rhombus = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Frhombus.png";
+const speco = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fspeco.png";
+const teleportivity = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fteleportivity.png";
+const verkada = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fverkada.png";
+const vicon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fvicon.png";
+const vivotek = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fvivotek.png";
+const zkteco = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flogos%2Fzkteco.png";
 import Image from "next/image";
 
 const partnersData = [
@@ -25,6 +25,8 @@ const partnersData = [
       <Image
         src={alphatouch}
         alt="Alphatouch"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -39,6 +41,8 @@ const partnersData = [
       <Image
         src={akuvox}
         alt="Akuvox"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -53,6 +57,8 @@ const partnersData = [
       <Image
         src={butterflymx}
         alt="ButterflyMX"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -67,6 +73,8 @@ const partnersData = [
       <Image
         src={cisco}
         alt="Cisco / Meraki"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -81,6 +89,8 @@ const partnersData = [
       <Image
         src={eagleeye}
         alt="Eagle Eye"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -103,6 +113,8 @@ const partnersData = [
       <Image
         src={lencore}
         alt="Lencore"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -114,7 +126,7 @@ const partnersData = [
   {
     id: "mvi",
     logo: (
-      <Image src={mvi} alt="MVI" className="w-full h-full object-contain" />
+      <Image src={mvi} alt="MVI" width={200} height={80} className="w-full h-full object-contain" />
     ),
     title: "MVI",
     description:
@@ -127,6 +139,8 @@ const partnersData = [
       <Image
         src={rhombus}
         alt="rhombus"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -141,6 +155,8 @@ const partnersData = [
       <Image
         src={speco}
         alt="Speco Technologies"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -155,6 +171,8 @@ const partnersData = [
       <Image
         src={teleportivity}
         alt="teleportivity"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -169,6 +187,8 @@ const partnersData = [
       <Image
         src={verkada}
         alt="Verkada"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -180,7 +200,7 @@ const partnersData = [
   {
     id: "vicon",
     logo: (
-      <Image src={vicon} alt="Vicon" className="w-full h-full object-contain" />
+      <Image src={vicon} alt="Vicon" width={200} height={80} className="w-full h-full object-contain" />
     ),
     title: "Vicon",
     description:
@@ -193,6 +213,8 @@ const partnersData = [
       <Image
         src={vivotek}
         alt="Vivotek / Vortex"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),
@@ -207,6 +229,8 @@ const partnersData = [
       <Image
         src={zkteco}
         alt="ZKTeco"
+        width={200}
+        height={80}
         className="w-full h-full object-contain"
       />
     ),

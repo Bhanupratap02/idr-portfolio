@@ -1,10 +1,10 @@
 /** @format */
 import Image from "next/image";
-import install1 from "@/assets/partners/lencore/install1.png";
-import install2 from "@/assets/partners/lencore/install2.png";
-import install3 from "@/assets/partners/lencore/install3.png";
-import install4 from "@/assets/partners/lencore/install4.png";
-import install5 from "@/assets/partners/lencore/install5.png";
+const install1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Finstall1.png";
+const install2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Finstall2.png";
+const install3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Finstall3.png";
+const install4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Finstall4.png";
+const install5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Finstall5.png";
 export default function CommonInstallTypesSection() {
   const installTypes = [
     {
@@ -49,6 +49,8 @@ export default function CommonInstallTypesSection() {
                 <Image
                   src={type.image}
                   alt={`${type.title} - Lencore sound masking installation example`}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   quality={90}
                 />

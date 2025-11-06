@@ -1,5 +1,7 @@
 /** @format */
-import hero from "@/assets/services/data-center/hero.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Fhero.png";
+
+
 import Image from "next/image";
 import Link from "next/link";
 export default function DCHeroSection() {
@@ -30,7 +32,10 @@ export default function DCHeroSection() {
               — and that&apos;s where we thrive.
             </p>
 
-            <Link href={'/contact'} className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
+            <Link
+              href={"/contact"}
+              className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 2xl:px-10 2xl:py-5 rounded-md text-sm sm:text-base lg:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer"
+            >
               Request a Consultation
               <svg
                 width="14"
@@ -49,12 +54,26 @@ export default function DCHeroSection() {
 
           {/* Right Side - Server Rack Image */}
           <div className="lg:justify-self-end">
-            <div className="relative">
+            {/* <div className="relative w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[600px] 3xl:max-w-[800px] aspect-[4/5]">
               <Image
                 src={hero}
                 alt="Data Center Server Rack"
-                className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[600px] 3xl:max-w-[800px] h-auto rounded-lg"
+                fill
+                className="object-contain rounded-lg"
+                priority
+                quality={90}
               />
+            </div> */}
+            <div className="relative w-full max-w-[420px] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[500px] 2xl:max-w-[600px] 3xl:max-w-[800px] aspect-[4/5] overflow-hidden mx-auto">
+              <Image
+                src={hero}
+                alt="Data Center Server Rack"
+                fill
+                className="object-contain rounded-lg"
+                priority
+                quality={80}
+              />
+       
             </div>
           </div>
         </div>

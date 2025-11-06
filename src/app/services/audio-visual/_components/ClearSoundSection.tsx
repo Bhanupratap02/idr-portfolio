@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import clear_sound from "@/assets/services/audio-visual/clear_sound.png"
+const clear_sound = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Faudio-visual%2Fclear_sound.png";
  const features = [
    {
      icon: (
@@ -119,14 +119,15 @@ export default function ClearSoundSection() {
           </div>
 
           {/* Image */}
-          <div className="relative">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <Image
-                src={clear_sound}
-                alt="A/V Control Room"
-                className="w-full h-64 sm:h-80 md:h-[450px] lg:h-[500px] 2xl:h-[600px] 3xl:h-[630px] object-cover"
-              />
-            </div>
+  
+          <div className="relative rounded-xl overflow-hidden shadow-2xl w-full h-64 sm:h-80 md:h-[450px] lg:h-[500px] 2xl:h-[600px] 3xl:h-[630px]">
+            <Image
+              src={clear_sound}
+              alt="A/V Control Room"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </div>

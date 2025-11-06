@@ -1,8 +1,8 @@
 /** @format */
 
-import imgImg from "@/assets/partners/alphatouch/entry_panel.png";
-import imgImg1 from "@/assets/partners/alphatouch/mobile_app.png";
-import imgImg2 from "@/assets/partners/alphatouch/portal.png";
+const imgImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fentry_panel.png";
+const imgImg1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fmobile_app.png";
+const imgImg2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2Fportal.png";
 import Image from "next/image";
 
 const demos = [
@@ -43,11 +43,14 @@ export default function AlphaTouchDemo() {
               key={demo.title}
               className="group bg-white rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-xl xl:rounded-2xl 2xl:rounded-2xl 3xl:rounded-3xl p-5  md:p-6 lg:p-6  2xl:p-8 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="aspect-[4/3] overflow-hidden mb-3  md:mb-4 lg:mb-5  2xl:mb-6 transition-all duration-300 group-hover:scale-105">
+              <div className="relative aspect-[4/3] overflow-hidden mb-3  md:mb-4 lg:mb-5  2xl:mb-6 transition-all duration-300 group-hover:scale-105 rounded-xl">
                 <Image
                   src={demo.image}
                   alt={demo.title}
-                  className="w-full h-full object-cover rounded-xl"
+                  fill
+                  className=" object-cover "
+                  priority={index === 0} // optionally preload the first image
+                  quality={90}
                 />
               </div>
               <div className="flex-1 flex flex-col group-hover:translate-y-1 transition-transform">

@@ -1,8 +1,8 @@
 /** @format */
 import Image from "next/image";
-import CompleteSurveillance from "@/assets/services/surveillance-camera/complete_surveillance.png";
-import camera from "@/assets/services/surveillance-camera/camera.png";
-import support from "@/assets/services/surveillance-camera/support.png";
+const CompleteSurveillance = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fcomplete_surveillance.png";
+const camera = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fcamera.png";
+const support = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fsupport.png";
 export default function CompleteSurveillanceSection() {
   return (
     <section className="w-full bg-white py-12 sm:py-14 lg:py-16 xl:py-20 2xl:py-24 3xl:py-36">
@@ -28,6 +28,8 @@ export default function CompleteSurveillanceSection() {
                 <Image
                   src={camera}
                   alt=""
+                  width={72}
+                  height={72}
                   className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18  mb-3 opacity-70 hover:opacity-100 transition-opacity duration-200"
                 />
 
@@ -40,6 +42,8 @@ export default function CompleteSurveillanceSection() {
                 <Image
                   src={support}
                   alt=""
+                  width={72}
+                  height={72}
                   className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 2xl:w-18 2xl:h-18   mb-3 opacity-70 hover:opacity-100 transition-opacity duration-200"
                 />
 
@@ -55,6 +59,8 @@ export default function CompleteSurveillanceSection() {
             <Image
               src={CompleteSurveillance}
               alt="Surveillance Solutions"
+              width={1200}
+              height={800}
               className="w-full h-full  rounded-xl "
             />
           </div>

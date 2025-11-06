@@ -1,11 +1,11 @@
 /** @format */
 
-import { CheckIcon } from "lucide-react";
+
 import React from "react";
 import Image from "next/image";
-import certifiedImage from "@/assets/partners/speco/camera-installing.png";
-import checkImage from "@/assets/partners/speco/check.png";
-import reviewImg from "@/assets/partners/speco/review-img.png";
+const certifiedImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcamera-installing.png";
+const checkImage = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcheck.png";
+const reviewImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Freview-img.png";
 export default function CertifiedSection() {
   const features = [
     "NYS Licensed & Insured",
@@ -37,6 +37,8 @@ export default function CertifiedSection() {
                     src={checkImage}
                     alt="check Icon"
                     className="w-3 h-3 sm:w-4 sm:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 3xl:h-7 text-white mt-0.5 sm:mt-1 flex-shrink-0"
+                  width={24}
+                  height={24}
                   />
                   <span className="text-white text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl font-light leading-relaxed">
                     {feature}
@@ -83,6 +85,8 @@ export default function CertifiedSection() {
                 src={certifiedImage}
                 alt="Speco certified installer installing a surveillance camera"
                 className="w-full h-auto max-h-none sm:max-h-[420px] md:max-h-[480px] lg:max-h-[500px] xl:max-h-[500px] 2xl:max-h-[600px] xl:object-cover"
+                width={600}
+                height={800}
                 priority
               />
             </div>

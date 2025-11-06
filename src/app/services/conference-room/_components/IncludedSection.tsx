@@ -1,5 +1,5 @@
 /** @format */
-import included from "@/assets/services/conference-room/included.png";
+const included = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fconference-room%2Fincluded.png";
 import Image from "next/image";
 const includedServices = [
   {
@@ -43,6 +43,8 @@ export default function IncludedSection() {
             <Image
               src={included}
               alt="Modern Conference Room Setup"
+              width={800}
+              height={600}
               className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto rounded-lg"
             />
           </div>

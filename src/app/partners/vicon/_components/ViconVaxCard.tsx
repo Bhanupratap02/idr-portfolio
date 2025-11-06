@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 
 
 interface ViconVaxCardProps {
-  icon: StaticImageData;
+  icon: StaticImageData | string;
   title: string;
   description: string;
 }

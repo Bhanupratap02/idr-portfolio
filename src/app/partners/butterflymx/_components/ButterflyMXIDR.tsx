@@ -1,7 +1,7 @@
 /** @format */
 
 import { Check } from "lucide-react";
-import idrImg from "@/assets/butterfly/why_work.png";
+const idrImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fbutterfly%2Fwhy_work.png";
 import Image from "next/image";
 
 export function ButterflyMXIDR() {
@@ -53,6 +53,8 @@ export function ButterflyMXIDR() {
               <Image
                 src={idrImg}
                 alt="IDR Technology professional installing ButterflyMX system - Expert installation and support"
+                width={1920}
+                height={1080}
                 className="h-auto w-full object-cover"
                 priority
                 quality={90}

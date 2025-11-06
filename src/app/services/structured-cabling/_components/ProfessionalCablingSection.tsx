@@ -1,10 +1,10 @@
 /** @format */
-import cabling from "@/assets/services/structured-cabling/icons/cabling.png";
-import fiber from "@/assets/services/structured-cabling/icons/fiber.png";
-import panel from "@/assets/services/structured-cabling/icons/panel.png";
-import buildings from "@/assets/services/structured-cabling/icons/buildings.png";
-import poe from "@/assets/services/structured-cabling/icons/poe.png";
-import av from "@/assets/services/structured-cabling/icons/av.png";
+const cabling = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fcabling.png";
+const fiber = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Ffiber.png";
+const panel = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fpanel.png";
+const buildings = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fbuildings.png";
+const poe = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fpoe.png";
+const av = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fstructured-cabling%2Ficons%2Fav.png";
 import Image from "next/image";
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -44,6 +44,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={cabling}
           alt="Cat5e / Cat6 / Cat6a Cabling"
+          width={32}
+          height={32}
           className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#3B82F6]"
         />
       ),
@@ -57,6 +59,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={fiber}
           alt="Fiber Optic Backbone"
+          width={32}
+          height={32}
           className="w-6 h-6 2xl:w-8 2xl:h-7 text-[#8B5CF6]"
         />
       ),
@@ -70,6 +74,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={panel}
           alt="Patch Panels & Faceplates"
+          width={32}
+          height={32}
           className="w-5 h-5 2xl:w-8 2xl:h-7 text-[#16A34A]"
         />
       ),
@@ -83,6 +89,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={buildings}
           alt="MDF/IDF Builds"
+          width={32}
+          height={40}
           className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#DC2626]"
         />
       ),
@@ -96,6 +104,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={poe}
           alt="POE for Devices"
+          width={32}
+          height={40}
           className="w-4 h-5 2xl:w-8 2xl:h-7 text-[#CA8A04]"
         />
       ),
@@ -109,6 +119,8 @@ export default function ProfessionalCablingSection() {
         <Image
           src={av}
           alt="A/V & Automation Cabling"
+          width={32}
+          height={28}
           className="w-6 h-5 2xl:w-8 2xl:h-7 text-[#4F46E5]"
         />
       ),

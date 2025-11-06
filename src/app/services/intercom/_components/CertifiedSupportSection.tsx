@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import IDR_TEAM from "@/assets/aboutus/team-photo.png";
+const IDR_TEAM = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Faboutus%2Fteam-photo.png";
 const features = [
   {
     title: "Certified Technicians",
@@ -165,6 +165,8 @@ export function CertifiedSupportSection() {
         <div className="flex justify-center">
           <Image
             src={IDR_TEAM}
+            width={1600} // ✅ add this
+            height={900} // ✅ and this (keep aspect ratio ~16:9)
             alt="IDR Technology Solutions team"
             className="w-full max-w-5xl h-auto object-cover rounded-xl aspect-video"
           />

@@ -1,7 +1,7 @@
 /** @format */
 
 import { Users, CheckCircle, Building } from "lucide-react";
-import CoverageImg from "@/assets/partners/vicon/coverage.png";
+const CoverageImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcoverage.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,6 +47,8 @@ export default function CoverageSection() {
               src={CoverageImg}
               alt="United States Network Coverage Map"
               className="object-cover w-full h-full"
+              width={500}
+              height={400}
               priority
             />
           </div>

@@ -7,7 +7,7 @@ interface IntegrationCardProps {
   title: string;
   description: string;
   feature: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
 }
 
 export default function IntegrationCard({

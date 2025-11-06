@@ -1,15 +1,15 @@
 /** @format */
 
 import Image from "next/image";
-import image1 from "@/assets/services/img_1.png";
-import image2 from "@/assets/services/img_2.png";
-import image3 from "@/assets/services/img_3.png";
-import image4 from "@/assets/services/img_4.png";
-import image5 from "@/assets/services/img_5.png";
-import image6 from "@/assets/services/img_6.png";
-import image7 from "@/assets/services/img_7.png";
-import image8 from "@/assets/services/img_8.png";
-import image9 from "@/assets/services/img_9.png";
+const image1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_1.png";
+const image2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_2.png";
+const image3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_3.png";
+const image4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_4.png";
+const image5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_5.png";
+const image6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_6.png";
+const image7 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_7.png";
+const image8 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_8.png";
+const image9 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fimg_9.png";
 import Link from "next/link";
 
 const services = [

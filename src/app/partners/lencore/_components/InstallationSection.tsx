@@ -2,11 +2,11 @@
 
 
 
-import emergencyIcon from "@/assets/partners/lencore/emergency.png";
-import bgmIcon from "@/assets/partners/lencore/bgm.png";
-import buildingIcon from "@/assets/partners/lencore/building.png";
-import pagingIcon from "@/assets/partners/lencore/paging.png";
-import checkIcon from "@/assets/partners/lencore/check.png";
+const emergencyIcon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Femergency.png";
+const bgmIcon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fbgm.png";
+const buildingIcon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fbuilding.png";
+const pagingIcon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fpaging.png";
+const checkIcon = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Flencore%2Fcheck.png";
 import Image from "next/image";
 export default function InstallationSection() {
   const integrationItems = [

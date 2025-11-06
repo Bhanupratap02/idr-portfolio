@@ -1,8 +1,8 @@
 /** @format */
 import Image from "next/image";
-import mobile_control from "@/assets/services/security-alarm/mobile_control.png";
-import motion_triggers from "@/assets/services/security-alarm/motion_triggers.png";
-import monitoring from "@/assets/services/security-alarm/monitoring.png";
+const mobile_control = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Fmobile_control.png";
+const motion_triggers = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Fmotion_triggers.png";
+const monitoring = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsecurity-alarm%2Fmonitoring.png";
 import FeatureCard from "./FeatureCard";
   const features = [
     {
@@ -153,6 +153,8 @@ export default function FeaturesSection() {
                 <Image
                   src={feature.image}
                   alt={feature.title}
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />

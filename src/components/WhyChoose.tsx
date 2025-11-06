@@ -25,7 +25,7 @@ const tabs: Tab[] = [
       "Automated alerts sent directly to radios and devices",
       "Seamless integration of video, access, and sensors",
     ],
-    video: "/videos/integrated_security.mp4",
+    video: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/integrated_security.mp4",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const tabs: Tab[] = [
       "Designs reviewed and supported by IDR’s engineering staff",
       "Scalable designs built for future growth",
     ],
-    video: "/videos/smart_consultative.mp4",
+    video: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/smart_consultative.mp4",
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const tabs: Tab[] = [
       "Rapid alerting, lockdown, and dispatch coordination with local authorities",
       "Seamless communication across cameras, access control, and security personnel",
     ],
-    video: "/videos/camera_monitoring.mp4",
+    video: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/camera_monitoring.mp4",
   },
 ];
 

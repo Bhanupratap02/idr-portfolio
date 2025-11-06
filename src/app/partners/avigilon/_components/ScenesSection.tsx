@@ -1,6 +1,6 @@
 import Image from "next/image";
-import imgImg5 from "../../../../assets/partners/avigilon/img2.png";
-
+const imgImg5 =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Favigilon%2Fimg2.png";
 export function ScenesSection() {
   return (
     <section className="w-full bg-white py-12  md:py-16  lg:py-20  2xl:py-24">
@@ -62,7 +62,11 @@ export function ScenesSection() {
                   <Image
                     src={imgImg5}
                     alt="Scenes Interface"
+                    width={1200}
+                    height={800}
                     className="w-full h-auto"
+                    quality={90}
+                    priority
                   />
                   <div className="absolute top-2 right-2 sm:top-2 sm:right-1 bg-red-500 text-white px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-6 md:py-1.5 rounded-full text-xs sm:text-sm md:text-base  shadow-md font-light">
                     Live

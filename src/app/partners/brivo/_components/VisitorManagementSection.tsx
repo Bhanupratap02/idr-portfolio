@@ -1,6 +1,7 @@
 /** @format */
 import { CheckCircle } from "lucide-react";
-import imgImg1 from "@/assets/brivo2.png"; // img2 (kept)
+import Image from "next/image";
+const imgImg1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fbrivo2.png";
 
 const features = [
   "Compliance Ready: Automate visitor logs for audit and legal documentation.",
@@ -52,9 +53,11 @@ export default function VisitorManagementSection() {
           {/* Right Image Card */}
           <div className="flex-1 w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-none 2xl:max-w-3xl">
             <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-300">
-              <img
-                src={imgImg1.src}
+              <Image
+                src={imgImg1}
                 alt="Modern Kiosk Experience"
+                width={800}
+                height={600}
                 className="w-full h-48 sm:h-56 md:h-64 xl:h-72 object-cover rounded-lg mb-4 sm:mb-6"
               />
               <div className="space-y-1 sm:space-y-2 text-center lg:text-left">

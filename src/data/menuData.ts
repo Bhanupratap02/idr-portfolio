@@ -1,14 +1,34 @@
 /** @format */
 import { MenuSection } from "@/types/navbar";
-import accessControl from "@/assets/icons/acces_control.png";
-import audioVisual from "@/assets/icons/audio_visual.png";
-import conferenceRoom from "@/assets/icons/conference_room.png";
-import dataCenter from "@/assets/icons/data_center.png";
-import networks from "@/assets/icons/networks.png";
-import intercom from "@/assets/icons/intercom.png";
-import securityAlarm from "@/assets/icons/security_alarm.png";
-import structuredCabling from "@/assets/icons/structured_cabling.png";
-import surveillanceCamera from "@/assets/icons/surveillance_camera.png";
+// import accessControl from "@/assets/icons/acces_control.png";
+// import audioVisual from "@/assets/icons/audio_visual.png";
+// import conferenceRoom from "@/assets/icons/conference_room.png";
+// import dataCenter from "@/assets/icons/data_center.png";
+// import networks from "@/assets/icons/networks.png";
+// import intercom from "@/assets/icons/intercom.png";
+// import securityAlarm from "@/assets/icons/security_alarm.png";
+// import structuredCabling from "@/assets/icons/structured_cabling.png";
+// import surveillanceCamera from "@/assets/icons/surveillance_camera.png";
+// ✅ Updated with Cloud URLs (from your S3 bucket)
+const accessControl =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Facces_control.png";
+
+const audioVisual =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Faudio_visual.png";
+const conferenceRoom =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fconference_room.png";
+const dataCenter =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fdata_center.png";
+const networks =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fnetworks.png";
+const intercom =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fintercom.png";
+const securityAlarm =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fsecurity_alarm.png";
+const structuredCabling =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fstructured_cabling.png";
+const surveillanceCamera =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ficons%2Fsurveillance_camera.png";
 // Menu data
 export const menuData = {
   services: [
@@ -246,15 +266,15 @@ export const MENU_SECTIONS: MenuSection[] = [
         name: "Unified Intercom Access",
         url: "/case-studies/unified-intercom-access",
       },
-         {
+      {
         name: "PPA - A Lasting Partnership",
         url: "/case-studies/ppa-partnership",
       },
-         {
+      {
         name: "Phipps Houses",
         url: "/case-studies/phipps-houses",
       },
-         {
+      {
         name: "Advance Local",
         url: "/case-studies/advance-local",
       },

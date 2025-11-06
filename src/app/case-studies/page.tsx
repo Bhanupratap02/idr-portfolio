@@ -1,116 +1,152 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import image1 from "@/assets/case_study/case-study-card1.png"
-import image2 from "@/assets/case_study/case-study-card2.png"
-import image3 from "@/assets/case_study/case-study-card3.png"
-import image4 from "@/assets/case_study/case-study-card4.png"
-import image5 from "@/assets/case_study/case-study-card5.png"
-import image6 from "@/assets/case_study/case-study-card6.png"
-import image7 from "@/assets/case_study/case-study-card7.png"
-import image8 from "@/assets/case_study/case-study-card8.png"
-import image9 from "@/assets/case_study/case-study-card9.png"
-import floatingimage1 from "@/assets/case_study/floating-img-1.png"
-import floatingimage2 from "@/assets/case_study/floating-img-2.png"
-import floatingimage3 from "@/assets/case_study/floating-img-3.png"
+
+
+
+
 
 const caseStudies = [
   {
     id: 1,
-    image: image1,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card1.png",
     title: "How IDR Eliminated Unauthorized Building Access for Fairstead.",
-    description: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across......."
+    description:
+      "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across.......",
   },
   {
     id: 2,
-    image: image2,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card2.png",
     title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
-    description: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida.."
+    description:
+      "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida..",
   },
   {
     id: 3,
-    image: image3,
-    title: "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The........",
-    description: "Fairstead approached IDR with a unique challenge at their Chocolate Factory property in Brooklyn......"
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card3.png",
+    title:
+      "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The........",
+    description:
+      "Fairstead approached IDR with a unique challenge at their Chocolate Factory property in Brooklyn......",
   },
   {
     id: 4,
-    image: image4,
-    title: "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
-    description: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint......"
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card4.png",
+    title:
+      "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
+    description:
+      "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint......",
   },
   {
     id: 5,
-    image: image5,
-    title: "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
-    description: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points......."
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card5.png",
+    title:
+      "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
+    description:
+      "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points.......",
   },
   {
     id: 6,
-    image: image6,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card6.png",
     title: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
-    description: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with...."
+    description:
+      "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with....",
   },
   {
     id: 7,
-    image: image7,
-    title: "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
-    description: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag......."
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card7.png",
+    title:
+      "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
+    description:
+      "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag.......",
   },
   {
     id: 8,
-    image: image8,
-    title: "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
-    description: "Create a seamless Microsoft Teams-based hybrid training room with distributed AV, zone-based audio, and advanced control — all....."
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card8.png",
+    title:
+      "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
+    description:
+      "Create a seamless Microsoft Teams-based hybrid training room with distributed AV, zone-based audio, and advanced control — all.....",
   },
   {
     id: 9,
-    image: image9,
-    title: "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
-    description: "Full infrastructure overhaul with ongoing overnight cutovers and enterprise-grade upgrades Oppenheimer Funds approached IDR..."
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card9.png",
+    title:
+      "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
+    description:
+      "Full infrastructure overhaul with ongoing overnight cutovers and enterprise-grade upgrades Oppenheimer Funds approached IDR...",
   },
   {
     id: 10,
-    image: image7,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card7.png",
     title: "Burns Engineering",
-    description: "Relationship Scope: Nationwide low voltage partnership across 7+ locations Services: Kisi access control, structured cabling, technical......."
+    description:
+      "Relationship Scope: Nationwide low voltage partnership across 7+ locations Services: Kisi access control, structured cabling, technical.......",
   },
   {
     id: 11,
-    image: image8,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card8.png",
     title: "Scaling Security with Fairstead",
-    description: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida...."
+    description:
+      "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida....",
   },
   {
     id: 12,
-    image: image9,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card9.png",
     title: "Peninsula Preparatory Academy",
-    description: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......"
+    description:
+      "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......",
   },
   {
     id: 13,
-    image: image7,
-    title: "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
-    description: "Fairstead is a national real estate developer and operator with a focus on sustainability, safety, and community-driven housing......."
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card7.png",
+    title:
+      "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
+    description:
+      "Fairstead is a national real estate developer and operator with a focus on sustainability, safety, and community-driven housing.......",
   },
   {
     id: 14,
-    image: image8,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card8.png",
     title: "Stopping Break-Ins with Smarter Entry Design",
-    description: "Phipps Houses is one of New York City's largest and oldest not-for-profit housing developers, known for providing quality affordable......."
+    description:
+      "Phipps Houses is one of New York City's largest and oldest not-for-profit housing developers, known for providing quality affordable.......",
   },
   {
     id: 15,
-    image: image9,
+    image:
+      "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Fcase-study-card9.png",
     title: "Building a Long-Term Technology Partnership with Advance Local",
-    description: "Advance Local is one of the largest media groups in the U.S., with newsrooms and offices across the country. Their Staten Island location..."
-  }
+    description:
+      "Advance Local is one of the largest media groups in the U.S., with newsrooms and offices across the country. Their Staten Island location...",
+  },
 ];
-
+const floatingimage1 = 
+"https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Ffloating-img-1.png";
+const floatingimage2 = 
+"https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Ffloating-img-2.png";
+const floatingimage3 = 
+"https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2Ffloating-img-3.png";
 const HeroSection = () => {
   return (
-    <section className="relative bg-cover bg-center min-h-[600px] lg:min-h-[731px] flex items-center" 
-             style={{backgroundImage: `url("case-study.png")`}}>
+    <section
+      className="relative bg-cover bg-center min-h-[600px] lg:min-h-[731px] flex items-center"
+      style={{ backgroundImage: `url("case-study.png")` }}
+    >
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -119,37 +155,40 @@ const HeroSection = () => {
               Proven Results. Real Impact.
             </h1>
             <p className="text-lg text-[#B4B4B4] leading-relaxed max-w-2xl">
-              Explore how our tailored solutions have transformed businesses across industries.
-              <br/>
-              Each case study highlights our process, challenges we tackled, and the measurable outcomes we delivered — showing our commitment to precision, partnership, and performance.
+              Explore how our tailored solutions have transformed businesses
+              across industries.
+              <br />
+              Each case study highlights our process, challenges we tackled, and
+              the measurable outcomes we delivered — showing our commitment to
+              precision, partnership, and performance.
             </p>
             <Button className="bg-[#191919] hover:bg-black text-white px-8 py-6 text-base rounded-md">
               Get Start Now
             </Button>
           </div>
-          
+
           {/* Floating Images */}
           <div className="hidden lg:block relative h-96">
-            <Image 
+            <Image
               src={floatingimage1}
               alt="Technology 1"
               width={208}
               height={208}
-              className="absolute top-20 left-0 w-52 h-52 rounded-2xl object-cover"
+              className="absolute top-20 xl:top-32 left-0 w-52 h-52 rounded-2xl object-cover"
             />
-            <Image 
+            <Image
               src={floatingimage2}
               alt="Technology 2"
               width={208}
               height={208}
-              className="absolute top-36 right-8 w-52 h-52 rounded-2xl object-cover"
+              className="absolute top-36 xl:top-38 right-8 w-52 xl:w-62 h-52 xl:h-62 rounded-2xl object-cover"
             />
-            <Image 
+            <Image
               src={floatingimage3}
               alt="Technology 3"
               width={256}
               height={256}
-              className="absolute top-0 left-40 w-64 h-64 rounded-2xl object-cover shadow-2xl"
+              className="absolute top-0 left-40 w-62  h-62 rounded-2xl object-cover shadow-2xl"
             />
           </div>
         </div>

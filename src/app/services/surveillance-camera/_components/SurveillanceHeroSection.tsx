@@ -1,7 +1,7 @@
 /** @format */
 
 
-import hero from "@/assets/services/surveillance-camera/hero.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fsurveillance-camera%2Fhero.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function SurveillanceHeroSection() {
@@ -48,7 +48,10 @@ export default function SurveillanceHeroSection() {
               <Image
                 src={hero}
                 alt="Surveillance Camera Systems"
+                fill
                 className="w-full h-full object-cover"
+                priority
+                quality={90}
               />
               {/* Overlay gradient */}
               {/* <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div> */}

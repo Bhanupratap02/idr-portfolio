@@ -1,10 +1,10 @@
 /** @format */
 
-import CheckImg from "@/assets/partners/vicon/check.png";
-import CertifiedImg from "@/assets/partners/vicon/certified.png";
-import SecureImg from "@/assets/partners/vicon/secure.png";
+const CheckImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcheck.png";
+const CertifiedImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcertified.png";
+const SecureImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fsecure.png";
 import Image from "next/image";
-import cameraGroupImg from "@/assets/partners/vicon/camera-group.png";
+const cameraGroupImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fcamera-group.png";
 
 const features = [
   {
@@ -52,6 +52,8 @@ export default function BuildSpeedSection() {
                       src={feature.icon}
                       alt={`${feature.title} icon`}
                       className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-9 xl:h-9  group-hover:scale-110 transition-transform duration-300"
+                      width={30}
+                      height={30}
                     />
                   </div>
                   <div>
@@ -72,7 +74,11 @@ export default function BuildSpeedSection() {
               <Image
                 src={cameraGroupImg}
                 alt="Modern Security Access Control System"
+                width={800}
+                height={600}
                 className="w-full h-auto object-cover"
+                priority
+                quality={90}
               />
             </div>
           </div>

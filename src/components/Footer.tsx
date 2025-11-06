@@ -2,41 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
-import logo from "@/assets/logo.png";
-import youtubeIcon from "@/assets/youtube.png";
-import linkedinIcon from "@/assets/linkedin.png";
-import facebookIcon from "@/assets/facebook.png";
-import tiktokIcon from "@/assets/tiktok_3.png";
-import instagramIcon from "@/assets/instagram_2.png";
-import playstoreIcon from "@/assets/playstore.png";
-import appstoreIcon from "@/assets/apple.png";
-
 const Footer = () => {
   const socialLinks = [
     {
       href: "https://www.youtube.com/@Idrtechnologysolutions",
-      icon: youtubeIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fyoutube.png",
       alt: "YouTube",
     },
     {
       href: "https://www.linkedin.com/company/idr-technology-solutions",
-      icon: linkedinIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Flinkedin.png",
       alt: "LinkedIn",
     },
     {
       href: "https://www.tiktok.com/profile.php?id=100057472869428",
-      icon: facebookIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ffacebook.png",
       alt: "Facebook",
     },
     {
       href: "https://www.tiktok.com/@idrtechnologysolu?_t=ZP-8y9yjPO8tvL&_r=1",
-      icon: tiktokIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ftiktok_3.png",
       alt: "TikTok",
     },
     {
       href: "https://www.instagram.com/idrtechnologysolutions?igsh=MTNzcHBuanc3ZWM5ag%3D%3D&utm_source=qr",
-      icon: instagramIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Finstagram_2.png",
       alt: "Instagram",
     },
   ];
@@ -44,12 +34,12 @@ const Footer = () => {
   const appLinks = [
     {
       href: "https://play.google.com/store/apps/details?id=com.idrportal&hl=en_US",
-      icon: playstoreIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fplaystore.png",
       alt: "Google Play Store",
     },
     {
       href: "https://apps.apple.com/us/app/idr-portal/id6502960849",
-      icon: appstoreIcon,
+      icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fapple.png",
       alt: "Apple App Store",
     },
   ];
@@ -62,7 +52,9 @@ const Footer = () => {
           <div className="space-y-1">
             <div className="relative w-full max-w-70 2xl:max-w-80 h-10 2xl:h-12">
               <Image
-                src={logo}
+                src={
+                  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Flogo.png"
+                }
                 alt="IDR Logo"
                 fill
                 quality={100}

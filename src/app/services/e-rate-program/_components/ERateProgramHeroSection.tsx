@@ -2,24 +2,27 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import background from "@/assets/services/e-rate-program/Background.png";
-import hero from "@/assets/services/e-rate-program/hero.png";
-import arrow from "@/assets/services/e-rate-program/arrow.png";
-import group from "@/assets/services/e-rate-program/group.png"
+const background = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2FBackground.png";
+const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Fhero.png";
+const arrow = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Farrow.png";
+const group = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fe-rate-program%2Fgroup.png";
 import Link from "next/link";
 export default function ERateProgramHeroSection() {
   return (
     <section className="w-full min-h-[90vh] sm:min-h-[95vh] md:min-h-[90vh] lg:min-h-[85vh] xl:min-h-[90vh] 2xl:min-h-[95vh] relative py-16 md:py-20 lg:py-24 2xl:py-28 flex md:items-center ">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={background}
-          alt="E-Rate Program Background"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+
+        <div className="relative w-full h-full">
+          <Image
+            src={background}
+            alt="E-Rate Program Background"
+            fill
+            className="object-cover"
+            priority
+            quality={90}
+          />
+        </div>
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" /> */}
       </div>
 
@@ -53,6 +56,8 @@ export default function ERateProgramHeroSection() {
                 <Image
                   src={arrow}
                   alt="icon"
+                  width={72}
+                  height={72}
                   className=" absolute right-0 w-10 h-10     xl:w-12 xl:h-12 2xl:w-15 2xl:h-15 3xl:w-18 3xl:h-17  text-white group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0"
                 />
               </Button>
@@ -64,6 +69,8 @@ export default function ERateProgramHeroSection() {
             <Image
               src={hero}
               alt="E-Rate Program Education"
+              width={1200}
+              height={800}
               className="w-full h-full object-cover rounded-lg"
             />
 
@@ -76,6 +83,8 @@ export default function ERateProgramHeroSection() {
               <Image
                 src={group}
                 alt="Partner logos"
+                width={220}
+                height={70}
                 className="w-[130px] sm:w-[170px] 2xl:w-[220px]  h-[50px] 2xl:h-[60px] 3xl:h-[70px] object-contain mx-auto"
               />
             </div>

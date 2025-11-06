@@ -1,8 +1,8 @@
 /** @format */
 import Image from "next/image";
-import building1Img from "@/assets/partners/mvi/building1.png";
-import building2Img from "@/assets/partners/mvi/building2.png";
-import building3Img from "@/assets/partners/mvi/building3.png";
+const building1Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding1.png";
+const building2Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding2.png";
+const building3Img = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fbuilding3.png";
 
 export default function ModernIntercomsSection() {
   return (

@@ -7,8 +7,8 @@ const PartnerLogos = ({
   whiteTextLogos = [],
   direction = "left",
 }: {
-  logos: StaticImageData[];
-  whiteTextLogos?: StaticImageData[];
+  logos: StaticImageData[] | string[];
+  whiteTextLogos?: StaticImageData[] | string[];
   direction?: "left" | "right";
 }) => {
   // Triple the logos array to ensure smooth infinite scroll
@@ -28,22 +28,29 @@ const PartnerLogos = ({
         }}
       >
         {extendedLogos.map((img, idx) => {
-          const isWhiteLogo = whiteTextLogos.includes(img);
+
+              const isWhiteLogo = whiteTextLogos.some(
+                (logo) =>
+                  (typeof logo === "string" && logo === img) ||
+                  (typeof logo !== "string" &&
+                    logo.src === (img as StaticImageData)?.src)
+              );
+
           return (
             <div
               key={idx}
               className="flex-shrink-0 h-6 md:h-10 2xl:h-12 flex items-center justify-center px-3 sm:px-4 md:px-6 2xl:px-8 "
             >
-              <Image
-                src={img}
-                alt={`Partner Logo ${idx + 1}`}
-                // className=" w-full h-auto object-cover max-w-[180px] max-h-[180px]"
-                // className="w-full h-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-[180px] 2xl:max-w-[220px] max-h-[180px] filter  brightness-0 invert  opacity-80 hover:opacity-100 transition-opacity duration-300"
+           <Image
+            src={img}
+            alt={`Partner Logo ${idx + 1}`}
+            width={180}
+            height={180}
+            className={`w-full h-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-[180px] 2xl:max-w-[220px] max-h-[180px] opacity-80 hover:opacity-100 transition-opacity duration-300 ${
+              isWhiteLogo ? "" : "filter brightness-0 invert"
+            }`}
+          />
 
-                className={`w-full h-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-[180px] 2xl:max-w-[220px] max-h-[180px] opacity-80 hover:opacity-100 transition-opacity duration-300 ${
-                  isWhiteLogo ? "" : "filter brightness-0 invert"
-                }`}
-              />
             </div>
           );
         })}

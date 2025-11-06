@@ -1,11 +1,11 @@
 /** @format */
 import Image from "next/image";
-import enterprise from "@/assets/services/data-center/icons/enterprise.png";
-import airflow from "@/assets/services/data-center/icons/air_flow.png";
-import certified from "@/assets/services/data-center/icons/certified.png";
-import code from "@/assets/services/data-center/icons/checklist.png";
-import technicians from "@/assets/services/data-center/icons/technician.png";
-import portal from "@/assets/services/data-center/icons/portal.png";
+const enterprise = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fenterprise.png";
+const airflow = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fair_flow.png";
+const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fcertified.png";
+const code = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fchecklist.png";
+const technicians = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Ftechnician.png";
+const portal = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Ficons%2Fportal.png";
   const teamFeatures = [
     {
       title: "Enterprise-grade install + documentation",
@@ -70,6 +70,8 @@ export default function DCWhyTeamsSection() {
                 <Image
                   src={feature.icon}
                   alt={feature.title}
+                  width={32}
+                  height={32}
                   className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
                 />
               </div>

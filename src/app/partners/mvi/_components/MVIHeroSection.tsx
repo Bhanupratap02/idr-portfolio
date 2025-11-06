@@ -1,6 +1,7 @@
 /** @format */
 import Image from "next/image";
-import heroImg from "@/assets/partners/mvi/hero-main.png";
+const heroImg =
+  "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fmvi%2Fhero-main.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -49,6 +50,8 @@ export default function MVIHeroSection() {
                 alt="MVI Systems IP Video Intercom Device - Modern building access control solution"
                 className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
                 priority
+                width={1200}
+                height={800}
                 quality={90}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 50vw"
               />

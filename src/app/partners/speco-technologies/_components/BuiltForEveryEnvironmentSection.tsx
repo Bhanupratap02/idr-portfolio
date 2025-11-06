@@ -1,11 +1,11 @@
 /** @format */
 
-import school from "@/assets/partners/speco/school.png";
-import retail from "@/assets/partners/speco/retail.png";
-import commercial from "@/assets/partners/speco/commercial.png";
-import home from "@/assets/partners/speco/home.png";
-import warehousing from "@/assets/partners/speco/warehousing.png";
-import solution from "@/assets/partners/speco/solution.png";
+const school = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fschool.png";
+const retail = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fretail.png";
+const commercial = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fcommercial.png";
+const home = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fhome.png";
+const warehousing = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fwarehousing.png";
+const solution = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fspeco%2Fsolution.png";
 import Image from "next/image";
 
 export default function BuiltForEveryEnvironmentSection() {
@@ -84,6 +84,8 @@ export default function BuiltForEveryEnvironmentSection() {
                   <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-7 2xl:mb-8">
                     <Image
                       className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20"
+                      width={65}
+                      height={65}
                       alt={`${card.title} security solutions`}
                       src={card.icon}
                       priority={index < 3}

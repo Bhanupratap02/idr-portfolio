@@ -1,8 +1,12 @@
-import img4 from "@/assets/idr-advantage/partnership.png";
-import heroImage from "@/assets/ongoing-partnership-hero.jpg";
+
+import Image from "next/image";
 import Link from "next/link";
 
 export default function OngoingPartnership() {
+  const partnership =
+    "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr-advantage%2Fpartnership.png";
+  const heroImage =
+    "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fongoing-partnership-hero.jpg";
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
       {/* Hero Section - Two Column */}
@@ -37,10 +41,14 @@ export default function OngoingPartnership() {
             <div className="relative lg:h-[400px] xl:h-[500px] 2xl:h-[600px] h-[300px] sm:h-[350px] order-first lg:order-last">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-3xl"></div>
               <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-                <img 
-                  src={heroImage.src} 
+                <Image
+                  src={heroImage} 
                   alt="IDR Technology Operations Center - 24/7 Monitoring and Support" 
                   className="w-full h-full object-cover"
+                  width={800}
+                  height={600}
+                  priority
+
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 via-transparent to-transparent"></div>
                 
@@ -106,7 +114,14 @@ export default function OngoingPartnership() {
           {/* Image */}
           <div className="order-1 lg:order-2">
             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl group h-64 sm:h-80 md:h-96 lg:h-full">
-              <img src={img4.src} alt="Camera Monitoring Center" className="w-full h-full object-cover" />
+              <Image 
+              src={partnership} 
+              alt="Camera Monitoring Center" 
+              className="w-full h-full object-cover"
+              width={600}
+              height={400}
+              priority
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </div>

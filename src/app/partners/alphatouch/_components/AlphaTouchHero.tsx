@@ -2,7 +2,7 @@
 
 // /** @format */
 
-import imgAlphaTouchHero from "@/assets/partners/alphatouch/HeroImg.png";
+const imgAlphaTouchHero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Falphatouch%2FHeroImg.png";
 import Image from "next/image";
 
 // export default function AlphaTouchHero() {
@@ -32,6 +32,8 @@ export default function AlphaTouchHero() {
           src={imgAlphaTouchHero}
           alt="AlphaTouch Solutions - Professional technology services and solutions"
           fill
+          // width={1920}
+          // height={1080}
           className="object-fill  object-left-top"
           priority
           quality={100}

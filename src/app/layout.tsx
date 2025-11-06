@@ -4,12 +4,7 @@
 
 import ClientLogos from "@/components/ClientLogos";
 import "./globals.css";
-import partner8 from "@/assets/partners/partner_8.png";
-import partner9 from "@/assets/partners/partner_9.png";
-import partner10 from "@/assets/partners/partner_10.png";
-import partner11 from "@/assets/partners/partner_11.png";
-import partner12 from "@/assets/partners/partner_12.png";
-import partner13 from "@/assets/partners/partner_13.png";
+
 import {clientLogos, clientLogosBottom} from "@/data/clientLogos"
 
 
@@ -18,15 +13,7 @@ import Footer from "@/components/Footer";
 
 import Navbar2 from "@/components/Navbar2";
 
-const footerPartnerImages = [
-  partner8,
-  partner9,
-  partner10,
-  partner11,
-  partner12,
-  partner13,
-];
-const whiteTextLogos = [partner8, partner9, partner10, partner11, partner12];
+
 export default function RootLayout({
   children,
 }: {
@@ -44,12 +31,12 @@ export default function RootLayout({
           </h2>
           <ClientLogos
             logos={clientLogos}
-            whiteTextLogos={clientLogos}
+          
             direction="right"
           />
           <ClientLogos
             logos={clientLogosBottom}
-            whiteTextLogos={clientLogosBottom}
+        
             direction="left"
           />
           <Footer />
