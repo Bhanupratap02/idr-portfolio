@@ -1,5 +1,5 @@
 /** @format */
-const redundancy = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Fredundancy.png";
+const redundancy = "https://idr-portfolio-storage.s3.amazonaws.com/assets/services/data-center/redundancy.png";
 import Image from "next/image";
 export default function DCRedundancySection() {
   return (

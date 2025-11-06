@@ -1,5 +1,5 @@
 /** @format */
-const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Fcertified.png";
+const certified = "https://idr-portfolio-storage.s3.amazonaws.com/assets/services/data-center/certified.png";
 import Image from "next/image";
 const badges = [
   {

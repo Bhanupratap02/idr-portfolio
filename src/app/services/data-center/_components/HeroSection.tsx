@@ -1,5 +1,7 @@
 /** @format */
 const hero = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fservices%2Fdata-center%2Fhero.png";
+
+
 import Image from "next/image";
 import Link from "next/link";
 export default function DCHeroSection() {
@@ -69,7 +71,7 @@ export default function DCHeroSection() {
                 fill
                 className="object-contain rounded-lg"
                 priority
-                quality={90}
+                quality={80}
               />
        
             </div>
