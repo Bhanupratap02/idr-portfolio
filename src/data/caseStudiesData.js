@@ -1794,7 +1794,7 @@ export const caseStudiesData = [
         alt: "PPA Project 1"
       },
       {
-        src: PPA_case_study_2,
+        src:PPA_case_study_7,
         alt: "PPA Project 2"
       },
       {
@@ -1814,7 +1814,7 @@ export const caseStudiesData = [
         alt: "PPA Project 6"
       },
          {
-        src: PPA_case_study_7,
+        src: PPA_case_study_2,
         alt: "PPA Project 7"
       },
       {

@@ -1,7 +1,6 @@
 import FounderMessage from "@/components/about/FounderMessage";
 import MissionValues from "@/components/about/MissionValues";
 import OurStory from "@/components/about/OurStory";
-import PartnerLogos from "@/components/about/PartnerLogos";
 import TeamSection from "@/components/about/TeamSection";
 
 
@@ -23,10 +22,6 @@ export default function AboutUS() {
       {/* Team Section */}
       <TeamSection />
       
-      {/* Partner Logos */}
-      <PartnerLogos />
-
-
     </div>
   );
 }
