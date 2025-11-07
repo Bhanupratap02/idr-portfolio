@@ -15,7 +15,7 @@ const Footer = () => {
       alt: "LinkedIn",
     },
     {
-      href: "https://www.tiktok.com/profile.php?id=100057472869428",
+      href: "https://www.facebook.com/profile.php?id=100057472869428",
       icon: "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Ffacebook.png",
       alt: "Facebook",
     },
