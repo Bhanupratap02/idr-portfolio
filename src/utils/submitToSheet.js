@@ -1,7 +1,7 @@
 // /utils/submitToSheet.js
 export const submitToSheet = async (formData) => {
   //sales@idrtechnologysolutions.com, support@idrtechnologysolutions.com
-  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxYDT8YFuSewX8fsr7MMBJhgChtPCXgNoCHbO_6FvBengLihyenKU3GNmmtHaDexlY/exec"; // replace
+  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyMu0Fo24CjRdFCjaNqmKbHp5I7tNyZjPWNmuwfOmNhrBJ3YcqmxdJj4ze_wqC4Slg/exec"; // replace
 //   const SECRET = "YOUR_CLIENT_SECRET_IF_USED";       // replace with the same secret set in script props
 //AKfycby3qR_Mh2A5XLtKSwfIfuCNaC3dsGGxNN-JgIKujDXFUNOXlCFUA7C-hC7MFfYW6Fki
   // attach secret (if used)
