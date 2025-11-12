@@ -1,6 +1,7 @@
 /** @format */
 import Image from "next/image";
-const heroMainImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-main.png";
+import bgImg from "./vicon_next_hero.png"
+const heroMainImg =  bgImg
 const heroBgImg =
   "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fvicon%2Fhero-bg.png?width=1920&height=1080&format=webp&fit=crop";
 import Link from "next/link";
