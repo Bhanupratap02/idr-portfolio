@@ -24,6 +24,7 @@ const client14 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartne
 import Finance from "@/components/Finance";
 import IdrAdvantage from "@/components/IdrAdvantages";
 import WhyChoose from "@/components/WhyChoose";
+import WhatWeServe from "@/components/WhatWeServe";
 
 
 
@@ -80,6 +81,7 @@ export default function Index() {
 
       {/* What We Do Section */}
       <WhatWeDo />
+      <WhatWeServe />
 
       {/* Why Choose Us Section */}
       {/* <WhyChooseUs /> */}

@@ -373,17 +373,20 @@ const slides = [
   { 
     src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/video_1.mov", 
     title: "", 
-    text: "" 
+    text: "",
+    slogan: "Trusted by top institutions and powered by precision."
   },
   {
     src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/Hero%20Banner%20Video%20Camera%20Monitoring.mp4",
     title: "",
     text: "",
+    slogan: "Trusted by top institutions and powered by precision."
   },
   {
     src: "https://idr-portfolio-storage.s3.amazonaws.com/public/videos/video_4.mp4",
     title: "Design. Installation. Support. One Trusted Partner.",
     text: "Founded in 2007, IDR Technology Solutions is a full-service systems integrator specializing in A/V, security, networking, and IT infrastructure. Our mission is simple: deliver high-quality technology solutions with expert execution, total transparency, and unmatched customer support — every step of the way.",
+    slogan: "Trusted by top institutions and powered by precision."
   },
 ];
 
@@ -574,12 +577,19 @@ export default function Hero() {
         </div>
 
         {/* Text Overlay for 3rd and 4th slides */}
-        {activeIndex === 2 && (
+        {/* Text Overlay - Full content for slide 3, slogan only for slides 1 & 2 */}
+        {activeIndex === 2 ? (
           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start ">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
               {/* Left-aligned container with max width to prevent centering */}
               <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
                 <div className="rounded-xl p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 text-white">
+                   <p className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium drop-shadow-lg"
+                    style={{ 
+                 textShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)' 
+               }}>
+                {currentSlide.slogan}
+              </p>
                   <h2 className="text-3xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-4 xl:mb-4 2xl:mb-8 leading-tight">
                     {currentSlide.title}
                   </h2>
@@ -600,6 +610,21 @@ export default function Hero() {
                       Learn More
                     </Link>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start  justify-start ">
+            <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
+              <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+                <div className="rounded-xl p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12">
+                  <p className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium" 
+                     style={{ 
+                       textShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)' 
+                     }}>
+                    {currentSlide.slogan}
+                  </p>
                 </div>
               </div>
             </div>
