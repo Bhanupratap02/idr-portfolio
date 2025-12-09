@@ -5,7 +5,7 @@ const WhatWeServe = () => {
     <section className="w-full py-10 sm:py-12 lg:py-16 bg-gray-100">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 max-w-[1920px]">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-center text-rhombus-text-dark mb-10 sm:mb-12 lg:mb-16">
-          What We Serve
+          Industries We Serve
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Charter Schools */}
