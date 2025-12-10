@@ -560,10 +560,9 @@ export default function Hero() {
             // no src attribute in JSX to avoid Next/React SSR differences — we set src programmaticall
           />
           {/* Loading Overlay */}
-          {(!isVideoReady) && (
+          {!isVideoReady && (
             <div className="absolute inset-0 bg-[#202020] flex items-center justify-center transition-opacity duration-300" />
           )}
-    
 
           {/* Error State - show if video fails to load */}
 
@@ -582,14 +581,17 @@ export default function Hero() {
           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start md:items-center justify-start ">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
               {/* Left-aligned container with max width to prevent centering */}
-              <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-                <div className="rounded-xl p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 text-white">
-                   <p className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium drop-shadow-lg"
-                    style={{ 
-                 textShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)' 
-               }}>
+              <p
+                className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium drop-shadow-lg pt-4 sm:pt-6 lg:pt-8 xl:pt-10 2xl:pt-12 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12"
+                style={{
+                  textShadow:
+                    "0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)",
+                }}
+              >
                 {currentSlide.slogan}
               </p>
+              <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl 3xl:max-w-4xl">
+                <div className="rounded-xl pt-4   px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 text-white">
                   <h2 className="text-3xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-4 xl:mb-4 2xl:mb-8 leading-tight">
                     {currentSlide.title}
                   </h2>
@@ -615,14 +617,17 @@ export default function Hero() {
             </div>
           </div>
         ) : (
-           <div className="absolute inset-0 top-[10%] md:top-0 flex items-start  justify-start ">
+          <div className="absolute inset-0 top-[10%] md:top-0 flex items-start  justify-start ">
             <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 ">
-              <div className="max-w-xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+              <div className="max-w-xl lg:max-w-xl xl:max-w-none">
                 <div className="rounded-xl p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12">
-                  <p className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium" 
-                     style={{ 
-                       textShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)' 
-                     }}>
+                  <p
+                    className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium"
+                    style={{
+                      textShadow:
+                        "0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9)",
+                    }}
+                  >
                     {currentSlide.slogan}
                   </p>
                 </div>
@@ -678,7 +683,6 @@ export default function Hero() {
               )
             )}
           </div>
-          
         </div>
       </div>
     </section>
