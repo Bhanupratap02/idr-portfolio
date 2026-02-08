@@ -10,7 +10,14 @@ import SurveillanceHeroSection from "./_components/SurveillanceHeroSection";
 import SurveillancePortalSection from "./_components/SurveillancePortalSection";
 import WhyChooseSurveillanceSection from "./_components/WhyChooseSurveillanceSection";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title:
+    "Commercial Surveillance Security Camera Installation Services - IDR",
+  description:
+    "Commercial security camera system installation with reliable surveillance camera services by IDR Technology Solutions to protect businesses with real time monitoring.",
+};
 export default function SurveillanceCamera() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">
