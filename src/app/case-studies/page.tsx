@@ -1,10 +1,13 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
-
-
-
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/case-studies",
+  },
+};
 
 const caseStudies = [
   {

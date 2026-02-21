@@ -1,8 +1,16 @@
+
 import FounderMessage from "@/components/about/FounderMessage";
 import MissionValues from "@/components/about/MissionValues";
 import OurStory from "@/components/about/OurStory";
 import TeamSection from "@/components/about/TeamSection";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 
 
@@ -25,3 +33,4 @@ export default function AboutUS() {
     </div>
   );
 }
+

@@ -16,7 +16,11 @@ export const metadata: Metadata = {
   title: "Structured Cabling Services NYC - IDR Technologies",
   description:
     "Improve business connectivity with structured cabling services, delivering voice, data, and security networks across NYC, New Jersey, and Florida.",
+  alternates: {
+    canonical: "/services/structured-cabling",
+  },
 };
+
 export default function StructuredCabling() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">

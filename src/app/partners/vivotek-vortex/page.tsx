@@ -8,6 +8,12 @@ import HeroSection from "./_components/HeroSection";
 import IndustriesSection from "./_components/IndustriesSection";
 import MainContent from "./_components/MainContent";
 import WhyWorkWithUs from "./_components/WhyWorkWithUs";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/vivotek-vortex",
+  },
+};
 
 export default function VivotekVortex() {
   return (

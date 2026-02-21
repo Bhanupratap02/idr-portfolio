@@ -6,6 +6,12 @@ import PowerfulToolsSection from "./_components/PowerfulToolsSection";
 import SmarterDesignSection from "./_components/SmarterDesignSection";
 import WhatMakesMVISection from "./_components/WhatMakesMVISection";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/mvi",
+  },
+};
 
 
 

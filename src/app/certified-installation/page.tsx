@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { Award, Shield, CheckCircle, Wrench, Cable, Network, FileCheck, TrendingUp, Star, BadgeCheck, Layers, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/certified-installation",
+  },
+};
 
 export default function CertifiedInstallation() {
   const img2 =

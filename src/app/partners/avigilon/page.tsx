@@ -9,6 +9,12 @@ import { IntegrationsSection } from "./_components/IntegrationsSection";
 import { CTASection } from "./_components/CTASection";
 import AvigilonGallery from "./_components/AvigilonGallery";
 // import { PartnersCarousel } from "./components/PartnersCarousel";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/avigilon",
+  },
+};
 
 export default function App() {
   return (

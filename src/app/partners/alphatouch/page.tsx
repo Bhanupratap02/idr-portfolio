@@ -9,6 +9,12 @@ import AlphaTouchPropertyTypes from "./_components/AlphaTouchPropertyTypes";
 import AlphaTouchResidentBenefits from "./_components/AlphaTouchResidentBenefits";
 import AlphaTouchSIPRelay from "./_components/AlphaTouchSIPRelay";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/alphatouch",
+  },
+};
 
 
 export default function AlphaTouchPage() {

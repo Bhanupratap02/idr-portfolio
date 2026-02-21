@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Commercial Audio Visual (AV) Solutions NYC - IDR Technologies",
   description:
     "Commercial audio visual solutions for businesses and offices across NYC, New Jersey, and Florida including AV system design and installation.",
+  alternates: {
+    canonical: "/services/audio-visual",
+  },
 };
 
 export default function AudioVisual() {

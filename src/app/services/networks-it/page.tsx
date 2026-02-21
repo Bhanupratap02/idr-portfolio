@@ -1,5 +1,6 @@
 /** @format */
 
+
 import AVServicesGrid from "@/components/services/ServicesGrid";
 import NITHeroSection from "./_components/NITHeroSection";
 import NITServicesSection from "./_components/NITServicesSection";
@@ -10,6 +11,13 @@ import NITTimelineSection from "./_components/NITTimelineSection";
 import NITPortalSection from "./_components/NITPortalSection";
 import NITWhyChooseSection from "./_components/NITWhyChooseSection";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/services/networks-it",
+  },
+};
 
 export default function NetworksIT() {
   return (

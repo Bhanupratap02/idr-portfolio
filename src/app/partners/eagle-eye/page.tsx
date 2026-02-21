@@ -7,6 +7,12 @@ import HowIDRDelivers from "./_components/HowIDRDelivers";
 import WhereEagleEyeExcels from "./_components/WhereEagleEyeExcels";
 import IntegrationReady from "./_components/IntegrationReady";
 import CTA from "./_components/CTA";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/eagle-eye",
+  },
+};
 
 export default function Index() {
   return (

@@ -15,7 +15,11 @@ export const metadata: Metadata = {
   title: "Security Access Control Systems Services NYC - IDR",
   description:
     "IDR Technology Solutions delivers security access control services across NYC, New Jersey and Florida, including access control system design and installation.",
+  alternates: {
+    canonical: "/services/access-control",
+  },
 };
+
 export default function Index() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">

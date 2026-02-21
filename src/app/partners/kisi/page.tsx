@@ -5,6 +5,12 @@ import { IndustriesSection } from "./_components/IndustriesSection";
 import { IntegrationsSection } from "./_components/IntegrationsSection";
 import { LocationsSection } from "./_components/LocationsSection";
 import { ContactSection } from "./_components/ContactSection";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/kisi",
+  },
+};
 
 export default function App() {
   return (

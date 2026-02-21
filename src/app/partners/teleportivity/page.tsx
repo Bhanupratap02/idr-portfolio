@@ -7,6 +7,12 @@ import TeleportivityFeatures from "./_components/TeleportivityFeatures";
 import TeleportivityHero from "./_components/TeleportivityHero";
 import TeleportivityUseCases from "./_components/TeleportivityUseCases";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/teleportivity",
+  },
+};
 
 
 export default function TeleportivityPage() {

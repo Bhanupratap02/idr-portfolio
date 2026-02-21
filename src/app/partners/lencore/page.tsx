@@ -7,6 +7,12 @@ import LencoreCTA from "./_components/LencoreCTA";
 import LencoreHeroSection from "./_components/LencoreHeroSection";
 import LencoreServiceSection from "./_components/LencoreServiceSection";
 import WhyChooseLencoreSection from "./_components/WhyChooseLencoreSection";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/lencore",
+  },
+};
 
 export default function Lencore() {
   return (

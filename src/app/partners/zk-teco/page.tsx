@@ -24,6 +24,12 @@ import {
   Globe,
 } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/zk-teco",
+  },
+};
 
 export default function Index() {
   return (

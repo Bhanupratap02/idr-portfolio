@@ -27,6 +27,13 @@ import WhyChoose from "@/components/WhyChoose";
 import WhatWeServe from "@/components/WhatWeServe";
 
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 
 const topPartnerImages = [

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import ServicesGrid from "@/components/services/ServicesGrid";
 import CTASection from "./_components/CTASection";
 import HeroSection from "./_components/HeroSection";
@@ -7,6 +8,11 @@ import TrustedProductsSection from "./_components/TrustedProductsSection";
 import WhyChooseCRSection from "./_components/WhyChooseCRSection";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/services/conference-room",
+  },
+};
 
 export default function ConferenceRoom() {
   return (

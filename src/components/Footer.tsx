@@ -185,7 +185,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm 2xl:text-base text-[#F7F6F2]">
-            © 2025 IDR Technology Solutions. All rights reserved.
+            © 2026 IDR Technology Solutions. All rights reserved.
           </p>
         </div>
       </div>

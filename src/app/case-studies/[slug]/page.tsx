@@ -28,6 +28,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: study.hero.heading,
     description: study.hero.paragraph,
+    alternates: {
+      canonical: `/case-studies/${slug}`,
+    },
   };
 }
 

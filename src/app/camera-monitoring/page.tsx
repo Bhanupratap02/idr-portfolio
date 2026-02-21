@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "24/7 Security Camera Monitoring Service - IDR",
   description:
     "Reliable camera monitoring services across NYC, New Jersey, and Florida with 24 7 security camera monitoring to protect businesses with real time alerts.",
+  alternates: {
+    canonical: "/camera-monitoring",
+  },
 };
 
 export default function CameraMonitoring() {

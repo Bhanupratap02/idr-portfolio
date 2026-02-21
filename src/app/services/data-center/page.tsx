@@ -12,6 +12,14 @@ import DCReadySection from "./_components/DCReadySection";
 import ServicesGrid from "@/components/services/ServicesGrid";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/services/data-center",
+  },
+};
+
 export default function DataCenter() {
   return (
     <div className="min-h-screen bg-idr-cream">

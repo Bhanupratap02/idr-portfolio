@@ -472,6 +472,7 @@
 //   );
 // }
 
+import type { Metadata } from "next";
 import CTASection from "./_components/CTASection";
 import DesignPhilosophy from "./_components/DesignPhilosophy";
 import HeroSection from "./_components/HeroSection";
@@ -479,6 +480,13 @@ import IndustriesSection from "./_components/IndustriesSection";
 import PartnershipSection from "./_components/PartnershipSection";
 import ProcessSection from "./_components/ProcessSection";
 import QuoteSection from "./_components/QuoteSection";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/consultation",
+  },
+};
+
 export default function ConsultationDesign() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">

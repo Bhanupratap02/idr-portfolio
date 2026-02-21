@@ -5,6 +5,12 @@ import CiscoHero from "./_components/CiscoHero";
 import CTASection from "./_components/CTASection";
 import ProductOfferings from "./_components/ProductOfferings";
 import WhyCiscoMeraki from "./_components/WhyCiscoMeraki";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/cisco-meraki",
+  },
+};
 
 
 

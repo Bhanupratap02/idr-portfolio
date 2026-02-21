@@ -14,7 +14,11 @@ export const metadata: Metadata = {
   title: "24 7 Monitored Security Intrusion Alarm Systems - IDR",
   description:
     "Professional intrusion alarm system installation with monitoring services to detect unauthorized access and enhance property security.",
+  alternates: {
+    canonical: "/services/security-alarm",
+  },
 };
+
 export default function Index() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">

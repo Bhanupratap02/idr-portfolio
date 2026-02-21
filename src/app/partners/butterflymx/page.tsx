@@ -8,6 +8,12 @@ import { ButterflyMXServiceAreas } from "./_components/ButterflyMXServiceAreas";
 import { ButterflyMXSmartFeatures } from "./_components/ButterflyMXSmartFeatures";
 import { ButterflyMXUseCases } from "./_components/ButterflyMXUseCases";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/butterflymx",
+  },
+};
 
 
 

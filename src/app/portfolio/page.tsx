@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ServicePillCarousel from "@/components/ServicePillCarousel";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
 
 const workSections = [
   {

@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
 
 // import Image from "next/image";
 // import groupImg from "@/assets/Group.png";
 import Map from "@/components/Map";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (

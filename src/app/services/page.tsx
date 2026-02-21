@@ -3,6 +3,13 @@
 import AVServicesGrid from "@/components/services/ServicesGrid";
 import ServiceHeroSection from "./_components/ServiceHeroSection";
 import HowIDRWorksSection from "./_components/HowIDRWorksSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/services",
+  },
+};
 
 export default function ServicePage() {
   return (

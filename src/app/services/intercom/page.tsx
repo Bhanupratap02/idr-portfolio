@@ -15,7 +15,11 @@ export const metadata: Metadata = {
   title: "Intercom Systems Installation Services NYC - Intercom Solutions",
   description:
     "Intercom systems installation across NYC, New Jersey, and Florida providing clear communication, secure entry control, and dependable intercom solutions.",
+  alternates: {
+    canonical: "/services/intercom",
+  },
 };
+
 export default function Intercom() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">

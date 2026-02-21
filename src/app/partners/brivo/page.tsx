@@ -1,28 +1,3 @@
-// BrivoLanding.jsx
-import {
-  BadgeCheck,
-  Wallet,
-  PlayCircle,
-  Key,
-  BatteryCharging,
-  Zap,
-  Mail,
-  DownloadCloud,
-  PlusSquare,
-  Send,
-  ShieldCheck,
-  Smartphone,
-  Lock,
-  CheckCircle,
-  Building,
-  Users,
-  Eye,
-  AlertTriangle,
-  Server,
-  Star,
-  Briefcase,
-  Calendar,
-} from "lucide-react";
 
 import HeroSection from "./_components/HeroSection";
 import FeaturesSection from "./_components/FeaturesSection";
@@ -33,17 +8,12 @@ import SecuritySuiteSection from "./_components/SecuritySuiteSection";
 import CallToActionSection from "./_components/CallToActionSection";
 import ImagesSection from "./_components/ImagesSection";
 
-
-
-
-
-
-
-
-
-
-
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/brivo",
+  },
+};
 
 
 export default function Brivo() {

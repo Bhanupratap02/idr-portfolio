@@ -7,6 +7,12 @@ import TrustSection from "./_components/TrustSection";
 import ViconHeroSection from "./_components/ViconHeroSection";
 import ViconVaxSection from "./_components/ViconVaxSection";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/vicon",
+  },
+};
 
 export default function Vicon() {
   return (

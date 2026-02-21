@@ -1,6 +1,13 @@
 /** @format */
 
+import type { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
 
 export default function PrivacyPolicy() {
   return (

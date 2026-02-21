@@ -6,6 +6,12 @@ import CertifiedSection from "./_components/CertifiedSection";
 import BuiltForEveryEnvironmentSection from "./_components/BuiltForEveryEnvironmentSection";
 import SmartFeaturesSection from "./_components/SmartFeaturesSection";
 import WhereWeWork from "./_components/WhereWeWork";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/speco-technologies",
+  },
+};
 
 export default function Speco() {
   return (

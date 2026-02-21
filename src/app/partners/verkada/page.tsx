@@ -3,6 +3,12 @@ const lockImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartner
 const airImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fverkada-air.png";
 const alaramImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fverkada%2Fvarkada-alaram.png";
 import Link from "next/link";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/partners/verkada",
+  },
+};
 
 export default function Index() {
   return (

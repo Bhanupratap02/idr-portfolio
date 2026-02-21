@@ -17,7 +17,11 @@ export const metadata: Metadata = {
     "Commercial Surveillance Security Camera Installation Services - IDR",
   description:
     "Commercial security camera system installation with reliable surveillance camera services by IDR Technology Solutions to protect businesses with real time monitoring.",
+  alternates: {
+    canonical: "/services/surveillance-camera",
+  },
 };
+
 export default function SurveillanceCamera() {
   return (
     <div className="min-h-screen bg-[#F7F6F2]">

@@ -1,6 +1,7 @@
 /** @format */
 
 
+
 import ERateProgramHeroSection from "./_components/ERateProgramHeroSection";
 import ERateProgramInfoSection from "./_components/ERateProgramInfoSection";
 // import QuickAccessResourcesSection from "./_components/QuickAccessResourcesSection";
@@ -8,6 +9,13 @@ import ERateProgramInfoSection from "./_components/ERateProgramInfoSection";
 import CallToActionSection from "./_components/CallToActionSection";
 import ServicesGrid from "@/components/services/ServicesGrid";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/services/e-rate-program",
+  },
+};
 
 
 export default function ERateProgram() {
