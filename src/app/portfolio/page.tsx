@@ -97,7 +97,7 @@ const workSections = [
   {
     id: "multifamily",
     url: "/services/intercom",
-    title: "Multifamily Intercom Systems",
+    title: "Smart Multifamily Intercom Solutions",
     images: [
       "https://idr-portfolio-storage.s3.amazonaws.com/assets/portfolio/Intercom1.jpg",
       "https://idr-portfolio-storage.s3.amazonaws.com/assets/portfolio/Intercom2.jpg",

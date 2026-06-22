@@ -14,9 +14,9 @@ export default function SurveillanceHeroSection() {
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8 xl:space-y-10 2xl:space-y-12 flex flex-col justify-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-white leading-tight sm:leading-tight lg:leading-snug xl:leading-relaxed text-center lg:text-left">
-              Next-Generation
+              Smart Surveillance & 
               <br />
-              Camera Systems
+              Security Camera Systems
             </h1>
             <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl 3xl:leading-relaxed w-full max-w-none md:max-w-md 2xl:max-w-lg 3xl:max-w-2xl  text-[#DBEAFE] text-center lg:text-left max-md:mx-auto">
               AI-driven analytics, real-time alerting, and enterprise-grade

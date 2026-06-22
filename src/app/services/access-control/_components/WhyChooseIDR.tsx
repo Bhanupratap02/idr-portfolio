@@ -53,7 +53,10 @@ export default function WhyChooseIDR() {
         <h2 className="text-[#2E2E2E] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium mb-10 sm:mb-14 lg:mb-16">
           Why Teams Choose IDR
         </h2>
-
+     <p className="text-[#626262] text-base sm:text-lg 2xl:text-xl 3xl:text-2xl mb-10 sm:mb-16 max-w-3xl mx-auto">
+         Teams choose IDR for expertly designed security access control systems that protect people, property, and data without disrupting daily operations. We deliver reliable access control services, including professional access control systems installation NYC businesses trust for scalable and secure entry management.
+        From system design to long-term support, our access control system NYC solutions are built for performance, flexibility and seamless integration with your existing infrastructure.
+        </p>
         {/* Feature Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 mb-12 lg:mb-16">
           {features.map((feature, index) => (

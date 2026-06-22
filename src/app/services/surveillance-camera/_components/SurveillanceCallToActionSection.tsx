@@ -11,8 +11,7 @@ export default function SurveillanceCallToActionSection() {
           Ready to Secure Your Property?
         </h2>
         <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#DBEAFE] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl 2xl:max-w-[5xl]  3xl:max-w-6xl mx-auto mb-12">
-          Get started with a consultation and custom system design tailored to
-          your specific needs.
+          Get started with a consultation and custom system design tailored to your specific needs, backed by professional surveillance security camera services.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact">

@@ -125,7 +125,7 @@ export default function WhyChooseAVSection() {
             Why Work with IDR for A/V?
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl  2xl:text-2xl text-gray-600">
-            Experience the difference working with certified professionals
+            Experience the difference of working with certified professionals delivering reliable, scalable commercial AV solutions tailored to your business needs.
           </p>
         </div>
 

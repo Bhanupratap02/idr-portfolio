@@ -19,9 +19,7 @@ export default function CablingHeroSection() {
                 Built for Today — and Scalable for Tomorrow
               </h2>
               <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl  text-[#4B5563] leading-relaxed max-w-2xl 3xl:leading-loose text-center  lg:text-left">
-                We deliver clean, scalable, and code-compliant cabling
-                installations that form the backbone of your technology
-                infrastructure.
+                We deliver clean, scalable, and code-compliant structured cabling services across NYC, creating a strong and reliable backbone for your technology infrastructure.
               </p>
             </div>
             <Link

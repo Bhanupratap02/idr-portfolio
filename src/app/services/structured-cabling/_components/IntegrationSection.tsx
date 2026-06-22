@@ -118,8 +118,7 @@ export default function IntegrationSection() {
             Designed for Integration
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] max-w-2xl sm:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl mx-auto leading-relaxed">
-            Our structured cabling systems serve as the foundation for all your
-            technology needs, ensuring seamless integration across platforms.
+            Our structured cabling systems provide a strong and reliable foundation for your technology infrastructure, delivering seamless integration across platforms for businesses throughout NYC.
           </p>
         </div>
 
@@ -141,9 +140,7 @@ export default function IntegrationSection() {
               Future-proof your tech stack
             </h3>
             <p className="text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl text-[#626262] max-w-2xl sm:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto leading-relaxed">
-              Our structured cabling solutions are designed to accommodate your
-              current needs while providing the flexibility to adapt to future
-              technological advancements.
+               Our structured cabling solutions are designed to support your current connectivity needs while offering the flexibility to grow with future technological advancements for businesses across NYC.
             </p>
           </div>
         </div>

@@ -103,43 +103,75 @@ const ContactSection = () => {
                 </h3>
 
                 <div className="space-y-8 text-base leading-relaxed">
-                  <div className="flex items-start space-x-4">
-                    <Phone className="w-5 h-5" />
-                    <div>
+                {/* Phone */}
+                <div className="flex items-start space-x-4">
+                  <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
+                  <div className="space-y-1">
+                    <a
+                      href="tel:+17185947865"
+                      className="block hover:no-underline transition"
+                    >
                       NY: 718-594-7865
-                      <br />
+                    </a>
+
+                    <a
+                      href="tel:+17322173550"
+                      className="block hover:no-underline transition"
+                    >
                       NJ: 732-217-3550
-                      <br />
+                    </a>
+
+                    <a
+                      href="tel:+18136854022"
+                      className="block hover:no-underline transition"
+                    >
                       FL: 813-685-4022
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col items-start space-x-4">
-                    
-                    <div className="flex items-start space-x-4">
-                      <Mail className="w-5 h-5" />
-                      <div>Sales:
-                      <br />
-                      sales@idrtechnologysolutions.com
-                      </div>
-                    </div>
-                    <br />
-                    <div className="flex items-start space-x-4">
-                      <Mail className="w-5 h-5" />
-                      <div>  
-                        Support:
-                      <br />
-                      support@idrtechnologysolutions.com
-                      </div>
-                    
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="w-5 h-5" />
-                    <div>Office Address: 91 Bay 31 St, Brooklyn, NY 11214</div>
+                    </a>
                   </div>
                 </div>
+
+                {/* Email */}
+                <div className="flex flex-col space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
+                    <div>
+                      <div>Sales:</div>
+                      <a
+                        href="mailto:sales@idrtechnologysolutions.com"
+                        className="hover:no-underline break-all"
+                      >
+                        sales@idrtechnologysolutions.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
+                    <div>
+                      <div>Support:</div>
+                      <a
+                        href="mailto:support@idrtechnologysolutions.com"
+                        className="hover:no-underline break-all"
+                      >
+                        support@idrtechnologysolutions.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex items-start space-x-4">
+                  <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+                  <Link
+                    href="https://share.google/NV2hDUYMuvjcu3hFi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:no-underline"
+                  >
+                    Office Address: 91 Bay 31 St, Brooklyn, NY 11214
+                  </Link>
+                </div>
+              </div>
 
                 <div className="mt-16 flex justify-start space-x-4">
                   {socialLinks.map((item, i) => (

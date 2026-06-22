@@ -24,7 +24,7 @@ const features = [
       </svg>
     ),
     title: "Certified Technicians",
-    desc: "All installations handled by certified IDR technicians who know the technology inside and out",
+    desc: "All commercial security camera system installations handled by certified IDR technicians who know the technology inside and out",
   },
   {
     id: 2,

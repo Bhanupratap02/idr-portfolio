@@ -128,6 +128,9 @@ export default function FeaturesSection() {
             Whether cloud-based or on-premises, we tailor the perfect system for
             your needs.
           </p>
+          <p className="text-[#626262] text-base sm:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl max-w-4xl mx-auto leading-relaxed">
+            These devices are key elements of our intrusion alarm systems, working together to ensure complete protection.
+          </p>
         </div>
 
         {/* Features Grid */}

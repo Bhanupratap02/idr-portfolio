@@ -11,15 +11,10 @@ export default function CompleteSurveillanceSection() {
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-7 lg:space-y-8  3xl:space-y-12">
             <h2 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-[2.86rem] 3xl:text-6xl font-medium  text-[#2E2E2E] leading-tight">
-              Complete Surveillance Solutions
+              Commercial Surveillance Security Camera Services
             </h2>
             <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed 3xl:leading-loose">
-              At IDR Technology Solutions, we design, install, support, and
-              service modern surveillance camera systems for commercial,
-              multifamily, and industrial spaces. Whether you&apos;re securing a
-              single office or hundreds of units across multiple properties, we
-              bring the expertise and tools to keep your site covered —
-              literally.
+              At IDR Technology Solutions, we design, install, support, and service modern surveillance camera systems for commercial, multifamily, and industrial spaces. Our surveillance security camera services cover everything from system design to long-term maintenance. Whether you&apos;re securing a single office or managing hundreds of units across multiple properties, we provide expert commercial security camera system installation to keep your site fully protected.
             </p>
 
             {/* Features */}

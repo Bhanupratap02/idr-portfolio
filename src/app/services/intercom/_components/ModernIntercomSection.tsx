@@ -106,8 +106,7 @@ export function ModernIntercomSection() {
             Modern Intercom Solutions for Modern Living
           </h2>
           <p className="text-gray-600 text-base sm:text-lg lg:text-xl  2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl mx-auto">
-            We partner with leading manufacturers to deliver intercom systems
-            that are as functional as they are future-ready.
+            We partner with leading manufacturers to deliver advanced intercom solutions that are as functional as they are future-ready.
           </p>
         </div>
 

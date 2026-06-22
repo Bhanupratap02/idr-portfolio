@@ -12,7 +12,7 @@ export function IntercomCTASection() {
         </h2>
         <p className="text-blue-100 text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed mb-10  mx-auto">
           Let&apos;s discuss how IDR Technology Solutions can enhance your
-          property&apos;s security and convenience.
+          property&apos;s security and convenience with modern intercom solutions and expert intercom systems installation NYC.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">

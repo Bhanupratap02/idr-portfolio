@@ -36,19 +36,17 @@ export default function HeroSection() {
             <div>
               {/* Main Title */}
               <h1 className="text-[#2E2E2E] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl  font-medium leading-tight mb-4 sm:mb-6">
-                Access Control Systems
+                Security Access Control Systems
               </h1>
 
               {/* Subtitle */}
               <h2 className="text-[#2E2E2E] text-xl sm:text-2xl 2xl:text-3xl 3xl:text-4xl font-medium leading-relaxed mb-3 sm:mb-4">
-                Smarter Entry, Stronger Security
+                Access Control Services That Go Beyond Installation
               </h2>
 
               {/* Description */}
               <p className="text-[#4B5563] text-base sm:text-lg 2xl:text-xl 3xl:text-2xl leading-relaxed mb-8 sm:mb-10 max-w-xl">
-                At IDR Technology Solutions, we design, install, and support
-                access control systems that secure your space without slowing
-                you down.
+                At IDR Technology Solutions, we design, install and support security access control systems that secure your space without slowing you down.
               </p>
 
               {/* Feature Cards */}

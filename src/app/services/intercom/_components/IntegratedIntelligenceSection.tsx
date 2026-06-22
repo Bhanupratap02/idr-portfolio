@@ -106,7 +106,7 @@ export function IntegratedIntelligenceSection() {
             Integrated, Intelligent, and Scalable
           </h2>
           <p className="text-gray-600 text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl leading-relaxed max-w-3xl mx-auto">
-            Our intercom systems are built to play well with others
+            Our intercom systems are built to work seamlessly with other building technologies, delivering fully integrated intercom solutions for modern properties.
           </p>
         </div>
 

@@ -17,8 +17,7 @@ export default function TrustedTechnology() {
         </h2>
 
         <p className="text-[#626262] text-base sm:text-lg 2xl:text-xl 3xl:text-2xl mb-10 sm:mb-16 max-w-3xl mx-auto">
-          We deploy systems from top manufacturers like Kisi, Brivo, Rhombus,
-          Verkada, Vicon, and ZKTeco.
+          We deploy advanced access control systems from top manufacturers like Kisi, Brivo, Rhombus, Verkada, Vicon and ZKTeco, ensuring reliable performance, scalability, and seamless integration.
         </p>
         {/* Partner Logos */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mb-12 sm:mb-16">

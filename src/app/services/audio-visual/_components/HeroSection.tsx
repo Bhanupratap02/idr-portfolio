@@ -24,11 +24,11 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl 2xl:max-w-[95rem] 3xl:max-w-[125rem]  mx-auto px-4 sm:px-6 md:px-8 lg:px-12 2xl:px-20 3xl:px-32">
         <div className="flex flex-col justify-between items-center text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-medium text-white leading-tight mb-6">
-            Where Technology Meets Experience
+            Advanced Commercial Audio Visual (AV) Solutions
             {/* <br/> */}
           </h1>
           <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl text-gray-200 mb-8 ">
-            Expertly Engineered A/V Solutions for Any Setting
+            Expertly Engineered Commercial A/V Solutions for Any Setting
           </p>
           <Link href={"/contact"} className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-8 2xl:px-10 3xl:px-12 py-3 sm:py-4 3xl:py-6  rounded-md text-base sm:text-lg 2xl:text-xl font-medium transition-colors cursor-pointer">
             Schedule a Free Site Visit

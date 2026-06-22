@@ -21,7 +21,7 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="space-y-6 sm:space-y-8 lg:space-y-10 2xl:space-y-12">
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold leading-tight sm:leading-tight lg:leading-snug xl:leading-tight 2xl:leading-tight 3xl:leading-tight text-center lg:text-left">
-            Security Alarm Systems
+            Security & Intrusion Alarm Systems
           </h1>
 
           <h2 className="text-white text-lg  sm:text-xl md:text-2xl 2xl:text-3xl 3xl:text-4xl font-medium leading-relaxed text-center lg:text-left">

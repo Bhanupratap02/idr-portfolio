@@ -34,7 +34,7 @@ export default function CameraMonitoring() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 tracking-tight">
-                Camera Monitoring
+                Camera Monitoring Services
               </h1>
 
               <p className="text-xl sm:text-2xl lg:text-2xl text-blue-200 font-light mb-4 sm:mb-6 leading-relaxed">
@@ -42,9 +42,7 @@ export default function CameraMonitoring() {
               </p>
 
               <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">
-                IDR&apos;s camera monitoring services deliver real-time
-                visibility, AI-driven alerts, and live human response — ensuring
-                every incident gets attention the moment it happens.
+                 IDR&apos;s security camera monitoring services deliver real-time visibility, AI-driven alerts and live human response; ensuring every incident gets attention the moment it happens.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
@@ -171,8 +169,11 @@ export default function CameraMonitoring() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-6">
-              What You Get with IDR Monitoring
+              What You Get with IDR Security Camera Monitoring
             </h2>
+            <p className="text-slate-600 leading-relaxed">
+              With IDR, you get a reliable security camera monitoring service designed to protect your property 24/7 with real-time alerts and rapid response.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -266,9 +267,7 @@ export default function CameraMonitoring() {
                 quickly you see, act, and respond.
               </p>
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 sm:mb-10">
-                With IDR&apos;s camera monitoring, every alert is backed by
-                trained professionals who know your system, understand your
-                site, and treat every alarm like it&apos;s their own.
+                With IDR&apos;s camera monitoring services, every alert is backed by trained professionals who know your system, understand your sit, and treat every alarm like it&apos;s their own.
               </p>
             </div>
 

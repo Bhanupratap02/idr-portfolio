@@ -155,8 +155,7 @@ export default function WhyChooseSurveillanceSection() {
             Why Choose IDR?
           </h2>
           <p className="text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl 3xl:text-3xl text-[#626262] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl 2xl:max-w-[5xl]  3xl:max-w-6xl mx-auto">
-            Whether you&apos;re launching a new build or modernizing an older
-            setup, we&apos;ll make sure your cameras work — and keep working.
+            Whether you&apos;re launching a new build or modernizing an older setup, our surveillance security camera services ensure your cameras work and keep working.
           </p>
         </div>
 
