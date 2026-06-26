@@ -18,6 +18,16 @@ export const submitToSheet = async (formData) => {
       body: JSON.stringify(payload),
     });
 
+      // Generate slug from source
+    const slug =
+      formData.source
+        ?.toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "") || "contact";
+
+    if (typeof window !== "undefined") {
+      window.location.href = `/thank-you/${slug}`;
+    }
     // Because of no-cors, we cannot reliably read response; assume success if fetch doesn't throw.
     return { success: true };
   } catch (error) {
