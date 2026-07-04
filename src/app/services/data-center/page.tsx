@@ -15,6 +15,8 @@ import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSec
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title:"Data Center Infrastructure & Support Services | IDR Technologies",
+description:"Build a reliable IT foundation with data center infrastructure, cabling, equipment deployment, maintenance, and support.",
   alternates: {
     canonical: "/services/data-center",
   },

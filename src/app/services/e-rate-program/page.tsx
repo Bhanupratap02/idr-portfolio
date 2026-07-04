@@ -12,6 +12,8 @@ import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSec
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title:"E-Rate Program Technology Solutions | IDR Technologies",
+  description:"Support learning with E-Rate technology solutions, including network infrastructure, Wi-Fi, cabling, and security systems.",
   alternates: {
     canonical: "/services/e-rate-program",
   },

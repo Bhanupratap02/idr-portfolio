@@ -14,6 +14,8 @@ import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSec
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title:"Managed Networks & IT Services | IDR Technologies",
+  description:"Keep your business connected with managed networks, IT support, cybersecurity, infrastructure management, and monitoring.",
   alternates: {
     canonical: "/services/networks-it",
   },

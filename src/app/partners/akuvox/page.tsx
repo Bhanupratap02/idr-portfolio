@@ -10,6 +10,8 @@ import WhyWorkWithIDRSection from "./_components/WhyWorkWithIDRSection";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Akuvox Intercom Solutions | IDR Technologies",
+  description:"Explore Akuvox intercom and smart building solutions installed and supported by IDR Technologies for modern properties.",
   alternates: {
     canonical: "/partners/akuvox",
   },

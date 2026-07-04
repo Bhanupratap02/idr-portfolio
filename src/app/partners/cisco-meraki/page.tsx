@@ -7,6 +7,8 @@ import ProductOfferings from "./_components/ProductOfferings";
 import WhyCiscoMeraki from "./_components/WhyCiscoMeraki";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Cisco Meraki Network Solutions | IDR Technologies",
+  description:"Explore Cisco Meraki networking, Wi-Fi, and cloud-managed infrastructure solutions from IDR Technologies.",
   alternates: {
     canonical: "/partners/cisco-meraki",
   },

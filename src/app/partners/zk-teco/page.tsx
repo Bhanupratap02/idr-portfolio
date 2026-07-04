@@ -26,6 +26,8 @@ import {
 import Link from "next/link";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"ZKTeco Security Solutions | IDR Technologies",
+  description:"Discover ZKTeco access control, biometric, and security solutions installed by IDR Technologies.",
   alternates: {
     canonical: "/partners/zk-teco",
   },

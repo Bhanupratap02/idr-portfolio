@@ -10,6 +10,8 @@ import ImagesSection from "./_components/ImagesSection";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Brivo Access Control Solutions | IDR Technologies",
+  description:"Learn how IDR Technologies delivers Brivo cloud-based access control solutions for secure and flexible property access.",
   alternates: {
     canonical: "/partners/brivo",
   },

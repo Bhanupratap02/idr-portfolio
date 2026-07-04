@@ -7,6 +7,8 @@ import { LocationsSection } from "./_components/LocationsSection";
 import { ContactSection } from "./_components/ContactSection";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Kisi Access Control Solutions | IDR Technologies",
+  description:"Discover Kisi mobile-first access control solutions designed and installed by IDR Technologies.",
   alternates: {
     canonical: "/partners/kisi",
   },

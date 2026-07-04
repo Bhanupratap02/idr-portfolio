@@ -9,6 +9,8 @@ import IntegrationReady from "./_components/IntegrationReady";
 import CTA from "./_components/CTA";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Eagle Eye Networks Solutions | IDR Technologies",
+  description:"Discover Eagle Eye Networks cloud video surveillance solutions deployed and supported by IDR Technologies.",
   alternates: {
     canonical: "/partners/eagle-eye",
   },

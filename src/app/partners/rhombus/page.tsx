@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import RhombusPage from "./_components/RhombusPage";
 
 export const metadata: Metadata = {
-  title: "Rhombus Systems: Smart Video Surveillance in the Cloud - IDR",
+  title: "Rhombus Camera Solutions | IDR Technologies",
   description:
-    "Certified Rhombus partner delivering cloud-native surveillance solutions across NYC, NJ, and Florida.",
+    "Explore Rhombus cloud-managed security camera systems installed and supported by IDR Technologies.",
   alternates: {
     canonical: "/partners/rhombus",
   },

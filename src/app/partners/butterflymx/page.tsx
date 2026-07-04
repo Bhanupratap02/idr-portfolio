@@ -10,6 +10,8 @@ import { ButterflyMXUseCases } from "./_components/ButterflyMXUseCases";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"ButterflyMX Intercom Solutions | IDR Technologies",
+  description:"Learn how ButterflyMX smart intercom systems improve property access, convenience, and security.",
   alternates: {
     canonical: "/partners/butterflymx",
   },
