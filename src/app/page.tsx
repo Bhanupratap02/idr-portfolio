@@ -30,6 +30,8 @@ import WhatWeServe from "@/components/WhatWeServe";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "IDR Technologies | Security, IT & Infrastructure Solutions",
+  description:"IDR Technologies provides access control, surveillance, intercom, cabling, AV, and IT solutions for commercial properties.",
   alternates: {
     canonical: "/",
   },

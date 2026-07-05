@@ -9,6 +9,8 @@ import WhyChooseCRSection from "./_components/WhyChooseCRSection";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 export const metadata: Metadata = {
+  title:"Conference Room Technology Solutions | IDR Technologies",
+  description:"Upgrade your meeting spaces with conference room technology solutions, video conferencing, AV systems, and room controls.",
   alternates: {
     canonical: "/services/conference-room",
   },

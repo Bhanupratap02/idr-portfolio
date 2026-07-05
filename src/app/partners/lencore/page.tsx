@@ -9,6 +9,8 @@ import LencoreServiceSection from "./_components/LencoreServiceSection";
 import WhyChooseLencoreSection from "./_components/WhyChooseLencoreSection";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Lencore Sound Masking Solutions | IDR Technologies",
+  description:"Learn about Lencore sound masking and communication solutions for productive work environments.",
   alternates: {
     canonical: "/partners/lencore",
   },

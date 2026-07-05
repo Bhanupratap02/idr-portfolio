@@ -9,6 +9,8 @@ import ViconVaxSection from "./_components/ViconVaxSection";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Vicon Security Solutions | IDR Technologies",
+  description:"Learn about Vicon surveillance and security solutions tailored for commercial and multifamily properties.",
   alternates: {
     canonical: "/partners/vicon",
   },

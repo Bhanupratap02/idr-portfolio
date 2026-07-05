@@ -8,6 +8,8 @@ import WhatMakesMVISection from "./_components/WhatMakesMVISection";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"MVI Intercom Solutions | IDR Technologies",
+  description:"Explore MVI intercom and communication solutions designed, installed, and supported by IDR Technologies.",
   alternates: {
     canonical: "/partners/mvi",
   },

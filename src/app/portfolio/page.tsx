@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title:"Our Portfolio | IDR Technologies",
+  description:"Explore completed security, cabling, AV, and IT projects delivered by IDR Technologies across commercial and multifamily properties.",
   alternates: {
     canonical: "/portfolio",
   },

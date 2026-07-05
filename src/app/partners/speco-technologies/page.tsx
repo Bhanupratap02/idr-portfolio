@@ -8,6 +8,8 @@ import SmartFeaturesSection from "./_components/SmartFeaturesSection";
 import WhereWeWork from "./_components/WhereWeWork";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Speco Security Solutions | IDR Technologies",
+  description:"Discover Speco Technologies surveillance and security solutions installed and supported by IDR Technologies.",
   alternates: {
     canonical: "/partners/speco-technologies",
   },

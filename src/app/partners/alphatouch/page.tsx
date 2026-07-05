@@ -11,6 +11,8 @@ import AlphaTouchSIPRelay from "./_components/AlphaTouchSIPRelay";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"AlphaTouch Intercom Systems | IDR Technologies",
+  description:"Explore AlphaTouch intercom solutions for residential and commercial properties supported by IDR Technologies.",
   alternates: {
     canonical: "/partners/alphatouch",
   },

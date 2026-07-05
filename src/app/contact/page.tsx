@@ -6,6 +6,8 @@ import ContactSection from "@/components/ContactSection";
 import Map from "@/components/Map";
 
 export const metadata: Metadata = {
+  title:"Contact IDR Technologies",
+  description:"Contact IDR Technologies for security systems, cabling, AV, networking, and IT solutions. Request a consultation or project support today",
   alternates: {
     canonical: "/contact",
   },

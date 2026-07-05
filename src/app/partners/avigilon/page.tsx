@@ -11,6 +11,8 @@ import AvigilonGallery from "./_components/AvigilonGallery";
 // import { PartnersCarousel } from "./components/PartnersCarousel";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Avigilon Video Security | IDR Technologies",
+  description:"Discover Avigilon surveillance cameras and AI-powered security solutions deployed by IDR Technologies.",
   alternates: {
     canonical: "/partners/avigilon",
   },

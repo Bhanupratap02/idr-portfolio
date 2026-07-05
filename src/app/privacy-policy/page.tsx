@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
+    title:"Privacy Policy | IDR Technologies",
+  description:"Read the IDR Technologies privacy policy to understand how we collect, use, and protect your information and website data.",
   alternates: {
     canonical: "/privacy-policy",
   },

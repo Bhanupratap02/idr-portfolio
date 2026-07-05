@@ -7,6 +7,8 @@ import TeamSection from "@/components/about/TeamSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title:"About IDR Technologies",
+  description:"Learn about IDR Technologies, our experience, team, and approach to security, networking, cabling, and technology infrastructure projects.",
   alternates: {
     canonical: "/about",
   },

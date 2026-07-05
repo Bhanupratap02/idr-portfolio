@@ -10,6 +10,8 @@ import MainContent from "./_components/MainContent";
 import WhyWorkWithUs from "./_components/WhyWorkWithUs";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Vivotek Vortex Surveillance | IDR Technologies",
+  description:"Explore Vivotek Vortex cloud surveillance solutions designed to improve visibility and security management.",
   alternates: {
     canonical: "/partners/vivotek-vortex",
   },

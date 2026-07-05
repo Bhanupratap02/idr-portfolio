@@ -5,6 +5,8 @@ const alaramImg = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartn
 import Link from "next/link";
 import { Metadata } from "next";
 export const metadata: Metadata = {
+    title:"Verkada Security Solutions | IDR Technologies",
+  description:"Learn about Verkada access control, cameras, and security solutions delivered by IDR Technologies.",
   alternates: {
     canonical: "/partners/verkada",
   },
