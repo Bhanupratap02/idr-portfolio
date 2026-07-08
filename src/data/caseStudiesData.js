@@ -43,7 +43,7 @@ const intercom_case_study_7 = "https://idr-portfolio-storage.s3.amazonaws.com/as
 //security 
 const Eliminating_case_study_1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-173.jpg";
 const Eliminating_case_study_2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-185.jpg";
-const Eliminating_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-187.jpg";  
+const Eliminating_case_study_3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-187.jpg";
 const Eliminating_case_study_4 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-196.jpg";
 const Eliminating_case_study_5 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-198.jpg";
 const Eliminating_case_study_6 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FEliminating%20Unauthorized%20Access%2FIDR_Sep18-199.jpg";
@@ -126,12 +126,93 @@ const Louderhill_case_study_10 = "https://idr-portfolio-storage.s3.amazonaws.com
 const Louderhill_case_study_11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FLong%20Range%20Reader%20and%20LPR%20for%20Vehicle%20Gate.jpg";
 const Louderhill_case_study_12 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FVicon%20Long%20Range%20Reader%20for%20Vehicle%20Gate.jpg";
 const Louderhill_case_study_13 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fcase_study%2FSecuring%20Lauderhill%20Point%2FVicon%20Reader%20for%20Pedestrian%20Gate.jpg";
-  
+
 
 
 //Kisi Elevator 
 
-
+export const metaData = [
+  {
+    slug: "burns-partnership",
+    title: "Burns Engineering Partnership Case Study | IDR Technologies",
+    description: "See how IDR Technologies helped Burns Engineering deploy Kisi access control in NYC, building a trusted partnership that expanded nationwide."
+  },
+  {
+    slug: "cloud-4-wire-intercoms",
+    title: "Cloud & 4-Wire Intercom Integration | IDR",
+    description: "See how IDR Technologies connected modern cloud intercom technology with existing 4-wire infrastructure at The Chocolate Factory."
+  },
+  {
+    slug: "custom-audio-deterrent",
+    title: "Custom Audio Deterrent Solution | Upway Case Study",
+    description: "See how IDR Technologies designed a custom outdoor audio deterrent solution to improve security and help reduce unwanted activity at Upway."
+  },
+  {
+    slug: "eliminated-unauthorized-access",
+    title: "Eliminating Unauthorized Building Access | IDR",
+    description: "See how IDR Technologies helped Fairstead eliminate unauthorized building access across 42 properties with a more secure access control solution."
+  },
+  {
+    slug: "enterprise-cabling-cleanup",
+    title: "Enterprise Cabling Cleanup Case Study | IDR",
+    description: "See how IDR Technologies organized and upgraded cabling infrastructure for Oppenheimer Funds to improve reliability and performance."
+  },
+  {
+    slug: "fixing-failed-installs",
+    title: "Fixing Failed Surveillance Installations | Case Study",
+    description: "See how IDR Technologies corrected major surveillance system failures across two properties and delivered dependable performance."
+  },
+  {
+    slug: "kisi-elevator-access",
+    title: "Kisi Elevator Access Solution | Case Study",
+    description: "See how IDR Technologies secured elevator access for Robinhood Foundation using Kisi mobile credentials without installing elevator readers."
+  },
+  {
+    slug: "phased-wifi-upgrade",
+    title: "Phased Wi-Fi Upgrade Case Study | IDR",
+    description: "See how IDR Technologies modernized school Wi-Fi infrastructure through a phased upgrade that improved coverage, speed, and reliability."
+  },
+  {
+    slug: "ppa-screen-sharing",
+    title: "PPA Technology Partnership Case Study | IDR",
+    description: "See how IDR Technologies has supported Peninsula Preparatory Academy with reliable technology infrastructure, networking, and IT solutions since 2009."
+  },
+  {
+    slug: "scaling-security-fairstead",
+    title: "Scaling Security with Fairstead | Case Study",
+    description: "See how IDR Technologies helped Fairstead standardize security and low-voltage infrastructure across properties in multiple states."
+  },
+  {
+    slug: "securing-lauderhill-point",
+    title: "Securing Lauderhill Point Apartments | IDR",
+    description: "See how IDR Technologies upgraded security at Lauderhill Point Apartments with a resilient solution designed to improve safety and property protection."
+  },
+  {
+    slug: "smarter-training-room",
+    title: "Smarter Training Room Integration | IDR",
+    description: "See how IDR Technologies transformed a training room for MTF Biologics with Microsoft Teams integration, AV technology, and seamless collaboration."
+  },
+  {
+    slug: "unified-intercom-access",
+    title: "Unified Intercom Access for Douglas Elliman | IDR",
+    description: "See how IDR Technologies unified intercom access across multiple entry points, creating a simpler and more secure experience for Douglas Elliman."
+  },
+  {
+    slug: "advance-local",
+    title: "Advance Local Technology Case Study | IDR",
+    description: "See how IDR Technologies delivered a reliable technology solution that supported Advance Local's operational and infrastructure goals."
+  },
+  {
+    slug: "phipps-houses",
+    title: "Stopping Break-Ins with Smarter Entry Design | IDR",
+    description: "See how IDR Technologies helped Phipps Houses stop repeated break-ins by redesigning building entry points and improving access control security."
+  },
+  {
+    slug: "ppa-partnership",
+    title: "Peninsula Preparatory Academy Partnership | IDR",
+    description: "See how IDR Technologies has supported Peninsula Preparatory Academy with technology infrastructure, networking, and IT solutions since 2009."
+  }
+];
 
 
 export const caseStudiesData = [
@@ -139,8 +220,8 @@ export const caseStudiesData = [
     slug: "burns-partnership",
     hero: {
       backgroundImage: case_study,
-      heading: "Burns Engineering Partnership Case Study | IDR Technologies",
-      paragraph: "See how IDR Technologies helped Burns Engineering deploy Kisi access control in NYC, building a trusted partnership that expanded nationwide."
+      heading: "Burns Engineering a Lasting Relationship",
+      paragraph: "In 2022, Burns Engineering reached out to IDR to install a Kisi access control system at their NYC office. What started as a single-project relationship quickly evolved into something more: a national partnership built on trust, consistency, and execution."
     },
     galleryImages: [
       {
@@ -231,8 +312,8 @@ export const caseStudiesData = [
     slug: "cloud-4-wire-intercoms",
     hero: {
       backgroundImage: case_study,
-      heading: "Cloud & 4-Wire Intercom Integration | IDR",
-      paragraph: "See how IDR Technologies connected modern cloud intercom technology with existing 4-wire infrastructure at The Chocolate Factory."
+      heading: "How IDR Unified Cloud and 4-Wire Intercoms",
+      paragraph: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across 42 buildings in their Sunset Park portfolio. Residents were duplicating their proximity fobs at retail stores and handing them off to unauthorized individuals — leading to serious safety and liability concerns for the property owner."
     },
     galleryImages: [
       {
@@ -310,8 +391,8 @@ export const caseStudiesData = [
     slug: "custom-audio-deterrent",
     hero: {
       backgroundImage: case_study,
-      heading: "Custom Audio Deterrent Solution | Upway Case Study",
-      paragraph: "See how IDR Technologies designed a custom outdoor audio deterrent solution to improve security and help reduce unwanted activity at Upway."
+      heading: "How IDR Upgraded Loitering Deterrence for Upway",
+      paragraph: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag: the Rhombus annunciator available at the time was designed for indoor use — and simply wasn't loud enough to deter activity outdoors."
     },
     galleryImages: [
       {
@@ -398,8 +479,8 @@ export const caseStudiesData = [
     slug: "eliminated-unauthorized-access",
     hero: {
       backgroundImage: case_study,
-      heading: "Eliminating Unauthorized Building Access | IDR",
-      paragraph: "See how IDR Technologies helped Fairstead eliminate unauthorized building access across 42 properties with a more secure access control solution."
+      heading: "Unauthorized Access Prevention for Fairstead",
+      paragraph: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across 42 buildings in their Sunset Park portfolio. Residents were duplicating their proximity fobs at retail stores and handing them off to unauthorized individuals — leading to serious safety and liability concerns for the property owner."
     },
     galleryImages: [
       {
@@ -514,8 +595,8 @@ export const caseStudiesData = [
     slug: "enterprise-cabling-cleanup",
     hero: {
       backgroundImage: case_study,
-      heading: "Enterprise Cabling Cleanup Case Study | IDR",
-      paragraph: "See how IDR Technologies organized and upgraded cabling infrastructure for Oppenheimer Funds to improve reliability and performance."
+      heading: "Enterprise Cabling Cleanup for Oppenheimer Funds",
+      paragraph: "MTF Biologics partnered with IDR to turn a large training space into a fully integrated Microsoft Teams meeting room. The space needed to support in-room presentation, remote participation, ceiling microphones, and zone-based audio — all while keeping audio clean and fully under user control."
     },
     galleryImages: [
       {
@@ -626,8 +707,8 @@ export const caseStudiesData = [
     slug: "fixing-failed-installs",
     hero: {
       backgroundImage: case_study,
-      heading: "Fixing Failed Surveillance Installations | Case Study",
-      paragraph: "See how IDR Technologies corrected major surveillance system failures across two properties and delivered dependable performance."
+      heading: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
+      paragraph: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida. The systems — installed by a previous vendor — suffered from serious flaws including."
     },
     galleryImages: [
       {
@@ -656,7 +737,7 @@ export const caseStudiesData = [
       }
     ],
     content: {
-      title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
+      title: "Fixing It Right: How IDR Rebuilt Two Failed Surveillance Camera Installations",
       description: "Correcting and upgrading failed security installations",
       client: "Fairstead",
       property: "Atlantis Apartments (Virginia Beach, VA) & Sweetwater Apartments (Gainesville, FL)",
@@ -716,8 +797,8 @@ export const caseStudiesData = [
     slug: "kisi-elevator-access",
     hero: {
       backgroundImage: case_study,
-      heading: "Kisi Elevator Access Solution | Case Study",
-      paragraph: "See how IDR Technologies secured elevator access for Robinhood Foundation using Kisi mobile credentials without installing elevator readers."
+      heading: "Elevator Access with Kisi Mobile Control",
+      paragraph: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint. The building's elevator policy prohibited the installation of dedicated readers inside the elevator cab that only one tenant could use."
     },
     galleryImages: [
       {
@@ -793,8 +874,8 @@ export const caseStudiesData = [
     slug: "phased-wifi-upgrade",
     hero: {
       backgroundImage: case_study,
-      heading: "Phased Wi-Fi Upgrade Case Study | IDR",
-      paragraph: "See how IDR Technologies modernized school Wi-Fi infrastructure through a phased upgrade that improved coverage, speed, and reliability."
+      heading: "How IDR Delivered a Phased Wi-Fi Upgrade",
+      paragraph: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with WAPs installed every few classrooms. At the time, all school devices were Wireless N, which provided long range and stable performance — even across concrete and plaster walls."
     },
     galleryImages: [
       {
@@ -896,8 +977,8 @@ export const caseStudiesData = [
     slug: "ppa-screen-sharing",
     hero: {
       backgroundImage: case_study,
-      heading: "PPA Technology Partnership Case Study | IDR",
-      paragraph: "See how IDR Technologies has supported Peninsula Preparatory Academy with reliable technology infrastructure, networking, and IT solutions since 2009."
+      heading: "How IDR Improved Screen Sharing for Peninsula Preparatory Academy",
+      paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },
     galleryImages: [
       {
@@ -1016,8 +1097,8 @@ export const caseStudiesData = [
     slug: "scaling-security-fairstead",
     hero: {
       backgroundImage: case_study,
-      heading: "Scaling Security with Fairstead | Case Study",
-      paragraph: "See how IDR Technologies helped Fairstead standardize security and low-voltage infrastructure across properties in multiple states."
+      heading: "How IDR Scaled Security for Fairstead",
+      paragraph: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida campuses — Fairstead needed a low-voltage partner that could deliver consistent, high-quality work across multiple states. They needed more than just installers."
     },
     galleryImages: [
       {
@@ -1211,8 +1292,8 @@ export const caseStudiesData = [
     slug: "securing-lauderhill-point",
     hero: {
       backgroundImage: case_study,
-      heading: "Securing Lauderhill Point Apartments | IDR",
-      paragraph: "See how IDR Technologies upgraded security at Lauderhill Point Apartments with a resilient solution designed to improve safety and property protection."
+      heading: "A Resilient Security Solution for Lauderhill Point",
+      paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },
     galleryImages: [
       {
@@ -1340,8 +1421,8 @@ export const caseStudiesData = [
     slug: "smarter-training-room",
     hero: {
       backgroundImage: case_study,
-      heading: "Smarter Training Room Integration | IDR",
-      paragraph: "See how IDR Technologies transformed a training room for MTF Biologics with Microsoft Teams integration, AV technology, and seamless collaboration."
+      heading: "How IDR Built a Smarter Training Room for MTF Biologics",
+      paragraph: "MTF Biologics partnered with IDR to turn a large training space into a fully integrated Microsoft Teams meeting room. The space needed to support in-room presentation, remote participation, ceiling microphones, and zone-based audio — all while keeping audio clean and fully under user control."
     },
     galleryImages: [
       {
@@ -1475,8 +1556,8 @@ export const caseStudiesData = [
     slug: "unified-intercom-access",
     hero: {
       backgroundImage: case_study,
-      heading: "Unified Intercom Access for Douglas Elliman | IDR",
-      paragraph: "See how IDR Technologies unified intercom access across multiple entry points, creating a simpler and more secure experience for Douglas Elliman."
+      heading: "How IDR Unified Intercom Access for Douglas Elliman",
+      paragraph: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points:"
     },
     galleryImages: [
       {
@@ -1574,8 +1655,8 @@ export const caseStudiesData = [
     slug: "advance-local",
     hero: {
       backgroundImage: case_study,
-      heading: "Advance Local Technology Case Study | IDR",
-      paragraph: "See how IDR Technologies delivered a reliable technology solution that supported Advance Local's operational and infrastructure goals."
+      heading: "Building a Long-Term Technology Partnership with Advance Local",
+      paragraph: "Advance Local is one of the largest media groups in the U.S., with newsrooms and offices across the country. Their Staten Island location needed a modern, secure, and connected workplace — and the right partner to make it happen."
     },
     galleryImages: [
       {
@@ -1608,7 +1689,7 @@ export const caseStudiesData = [
       }
     ],
     content: {
-      title: "Building a Long-Term Technology Partnership with Advance Local",
+      title: "Building a Long-Term Technology Partnership",
       description: "",
       client: "",
       property: "",
@@ -1672,8 +1753,8 @@ export const caseStudiesData = [
     slug: "phipps-houses",
     hero: {
       backgroundImage: case_study,
-      heading: "Stopping Break-Ins with Smarter Entry Design | IDR",
-      paragraph: "See how IDR Technologies helped Phipps Houses stop repeated break-ins by redesigning building entry points and improving access control security."
+      heading: "Stopping Break-Ins with Smarter Entry Design",
+      paragraph: "Phipps Houses is one of New York City’s largest and oldest not-for-profit housing developers, known for providing quality affordable housing across the five boroughs. When a high-traffic residential building began experiencing repeat security breaches at its main entrance, the Phipps team called in IDR for a serious assessment — and a stronger solution."
     },
     galleryImages: [
       {
@@ -1706,7 +1787,7 @@ export const caseStudiesData = [
       }
     ],
     content: {
-      title: "Stopping Break-Ins with Smarter Entry Design",
+      title: "How Smarter Entry Design Helps Stop Break-Ins",
       description: "",
       client: "Phipps Houses",
       property: "NYC Property",
@@ -1785,8 +1866,8 @@ export const caseStudiesData = [
     slug: "ppa-partnership",
     hero: {
       backgroundImage: case_study,
-      heading: "Peninsula Preparatory Academy Partnership | IDR",
-      paragraph: "See how IDR Technologies has supported Peninsula Preparatory Academy with technology infrastructure, networking, and IT solutions since 2009."
+      heading: "Peninsula Preparatory Academy",
+      paragraph: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole-child development. Since 2009, PPA has trusted IDR Technology Solutions to design, build, support, and evolve their technology infrastructure across multiple locations and upgrades."
     },
     galleryImages: [
       {
@@ -1902,102 +1983,102 @@ export const caseStudiesData = [
   },
 ];
 export const caseStudiesHomePage = [
-    {
-      id: 1,
-      title: "How IDR Eliminated Unauthorized Building Access for Fairstead.",
-      desc: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across.......",
-      image: Eliminating_case_study_1,
-      url:"/case-studies/eliminated-unauthorized-access"
-    },
-    {
-      id: 2,
-      title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
-      desc: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida..",
-      image: Failed_case_study_1,
-       url:"/case-studies/fixing-failed-installs"
-    },
-    {
-      id: 3,
-      title:
-        "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The........",
-      desc: "Fairstead approached IDR with a unique challenge at their Chocolate Factory property in Brooklyn......",
-      image: Cloud_case_study_1,
-       url:"/case-studies/cloud-4-wire-intercoms"
-    },
-    {
-      id: 4,
-      title:
-        "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
-      desc: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint......",
-      image: case_study_1,
-       url:"/case-studies/kisi-elevator-access"
-    },
-    {
-      id: 5,
-      title:
-        "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
-      desc: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points.......",
-      image: intercom_case_study_1,
-       url:"/case-studies/unified-intercom-access"
-    },
-    {
-      id: 6,
-      title: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
-      desc: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with....",
-      image: wifi_case_study_7,
-       url:"/case-studies/phased-wifi-upgrade"
-    },
-    {
-      id: 7,
-      title:
-        "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
-      desc: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag........",
-      image: Audio_case_study_4,
-       url:"/case-studies/custom-audio-deterrent"
-    },
-    {
-      id: 8,
-      title:
-        "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
-      desc: "Create a seamless Microsoft Teams-based hybrid training room with distributed AV, zone-based audio, and advanced control — all.....",
-      image: Training_case_study_1,
-       url:"/case-studies/smarter-training-room"
-    },
-    {
-      id: 9,
-      title:
-        "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
-      desc: "Full infrastructure overhaul with ongoing overnight cutovers and enterprise-grade upgrades Oppenheimer Funds approached IDR...",
-      image: Enterprise_case_study_1,
-       url:"/case-studies/enterprise-cabling-cleanup"
-    },
-    {
-      id: 10,
-      title: "Burns Engineering",
-      desc: "Relationship Scope: Nationwide low voltage partnership across 7+ locations Services: Kisi access control, structured cabling, technical.......",
-      image: case_study_1,
-       url:"/case-studies/burns-partnership"
-    },
-    {
-      id: 11,
-      title: "Scaling Security with Fairstead",
-      desc: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida....",
-      image: Scaling_case_study_1,
-       url:"/case-studies/scaling-security-fairstead"
-    },
-    {
-      id: 12,
-      title: "Peninsula Preparatory Academy",
-      desc: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......",
-      image: PPA_case_study_10,
-       url:"/case-studies/ppa-screen-sharing"
-    },
-    {
-      id: 13,
-      title:
-        "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
-      desc: "Fairstead is a national real estate developer and operator with a focus on sustainability, safety, and community-driven housing.......",
-      image: Louderhill_case_study_1,
-       url:"/case-studies/securing-lauderhill-point"
-    },
-  ];
+  {
+    id: 1,
+    title: "How IDR Eliminated Unauthorized Building Access for Fairstead.",
+    desc: "Fairstead, a leading national property management firm, partnered with IDR to address a widespread security concern across.......",
+    image: Eliminating_case_study_1,
+    url: "/case-studies/eliminated-unauthorized-access"
+  },
+  {
+    id: 2,
+    title: "Fixing It Right: IDR Rebuilds Two Failed Surveillance Installs",
+    desc: "Fairstead reached out to IDR after experiencing persistent issues with surveillance systems at two residential properties in Virginia and Florida..",
+    image: Failed_case_study_1,
+    url: "/case-studies/fixing-failed-installs"
+  },
+  {
+    id: 3,
+    title:
+      "Modern Meets Legacy: How IDR Unified Cloud and 4-Wire Intercoms at The........",
+    desc: "Fairstead approached IDR with a unique challenge at their Chocolate Factory property in Brooklyn......",
+    image: Cloud_case_study_1,
+    url: "/case-studies/cloud-4-wire-intercoms"
+  },
+  {
+    id: 4,
+    title:
+      "No Reader, No Problem: Elevator Access Solved with Kisi Mobile Control",
+    desc: "Robinhood Foundation was looking to secure elevator access in their NYC office — but faced a unique constraint......",
+    image: case_study_1,
+    url: "/case-studies/kisi-elevator-access"
+  },
+  {
+    id: 5,
+    title:
+      "One System, Many Doors: How IDR Unified Intercom Access for Douglas Elliman",
+    desc: "Douglas Elliman approached IDR to design an intercom system that could handle a complex mix of access points.......",
+    image: intercom_case_study_1,
+    url: "/case-studies/unified-intercom-access"
+  },
+  {
+    id: 6,
+    title: "When Technology Moved Forward, So Did We: A Phased Wi-Fi Upgrade",
+    desc: "IDR had originally installed a cost-effective wireless solution for Central Queens Academy using Cisco Wireless N/AC access points, with....",
+    image: wifi_case_study_7,
+    url: "/case-studies/phased-wifi-upgrade"
+  },
+  {
+    id: 7,
+    title:
+      "Upway Upgrading Loitering Deterrence with a Custom Outdoor Annunciator",
+    desc: "Upway installed a Rhombus camera system with security monitoring to keep their outdoor areas secure. But they ran into a snag........",
+    image: Audio_case_study_4,
+    url: "/case-studies/custom-audio-deterrent"
+  },
+  {
+    id: 8,
+    title:
+      "A Smarter Training Room: Custom Teams Integration for MTF Biologics",
+    desc: "Create a seamless Microsoft Teams-based hybrid training room with distributed AV, zone-based audio, and advanced control — all.....",
+    image: Training_case_study_1,
+    url: "/case-studies/smarter-training-room"
+  },
+  {
+    id: 9,
+    title:
+      "Enterprise-Grade Cleanups: How IDR Took Over Cabling for Oppenheimer Funds",
+    desc: "Full infrastructure overhaul with ongoing overnight cutovers and enterprise-grade upgrades Oppenheimer Funds approached IDR...",
+    image: Enterprise_case_study_1,
+    url: "/case-studies/enterprise-cabling-cleanup"
+  },
+  {
+    id: 10,
+    title: "Burns Engineering",
+    desc: "Relationship Scope: Nationwide low voltage partnership across 7+ locations Services: Kisi access control, structured cabling, technical.......",
+    image: case_study_1,
+    url: "/case-studies/burns-partnership"
+  },
+  {
+    id: 11,
+    title: "Scaling Security with Fairstead",
+    desc: "As a national real estate investment firm with a wide range of properties — from landmark Harlem developments to multi-building Florida....",
+    image: Scaling_case_study_1,
+    url: "/case-studies/scaling-security-fairstead"
+  },
+  {
+    id: 12,
+    title: "Peninsula Preparatory Academy",
+    desc: "Peninsula Preparatory Academy Charter School (PPA) is a K-5 school in Far Rockaway, NY focused on academic excellence and whole......",
+    image: PPA_case_study_10,
+    url: "/case-studies/ppa-screen-sharing"
+  },
+  {
+    id: 13,
+    title:
+      "Securing Lauderhill Point Apartments – A Resilient Security Overhaul for Fairstead",
+    desc: "Fairstead is a national real estate developer and operator with a focus on sustainability, safety, and community-driven housing.......",
+    image: Louderhill_case_study_1,
+    url: "/case-studies/securing-lauderhill-point"
+  },
+];

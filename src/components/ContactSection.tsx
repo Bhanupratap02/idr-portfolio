@@ -83,9 +83,9 @@ const ContactSection = () => {
     <section className="px-4 sm:px-6 lg:px-20 2xl:px-32 py-12 sm:py-16 lg:py-20 2xl:py-24 relative">
       <div className="mx-auto max-w-6xl 2xl:max-w-7xl">
         <div className="mb-8 2xl:mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary mb-4">
             Contact us
-          </h2>
+          </h1>
           <p className="text-lg text-[#333] font-light max-w-4xl">
             Leave an inquiry or contact us via email and phone. We will contact
             you within 24 hours during work days.

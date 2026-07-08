@@ -7,6 +7,9 @@ export default function OurStory() {
     <section className="bg-white py-16">
       <div className="max-w-8xl 2xl:max-w-[1600px] 3xl:max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
+           <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-5xl font-bold text-idr-text mb-10">
+             Your Trusted Partner for Security & Technology Solutions
+            </h1>
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 2xl:gap-20">
           {/* Team Photo */}
           <div className="w-full lg:w-1/2">

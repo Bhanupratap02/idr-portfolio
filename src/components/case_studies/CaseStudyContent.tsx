@@ -27,9 +27,9 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-gray-900 text-3xl font-semibold leading-tight">
+          <h2 className="text-gray-900 text-3xl font-semibold leading-tight">
             {content.title}
-          </h1>
+          </h2>
         </div>
 
         {/* Header line */}
