@@ -104,9 +104,9 @@ const FAQSection = () => {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-20 2xl:px-32 3xl:px-48 py-12 sm:py-16 lg:py-20 2xl:py-24 3xl:py-28">
       <div className="mx-auto max-w-4xl 2xl:max-w-5xl 3xl:max-w-7xl">
-        <h2 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 lg:mb-20 2xl:mb-24">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-medium text-[#3D3D3D] text-center mb-12 sm:mb-16 lg:mb-20 2xl:mb-24">
           Frequently Asked Questions
-        </h2>
+        </h1>
 
         <div className="space-y-7 2xl:space-y-9 3xl:space-y-12">
           {faqs.map((faq, index) => (

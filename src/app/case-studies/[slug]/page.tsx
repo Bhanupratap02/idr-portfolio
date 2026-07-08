@@ -1,5 +1,6 @@
 // File: app/case-studies/[slug]/page.tsx
 import { caseStudiesData } from "@/data/caseStudiesData";
+import { metaData } from "@/data/caseStudiesData";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/case_studies/HeroSection";
 import ImageGallery from "@/components/case_studies/ImageGallery";
@@ -17,7 +18,7 @@ export async function generateStaticParams() {
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const study = caseStudiesData.find((item) => item.slug === slug);
+  const study = metaData.find((item) => item.slug === slug);
   
   if (!study) {
     return {
@@ -26,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: study.hero.heading,
-    description: study.hero.paragraph,
+    title: study.title,
+    description: study.description,
     alternates: {
       canonical: `/case-studies/${slug}`,
     },

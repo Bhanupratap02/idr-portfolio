@@ -5,6 +5,7 @@ import "./globals.css";
 import { clientLogos, clientLogosBottom } from "@/data/clientLogos";
 import Footer from "@/components/Footer";
 import Navbar2 from "@/components/Navbar2";
+import FloatingContactButtons from "@/components/FloatingContactButtons";
 import type { Metadata } from "next";
 import Script from "next/script";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
           <ClientLogos logos={clientLogosBottom} direction="left" />
 
           <Footer />
+          <FloatingContactButtons />
         </div>
       </body>
     </html>
