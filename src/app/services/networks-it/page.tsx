@@ -12,6 +12,7 @@ import NITPortalSection from "./_components/NITPortalSection";
 import NITWhyChooseSection from "./_components/NITWhyChooseSection";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title:"Managed Networks & IT Services | IDR Technologies",
@@ -23,7 +24,19 @@ export const metadata: Metadata = {
 
 export default function NetworksIT() {
   return (
-    <div className="min-h-screen bg-idr-cream">
+    <>
+      {/* ================= WEBPAGE SCHEMA ================= */}
+      <Script id="webpage-schema" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "url": "https://idrtechnologysolutions.com/services/networks-it",
+          "name": "Networks & IT Infrastructure Installation - IDR",
+          "description": "Keep your business connected with managed networks, IT support, cybersecurity, infrastructure management, and monitoring."
+        })}
+      </Script>
+
+      <div className="min-h-screen bg-idr-cream">
       <NITHeroSection />
       <NITServicesSection />
       <NITCertifiedSection />
@@ -35,5 +48,6 @@ export default function NetworksIT() {
       <NITWhyChooseSection />
       <AVServicesGrid exclude={6} />
     </div>
+    </>
   );
 }
