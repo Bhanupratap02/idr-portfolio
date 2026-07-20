@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "24/7 Security Camera Monitoring Service - IDR",
@@ -20,7 +21,19 @@ export default function CameraMonitoring() {
     const img3 =
       "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fidr-advantage%2Fcamera.jpeg";
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+    <>
+      {/* ================= WEBPAGE SCHEMA ================= */}
+      <Script id="webpage-schema" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "url": "https://idrtechnologysolutions.com/camera-monitoring",
+          "name": "24/7 Security Camera Monitoring Service - IDR",
+          "description": "Reliable camera monitoring services across NYC, New Jersey, and Florida with 24 7 security camera monitoring to protect businesses with real time alerts."
+        })}
+      </Script>
+
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
       {/* Hero Section - Two Column Design */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-900 via-blue-800 to-slate-900">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -316,5 +329,6 @@ export default function CameraMonitoring() {
         </div> */}
       </div>
     </div>
+    </>
   );
 }

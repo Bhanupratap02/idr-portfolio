@@ -64,6 +64,92 @@ export default function RootLayout({
           />
         </noscript>
 
+        {/* ================= WEBSITE SCHEMA ================= */}
+        <Script id="website-schema" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "IDR Technology Solutions",
+            "url": "https://idrtechnologysolutions.com/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://idrtechnologysolutions.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </Script>
+
+        
+
+        {/* ================= LOCAL BUSINESS SCHEMA ================= */}
+        <Script id="local-business-schema" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "IDR Technology Solutions",
+            "url": "https://idrtechnologysolutions.com/",
+            "logo": "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Flogo.png",
+            "description": "IDR Technologies provides access control, surveillance, intercom, cabling, AV, and IT solutions for commercial properties.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "91 Bay 31 St",
+              "addressLocality": "Brooklyn",
+              "addressRegion": "NY",
+              "postalCode": "11214",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-718-594-7865",
+            "email": "sales@idrtechnologysolutions.com",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "New York"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "New Jersey"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Florida"
+              }
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+1-718-594-7865",
+                "contactType": "sales",
+                "email": "sales@idrtechnologysolutions.com",
+                "areaServed": "NY"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+1-732-217-3550",
+                "contactType": "sales",
+                "areaServed": "NJ"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+1-813-685-4022",
+                "contactType": "sales",
+                "areaServed": "FL"
+              },
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "support@idrtechnologysolutions.com"
+              }
+            ],
+            "sameAs": [
+              "https://www.youtube.com/@Idrtechnologysolutions",
+              "https://www.linkedin.com/company/idr-technology-solutions",
+              "https://www.facebook.com/profile.php?id=100057472869428",
+              "https://www.tiktok.com/@idrtechnologysolu?_t=ZP-8y9yjPO8tvL&_r=1",
+              "https://www.instagram.com/idrtechnologysolutions"
+            ]
+          })}
+        </Script>
+
         <div className="min-h-screen bg-[#FFFFF]">
           <Navbar2 />
           <main className="w-screen">{children}</main>

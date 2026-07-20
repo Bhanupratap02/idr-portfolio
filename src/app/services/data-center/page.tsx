@@ -13,6 +13,7 @@ import ServicesGrid from "@/components/services/ServicesGrid";
 import TrustedIndustriesSection from "@/components/services/TrustedIndustriesSection";
 
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title:"Data Center Infrastructure & Support Services | IDR Technologies",
@@ -24,7 +25,19 @@ description:"Build a reliable IT foundation with data center infrastructure, cab
 
 export default function DataCenter() {
   return (
-    <div className="min-h-screen bg-idr-cream">
+    <>
+      {/* ================= WEBPAGE SCHEMA ================= */}
+      <Script id="webpage-schema" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "url": "https://idrtechnologysolutions.com/services/data-center",
+          "name": "Data Center Infrastructure & Support Services | IDR Technologies",
+          "description": "Build a reliable IT foundation with data center infrastructure, cabling, equipment deployment, maintenance, and support."
+        })}
+      </Script>
+
+      <div className="min-h-screen bg-idr-cream">
       <DCHeroSection />
       <DCWhyWeDeliverSection />
       <DCRedundancySection />
@@ -37,5 +50,6 @@ export default function DataCenter() {
       <DCReadySection />
       <ServicesGrid exclude={4}/>
     </div>
+    </>
   );
 }
