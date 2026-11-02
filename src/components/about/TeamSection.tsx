@@ -3,7 +3,8 @@ export default function TeamSection() {
     {
       name: "Anthony Paduano",
       title: "Director of Operations",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/f8dc506627faf84f27edc24494e4b8a7e6d83f92?width=436"
+      // image: "https://api.builder.io/api/v1/image/assets/TEMP/f8dc506627faf84f27edc24494e4b8a7e6d83f92?width=436"
+      image: "/Anthony_Paduano_image.jpeg"
     },
     // {
     //   name: "Alfonso Douriet",
