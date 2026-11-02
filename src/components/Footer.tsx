@@ -276,7 +276,7 @@ const Footer = () => {
               </div>
               <div className="text-sm 2xl:text-base text-[#F7F6F2] ">
                 <p>NY : (718) 594-7865</p>
-                <p>NU : (732) 217-3550</p>
+                <p>NJ : (732) 217-3550</p>
                 <p>FL : (813) 685-4022</p>
               </div>
             </div>
