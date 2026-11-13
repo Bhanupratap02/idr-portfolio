@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
+  title: "Certified Security System Installation | IDR Technology",
+  description: "Get professional security system installation from certified experts at IDR Technology Solutions. Ensure seamless integration, reliable performance, and lasting protection.",
   alternates: {
     canonical: "/certified-installation",
   },

@@ -482,6 +482,8 @@ import ProcessSection from "./_components/ProcessSection";
 import QuoteSection from "./_components/QuoteSection";
 
 export const metadata: Metadata = {
+  title: "Security System Consultation & Design | IDR Technology",
+  description: "Get expert security system consultation from IDR Technology Solutions. Plan customized solutions, optimize system design, and ensure seamless technology integration.",
   alternates: {
     canonical: "/consultation",
   },

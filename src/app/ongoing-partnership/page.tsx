@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title: "Ongoing Security System Support & Maintenance | IDR",
+  description: "Maintain reliable security systems with IDR Technology Solutions' ongoing partnership services, including expert support, preventive maintenance, and system optimization.",
   alternates: {
     canonical: "/ongoing-partnership",
   },

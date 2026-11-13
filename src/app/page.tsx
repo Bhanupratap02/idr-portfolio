@@ -1,12 +1,36 @@
 /** @format */
 
-
+import dynamic from 'next/dynamic';
 import Hero from "@/components/Hero";
-import WhatWeDo from "@/components/WhatWeDo";
-import Testimonials from "@/components/Testimonials";
-import CaseStudies from "@/components/CaseStudies";
-import ContactSection from "@/components/ContactSection";
 import PartnerLogos  from "@/components/PartnerLogos";
+import WhatWeDo from "@/components/WhatWeDo";
+import WhatWeServe from "@/components/WhatWeServe";
+
+// Lazy load components below the fold for better performance
+const IdrAdvantage = dynamic(() => import("@/components/IdrAdvantages"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
+const WhyChoose = dynamic(() => import("@/components/WhyChoose"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
+const Testimonials = dynamic(() => import("@/components/Testimonials"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
+const CaseStudies = dynamic(() => import("@/components/CaseStudies"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
+const ContactSection = dynamic(() => import("@/components/ContactSection"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
+const Finance = dynamic(() => import("@/components/Finance"), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse" />
+});
+
 const partner1 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_1.png";
 const partner2 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_2.png";
 const partner3 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_3.png";
@@ -21,10 +45,6 @@ const client11 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fclient
 const client12 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_14.png";
 const client13 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fclients%2Fclient_13.png";
 const client14 = "https://idr-portfolio-storage.s3.amazonaws.com/assets%2Fpartners%2Fpartner_15.png";
-import Finance from "@/components/Finance";
-import IdrAdvantage from "@/components/IdrAdvantages";
-import WhyChoose from "@/components/WhyChoose";
-import WhatWeServe from "@/components/WhatWeServe";
 
 
 import type { Metadata } from "next";
@@ -73,7 +93,12 @@ const topPartnerImages = [
 export default function Index() {
 
   return (
-    <div className="">
+    <>
+      {/* Preload critical resources for faster LCP */}
+      <link rel="preload" href="https://idr-portfolio-storage.s3.amazonaws.com/public/videos/video_1.mov" as="video" />
+      <link rel="preload" href="https://idr-portfolio-storage.s3.amazonaws.com/assets%2Flogo.png" as="image" />
+
+      <div className="">
 
 
       {/* Hero Section */}
@@ -112,7 +137,8 @@ export default function Index() {
       <Finance />
 
 
-      
-    </div>
+
+      </div>
+    </>
   );
 }

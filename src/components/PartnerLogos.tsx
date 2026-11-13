@@ -46,6 +46,7 @@ const PartnerLogos = ({
             alt={`Partner Logo ${idx + 1}`}
             width={180}
             height={180}
+            loading="lazy"
             className={`w-full h-auto object-contain max-w-[120px] sm:max-w-[150px] md:max-w-[180px] 2xl:max-w-[220px] max-h-[180px] opacity-80 hover:opacity-100 transition-opacity duration-300 ${
               isWhiteLogo ? "" : "filter brightness-0 invert"
             }`}
